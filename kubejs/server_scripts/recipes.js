@@ -50,6 +50,8 @@ let donutCraft = (event, output, center, ring) => {
 	})
 }
 
+//titamteste
+
 function ifiniDeploying(output, input, tool) {
 	return {
 		"type": "create:deploying",
