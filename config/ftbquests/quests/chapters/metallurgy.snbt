@@ -1,0 +1,356 @@
+{
+	id: "7DAAA44A9D7C457A"
+	group: ""
+	order_index: 4
+	filename: "metallurgy"
+	title: "&a Ores and You"
+	icon: {
+		id: "alloyed:steel_pickaxe"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Ores And You"
+			icon: {
+				id: "alloyed:steel_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -1.0d
+			shape: "diamond"
+			description: ["Refining ores in this modpack may be &eunusual&f, this questline will give you an oversight on the diverse ways to refine your ores."]
+			dependencies: ["64F3352725385210"]
+			hide: true
+			size: 2.0d
+			id: "5E29260086D6D44C"
+			tasks: [{
+				id: "0DB4E4B4A41445F8"
+				type: "checkmark"
+				title: "Aknowleged"
+			}]
+		}
+		{
+			title: "Campfire"
+			icon: "minecraft:campfire"
+			x: -4.5d
+			y: 11.0d
+			dependencies: ["7FF09369AE5B37A0"]
+			id: "6ACF361A63D8457E"
+			tasks: [{
+				id: "70DB323DBA8DD3FE"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Kiln"
+			icon: "gearbox:kiln"
+			x: -3.0d
+			y: 11.0d
+			dependencies: ["7FF09369AE5B37A0"]
+			id: "49E19D125A9BAE9D"
+			tasks: [{
+				id: "2AB498B7CF5E8DFD"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Pulverizer (3x)"
+			icon: "thermal:machine_pulverizer"
+			x: 0.5d
+			y: 2.5d
+			dependencies: ["243EDD63E8A57AD1"]
+			id: "3D6FE15E726F0543"
+			tasks: [{
+				id: "32A35AF9BFFADF2A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "1x Raw Ore"
+			icon: "minecraft:raw_iron"
+			x: -3.0d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["5E29260086D6D44C"]
+			hide: true
+			id: "7FF09369AE5B37A0"
+			tasks: [{
+				id: "0D3CF7D3E761F1FF"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "3x Nugget"
+			icon: "minecraft:iron_nugget"
+			x: -3.0d
+			y: 12.5d
+			dependencies: [
+				"6ACF361A63D8457E"
+				"49E19D125A9BAE9D"
+			]
+			dependency_requirement: "one_completed"
+			id: "21803FA20BA88A59"
+			tasks: [{
+				id: "010949E225598A79"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Dust Ore"
+			x: -0.5d
+			y: 7.0d
+			dependencies: [
+				"3BB0A5E2F4767E03"
+				"61FC04DA75F6C60D"
+				"52DCF15145DE4732"
+				"46559AB32614BDC2"
+			]
+			dependency_requirement: "one_completed"
+			id: "1319C5AADC62CCB2"
+			tasks: [{
+				id: "4F8F8A893DAA9AD3"
+				type: "item"
+				item: "thermal:iron_dust"
+			}]
+		}
+		{
+			title: "Kiln"
+			icon: "gearbox:kiln"
+			x: 0.0d
+			y: 11.0d
+			dependencies: ["29FCF65A35E4EAF8"]
+			id: "70BBDAF3644B10ED"
+			tasks: [{
+				id: "42389B5FA32BF17D"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "1x Crushed Raw Ore"
+			icon: "create:crushed_raw_iron"
+			x: 0.0d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["5E29260086D6D44C"]
+			hide: true
+			id: "29FCF65A35E4EAF8"
+			tasks: [
+				{
+					id: "394B9F043702AB50"
+					type: "item"
+					item: "create:crushed_raw_iron"
+				}
+				{
+					id: "3099400135BFCB50"
+					type: "checkmark"
+				}
+			]
+		}
+		{
+			title: "6x Nugget"
+			icon: "minecraft:iron_nugget"
+			x: 0.0d
+			y: 12.5d
+			dependencies: ["70BBDAF3644B10ED"]
+			id: "5C045FD5A602F0A6"
+			tasks: [{
+				id: "25531A0061705B3E"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Kiln"
+			icon: "gearbox:kiln"
+			x: 1.5d
+			y: 11.0d
+			dependencies: ["6F71D92945FAC16E"]
+			id: "7D39082B4300E6F4"
+			tasks: [{
+				id: "5E0EDAD90D93ECD1"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "1x Ingot"
+			icon: "minecraft:iron_ingot"
+			x: 1.5d
+			y: 12.5d
+			dependencies: ["7D39082B4300E6F4"]
+			id: "75DE779C3E9E8E81"
+			tasks: [{
+				id: "01D44BB1C3FE63BF"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "2x Ingot"
+			icon: "minecraft:iron_ingot"
+			x: 3.5d
+			y: 12.5d
+			dependencies: ["7C6435C9ACEFA985"]
+			id: "085F65B18F65DCCE"
+			tasks: [{
+				id: "29AC59845B8D4598"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Induction Smelter"
+			icon: "thermal:machine_smelter"
+			x: 3.5d
+			y: 11.0d
+			dependencies: ["6F71D92945FAC16E"]
+			id: "7C6435C9ACEFA985"
+			tasks: [{
+				id: "373D2A7953D488E3"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Induction Smelter"
+			icon: "thermal:machine_smelter"
+			x: -1.5d
+			y: 11.0d
+			dependencies: ["7FF09369AE5B37A0"]
+			id: "75CCE64B8BFBCF69"
+			tasks: [{
+				id: "08B7BBEE9B3AD6BF"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "9x Nugget"
+			icon: "minecraft:iron_nugget"
+			x: -1.5d
+			y: 12.5d
+			dependencies: ["75CCE64B8BFBCF69"]
+			id: "28B72E3D9D4529F3"
+			tasks: [{
+				id: "2202035693047218"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "1x Ore Dust"
+			icon: "thermal:iron_dust"
+			x: 2.5d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["5E29260086D6D44C"]
+			hide: true
+			id: "6F71D92945FAC16E"
+			tasks: [
+				{
+					id: "6FBA323D2B83FE17"
+					type: "item"
+					item: "thermal:iron_dust"
+				}
+				{
+					id: "442267E7D34CDC7E"
+					type: "checkmark"
+				}
+			]
+		}
+		{
+			title: "Crushing Wheels (2x)"
+			icon: "create:crushing_wheel"
+			x: -0.5d
+			y: 2.5d
+			dependencies: ["243EDD63E8A57AD1"]
+			id: "529357DE6DF80BD9"
+			tasks: [{
+				id: "4731AAAEB309EFD6"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Crushed Ore"
+			icon: "create:crushed_raw_iron"
+			x: 0.0d
+			y: 4.0d
+			hide_dependency_lines: false
+			dependencies: [
+				"529357DE6DF80BD9"
+				"3D6FE15E726F0543"
+			]
+			hide: false
+			dependency_requirement: "one_completed"
+			id: "31808D6898561F68"
+			tasks: [{
+				id: "24F16A323D03906A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Raw Ore"
+			icon: "minecraft:raw_iron"
+			x: -1.0d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["5E29260086D6D44C"]
+			hide: true
+			id: "243EDD63E8A57AD1"
+			tasks: [{
+				id: "5653961FB5769A55"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Millstone (1.2x)"
+			icon: "create:millstone"
+			x: -2.0d
+			y: 5.5d
+			dependencies: ["243EDD63E8A57AD1"]
+			id: "52DCF15145DE4732"
+			tasks: [{
+				id: "74DA60FA21DF3770"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Crushing Wheels (1.25x)"
+			icon: "create:crushing_wheel"
+			x: -1.0d
+			y: 5.5d
+			dependencies: ["31808D6898561F68"]
+			id: "61FC04DA75F6C60D"
+			tasks: [{
+				id: "0ED4FC41C416373A"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Pulverizer (3x)"
+			icon: "thermal:machine_pulverizer"
+			x: 1.0d
+			y: 5.5d
+			dependencies: ["31808D6898561F68"]
+			id: "3BB0A5E2F4767E03"
+			tasks: [{
+				id: "0A480839A46731A5"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Millstone (1.5x)"
+			icon: "create:millstone"
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["31808D6898561F68"]
+			id: "46559AB32614BDC2"
+			tasks: [{
+				id: "03F4B8FED411CD38"
+				type: "checkmark"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

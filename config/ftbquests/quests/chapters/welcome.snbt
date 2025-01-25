@@ -1,0 +1,368 @@
+{
+	id: "2EE5FBD9BD7C0265"
+	group: ""
+	order_index: 0
+	filename: "welcome"
+	title: "Welcome"
+	icon: "create:sturdy_sheet"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 0.0d
+		y: -9.0d
+		width: 8.0d
+		height: 4.5d
+		rotation: 0.0d
+		image: "kubejs:textures/images/logo3.0.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "New Horizons"
+			icon: "minecraft:deepslate_diamond_ore"
+			disable_toast: true
+			x: 0.0d
+			y: -5.0d
+			shape: "diamond"
+			description: [
+				"Originally, this was just for me..."
+				""
+				"But now it can be your's now..."
+			]
+			size: 2.0d
+			id: "09356B3BEF298E06"
+			tasks: [{
+				id: "7670232EEE67FE29"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4A3FCD2DE18942C2"
+				type: "item"
+				team_reward: false
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			title: "Special Thanks"
+			icon: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: [I;
+							400082790
+							1615417215
+							-1145013298
+							92019149
+						]
+						Name: "Nofaxu"
+						Properties: {
+							textures: [{
+								Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg4NjMwNTYzNiwKICAicHJvZmlsZUlkIiA6ICIxN2Q4Yzc2NjYwNDk0ZjdmYmJjMDdiY2UwNTdjMTljZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb2ZheHUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBmNjlmZDU0ZGIwYWJmODkyNDcyNjEyZThhZjYxYTkwY2I4ZGY5OGE5NTMyMzFjMWMyMGE1ZDdmNzZlZjhjYSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlhNzY1Mzc2NDc5ODlmOWEwYjZkMDAxZTMyMGRhYzU5MWMzNTllOWU2MWEzMWY0Y2UxMWM4OGYyMDdmMGFkNCIKICAgIH0KICB9Cn0="
+								Signature: "LZAW7wH4Z2haYSQLmycocwk/UJF5eRZCP3lgPURjJWSszZCsVoR6DZYWasrCP+gBUQtsBrAl38eeXJkIaSmz+WUHUMpUZ7OVrh6Q4NNAwuBtTkvIL7FsCWwHNbMXg2dYUuUs9YTaYXy0dI55Ga9agH5cListkMn+vtT048C5EUKxs9jSSN9WhRrw+pbiPaPnFlTWd6v7LYWQ7Ls33Z1vwcx6Enc45nN+Wm8w6KiJd7c5YxZQv2Ts7+NgDr7QivUcQz9MMPEoIQpQj+JvGdmrmW2Vxf7bBF4s00c1L5J87bDAkgVlUVJlnE+YazTcl0LoxDwAfDFjuzxnWvQKpUh69pZEgOGebyfUWCW95yPxG1lz/m96diM/uhOftW/Kw8eS7TAUc0ANkXUslL83SePVMUtFaOZttQDq7Wl+gwDJ3OWTZpMMIZzZzioOGxhwirjYQpCTa/Fydmf2yG34M0I5sKcWyXMwAtsjXQ5h8v/KtLnPIqPrYEU3LJwBN2mziZGdgGt8qrtTlJV/7h7vS/nUQG9V0QavlGcovuun8EcYzOxQ2jSx5dQ7hPXBWI6aO2MDEdj+VJFkc+aLI42N5vLRjYeP6AR7adOjJ5wfoeg9ItAtbQM2RQrZKClCyjZAIIYD68ioR5U9QAc0jvg9t7rrORyms4qq7of6NQX/kQpUsf8="
+							}]
+						}
+					}
+				}
+			}
+			x: 3.0d
+			y: 1.5d
+			shape: "diamond"
+			description: [
+				"We would like to give thanks to our first content creators:"
+				""
+				"&6generikb&r - first streamer to hop on"
+				"&6joprebond&r - first stream"
+				"&6nofaxu&r - first showcase video"
+			]
+			dependencies: ["1F5C05BC686C75B7"]
+			hide: true
+			size: 1.5d
+			optional: true
+			id: "21DDF52D9468E44B"
+			tasks: [{
+				id: "73DEF6FF2FA988EF"
+				type: "checkmark"
+				title: "I Want Heads"
+			}]
+			rewards: [
+				{
+					id: "5E25579BE5AA493F"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									400082790
+									1615417215
+									-1145013298
+									92019149
+								]
+								Name: "Nofaxu"
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg4NjMwNTYzNiwKICAicHJvZmlsZUlkIiA6ICIxN2Q4Yzc2NjYwNDk0ZjdmYmJjMDdiY2UwNTdjMTljZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb2ZheHUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBmNjlmZDU0ZGIwYWJmODkyNDcyNjEyZThhZjYxYTkwY2I4ZGY5OGE5NTMyMzFjMWMyMGE1ZDdmNzZlZjhjYSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlhNzY1Mzc2NDc5ODlmOWEwYjZkMDAxZTMyMGRhYzU5MWMzNTllOWU2MWEzMWY0Y2UxMWM4OGYyMDdmMGFkNCIKICAgIH0KICB9Cn0="
+										Signature: "LZAW7wH4Z2haYSQLmycocwk/UJF5eRZCP3lgPURjJWSszZCsVoR6DZYWasrCP+gBUQtsBrAl38eeXJkIaSmz+WUHUMpUZ7OVrh6Q4NNAwuBtTkvIL7FsCWwHNbMXg2dYUuUs9YTaYXy0dI55Ga9agH5cListkMn+vtT048C5EUKxs9jSSN9WhRrw+pbiPaPnFlTWd6v7LYWQ7Ls33Z1vwcx6Enc45nN+Wm8w6KiJd7c5YxZQv2Ts7+NgDr7QivUcQz9MMPEoIQpQj+JvGdmrmW2Vxf7bBF4s00c1L5J87bDAkgVlUVJlnE+YazTcl0LoxDwAfDFjuzxnWvQKpUh69pZEgOGebyfUWCW95yPxG1lz/m96diM/uhOftW/Kw8eS7TAUc0ANkXUslL83SePVMUtFaOZttQDq7Wl+gwDJ3OWTZpMMIZzZzioOGxhwirjYQpCTa/Fydmf2yG34M0I5sKcWyXMwAtsjXQ5h8v/KtLnPIqPrYEU3LJwBN2mziZGdgGt8qrtTlJV/7h7vS/nUQG9V0QavlGcovuun8EcYzOxQ2jSx5dQ7hPXBWI6aO2MDEdj+VJFkc+aLI42N5vLRjYeP6AR7adOjJ5wfoeg9ItAtbQM2RQrZKClCyjZAIIYD68ioR5U9QAc0jvg9t7rrORyms4qq7of6NQX/kQpUsf8="
+									}]
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "79ED137F4E0248BA"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									-1771127959
+									-1505932366
+									-1399788231
+									-658093184
+								]
+								Name: "generikb"
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg4NjkyOTYzMSwKICAicHJvZmlsZUlkIiA6ICI5NjZlYmI2OWE2M2Q0YmIyYWM5MGVkMzlkOGM2NGI4MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJnZW5lcmlrYiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mNDJjOTFhZmU4YTA0ODg1NDA4YWUwMGExZTIwNmQ0M2RhNDBjNzU5NWFkMWY1YTA1MWI0NGM4YzdjYTZjYmUxIgogICAgfQogIH0KfQ=="
+										Signature: "wd6IHxwa7uiYrg4KWW34OaEeJuUF2UrPyhfaWkLdaguZ26nK2h5k+EKFzSPTkpP0s+xo4TVYUdYhNL6RmAGvlQD2IoY1jSA5GQTugu18r18718cXvf8MOhJqKHUBqQw6RWwNSWzsE0lov9M6Uv0Hc3tGOg9STmlE3G6oWI7d6lmDxcPH0fY98vAlwIcduW8/gPmIEmTAluFw8tgkvEwFGT86vsiWO4Qg9nJmKz2EeWLyzb0WO7hb//gRiYg4/C8D+gmDVMYQvYT7xw2D2SzO32NnL8vEIF9N5jjbqUMzpHrkLeYpdQckwryXxnfaZM+tfRX6meZXJEJhnHeTAVwOpxOE1kPpHQASzGGh89cmTi78xWdGhzstvzmF2/09LRdf5ypL7GDFY+LH/QSZuXBMI2CUJYtmGXQU7TeuxvTZ72pbPL0Ued5K0oiTz0Oh3d32BLuSjkFpTb6Ex+rOTzsOdRuBxvxNgG11pRZcmpmR06pyU0DDzj8uWZENJGyuUh2PACWLrqOfQXEcJeMSdvMSQAqaYExC9qg+SJukwWldkegPDs75U0K+9ENEqA+j6qWI4MR5/4ua0qT3NYqoI2YnBsp9lvJWUZKPX01UV7PJZqXm3T4GDAgDhWgewPczmGeRBGZ52l9Q6Pqq7nehnrWMU4Tn47czm0T0gHfh9Fh38Os="
+									}]
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "132ADF5DB05DD6F1"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									1329494114
+									2104312719
+									-1230105085
+									-1755014160
+								]
+								Name: "Joprebond"
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg4NzczNzk0OCwKICAicHJvZmlsZUlkIiA6ICI0ZjNlNzg2MjdkNmQ0MzhmYjZhZTE2MDM5NzY0OWJmMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJKb3ByZWJvbmQiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjViNWRiYjAxYmNlNzVkMjE4NDA3Mjc0ZTQ1MGRiMzUxNjgyYmEyOTY0ODMxODRiODY0YzFiYjQ2YmMwZGMwNCIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM0MGMwZTAzZGQyNGExMWIxNWE4YjMzYzJhN2U5ZTMyYWJiMjA1MWIyNDgxZDBiYTdkZWZkNjM1Y2E3YTkzMyIKICAgIH0KICB9Cn0="
+										Signature: "J7NO0UcqCTLD5L9bpMuABB0xmLzNlmkYTYotj1FQkQ/yTUCirqPB1AYp4WFx5INonkWjOaVK79y0rgsUJi/w1triGhd/thpZXYUCdTkc4gYyQLWp5+Ezq94PD01aOdhZRbn0L8GEmVeSUxKJW0ai1vVwYO45zR0S5a/1pzZy7cVLWB8xbIzd+C987sFEn5NXLa+zKaD7Q69dgfeDAxnArYZGs+Ca7YJ7WiVicJHbv6GyU7NHHDBSmYijfRk3lkUrmpacPu4qd8KGXKkw68zwQiCDjHtTmgwYnzUdA/orexPvXjwOSnJ0C2HHQGzhUTwZFLaMSloIl6qkFmA2BEcftCYKIsQN7dWusYlY6+qMcb1AhC8V+DaWMx9b6T6zRLF3lF8GHWCdzKF82Ig+INpG53JrO4/TuvBypmdb4fijJfLG9wke7MK1PDtMD6cuEJVQdP4Y2ao8BgRlpytmlbtWnUtcnFT1bNmBhldGYk9v0rLJowoe9pe4cJaM0Pm84OnuJ4HTMRpjw9Sy9FgZDX1sMiUn473UwNSSZ8kDeBYtyCrj+GPdS/PmsiF3s59+7dfOgPhPO21OI+LIOMC7vkfqtx3w6H1HaM087asxayN1ZA9YAjIBhFPWy/dWnZwvWN5/qsNg669LqrrEaXtCfzYqOeVs6REz27LCIquOTAA13ZA="
+									}]
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "19250715BAD5C34E"
+					type: "loot"
+					title: "Purple"
+					icon: "aquaculture:tackle_box"
+					team_reward: false
+					exclude_from_claim_all: true
+					table_id: 5221089518311498847L
+				}
+			]
+		}
+		{
+			title: "What is this?"
+			icon: "create:wrench"
+			x: 0.0d
+			y: -2.25d
+			shape: "diamond"
+			description: [
+				"The initial idea was to make a modpack inspired by the &6A\\&B&r progression, but after some updates and some ideas, we decided to do something completely new, in this modpack you will find totally new mechanics, machines, and items"
+				""
+			]
+			dependencies: ["09356B3BEF298E06"]
+			hide: true
+			size: 1.5d
+			id: "3737357C6BBF79F3"
+			tasks: [{
+				id: "6B480CFF20E2B8F2"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "42BEC9367C4C41BB"
+				type: "item"
+				team_reward: false
+				item: "create:wrench"
+			}]
+		}
+		{
+			title: "Firstly"
+			icon: "minecraft:andesite"
+			x: 1.5d
+			y: 0.0d
+			shape: "diamond"
+			description: [
+				"Built on the same principles, we have turned the sandbox upside down:    "
+				""
+				"The &6Progression&r demands &5Automation&r, if you don't want eternal grinding it's better to start automating..."
+			]
+			dependencies: ["3737357C6BBF79F3"]
+			hide: true
+			size: 1.5d
+			id: "1F5C05BC686C75B7"
+			tasks: [{
+				id: "38099B0180742ADA"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4C9A4951D47CE9D3"
+				type: "item"
+				team_reward: false
+				item: "kubejs:andesite_blend"
+				count: 4
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Secondly"
+			icon: "create:andesite_alloy"
+			x: 0.0d
+			y: 1.5d
+			shape: "diamond"
+			description: [
+				"The questing is fully optional, but it will help you in a number of tasks:"
+				"&cOrganizing Production&r and &2Trading&r"
+			]
+			dependencies: ["1F5C05BC686C75B7"]
+			hide: true
+			size: 1.5d
+			id: "5E6A1F7FDEEB3053"
+			tasks: [{
+				id: "4F176EBDA33A01CB"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "46ABC266496D67EC"
+				type: "item"
+				team_reward: false
+				item: "create:andesite_alloy"
+				count: 5
+				random_bonus: 3
+			}]
+		}
+		{
+			title: "Thirdly"
+			icon: "create:cogwheel"
+			x: -1.5d
+			y: 3.0d
+			shape: "diamond"
+			description: ["Don't demolish your old factories, they'll be put into test in the final delivery, every step of the process is linked to the last one, so you will want to restructure your foundations as as you get new &6*shiny technology*"]
+			dependencies: ["5E6A1F7FDEEB3053"]
+			hide: true
+			size: 1.5d
+			id: "7A7E7AF244BF2259"
+			tasks: [{
+				id: "43B46986A987BCDB"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4AA3F5786473671C"
+				type: "item"
+				team_reward: false
+				item: "create:cogwheel"
+				count: 3
+			}]
+		}
+		{
+			title: "Content Overview"
+			icon: {
+				id: "occultism:book_of_calling_foliot_cleaner"
+				Count: 1b
+				tag: {
+					spiritName: "Krredder"
+				}
+			}
+			x: 0.0d
+			y: 4.5d
+			shape: "diamond"
+			description: [
+				"&6Engineer's Magazine&r - Find many ways to earn that bread for your industrial needs! From hole digging to interstellar bounties."
+				""
+				"&6Gadget Shop&r - You can buy anything from &9Cool Gadgets&r to &2Useful Kits&r, 100% sure you'll find something useful, the &5 Early Helpers&f will help you a lot in the early game."
+				""
+				"&6Shipments&r - You will find ways to spend your money there too, but this time for automated money burning, the items range from &agrass&r to &bdiamonds"
+				""
+				"&6Ores and You&r - Guides you through ore processing"
+				""
+				"&6Factory Guide&r - This is the real questing, this will guide you on the journey from start to end."
+			]
+			dependencies: ["7A7E7AF244BF2259"]
+			hide: true
+			size: 1.5d
+			id: "1E8052CB531F278B"
+			tasks: [{
+				id: "1448FB5D16785C8A"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "137712A52617E5B3"
+				type: "item"
+				team_reward: false
+				item: "minecraft:writable_book"
+			}]
+		}
+		{
+			title: "Time to go..."
+			icon: "thermal:diamond_gear"
+			x: 0.0d
+			y: 6.5d
+			shape: "diamond"
+			description: [
+				"Just one last note:"
+				""
+				"The modpack is in constant improvement, always check the latest updates for &5new features&f and &6bug fixes&f, also don't forget our &bDiscord Server&f for some interaction! "
+				""
+				"Aand that's it, have fun!"
+			]
+			dependencies: ["1E8052CB531F278B"]
+			hide: true
+			size: 2.0d
+			id: "64F3352725385210"
+			tasks: [{
+				id: "22E9E0C00395673B"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "1BCA53C3EC4CC09C"
+					type: "item"
+					team_reward: false
+					item: "create:goggles"
+				}
+				{
+					id: "40C039DDFFD080E4"
+					type: "item"
+					team_reward: false
+					item: "thermal:silver_coin"
+					count: 3
+					random_bonus: 2
+				}
+				{
+					id: "2090157ED68F8897"
+					type: "item"
+					item: "minecraft:bread"
+					count: 16
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,1226 @@
+{
+	id: "3CEC7BECE6B40994"
+	group: "6F42926B3F0C534A"
+	order_index: 2
+	filename: "stage_2"
+	title: "&f2&r Overengineered Cookie Cutter"
+	icon: "create:precision_mechanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Chapter 2 Start!"
+			icon: "kubejs:rotation_mechanism"
+			x: 0.0d
+			y: -4.0d
+			shape: "hexagon"
+			description: [
+				"The Automation Target this time is the Electron Tube. Placing them onto the Kinetic Mechanism will send you to the next tier."
+				""
+				"Happy Inventing!"
+			]
+			dependencies: ["28C41C062843C2CA"]
+			hide: true
+			size: 2.0d
+			id: "727B43FD95C4A512"
+			tasks: [{
+				id: "2B249158FB9D453B"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "05FBDFB7D5A9B322"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			title: "Get Melted"
+			icon: {
+				id: "tconstruct:copper_can"
+				Count: 1b
+				tag: {
+					fluid: "tconstruct:molten_iron"
+				}
+			}
+			x: 3.5d
+			y: 5.5d
+			subtitle: "Contraption 16-4"
+			description: ["Route the nuggets into your High-Temperature melting equipment. A Melter from Tinkers' Construct, for example."]
+			dependencies: ["53735DC4231AB566"]
+			id: "2167272204B6627B"
+			tasks: [
+				{
+					id: "611F921F94FAE142"
+					type: "item"
+					title: "Copper Can (Molten Iron)"
+					item: {
+						id: "tconstruct:copper_can"
+						Count: 1b
+						tag: {
+							fluid: "tconstruct:molten_iron"
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "75C982848F2CEA85"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Precision Insert"
+			icon: "create:electron_tube"
+			x: 3.0d
+			y: 8.5d
+			subtitle: "Contraption 20-2"
+			description: ["Insert the red gem carefully with a deployer to create this funny tube that's incredibly useful."]
+			dependencies: [
+				"06B061C0EE94BC90"
+				"7A4CA5CF1CEFE8CA"
+			]
+			id: "5351AF6CA73CB8E0"
+			tasks: [
+				{
+					id: "163B1579092E6BD3"
+					type: "item"
+					item: "create:electron_tube"
+					consume_items: false
+				}
+				{
+					id: "1D7C84803766FD04"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Iron for Days"
+			icon: "minecraft:cobblestone"
+			x: 4.0d
+			y: 1.5d
+			subtitle: "Contraption 16-1"
+			description: [
+				"Known in the business as the 'Iron Generator', you will now be creating metal from Cobblestone."
+				""
+				"Start with some Drills hooked up to regenerating Cobblestone blocks."
+			]
+			hide_dependency_lines: true
+			dependencies: ["727B43FD95C4A512"]
+			id: "0E46C1FCE5AEB1DF"
+			tasks: [
+				{
+					id: "7E68B8C4958FB0B5"
+					type: "item"
+					item: "minecraft:cobblestone"
+					consume_items: false
+				}
+				{
+					id: "5E676D2CC5975AEA"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Keep on Deploying"
+			icon: "create:precision_mechanism"
+			x: 2.0d
+			y: 10.0d
+			subtitle: "Contraption 20-3"
+			description: ["Bringing together Electron Tubes and Kinetic Mechanisms using a row of Deployers concludes your second Assembly Line."]
+			dependencies: [
+				"5351AF6CA73CB8E0"
+				"6D8BB2D6A75ABB16"
+			]
+			id: "19715EBCBBA1B4AD"
+			tasks: [
+				{
+					id: "4DF52040884AB28D"
+					type: "item"
+					item: "create:precision_mechanism"
+					consume_items: false
+				}
+				{
+					id: "002032AE65148DBD"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Chapter 2 Complete!"
+			x: 0.0d
+			y: 11.0d
+			shape: "hexagon"
+			description: [
+				"Congrats! Now you have a passive supply of Precision Mechanisms. Think of all the options you have access to!"
+				""
+				"After cleaning up and briefly scanning for bottlenecks, go ahead and check back with the Overview section."
+			]
+			dependencies: ["19715EBCBBA1B4AD"]
+			size: 2.0d
+			id: "7FC4D1E69377271D"
+			tasks: [{
+				id: "4C32A887DA89A75C"
+				type: "item"
+				item: "kubejs:brass_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "54E81DC78E539FDD"
+					type: "item"
+					item: "create:precision_mechanism"
+					count: 16
+				}
+				{
+					id: "7A797A069B28AE89"
+					type: "item"
+					item: "ae2:certus_quartz_crystal"
+					random_bonus: 4
+				}
+				{
+					id: "11BF1DF6EF76569B"
+					type: "item"
+					item: "create:brass_ingot"
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "De-Chunkify"
+			icon: "minecraft:gravel"
+			x: 4.5d
+			y: 3.0d
+			subtitle: "Contraption 16-2"
+			description: ["The Cobblestone first needs to be milled down into Gravel."]
+			dependencies: ["0E46C1FCE5AEB1DF"]
+			id: "1139F2E4E6FCFE29"
+			tasks: [
+				{
+					id: "517441AE19EF30E2"
+					type: "item"
+					item: "minecraft:gravel"
+					consume_items: false
+				}
+				{
+					id: "63F3877902E01590"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Ferric Traces"
+			icon: "minecraft:iron_nugget"
+			x: 3.0d
+			y: 4.0d
+			subtitle: "Contraption 16-3"
+			description: ["Washing the Gravel with an Encased Fan leaves you with Iron Nuggets and Flint."]
+			dependencies: ["1139F2E4E6FCFE29"]
+			id: "53735DC4231AB566"
+			tasks: [
+				{
+					id: "591D709D1E4EE97A"
+					type: "item"
+					item: "minecraft:iron_nugget"
+					consume_items: false
+				}
+				{
+					id: "64B405696E96FFCD"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Grown and Redy"
+			icon: "create:polished_rose_quartz"
+			x: 2.0d
+			y: 7.0d
+			subtitle: "Contraption 19-4"
+			description: ["Done! The crystal is finally redy to go. (pun intended)"]
+			dependencies: ["4309AFCC879D1385"]
+			id: "06B061C0EE94BC90"
+			tasks: [
+				{
+					id: "0AD0021818A0BB33"
+					type: "item"
+					item: "create:polished_rose_quartz"
+					consume_items: false
+				}
+				{
+					id: "0F6DB8FCC5C16A94"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Heated Treatment"
+			icon: "kubejs:scorch_mechanism"
+			x: 0.0d
+			y: 16.5d
+			shape: "circle"
+			subtitle: "Contraption 27"
+			dependencies: [
+				"1D9D65FBD06DD481"
+				"0000E832CD021088"
+			]
+			dependency_requirement: "one_completed"
+			id: "3C50B4556375178E"
+			tasks: [{
+				id: "24070D354D67A3DF"
+				type: "item"
+				item: "kubejs:scorch_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			title: "A lot. of lava"
+			icon: "minecraft:lava_bucket"
+			x: 2.0d
+			y: 15.0d
+			subtitle: "Contraption 25"
+			description: ["About 2,2 buckets for every scorch mechanism, 18 buckets for a machine, not that ecological but still a hose pulley or even a few hellbarks can handle it."]
+			hide_dependency_lines: true
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+			]
+			hide: true
+			id: "1D9D65FBD06DD481"
+			tasks: [
+				{
+					id: "4A9BF979E823D4CB"
+					type: "item"
+					item: "minecraft:lava_bucket"
+					consume_items: false
+				}
+				{
+					id: "73BF4F3B488FBC83"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Soup"
+			icon: "tconstruct:blood_bucket"
+			x: 0.0d
+			y: 13.0d
+			subtitle: "Contraption 21-3"
+			description: ["Drop everything into a heated basin and mix it all up to get the blood."]
+			dependencies: [
+				"223BB57AD0239511"
+				"7E59B7DC239E621E"
+				"5DCF9C8212AA3BE3"
+			]
+			id: "239C64263B91350D"
+			tasks: [
+				{
+					id: "7BBC2AAED0A77FDC"
+					type: "item"
+					item: "tconstruct:blood_bucket"
+					consume_items: false
+				}
+				{
+					id: "21C241D2335C67E4"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "The Double Decker I"
+			icon: "minecraft:twisting_vines"
+			x: -1.0d
+			y: 12.5d
+			subtitle: "Contraption 21-1"
+			description: [
+				"For the all-mighty Infernal Mechanism, a bountiful source of soul essence is needed. Thankfully, the vines of the underworld seem to carry it in them."
+				""
+				"Twisting Vines grow upwards, you can gather them using Mechanical Harvesters."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+			]
+			hide: true
+			id: "223BB57AD0239511"
+			tasks: [
+				{
+					id: "70EA8B8349BC13D1"
+					type: "item"
+					item: "minecraft:twisting_vines"
+					consume_items: false
+				}
+				{
+					id: "6F7A49C7C377ABF1"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "The Double Decker II"
+			icon: "minecraft:weeping_vines"
+			x: 1.0d
+			y: 12.5d
+			subtitle: "Contraption 21-2"
+			description: [
+				"Weeping Vines grow downwards from a ceiling. You can gather them with Mechanical Harvesters."
+				""
+				"For style points, you can use the same contraption to harvest both vine types simultaneously."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+			]
+			hide: true
+			id: "7E59B7DC239E621E"
+			tasks: [
+				{
+					id: "57EC8E4703FADF5E"
+					type: "item"
+					item: "minecraft:weeping_vines"
+					consume_items: false
+				}
+				{
+					id: "6149AB838FC42C17"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Arming the Deployer II"
+			x: 1.0d
+			y: 9.0d
+			shape: "circle"
+			description: [
+				"It'll be good to stock up on a couple of screwdrivers for the Mechanism Assembly."
+				"Just like last time, the requirement does not necessarily call for automation."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5351AF6CA73CB8E0"]
+			id: "6D8BB2D6A75ABB16"
+			tasks: [{
+				id: "7DF53EF0CF55B5D7"
+				type: "item"
+				item: {
+					id: "createindustry:screwdriver"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "Chapter 2A Complete!"
+			x: 0.0d
+			y: 18.0d
+			shape: "hexagon"
+			description: ["Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line."]
+			dependencies: ["3C50B4556375178E"]
+			size: 2.0d
+			id: "047FD4E54147D8F7"
+			tasks: [{
+				id: "5D828A5601F86224"
+				type: "item"
+				item: "kubejs:zinc_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "5868F4AF0FBE0295"
+					type: "item"
+					item: "kubejs:scorch_mechanism"
+					count: 16
+				}
+				{
+					id: "02A669ED33AA71DC"
+					type: "item"
+					item: "minecraft:blaze_powder"
+					random_bonus: 4
+				}
+				{
+					id: "2BAEB1D62B8D3701"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "The Alloy Mixer"
+			icon: "create:brass_ingot"
+			x: 2.0d
+			y: -4.0d
+			shape: "circle"
+			subtitle: "Contraption 10"
+			description: [
+				"Not part of the Mechanism Chain, yet very important for creating relevant machines."
+				""
+				"Using Melters, Fluid Pipes and a Mechanical Mixer, you can create a couple of different metal alloys. Brass is one of them."
+				""
+				"Pumping the Molten Alloy into a Casting Table or Basin will Solidify it into usable Ingots."
+				""
+				"For less hassles with manual effort, it is recommended to set up Ingot-to-Ingot semi-automation for creating Alloys using the setup above."
+			]
+			hide_dependency_lines: false
+			dependencies: ["727B43FD95C4A512"]
+			id: "174E3A810535CAAC"
+			tasks: [{
+				id: "4418A795B9FB076D"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Blaze Escort"
+			x: 1.5d
+			y: 14.0d
+			shape: "circle"
+			description: ["This recipe requires you to have a blaze burner under the basin, before anything else go to the nether capture one if you didn't get a burner yet."]
+			hide_dependency_lines: true
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+			]
+			hide: true
+			id: "5DCF9C8212AA3BE3"
+			tasks: [{
+				id: "3BBAFB33D9E2BB24"
+				type: "item"
+				item: "create:blaze_burner"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Sky Stone Infini-drill"
+			icon: "ae2:sky_stone_block"
+			x: -1.5d
+			y: -2.0d
+			subtitle: "Contraption 12"
+			description: [
+				""
+				"The skystone has many strange properties and it can be used to make redstone, which is needed for our target item: electron tubes."
+				""
+				"Some big deposits of skystone are deep underground below rings of certus quartz and flowers."
+				""
+				"The deposits and some meteors are so, so large they can be mined forever with a drill!"
+				""
+				"{image:kubejs:textures/images/thing.png width:160 height:100 align:1}"
+				"Circles indicating a deposit below"
+			]
+			hide_dependency_lines: true
+			dependencies: ["727B43FD95C4A512"]
+			id: "0F59BB288184ECF5"
+			tasks: [
+				{
+					id: "623EF09A5BA6164B"
+					type: "item"
+					item: "ae2:sky_stone_block"
+					consume_items: false
+				}
+				{
+					id: "7F4C239797691652"
+					type: "checkmark"
+					title: "automated"
+				}
+			]
+		}
+		{
+			title: "Train Network"
+			icon: "create:track"
+			x: -2.0d
+			y: -4.0d
+			description: [
+				"Your factory may be thousands of blocks away from a sky stone deposit."
+				""
+				"The only way to easily transfer items through huge distances is by train, which will need some amount of brass, sturdy sheets and iron."
+				""
+				"Tip: trains go faster if there's fuel in it's inventory."
+			]
+			dependencies: ["727B43FD95C4A512"]
+			id: "6DD4379FE9AE1B6F"
+			tasks: [{
+				id: "3288FFB5F1D9311B"
+				type: "checkmark"
+				title: "aknowleged"
+			}]
+			rewards: [
+				{
+					id: "166BD7C2C0610CD3"
+					type: "command"
+					title: "Ponder Stations"
+					icon: "create:track_station"
+					team_reward: false
+					auto: "disabled"
+					command: "/c ponder create:track_station"
+					player_command: true
+				}
+				{
+					id: "2DCEE1519D04F95E"
+					type: "command"
+					title: "Ponder Tracks"
+					icon: "create:track"
+					team_reward: false
+					auto: "disabled"
+					command: "/c ponder create:track"
+					player_command: true
+				}
+			]
+		}
+		{
+			title: "Applied Grindings"
+			icon: "kubejs:impure_sky_chunks"
+			x: -3.0d
+			y: -1.5d
+			subtitle: "Contrapition 14-1"
+			description: ["Skystone is hard, the first step is breaking it down into Groundstone (pun intended)."]
+			dependencies: ["0F59BB288184ECF5"]
+			id: "10AB342600434E1F"
+			tasks: [
+				{
+					id: "3BFE2D25975EBF27"
+					type: "item"
+					item: "kubejs:impure_sky_chunks"
+					consume_items: false
+				}
+				{
+					id: "78BFCCE400870B9F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Alien Rock Cleaning"
+			icon: "kubejs:clean_sky_chunks"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Contraption 14-2"
+			description: ["Too much time made extracted skystone dirty, it needs cleaning."]
+			dependencies: [
+				"10AB342600434E1F"
+				"014C3F1F43569945"
+			]
+			id: "71F74B9556AEC85F"
+			tasks: [
+				{
+					id: "30816348E83C2484"
+					type: "item"
+					item: "kubejs:clean_sky_chunks"
+					consume_items: false
+				}
+				{
+					id: "022B5817DB551FAA"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Chef's Cut"
+			icon: "kubejs:cut_sky_chunks"
+			x: -3.5d
+			y: 1.5d
+			subtitle: "Contraption 14-3"
+			description: ["Now it needs a bit of slicing."]
+			dependencies: [
+				"71F74B9556AEC85F"
+				"367F49B4D4181432"
+			]
+			id: "54324AF50D307D62"
+			tasks: [
+				{
+					id: "6A0C73C120656CED"
+					type: "item"
+					item: "kubejs:cut_sky_chunks"
+					consume_items: false
+				}
+				{
+					id: "3F2FE363A6730390"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Skystoningly Pure"
+			icon: "kubejs:pure_sky_chunks"
+			x: -2.0d
+			y: 2.5d
+			subtitle: "Contraption 14-4"
+			description: ["The abrasive approach of diorite dust finally turns the skystone into lab-grade skystone (fancy name for super-duper pure)"]
+			dependencies: [
+				"54324AF50D307D62"
+				"1093C4FC660FDECA"
+			]
+			id: "05995BA72CAA9BE8"
+			tasks: [
+				{
+					id: "298BD151D91EB66F"
+					type: "item"
+					item: "kubejs:pure_sky_chunks"
+					consume_items: false
+				}
+				{
+					id: "48DB6FC232C201D5"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Rose Expansion"
+			icon: "kubejs:small_rose_crystal"
+			x: 0.5d
+			y: 7.5d
+			subtitle: "Contraption 19-3"
+			description: ["Now spout some more..."]
+			dependencies: ["61F47F24DE8AB1D4"]
+			id: "4309AFCC879D1385"
+			tasks: [
+				{
+					id: "56E87576A2324CA7"
+					type: "item"
+					item: "kubejs:small_rose_crystal"
+					consume_items: false
+				}
+				{
+					id: "558A25C046E7228F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Rose Growth"
+			icon: "kubejs:tiny_rose_crystal"
+			x: -0.5d
+			y: 6.5d
+			subtitle: "Contraption 19-2"
+			description: ["Firstly spout some water onto the crystal..."]
+			dependencies: ["5DEBDBB0F76A8E39"]
+			id: "61F47F24DE8AB1D4"
+			tasks: [
+				{
+					id: "0D02205D1124CFC6"
+					type: "item"
+					item: "kubejs:tiny_rose_crystal"
+					consume_items: false
+				}
+				{
+					id: "12168AF666D98918"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Rose Seeding"
+			icon: "kubejs:rose_quartz_seed"
+			x: 0.5d
+			y: 5.5d
+			subtitle: "Contraption 19-1"
+			description: ["Compact the desestabilized redstone to create this little seed, that'll become a large red crystal"]
+			dependencies: ["7E0FF9A2B11B63B8"]
+			id: "5DEBDBB0F76A8E39"
+			tasks: [
+				{
+					id: "75FDB26E47D98F31"
+					type: "item"
+					item: "kubejs:rose_quartz_seed"
+					consume_items: false
+				}
+				{
+					id: "31DDDED7C3A18520"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "thermal:redstone_bucket"
+			x: -1.0d
+			y: 5.0d
+			subtitle: "Contraption 18-3"
+			description: ["Shocking! Discharging the crystal into the skystone makes redstone! How original."]
+			dependencies: [
+				"3B3FDC19F77942BC"
+				"19FA7B25A798AB46"
+			]
+			id: "7E0FF9A2B11B63B8"
+			tasks: [
+				{
+					id: "1272C6BAEA078F7F"
+					type: "item"
+					item: "thermal:redstone_bucket"
+					consume_items: false
+				}
+				{
+					id: "68870CF284A89954"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "tconstruct:molten_obsidian_bucket"
+			x: -2.5d
+			y: 4.5d
+			subtitle: "Contraption 18-1"
+			description: ["This black liquid now needs a discharge from a certus quartz."]
+			dependencies: ["4381D03BD83785B4"]
+			id: "3B3FDC19F77942BC"
+			tasks: [
+				{
+					id: "4DA78092B00301A6"
+					type: "item"
+					item: "tconstruct:molten_obsidian_bucket"
+					consume_items: false
+				}
+				{
+					id: "4A04DF0B104C0CAB"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Re-Charger"
+			icon: "ae2:charged_certus_quartz_crystal"
+			x: -2.5d
+			y: 6.0d
+			subtitle: "Contraption 18-2"
+			description: ["With a charger cycle and a dynamo a crystal can be used in the next transmutation for an undefined amount of time."]
+			hide_dependency_lines: true
+			dependencies: ["3B3FDC19F77942BC"]
+			id: "19FA7B25A798AB46"
+			tasks: [
+				{
+					id: "1843815C6CF81AF0"
+					type: "item"
+					item: "ae2:charged_certus_quartz_crystal"
+					consume_items: false
+				}
+				{
+					id: "3685DEAE7018900F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Applied Grindings 2"
+			icon: "ae2:sky_dust"
+			x: -3.5d
+			y: 3.5d
+			subtitle: "Contraption 14-5"
+			description: ["Best grain size, pure material, perfect for our mixing."]
+			dependencies: ["05995BA72CAA9BE8"]
+			id: "4381D03BD83785B4"
+			tasks: [
+				{
+					id: "379586EC34A234A0"
+					type: "item"
+					item: "ae2:sky_dust"
+					consume_items: false
+				}
+				{
+					id: "7E670A813CC2C6DD"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Useless Piece of Garbage"
+			x: -4.0d
+			y: 0.0d
+			description: ["Dirty water, that's it, you just need to dump it somewhere, in a dungeon, friend's house..."]
+			dependencies: ["71F74B9556AEC85F"]
+			id: "371B1357CC5112BB"
+			tasks: [{
+				id: "22B2536F2F45606D"
+				type: "item"
+				item: "kubejs:dirt_water_bucket"
+				consume_items: false
+			}]
+		}
+		{
+			title: "Slicin' it"
+			icon: "sliceanddice:slicer"
+			x: -5.0d
+			y: 1.5d
+			description: [
+				"This incredible new invention prevents you from using deployers in the kitchen, this mechanical marvel can cut anything a deployer can *."
+				""
+				"* Warranty expires if rotated above 30 RPM"
+			]
+			hide_dependency_lines: true
+			dependencies: ["71F74B9556AEC85F"]
+			id: "367F49B4D4181432"
+			tasks: [{
+				id: "5F4A4B669C1A115D"
+				type: "checkmark"
+				title: "Aknowleged"
+			}]
+			rewards: [{
+				id: "7026010719CEE500"
+				type: "command"
+				title: "Ponder Slicer"
+				icon: "sliceanddice:slicer"
+				team_reward: false
+				command: "/c ponder sliceanddice:slicer"
+				player_command: true
+			}]
+		}
+		{
+			title: "Ultimate Cleaning Liquid"
+			icon: "kubejs:ash_water_bucket"
+			x: -0.5d
+			y: 1.0d
+			subtitle: "Contraption 13-5"
+			description: ["This ash mix can clean anything, even alien rocks."]
+			dependencies: [
+				"7C47F1567965A5DE"
+				"2AE2C1F34DA2FA35"
+			]
+			id: "014C3F1F43569945"
+			tasks: [
+				{
+					id: "1A88FC6B322E31A3"
+					type: "item"
+					item: "kubejs:ash_water_bucket"
+					consume_items: false
+				}
+				{
+					id: "1D9E1A9EB47E1D7A"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Igneous Mineral Extraction"
+			icon: "kubejs:diorite_dust"
+			x: -0.5d
+			y: 3.0d
+			subtitle: "Contraption 15-2"
+			description: [
+				""
+				"Mill the diorite and make this rice-like thing to clean some rocks."
+			]
+			hide_dependency_lines: false
+			dependencies: ["57D690457B087CAB"]
+			id: "1093C4FC660FDECA"
+			tasks: [
+				{
+					id: "243E2976C5500756"
+					type: "item"
+					item: "kubejs:diorite_dust"
+					consume_items: false
+				}
+				{
+					id: "6B80756AABDD37BC"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Automatic Bonfiring"
+			icon: "supplementaries:ash"
+			x: 0.0d
+			y: -0.5d
+			subtitle: "Contraption 13-3"
+			description: ["The charcoal was burnt and all that is left is ashes."]
+			dependencies: ["7D78CAF55BBE964C"]
+			id: "7C47F1567965A5DE"
+			tasks: [
+				{
+					id: "143B29DF114B9A97"
+					type: "item"
+					item: "supplementaries:ash"
+					consume_items: false
+				}
+				{
+					id: "577CEE16D64E8F11"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Water Source"
+			icon: "minecraft:water_bucket"
+			x: 1.5d
+			y: 0.5d
+			subtitle: "Contraption 13-4"
+			description: ["Because even rocks need water (to be cleaned of cou(a)rse)"]
+			hide_dependency_lines: true
+			dependencies: ["727B43FD95C4A512"]
+			id: "2AE2C1F34DA2FA35"
+			tasks: [
+				{
+					id: "55FFD4B34A97DAD6"
+					type: "item"
+					item: "minecraft:water_bucket"
+					consume_items: false
+					match_nbt: false
+				}
+				{
+					id: "24A052954CC4304E"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Automatic Reforest"
+			icon: "minecraft:oak_log"
+			x: 0.5d
+			y: -2.0d
+			subtitle: "Contraption 13-1"
+			hide_dependency_lines: true
+			dependencies: ["727B43FD95C4A512"]
+			id: "098F484B294E2A1C"
+			tasks: [
+				{
+					id: "5460A60101C7AED8"
+					type: "item"
+					icon: "minecraft:oak_log"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "73C98B54F65DDDBC"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Pyro Stuff"
+			icon: "minecraft:charcoal"
+			x: 1.5d
+			y: -1.0d
+			subtitle: "Contraption 13-2"
+			description: ["Do the process known as pyrolisis, aka burn the wood so that it burns better."]
+			dependencies: ["098F484B294E2A1C"]
+			id: "7D78CAF55BBE964C"
+			tasks: [
+				{
+					id: "56F81F8CFF1CBAAA"
+					type: "item"
+					item: "minecraft:charcoal"
+					consume_items: false
+				}
+				{
+					id: "1E1203CB25F1E6EC"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Last Family Member"
+			x: 1.0d
+			y: 2.5d
+			subtitle: "Contraption 15-1"
+			description: ["Diorite got many tiny sharp crystals you can use to clean your rocks, reusing the last chapter's generator is not a bad idea."]
+			hide_dependency_lines: true
+			dependencies: ["727B43FD95C4A512"]
+			id: "57D690457B087CAB"
+			tasks: [{
+				id: "635C02FBC8043A75"
+				type: "item"
+				item: "minecraft:diorite"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 9.0d
+			description: ["You can also insert your shiny diamonds into the tube casing, it'll have some interesting uses on the next chapters."]
+			dependencies: ["7A4CA5CF1CEFE8CA"]
+			id: "5AC13553B9B3504A"
+			tasks: [{
+				id: "1AC2BA1A3DE4203C"
+				type: "item"
+				item: "kubejs:diamond_tube"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 8.5d
+			description: ["You can also spout some gold into the tube casing for the yellow variant of the tube."]
+			dependencies: ["7A4CA5CF1CEFE8CA"]
+			id: "6B5785E94F8F0EE1"
+			tasks: [{
+				id: "75CD14717E48EE4D"
+				type: "item"
+				item: "kubejs:golden_tube"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 7.0d
+			subtitle: "Contraption 20-1"
+			description: ["Combine the molten iron with the glass to create this nice tube casing."]
+			dependencies: [
+				"16E0349C1C9B14F1"
+				"2167272204B6627B"
+			]
+			id: "7A4CA5CF1CEFE8CA"
+			tasks: [{
+				id: "28AF30FA008401E5"
+				type: "item"
+				item: "kubejs:empty_tube"
+			}]
+		}
+		{
+			title: "Vitrified"
+			x: 5.5d
+			y: 5.5d
+			subtitle: "Contraption 17"
+			description: ["Just smelt the sand with a fan or whatever to turn it into it's vitreous form."]
+			dependencies: ["3549968EE4EE3459"]
+			id: "16E0349C1C9B14F1"
+			tasks: [{
+				id: "3CA754AF8DACE615"
+				type: "item"
+				item: "minecraft:glass"
+			}]
+		}
+		{
+			title: "Temporary Sand"
+			x: 6.0d
+			y: 4.0d
+			description: ["Here's the thing: you need brass machinery for fully automatic sand, but you need sand for brass machinery, so... you'll have to gather some sand yourself or grab some water strainers for now."]
+			hide_dependency_lines: true
+			dependencies: ["727B43FD95C4A512"]
+			id: "3549968EE4EE3459"
+			tasks: [{
+				id: "1B95F129E9BF84EF"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			icon: "minecraft:magma_cream"
+			x: 0.0d
+			y: 14.5d
+			subtitle: "Contraption 23"
+			description: ["A bit of lava into blood and it turns into magma cream."]
+			dependencies: [
+				"1D9D65FBD06DD481"
+				"239C64263B91350D"
+			]
+			id: "7360A4DC001E1F2E"
+			tasks: [
+				{
+					id: "772DBECF26AF749D"
+					type: "item"
+					item: "minecraft:magma_cream"
+				}
+				{
+					id: "0C33B81B4D347DA3"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Brownies"
+			icon: "tconstruct:scorched_brick"
+			x: -2.0d
+			y: 15.0d
+			subtitle: "Contraption 26"
+			description: ["Mix the ingredients together and then bake the ca.. grout and your c... bricks are ready to go."]
+			dependencies: [
+				"13B31D26E76C218E"
+				"463EABB3B154A263"
+				"7360A4DC001E1F2E"
+			]
+			id: "0000E832CD021088"
+			tasks: [
+				{
+					id: "07F984E474F79DC4"
+					type: "item"
+					item: "tconstruct:scorched_brick"
+				}
+				{
+					id: "71ACC29A4B8D0554"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:gravel"
+			x: 0.0d
+			y: 15.5d
+			subtitle: "Contraption 24"
+			description: ["Don't forget the gravel, it can give a nice texture to the cak... grout."]
+			dependencies: ["21753CBB528EAADF"]
+			hide: true
+			id: "463EABB3B154A263"
+			tasks: [
+				{
+					id: "028BD0B94DEF4288"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+				{
+					id: "07E2BE7D64D2AA8F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:soul_sand"
+			x: -1.5d
+			y: 14.0d
+			subtitle: "Contraption 22"
+			description: [
+				"The soul part is very important for the cak... I mean grout."
+				""
+				"Curse sand with a soul fire in front of a fan to add the soul part of soul sand."
+				""
+				"Remember with brass machinery you got infinite sand through crushing wheels."
+			]
+			dependencies: ["21753CBB528EAADF"]
+			hide: true
+			id: "13B31D26E76C218E"
+			tasks: [
+				{
+					id: "5FF7362FBE270E19"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+				{
+					id: "1804115DF4F0BBEB"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,124 @@
+{
+	id: "35F794DA429832B5"
+	group: "6F42926B3F0C534A"
+	order_index: 3
+	filename: "stage_1b"
+	title: "&f1b&r Sap Gaming"
+	icon: "kubejs:pressure_mechanism"
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -1.0d
+		y: -6.0d
+		width: 21.0d
+		height: 4.0d
+		rotation: 0.0d
+		image: "kubejs:textures/images/chapter1.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -1.0d
+			y: -2.5d
+			subtitle: "Contraption 10-1"
+			dependencies: ["7D872F933F45809B"]
+			hide: true
+			id: "21F77703B8346D68"
+			tasks: [{
+				id: "7D4EE770A72DB656"
+				type: "item"
+				title: "Any Wooden Log"
+				icon: "minecraft:oak_log"
+				disable_toast: true
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				consume_items: false
+			}]
+		}
+		{
+			title: "Sap Gaming"
+			x: -1.0d
+			y: -1.0d
+			subtitle: "Contraption 10-2"
+			description: ["Plug a sapper onto a tree to start extracting it's precious fluid."]
+			dependencies: ["21F77703B8346D68"]
+			id: "015B5B986DF08EAC"
+			tasks: [{
+				id: "55CA8CF04FF04651"
+				type: "item"
+				item: "gearbox:sapper"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			subtitle: "Contraption 10-3"
+			description: ["The newly extracted resin can be processed."]
+			dependencies: ["015B5B986DF08EAC"]
+			id: "7EEC92FEA597272F"
+			tasks: [{
+				id: "5803A2282F29333F"
+				type: "item"
+				item: "thermal:resin_bucket"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Contraption 10-4"
+			description: ["Insert the resin in the compressor and create rubber."]
+			dependencies: ["7EEC92FEA597272F"]
+			id: "5322ABEEF5DC2312"
+			tasks: [{
+				id: "00F73BF07E955FDA"
+				type: "item"
+				item: "gearbox:compressor"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			subtitle: "Contraption 10-5"
+			description: ["Rubber is now ready to be used."]
+			dependencies: ["5322ABEEF5DC2312"]
+			id: "44F131FCAEC5E551"
+			tasks: [{
+				id: "5B4F5B75C32DC3C2"
+				type: "item"
+				item: "thermal:cured_rubber"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			dependencies: ["44F131FCAEC5E551"]
+			id: "7299A14015C4B195"
+			tasks: [{
+				id: "563B515FAA417CCC"
+				type: "item"
+				item: "kubejs:pressure_mechanism"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.5d
+			dependencies: ["7299A14015C4B195"]
+			size: 2.0d
+			id: "4DA3164A6CED529B"
+			tasks: [{
+				id: "58624400EBC9FFC4"
+				type: "item"
+				item: "kubejs:copper_machine"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

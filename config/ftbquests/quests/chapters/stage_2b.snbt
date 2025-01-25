@@ -1,0 +1,476 @@
+{
+	id: "05C7C7CD29EBFAB9"
+	group: "6F42926B3F0C534A"
+	order_index: 6
+	filename: "stage_2b"
+	title: "&f2b&r Sacchariferous Industry"
+	icon: "kubejs:candy_mechanism"
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	images: [{
+		x: 0.5d
+		y: -5.5d
+		width: 18.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "kubejs:textures/images/chapter2.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Chapter 2B Complete!"
+			x: 3.75d
+			y: 2.25d
+			shape: "diamond"
+			subtitle: "Contraption 46"
+			description: ["Unbelievable! The finished recipe is incredibly packed with energy, and will explode in your mouth (literally)."]
+			dependencies: [
+				"22517F1E5F84FD8E"
+				"78C29DB493B1B701"
+				"106CC397E5472B46"
+				"10690D8E8963D4CB"
+			]
+			size: 1.5d
+			id: "7A80B449DD525F7D"
+			tasks: [{
+				id: "49AA585621C21FBA"
+				type: "item"
+				item: "kubejs:candy_mechanism"
+			}]
+			rewards: [
+				{
+					id: "2DF8020BA96C5B9A"
+					type: "item"
+					item: {
+						id: "create_confectionery:full_chocolate_bar"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "73FF5388752814EA"
+					type: "item"
+					item: "createaddition:chocolate_cake"
+				}
+			]
+		}
+		{
+			title: "Pink Crystal Chocolate"
+			icon: "create_confectionery:ruby_chocolate_bucket"
+			x: 2.0d
+			y: 2.0d
+			subtitle: "Contraption 45-1"
+			description: ["In this variant of chocolate, a secret ingredient is added in the basin to add a bit of that crunchiness, you know..."]
+			dependencies: [
+				"5A48ACD1E1A2D736"
+				"191305FFD7E6A12D"
+				"3BA6DC46EA464C58"
+				"076594A762B3FC88"
+			]
+			id: "78C29DB493B1B701"
+			tasks: [
+				{
+					id: "5C0E497EDC5FAFF8"
+					type: "item"
+					item: "create_confectionery:ruby_chocolate_bucket"
+				}
+				{
+					id: "625D065139849C70"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Just Chocolate"
+			icon: "create:chocolate_bucket"
+			x: 2.0d
+			y: 3.0d
+			subtitle: "Contraption 45-2"
+			description: ["Mix milk, beans and sugar to Create the old plain chocolate we all know."]
+			dependencies: [
+				"5A48ACD1E1A2D736"
+				"191305FFD7E6A12D"
+				"3BA6DC46EA464C58"
+			]
+			id: "106CC397E5472B46"
+			tasks: [
+				{
+					id: "53FD389A38A66FC4"
+					type: "item"
+					item: "create:chocolate_bucket"
+				}
+				{
+					id: "6D9261354CB0E481"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Helth Chocolate"
+			icon: "create_confectionery:black_chocolate_bucket"
+			x: 2.0d
+			y: 4.0d
+			subtitle: "Contraption 45-3"
+			description: ["Like chocolate, but apparently helthier."]
+			dependencies: [
+				"191305FFD7E6A12D"
+				"098744BFA66730E4"
+				"5A48ACD1E1A2D736"
+				"3BA6DC46EA464C58"
+			]
+			id: "22517F1E5F84FD8E"
+			tasks: [
+				{
+					id: "2E2C966D37A14D2D"
+					type: "item"
+					item: "create_confectionery:black_chocolate_bucket"
+				}
+				{
+					id: "43BBC388993CD4B5"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Milked"
+			icon: "minecraft:milk_bucket"
+			x: -1.0d
+			y: 3.0d
+			subtitle: "Contraption 44"
+			description: ["It's not hard at all to automate milk, just put a deployer, a bucket, and a way to empty and put it back."]
+			dependencies: ["141CF17F211E6268"]
+			hide: true
+			id: "5A48ACD1E1A2D736"
+			tasks: [
+				{
+					id: "05FAD6AB385D3F34"
+					type: "item"
+					item: "minecraft:milk_bucket"
+				}
+				{
+					id: "5A16000B1B1BBE2B"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Honey"
+			icon: "create:honey_bucket"
+			x: -1.5d
+			y: -0.5d
+			subtitle: "Contraption 42"
+			description: [
+				"Get some flowers, a nest or beehive, and don't forget the bees."
+				""
+				"Did you know you can pump honey directly out of the nest/beehive?"
+			]
+			dependencies: ["141CF17F211E6268"]
+			hide: true
+			id: "2742F5B931B4492F"
+			tasks: [
+				{
+					id: "04B701999E480DD3"
+					type: "item"
+					item: "create:honey_bucket"
+				}
+				{
+					id: "1FB00AA66548299C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Suspicious Flour"
+			icon: "create:cinder_flour"
+			x: 2.0d
+			y: -1.5d
+			subtitle: "Contraption 41-2"
+			description: ["Crush the netherrack for some... flour?"]
+			dependencies: ["5BA6722C2A672672"]
+			id: "6A0D07E7BCFDC84A"
+			tasks: [
+				{
+					id: "44197E499B33FE1C"
+					type: "item"
+					item: "create:cinder_flour"
+				}
+				{
+					id: "025F0365D53A9847"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Dough Mix"
+			icon: "create_confectionery:gingerdough"
+			x: 0.5d
+			y: 0.0d
+			subtitle: "Contraption 44-1"
+			description: ["Mix honey, sugar, flour, and crushed netherrack? Just follow the recipe you're safe."]
+			dependencies: [
+				"2742F5B931B4492F"
+				"452AC768DFA2D931"
+				"6A0D07E7BCFDC84A"
+				"3BA6DC46EA464C58"
+			]
+			id: "3B7A8138E2826809"
+			tasks: [
+				{
+					id: "2934AFF8052A21F1"
+					type: "item"
+					item: "create_confectionery:gingerdough"
+				}
+				{
+					id: "65AB59FC5A0FB646"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Regular Flour"
+			icon: "create:wheat_flour"
+			x: 0.0d
+			y: -1.5d
+			subtitle: "Contraption 40-2"
+			description: ["Mill down the wheat for some flour, dugh."]
+			dependencies: ["4ED21477B5FD4FE7"]
+			id: "452AC768DFA2D931"
+			tasks: [
+				{
+					id: "32699EDEDBD09635"
+					type: "item"
+					item: "create:wheat_flour"
+				}
+				{
+					id: "286BADB87ADB8F1C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Saccharose"
+			icon: "minecraft:sugar"
+			x: -1.0d
+			y: 1.5d
+			subtitle: "Contraption 43-2"
+			description: ["It's the heart of the candies. Also known as saccharose (C₁₂H₂₂O₁₁)"]
+			dependencies: ["53C5D183F9F513D8"]
+			id: "3BA6DC46EA464C58"
+			tasks: [
+				{
+					id: "08A0B25266B5AA8E"
+					type: "item"
+					item: "minecraft:sugar"
+				}
+				{
+					id: "427EF8926CAFA096"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:cocoa_beans"
+			x: -1.0d
+			y: 4.5d
+			subtitle: "Contraption 45-1"
+			description: ["You also need a farm for these Beans."]
+			dependencies: ["141CF17F211E6268"]
+			hide: true
+			id: "191305FFD7E6A12D"
+			tasks: [
+				{
+					id: "3E31669E12DD6348"
+					type: "item"
+					item: "minecraft:cocoa_beans"
+				}
+				{
+					id: "27E65842F3FC296C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "create_confectionery:cocoa_butter"
+			x: 1.0d
+			y: 5.0d
+			subtitle: "Contraption 45-3"
+			description: ["Crush the beans for this kind of butter."]
+			dependencies: ["63407E78ED94DCF9"]
+			id: "098744BFA66730E4"
+			tasks: [
+				{
+					id: "6D572CA1B46D395B"
+					type: "item"
+					item: "create_confectionery:cocoa_butter"
+				}
+				{
+					id: "30609735BDA37412"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "create_confectionery:crushed_cocoa"
+			x: -0.5d
+			y: 5.5d
+			subtitle: "Contraption 45-2"
+			description: ["Press the beans."]
+			dependencies: ["191305FFD7E6A12D"]
+			id: "63407E78ED94DCF9"
+			tasks: [
+				{
+					id: "337A8B9842F33D48"
+					type: "item"
+					item: "create_confectionery:crushed_cocoa"
+				}
+				{
+					id: "37BB7D202E712503"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Cane, of Sugar"
+			icon: "minecraft:sugar_cane"
+			x: -2.5d
+			y: 1.5d
+			subtitle: "Contraption 43-1"
+			description: ["No, sugar cane does not grow faster on sand, it's your brain tricking you."]
+			dependencies: ["141CF17F211E6268"]
+			hide: true
+			id: "53C5D183F9F513D8"
+			tasks: [
+				{
+					id: "3CDBB7467BF0C8F7"
+					type: "item"
+					item: "minecraft:sugar_cane"
+				}
+				{
+					id: "7F400B45865F3EA3"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Nether Rack"
+			icon: "minecraft:netherrack"
+			x: 1.0d
+			y: -3.0d
+			subtitle: "Contraption 41-1"
+			description: ["If you really want this 100% automated, then you mix some of the flour with lava and cobblestone back into netherrack, it's homeopathy, but actually works!"]
+			dependencies: ["141CF17F211E6268"]
+			hide: true
+			id: "5BA6722C2A672672"
+			tasks: [
+				{
+					id: "450B27FCD9AED84D"
+					type: "item"
+					item: "minecraft:netherrack"
+				}
+				{
+					id: "74D2C321B2176675"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Wheatley"
+			icon: "minecraft:wheat"
+			x: -1.5d
+			y: -2.5d
+			subtitle: "Contraption 40-1"
+			description: ["There's no secret to this, you'll need harvesters and a farm."]
+			dependencies: ["141CF17F211E6268"]
+			hide: true
+			id: "4ED21477B5FD4FE7"
+			tasks: [
+				{
+					id: "3914119E40696F13"
+					type: "item"
+					item: "minecraft:wheat"
+				}
+				{
+					id: "4FFD688308B097FB"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Crunchy Rock"
+			icon: "create:polished_rose_quartz"
+			x: 0.5d
+			y: 1.0d
+			description: ["Shh! The secret ingredient is pin... rose quartz."]
+			dependencies: ["141CF17F211E6268"]
+			hide: true
+			id: "076594A762B3FC88"
+			tasks: [
+				{
+					id: "44C51412F7C1BF2C"
+					type: "item"
+					item: "create:polished_rose_quartz"
+				}
+				{
+					id: "5E288E6DFCC2CEA4"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Baking Bad"
+			icon: "create_confectionery:gingerbread"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Contraption 44-2"
+			description: ["Cook the m... dough into this nice bread."]
+			dependencies: ["3B7A8138E2826809"]
+			id: "10690D8E8963D4CB"
+			tasks: [
+				{
+					id: "60D0E74CDC75888B"
+					type: "item"
+					item: "create_confectionery:gingerbread"
+				}
+				{
+					id: "66A27366098C82A4"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 6.5d
+			description: ["This powder does not go in the recipe, but you can use it for some nice hot chocolate."]
+			dependencies: ["63407E78ED94DCF9"]
+			id: "4EBA20DD0311AB5E"
+			tasks: [{
+				id: "08F148DC2A9CC12E"
+				type: "item"
+				item: "create_confectionery:cocoa_powder"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

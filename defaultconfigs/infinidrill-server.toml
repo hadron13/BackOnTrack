@@ -1,0 +1,19 @@
+#If set to true, only naturally generated ores will count towards the threshold
+natural_ore_only = true
+#When the number of ores in a 5x5 chunk goes above this number, the vein is infinite
+#Range: 0 ~ 1000000
+infinite_ore_threshold = 2000
+#The ores to be ignored by the infinite drill function
+blacklisted_ores = []
+#This multiplier is added to the breaking speed of a block when infini-drilling
+#Range: 0.01 ~ 10.0
+speed_multiplier = 0.5
+#This multiplier is added to the stress requirement of the drill when infini-drilling
+#Range: 0.01 ~ 1024.0
+stress_multiplier = 4.0
+#a list of tags for ores that should be considered equivalent to each other
+equivalent_ore_tags = ["forge:ores/iron", "forge:ores/coal", "forge:ores/copper", "forge:ores/diamond", "forge:ores/emerald", "forge:ores/gold", "forge:ores/lapis", "forge:ores/netherite_scrap", "forge:ores/quartz", "forge:ores/redstone"]
+#the radius to scan for ores, in chunks.  Radius 2 results in a 5x5 chunk area
+#Range: 0 ~ 7
+scan_radius = 2
+

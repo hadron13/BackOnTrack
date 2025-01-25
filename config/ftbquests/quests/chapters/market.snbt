@@ -1,0 +1,1622 @@
+{
+	id: "44F68408CAD025B8"
+	group: ""
+	order_index: 2
+	filename: "market"
+	title: "&a Gadget Shop"
+	icon: {
+		id: "create:potato_cannon"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 5.0d
+			y: -4.5d
+			width: 12.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "kubejs:textures/gui/shelf.png"
+			hover: ["Relics"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.0d
+			y: -0.5d
+			width: 12.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "kubejs:textures/gui/shelf.png"
+			hover: ["Random Things"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.0d
+			y: -2.5d
+			width: 12.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "kubejs:textures/gui/shelf.png"
+			hover: ["Funky Kits"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			width: 12.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "kubejs:textures/gui/shelf.png"
+			hover: ["Early Helpers"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			width: 12.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "kubejs:textures/gui/shelf.png"
+			hover: ["Extra Kits"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.0d
+			y: -8.5d
+			width: 10.0d
+			height: 3.5d
+			rotation: 0.0d
+			image: "kubejs:textures/images/shop.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "Sawlty"
+			icon: {
+				id: "kubejs:diamond_saw"
+				Count: 1b
+				tag: {
+					HideFlags: 1
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 10s
+					}]
+					Unbreakable: 1
+					Damage: 0
+					display: {
+						Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
+					}
+				}
+			}
+			x: -4.5d
+			y: -2.0d
+			shape: "diamond"
+			subtitle: "3 Gold"
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Rotation Mechanisms&r."]
+			hide_dependency_lines: true
+			dependencies: ["64F3352725385210"]
+			id: "4F953BACF4D1C151"
+			tasks: [{
+				id: "4C77B71D0EC3B2EA"
+				type: "item"
+				item: {
+					id: "kubejs:diamond_saw"
+					Count: 1b
+					tag: {
+						HideFlags: 1
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 10s
+						}]
+						Unbreakable: 1
+						Damage: 0
+						display: {
+							Name: "{\"text\":\"Enchanted Diamond Saw\",\"color\":\"gold\",\"italic\":false}"
+						}
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "00C4E7D871FB6164"
+				type: "item"
+				item: "thermal:gold_coin"
+				count: 3
+			}]
+		}
+		{
+			title: "Never Screwed"
+			icon: {
+				id: "createindustry:screwdriver"
+				Count: 1b
+				tag: {
+					HideFlags: 1
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 10s
+					}]
+					Unbreakable: 1
+					Damage: 0
+					display: {
+						Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
+					}
+				}
+			}
+			x: -4.5d
+			y: -0.5d
+			shape: "diamond"
+			subtitle: "5 Gold"
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
+			dependencies: ["64F3352725385210"]
+			id: "72CACE8F0E4701B1"
+			tasks: [{
+				id: "1E25EB2883C9A960"
+				type: "item"
+				item: {
+					id: "createindustry:screwdriver"
+					Count: 1b
+					tag: {
+						HideFlags: 1
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 10s
+						}]
+						Unbreakable: 1
+						Damage: 0
+						display: {
+							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
+						}
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "00A1359CDDF4D8EE"
+				type: "item"
+				item: "thermal:gold_coin"
+				count: 5
+			}]
+		}
+		{
+			title: "Hot Irons In Your Area"
+			icon: {
+				id: "kubejs:soldering_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 3s
+					}]
+				}
+			}
+			x: -4.5d
+			y: 1.0d
+			shape: "diamond"
+			subtitle: "10 Gold"
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Power Mechanisms&r."]
+			dependencies: ["64F3352725385210"]
+			id: "43FC566E833BE834"
+			tasks: [{
+				id: "36CBD54BCB068EB1"
+				type: "item"
+				item: {
+					id: "kubejs:soldering_iron"
+					Count: 1b
+					tag: {
+						HideFlags: 1
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 10s
+						}]
+						Unbreakable: 1
+						Damage: 0
+						display: {
+							Name: "{\"text\":\"Enchanted Soldering Iron\",\"color\":\"gold\",\"italic\":false}"
+						}
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "41C6188433B22A2F"
+				type: "item"
+				item: "thermal:gold_coin"
+				count: 10
+			}]
+		}
+		{
+			title: "The Gadget Shop"
+			icon: {
+				id: "create:potato_cannon"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.0d
+			y: -0.5d
+			description: [
+				"&2The Gadget Shop&r provides you options to to throw your money at a variety of fun and useful items and gadgets."
+				""
+				"Have a look around. I'm sure you'll find something of use, or fun."
+			]
+			dependencies: ["64F3352725385210"]
+			size: 2.0d
+			id: "0F870BEA235D662D"
+			tasks: [{
+				id: "3929233A89B34A71"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Unlimited Creativity"
+			icon: {
+				id: "tconstruct:vein_hammer"
+				Count: 1b
+				tag: {
+					tic_stats: {
+						"tconstruct:attack_damage": 6.8875f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:durability": 4715.4f
+						"tconstruct:mining_speed": 2.1923997f
+						"tconstruct:attack_speed": 0.8925f
+					}
+					Damage: 0
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:durability": 5.0f
+						"tconstruct:attack_damage": 1.25f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:piercing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:ductile"
+							level: 4s
+						}
+					]
+					tic_materials: [
+						"tconstruct:steel"
+						"tconstruct:steel"
+						"tconstruct:steel"
+						"tconstruct:steel"
+					]
+					tic_persistent_data: {
+						upgrades: 2
+						abilities: 1
+					}
+				}
+			}
+			x: 2.5d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "10 Gold + Anvil"
+			description: ["Buy this legendary relic to upgrade your tools with an extra slot."]
+			dependencies: ["64F3352725385210"]
+			id: "2E6F7F5789855DDC"
+			tasks: [
+				{
+					id: "3D9E6F27DDFE8357"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 10b }
+					item: "thermal:gold_coin"
+					count: 10L
+					consume_items: true
+				}
+				{
+					id: "71BCB3EFAA787A43"
+					type: "item"
+					item: {
+						id: "tconstruct:tinkers_anvil"
+						Count: 1b
+						tag: {
+							texture: "alloyed:steel_block"
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "32295F46D6E22A4C"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+			}]
+		}
+		{
+			title: "Adopt a Duckie"
+			icon: "duckling:duck_egg"
+			x: 1.0d
+			y: -0.5d
+			shape: "diamond"
+			subtitle: "10 Silver + 1 Egg"
+			description: ["Adopt a cute little duck! May come with a second duck too."]
+			dependencies: ["64F3352725385210"]
+			id: "346A833FFAEC6050"
+			tasks: [
+				{
+					id: "1E5E9316D7D6A090"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 7b }
+					item: "thermal:silver_coin"
+					count: 7L
+					consume_items: true
+				}
+				{
+					id: "79D55DE5275C8686"
+					type: "item"
+					item: "minecraft:egg"
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "6FCE4AD906C430A2"
+				type: "item"
+				item: "duckling:duck_spawn_egg"
+				random_bonus: 1
+			}]
+		}
+		{
+			title: "Railway Pro Kit"
+			icon: "create:track"
+			x: 1.0d
+			y: -2.5d
+			shape: "diamond"
+			subtitle: "4 Gold"
+			description: ["Only for pro railworkers, comes with one kilometer of track and enough for a simple rail network."]
+			dependencies: ["64F3352725385210"]
+			id: "7093258BE7F2C010"
+			tasks: [{
+				id: "3FED8A9B0CEA6243"
+				type: "item"
+				icon: { id: "thermal:gold_coin", Count: 4b }
+				item: "thermal:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "5969989CC69CD149"
+					type: "item"
+					item: "create:track"
+					count: 1024
+				}
+				{
+					id: "6AD8F557B3CDE4A3"
+					type: "item"
+					item: "kubejs:train_machine"
+					count: 4
+				}
+				{
+					id: "07AAE5B5F076D6C7"
+					type: "item"
+					item: "create:railway_casing"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Unsanded Dessert"
+			icon: {
+				id: "create_confectionery:full_chocolate_bar"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 9.0d
+			y: -0.5d
+			shape: "diamond"
+			subtitle: "15 Silver"
+			description: ["Sweet treats for a small amount of uh, money..."]
+			dependencies: ["64F3352725385210"]
+			id: "49125BC18946F7C6"
+			tasks: [{
+				id: "51B38B4373785506"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 15b }
+				item: "thermal:silver_coin"
+				count: 15L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "00698CFE142590E4"
+					type: "item"
+					item: "create_confectionery:soothing_hot_chocolate"
+					count: 3
+				}
+				{
+					id: "37E94231E7BE913F"
+					type: "item"
+					item: "create_confectionery:chocolate_glazed_marshmallow"
+					count: 7
+				}
+				{
+					id: "5AB8B207E1832556"
+					type: "item"
+					item: {
+						id: "create_confectionery:full_ruby_chocolate_bar"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					count: 5
+				}
+			]
+		}
+		{
+			title: "Gardener's Delight"
+			icon: "minecraft:poppy"
+			x: 9.0d
+			y: 1.5d
+			shape: "diamond"
+			subtitle: "7 Silver + Knife"
+			dependencies: ["64F3352725385210"]
+			id: "6AF21B60869215D9"
+			tasks: [
+				{
+					id: "5830B690FADBFA10"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 7b }
+					item: "thermal:silver_coin"
+					count: 7L
+					consume_items: true
+				}
+				{
+					id: "585A4229DA201975"
+					type: "item"
+					item: {
+						id: "farmersdelight:iron_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "6D8C9718D35069AC"
+					type: "item"
+					item: "minecraft:poppy"
+					count: 5
+				}
+				{
+					id: "2F97EB78A9492BC3"
+					type: "item"
+					item: "minecraft:dandelion"
+					count: 5
+				}
+				{
+					id: "69B9EE932DEA28CD"
+					type: "item"
+					item: "minecraft:rose_bush"
+					count: 5
+				}
+				{
+					id: "02DA8CBB7FB8CEAA"
+					type: "item"
+					item: "forbidden_arcanus:yellow_orchid"
+					count: 5
+				}
+				{
+					id: "2199F2C676349F26"
+					type: "item"
+					item: "minecraft:blue_orchid"
+					count: 5
+				}
+				{
+					id: "2200D5CBF487CAE9"
+					type: "item"
+					item: "minecraft:azure_bluet"
+					count: 5
+				}
+				{
+					id: "36077010E8BB841E"
+					type: "item"
+					item: "minecraft:pink_tulip"
+					count: 5
+				}
+				{
+					id: "65D71FFFDB3314B9"
+					type: "item"
+					item: "minecraft:oxeye_daisy"
+					count: 5
+				}
+				{
+					id: "73AD186CB211DAA3"
+					type: "item"
+					item: "minecraft:cornflower"
+					count: 5
+				}
+			]
+		}
+		{
+			title: "Start-A-Forest"
+			icon: "minecraft:spruce_sapling"
+			x: 1.0d
+			y: 1.5d
+			shape: "diamond"
+			subtitle: "10 Silver + Axe"
+			dependencies: ["64F3352725385210"]
+			id: "294A24F286C7381F"
+			tasks: [
+				{
+					id: "6B898FCA45D600B4"
+					type: "item"
+					title: "Forest Seed"
+					icon: { id: "thermal:silver_coin", Count: 10b }
+					item: "thermal:silver_coin"
+					count: 10L
+					consume_items: true
+				}
+				{
+					id: "320477B9FF042779"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "6D92E8F01E4C3E3B"
+					type: "item"
+					item: "minecraft:spruce_sapling"
+				}
+				{
+					id: "46F22601E8046659"
+					type: "item"
+					item: "minecraft:birch_sapling"
+				}
+				{
+					id: "466D541125F5D697"
+					type: "item"
+					item: "minecraft:oak_sapling"
+				}
+				{
+					id: "38628F97C7567D3D"
+					type: "item"
+					item: "minecraft:jungle_sapling"
+				}
+				{
+					id: "26267C5B5DF05576"
+					type: "item"
+					item: "minecraft:acacia_sapling"
+				}
+				{
+					id: "04FB6E9E4D6131C0"
+					type: "item"
+					item: "minecraft:dark_oak_sapling"
+				}
+			]
+		}
+		{
+			title: "Quick Salmon"
+			icon: "farmersdelight:grilled_salmon"
+			x: 2.5d
+			y: 1.5d
+			shape: "diamond"
+			subtitle: "16 Silver"
+			description: ["It's... salmon, and also quick, for when the hunger rings the doorbell."]
+			dependencies: ["64F3352725385210"]
+			id: "00512C8698D4A983"
+			tasks: [{
+				id: "4E010320D8963F50"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 16b }
+				item: "thermal:silver_coin"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3D67A31FB5602939"
+				type: "item"
+				item: "farmersdelight:grilled_salmon"
+				count: 12
+			}]
+		}
+		{
+			title: "Destroy-a-Castle Starter Pack"
+			icon: "createbigcannons:solid_shot"
+			x: 7.5d
+			y: -2.5d
+			shape: "diamond"
+			subtitle: "25 Silver + 5 Iron"
+			description: ["So you want to destroy a castle's defences? This kit is just for you, comes with a basic assemble-and-play wrought iron cannon you can bring anywhere, comes with 5 shots."]
+			dependencies: ["64F3352725385210"]
+			id: "632AF8573A2BA49E"
+			tasks: [
+				{
+					id: "26C2476AB5D34DD4"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 25b }
+					item: "thermal:silver_coin"
+					count: 25L
+					consume_items: true
+				}
+				{
+					id: "4CB43354A5AD66B2"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 5L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "5FDA5CB6CE2732A7"
+					type: "item"
+					item: "createbigcannons:wrought_iron_cannon_chamber"
+					count: 2
+				}
+				{
+					id: "7D096ABF7EF098A9"
+					type: "item"
+					item: "createbigcannons:wrought_iron_cannon_end"
+				}
+				{
+					id: "31B0549BF63AED54"
+					type: "item"
+					item: "createbigcannons:solid_shot"
+					count: 5
+				}
+				{
+					id: "026F9E6F85106522"
+					type: "item"
+					item: "createbigcannons:powder_charge"
+					count: 5
+				}
+				{
+					id: "299B2F904FA95A27"
+					type: "item"
+					item: "createbigcannons:ram_rod"
+				}
+				{
+					id: "070CD2AF768B882D"
+					type: "item"
+					item: "createbigcannons:cannon_mount"
+				}
+			]
+		}
+		{
+			title: "Defend-a-Castle Starter Kit"
+			icon: {
+				id: "createbigcannons:flak_autocannon_round"
+				Count: 1b
+				tag: { }
+			}
+			x: 9.0d
+			y: -2.5d
+			shape: "diamond"
+			subtitle: "25 Silver"
+			description: [
+				"A siege around your castle? Meet the hard counter to the Destroy-a-Castle starter pack!"
+				""
+				"This little autocannon can shoot hundreds of shots per minute!"
+				""
+				"Comes with 64 shots, if you have a gunpowder factory this will not cost $40000 per second."
+			]
+			dependencies: ["64F3352725385210"]
+			id: "5006737438B42169"
+			tasks: [{
+				id: "1318EFFD6F502CA8"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 25b }
+				item: "thermal:silver_coin"
+				count: 25L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "279331C54C33EA85"
+					type: "item"
+					item: "createbigcannons:bronze_autocannon_breech"
+				}
+				{
+					id: "7EA5E7B0041F92AE"
+					type: "item"
+					item: "createbigcannons:bronze_autocannon_barrel"
+					count: 2
+				}
+				{
+					id: "49B7FF9F7A992FF4"
+					type: "item"
+					item: "createbigcannons:filled_autocannon_cartridge"
+					count: 64
+				}
+				{
+					id: "5D97892040AF946F"
+					type: "item"
+					item: {
+						id: "createbigcannons:flak_autocannon_round"
+						Count: 1b
+						tag: { }
+					}
+					count: 64
+				}
+				{
+					id: "1F0C0C2C5C253883"
+					type: "item"
+					item: "createbigcannons:impact_fuze"
+					count: 64
+				}
+				{
+					id: "7B3467CC3F97D4E8"
+					type: "item"
+					item: "createbigcannons:cannon_carriage"
+				}
+			]
+		}
+		{
+			title: "Self Defense Mechanism"
+			icon: {
+				id: "create:potato_cannon"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: -0.5d
+			shape: "diamond"
+			subtitle: "20 Silver"
+			description: ["This cute cannon may not be able to open a hole in a castle, however it can kill a dragon... And the munition is as cheap as it can get: the food you carry around with you."]
+			dependencies: ["64F3352725385210"]
+			id: "72A119B48FA97E82"
+			tasks: [{
+				id: "2C6EEE2E558B09B4"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 20b }
+				item: "thermal:silver_coin"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2EDFD63A88951313"
+				type: "item"
+				item: {
+					id: "create:potato_cannon"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Un-Cannon"
+			icon: "create:schematicannon"
+			x: 7.5d
+			y: 1.5d
+			shape: "diamond"
+			subtitle: "15 Silver"
+			description: [
+				"Is cannon? Check"
+				"Uses gunpowder? Check"
+				"Destroys? Wrong! This cannon is different, it builds things instead of taking them down. "
+				"Use a blueprint, a bit of gunpowder and an inventory on the side to build whatever you want"
+			]
+			dependencies: ["64F3352725385210"]
+			id: "5B24ABF49C5FC109"
+			tasks: [{
+				id: "279022175F31D295"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 15b }
+				item: "thermal:silver_coin"
+				count: 15L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "7584AC16BEB051BA"
+					type: "item"
+					item: "create:schematicannon"
+				}
+				{
+					id: "111199E4E7D8D0C1"
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 3
+					random_bonus: 2
+				}
+			]
+		}
+		{
+			title: "Hobby Circuit Kit"
+			icon: "supercircuitmaker:tiny_redstone"
+			x: 6.0d
+			y: -2.5d
+			shape: "diamond"
+			subtitle: "15 Silver"
+			description: ["Build all the circuits you can imagine in a single block! Comes with many components to play with right now."]
+			dependencies: ["64F3352725385210"]
+			id: "7A2A4BAA82EA5FBF"
+			tasks: [{
+				id: "0E1BBAC34C8B1556"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 15b }
+				item: "thermal:silver_coin"
+				count: 15L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "60451B6E3CE576B5"
+					type: "item"
+					item: "supercircuitmaker:circuit"
+					count: 5
+				}
+				{
+					id: "43C74317F0990F26"
+					type: "item"
+					item: "supercircuitmaker:tiny_redstone"
+					count: 96
+				}
+				{
+					id: "490EA596EF959DF9"
+					type: "item"
+					item: "supercircuitmaker:platform"
+					count: 64
+				}
+				{
+					id: "22C83DAA775AC7E9"
+					type: "item"
+					item: "supercircuitmaker:button"
+					count: 5
+				}
+				{
+					id: "706EF93E280DCE45"
+					type: "item"
+					item: "supercircuitmaker:lamp"
+					count: 5
+				}
+				{
+					id: "090946505F3F5DA2"
+					type: "item"
+					item: "supercircuitmaker:pulsar"
+					count: 3
+				}
+				{
+					id: "1FBFE4746BFD6CF9"
+					type: "item"
+					item: "supercircuitmaker:randomizer"
+					count: 3
+				}
+				{
+					id: "5AD15343E8A5E094"
+					type: "item"
+					item: "supercircuitmaker:delay"
+					count: 3
+				}
+				{
+					id: "743E6C4EC9855A3C"
+					type: "item"
+					item: "supercircuitmaker:note"
+					count: 3
+				}
+				{
+					id: "44B20E065E0D2BA4"
+					type: "item"
+					item: "supercircuitmaker:screwdriver"
+				}
+				{
+					id: "470C27D7FA134A3A"
+					type: "item"
+					item: "minecraft:redstone_torch"
+					count: 15
+				}
+			]
+		}
+		{
+			title: "External Offense Mechanism"
+			icon: {
+				id: "createindustry:quad_potato_cannon"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 7.5d
+			y: -0.5d
+			shape: "diamond"
+			subtitle: "60 Silver"
+			description: ["Deal powerful damage into your enemies with this huge quad cannon, for 3 times the price of it's smaller version it shoots 4 shots each time, dealing 4 times the damage of the small cannon."]
+			dependencies: ["64F3352725385210"]
+			id: "42DB66AD123A52A4"
+			tasks: [{
+				id: "41C661B115151EBD"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 60b }
+				item: "thermal:silver_coin"
+				count: 60L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1F3A2A8E1333B400"
+				type: "item"
+				item: {
+					id: "createindustry:quad_potato_cannon"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Unlimited Defense"
+			icon: {
+				id: "tconstruct:plate_chestplate"
+				Count: 1b
+				tag: {
+					tic_modifiers: [ ]
+					tic_broken: 0b
+					tic_stats: {
+						"tconstruct:attack_damage": 0.0f
+						"tconstruct:armor": 7.0f
+						"tconstruct:durability": 480.0f
+						"tconstruct:armor_toughness": 2.0f
+						"tconstruct:knockback_resistance": 0.1f
+					}
+					Damage: 0
+					tic_multipliers: {
+						"tconstruct:attack_damage": 0.4f
+					}
+					tic_persistent_data: {
+						upgrades: 1
+						abilities: 1
+						defense: 4
+					}
+				}
+			}
+			x: 4.0d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "12 Gold + Anvil"
+			description: ["Buy this legendary relic to buff your armor with an extra slot."]
+			dependencies: ["64F3352725385210"]
+			id: "647796D563859B83"
+			tasks: [
+				{
+					id: "4A16FF84063B65C0"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 12b }
+					item: "thermal:gold_coin"
+					count: 12L
+					consume_items: true
+				}
+				{
+					id: "16BFFAD2E81FC8F8"
+					type: "item"
+					item: {
+						id: "tconstruct:tinkers_anvil"
+						Count: 1b
+						tag: {
+							texture: "alloyed:steel_block"
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "499FCFD623E6B804"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "defense"
+					}
+				}
+			}]
+		}
+		{
+			title: "Endless Abilities"
+			icon: {
+				id: "tconstruct:travelers_helmet"
+				Count: 1b
+				tag: {
+					tic_modifiers: [ ]
+					tic_broken: 0b
+					tic_stats: {
+						"tconstruct:armor": 1.0f
+						"tconstruct:durability": 110.0f
+					}
+					Damage: 0
+					tic_persistent_data: {
+						upgrades: 3
+						abilities: 1
+						defense: 2
+					}
+				}
+			}
+			x: 5.5d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "7 Gold + Anvil"
+			description: ["Buy this legendary relic to add an extra ability slot to your tools and armour"]
+			dependencies: ["64F3352725385210"]
+			id: "080620BF0068805A"
+			tasks: [
+				{
+					id: "40B3670D4A62A1C6"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 7b }
+					item: "thermal:gold_coin"
+					count: 7L
+					consume_items: true
+				}
+				{
+					id: "511A3454BD701641"
+					type: "item"
+					item: {
+						id: "tconstruct:tinkers_anvil"
+						Count: 1b
+						tag: {
+							texture: "alloyed:steel_block"
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "145A53740A782B1E"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "abilities"
+					}
+				}
+			}]
+		}
+		{
+			title: "Cheap Tools"
+			icon: {
+				id: "minecraft:iron_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.0d
+			y: 3.5d
+			shape: "diamond"
+			subtitle: "3 Silver"
+			description: ["Tired of that boring early game grind? Buy out some basic tools to grind even more!"]
+			dependencies: ["64F3352725385210"]
+			id: "4AADA9D69242F6E8"
+			tasks: [{
+				id: "39788B1637508F6C"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 3b }
+				item: "thermal:silver_coin"
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "490DBD761CBF10ED"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7A6F69D7CDA37F1E"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "730CD3C4B15D4A60"
+					type: "item"
+					item: {
+						id: "minecraft:iron_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Cheap Armor"
+			icon: {
+				id: "minecraft:chainmail_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: 3.5d
+			shape: "diamond"
+			subtitle: "3 Silver"
+			description: ["Enduring enemies early on is difficult, this armor can protect you for some time until you get better gear, can be upgraded to steel aswell."]
+			dependencies: ["64F3352725385210"]
+			id: "719BE99EF09045A7"
+			tasks: [{
+				id: "35C9DE831EFAD2C9"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 3b }
+				item: "thermal:silver_coin"
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "4BEFCA98A1FB4E7B"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5E8A71DCB4267046"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6653DD9D941A95A2"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Quick Engineer"
+			icon: "kubejs:andesite_machine"
+			x: 7.5d
+			y: 3.5d
+			shape: "diamond"
+			subtitle: "6 Silver"
+			description: ["Ready basic machines to start working right now as the new engineer!"]
+			dependencies: ["64F3352725385210"]
+			id: "4CCC5B847D4CDBE4"
+			tasks: [{
+				id: "3B15C8552E12E253"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 6b }
+				item: "thermal:silver_coin"
+				count: 6L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "554EE2BC3C5373FE"
+					type: "item"
+					item: "kubejs:andesite_machine"
+					count: 3
+				}
+				{
+					id: "57E4D96F67838355"
+					type: "item"
+					item: "kubejs:copper_machine"
+					count: 2
+				}
+				{
+					id: "347313DE74537907"
+					type: "item"
+					item: "create:clipboard"
+				}
+			]
+		}
+		{
+			title: "Andesite Liquidation"
+			icon: "create:andesite_alloy"
+			x: 4.5d
+			y: 3.5d
+			shape: "diamond"
+			subtitle: "15 Silver"
+			description: ["I found them on a road."]
+			dependencies: ["64F3352725385210"]
+			id: "2A0D72DEC444804D"
+			tasks: [{
+				id: "216952595652D6B0"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 15b }
+				item: "thermal:silver_coin"
+				count: 15L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7734402B971A60D2"
+				type: "item"
+				item: "create:andesite_alloy_block"
+				count: 13
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Quick Workshop"
+			icon: "create:mechanical_press"
+			x: 9.0d
+			y: 3.5d
+			subtitle: "7 Silver"
+			description: ["Stop thinking and buy now! Build your new workshop right away!"]
+			dependencies: ["64F3352725385210"]
+			id: "1B56BD88577AF37C"
+			tasks: [{
+				id: "47F49779C47FC36A"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 32b }
+				item: "thermal:silver_coin"
+				count: 32L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "6A365E23E6FF5F7B"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "1647FE4F727CDD53"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "2DBACEE81CB3DE03"
+					type: "item"
+					item: "create:depot"
+				}
+				{
+					id: "1FCA63F17A4187F2"
+					type: "item"
+					item: "create:basin"
+				}
+				{
+					id: "016E602AD45C7CE3"
+					type: "item"
+					item: "create:large_water_wheel"
+					count: 2
+				}
+				{
+					id: "5A7A06FBD71207ED"
+					type: "item"
+					item: "create:millstone"
+				}
+				{
+					id: "2BA09BB9E3A1A6F7"
+					type: "item"
+					item: "gearbox:kiln"
+				}
+			]
+		}
+		{
+			title: "Manual Exchange"
+			icon: "thermal:gold_coin"
+			disable_toast: true
+			x: -2.0d
+			y: 1.5d
+			shape: "hexagon"
+			subtitle: "Silver -> Gold"
+			description: ["Sometimes you must have gold coins, which are equivalent to 64 silver coins."]
+			dependencies: [
+				"0F870BEA235D662D"
+				"64F3352725385210"
+			]
+			optional: true
+			can_repeat: true
+			id: "7A9AB1C774C3BE33"
+			tasks: [{
+				id: "6359DD36F44E3DDC"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 64b }
+				item: "thermal:silver_coin"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "3B4502A2313C68FF"
+					type: "item"
+					auto: "enabled"
+					item: "thermal:gold_coin"
+				}
+				{
+					id: "434DE54128C75B98"
+					type: "custom"
+					title: "Repeatable"
+					icon: "thermal:machine_cycle_augment"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "Manual Exchange"
+			icon: { id: "thermal:silver_coin", Count: 64b }
+			disable_toast: true
+			x: -2.0d
+			y: -2.5d
+			shape: "hexagon"
+			subtitle: "Gold -> Silver"
+			description: ["Sometimes you must have gold coins, which are equivalent to 64 silver coins."]
+			dependencies: [
+				"0F870BEA235D662D"
+				"64F3352725385210"
+			]
+			optional: true
+			can_repeat: true
+			id: "1730CB92599DCD93"
+			tasks: [{
+				id: "5F3A917C71766507"
+				type: "item"
+				item: "thermal:gold_coin"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "0FF1B5EBE09242B1"
+					type: "item"
+					icon: { id: "thermal:silver_coin", Count: 64b }
+					auto: "enabled"
+					item: "thermal:silver_coin"
+					count: 64
+				}
+				{
+					id: "18A25790314D55E5"
+					type: "custom"
+					title: "Repeatable"
+					icon: "thermal:machine_cycle_augment"
+					tags: ["reset"]
+					auto: "no_toast"
+				}
+			]
+		}
+		{
+			title: "Pro Diving Pack"
+			icon: {
+				id: "create:copper_diving_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: 1.5d
+			shape: "diamond"
+			subtitle: "15 Silver"
+			description: ["Buy this pack and go diving right now! Comes with fully filled backtank."]
+			dependencies: ["64F3352725385210"]
+			id: "68C032BE0D4AF710"
+			tasks: [{
+				id: "0E2D818F8CA90F12"
+				type: "item"
+				icon: { id: "thermal:silver_coin", Count: 15b }
+				item: "thermal:silver_coin"
+				count: 15L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "4F07AF1036DD8B53"
+					type: "item"
+					item: {
+						id: "create:copper_diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "428C484B16CE953F"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+				{
+					id: "5536BB97BBED6810"
+					type: "item"
+					item: {
+						id: "create:copper_diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Cookie Cutter"
+			icon: {
+				id: "farmersdelight:diamond_knife"
+				Count: 1b
+				tag: {
+					HideFlags: 1
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 10s
+					}]
+					Unbreakable: 1
+					Damage: 0
+					display: {
+						Name: "{\"text\":\"Enchanted Diamond Knife\",\"color\":\"gold\",\"italic\":false}"
+					}
+				}
+			}
+			x: 1.0d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "5 Gold"
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
+			dependencies: ["64F3352725385210"]
+			can_repeat: true
+			id: "00BB879BB5C81BEA"
+			tasks: [
+				{
+					id: "21CFD88FD2E5AB14"
+					type: "item"
+					item: {
+						id: "farmersdelight:diamond_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					consume_items: true
+				}
+				{
+					id: "5E0571ED3C8C9BAF"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 5b }
+					item: "thermal:gold_coin"
+					count: 5L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "6498F77359EE4702"
+				type: "item"
+				item: {
+					id: "farmersdelight:diamond_knife"
+					Count: 1b
+					tag: {
+						display: {
+							Name: "{\"text\":\"Enchanted Diamond Knife\",\"color\":\"gold\",\"italic\":false}"
+						}
+						Enchantments: [{
+							lvl: 10s
+							id: "minecraft:unbreaking"
+						}]
+						Unbreakable: 1
+						Damage: 0
+						HideFlags: 1
+					}
+				}
+			}]
+		}
+		{
+			title: "A Leap In Technology"
+			icon: "ae2:drive"
+			x: 7.0d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "16 Gold + Item Terminal"
+			description: ["With a good amount of money, our workers can create very advanced technology, even if it is the initial items, it is already a great help"]
+			dependencies: ["64F3352725385210"]
+			id: "30A3DB35FEECD798"
+			tasks: [
+				{
+					id: "27F723D868E2E6D5"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 16b }
+					item: "thermal:gold_coin"
+					count: 16L
+					consume_items: true
+				}
+				{
+					id: "21CF00622E20F89B"
+					type: "item"
+					item: "prettypipes:item_terminal"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "0AE65EC18E359903"
+					type: "item"
+					item: "ae2:drive"
+				}
+				{
+					id: "301E84028BCEF960"
+					type: "item"
+					item: "ae2:fluix_glass_cable"
+				}
+				{
+					id: "575E41D71D613187"
+					type: "item"
+					item: "ae2:crafting_terminal"
+				}
+				{
+					id: "4A4B5E2D82B1458E"
+					type: "item"
+					item: {
+						id: "ae2:item_storage_cell_1k"
+						Count: 1b
+						tag: { }
+					}
+					count: 8
+				}
+				{
+					id: "26DA27F441D106B1"
+					type: "item"
+					item: "ae2:energy_acceptor"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,215 @@
+{
+	id: "03AB763E827ABEDB"
+	group: "6F42926B3F0C534A"
+	order_index: 12
+	filename: "ae"
+	title: "&f4b&r Semiconductor Hammering"
+	icon: "ae2:engineering_processor"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -2.0d
+		y: -6.5d
+		width: 18.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "kubejs:textures/images/chapter4.png"
+		hover: ["chapter 4"]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -3.5d
+			y: -1.5d
+			dependencies: [
+				"4595F825A8A21E53"
+				"4E549678E05D7FA8"
+			]
+			id: "71396BE6ABFD23A6"
+			tasks: [{
+				id: "43B8759DA39F59A3"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			dependencies: [
+				"4595F825A8A21E53"
+				"4E549678E05D7FA8"
+			]
+			id: "10CEF83AAD114760"
+			tasks: [{
+				id: "5105D1041F3002C6"
+				type: "item"
+				item: "minecraft:charcoal"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			dependencies: ["10CEF83AAD114760"]
+			id: "5394E767BDDA9D77"
+			tasks: [{
+				id: "2580533A6FC93599"
+				type: "item"
+				item: "thermal:coal_coke"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: [
+				"71396BE6ABFD23A6"
+				"5394E767BDDA9D77"
+			]
+			id: "5186E068F742B83A"
+			tasks: [{
+				id: "77959CFEFF640957"
+				type: "item"
+				item: "kubejs:silicon_compound"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["5186E068F742B83A"]
+			id: "1DE06F050CF4F712"
+			tasks: [{
+				id: "27EA2B6F466016B5"
+				type: "item"
+				item: "kubejs:metallurgic_silicon"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			dependencies: [
+				"4595F825A8A21E53"
+				"4E549678E05D7FA8"
+			]
+			id: "0ED9617DEB5738D4"
+			tasks: [{
+				id: "14CE7BA1E6AF4C03"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			dependencies: [
+				"4595F825A8A21E53"
+				"4E549678E05D7FA8"
+			]
+			id: "5002C8BE3CA838E3"
+			tasks: [{
+				id: "0F45B911F3C2CA88"
+				type: "item"
+				item: "beyond_earth:desh_ingot"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: [
+				"4595F825A8A21E53"
+				"4E549678E05D7FA8"
+			]
+			id: "0F00A171BA3BD9CB"
+			tasks: [{
+				id: "676EFB6C5817BBE6"
+				type: "item"
+				item: "thermal:apatite"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			dependencies: ["618F33E789A1DA3D"]
+			id: "3F10D4492B0A2F54"
+			tasks: [{
+				id: "5729F088C3EF1075"
+				type: "item"
+				item: "ae2:silicon"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["3F10D4492B0A2F54"]
+			id: "0EDCA4434591E1B0"
+			tasks: [{
+				id: "129B696B9DBB3F2B"
+				type: "item"
+				item: "ae2:printed_silicon"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 8.0d
+			dependencies: ["0EDCA4434591E1B0"]
+			id: "4E227A3704CA42FB"
+			tasks: [{
+				id: "33CF29C25083578B"
+				type: "item"
+				item: "ae2:logic_processor"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.0d
+			dependencies: ["0EDCA4434591E1B0"]
+			id: "12854F6B6793A8E0"
+			tasks: [{
+				id: "00B76D571A46B978"
+				type: "item"
+				item: "ae2:engineering_processor"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 8.0d
+			dependencies: ["0EDCA4434591E1B0"]
+			id: "42EE5C0D570C7071"
+			tasks: [{
+				id: "3C5167670B93502D"
+				type: "item"
+				item: "ae2:calculation_processor"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			dependencies: [
+				"0F00A171BA3BD9CB"
+				"5002C8BE3CA838E3"
+			]
+			id: "3D21C820D1796234"
+			tasks: [{
+				id: "34825C54B70D6989"
+				type: "item"
+				item: "kubejs:sif4_bucket"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			dependencies: [
+				"1DE06F050CF4F712"
+				"0ED9617DEB5738D4"
+				"3D21C820D1796234"
+			]
+			id: "618F33E789A1DA3D"
+			tasks: [{
+				id: "00205B93F773F203"
+				type: "item"
+				item: "kubejs:sif2_bucket"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

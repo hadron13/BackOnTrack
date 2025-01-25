@@ -1,0 +1,11 @@
+{
+	id: "487509411F78E45F"
+	order_index: 0
+	title: "purple"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:purple_bed" }
+		{ item: "railways:purple_conductor_cap" }
+		{ item: "create:purple_toolbox" }
+	]
+}

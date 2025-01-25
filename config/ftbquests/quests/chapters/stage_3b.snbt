@@ -1,0 +1,279 @@
+{
+	id: "74115F735EEC5F67"
+	group: "6F42926B3F0C534A"
+	order_index: 9
+	filename: "stage_3b"
+	title: "&f3b&r Tunnel Quantification"
+	icon: "kubejs:ender_mechanism"
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -2.5d
+		y: -5.5d
+		width: 12.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "kubejs:textures/images/chapter3.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -2.5d
+			y: 5.5d
+			dependencies: ["54C5900FA1D351E9"]
+			size: 1.5d
+			id: "1800781724560123"
+			tasks: [{
+				id: "3A178DD51CDC3C31"
+				type: "item"
+				item: "kubejs:enderium_machine"
+			}]
+		}
+		{
+			icon: "thermal:enderium_ingot"
+			x: -5.0d
+			y: 1.5d
+			description: ["One of the finest materials in the game, is now yours."]
+			dependencies: ["3D02415BDBC492AA"]
+			id: "2924B038389DFE3D"
+			tasks: [
+				{
+					id: "13221A4CD05B24F7"
+					type: "item"
+					item: "thermal:enderium_ingot"
+				}
+				{
+					id: "469935D19D6A5BDD"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Endless Grind ¹"
+			icon: "minecraft:ender_pearl"
+			x: -2.5d
+			y: -2.0d
+			description: ["There is not much secret to this, you either buy or kill endermen."]
+			hide_dependency_lines: true
+			dependencies: ["51F030004DBA106F"]
+			hide: true
+			id: "77D4BFD83C7B4F82"
+			tasks: [
+				{
+					id: "258C3ECE214532D4"
+					type: "item"
+					item: "minecraft:ender_pearl"
+				}
+				{
+					id: "256958FDA4350613"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "ae2:ender_dust"
+			x: -5.0d
+			y: -0.5d
+			dependencies: ["316D4E8D569C1441"]
+			id: "3D02415BDBC492AA"
+			tasks: [
+				{
+					id: "2BCA2EB19D6B52BF"
+					type: "item"
+					item: "ae2:ender_dust"
+				}
+				{
+					id: "1D781155F62AF296"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "kubejs:ender_mechanism"
+			x: -2.5d
+			y: 4.0d
+			dependencies: [
+				"0EB3BFB1D2D6D8CC"
+				"171B8663C68FA3A5"
+				"197F7868DAF44740"
+			]
+			id: "54C5900FA1D351E9"
+			tasks: [
+				{
+					id: "422ACFBE90E2A553"
+					type: "item"
+					item: "kubejs:ender_mechanism"
+				}
+				{
+					id: "3AC59E20E3122EB2"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Liquid Ending"
+			icon: "kubejs:endstone_fluid_bucket"
+			x: -2.5d
+			y: 2.0d
+			description: ["An ending, inside a bucket"]
+			dependencies: [
+				"6FC605221CB21F2E"
+				"17F72BBAC47B3731"
+			]
+			id: "197F7868DAF44740"
+			tasks: [
+				{
+					id: "6B75C1A71FA0D1EE"
+					type: "item"
+					item: "kubejs:endstone_fluid_bucket"
+				}
+				{
+					id: "74228EEA60FEC01B"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "thermal:enderium_gear"
+			x: -4.0d
+			y: 3.0d
+			dependencies: ["2924B038389DFE3D"]
+			id: "171B8663C68FA3A5"
+			tasks: [
+				{
+					id: "7875CFA87CCC1045"
+					type: "item"
+					item: "thermal:enderium_gear"
+				}
+				{
+					id: "2746113B0E842F5A"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "endersdelight:ender_shard"
+			x: -4.0d
+			y: -1.5d
+			description: ["Tasty bits of your end"]
+			dependencies: ["77D4BFD83C7B4F82"]
+			id: "316D4E8D569C1441"
+			tasks: [
+				{
+					id: "059F052EDB3B85B5"
+					type: "item"
+					item: "endersdelight:ender_shard"
+				}
+				{
+					id: "125A9E4D59DA92FF"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Dark Ringing"
+			icon: "kubejs:coal_ring"
+			x: -1.0d
+			y: 3.0d
+			dependencies: ["2A2AEE76BAB22ADD"]
+			id: "0EB3BFB1D2D6D8CC"
+			tasks: [
+				{
+					id: "67ED60C6B5479165"
+					type: "item"
+					item: "kubejs:coal_ring"
+				}
+				{
+					id: "309E72A7068227DA"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "createbigcannons:cast_iron_ingot"
+			x: 0.0d
+			y: 1.5d
+			description: ["Transform the iron into cast iron, the Steel's little brother."]
+			dependencies: ["2775946163E178D8"]
+			id: "2A2AEE76BAB22ADD"
+			tasks: [
+				{
+					id: "611743D54F700A2A"
+					type: "item"
+					item: "createbigcannons:cast_iron_ingot"
+				}
+				{
+					id: "1652CB6C64D910FD"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Iron Ingot"
+			icon: "minecraft:iron_ingot"
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["51F030004DBA106F"]
+			hide: true
+			id: "2775946163E178D8"
+			tasks: [
+				{
+					id: "0C5F0B6A900FBCE3"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+				{
+					id: "754AAB44D7AC4D94"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:cobblestone"
+			x: -1.5d
+			y: 0.5d
+			description: ["Good old cobblegen as the consumable of the liquid end generator"]
+			dependencies: ["51F030004DBA106F"]
+			hide: true
+			id: "17F72BBAC47B3731"
+			tasks: [
+				{
+					id: "362F103A61A02C92"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "60FEB43AA1F0EC18"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			description: ["No need for automating this, it serves as a catalyst and will not be consumed."]
+			dependencies: ["2924B038389DFE3D"]
+			id: "6FC605221CB21F2E"
+			tasks: [{
+				id: "72F721F0F6FE7932"
+				type: "item"
+				item: "tconstruct:molten_enderium_bucket"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

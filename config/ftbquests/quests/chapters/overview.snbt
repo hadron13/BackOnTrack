@@ -1,0 +1,720 @@
+{
+	id: "1F9517DCFB1DB297"
+	group: "6F42926B3F0C534A"
+	order_index: 0
+	filename: "overview"
+	title: " Progression"
+	icon: "beyond_earth:earth_globe"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -1.0d
+		y: -4.0d
+		width: 14.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "kubejs:textures/images/progression.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Rotation Machinery"
+			icon: "kubejs:rotation_mechanism"
+			disable_toast: true
+			x: -1.0d
+			y: 2.5d
+			shape: "diamond"
+			subtitle: "Milestone"
+			description: [
+				"Now with the basics fully automated we can jump ahead into more advanced factories, as the machinery is not a hassle to be made anymore"
+				""
+				"You can also hop on both secondary chapters for extra equipment for the next main chapter"
+			]
+			dependencies: [
+				"61147823CC87F711"
+				"675C395B2074C24C"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "0E98B4D2BBF55308"
+			tasks: [{
+				id: "591DCE5124A2C4C6"
+				type: "stat"
+				title: "Complete Chapter 1"
+				icon: "kubejs:rotation_mechanism"
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "Precise Machinery"
+			x: -1.0d
+			y: 5.5d
+			shape: "diamond"
+			subtitle: "Milestone"
+			description: [
+				"With Precision Mechanisms automated, a large number of great tools become accessible. Both for automation and quality of life."
+				""
+				"This will also open up the way for the steel and oil age, industry 2.0!"
+			]
+			dependencies: [
+				"1E263994D4883A08"
+				"19715EBCBBA1B4AD"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "69275ECFC147E15B"
+			tasks: [{
+				id: "0FF38BBE3B19D9C2"
+				type: "stat"
+				title: "Complete Chapter 2"
+				icon: "create:precision_mechanism"
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "Pressure Machinery"
+			icon: "kubejs:pressure_mechanism"
+			x: -2.5d
+			y: 5.0d
+			shape: "diamond"
+			subtitle: "Secondary"
+			description: [
+				"Copper Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs."
+				""
+				"Note that Pressure Mechanisms are an ingredient to explosive and train mechanisms, but nothing else. The main assembly line will continue with Rotation Mechanisms."
+			]
+			dependencies: [
+				"7D872F933F45809B"
+				"64F3352725385210"
+				"4DA3164A6CED529B"
+			]
+			hide: true
+			id: "342BB6EF80EBFDCA"
+			tasks: [{
+				id: "27B07858A6018539"
+				type: "stat"
+				title: "Complete Bonus 1A"
+				icon: "kubejs:pressure_mechanism"
+				disable_toast: true
+				stat: "minecraft:total_world_time"
+				value: 1
+			}]
+		}
+		{
+			title: "Scorching Machinery"
+			icon: "kubejs:scorch_mechanism"
+			disable_toast: true
+			x: -2.5d
+			y: 8.0d
+			shape: "diamond"
+			subtitle: "Secondary"
+			description: [
+				"Zinc Machines are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready."
+				""
+				"Note that Scorched Mechanisms are an ingredient to mechanisms and nothing else. The main assembly line will continue with Precision Mechanisms."
+			]
+			dependencies: [
+				"7888F9129E9FE517"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "2DC3AA8A89005C42"
+			tasks: [{
+				id: "12CFC84D3F01F49F"
+				type: "stat"
+				title: "Complete Bonus 2A"
+				icon: "kubejs:scorch_mechanism"
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "From a tree puncher..."
+			icon: "minecraft:grass_block"
+			x: -1.0d
+			y: -1.0d
+			shape: "diamond"
+			dependencies: ["64F3352725385210"]
+			size: 2.0d
+			id: "75FB28B253B14876"
+			tasks: [{
+				id: "44831176CB3C26D6"
+				type: "observation"
+				title: "Observe Any Log"
+				icon: "minecraft:oak_log"
+				timer: 0L
+				observe_type: 1
+				to_observe: "minecraft:logs"
+			}]
+		}
+		{
+			title: "Mechanic Assimilation"
+			icon: "create:andesite_alloy"
+			x: -1.0d
+			y: 1.0d
+			shape: "diamond"
+			subtitle: "Chapter 1"
+			description: [
+				"On most times, players hop directly on advanced equipment, but it is different here, the first inventions show how much you can do with low-level equipment, filtering? expensive. auto-crafting? none. Befriend the belt spaggheti before it consumes you"
+				""
+				"After hitting the Checkmark above, the first Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+			]
+			dependencies: [
+				"75FB28B253B14876"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "61147823CC87F711"
+			tasks: [{
+				id: "5A8DF2D8553904BF"
+				type: "checkmark"
+				title: "Unlock Chapter 1"
+			}]
+		}
+		{
+			title: "Overengineered Cookie Cutter"
+			icon: "create:electron_tube"
+			x: -1.0d
+			y: 4.0d
+			shape: "diamond"
+			subtitle: "Chapter 2"
+			description: [
+				"So here's the chicken-egg problem: you need brass machinery to automate brass machinery, i guess you will need some manual labor at first."
+				""
+				"After hitting the Checkmark above, the second Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+			]
+			dependencies: [
+				"0E98B4D2BBF55308"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "1E263994D4883A08"
+			tasks: [{
+				id: "28C41C062843C2CA"
+				type: "checkmark"
+				title: "Unlock Chapter 2"
+			}]
+		}
+		{
+			title: "Power Processing"
+			icon: "kubejs:inductor"
+			x: -1.0d
+			y: 10.0d
+			shape: "diamond"
+			subtitle: "Chapter 4"
+			description: [
+				"After some desh extraction on the moon we are ready to get into new technology"
+				""
+				"After hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+			]
+			dependencies: [
+				"0BAA1B60B372E283"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "780E8AE86250C73D"
+			tasks: [{
+				id: "2F6FEDBB1BDCB36C"
+				type: "checkmark"
+				title: "Unlock Chapter 4"
+			}]
+		}
+		{
+			title: "Rubber Tycoon"
+			icon: "thermal:cured_rubber"
+			x: -2.5d
+			y: 3.5d
+			shape: "diamond"
+			subtitle: "Secondary 1A"
+			description: [
+				"Pressure Machinery is certainly needed for the progression, however, it's full automation is fully optional, but fully recommended."
+				""
+				"After hitting the Checkmark above, additional Quests located in the First Chapter will be revealed."
+			]
+			dependencies: [
+				"0E98B4D2BBF55308"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "7D872F933F45809B"
+			tasks: [{
+				id: "681DACF11F193771"
+				type: "checkmark"
+				title: "Unlock Bonus 1A"
+			}]
+		}
+		{
+			title: "Hell Processing"
+			icon: "minecraft:lava_bucket"
+			x: -2.5d
+			y: 6.5d
+			shape: "diamond"
+			subtitle: "Secondary 2A"
+			description: [
+				"We need to go Deeper!"
+				""
+				"A steady supply of lava will be a must for scorch brick making, and for scorch mechanisms themselves, you'll probably want a train in the nether or a factory right there..."
+				""
+				"After hitting the Checkmark above, additional Quests located in the Second Chapter will be revealed."
+			]
+			dependencies: [
+				"69275ECFC147E15B"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "7888F9129E9FE517"
+			tasks: [{
+				id: "21753CBB528EAADF"
+				type: "checkmark"
+				title: "Unlock Bonus 2A"
+			}]
+		}
+		{
+			title: "Preparations"
+			icon: "create:clipboard"
+			x: 0.5d
+			y: 0.5d
+			shape: "diamond"
+			description: ["This journey won't be easy without being prepared with the basics, here are some of the essential machines to progress into automation."]
+			dependencies: [
+				"75FB28B253B14876"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "7D6BC99CCCB29924"
+			tasks: [
+				{
+					id: "57A71A62204AE230"
+					type: "item"
+					item: "create:mechanical_press"
+					consume_items: false
+				}
+				{
+					id: "0EEFF99A7BD064E4"
+					type: "item"
+					item: "create:mechanical_saw"
+					consume_items: false
+				}
+				{
+					id: "4A5B209B42D89DFF"
+					type: "item"
+					item: "create:encased_fan"
+					consume_items: false
+				}
+				{
+					id: "6530AB7AA277197D"
+					type: "item"
+					item: "create:mechanical_mixer"
+					consume_items: false
+				}
+				{
+					id: "1900BA945C62D0CC"
+					type: "item"
+					item: "gearbox:kiln"
+					consume_items: false
+				}
+				{
+					id: "534BB31978C1E95B"
+					type: "item"
+					item: "create:millstone"
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "24DFC6E24F62D97A"
+					type: "item"
+					item: "create:crafting_blueprint"
+					count: 3
+				}
+				{
+					id: "14C00C1852BA26EF"
+					type: "item"
+					item: "create:clipboard"
+				}
+			]
+		}
+		{
+			title: "Rocketry by Eye"
+			icon: "beyond_earth:steel_engine"
+			x: -2.5d
+			y: 9.5d
+			shape: "diamond"
+			subtitle: "Chapter 3A"
+			description: [
+				"... You may use your explosives to assemble a rocket for space exploration, who knows what exciting things are out there..."
+				""
+				"After hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed."
+			]
+			dependencies: [
+				"0BAA1B60B372E283"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "2A52615E8E67F885"
+			tasks: [{
+				id: "3C79237E6F89E65B"
+				type: "checkmark"
+				title: "Unlock Rocketry by Eye"
+			}]
+		}
+		{
+			title: "To the Moon!"
+			icon: "beyond_earth:moon_globe"
+			x: -2.5d
+			y: 11.0d
+			shape: "diamond"
+			subtitle: "Milestone"
+			description: ["Tiny step for Steve, huge leap in advanced resource exploitation."]
+			dependencies: [
+				"2A52615E8E67F885"
+				"64F3352725385210"
+				"2A3C33E299508572"
+			]
+			hide: true
+			id: "3896A55CE3C8AAD9"
+			tasks: [{
+				id: "52827346577F7B48"
+				type: "dimension"
+				title: "Visit the moon"
+				icon: "beyond_earth:moon_sand"
+				dimension: "beyond_earth:moon"
+			}]
+			rewards: [
+				{
+					id: "04ABE73CD8CED4C1"
+					type: "item"
+					icon: { id: "thermal:gold_coin", Count: 10b }
+					item: "thermal:gold_coin"
+					count: 10
+				}
+				{
+					id: "07DD434ADE4AAC5E"
+					type: "item"
+					item: "beyond_earth:moon_globe"
+				}
+			]
+		}
+		{
+			title: "Astounding Explosions"
+			icon: "createbigcannons:packed_gunpowder"
+			x: -1.0d
+			y: 7.0d
+			shape: "diamond"
+			subtitle: "Chapter 3"
+			description: [
+				"We need to go Higher!"
+				"This part of the progression will involve seriously dangerous materials that should not be made at home, do not tell the governm..."
+				""
+				"After hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+			]
+			dependencies: [
+				"69275ECFC147E15B"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "466B6AA648B23C3A"
+			tasks: [{
+				id: "4DC8401029AFAB82"
+				type: "checkmark"
+				title: "unlock "
+			}]
+		}
+		{
+			title: "Explosive Machinery"
+			x: -1.0d
+			y: 8.5d
+			shape: "diamond"
+			subtitle: "Milestone"
+			description: ["So we got the new war technology, and it can alse be used for two more things."]
+			dependencies: [
+				"466B6AA648B23C3A"
+				"6E7750CE254894B4"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "0BAA1B60B372E283"
+			tasks: [{
+				id: "25D9F75B44333CD1"
+				type: "stat"
+				title: "Complete Chapter 3"
+				icon: "kubejs:explosive_mechanism"
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "Train Machinery"
+			x: 0.5d
+			y: 5.0d
+			shape: "diamond"
+			subtitle: "Secondary"
+			description: [
+				"Trains!"
+				""
+				"Trains are the missing piece of transportation suitable for very very long distances, it opens a gigantic number of oportunities."
+				""
+				"Localized resources such as skystone can be transported in high volume across kilometers, and factories and bases may be connected with minutes of travel."
+			]
+			dependencies: [
+				"0B2683CCC179B93F"
+				"57EF36B592C45D2C"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "1DDA0F521F4C0290"
+			tasks: [{
+				id: "3BDB6D2A6AC3776E"
+				type: "stat"
+				title: "Complete Bonus 1B"
+				icon: "kubejs:train_mechanism"
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "Sturdy Production"
+			icon: "create:sturdy_sheet"
+			x: 0.5d
+			y: 3.5d
+			shape: "diamond"
+			subtitle: "Secondary 1B"
+			description: [
+				"Trains are the cheapest and fastest way to get stuff moving for long distances, you will need quite some sheets to make it happen."
+				""
+				"After hitting the Checkmark above, additional Quests located in the First Chapter will be revealed."
+			]
+			dependencies: [
+				"0E98B4D2BBF55308"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "57EF36B592C45D2C"
+			tasks: [{
+				id: "721CBD4B8CECEBF9"
+				type: "checkmark"
+				title: "Unlock Bonus 2B"
+			}]
+		}
+		{
+			title: "Sacchariferous Industry"
+			icon: "create:bar_of_chocolate"
+			x: 0.5d
+			y: 6.5d
+			shape: "diamond"
+			subtitle: "Secondary 2B"
+			description: [
+				""
+				"Sugary explosives is the future of food, crunch random materials into the best food of the game!"
+			]
+			dependencies: [
+				"64F3352725385210"
+				"69275ECFC147E15B"
+			]
+			hide: true
+			id: "141CF17F211E6268"
+			tasks: [{
+				id: "38D16EE235A88EA7"
+				type: "checkmark"
+				title: "Unlock Bonus 2B"
+			}]
+		}
+		{
+			title: "Power Machinery"
+			icon: "kubejs:power_mechanism"
+			x: -1.0d
+			y: 11.5d
+			shape: "diamond"
+			subtitle: "Milestone"
+			description: ["You have unlocked the power of the power machines, now with this power go optmize factories before hopping in the new planet."]
+			dependencies: [
+				"780E8AE86250C73D"
+				"4E549678E05D7FA8"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "73CF11A2C0D4A9E5"
+			tasks: [{
+				id: "4B3947CAC6E1D82E"
+				type: "stat"
+				title: "Complete Chapter 4"
+				icon: "kubejs:power_mechanism"
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "Optic Synthesis"
+			icon: "kubejs:titamium_ingot"
+			x: -1.0d
+			y: 13.0d
+			shape: "diamond"
+			subtitle: "Chapter 5"
+			description: ["Research advanced laser technology to transform known and unknown materials"]
+			dependencies: [
+				"73CF11A2C0D4A9E5"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "20329543D3DB8D7F"
+			tasks: [{
+				id: "242A17BBDA2D8506"
+				type: "checkmark"
+				title: "Unlock Chapter 5"
+			}]
+		}
+		{
+			title: "Candy Machinery"
+			x: 0.5d
+			y: 8.0d
+			shape: "diamond"
+			subtitle: "Secondary"
+			description: ["This one has no machine, the mechanism itself is the end goal, and you won't ever be hungry again I suppose..."]
+			dependencies: [
+				"141CF17F211E6268"
+				"43C6E5ADE52CE877"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "3B414CD7A815A774"
+			tasks: [{
+				id: "43C6E5ADE52CE877"
+				type: "stat"
+				title: "Complete Chapter 2B"
+				icon: "kubejs:candy_mechanism"
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "Thermodynamic Expansion"
+			icon: "kubejs:smoke_mote"
+			x: -2.5d
+			y: 12.5d
+			shape: "diamond"
+			subtitle: "Secondary 4A"
+			description: ["Unlock new high power machinery to ramp up your production."]
+			dependencies: [
+				"73CF11A2C0D4A9E5"
+				"64F3352725385210"
+			]
+			hide: true
+			id: "6C5432493CB78405"
+			tasks: [{
+				id: "44FCF5527F72FD5D"
+				type: "checkmark"
+				title: "Unlock Bonus 4B"
+			}]
+		}
+		{
+			title: "Tunnel Quantification"
+			icon: "thermal:enderium_ingot"
+			x: 0.5d
+			y: 9.5d
+			shape: "diamond"
+			subtitle: "Secondary 3B"
+			description: ["Exploit ender tunneling abilities to extract materials from all dimensions, planets and beyond."]
+			dependencies: ["0BAA1B60B372E283"]
+			hide: true
+			id: "51F030004DBA106F"
+			tasks: [{
+				id: "0C3128C8CA451A88"
+				type: "checkmark"
+				title: "Unlock Chapter 3B"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 11.0d
+			shape: "diamond"
+			subtitle: "Secondary"
+			dependencies: [
+				"51F030004DBA106F"
+				"54C5900FA1D351E9"
+			]
+			hide: true
+			id: "5A58143EF3AB6555"
+			tasks: [{
+				id: "3C7D84C9EC52D164"
+				type: "item"
+				item: "kubejs:ender_mechanism"
+			}]
+		}
+		{
+			title: "High Power Machinery"
+			x: -2.5d
+			y: 14.0d
+			shape: "diamond"
+			subtitle: "Milestone"
+			dependencies: [
+				"6C5432493CB78405"
+				"0199FF6088F9DE83"
+			]
+			hide: true
+			id: "26002D6E3B0F08BC"
+			tasks: [{
+				id: "5A66577A02B6A237"
+				type: "stat"
+				title: "Complete Chapter 4A"
+				icon: "kubejs:high_power_mechanism"
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "Semiconductor Hammering"
+			icon: "ae2:silicon"
+			x: 0.5d
+			y: 12.5d
+			shape: "diamond"
+			subtitle: "Secondary 4B"
+			description: ["Discover the opportunities to this intricate material, hammer your way through semiconductors."]
+			dependencies: ["73CF11A2C0D4A9E5"]
+			id: "4595F825A8A21E53"
+			tasks: [{
+				id: "39047E578C2B5C6F"
+				type: "checkmark"
+				title: "Unlock Chapter 4B"
+			}]
+		}
+		{
+			title: "Energetic Machinery"
+			x: 0.5d
+			y: 14.0d
+			shape: "diamond"
+			subtitle: "Secondary"
+			description: [
+				"The new semiconductor technlogy brings new life to storage and automation."
+				"This technology is optional, although really useful."
+			]
+			dependencies: ["4595F825A8A21E53"]
+			id: "4A2CAFA05FF9F099"
+			tasks: [{
+				id: "65EEE10FDB6FDB97"
+				type: "stat"
+				title: "Complete Chapter 4B"
+				icon: "ae2:engineering_processor"
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "&5 The End?&f"
+			x: -1.0d
+			y: 14.5d
+			dependencies: ["20329543D3DB8D7F"]
+			id: "730771BF0E2F329D"
+			tasks: [{
+				id: "5481904ACE3975FC"
+				type: "item"
+				item: "gearbox:ultimate_mechanism"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

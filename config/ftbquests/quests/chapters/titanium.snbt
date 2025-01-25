@@ -1,0 +1,478 @@
+{
+	id: "738F783F64B6138D"
+	group: "6F42926B3F0C534A"
+	order_index: 13
+	filename: "titanium"
+	title: "&f5&r Optic Synthesis"
+	icon: "kubejs:titamium_ingot"
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 2.5d
+			y: 8.5d
+			dependencies: ["22BF92533EAFDC0C"]
+			id: "7DF7AB0501717B99"
+			tasks: [{
+				id: "2C346A15057F266A"
+				type: "item"
+				item: "kubejs:titamium_ingot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 8.0d
+			dependencies: ["5C706701136292C2"]
+			id: "22BF92533EAFDC0C"
+			tasks: [{
+				id: "60574F52876B8F19"
+				type: "item"
+				item: "kubejs:titanium_blend"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 6.5d
+			dependencies: ["56F4ADFC8DB86BFA"]
+			id: "5C706701136292C2"
+			tasks: [{
+				id: "547ABDF8A2E7413F"
+				type: "item"
+				item: "kubejs:titanium_dust"
+			}]
+		}
+		{
+			title: "React"
+			x: 4.5d
+			y: 5.0d
+			description: ["React all the reagents together with a "]
+			dependencies: [
+				"7C969FDB65165999"
+				"09F11E9897E31607"
+				"5087F3AE4B871644"
+			]
+			id: "56F4ADFC8DB86BFA"
+			tasks: [{
+				id: "2B6089F1ACB2D64C"
+				type: "item"
+				item: "kubejs:titanium_sponge"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			dependencies: ["56F4ADFC8DB86BFA"]
+			id: "631619EDBE434506"
+			tasks: [{
+				id: "0D68720DE28EF1E7"
+				type: "item"
+				item: "kubejs:magnesium_chloride"
+			}]
+		}
+		{
+			icon: "kubejs:tnt5_bucket"
+			x: 7.0d
+			y: 4.0d
+			description: ["In the edge of I came up with this and industrial processes!"]
+			dependencies: [
+				"418ACEAAA2C8489D"
+				"0B9EB9F3A8FDEF23"
+			]
+			id: "7C969FDB65165999"
+			tasks: [
+				{
+					id: "684209ADA70DA970"
+					type: "item"
+					item: "kubejs:tnt5_bucket"
+				}
+				{
+					id: "219681BEB000C930"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Heat"
+			icon: "kubejs:tnt2_bucket"
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["18B63EFABE160051"]
+			id: "5087F3AE4B871644"
+			tasks: [
+				{
+					id: "12802251C8DE5DE5"
+					type: "item"
+					item: "kubejs:tnt2_bucket"
+				}
+				{
+					id: "3A323185739E9129"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			hide_dependency_lines: true
+			dependencies: ["3F4D1B3C28BF5E14"]
+			id: "09F11E9897E31607"
+			tasks: [{
+				id: "149268BFF21F4733"
+				type: "item"
+				item: "kubejs:magnesium_ingot"
+			}]
+		}
+		{
+			title: "Irradiate"
+			icon: "kubejs:tnt1_bucket"
+			x: 2.0d
+			y: 1.5d
+			dependencies: [
+				"382D9F7BDE7F5F29"
+				"2C5C74C072F1238E"
+				"59D37D0BF8D94515"
+			]
+			id: "18B63EFABE160051"
+			tasks: [
+				{
+					id: "03613D057DA70FAD"
+					type: "item"
+					item: "kubejs:tnt1_bucket"
+				}
+				{
+					id: "280565D8BE31D2EA"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Electrolyze"
+			icon: "kubejs:tnt3_bucket"
+			x: 4.5d
+			y: 1.5d
+			description: ["Electrolyze the brine to obtain chlorine and sodium too."]
+			dependencies: ["0E143ADB2D2F8A87"]
+			id: "2C5C74C072F1238E"
+			tasks: [
+				{
+					id: "35CD0766B427F699"
+					type: "item"
+					item: "kubejs:tnt3_bucket"
+				}
+				{
+					id: "686E6A5A13545BBF"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Translate"
+			icon: "kubejs:limenite"
+			x: 0.0d
+			y: 0.5d
+			description: ["At last, shine a &cred&r laser at geld to obtain &6ilmenite&r, our starting point for &3titamium&r (yes, with M)"]
+			dependencies: ["6E957A7222259ACD"]
+			id: "382D9F7BDE7F5F29"
+			tasks: [
+				{
+					id: "0DE30D3E841F1B3B"
+					type: "item"
+					item: "kubejs:limenite"
+				}
+				{
+					id: "29DD41B88DA78ACA"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Pyrolize"
+			icon: "thermal:coal_coke"
+			x: 2.5d
+			y: -1.0d
+			description: ["Put work to the oven and make some coke."]
+			dependencies: ["711E78390CD71082"]
+			id: "59D37D0BF8D94515"
+			tasks: [
+				{
+					id: "71AA18CC15C643B2"
+					type: "item"
+					item: "thermal:coal_coke"
+				}
+				{
+					id: "47514C2AAFA9C3C4"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Catalyze"
+			icon: "beyond_earth:desh_ingot"
+			x: 7.0d
+			y: 2.0d
+			description: ["Desh once more as a catalyst, this metal has limitless potential."]
+			hide_dependency_lines: true
+			dependencies: ["3F4D1B3C28BF5E14"]
+			id: "418ACEAAA2C8489D"
+			tasks: [
+				{
+					id: "61F5A30092C589C5"
+					type: "item"
+					item: "beyond_earth:desh_ingot"
+				}
+				{
+					id: "4FDCBA320722CCB4"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Alkali"
+			icon: "supplementaries:ash"
+			x: 9.0d
+			y: 2.5d
+			description: ["Ash? You may ask, however, just assume this works."]
+			hide_dependency_lines: true
+			dependencies: ["3F4D1B3C28BF5E14"]
+			id: "0B9EB9F3A8FDEF23"
+			tasks: [
+				{
+					id: "36081BAEEAED587A"
+					type: "item"
+					item: "supplementaries:ash"
+				}
+				{
+					id: "3FB9705853938183"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Brineing"
+			icon: "kubejs:tnt6_bucket"
+			x: 4.0d
+			y: 0.0d
+			description: ["Mix sand and water to create brine, a salt rich water."]
+			dependencies: [
+				"5B79FEEAEBB4B319"
+				"245E4AF3FE04B6C4"
+			]
+			id: "0E143ADB2D2F8A87"
+			tasks: [
+				{
+					id: "5C9854A4A78BC8DD"
+					type: "item"
+					item: "kubejs:tnt6_bucket"
+				}
+				{
+					id: "3BEC577B5B431B67"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Carbonize"
+			icon: "minecraft:charcoal"
+			x: 1.0d
+			y: -2.5d
+			description: ["You should have a train for charcoal at this point..."]
+			dependencies: ["3F4D1B3C28BF5E14"]
+			id: "711E78390CD71082"
+			tasks: [
+				{
+					id: "3523418E2331D7B4"
+					type: "item"
+					item: "minecraft:charcoal"
+				}
+				{
+					id: "20E99F58E2319059"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Tasty Powder"
+			x: 5.5d
+			y: 0.0d
+			description: ["This tastes funny... -famous last words"]
+			dependencies: ["0E143ADB2D2F8A87"]
+			id: "395E1C91CF8C1986"
+			tasks: [{
+				id: "2021CB37C97EA8F6"
+				type: "item"
+				item: "kubejs:sodium_powder"
+			}]
+		}
+		{
+			title: "Transform"
+			icon: "gearbox:geld_ingot"
+			x: -1.0d
+			y: -1.0d
+			description: ["Once more shine a &bblue&r laser on silver to obtain this unique and exotic metal, geld."]
+			dependencies: ["34F1D64A281DC259"]
+			id: "6E957A7222259ACD"
+			tasks: [
+				{
+					id: "7C00A89C905F79B8"
+					type: "item"
+					item: "gearbox:geld_ingot"
+				}
+				{
+					id: "752F3520E5CA3D68"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Transmute"
+			icon: "thermal:silver_ingot"
+			x: -1.5d
+			y: -3.0d
+			description: ["Shine a &2green&r laser at gold to obtain silver from the transmution, a material not naturally found."]
+			dependencies: ["22750FB1C2E653AF"]
+			id: "34F1D64A281DC259"
+			tasks: [
+				{
+					id: "6A263FFDBF2653D0"
+					type: "item"
+					item: "thermal:silver_ingot"
+				}
+				{
+					id: "3095AF90757EA8AA"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Golden Shower"
+			icon: "minecraft:gold_ingot"
+			x: -0.5d
+			y: -4.5d
+			description: ["Wash the red sand to obtain trace ammounts of gold and compress into ingots."]
+			dependencies: ["6A9BE40ECF2A45C3"]
+			id: "22750FB1C2E653AF"
+			tasks: [
+				{
+					id: "1C322203C5B37937"
+					type: "item"
+					item: "minecraft:gold_ingot"
+				}
+				{
+					id: "62C0544ADF5E7795"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Golden Comeback"
+			icon: "minecraft:red_sand"
+			x: 0.5d
+			y: -6.0d
+			description: ["Remember him from chapter 1? He's back for gold."]
+			dependencies: ["3F4D1B3C28BF5E14"]
+			id: "6A9BE40ECF2A45C3"
+			tasks: [
+				{
+					id: "716928FBE37DBECD"
+					type: "item"
+					item: "minecraft:red_sand"
+				}
+				{
+					id: "6ED1305FFB1348AD"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Water"
+			icon: "minecraft:water_bucket"
+			x: 5.0d
+			y: -2.5d
+			description: ["Random water source."]
+			dependencies: ["3F4D1B3C28BF5E14"]
+			id: "5B79FEEAEBB4B319"
+			tasks: [
+				{
+					id: "28F95EC8E81169F7"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "38B4DC54ED14C013"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Salty Component"
+			icon: "minecraft:sand"
+			x: 3.0d
+			y: -3.0d
+			description: ["There should be salt in the sand."]
+			dependencies: ["3F4D1B3C28BF5E14"]
+			id: "245E4AF3FE04B6C4"
+			tasks: [
+				{
+					id: "2CF97B2AD1AE7DAD"
+					type: "item"
+					item: "minecraft:sand"
+				}
+				{
+					id: "2777A3203F3676C7"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Chapter 5 Start!"
+			icon: "kubejs:power_mechanism"
+			x: 3.0d
+			y: -7.0d
+			shape: "diamond"
+			description: ["With shiny new technology you can transmute materials,"]
+			dependencies: ["20329543D3DB8D7F"]
+			hide: true
+			size: 2.0d
+			id: "3F4D1B3C28BF5E14"
+			tasks: [{
+				id: "54A19D5C80F285FD"
+				type: "checkmark"
+				title: "Chapter 3 Start!"
+			}]
+		}
+		{
+			title: "Lasers!"
+			x: 5.5d
+			y: -6.0d
+			description: [
+				"Before starting, pack a bunch of these little machines, power generation is a must."
+				""
+				"Their color can be changed with redstone, play around with them!"
+			]
+			dependencies: ["3F4D1B3C28BF5E14"]
+			id: "6303106D8E0A3ABD"
+			tasks: [{
+				id: "7A2858303DD85059"
+				type: "item"
+				item: "gearbox:laser"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

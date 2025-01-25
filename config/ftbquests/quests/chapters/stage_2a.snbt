@@ -1,0 +1,251 @@
+{
+	id: "7BB5C5AB2C3F7E87"
+	group: "6F42926B3F0C534A"
+	order_index: 5
+	filename: "stage_2a"
+	title: "&f2a&r Hell Processing"
+	icon: "kubejs:scorch_mechanism"
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	images: [{
+		x: 0.0d
+		y: 0.0d
+		width: 12.0d
+		height: 2.0d
+		rotation: 0.0d
+		image: "kubejs:textures/images/chapter2.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Chapter 2A Complete!"
+			x: 0.0d
+			y: 9.0d
+			shape: "diamond"
+			description: ["Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line."]
+			dependencies: ["19B36C589AFFBA16"]
+			size: 2.0d
+			id: "7FD22E964BC59A3A"
+			tasks: [{
+				id: "563AE30C7584D0D5"
+				type: "item"
+				item: "kubejs:zinc_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "2610417041D70D35"
+					type: "item"
+					item: "kubejs:scorch_mechanism"
+					count: 16
+				}
+				{
+					id: "13633B848227C3BD"
+					type: "item"
+					item: "minecraft:blaze_powder"
+					random_bonus: 4
+				}
+				{
+					id: "6F42F6A807BA854C"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Heated Treatment"
+			icon: "kubejs:scorch_mechanism"
+			x: 0.0d
+			y: 7.0d
+			shape: "diamond"
+			subtitle: "Contraption 27"
+			dependencies: [
+				"227A9F0308BBE647"
+				"2F99F54B57DDBC49"
+			]
+			dependency_requirement: "one_completed"
+			id: "19B36C589AFFBA16"
+			tasks: [{
+				id: "1824029D075E21FB"
+				type: "item"
+				item: "kubejs:scorch_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			title: "A lot. of lava"
+			icon: "minecraft:lava_bucket"
+			x: 2.5d
+			y: 5.0d
+			subtitle: "Contraption 25"
+			description: ["About 2,2 buckets for every scorch mechanism, 18 buckets for a machine, not that ecological but still a hose pulley or even a few hellbarks can handle it."]
+			hide_dependency_lines: true
+			dependencies: [
+				"19715EBCBBA1B4AD"
+				"21753CBB528EAADF"
+			]
+			hide: true
+			id: "227A9F0308BBE647"
+			tasks: [
+				{
+					id: "08F3DFE801BA96EA"
+					type: "item"
+					item: "minecraft:lava_bucket"
+					consume_items: false
+				}
+				{
+					id: "4A7D9B25D8D1A314"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:magma_cream"
+			x: 0.0d
+			y: 3.5d
+			subtitle: "Contraption 23"
+			description: ["A bit of lava into blood and it turns into magma cream."]
+			dependencies: ["227A9F0308BBE647"]
+			id: "43BED22E6E6B3DE7"
+			tasks: [
+				{
+					id: "1AB6D2A877E0043A"
+					type: "item"
+					item: "minecraft:magma_cream"
+				}
+				{
+					id: "4D03A526B844FF77"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Brownies"
+			icon: "tconstruct:scorched_brick"
+			x: -2.5d
+			y: 5.0d
+			subtitle: "Contraption 26"
+			dependencies: [
+				"43BED22E6E6B3DE7"
+				"17DDE3C9D26B4F35"
+				"286EFE73EFDF3FC2"
+			]
+			id: "2F99F54B57DDBC49"
+			tasks: [
+				{
+					id: "17EBC8080F61F41B"
+					type: "item"
+					item: "tconstruct:scorched_brick"
+				}
+				{
+					id: "59AA99EBBE644D5F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:gravel"
+			x: 0.0d
+			y: 5.0d
+			subtitle: "Contraption 24"
+			description: ["Don't forget the gravel, it can give a nice texture to the cak... grout."]
+			dependencies: ["21753CBB528EAADF"]
+			hide: true
+			id: "17DDE3C9D26B4F35"
+			tasks: [
+				{
+					id: "1ABD68415BBC5077"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+				{
+					id: "71A1C2D82009C191"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			icon: "minecraft:soul_sand"
+			x: -1.5d
+			y: 2.0d
+			subtitle: "Contraption 22"
+			description: [
+				"The soul part is very important for the cak... I mean grout."
+				""
+				"Curse sand with a soul fire in front of a fan to add the soul part of soul sand."
+				""
+				"Remember with brass machinery you got infinite sand through crushing wheels."
+			]
+			dependencies: ["21753CBB528EAADF"]
+			hide: true
+			id: "4A2CE1B515197917"
+			tasks: [
+				{
+					id: "4109AFD751657612"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+				{
+					id: "48E652D2F95661E0"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Soup"
+			icon: "tconstruct:blood_bucket"
+			x: 1.5d
+			y: 2.0d
+			subtitle: "Contraption 21-3"
+			description: ["Change the L for a P"]
+			dependencies: ["7B56EFFB4E69C63D"]
+			id: "7444D6A02022E62D"
+			tasks: [
+				{
+					id: "1F6768DFAB02150A"
+					type: "item"
+					item: "tconstruct:blood_bucket"
+					consume_items: false
+				}
+				{
+					id: "04F0BDDC9D5C14B0"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["4A2CE1B515197917"]
+			id: "7B56EFFB4E69C63D"
+			tasks: [{
+				id: "708756B9574CBDE3"
+				type: "item"
+				item: "forbidden_arcanus:soul"
+			}]
+		}
+		{
+			title: "Unsoulessed sand"
+			x: -2.0d
+			y: 3.5d
+			dependencies: ["4A2CE1B515197917"]
+			id: "286EFE73EFDF3FC2"
+			tasks: [{
+				id: "7F8F32F374BD0461"
+				type: "item"
+				item: "forbidden_arcanus:soulless_sand"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

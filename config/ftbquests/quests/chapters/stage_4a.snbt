@@ -1,0 +1,286 @@
+{
+	id: "06E28ED1CDF5590E"
+	group: "6F42926B3F0C534A"
+	order_index: 11
+	filename: "stage_4a"
+	title: "&f4a&r Thermodynamic Expansion"
+	icon: "kubejs:high_power_mechanism"
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	images: [{
+		x: 1.0d
+		y: -8.0d
+		width: 18.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "kubejs:textures/images/chapter4.png"
+		hover: ["chapter 4"]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Complete Charapter 4b"
+			x: 0.5d
+			y: 2.5d
+			dependencies: [
+				"3F351A36BDBB7495"
+				"3950BE281741D8B1"
+				"505DAC42A5452F93"
+				"7838C2A7CFCD7BB3"
+			]
+			id: "0199FF6088F9DE83"
+			tasks: [{
+				id: "4E1BC34263F67B27"
+				type: "item"
+				item: "kubejs:high_power_mechanism"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			dependencies: ["0C45F81EAF59B9A9"]
+			id: "505DAC42A5452F93"
+			tasks: [{
+				id: "301AEB6D559A5872"
+				type: "item"
+				item: "kubejs:faraday_cage"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			dependencies: [
+				"3140CE63038EF6CA"
+				"08D709506FB3C01F"
+			]
+			id: "3950BE281741D8B1"
+			tasks: [{
+				id: "0D7DFFA382216BD4"
+				type: "item"
+				item: "kubejs:golden_tube"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			dependencies: [
+				"78BC0279C6E6B43F"
+				"7DD86D7527EF3EE6"
+			]
+			id: "3F351A36BDBB7495"
+			tasks: [{
+				id: "555077C08048F0DA"
+				type: "item"
+				item: "kubejs:high_power_coil"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			dependencies: [
+				"1F5E873AE7A7E01C"
+				"1370144AFE1C48BC"
+			]
+			id: "7838C2A7CFCD7BB3"
+			tasks: [{
+				id: "1A22CE2D9D87C039"
+				type: "item"
+				item: "kubejs:smoke_mote"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["08EFA7FE3DE9E227"]
+			id: "78BC0279C6E6B43F"
+			tasks: [{
+				id: "50FA0D27FE2B0E7F"
+				type: "item"
+				item: "kubejs:inductor"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			dependencies: ["244CB10A1AA547F0"]
+			id: "7DD86D7527EF3EE6"
+			tasks: [{
+				id: "703FD6492ABA4680"
+				type: "item"
+				item: "kubejs:invar_core"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			dependencies: ["4308FC2C5FADEA8B"]
+			id: "244CB10A1AA547F0"
+			tasks: [{
+				id: "4D7B90509114730D"
+				type: "item"
+				item: "thermal:invar_ingot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["08EFA7FE3DE9E227"]
+			id: "3140CE63038EF6CA"
+			tasks: [{
+				id: "549EC631C743C379"
+				type: "item"
+				item: "kubejs:empty_tube"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["08EFA7FE3DE9E227"]
+			id: "08D709506FB3C01F"
+			tasks: [{
+				id: "6E845644EC3C1143"
+				type: "item"
+				item: "minecraft:gold_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			dependencies: ["244CB10A1AA547F0"]
+			id: "0C45F81EAF59B9A9"
+			tasks: [{
+				id: "154769A0280280E3"
+				type: "item"
+				item: "thermal:invar_plate"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			dependencies: ["31902C0B73018CB1"]
+			id: "1F5E873AE7A7E01C"
+			tasks: [{
+				id: "23021626BAAA6651"
+				type: "item"
+				item: "kubejs:mica_sheet"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			hide_dependency_lines: true
+			dependencies: ["08EFA7FE3DE9E227"]
+			id: "31902C0B73018CB1"
+			tasks: [{
+				id: "1E1EF1048DB52884"
+				type: "item"
+				item: "kubejs:mica_block"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			dependencies: [
+				"2C0022E0770D1627"
+				"3720D936277E1D1B"
+			]
+			id: "1370144AFE1C48BC"
+			tasks: [{
+				id: "0AA23DC0121DE389"
+				type: "item"
+				item: "kubejs:plastic_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["08EFA7FE3DE9E227"]
+			id: "2C0022E0770D1627"
+			tasks: [{
+				id: "6D190785276D0274"
+				type: "item"
+				item: "beyond_earth:desh_ingot"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["08EFA7FE3DE9E227"]
+			id: "3720D936277E1D1B"
+			tasks: [{
+				id: "60E785C784119DF9"
+				type: "item"
+				item: "createindustry:heavy_oil_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			dependencies: ["0199FF6088F9DE83"]
+			size: 1.5d
+			id: "0482FA16E53A158E"
+			tasks: [{
+				id: "7DEF6020F7CB41DF"
+				type: "item"
+				item: "kubejs:invar_machine"
+			}]
+		}
+		{
+			icon: "create:clipboard"
+			x: 0.5d
+			y: -5.0d
+			dependencies: ["6C5432493CB78405"]
+			hide: true
+			id: "08EFA7FE3DE9E227"
+			tasks: [{
+				id: "53B320B396503BA4"
+				type: "checkmark"
+				title: "unlock"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			dependencies: [
+				"3EF7497B4425B773"
+				"1B2F0DC421AE55F9"
+			]
+			id: "4308FC2C5FADEA8B"
+			tasks: [{
+				id: "396472533EA05D78"
+				type: "item"
+				item: "kubejs:invar_compound"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			dependencies: ["08EFA7FE3DE9E227"]
+			id: "3EF7497B4425B773"
+			tasks: [{
+				id: "27FF4697B7FFD0F5"
+				type: "item"
+				item: "thermal:nickel_ingot"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			dependencies: ["08EFA7FE3DE9E227"]
+			id: "1B2F0DC421AE55F9"
+			tasks: [{
+				id: "2DEA4825D552C5E0"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
