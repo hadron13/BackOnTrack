@@ -51,7 +51,7 @@ let donutCraft = (event, output, center, ring) => {
 }
 //reds
 //redsteste
-//titamconflito
+//redstitamconflito
 function ifiniDeploying(output, input, tool) {
 	return {
 		"type": "create:deploying",
