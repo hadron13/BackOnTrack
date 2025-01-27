@@ -2588,51 +2588,51 @@ function explosiveMachine(event){
 
 
 	event.custom({
- 		"type": "gearbox:pumpjack",
- 		"biome": "minecraft:desert",
- 		"ingredients": [ ],
- 		"results": [{
- 			"fluid": "gearbox:petroleum",
- 			"amount": 250 },
- 		],
- 		"processingTime": 180
- 	})
+		"type": "gearbox:pumpjack",
+		"biome": "minecraft:desert",
+		"ingredients": [ ],
+		"results": [{
+			"fluid": "gearbox:petroleum",
+			"amount": 250 },
+		],
+		"processingTime": 180
+	})
 
- 	event.custom({
- 		"type": "createindustry:distillation",
- 		"ingredients": [{
- 			"amount": 360,
- 			"fluid": "gearbox:petroleum",
- 			"nbt": {}
- 		}
- 		],
- 		"results": [{
- 			"amount": 80,
- 			"fluid": "createindustry:heavy_oil"
- 		},
- 		{
- 			"amount": 60,
- 			"fluid": "createindustry:diesel"
- 		},
- 		{
- 			"amount": 40,
- 			"fluid": "createindustry:kerosene"
- 		},
- 		{
- 			"amount": 40,
- 			"fluid": "createindustry:naphtha"
- 		},
- 		{
- 			"amount": 80,
- 			"fluid": "createindustry:gasoline"
- 		},
- 		{
- 			"amount": 60,
- 			"fluid": "createindustry:lpg"
- 		},
- 		],
- 		"processingTime": 180
- 	})
+	event.custom({
+		"type": "createindustry:distillation",
+		"ingredients": [{
+			"amount": 360,
+			"fluid": "gearbox:petroleum",
+			"nbt": {}
+		}
+		],
+		"results": [{
+			"amount": 80,
+			"fluid": "createindustry:heavy_oil"
+		},
+		{
+			"amount": 60,
+			"fluid": "createindustry:diesel"
+		},
+		{
+			"amount": 40,
+			"fluid": "createindustry:kerosene"
+		},
+		{
+			"amount": 40,
+			"fluid": "createindustry:naphtha"
+		},
+		{
+			"amount": 80,
+			"fluid": "createindustry:gasoline"
+		},
+		{
+			"amount": 60,
+			"fluid": "createindustry:lpg"
+		},
+		],
+		"processingTime": 180
+	})
 
 
 
