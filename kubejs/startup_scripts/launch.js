@@ -170,6 +170,7 @@ onEvent('item.registry', event => {
 	event.create('diamond_tube').texture("kubejs:item/blue_tube").displayName("Diamond Tube")
 	event.create('empty_tube').texture("kubejs:item/empty_tube").displayName("Empty Tube")
 
+	event.create('tungstem_sword_tuned', 'sword').tier('netherite').attackDamageBaseline(50.0).speedBaseline(10).displayName('Titamium Sword').unstackable()
 
 	// event.create('alchemical_laser').parentModel("kubejs:block/ponder_laser_lamp_on").displayName('Alchemical Laser (Ponder Entry)').unstackable()
 	event.create('thermal_cast').texture("kubejs:item/thermal_cast").displayName('Thermal Cast').unstackable()
