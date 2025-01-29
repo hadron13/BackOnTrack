@@ -2279,6 +2279,8 @@ function enderStuff(event){
 	event.recipes.gearboxMechanizing(KJ("coal_ring"), BC("cast_iron_ingot"))
 	event.recipes.gearboxMechanizing(TE("enderium_gear"), TE("enderium_ingot"))
 	
+	event.remove({output: ES('ender_tank') })
+	event.remove({output: ES('ender_chest') })
 	event.smithing(ES('ender_tank', 2), KJ('enderium_machine'), CR('fluid_tank'))
 	event.smithing(ES('ender_chest', 2), KJ('enderium_machine'), MC('chest'))
 
