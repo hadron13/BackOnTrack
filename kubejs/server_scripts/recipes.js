@@ -354,11 +354,11 @@ function oreProcessing(event){
     dust_process('gold', 	MC('gold_ingot'), 	MC('gold_nugget'), 	 TE('gold_dust'), 	MC('raw_gold'),   MC('gold_ore'),TE('cinnabar'), 'zinc')
     dust_process('copper', 	MC('copper_ingot'), CR('copper_nugget'), TE('copper_dust'), MC('raw_copper'), MC('copper_ore'),  MC('gold_nugget'), 'gold')
     dust_process('zinc', 	CR('zinc_ingot'), 	CR('zinc_nugget'), 	 KJ('zinc_dust'), 	CR('raw_zinc'),   CR('zinc_ore'), 	 TE('sulfur'), 'lead')
-	//dust_process('cobalt', 	TC('cobalt_ingot'), TC('cobalt_nugget'), MC('dead_bush'), 	TC('raw_cobalt'),   TC('cobalt_ore'), 	 TE('sulfur'), 'cobalt')
+	//dust_process('cobalt', 	TC('cobalt_ingot'), TC('cobalt_nugget'), KJ('cobalt_dust'), TC('raw_cobalt'), TC('cobalt_ore'),  TE('sulfur'), 'cobalt')
 
 	{
 		let name = 'cobalt'
-		let dust = MC('dead_bush')
+		let dust = KJ('cobalt_dust')
 		let ore_raw = TC('raw_cobalt')
 		let nugget = TC('cobalt_nugget')
 		let ingot = TC('cobalt_ingot')
