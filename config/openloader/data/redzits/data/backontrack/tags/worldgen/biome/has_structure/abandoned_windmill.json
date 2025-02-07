@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:has_structure/village_plains",
+    "biomesoplenty:lavender_field"
+  ]
+}

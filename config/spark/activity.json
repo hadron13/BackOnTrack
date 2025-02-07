@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Redz135",
+      "uniqueId": "c5c01e35-87bb-3b35-b94a-94f0b3f3bf5f"
+    },
+    "time": 1738354120606,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/fYFT9XdIit"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Redz135",
+      "uniqueId": "c5c01e35-87bb-3b35-b94a-94f0b3f3bf5f"
+    },
+    "time": 1738354061867,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/16rfX4XT64"
+    }
+  }
+]

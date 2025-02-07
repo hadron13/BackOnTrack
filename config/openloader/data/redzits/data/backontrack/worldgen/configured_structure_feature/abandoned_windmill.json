@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:village",
+  "config": {
+    "start_pool": "backontrack:abandoned_windmill",
+    "size": 1
+  },
+  "biomes": "#backontrack:has_structure/abandoned_windmill",
+  "adapt_noise": true,
+  "spawn_overrides": {}
+}
