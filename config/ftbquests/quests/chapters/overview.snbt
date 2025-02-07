@@ -84,7 +84,7 @@
 			shape: "diamond"
 			subtitle: "Secondary"
 			description: [
-				"Copper Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs."
+				"Pressure Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs."
 				""
 				"Note that Pressure Mechanisms are an ingredient to explosive and train mechanisms, but nothing else. The main assembly line will continue with Rotation Mechanisms."
 			]
@@ -98,7 +98,7 @@
 			tasks: [{
 				id: "27B07858A6018539"
 				type: "stat"
-				title: "Complete Bonus 1A"
+				title: "Complete Secondary 1a"
 				icon: "kubejs:pressure_mechanism"
 				disable_toast: true
 				stat: "minecraft:total_world_time"
@@ -208,7 +208,7 @@
 			shape: "diamond"
 			subtitle: "Chapter 4"
 			description: [
-				"After some desh extraction on the moon we are ready to get into new technology"
+				"Desh can be used as catalyst for the next great goal: &6electronics&r. Create diverse electronic components to produce electric and later digital machines."
 				""
 				"After hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar."
 			]
@@ -225,7 +225,7 @@
 			}]
 		}
 		{
-			title: "Rubber Tycoon"
+			title: "Sap Gaming"
 			icon: "thermal:cured_rubber"
 			x: -2.5d
 			y: 3.5d
@@ -234,7 +234,7 @@
 			description: [
 				"Pressure Machinery is certainly needed for the progression, however, it's full automation is fully optional, but fully recommended."
 				""
-				"After hitting the Checkmark above, additional Quests located in the First Chapter will be revealed."
+				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
 			dependencies: [
 				"0E98B4D2BBF55308"
@@ -260,7 +260,7 @@
 				""
 				"A steady supply of lava will be a must for scorch brick making, and for scorch mechanisms themselves, you'll probably want a train in the nether or a factory right there..."
 				""
-				"After hitting the Checkmark above, additional Quests located in the Second Chapter will be revealed."
+				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
 			dependencies: [
 				"69275ECFC147E15B"
@@ -347,9 +347,9 @@
 			shape: "diamond"
 			subtitle: "Chapter 3A"
 			description: [
-				"... You may use your explosives to assemble a rocket for space exploration, who knows what exciting things are out there..."
+				"Reaching the moon is necessary for a very special resource endogenous of the Moon: &6Desh&r."
 				""
-				"After hitting the Checkmark above, additional Quests located in the Third Chapter will be revealed."
+				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
 			dependencies: [
 				"0BAA1B60B372E283"
@@ -431,7 +431,7 @@
 			y: 8.5d
 			shape: "diamond"
 			subtitle: "Milestone"
-			description: ["So we got the new war technology, and it can alse be used for two more things."]
+			description: ["Explosive machinery not only opens up new warfare technology, but very powerful whole new industry sectors, buckle up, next stop: &lThe Moon&r"]
 			dependencies: [
 				"466B6AA648B23C3A"
 				"6E7750CE254894B4"
@@ -459,7 +459,7 @@
 				""
 				"Trains are the missing piece of transportation suitable for very very long distances, it opens a gigantic number of oportunities."
 				""
-				"Localized resources such as skystone can be transported in high volume across kilometers, and factories and bases may be connected with minutes of travel."
+				"Localized resources such as skystone can be transported in high volume across kilometers, and factories and bases may be connected with mere minutes of travel."
 			]
 			dependencies: [
 				"0B2683CCC179B93F"
@@ -471,7 +471,7 @@
 			tasks: [{
 				id: "3BDB6D2A6AC3776E"
 				type: "stat"
-				title: "Complete Bonus 1B"
+				title: "Complete Secondary 1b"
 				icon: "kubejs:train_mechanism"
 				stat: "minecraft:play_time"
 				value: 1
@@ -487,7 +487,7 @@
 			description: [
 				"Trains are the cheapest and fastest way to get stuff moving for long distances, you will need quite some sheets to make it happen."
 				""
-				"After hitting the Checkmark above, additional Quests located in the First Chapter will be revealed."
+				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
 			dependencies: [
 				"0E98B4D2BBF55308"
@@ -509,8 +509,9 @@
 			shape: "diamond"
 			subtitle: "Secondary 2B"
 			description: [
-				""
 				"Sugary explosives is the future of food, crunch random materials into the best food of the game!"
+				""
+				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
 			dependencies: [
 				"64F3352725385210"
@@ -598,7 +599,11 @@
 			y: 12.5d
 			shape: "diamond"
 			subtitle: "Secondary 4A"
-			description: ["Unlock new high power machinery to ramp up your production."]
+			description: [
+				"Unlock new high power machinery to ramp up your production."
+				""
+				"After hitting the Checkmark above, optional quests will appear in the side bar."
+			]
 			dependencies: [
 				"73CF11A2C0D4A9E5"
 				"64F3352725385210"
@@ -618,7 +623,11 @@
 			y: 9.5d
 			shape: "diamond"
 			subtitle: "Secondary 3B"
-			description: ["Exploit ender tunneling abilities to extract materials from all dimensions, planets and beyond."]
+			description: [
+				"Exploit ender tunneling abilities to extract materials from all dimensions, planets and beyond."
+				""
+				"After hitting the Checkmark above, optional quests will appear in the side bar."
+			]
 			dependencies: ["0BAA1B60B372E283"]
 			hide: true
 			id: "51F030004DBA106F"
@@ -673,7 +682,11 @@
 			y: 12.5d
 			shape: "diamond"
 			subtitle: "Secondary 4B"
-			description: ["Discover the opportunities to this intricate material, hammer your way through semiconductors."]
+			description: [
+				"Discover the opportunities to this intricate material, hammer your way through semiconductors."
+				""
+				"After hitting the Checkmark above, optional quests will appear in the side bar."
+			]
 			dependencies: ["73CF11A2C0D4A9E5"]
 			id: "4595F825A8A21E53"
 			tasks: [{

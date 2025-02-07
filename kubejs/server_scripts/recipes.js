@@ -387,24 +387,24 @@ function oreProcessing(event){
 
 
 
-	event.custom({
-		"type": "tconstruct:melting",
-		"ingredient": {
-			"item": "createindustry:crushed_raw_aluminum"
-		},
-		"result": {
-			"fluid": "tconstruct:molten_aluminum",
-			"amount": 60
-		},
-		"temperature": 425,
-		"time": 90,
-		"byproducts": [
-			{
-				"fluid": "tconstruct:molten_iron",
-				"amount": 10
-			}
-		]
-	});
+	// event.custom({
+	// 	"type": "tconstruct:melting",
+	// 	"ingredient": {
+	// 		"item": "createindustry:crushed_raw_aluminum"
+	// 	},
+	// 	"result": {
+	// 		"fluid": "tconstruct:molten_aluminum",
+	// 		"amount": 60
+	// 	},
+	// 	"temperature": 425,
+	// 	"time": 90,
+	// 	"byproducts": [
+	// 		{
+	// 			"fluid": "tconstruct:molten_iron",
+	// 			"amount": 10
+	// 		}
+	// 	]
+	// });
 }
 
 function Alloys(event) {
@@ -1026,24 +1026,6 @@ function tweaks(event) {
 		"time": 40
 	})
 
-	event.custom({
-		"type": "tconstruct:ore_melting",
-		"ingredient": {
-			"tag": "forge:ores/cobalt"
-		},
-		"result": {
-			"fluid": "tconstruct:molten_cobalt",
-			"amount": 90
-		},
-		"temperature": 950,
-		"time": 97,
-		"byproducts": [
-			{
-				"fluid": "tconstruct:molten_iron",
-				"amount": 30
-			}
-		]
-	})
 
 	event.custom({
 		"type": "tconstruct:ore_melting",

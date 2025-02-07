@@ -1,9 +1,9 @@
 {
 	id: "35F794DA429832B5"
 	group: "6F42926B3F0C534A"
-	order_index: 3
+	order_index: 2
 	filename: "stage_1b"
-	title: "&f1b&r Sap Gaming"
+	title: "&f1a&r Sap Gaming"
 	icon: "kubejs:pressure_mechanism"
 	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
@@ -22,10 +22,14 @@
 	quests: [
 		{
 			x: -1.0d
-			y: -2.5d
-			subtitle: "Contraption 10-1"
-			dependencies: ["7D872F933F45809B"]
-			hide: true
+			y: -1.5d
+			subtitle: "Contraption 8-1"
+			description: [
+				"The raw material used in rubber production comes from &ltrees&r."
+				""
+				"Find or plant trees in a suitable arrangement for extraction.\\nDifferent tree types have different output rates, or even produce different fluids!"
+			]
+			dependencies: ["0F9010F488CF3B40"]
 			id: "21F77703B8346D68"
 			tasks: [{
 				id: "7D4EE770A72DB656"
@@ -45,23 +49,24 @@
 		}
 		{
 			title: "Sap Gaming"
-			x: -1.0d
-			y: -1.0d
-			subtitle: "Contraption 10-2"
-			description: ["Plug a sapper onto a tree to start extracting it's precious fluid."]
+			x: -0.5d
+			y: 0.5d
+			subtitle: "Contraption 8-2"
+			description: ["Craft a few &6Sappers&r and place them near the trees, then power them using cogwheels."]
 			dependencies: ["21F77703B8346D68"]
 			id: "015B5B986DF08EAC"
 			tasks: [{
 				id: "55CA8CF04FF04651"
 				type: "item"
 				item: "gearbox:sapper"
+				count: 2L
 			}]
 		}
 		{
 			x: -2.0d
-			y: 0.5d
-			subtitle: "Contraption 10-3"
-			description: ["The newly extracted resin can be processed."]
+			y: 1.5d
+			subtitle: "Contraption 8-3"
+			description: ["The newly extracted resin can now be processed."]
 			dependencies: ["015B5B986DF08EAC"]
 			id: "7EEC92FEA597272F"
 			tasks: [{
@@ -72,9 +77,9 @@
 		}
 		{
 			x: 0.0d
-			y: 1.5d
-			subtitle: "Contraption 10-4"
-			description: ["Insert the resin in the compressor and create rubber."]
+			y: 2.5d
+			subtitle: "Contraption 8-4"
+			description: ["Craft and place a &6Compressor&r. Use pipes to insert resin and a campfire underneath, lastly power using the shaft on the side, use a depot, belt or chute to extract the output."]
 			dependencies: ["7EEC92FEA597272F"]
 			id: "5322ABEEF5DC2312"
 			tasks: [{
@@ -84,10 +89,10 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 3.0d
-			subtitle: "Contraption 10-5"
-			description: ["Rubber is now ready to be used."]
+			x: -1.5d
+			y: 3.5d
+			subtitle: "Contraption 8-5"
+			description: ["The rubber is now ready to be used!"]
 			dependencies: ["5322ABEEF5DC2312"]
 			id: "44F131FCAEC5E551"
 			tasks: [{
@@ -98,7 +103,8 @@
 		}
 		{
 			x: -1.0d
-			y: 4.5d
+			y: 5.5d
+			description: ["The final step is to convert &6Rotation Mechanisms&r into &dPressure Mechanisms&r. This may be done manually for now, later with autocrafters, this can be fully automated."]
 			dependencies: ["44F131FCAEC5E551"]
 			id: "7299A14015C4B195"
 			tasks: [{
@@ -109,7 +115,8 @@
 		}
 		{
 			x: -1.0d
-			y: 6.5d
+			y: 7.5d
+			description: ["Congratulations! You have just finished the Secondary Chapter 1A! You now have plenty of material for fluid machinery."]
 			dependencies: ["7299A14015C4B195"]
 			size: 2.0d
 			id: "4DA3164A6CED529B"
@@ -117,6 +124,49 @@
 				id: "58624400EBC9FFC4"
 				type: "item"
 				item: "kubejs:copper_machine"
+			}]
+			rewards: [
+				{
+					id: "17010638F6C82EF4"
+					type: "item"
+					item: "minecraft:copper_ingot"
+					count: 10
+					random_bonus: 5
+				}
+				{
+					id: "000B2DED88953AAF"
+					type: "item"
+					item: "kubejs:pressure_mechanism"
+					count: 16
+					random_bonus: 8
+				}
+				{
+					id: "4FB550F5A1EC30B0"
+					type: "item"
+					item: "create:fluid_tank"
+					count: 5
+					random_bonus: 3
+				}
+			]
+		}
+		{
+			title: "Secondary Chapters"
+			icon: "create:clipboard"
+			x: -1.0d
+			y: -3.0d
+			shape: "diamond"
+			description: [
+				"&lSecondary Chapters&r are &omostly optional&r regarding their automation, but items automated in these may be required for building main line factories."
+				""
+				"In practice they are small chapters, breaks between major chapters. You can automate them a few moments."
+			]
+			dependencies: ["7D872F933F45809B"]
+			hide: true
+			size: 1.5d
+			id: "0F9010F488CF3B40"
+			tasks: [{
+				id: "43630C8FD565DB99"
+				type: "checkmark"
 			}]
 		}
 	]

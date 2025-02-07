@@ -1,9 +1,9 @@
 {
 	id: "746A5B7EB6A97E43"
 	group: "6F42926B3F0C534A"
-	order_index: 2
+	order_index: 3
 	filename: "stage_1a"
-	title: "&f1a&r Sturdy Production"
+	title: "&f1b&r Sturdy Production"
 	icon: "kubejs:train_mechanism"
 	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false

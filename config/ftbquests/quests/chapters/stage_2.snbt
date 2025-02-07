@@ -13,7 +13,6 @@
 			icon: "kubejs:rotation_mechanism"
 			x: 0.0d
 			y: -4.0d
-			shape: "hexagon"
 			description: [
 				"The Automation Target this time is the Electron Tube. Placing them onto the Kinetic Mechanism will send you to the next tier."
 				""
@@ -260,7 +259,7 @@
 			icon: "create:brass_ingot"
 			x: 2.0d
 			y: -4.0d
-			shape: "circle"
+			shape: "diamond"
 			subtitle: "Contraption 10"
 			description: [
 				"Not part of the Mechanism Chain, yet very important for creating relevant machines."
@@ -319,7 +318,7 @@
 			x: -2.0d
 			y: -4.0d
 			description: [
-				"Your factory may be thousands of blocks away from a sky stone deposit."
+				"Your factory may be thousands of blocks away from the nearest sky stone deposit."
 				""
 				"The only way to easily transfer items through huge distances is by train, which will need some amount of brass, sturdy sheets and iron."
 				""
@@ -662,12 +661,12 @@
 			}]
 		}
 		{
-			title: "Ultimate Cleaning Liquid"
+			title: "Ultimate Cleaning Potion"
 			icon: "kubejs:ash_water_bucket"
 			x: -0.5d
 			y: 1.0d
 			subtitle: "Contraption 13-5"
-			description: ["This ash mix can clean anything, even alien rocks."]
+			description: ["Do &lNOT&r mix cleaning products."]
 			dependencies: [
 				"7C47F1567965A5DE"
 				"2AE2C1F34DA2FA35"
@@ -720,7 +719,7 @@
 			x: 0.0d
 			y: -0.5d
 			subtitle: "Contraption 13-3"
-			description: ["The charcoal was burnt and all that is left is ashes."]
+			description: ["Burn the charcoal and what will be left are ashes, so wake up, mr. Freeman, wake up and smell the ashes."]
 			dependencies: ["7D78CAF55BBE964C"]
 			id: "7C47F1567965A5DE"
 			tasks: [
@@ -743,7 +742,7 @@
 			x: 1.5d
 			y: 0.5d
 			subtitle: "Contraption 13-4"
-			description: ["Because even rocks need water (to be cleaned of cou(a)rse)"]
+			description: ["Tap some water, for cleaning of cou(a)rse"]
 			hide_dependency_lines: true
 			dependencies: ["727B43FD95C4A512"]
 			id: "2AE2C1F34DA2FA35"
@@ -793,12 +792,16 @@
 			]
 		}
 		{
-			title: "Pyro Stuff"
+			title: "Pyrolisis"
 			icon: "minecraft:charcoal"
 			x: 1.5d
 			y: -1.0d
 			subtitle: "Contraption 13-2"
-			description: ["Do the process known as pyrolisis, aka burn the wood so that it burns better."]
+			description: [
+				"Burning but not combusting removes the nasty part of wood and leaves just the flammable carbon behind."
+				""
+				"This is called pyrolisis."
+			]
 			dependencies: ["098F484B294E2A1C"]
 			id: "7D78CAF55BBE964C"
 			tasks: [

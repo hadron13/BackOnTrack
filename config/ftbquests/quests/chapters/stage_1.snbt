@@ -10,7 +10,7 @@
 	images: [
 		{
 			x: -3.0d
-			y: 2.0d
+			y: -1.0d
 			width: 6.0d
 			height: 2.0d
 			rotation: 0.0d
@@ -37,11 +37,19 @@
 		{
 			title: "Automatic Forest"
 			icon: "minecraft:oak_log"
-			x: 3.0d
-			y: 2.5d
+			x: 2.5d
+			y: 1.5d
 			shape: "diamond"
 			subtitle: "Contraption 1"
-			description: ["One of the best contraptions is an automatic wood farm, plenty of wood for crafting, building and as fuel."]
+			description: [
+				"The first and best contraption to kickstart the automation revolution is an automatic tree farm!"
+				""
+				"A simple tree farm can be made with a &6Mechanical Bearing&r, some &6Mechanical Saws&r and &6Deployers&r."
+				""
+				"The farm will not only provide crafting material, but also food and fuel for your industrialization."
+				""
+				"&lTip: only press the checkmarck once the item has been &o&6automated&r"
+			]
 			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]
 			id: "2CB570195DA7E106"
@@ -69,15 +77,15 @@
 			]
 		}
 		{
-			title: "Stone Replicator #1"
+			title: "Stone Replicator"
 			icon: "minecraft:andesite"
-			x: 6.0d
-			y: 2.5d
+			x: 4.0d
+			y: 2.0d
 			subtitle: "Contraption 2-1"
 			description: [
-				"Mining andesite is not automatic, neither sustainable."
+				"As the name implies, &6&oandesite alloy&r requires &7&oandesite&r."
 				""
-				"Fortunately, the &dMechanical Extruder&r is available to us!"
+				"A factory cannot be manually fed forever, to automate andesite production, use a &6Mechanical Extruder&r."
 			]
 			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]
@@ -100,9 +108,13 @@
 			title: "Log Stripper"
 			icon: "minecraft:stripped_oak_log"
 			x: 2.5d
-			y: 4.0d
-			subtitle: "Contraption 7-1"
-			description: ["Process the logs by stripping them in an upwards facing saw."]
+			y: 5.0d
+			subtitle: "Contraption 4-1"
+			description: [
+				"Automatic processing of wood is required for a fully automated factory."
+				""
+				"The first step is stripping the logs in an upward facing &6Mechanical Saw&r."
+			]
 			dependencies: ["2CB570195DA7E106"]
 			id: "532EFE32C3A515B5"
 			tasks: [
@@ -235,10 +247,14 @@
 		{
 			title: "Plank Cutter"
 			icon: "minecraft:oak_planks"
-			x: 3.0d
-			y: 6.0d
-			subtitle: "Contraption 7-2"
-			description: ["Cut even further..."]
+			x: 2.5d
+			y: 7.0d
+			subtitle: "Contraption 4-2"
+			description: [
+				"Cut even further for &6planks&r..."
+				""
+				"This time you will need to split for 3 different paths."
+			]
 			dependencies: ["532EFE32C3A515B5"]
 			id: "19921941321965A4"
 			tasks: [
@@ -266,10 +282,10 @@
 		{
 			title: "Cutter of Cut Planks"
 			icon: "minecraft:oak_slab"
-			x: 1.5d
-			y: 7.5d
-			subtitle: "Contraption 7-3"
-			description: ["... and even further..."]
+			x: 1.0d
+			y: 8.0d
+			subtitle: "Contraption 4-3"
+			description: ["Cutting even further yields slabs..."]
 			dependencies: ["19921941321965A4"]
 			id: "59E4A6163753BC12"
 			tasks: [
@@ -297,13 +313,13 @@
 		{
 			title: "Andezinc Mixer"
 			icon: "create:andesite_alloy"
-			x: 7.5d
-			y: 6.5d
-			subtitle: "Contraption 6-4"
-			description: ["In another Mix! This time it'll be zinc and your blend"]
+			x: 5.5d
+			y: 7.0d
+			subtitle: "Contraption 5"
+			description: ["Combine the &o&7andesitic blend&r with &o&bzinc&r to create &6&oAndesite Alloy&r, the base material for all your kinetic endeavours."]
 			dependencies: [
 				"2E7021512C3B8841"
-				"1D3EC43485C59DB5"
+				"7C08D832EEA6483E"
 			]
 			id: "73FCA432DEFC1DED"
 			tasks: [
@@ -324,13 +340,18 @@
 			title: "Deploy, Deploy, Deploy."
 			icon: "kubejs:rotation_mechanism"
 			x: 4.0d
-			y: 10.0d
-			subtitle: "Contraption 9"
-			description: ["Bringing together Andesite Alloy and cut planks using a row of Deployers concludes your first Assembly Line."]
+			y: 11.5d
+			subtitle: "Contraption 7"
+			description: [
+				"Bring the &6Mechanism Base&r along with &6Cogwheels&r, &6Large Cogwheels&r and &6Andesite Alloy&r into the final contraption of this chapter."
+				""
+				"&6Deploy&r both cogwheels and alloy into the base, finally, use a &6Mechanical Press&r to assemble the &l&dRotation Mechanism&r"
+			]
 			dependencies: [
 				"267DD6A6E01F3B26"
 				"5F120415541E741D"
 				"378374260932467B"
+				"73FCA432DEFC1DED"
 			]
 			id: "675C395B2074C24C"
 			tasks: [
@@ -355,9 +376,12 @@
 			description: [
 				"Welcome to the Factory Guide!"
 				""
-				"These Quests are an Automation Plan for your upcoming Assembly Line. Always view them as recommendations on what you should construct a passive supply for. The flowgraph depicts the connections between relevant recipes/processing."
+				"This guide will explain all the processes required to achieve your current end goal: \\n"
+				"The &6&lRotation Mechanism&r"
 				""
-				"Happy engineering!"
+				"This guide is &lnot mandatory&r for progression, although very helpful navigating the recipe madness"
+				""
+				""
 			]
 			dependencies: ["5A8DF2D8553904BF"]
 			hide: true
@@ -376,13 +400,13 @@
 		{
 			title: "Chapter 1 Complete!"
 			x: 4.0d
-			y: 12.0d
+			y: 14.0d
 			shape: "diamond"
 			description: [
-				"Congrats! Now you have a passive supply of Kinetic Mechanisms. This is bound to change the pace a bit."
+				"Congratulations, you have finished &lChapter 1&r.\\n\\nThe passive income of &6Rotation Mechanisms&r is bound to accelerate the pace of automation."
 				""
 				"Before moving on, check back through your factory and search for any major bottlenecks."
-				"It'd be a shame if a really efficient andesite generator is held back only by the sand not coming in quickly enough."
+				"It'd be a shame if a really efficient andesitic blend generator is held back only by the zinc not coming in quickly enough."
 			]
 			dependencies: ["675C395B2074C24C"]
 			size: 2.0d
@@ -418,7 +442,7 @@
 			title: "Speedrun"
 			icon: "ae2:speed_card"
 			x: 6.0d
-			y: -1.0d
+			y: -0.5d
 			shape: "diamond"
 			description: [
 				"The flowgraph of this guide may suggest that items aren't accessible without automation."
@@ -435,10 +459,14 @@
 		{
 			title: "Stone Replicator #2"
 			icon: "minecraft:granite"
-			x: 9.0d
+			x: 5.5d
 			y: 2.5d
 			subtitle: "Contraption 3-1"
-			description: ["Also using the extruder, create granite for further processing."]
+			description: [
+				"The igneous brother of andesite is also required for the production of &oAndesite Alloy&r"
+				""
+				"You can also produce &cGranite&r with &6Mechanical Extruders&r"
+			]
 			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]
 			id: "501BEE898CF72C5B"
@@ -459,10 +487,10 @@
 		{
 			title: "Granitic milling"
 			icon: "kubejs:asurine_bits"
-			x: 9.5d
+			x: 5.5d
 			y: 4.0d
-			subtitle: "Contraption 5-1"
-			description: ["Granite contains a bit of asurine that can be extracted with a bit of milling."]
+			subtitle: "Contraption 3-2"
+			description: ["The tiny portion of &bAsurine&r contained in &cgranite&r can be extracted by milling with a &6Millstone&r"]
 			dependencies: ["501BEE898CF72C5B"]
 			id: "2487B7A0428E624C"
 			tasks: [
@@ -482,10 +510,10 @@
 		{
 			title: "Azure Washing"
 			icon: "create:zinc_nugget"
-			x: 9.0d
+			x: 5.5d
 			y: 5.5d
-			subtitle: "Contraption 5-2"
-			description: ["Asurine chunks can be washed to purify it's zinc content, remember that for later!"]
+			subtitle: "Contraption 3-3"
+			description: ["To further down purify the zinc content of asurine, wash it using a &6Mechanical Fan&r with &bWater&r"]
 			dependencies: ["2487B7A0428E624C"]
 			id: "2E7021512C3B8841"
 			tasks: [
@@ -503,34 +531,12 @@
 			]
 		}
 		{
-			title: "Andesitic Blending"
-			icon: "kubejs:andesite_blend"
-			x: 6.0d
-			y: 5.5d
-			subtitle: "Contraption 6-3"
-			dependencies: ["7C08D832EEA6483E"]
-			id: "1D3EC43485C59DB5"
-			tasks: [
-				{
-					id: "38B3F7AECDEA9B8C"
-					type: "item"
-					item: "kubejs:andesite_blend"
-					consume_items: false
-				}
-				{
-					id: "00CE65D921A57B73"
-					type: "checkmark"
-					title: "automated"
-				}
-			]
-		}
-		{
 			title: "Teething"
 			icon: "create:cogwheel"
-			x: 5.0d
-			y: 8.0d
+			x: 4.0d
+			y: 9.0d
 			subtitle: "Contraption 8-2"
-			description: ["Deploy some planks to add teeth to the shaft, creating a cogwheel."]
+			description: ["Use a &6Deployer&r to insert teeth onto a &7&oshaft&r to create a &6Cogwheel&r"]
 			dependencies: [
 				"19921941321965A4"
 				"330C6063A4E78765"
@@ -552,10 +558,10 @@
 		{
 			title: "Extra Teething"
 			icon: "create:large_cogwheel"
-			x: 3.5d
-			y: 8.0d
+			x: 2.5d
+			y: 9.5d
 			subtitle: "Contraption 8-3"
-			description: ["Deploy even more wood to create a large cogwheel."]
+			description: ["Once more use a &6Deployer&r to add even more teeth, creating a &6Large Cogwheel&r"]
 			dependencies: [
 				"19921941321965A4"
 				"267DD6A6E01F3B26"
@@ -577,10 +583,10 @@
 		{
 			title: "Shifting Alloy"
 			icon: "create:shaft"
-			x: 6.5d
+			x: 4.0d
 			y: 7.5d
-			subtitle: "Contraption 8-1"
-			description: ["Cut the alloy into this nice shaft shape for making cogwheels."]
+			subtitle: "Contraption 6-1"
+			description: ["The &6Rotation Mechanism&r production demands &6Cogwheels&r, which in turn require &6Shafts&r, saw &7&oandesite alloy&r in an upwards facing &6Mechanical Saw&r to produce shafts."]
 			dependencies: ["73FCA432DEFC1DED"]
 			id: "330C6063A4E78765"
 			tasks: [
@@ -600,9 +606,10 @@
 			title: "Cheap Machines"
 			icon: "kubejs:andesite_machine"
 			x: -4.5d
-			y: 2.0d
+			y: -1.0d
 			shape: "diamond"
 			subtitle: "8 Silver"
+			description: ["If you want to keep the grind away for now, you can buy machines to accelerate your progression."]
 			hide_dependency_lines: true
 			dependencies: ["5799D55BB26BA52C"]
 			id: "718B4AEA38DD5EEB"
@@ -625,9 +632,10 @@
 			title: "Extra Machinery"
 			icon: "kubejs:andesite_machine"
 			x: -3.0d
-			y: 2.0d
+			y: -1.0d
 			shape: "diamond"
 			subtitle: "16 Silver"
+			description: ["The longer this factory takes to be built, less machines become available in the market and prices rise..."]
 			hide_dependency_lines: true
 			dependencies: ["718B4AEA38DD5EEB"]
 			id: "05092C227E729611"
@@ -643,16 +651,17 @@
 				id: "043FB5805C0930A7"
 				type: "item"
 				item: "kubejs:andesite_machine"
-				count: 5
+				count: 4
 			}]
 		}
 		{
 			title: "Expensive Machinery"
 			icon: "kubejs:andesite_machine"
 			x: -1.5d
-			y: 2.0d
+			y: -1.0d
 			shape: "diamond"
 			subtitle: "24 Silver"
+			description: ["These are the last available machines, spend wisely."]
 			hide_dependency_lines: true
 			dependencies: ["05092C227E729611"]
 			id: "6090224FB9CF8269"
@@ -668,26 +677,34 @@
 				id: "2B2EF95550149AEC"
 				type: "item"
 				item: "kubejs:andesite_machine"
-				count: 5
+				count: 4
 			}]
 		}
 		{
 			title: "Kinetic Burning"
-			x: 5.5d
-			y: 4.0d
+			icon: "kubejs:andesite_blend"
+			x: 4.0d
+			y: 4.5d
 			subtitle: "Contraption 2-2"
-			description: ["Pass the andesite through a &5A"]
 			dependencies: ["106C6DFDCB97327C"]
 			id: "7C08D832EEA6483E"
-			tasks: [{
-				id: "2FA400658D20E1AE"
-				type: "item"
-				item: "gearbox:kiln"
-			}]
+			tasks: [
+				{
+					id: "1D9BA8FEA65D7C0A"
+					type: "item"
+					item: "kubejs:andesite_blend"
+				}
+				{
+					id: "59ABB61749AE043A"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
 		}
 		{
-			x: 2.0d
-			y: 9.0d
+			x: 1.0d
+			y: 10.5d
+			subtitle: "Contraption 4-4"
 			description: ["... and now you have a base for your future machinations."]
 			dependencies: ["59E4A6163753BC12"]
 			id: "378374260932467B"
@@ -695,6 +712,24 @@
 				id: "21AA91C94E91E492"
 				type: "item"
 				item: "kubejs:rotation_mechanism_base"
+			}]
+		}
+		{
+			title: "Contraptions"
+			icon: "create:cogwheel"
+			x: 6.0d
+			y: -1.5d
+			shape: "diamond"
+			description: [
+				"Most quests are organized in &ocontraptions&r, these are logical blocks to aid you in organizing your factory."
+				""
+				"As always, nothing in this guide is mandatory, you may reorganize them if you so desire."
+			]
+			dependencies: ["5799D55BB26BA52C"]
+			id: "62B8F282B95487F3"
+			tasks: [{
+				id: "31EF7249526AF252"
+				type: "checkmark"
 			}]
 		}
 	]
