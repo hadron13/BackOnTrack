@@ -1,12 +1,12 @@
 {
   "type": "integrated_api:generic_structure",
   "config": {
-    "start_pool": "backontrack:abandoned_windmill",
+    "start_pool": "backontrack:abandoned_house",
     "size": 1,
     "rotation_fixed": true,
     "cannot_spawn_in_liquid": true
   },
-  "biomes": "#backontrack:has_structure/abandoned_windmill",
+  "biomes": "#backontrack:has_structure/abandoned_house",
   "adapt_noise": true,
   "spawn_overrides": {}
 }
