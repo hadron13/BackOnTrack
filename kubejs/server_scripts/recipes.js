@@ -89,7 +89,7 @@ onEvent('recipes', event => {
 	invarMachine(event)
 	enderMachine(event)
 	fluixMachine(event)
-	charapter5(event)
+	titaniumStuff(event)
 	circuits(event)
 	barrels(event)
 	rocketScience(event)
@@ -2191,12 +2191,9 @@ function brassMachine(event) {
 
 	event.remove({output: PP('item_terminal')})
 	event.smithing(PP('item_terminal'),'toms_storage:ts.storage_terminal', KJ('brass_machine'))
-
-
-
 }
 
-function charapter5(event){
+function titaniumStuff(event){
 	event.recipes.createMixing(Fluid.of(KJ('tnt2'), 250), Fluid.of(KJ('tnt1'), 250)).heated()
 	event.recipes.createMixing([BE("desh_ingot"), Fluid.of(KJ('tnt5'), 250)], [BE("desh_ingot"), SP("ash")]).heated()
 

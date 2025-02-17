@@ -26,7 +26,7 @@
 			y: 2.25d
 			shape: "diamond"
 			subtitle: "Contraption 46"
-			description: ["Unbelievable! The finished recipe is incredibly packed with energy, and will explode in your mouth (literally)."]
+			description: ["Congratulations! You have just finished Chapter 2b! Now you may not worry about food, forever."]
 			dependencies: [
 				"22517F1E5F84FD8E"
 				"78C29DB493B1B701"
@@ -65,7 +65,7 @@
 			x: 2.0d
 			y: 2.0d
 			subtitle: "Contraption 45-1"
-			description: ["In this variant of chocolate, a secret ingredient is added in the basin to add a bit of that crunchiness, you know..."]
+			description: ["Crunchy crystals pinki-fy the chocolate, resonance cascade not included."]
 			dependencies: [
 				"5A48ACD1E1A2D736"
 				"191305FFD7E6A12D"
@@ -92,7 +92,7 @@
 			x: 2.0d
 			y: 3.0d
 			subtitle: "Contraption 45-2"
-			description: ["Mix milk, beans and sugar to Create the old plain chocolate we all know."]
+			description: ["Mix milk, beans and sugar to Create regular old chocolate."]
 			dependencies: [
 				"5A48ACD1E1A2D736"
 				"191305FFD7E6A12D"
@@ -113,12 +113,12 @@
 			]
 		}
 		{
-			title: "Helth Chocolate"
+			title: "Darker Chocolate"
 			icon: "create_confectionery:black_chocolate_bucket"
 			x: 2.0d
 			y: 4.0d
 			subtitle: "Contraption 45-3"
-			description: ["Like chocolate, but apparently helthier."]
+			description: ["More cocoa, less sugar, darker tone."]
 			dependencies: [
 				"191305FFD7E6A12D"
 				"098744BFA66730E4"
@@ -145,7 +145,7 @@
 			x: -1.0d
 			y: 3.0d
 			subtitle: "Contraption 44"
-			description: ["It's not hard at all to automate milk, just put a deployer, a bucket, and a way to empty and put it back."]
+			description: ["Milking can be automating by using a deployer on a cow, a bucket will have to be emptied and re-inserted into the deployer for continous milking."]
 			dependencies: ["141CF17F211E6268"]
 			hide: true
 			id: "5A48ACD1E1A2D736"
@@ -168,11 +168,7 @@
 			x: -1.5d
 			y: -0.5d
 			subtitle: "Contraption 42"
-			description: [
-				"Get some flowers, a nest or beehive, and don't forget the bees."
-				""
-				"Did you know you can pump honey directly out of the nest/beehive?"
-			]
+			description: ["Set up a simple honey farm by hooking pipes directly into beehives, this method does not anger bees, and is fully automatable."]
 			dependencies: ["141CF17F211E6268"]
 			hide: true
 			id: "2742F5B931B4492F"
@@ -190,12 +186,12 @@
 			]
 		}
 		{
-			title: "Suspicious Flour"
+			title: "Hell Flour"
 			icon: "create:cinder_flour"
 			x: 2.0d
 			y: -1.5d
 			subtitle: "Contraption 41-2"
-			description: ["Crush the netherrack for some... flour?"]
+			description: ["Grind down the netherrack to obtain the hell's version of flour, this is also useful for feeding blazes."]
 			dependencies: ["5BA6722C2A672672"]
 			id: "6A0D07E7BCFDC84A"
 			tasks: [
@@ -217,7 +213,7 @@
 			x: 0.5d
 			y: 0.0d
 			subtitle: "Contraption 44-1"
-			description: ["Mix honey, sugar, flour, and crushed netherrack? Just follow the recipe you're safe."]
+			description: ["Combine honey, sugar and flour from the overworld with cinder flower from the underworld to obtain the gingerdough mixture, without ginger, or yet bread."]
 			dependencies: [
 				"2742F5B931B4492F"
 				"452AC768DFA2D931"
@@ -244,7 +240,6 @@
 			x: 0.0d
 			y: -1.5d
 			subtitle: "Contraption 40-2"
-			description: ["Mill down the wheat for some flour, dugh."]
 			dependencies: ["4ED21477B5FD4FE7"]
 			id: "452AC768DFA2D931"
 			tasks: [
@@ -266,7 +261,7 @@
 			x: -1.0d
 			y: 1.5d
 			subtitle: "Contraption 43-2"
-			description: ["It's the heart of the candies. Also known as saccharose (C₁₂H₂₂O₁₁)"]
+			description: ["The soul of candies. Also known as saccharose (C₁₂H₂₂O₁₁)"]
 			dependencies: ["53C5D183F9F513D8"]
 			id: "3BA6DC46EA464C58"
 			tasks: [
@@ -287,7 +282,7 @@
 			x: -1.0d
 			y: 4.5d
 			subtitle: "Contraption 45-1"
-			description: ["You also need a farm for these Beans."]
+			description: ["Beans are simple to automate, you may use a vertical harvester instead of regular horizontal ones."]
 			dependencies: ["141CF17F211E6268"]
 			hide: true
 			id: "191305FFD7E6A12D"
@@ -309,7 +304,7 @@
 			x: 1.0d
 			y: 5.0d
 			subtitle: "Contraption 45-3"
-			description: ["Crush the beans for this kind of butter."]
+			description: ["Crushing crushed beans again yields (cocoa) butter."]
 			dependencies: ["63407E78ED94DCF9"]
 			id: "098744BFA66730E4"
 			tasks: [
@@ -330,7 +325,7 @@
 			x: -0.5d
 			y: 5.5d
 			subtitle: "Contraption 45-2"
-			description: ["Press the beans."]
+			description: ["Press the beans"]
 			dependencies: ["191305FFD7E6A12D"]
 			id: "63407E78ED94DCF9"
 			tasks: [
@@ -352,7 +347,7 @@
 			x: -2.5d
 			y: 1.5d
 			subtitle: "Contraption 43-1"
-			description: ["No, sugar cane does not grow faster on sand, it's your brain tricking you."]
+			description: ["It does NOT grow faster on sand."]
 			dependencies: ["141CF17F211E6268"]
 			hide: true
 			id: "53C5D183F9F513D8"
@@ -375,7 +370,7 @@
 			x: 1.0d
 			y: -3.0d
 			subtitle: "Contraption 41-1"
-			description: ["If you really want this 100% automated, then you mix some of the flour with lava and cobblestone back into netherrack, it's homeopathy, but actually works!"]
+			description: ["Either use leftover netherrack from mining contraptions, or simply use homeopathy to turn netherrack into even more netherrack!"]
 			dependencies: ["141CF17F211E6268"]
 			hide: true
 			id: "5BA6722C2A672672"
@@ -398,7 +393,7 @@
 			x: -1.5d
 			y: -2.5d
 			subtitle: "Contraption 40-1"
-			description: ["There's no secret to this, you'll need harvesters and a farm."]
+			description: ["A simple rotary farm should sufice, although the odds of you already having one are big."]
 			dependencies: ["141CF17F211E6268"]
 			hide: true
 			id: "4ED21477B5FD4FE7"
@@ -416,11 +411,11 @@
 			]
 		}
 		{
-			title: "Crunchy Rock"
+			title: "Crunchy Crystals"
 			icon: "create:polished_rose_quartz"
 			x: 0.5d
 			y: 1.0d
-			description: ["Shh! The secret ingredient is pin... rose quartz."]
+			description: ["The recipe uses some crunchy crystals you produce already in chapter 2."]
 			dependencies: ["141CF17F211E6268"]
 			hide: true
 			id: "076594A762B3FC88"
@@ -438,12 +433,12 @@
 			]
 		}
 		{
-			title: "Baking Bad"
+			title: "Baking Bread"
 			icon: "create_confectionery:gingerbread"
 			x: 2.0d
 			y: 0.0d
 			subtitle: "Contraption 44-2"
-			description: ["Cook the m... dough into this nice bread."]
+			description: ["Cooking is a delicated method involving multiple steps of chemical reactions, such as baking."]
 			dependencies: ["3B7A8138E2826809"]
 			id: "10690D8E8963D4CB"
 			tasks: [
@@ -462,7 +457,7 @@
 		{
 			x: 0.5d
 			y: 6.5d
-			description: ["This powder does not go in the recipe, but you can use it for some nice hot chocolate."]
+			description: ["This is a byproduct of pressing beans, you can use it in hot chocolate."]
 			dependencies: ["63407E78ED94DCF9"]
 			id: "4EBA20DD0311AB5E"
 			tasks: [{

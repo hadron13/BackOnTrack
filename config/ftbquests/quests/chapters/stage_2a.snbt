@@ -79,7 +79,7 @@
 		{
 			title: "A lot. of lava"
 			icon: "minecraft:lava_bucket"
-			x: 2.5d
+			x: 3.0d
 			y: 5.0d
 			subtitle: "Contraption 25"
 			description: ["About 2,2 buckets for every scorch mechanism, 18 buckets for a machine, not that ecological but still a hose pulley or even a few hellbarks can handle it."]
@@ -128,7 +128,7 @@
 		{
 			title: "Brownies"
 			icon: "tconstruct:scorched_brick"
-			x: -2.5d
+			x: -3.0d
 			y: 5.0d
 			subtitle: "Contraption 26"
 			dependencies: [
@@ -174,16 +174,10 @@
 		}
 		{
 			icon: "minecraft:soul_sand"
-			x: -1.5d
+			x: -2.0d
 			y: 2.0d
 			subtitle: "Contraption 22"
-			description: [
-				"The soul part is very important for the cak... I mean grout."
-				""
-				"Curse sand with a soul fire in front of a fan to add the soul part of soul sand."
-				""
-				"Remember with brass machinery you got infinite sand through crushing wheels."
-			]
+			description: [""]
 			dependencies: ["21753CBB528EAADF"]
 			hide: true
 			id: "4A2CE1B515197917"
@@ -203,10 +197,9 @@
 		{
 			title: "Soup"
 			icon: "tconstruct:blood_bucket"
-			x: 1.5d
+			x: 2.0d
 			y: 2.0d
 			subtitle: "Contraption 21-3"
-			description: ["Change the L for a P"]
 			dependencies: ["7B56EFFB4E69C63D"]
 			id: "7444D6A02022E62D"
 			tasks: [
@@ -225,7 +218,7 @@
 		}
 		{
 			x: 0.0d
-			y: 2.0d
+			y: 2.5d
 			dependencies: ["4A2CE1B515197917"]
 			id: "7B56EFFB4E69C63D"
 			tasks: [{
@@ -236,7 +229,7 @@
 		}
 		{
 			title: "Unsoulessed sand"
-			x: -2.0d
+			x: -1.5d
 			y: 3.5d
 			dependencies: ["4A2CE1B515197917"]
 			id: "286EFE73EFDF3FC2"
