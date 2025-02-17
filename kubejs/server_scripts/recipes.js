@@ -1745,7 +1745,7 @@ function electronTube(event) {
 function andesiteMachine(event) {
 	event.replaceInput({ id: CR("crafting/kinetics/brass_hand") }, '#forge:plates/brass', CR('golden_sheet'))
 	wood_types.forEach(wood => {
-		event.recipes.createCutting('2x ' + wood + '_slab', wood + '_planks').processingTime(150)
+		event.recipes.createCutting('1x ' + wood + '_slab', wood + '_planks').processingTime(150)
 	})
 
 	let saw = (id, material) =>{ 
@@ -1762,7 +1762,10 @@ function andesiteMachine(event) {
 	saw(KJ('iron_saw'), MC("iron_ingot"))
 	saw(KJ('diamond_saw'), MC("diamond"))
 
-	event.recipes.createCutting(CR('shaft',2), CR('andesite_alloy'))
+	event.recipes.createCutting(CR('shaft', 6), CR('andesite_alloy'))
+    event.remove(id: "create:deploying/cogwheel")
+	event.recipes.createDeploying(CR('cogwheel', 4), [CR('shaft'), "#minecraft:planks"])
+
 	event.recipes.createCutting(KJ('rotation_mechanism_base'), MC('#wooden_slabs'))
 
 	event.shaped('beyond_earth:hammer', [
