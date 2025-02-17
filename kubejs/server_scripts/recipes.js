@@ -1762,11 +1762,9 @@ function andesiteMachine(event) {
 	saw(KJ('iron_saw'), MC("iron_ingot"))
 	saw(KJ('diamond_saw'), MC("diamond"))
 
-	event.recipes.createCutting(CR('shaft', 12), CR('andesite_alloy'))
+	event.recipes.createCutting(CR('shaft', 8), CR('andesite_alloy'))
     event.remove({id: "create:deploying/cogwheel"})
 	event.recipes.createDeploying(CR('cogwheel', 4), [CR('shaft'), "#minecraft:planks"])
-	event.remove({id: "create:deploying/large_cogwheel"})
-	event.recipes.createDeploying(CR('large_cogwheel', 4), [CR('cogwheel'), "#minecraft:planks"])
 
 	event.recipes.createCutting(KJ('rotation_mechanism_base'), MC('#wooden_slabs'))
 
