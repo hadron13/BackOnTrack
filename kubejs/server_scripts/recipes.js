@@ -956,7 +956,7 @@ function tweaks(event) {
 
 	event.remove({ id: CR('splashing/red_sand') })
 	event.recipes.createSplashing([
-		Item.of(MC('gold_nugget', 1)).withChance(0.12),
+		Item.of(MC('gold_nugget', 2)).withChance(0.22),
 		// Item.of(CR('copper_nugget', 1)).withChance(0.12)
 	], 'minecraft:red_sand')
 
@@ -1762,11 +1762,11 @@ function andesiteMachine(event) {
 	saw(KJ('iron_saw'), MC("iron_ingot"))
 	saw(KJ('diamond_saw'), MC("diamond"))
 
-	event.recipes.createCutting(CR('shaft', 12), CR('andesite_alloy'))
+	event.recipes.createCutting(CR('shaft', 8), CR('andesite_alloy'))
     event.remove({id: "create:deploying/cogwheel"})
 	event.recipes.createDeploying(CR('cogwheel', 4), [CR('shaft'), "#minecraft:planks"])
 	event.remove({id: "create:deploying/large_cogwheel"})
-	event.recipes.createDeploying(CR('large_cogwheel', 4), [CR('cogwheel'), "#minecraft:planks"])
+	event.recipes.createDeploying(CR('large_cogwheel', 2), [CR('cogwheel'), "#minecraft:planks"])
 
 	event.recipes.createCutting(KJ('rotation_mechanism_base'), MC('#wooden_slabs'))
 

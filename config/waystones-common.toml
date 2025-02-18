@@ -117,9 +117,9 @@
 	#These names will be used for the PRESET name generation mode. See the nameGenerationMode option for more info.
 	customWaystoneNames = []
 	#Set to true if waystones should be added to the generation of villages. Some villages may still spawn without a waystone.
-	spawnInVillages = false
+	spawnInVillages = true
 	#Ensures that pretty much every village will have a waystone, by spawning it as early as possible. In addition, this means waystones will generally be located in the center of the village.
-	forceSpawnInVillages = false
+	forceSpawnInVillages = true
 
 [client]
 	#If enabled, the text overlay on waystones will no longer always render at full brightness.
