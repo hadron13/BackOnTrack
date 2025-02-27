@@ -193,7 +193,7 @@ onEvent('block.loot_tables', event => {
 
     event.addJson("forbidden_arcanus:mysterywood_leaves", mystery_leaves_but_no_gapples)
 
-    event.addSimpleBlock('createbigcannons:steel_cannon_chamber', '48x kubejs:steel_ring')
+    event.addSimpleBlock('createbigcannons:built_up_steel_cannon_barrel', '64x kubejs:steel_ring')
 
     // event.addSimpleBlock('biomesoplenty:rose_quartz_cluster', '')
 

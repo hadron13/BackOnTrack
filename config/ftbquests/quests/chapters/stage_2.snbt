@@ -838,6 +838,7 @@
 			y: 9.0d
 			description: ["You can also insert your shiny diamonds into the tube casing, it'll have some interesting uses on the next chapters."]
 			dependencies: ["7A4CA5CF1CEFE8CA"]
+			optional: true
 			id: "5AC13553B9B3504A"
 			tasks: [{
 				id: "1AC2BA1A3DE4203C"

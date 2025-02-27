@@ -236,7 +236,6 @@
 				"6ACE3593A299DEBC"
 				"6369DB891302D710"
 				"460B7037B1081997"
-				"483C282D0B6E79E9"
 				"3BA0BFC354BA4785"
 			]
 			id: "5FFB68365F2E821B"
@@ -426,13 +425,12 @@
 		}
 		{
 			title: "Stackup"
-			icon: "createbigcannons:steel_cannon_chamber"
+			icon: "createbigcannons:built_up_steel_cannon_barrel"
 			x: 4.5d
 			y: 8.5d
 			subtitle: "Contraption 32-8"
 			description: ["Join the 3 layers using a cannon builder to create this final shape."]
 			dependencies: [
-				"1F4E67DCAFE4FFE1"
 				"01ABB67CC244453B"
 				"45502F7F3F53ACE7"
 			]
@@ -441,7 +439,7 @@
 				{
 					id: "36048DE35C2E17CC"
 					type: "item"
-					item: "createbigcannons:steel_cannon_chamber"
+					item: "createbigcannons:built_up_steel_cannon_barrel"
 				}
 				{
 					id: "677D8912367B40FB"
@@ -473,7 +471,7 @@
 		{
 			title: "Smol Layer"
 			icon: "createbigcannons:very_small_steel_cannon_layer"
-			x: 2.5d
+			x: 4.0d
 			y: 7.0d
 			subtitle: "Contraption 32-5"
 			description: ["Looks like a pot."]
@@ -495,7 +493,7 @@
 		{
 			title: "Medium Layer"
 			icon: "createbigcannons:small_steel_cannon_layer"
-			x: 4.0d
+			x: 5.5d
 			y: 7.0d
 			subtitle: "Contraption 32-6"
 			description: ["(warning: pun) It's no longer boring, the drill already passed through here."]
@@ -515,31 +513,9 @@
 			]
 		}
 		{
-			title: "Big Layer"
-			icon: "createbigcannons:medium_steel_cannon_layer"
-			x: 5.5d
-			y: 7.0d
-			subtitle: "Contraption 32-7"
-			description: ["Despite the using the same drill for all sizes, the hole has different sizes."]
-			dependencies: ["44933E86D7E9E4E0"]
-			id: "1F4E67DCAFE4FFE1"
-			tasks: [
-				{
-					id: "46765168B35EF736"
-					type: "item"
-					item: "createbigcannons:medium_steel_cannon_layer"
-				}
-				{
-					id: "1888B1676A554F23"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
 			title: "Small Cast"
 			icon: "createbigcannons:unbored_very_small_steel_cannon_layer"
-			x: 3.0d
+			x: 4.0d
 			y: 5.5d
 			subtitle: "Contraption 32-2"
 			description: ["Despite having the longest name of the three, this is the smallest cast."]
@@ -565,7 +541,7 @@
 		{
 			title: "Medium Cast"
 			icon: "createbigcannons:unbored_small_steel_cannon_layer"
-			x: 4.5d
+			x: 5.5d
 			y: 5.5d
 			subtitle: "Contraption 32-3"
 			description: ["Not the longest name, not the biggest nor smallest, (warning: pun) this is the most boring of them."]
@@ -583,32 +559,6 @@
 				}
 				{
 					id: "21E0492549AA9F57"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "Big Cast"
-			icon: "createbigcannons:unbored_medium_steel_cannon_layer"
-			x: 6.0d
-			y: 5.5d
-			subtitle: "Contraption 32-4"
-			description: ["Despite the name medium this thing is 1 block wide, which is quite big."]
-			dependencies: [
-				"514EC4ADAD6F5535"
-				"0A75C53447F4FB07"
-				"4C7826C8A5521396"
-			]
-			id: "44933E86D7E9E4E0"
-			tasks: [
-				{
-					id: "6403282FE8973486"
-					type: "item"
-					item: "createbigcannons:unbored_medium_steel_cannon_layer"
-				}
-				{
-					id: "2078E95986601C79"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -772,8 +722,8 @@
 		{
 			title: "Gas "
 			icon: "createindustry:gasoline_bucket"
-			x: -2.0d
-			y: 10.0d
+			x: -1.0d
+			y: 9.5d
 			subtitle: "Contraption 35-1"
 			description: [
 				"Gasoline sits in the middle of the distilation outputs."
@@ -798,8 +748,8 @@
 		{
 			title: "Diesel"
 			icon: "createindustry:diesel_bucket"
-			x: -1.0d
-			y: 9.5d
+			x: 0.0d
+			y: 9.0d
 			subtitle: "Contraption 35-2"
 			description: [
 				"Diesel comes in the lower half of the primary distilation outputs, and as a byproduct of heavy oil distilling."
@@ -822,35 +772,9 @@
 			]
 		}
 		{
-			title: "Kero"
-			icon: "createindustry:kerosene_bucket"
-			x: 0.0d
-			y: 9.0d
-			subtitle: "Contraption 36-2"
-			description: [
-				"Come as a the main product of heavy oil distilling."
-				""
-				"It is also used in combustion engine manufacturing."
-			]
-			dependencies: ["4AC20A13D7706FA8"]
-			id: "483C282D0B6E79E9"
-			tasks: [
-				{
-					id: "722DF2CA2D2E5F0D"
-					type: "item"
-					item: "createindustry:kerosene_bucket"
-				}
-				{
-					id: "5DA855736ABB0547"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
 			icon: "gearbox:compressor"
-			x: -1.5d
-			y: 7.5d
+			x: -2.0d
+			y: 6.5d
 			subtitle: "Contraption 35-3"
 			dependencies: ["4AC20A13D7706FA8"]
 			id: "7933C0A5002337CD"
@@ -869,8 +793,8 @@
 		}
 		{
 			icon: "thermal:sulfur_dust"
-			x: -1.5d
-			y: 6.0d
+			x: -0.5d
+			y: 6.5d
 			subtitle: "Contraption 36-1"
 			description: ["Another byproduct of the heavy oil distilling, can be used in an explosive compound, aka gunpowder."]
 			dependencies: ["7933C0A5002337CD"]

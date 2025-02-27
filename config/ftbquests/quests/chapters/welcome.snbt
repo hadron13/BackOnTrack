@@ -10,10 +10,10 @@
 	images: [{
 		x: 0.0d
 		y: -9.0d
-		width: 8.0d
-		height: 4.5d
+		width: 9.0d
+		height: 8.0d
 		rotation: 0.0d
-		image: "kubejs:textures/images/logo3.0.png"
+		image: "kubejs:textures/images/BH_CBOT_logo.png"
 		hover: [ ]
 		click: ""
 		dev: false

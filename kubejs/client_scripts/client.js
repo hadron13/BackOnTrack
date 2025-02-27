@@ -260,7 +260,7 @@ onEvent('item.tooltip', tooltip => {
 	tooltip.add("kubejs:accellerator_glowstone", ["§7When used in Alchemy Research:", "  §6One of the §ecorrect §6Reagents",
 		"  §6in §ecorrect §6slots will not be consumed"]);
 
-	tooltip.add("kubejs:steel_ring", ["§7Obtained breaking a §6steel cannon chamber"])
+	tooltip.add("kubejs:steel_ring", ["§7Obtained breaking a §6built-up steel cannon barrel"])
 
 	tooltip.add("createindustry:steel_pump", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
 	tooltip.add("createindustry:steel_pipe", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])

@@ -254,7 +254,7 @@ function oreProcessing(event){
 	let stone = Item.of(MC("cobblestone"), 1).withChance(.5)
 	let otherstone = Item.of(OC("otherstone"), 1).withChance(.5)
 
-	event.recipes.createMixing(Fluid.of(TC('molten_nickel'), 90), [Fluid.of(TC('molten_copper'), 90), Fluid.of(TC('molten_iron'), 90)]).processingTime(1)
+	event.recipes.createMixing(Fluid.of(MC('molten_nickel'), 90), [Fluid.of(TC('molten_copper'), 90), Fluid.of(TC('molten_iron'), 90)]).processingTime(1)
 
 	event.recipes.createCrushing([Item.of("forbidden_arcanus:stellarite_piece", 1), Item.of("forbidden_arcanus:stellarite_piece", 1).withChance(.25), stone], "forbidden_arcanus:stella_arcanum")
 	event.recipes.createCrushing([Item.of("forbidden_arcanus:xpetrified_orb", 2), Item.of("forbidden_arcanus:xpetrified_orb", 1).withChance(.25), stone], "forbidden_arcanus:xpetrified_ore")
@@ -887,7 +887,7 @@ function tweaks(event) {
 	// tweak_casing('create:railway_casing', 	'create:sturdy_sheet', 	'create:brass_casing')
 	tweak_casing('kubejs:invar_casing', 	'thermal:invar_plate', 	'minecraft:stone')
 	tweak_casing('kubejs:fluix_casing', 	'thermal:lead_plate', 	'minecraft:basalt')
-	tweak_casing('alloyed:steel_casing', 	'alloyed:steel_sheet', 	'createindustry:hardened_planks')
+	tweak_casing('alloyed:steel_casing', 	'alloyed:steel_sheet', 	'minecraft:logs', true)
 	tweak_casing('createindustry:heavy_machinery_casing', 'createindustry:heavy_plate', 'alloyed:steel_casing')
 	// tweak_casing('enderium', [MC('ender_pearl'), 'minecraft:obsidian'], KJ)
 
@@ -938,6 +938,9 @@ function tweaks(event) {
 	cobblegen(MC("polished_andesite"), MC("andesite"))
 	cobblegen(MC("polished_granite"), MC("granite"))
 	cobblegen(MC("polished_diorite"), MC("diorite"))
+
+	event.remove({ output: MC('basalt') })
+	cobblegen(MC("soul_soil"), MC("basalt"))
 	// bedrock_cobblegen(AP("packed_ice_pillar"), CR("gabbro_cobblestone"))
 
 	// event.recipes.createPressing([KJ('zinc_sheet')], CR('zinc_ingot'))
@@ -1676,6 +1679,8 @@ function dioriticAndesite(event) {
 		S: CR('zinc_nugget')
 	})
 
+	event.remove({ output: MC('gunpowder') })
+	event.recipes.createMixing(Item.of(MC('gunpowder'), 6), [MC('charcoal', 2), TE('sulfur_dust'), CI("nitrate_dust", 3)]).processingTime(1)
 	event.recipes.createMixing(Item.of(CR('andesite_alloy'), 2), [CR("zinc_nugget"), KJ("andesite_blend")])
 	event.recipes.createMilling([Item.of(MC('red_sand')).withChance(0.35), Item.of(KJ('asurine_bits')).withChance(0.65)], MC("granite"))
 	event.remove({id:CR("milling/andesite")})
@@ -1747,6 +1752,9 @@ function andesiteMachine(event) {
 	wood_types.forEach(wood => {
 		event.recipes.createCutting('1x ' + wood + '_slab', wood + '_planks').processingTime(150)
 	})
+	event.remove({output: AE2('ender_dust')})
+	event.recipes.createMilling(['4x ' + AE2('ender_dust')], ED('ender_shard')).processingTime(600)
+	event.recipes.createCrushing(['6x ' + AE2('ender_dust')], ED('ender_shard')).processingTime(400)
 
 	let saw = (id, material) =>{ 
 		event.shaped(id, [
@@ -2574,6 +2582,28 @@ function explosiveMachine(event){
 	event.custom({
 		"type": "gearbox:pumpjack",
 		"biome": "minecraft:desert",
+		"ingredients": [ ],
+		"results": [{
+			"fluid": "gearbox:petroleum",
+			"amount": 250 },
+		],
+		"processingTime": 180
+	})
+
+	event.custom({
+		"type": "gearbox:pumpjack",
+		"biome": "terralith:shield_clearing",
+		"ingredients": [ ],
+		"results": [{
+			"fluid": "gearbox:petroleum",
+			"amount": 250 },
+		],
+		"processingTime": 180
+	})
+
+	event.custom({
+		"type": "gearbox:pumpjack",
+		"biome": "terralith:shield",
 		"ingredients": [ ],
 		"results": [{
 			"fluid": "gearbox:petroleum",
