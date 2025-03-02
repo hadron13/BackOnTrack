@@ -2,7 +2,7 @@
 natural_ore_only = true
 #When the number of ores in a 5x5 chunk goes above this number, the vein is infinite
 #Range: 0 ~ 1000000
-infinite_ore_threshold = 2000
+infinite_ore_threshold = 500
 #The ores to be ignored by the infinite drill function
 blacklisted_ores = []
 #This multiplier is added to the breaking speed of a block when infini-drilling

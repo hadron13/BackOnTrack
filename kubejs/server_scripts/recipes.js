@@ -1210,7 +1210,7 @@ function rocketScience(event) {
 	let t = KJ('incomplete_steel_engine')
 	event.recipes.createSequencedAssembly([
 		Item.of(engine_t1).withChance(1),
-		Item.of("kubejs:failed_steel_engine").withChance(500)
+		Item.of("kubejs:failed_steel_engine").withChance(99)
 	], "beyond_earth:engine_frame", [
 		event.recipes.createDeploying(t, [t, KJ("explosive_mechanism")]),
 		event.recipes.createDeploying(t, [t, KJ("pressure_mechanism")]),
@@ -1686,6 +1686,8 @@ function dioriticAndesite(event) {
 	event.remove({id:CR("milling/andesite")})
 	event.recipes.createMilling(Item.of(KJ('andesite_dust')), MC("andesite"))
 	event.recipes.createSplashing([CR("zinc_nugget"), Item.of(CR("zinc_nugget")).withChance(0.5)], KJ('asurine_bits'))
+	event.remove({id: CR('splashing/sand')})
+	event.recipes.createSplashing([Item.of(MC("clay_ball")).withChance(0.65)], MC('sand'))
 }
 
 function electronTube(event) {
@@ -2071,15 +2073,17 @@ function brassMachine(event) {
 	}
 
 
- 	event.recipes.gearboxPyroprocessing(TC('coin_cast'), MC('gold_ingot'))
+	event.recipes.gearboxPyroprocessing(TC('coin_cast'), MC('gold_ingot'))
 	event.custom({
- 		"type": "tconstruct:casting_table",
- 		"cast": { "item": TC("coin_cast") },
- 		"cast_consumed": false,
- 		"fluid": { "tag": "tconstruct:molten_gold", "amount": 90 },
- 		"result": { "item": KJ("gold_ring") },
- 		"cooling_time": 150
- 	})
+		"type": "tconstruct:casting_table",
+		"cast": { "item": TC("coin_cast") },
+		"cast_consumed": false,
+		"fluid": { "tag": "tconstruct:molten_gold", "amount": 90 },
+		"result": { "item": KJ("gold_ring") },
+		"cooling_time": 150
+	})
+
+	event.recipes.createCompacting(CR("brass_ingot"), Fluid.of(TC('molten_brass'), 90))
 
 	event.custom({
 		"type": "tconstruct:casting_table",
