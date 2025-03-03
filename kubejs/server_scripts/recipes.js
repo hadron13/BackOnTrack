@@ -959,7 +959,7 @@ function tweaks(event) {
 
 	event.remove({ id: CR('splashing/red_sand') })
 	event.recipes.createSplashing([
-		Item.of(MC('gold_nugget', 2)).withChance(0.22),
+		Item.of(MC('gold_nugget', 2)).withChance(0.35),
 		// Item.of(CR('copper_nugget', 1)).withChance(0.12)
 	], 'minecraft:red_sand')
 
@@ -2518,8 +2518,13 @@ function trainMachine(event){
 function zincMachine(event) {
 	donutCraft(event, TC('foundry_controller'), TC('scorched_bricks'), KJ('scorch_mechanism'))
 
-	event.recipes.createMixing(Fluid.of(TC("blood"), 1000), [MC('twisting_vines',1), MC('weeping_vines',3)]).heated()
+    event.recipes.createCompacting(['forbidden_arcanus:soul', 'forbidden_arcanus:soulless_sand'], MC("soul_sand"))
+    event.recipes.createMixing(Fluid.of(TC("blood"), 250), 'forbidden_arcanus:soul').heated()
     event.recipes.createFilling(MC("magma_cream"),[Fluid.of(MC("lava"), 250), TC("blood_slime_ball")])
+
+    event.remove({output: TC("scorched_brick")})
+    event.recipes.createCompacting(TC("scorched_brick"), ['forbidden_arcanus:soulless_sand', MC("magma_cream"), MC("gravel")] ).heated()
+
 
 	let t = KJ('incomplete_scorch_mechanism')
 	event.recipes.createSequencedAssembly([
