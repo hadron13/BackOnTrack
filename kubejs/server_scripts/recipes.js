@@ -142,7 +142,6 @@ onEvent('item.tags', event => {
 	event.get("minecraft:planks").add("forbidden_arcanus:mysterywood_planks").add("forbidden_arcanus:cherrywood_planks")
 	event.get("minecraft:logs_that_burn").add("#forbidden_arcanus:mysterywood_logs").add("#forbidden_arcanus:cherrywood_logs")
 
-	event.get('forge:saws').add(KJ('stone_saw')).add(KJ('iron_saw')).add(KJ('diamond_saw'))
 	event.get('forge:screwdrivers').add('createindustry:screwdriver')
 	event.get('forge:super_glues').add(CR('super_glue'))
 	event.get('forge:wrenches').add(CR('wrench'))
@@ -1758,20 +1757,6 @@ function andesiteMachine(event) {
 	event.recipes.createMilling(['4x ' + AE2('ender_dust')], ED('ender_shard')).processingTime(600)
 	event.recipes.createCrushing(['6x ' + AE2('ender_dust')], ED('ender_shard')).processingTime(400)
 
-	let saw = (id, material) =>{ 
-		event.shaped(id, [
-			'SSS',
-			'SMS',
-			'   '
-		], {
-			S: MC('stick'),
-			M: material,
-		})
-	}
-	saw(KJ('stone_saw'), "#forge:cobblestone")
-	saw(KJ('iron_saw'), MC("iron_ingot"))
-	saw(KJ('diamond_saw'), MC("diamond"))
-
 	event.recipes.createCutting(CR('shaft', 8), CR('andesite_alloy'))
     event.remove({id: "create:deploying/cogwheel"})
 	event.recipes.createDeploying(CR('cogwheel', 4), [CR('shaft'), "#minecraft:planks"])
@@ -1800,10 +1785,10 @@ function andesiteMachine(event) {
 		.id('kubejs:rotation_mechanism')
 
 		event.shapeless(KJ('rotation_mechanism'), [KJ('rotation_mechanism_base'), CR('cogwheel'), CR('andesite_alloy'), CR('large_cogwheel')]).id("kubejs:rotation_mechanism_manual_only")
-		event.shapeless(KJ('rotation_mechanism_base'), [F('#saws'), MC("#logs")])
-		.damageIngredient(Item.of(KJ('stone_saw')))
-		.damageIngredient(Item.of(KJ('iron_saw')))
-		.damageIngredient(Item.of(KJ('diamond_saw')))
+		event.shapeless(KJ('rotation_mechanism_base'), ['#cb_microblock:tools/saw', MC("#logs")])
+		.damageIngredient(Item.of('cb_microblock:stone_saw'))
+		.damageIngredient(Item.of('cb_microblock:iron_saw'))
+		.damageIngredient(Item.of('cb_microblock:diamond_saw'))
 
 	// Andesite
 	event.shaped(KJ('andesite_machine'), [

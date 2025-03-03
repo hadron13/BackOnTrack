@@ -159,9 +159,6 @@ onEvent('item.registry', event => {
 	event.create('invar_compound').texture("kubejs:item/invar_compound").displayName('Unprocessed Invar Ingot')
 	// event.create('dye_entangled_singularity').texture("kubejs:item/dye_entangled_singularity").unstackable().displayName('Chromatic Singularity')
 
-	event.create('stone_saw').texture("kubejs:item/stone_saw").displayName('Stone Saw').maxDamage(128)
-	event.create('iron_saw').texture("kubejs:item/iron_saw").displayName('Iron Saw').maxDamage(256)
-	event.create('diamond_saw').texture("kubejs:item/diamond_saw").displayName('Diamond Saw').maxDamage(1024)
 	event.create('screwdriver').texture("kubejs:item/screwdriver").displayName('Screwdriver').maxDamage(512)
 	event.create('lube_can').texture("kubejs:item/lube_can").displayName('Lubricant Can').maxDamage(256)
 	event.create('soldering_iron').texture("kubejs:item/soldering_iron").displayName('Soldering Iron').maxDamage(1024)
