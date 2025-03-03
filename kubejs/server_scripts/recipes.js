@@ -1724,7 +1724,7 @@ function electronTube(event) {
 	event.recipes.createFilling(KJ('empty_tube'), [MC('glass'), Fluid.of(TC('molten_iron'), 20)])
 	event.recipes.createDeploying(CR('electron_tube'), [KJ('empty_tube'), CR('polished_rose_quartz')])
 	event.recipes.createDeploying(KJ('diamond_tube'), [KJ('empty_tube'), MC('diamond')])
-	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(TC('molten_gold'), 90)])
+	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(TC('molten_gold'), 45)])
 
 	let grow = (from, via, to) => {
 		event.recipes.createSequencedAssembly([to], from, [
@@ -1868,58 +1868,58 @@ function andesiteMachine(event) {
 	event.remove({ output: 'thermal:dynamo_stirling'})
 
 	event.shaped(CR('encased_fan'), [
-		' IS',
+		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: CR('propeller'), S: Item.of('beyond_earth:hammer').ignoreNBT()})  .damageIngredient(Item.of('beyond_earth:hammer'))
+	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: CR('propeller')})  
 
 	event.shaped(CR('deployer'), [
-		' IS',
+		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('piston_extension_pole'), P: CR('brass_hand'), S: Item.of('beyond_earth:hammer').ignoreNBT()})  .damageIngredient(Item.of('beyond_earth:hammer'))
+	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('piston_extension_pole'), P: CR('brass_hand')})  
 	
 	event.shaped(CR('mechanical_press'), [
-		' IS',
+		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('piston_extension_pole'), P: MC('iron_block'), S: Item.of('beyond_earth:hammer').ignoreNBT()})  .damageIngredient(Item.of('beyond_earth:hammer'))
+	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('piston_extension_pole'), P: MC('iron_block')})
 	
 	event.shaped(CR('mechanical_mixer'), [
-		' IS',
+		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('cogwheel'), P: CR('whisk'), S: Item.of('beyond_earth:hammer').ignoreNBT()})  .damageIngredient(Item.of('beyond_earth:hammer'))
+	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('cogwheel'), P: CR('whisk')}) 
 	
 	event.shaped('sliceanddice:slicer', [
-		' IS',
+		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('cogwheel'), P: CR('turntable'), S: Item.of('beyond_earth:hammer').ignoreNBT()})  .damageIngredient(Item.of('beyond_earth:hammer'))
+	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('cogwheel'), P: CR('turntable')})  
 	
 	event.shaped('waterstrainer:strainer_base', [
-		'  S',
+		'   ',
 		'III',
 		'AMA'
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: 'createaddition:iron_rod', S: Item.of('beyond_earth:hammer').ignoreNBT()})  .damageIngredient(Item.of('beyond_earth:hammer'))
+	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: 'createaddition:iron_rod'}) 
 	
 	event.shaped(CR('mechanical_drill'), [
-		' IS',
+		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: TE('drill_head'), S: Item.of('beyond_earth:hammer').ignoreNBT()})  .damageIngredient(Item.of('beyond_earth:hammer'))
+	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: TE('drill_head')})  
 	
 	event.shaped(CR('mechanical_saw'), [
-		' IS',
+		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: TE('saw_blade'), S: Item.of('beyond_earth:hammer').ignoreNBT()})  .damageIngredient(Item.of('beyond_earth:hammer'))
+	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: TE('saw_blade')}) 
 	
 	event.shaped('thermal:dynamo_stirling', [
-		' PS',
+		' P ',
 		'AMA',
 		'AIA'
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: MC('furnace'), S: Item.of('beyond_earth:hammer').ignoreNBT(), P:TE('rf_coil')})  .damageIngredient(Item.of('beyond_earth:hammer'))
+	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: MC('furnace'),  P:TE('rf_coil')})  
 	
 
 	event.shaped(GB('kiln'), [
@@ -1934,19 +1934,18 @@ function andesiteMachine(event) {
 	})
 
 	event.shaped(GB('compressor'), [
-		'  S',
+		'   ',
 		'CBE',
 		'GGG'
 	], {
 		C: CR('andesite_alloy'),
-		S: Item.of('beyond_earth:hammer').ignoreNBT(),
 		E: CR('fluid_pipe'),
 		B: KJ('andesite_machine'),
 		G: CR('industrial_iron_block')
-	}).damageIngredient(Item.of('beyond_earth:hammer'))
+	})
 
 	event.shaped(GB('sapper'), [
-		' GT',
+		' G ',
 		'CBE',
 		' S '
 	], {
@@ -1954,9 +1953,8 @@ function andesiteMachine(event) {
 		S: KJ('andesite_machine'),
 		E: CR('fluid_pipe'),
 		B: CR('cogwheel'),
-		T: Item.of('beyond_earth:hammer').ignoreNBT(),
 		G: CR('andesite_alloy')
-	}).damageIngredient(Item.of('beyond_earth:hammer'))
+	})
 
 	andesite_machine('create:portable_storage_interface', 2)
 	andesite_machine('create:mechanical_harvester', 2)
@@ -2018,34 +2016,34 @@ function copperMachine(event) {
 	event.remove({ output: 'create_enchantment_industry:printer' })
 
 	event.shaped(CR('steam_engine'), [
-		' GS',
+		' G ',
 		'CMC',
 		'CBC'
-	], {M: KJ('copper_machine'), C: MC('copper_ingot'), G: CR('golden_sheet'), S: Item.of('create:super_glue').ignoreNBT(), B: MC('copper_block')})  .damageIngredient(CR('super_glue'))
+	], {M: KJ('copper_machine'), C: MC('copper_ingot'), G: CR('golden_sheet'), B: MC('copper_block')})  
 	
 	event.shaped(CR('spout'), [
-		' MS',
+		' M ',
 		'RHR',
 		' R '
-	], {M: KJ('copper_machine'), H: MC('hopper'), R: TE('cured_rubber'), S: Item.of('create:super_glue').ignoreNBT()})  .damageIngredient(CR('super_glue'))
+	], {M: KJ('copper_machine'), H: MC('hopper'), R: TE('cured_rubber')})  
 	
 	event.shaped(CR('hose_pulley'), [
-		'  G',
+		'   ',
 		'PMS',
 		' R '
-	], {M: KJ('copper_machine'), S: CR('shaft'), R: TE('cured_rubber_block'), G: Item.of('create:super_glue').ignoreNBT(), P: CR('fluid_pipe')})  .damageIngredient(CR('super_glue'))
+	], {M: KJ('copper_machine'), S: CR('shaft'), R: TE('cured_rubber_block'), P: CR('fluid_pipe')})  
 	
 	event.shaped(TE('dynamo_magmatic'), [
-		' RS',
+		' R ',
 		'HMH',
 		'HTH'
-	], {M: KJ('copper_machine'), H: 'alloyed:steel_ingot', R: TE('rf_coil'), S: Item.of('create:super_glue').ignoreNBT(), T: TC('seared_fuel_tank')})  .damageIngredient(CR('super_glue'))
+	], {M: KJ('copper_machine'), H: 'alloyed:steel_ingot', R: TE('rf_coil'), T: TC('seared_fuel_tank')}) 
 	
 	event.shaped('create_enchantment_industry:printer', [
-		' MS',
+		' M ',
 		'RHR',
 		' I '
-	], {M: KJ('copper_machine'), H: MC('hopper'), I: MC('iron_block'), R: 'create_enchantment_industry:experience_rotor', S: Item.of('create:super_glue').ignoreNBT()})  .damageIngredient(CR('super_glue'))
+	], {M: KJ('copper_machine'), H: MC('hopper'), I: MC('iron_block'), R: 'create_enchantment_industry:experience_rotor'}) 
 	
 	copper_machine('create:copper_backtank', 1, MC("copper_block"))
 	copper_machine('create:portable_fluid_interface', 2)
@@ -2142,6 +2140,7 @@ function brassMachine(event) {
 	], KJ('rotation_mechanism'), [
 		event.recipes.createDeploying(t, [t, KJ('gold_ring')]),
 		event.recipes.createDeploying(t, [t, CR('electron_tube')]),
+		event.recipes.createDeploying(t, [t, CR('electron_tube')]),
 		event.recipes.createDeploying(t, [t, KJ('golden_tube')]),
 		event.recipes.gearboxMechanizing(t, t)
 	]).transitionalItem(t)
@@ -2168,24 +2167,24 @@ function brassMachine(event) {
 	}
 	event.remove({output: TE('dynamo_numismatic')})
 	event.shaped(TE('dynamo_numismatic'), [
-		' RS',
+		' R ',
 		'HMH',
 		'HTH'
-	], {M: KJ('brass_machine'), H: CR('brass_sheet'), R: TE('rf_coil'), S: Item.of('createindustry:screwdriver').ignoreNBT(), T: TE('silver_coin')})  .damageIngredient(CI('screwdriver'),10)
+	], {M: KJ('brass_machine'), H: CR('brass_sheet'), R: TE('rf_coil'), S: Item.of('createindustry:screwdriver').ignoreNBT(), T: TE('silver_coin')})  
 
 	event.remove({output: CR('mechanical_crafter')})
 	event.shaped(CR('mechanical_crafter', 3), [
-		' RS',
+		' R ',
 		'HTH',
 		' M '
-	], {M: KJ('brass_machine'), H: CR('brass_sheet'), R: CR('cogwheel'), S: Item.of('createindustry:screwdriver').ignoreNBT(), T: MC('crafting_table')})  .damageIngredient(CI('screwdriver'),10)
+	], {M: KJ('brass_machine'), H: CR('brass_sheet'), R: CR('cogwheel'), S: Item.of('createindustry:screwdriver').ignoreNBT(), T: MC('crafting_table')}) 
 
 	event.remove({output: CR('mechanical_arm')})
 	event.shaped(CR('mechanical_arm'), [
 		'HHT',
-		'H S',
+		'H  ',
 		'HMR'
-	], {M: KJ('brass_machine'), H: CR('brass_sheet'), R: CR('cogwheel'), S: Item.of('createindustry:screwdriver').ignoreNBT(), T: CR('brass_hand')})  .damageIngredient(CI('screwdriver'),10)
+	], {M: KJ('brass_machine'), H: CR('brass_sheet'), R: CR('cogwheel'), S: Item.of('createindustry:screwdriver').ignoreNBT(), T: CR('brass_hand')})  
 
 
 
