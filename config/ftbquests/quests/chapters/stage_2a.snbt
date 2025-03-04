@@ -62,7 +62,7 @@
 			x: 0.0d
 			y: 7.0d
 			shape: "diamond"
-			subtitle: "Contraption 27"
+			subtitle: "Contraption 24"
 			description: ["Finally, deploy the infernal bricks onto precision mechanisms, and then spout lava over it."]
 			dependencies: [
 				"227A9F0308BBE647"
@@ -82,7 +82,6 @@
 			icon: "minecraft:lava_bucket"
 			x: 3.0d
 			y: 5.0d
-			subtitle: "Contraption 25"
 			description: [
 				"If you had not already automated lava production and distribution, this would be a good time to do so, each mechanism requires 2500mb of lava, and the full machine whopping 20 buckets."
 				""
@@ -113,7 +112,7 @@
 			icon: "minecraft:magma_cream"
 			x: 0.0d
 			y: 4.0d
-			subtitle: "Contraption 23"
+			subtitle: "Contraption 23-4"
 			description: ["Drop lava over blood to produce infernal magma cream."]
 			dependencies: [
 				"227A9F0308BBE647"
@@ -138,7 +137,7 @@
 			icon: "tconstruct:scorched_brick"
 			x: -3.0d
 			y: 5.0d
-			subtitle: "Contraption 26"
+			subtitle: "Contraption 22-3"
 			description: ["Compact the unholy ingredients into fiery bricks"]
 			dependencies: [
 				"43BED22E6E6B3DE7"
@@ -163,7 +162,6 @@
 			icon: "minecraft:gravel"
 			x: 0.0d
 			y: 5.5d
-			subtitle: "Contraption 24"
 			description: ["Redirect a gravel line for this production line."]
 			dependencies: ["21753CBB528EAADF"]
 			hide: true
@@ -185,7 +183,7 @@
 			icon: "minecraft:soul_sand"
 			x: -2.0d
 			y: 2.0d
-			subtitle: "Contraption 22"
+			subtitle: "Contraption 22-1"
 			description: [
 				""
 				"The earliest step into this production line is soul sand, which can be produced by bulk haunting with a fan."
@@ -211,7 +209,7 @@
 			icon: "tconstruct:blood_bucket"
 			x: 2.0d
 			y: 2.0d
-			subtitle: "Contraption 21-3"
+			subtitle: "Contraption 23-2"
 			description: ["Whisk the soul until it bleeds, creating an useful pool of hellish blood."]
 			dependencies: ["7B56EFFB4E69C63D"]
 			id: "7444D6A02022E62D"
@@ -232,6 +230,7 @@
 		{
 			x: 0.0d
 			y: 2.5d
+			subtitle: "Contraption 23-1"
 			description: ["The soul separated from the sand can now be further tortured for increased shareholder value."]
 			dependencies: ["4A2CE1B515197917"]
 			id: "7B56EFFB4E69C63D"
@@ -245,6 +244,7 @@
 			title: "Unsoulessed sand"
 			x: -1.5d
 			y: 3.5d
+			subtitle: "Contraption 22-2"
 			description: ["Redirect the leftover sand to brick production."]
 			dependencies: ["4A2CE1B515197917"]
 			id: "286EFE73EFDF3FC2"
@@ -259,7 +259,7 @@
 			icon: "tconstruct:blood_slime_ball"
 			x: 1.5d
 			y: 3.5d
-			subtitle: "Contraption 23"
+			subtitle: "Contraption 23-3"
 			description: ["Then coagulate the unholy blood into a ball using casting tables."]
 			dependencies: ["7444D6A02022E62D"]
 			id: "30AE867E83F0C07A"

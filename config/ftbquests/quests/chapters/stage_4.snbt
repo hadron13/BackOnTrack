@@ -898,7 +898,7 @@
 			description: [
 				"Never ask how it happens."
 				""
-				"This time i'm sorry for geology professionals, but putting a block of desh under a cobblestone generator, creates mica."
+				"This time i'm sorry for geology professionals, but desh somehow generates mica out of thin air."
 			]
 			hide_dependency_lines: true
 			dependencies: ["6C3258881A44FA46"]
