@@ -51,11 +51,7 @@
 			icon: "kubejs:explosive_mechanism"
 			x: 0.0d
 			y: 12.0d
-			description: [
-				"The desh found in the moon has interesting and useful chemical properties that will propel the factory into a new age of technology."
-				""
-				"In this factory you will need to feed common and specific materials for each of the four main components of the final circuit."
-			]
+			description: ["Do not let be fooled by the sheer size of this chapter's questing. It revolves around creating common materials and distributing them to each of the 4 component's production."]
 			dependencies: ["780E8AE86250C73D"]
 			hide: true
 			size: 2.0d
@@ -91,22 +87,36 @@
 			x: 0.0d
 			y: 37.5d
 			shape: "diamond"
-			description: ["At last, enjoy your power machines!"]
+			description: ["Great work! The new power machine unlocks a range of new possibilities, and opens the way to lasers."]
 			dependencies: ["3E67BA828E888EC5"]
 			hide: true
 			size: 3.0d
 			id: "4E549678E05D7FA8"
-			tasks: [
+			tasks: [{
+				id: "16ECBFD01F1B11DD"
+				type: "item"
+				item: "kubejs:power_machine"
+				consume_items: false
+			}]
+			rewards: [
 				{
-					id: "01DFDF7C34AE8BC2"
-					type: "checkmark"
-					title: "Automated"
+					id: "0592F316F23CCF08"
+					type: "item"
+					item: "kubejs:power_mechanism"
+					count: 16
+					random_bonus: 16
 				}
 				{
-					id: "16ECBFD01F1B11DD"
+					id: "09BBF5E725A90CDD"
 					type: "item"
-					item: "kubejs:power_machine"
-					consume_items: false
+					item: "createaddition:connector"
+					count: 16
+				}
+				{
+					id: "5F49B09B1FDB6047"
+					type: "item"
+					item: "createaddition:gold_spool"
+					count: 32
 				}
 			]
 		}
@@ -118,7 +128,6 @@
 			subtitle: "Contraption 53"
 			description: ["The whole factory converges into this single circuit board, ready to revolutionize tech."]
 			dependencies: [
-				"60F0720F73377A77"
 				"58965B4FA083AD88"
 				"577A18A2CDF91066"
 				"3CB6C1CA88F0CBE2"
@@ -141,24 +150,6 @@
 					title: "Automated"
 				}
 			]
-		}
-		{
-			title: "Because Aesthetics Matter"
-			x: -2.0d
-			y: 34.5d
-			description: [
-				"Imagine having a white PCB, tinting everything black is much better and offers real world performance improvements over non-black boards."
-				""
-				"Don't forget ENIG surface finish!"
-			]
-			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
-			id: "60F0720F73377A77"
-			tasks: [{
-				id: "47390586E915CD32"
-				type: "item"
-				item: "create_enchantment_industry:ink_bucket"
-			}]
 		}
 		{
 			title: "Inducing: &6Teslas&r!"
@@ -236,12 +227,12 @@
 			]
 		}
 		{
-			title: "Shiny Boomer Capacitor"
+			title: "Cleansed Capacitor"
 			icon: "kubejs:electrolytic_capacitor"
 			x: 1.5d
 			y: 31.5d
 			subtitle: "Contraption 51-2"
-			description: ["Oh shiny."]
+			description: ["Shiny newly made capacitor."]
 			dependencies: ["08C16E14AEE5DB20"]
 			id: "2589FD16FDDC6953"
 			tasks: [
@@ -915,7 +906,7 @@
 			x: -8.5d
 			y: 16.0d
 			subtitle: "Contraption 48-1"
-			description: ["You know the drill, literally"]
+			description: ["You know the drill."]
 			hide_dependency_lines: true
 			dependencies: ["6C3258881A44FA46"]
 			id: "6A09B720008898E5"
@@ -1070,7 +1061,6 @@
 			x: 0.0d
 			y: 17.5d
 			subtitle: "Contraption 48-6"
-			description: ["Clayton is now ceramic, this new form has insulative properties."]
 			dependencies: ["7B0B8F7CA8DD7432"]
 			id: "0F395B5393BB198F"
 			tasks: [

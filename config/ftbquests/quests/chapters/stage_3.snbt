@@ -23,7 +23,7 @@
 		{
 			icon: "create:precision_mechanism"
 			x: 0.0d
-			y: -6.0d
+			y: -7.0d
 			shape: "diamond"
 			description: [
 				"This chapter is composed of 3 different automation targets, unlike the last chapters, this one is raw, brutal automation, employing many complex processing methods and ingredients."
@@ -51,7 +51,7 @@
 			title: "Carbonic Blend"
 			icon: "alloyed:steel_ingot"
 			x: 2.0d
-			y: -6.0d
+			y: -7.0d
 			description: [
 				"Two materials will be important to assemble the rocket, one of them will need automation."
 				""
@@ -83,7 +83,7 @@
 			title: "Explosivity 100"
 			icon: "minecraft:gunpowder"
 			x: 0.0d
-			y: 4.0d
+			y: 6.5d
 			subtitle: "Contraption 37-1"
 			description: ["(Un?)Fun fact: this recipe might work in real life..."]
 			dependencies: [
@@ -132,8 +132,8 @@
 		{
 			title: "Automatic Re-Re-Forestation"
 			icon: "minecraft:oak_log"
-			x: 1.0d
-			y: -3.5d
+			x: 0.0d
+			y: 1.5d
 			subtitle: "Contraption 29-1"
 			description: ["Direct a line of wood to this factory."]
 			hide_dependency_lines: true
@@ -165,7 +165,7 @@
 			title: "Igneous Fabrication"
 			icon: "minecraft:cobblestone"
 			x: -1.5d
-			y: -3.5d
+			y: -4.5d
 			subtitle: "Contraption 28-1"
 			description: ["Take advantage of the new high tech igneous extruder and remove the loud cobblestone generator from your factories."]
 			hide_dependency_lines: true
@@ -189,7 +189,7 @@
 			title: "More De-chunkification"
 			icon: "minecraft:gravel"
 			x: -1.5d
-			y: -2.0d
+			y: -3.0d
 			subtitle: "Contraption 28-2"
 			description: ["Once more mill the cobblestone down to gravel, (warning: pun) you know the grind"]
 			dependencies: ["0A39053F99978A28"]
@@ -211,8 +211,8 @@
 		{
 			title: "Industrial Pyrolisis"
 			icon: "minecraft:charcoal"
-			x: 1.0d
-			y: 3.0d
+			x: 0.0d
+			y: 3.5d
 			subtitle: "Contraption 29-2"
 			description: ["Redo pyrolisis, just like last chapter, creating charcoal from wooden logs."]
 			dependencies: ["463701D5CEC99FC8"]
@@ -336,8 +336,8 @@
 		{
 			title: "Ferric Gravel"
 			icon: "minecraft:iron_nugget"
-			x: 2.5d
-			y: -2.0d
+			x: 3.5d
+			y: -3.0d
 			subtitle: "Contraption 30-1"
 			description: ["Does gravel even contain iron? It might be better to just accept it..."]
 			dependencies: ["218397419487B197"]
@@ -365,7 +365,7 @@
 				}
 			}
 			x: 5.5d
-			y: 0.0d
+			y: 0.5d
 			subtitle: "Contraption 30-2"
 			description: ["Route the nuggets once more into your High-Temperature melting equipment."]
 			dependencies: ["65605AC13DF2D359"]
@@ -401,7 +401,7 @@
 				}
 			}
 			x: 5.5d
-			y: 3.0d
+			y: 2.5d
 			subtitle: "Contraption 30-3"
 			description: ["Mixing coke (carbon) with the molten iron creates a stronger alloy, our loved steel."]
 			dependencies: [
@@ -478,7 +478,7 @@
 		{
 			title: "Smol Layer"
 			icon: "createbigcannons:very_small_steel_cannon_layer"
-			x: 3.5d
+			x: 4.0d
 			y: 7.0d
 			subtitle: "Contraption 32-5"
 			description: ["May alternatively be used as a pot."]
@@ -500,7 +500,7 @@
 		{
 			title: "Medium Layer"
 			icon: "createbigcannons:small_steel_cannon_layer"
-			x: 5.5d
+			x: 5.0d
 			y: 7.0d
 			subtitle: "Contraption 32-6"
 			description: ["It's no longer boring, the drill already passed through here."]
@@ -574,8 +574,8 @@
 		{
 			title: "Big Casts"
 			icon: "createbigcannons:casting_sand"
-			x: 1.0d
-			y: 1.0d
+			x: 4.5d
+			y: 0.5d
 			subtitle: "Contraption 32-1"
 			description: ["You'll not be dealing with small tool casts now, instead the creation of large multiblock casts will be needed."]
 			dependencies: [
@@ -627,8 +627,8 @@
 		{
 			title: "Double Pyrolisis"
 			icon: "thermal:coal_coke"
-			x: 3.5d
-			y: 1.5d
+			x: 1.5d
+			y: 2.5d
 			subtitle: "Contraption 29-3"
 			description: ["Clearer carbon piece can now be used in steel."]
 			dependencies: ["4C99F5F60ABE2DFD"]
@@ -662,8 +662,8 @@
 		{
 			title: "Clayfication"
 			icon: "minecraft:clay_ball"
-			x: 0.0d
-			y: 0.5d
+			x: 1.5d
+			y: -0.5d
 			subtitle: "Contraption 28-4"
 			description: ["Wash sand another time."]
 			dependencies: ["3D260BA8C18832B2"]
@@ -707,8 +707,8 @@
 		{
 			title: "Snad"
 			icon: "minecraft:sand"
-			x: 0.0d
-			y: -1.0d
+			x: 1.5d
+			y: -1.5d
 			subtitle: "Contraption 28-3"
 			description: ["Crush the gravel into fine sand, again, I don't have anything more to say, just crush it."]
 			dependencies: ["218397419487B197"]
@@ -779,9 +779,9 @@
 			]
 		}
 		{
-			icon: "gearbox:compressor"
+			icon: "createindustry:heavy_oil_bucket"
 			x: -2.0d
-			y: 6.5d
+			y: 5.5d
 			subtitle: "Contraption 35-3"
 			dependencies: ["4AC20A13D7706FA8"]
 			id: "7933C0A5002337CD"
@@ -789,7 +789,7 @@
 				{
 					id: "158FB3753C758956"
 					type: "item"
-					item: "gearbox:compressor"
+					item: "createindustry:heavy_oil_bucket"
 				}
 				{
 					id: "7A3B8C71A2165FB2"
@@ -800,8 +800,8 @@
 		}
 		{
 			icon: "thermal:sulfur_dust"
-			x: -1.5d
-			y: 5.0d
+			x: -1.0d
+			y: 6.5d
 			subtitle: "Contraption 36-1"
 			description: ["Another byproduct of the heavy oil distilling, can be used in an explosive compound, aka gunpowder."]
 			dependencies: ["7933C0A5002337CD"]
@@ -823,7 +823,7 @@
 			title: "Pumpjacking"
 			icon: "gearbox:petroleum_bucket"
 			x: -3.5d
-			y: 6.5d
+			y: 5.5d
 			subtitle: "Contraption 34"
 			description: ["Build and power a pumpjack with rotational power to start extracting oil from the ground."]
 			dependencies: ["021C30C187E9A97E"]
@@ -912,8 +912,8 @@
 			]
 		}
 		{
-			x: 7.5d
-			y: 2.5d
+			x: 8.0d
+			y: 3.5d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
 			id: "084D5FBCD0FAA13C"
@@ -925,8 +925,8 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 3.5d
+			x: 8.0d
+			y: 4.5d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
 			id: "5FF26A886FF04526"
@@ -939,7 +939,7 @@
 		}
 		{
 			x: 8.0d
-			y: 5.0d
+			y: 5.5d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
 			id: "3E5A74BBDE39E0FC"
@@ -952,8 +952,8 @@
 		{
 			title: "Oil Company 101"
 			icon: "createdeco:orange_decal"
-			x: -4.5d
-			y: 4.5d
+			x: -3.5d
+			y: 4.0d
 			dependencies: [
 				"38D3FEF4C99B1ABB"
 				"0CFE8B23F35DEA3D"
@@ -973,8 +973,8 @@
 		{
 			title: "Pumpjack"
 			icon: "gearbox:pumpjack_arm"
-			x: -6.0d
-			y: 5.5d
+			x: -3.5d
+			y: 2.5d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
 			id: "0CFE8B23F35DEA3D"
@@ -1003,8 +1003,8 @@
 		}
 		{
 			title: "Fracking Towers"
-			x: -5.5d
-			y: 3.0d
+			x: -5.0d
+			y: 4.0d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
 			id: "38D3FEF4C99B1ABB"

@@ -2652,8 +2652,8 @@ function explosiveMachine(event){
 	], CR('precision_mechanism'), [
 		event.recipes.createDeploying(t, [t, KJ("steel_ring")]),
 		event.recipes.createDeploying(t, [t, BC("packed_gunpowder")]),
-		event.recipes.createFilling(t, [t, Fluid.of("createindustry:diesel",  380)]),
-		event.recipes.createFilling(t, [t, Fluid.of("createindustry:gasoline",329)]),
+		event.recipes.createFilling(t, [t, Fluid.of("createindustry:diesel",  360)]),
+		event.recipes.createFilling(t, [t, Fluid.of("createindustry:gasoline",480)]),
 		event.recipes.createDeploying(t, [t, TE("iron_gear")]),
 		event.recipes.gearboxMechanizing(t, t)
 	]).transitionalItem(t)
@@ -2853,8 +2853,8 @@ function invarMachine(event) {
 	event.recipes.createSequencedAssembly([
 		KJ('power_mechanism'),
 	], KJ('explosive_mechanism'), [
+		event.recipes.createDeploying(t, [t, CR('copper_sheet')]),
 		event.recipes.createFilling(t, [t, Fluid.of(KJ('plastic'), 30)]),
-		event.recipes.createFilling(t, [t, Fluid.of("create_enchantment_industry:ink", 30)]),
 		event.recipes.createDeploying(t, [t, KJ('electrolytic_capacitor')]),
 		event.recipes.createDeploying(t, [t, KJ('ceramic_capacitor')]),
 		event.recipes.createDeploying(t, [t, KJ('resistor')]),
