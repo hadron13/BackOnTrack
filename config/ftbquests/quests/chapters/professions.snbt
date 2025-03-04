@@ -23,7 +23,7 @@
 		{
 			title: "Engineer's Magazine"
 			icon: "minecraft:oak_sign"
-			x: -3.0d
+			x: -1.0d
 			y: -2.0d
 			shape: "diamond"
 			description: ["Here at &3Engineer's Magazine&r we provide the best employement oportunities for getting that bread, the works range from digging dirt to interstellar bounties."]
@@ -141,7 +141,7 @@
 			y: 1.5d
 			shape: "diamond"
 			subtitle: "5 Gold"
-			description: ["Got an old rocket sitting in the corner? Sell it here!"]
+			description: ["If you have no use for it, you might just sell it."]
 			dependencies: ["64F3352725385210"]
 			hide: true
 			size: 1.5d
@@ -242,6 +242,7 @@
 			y: -1.0d
 			subtitle: "24 Silver"
 			description: ["Fancier metals require fancier rewards."]
+			hide_dependency_lines: false
 			dependencies: [
 				"1E3E3E5533D245A6"
 				"64F3352725385210"
@@ -592,7 +593,7 @@
 			x: 6.5d
 			y: 2.0d
 			subtitle: "11 Silver"
-			description: ["For some Isaac to make a new album photo for the next 4 centuries."]
+			description: ["Isaac something wants this for his newest album's cover."]
 			dependencies: ["64F3352725385210"]
 			hide: true
 			id: "2951074314D10DF7"
@@ -921,6 +922,7 @@
 			y: 0.5d
 			subtitle: "15 Silver"
 			description: ["Sell uncommon crops for even more profit!"]
+			hide_dependency_lines: false
 			dependencies: [
 				"783BE4C5C95DD297"
 				"64F3352725385210"
@@ -965,7 +967,7 @@
 			y: 2.0d
 			shape: "diamond"
 			subtitle: "6 Silver"
-			description: ["Kill those pesky phantoms away from our night sky!"]
+			description: ["Extinguish all of the midnight beasts for a bounty"]
 			dependencies: ["64F3352725385210"]
 			hide: true
 			optional: true

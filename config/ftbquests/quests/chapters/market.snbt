@@ -76,7 +76,7 @@
 		}
 		{
 			x: 5.0d
-			y: -8.5d
+			y: -7.0d
 			width: 10.0d
 			height: 3.5d
 			rotation: 0.0d
@@ -88,161 +88,6 @@
 		}
 	]
 	quests: [
-		{
-			title: "Sawlty"
-			icon: {
-				id: "kubejs:diamond_saw"
-				Count: 1b
-				tag: {
-					HideFlags: 1
-					Enchantments: [{
-						id: "minecraft:unbreaking"
-						lvl: 10s
-					}]
-					Unbreakable: 1
-					Damage: 0
-					display: {
-						Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
-					}
-				}
-			}
-			x: -4.5d
-			y: -2.0d
-			shape: "diamond"
-			subtitle: "3 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Rotation Mechanisms&r."]
-			hide_dependency_lines: true
-			dependencies: ["64F3352725385210"]
-			id: "4F953BACF4D1C151"
-			tasks: [{
-				id: "4C77B71D0EC3B2EA"
-				type: "item"
-				item: {
-					id: "kubejs:diamond_saw"
-					Count: 1b
-					tag: {
-						HideFlags: 1
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 10s
-						}]
-						Unbreakable: 1
-						Damage: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Diamond Saw\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
-				consume_items: true
-			}]
-			rewards: [{
-				id: "00C4E7D871FB6164"
-				type: "item"
-				item: "thermal:gold_coin"
-				count: 3
-			}]
-		}
-		{
-			title: "Never Screwed"
-			icon: {
-				id: "createindustry:screwdriver"
-				Count: 1b
-				tag: {
-					HideFlags: 1
-					Enchantments: [{
-						id: "minecraft:unbreaking"
-						lvl: 10s
-					}]
-					Unbreakable: 1
-					Damage: 0
-					display: {
-						Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
-					}
-				}
-			}
-			x: -4.5d
-			y: -0.5d
-			shape: "diamond"
-			subtitle: "5 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
-			dependencies: ["64F3352725385210"]
-			id: "72CACE8F0E4701B1"
-			tasks: [{
-				id: "1E25EB2883C9A960"
-				type: "item"
-				item: {
-					id: "createindustry:screwdriver"
-					Count: 1b
-					tag: {
-						HideFlags: 1
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 10s
-						}]
-						Unbreakable: 1
-						Damage: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Screwdriver\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
-				consume_items: true
-			}]
-			rewards: [{
-				id: "00A1359CDDF4D8EE"
-				type: "item"
-				item: "thermal:gold_coin"
-				count: 5
-			}]
-		}
-		{
-			title: "Hot Irons In Your Area"
-			icon: {
-				id: "kubejs:soldering_iron"
-				Count: 1b
-				tag: {
-					Damage: 0
-					Enchantments: [{
-						id: "minecraft:unbreaking"
-						lvl: 3s
-					}]
-				}
-			}
-			x: -4.5d
-			y: 1.0d
-			shape: "diamond"
-			subtitle: "10 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Power Mechanisms&r."]
-			dependencies: ["64F3352725385210"]
-			id: "43FC566E833BE834"
-			tasks: [{
-				id: "36CBD54BCB068EB1"
-				type: "item"
-				item: {
-					id: "kubejs:soldering_iron"
-					Count: 1b
-					tag: {
-						HideFlags: 1
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 10s
-						}]
-						Unbreakable: 1
-						Damage: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Soldering Iron\",\"color\":\"gold\",\"italic\":false}"
-						}
-					}
-				}
-				consume_items: true
-			}]
-			rewards: [{
-				id: "41C6188433B22A2F"
-				type: "item"
-				item: "thermal:gold_coin"
-				count: 10
-			}]
-		}
 		{
 			title: "The Gadget Shop"
 			icon: {
@@ -434,16 +279,16 @@
 			x: 9.0d
 			y: -0.5d
 			shape: "diamond"
-			subtitle: "15 Silver"
+			subtitle: "5 Silver"
 			description: ["Sweet treats for a small amount of uh, money..."]
 			dependencies: ["64F3352725385210"]
 			id: "49125BC18946F7C6"
 			tasks: [{
 				id: "51B38B4373785506"
 				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 15b }
+				icon: "thermal:silver_coin"
 				item: "thermal:silver_coin"
-				count: 15L
+				count: 5L
 				consume_items: true
 			}]
 			rewards: [
@@ -469,94 +314,6 @@
 							Damage: 0
 						}
 					}
-					count: 5
-				}
-			]
-		}
-		{
-			title: "Gardener's Delight"
-			icon: "minecraft:poppy"
-			x: 9.0d
-			y: 1.5d
-			shape: "diamond"
-			subtitle: "7 Silver + Knife"
-			dependencies: ["64F3352725385210"]
-			id: "6AF21B60869215D9"
-			tasks: [
-				{
-					id: "5830B690FADBFA10"
-					type: "item"
-					icon: { id: "thermal:silver_coin", Count: 7b }
-					item: "thermal:silver_coin"
-					count: 7L
-					consume_items: true
-				}
-				{
-					id: "585A4229DA201975"
-					type: "item"
-					item: {
-						id: "farmersdelight:iron_knife"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-					consume_items: true
-				}
-			]
-			rewards: [
-				{
-					id: "6D8C9718D35069AC"
-					type: "item"
-					item: "minecraft:poppy"
-					count: 5
-				}
-				{
-					id: "2F97EB78A9492BC3"
-					type: "item"
-					item: "minecraft:dandelion"
-					count: 5
-				}
-				{
-					id: "69B9EE932DEA28CD"
-					type: "item"
-					item: "minecraft:rose_bush"
-					count: 5
-				}
-				{
-					id: "02DA8CBB7FB8CEAA"
-					type: "item"
-					item: "forbidden_arcanus:yellow_orchid"
-					count: 5
-				}
-				{
-					id: "2199F2C676349F26"
-					type: "item"
-					item: "minecraft:blue_orchid"
-					count: 5
-				}
-				{
-					id: "2200D5CBF487CAE9"
-					type: "item"
-					item: "minecraft:azure_bluet"
-					count: 5
-				}
-				{
-					id: "36077010E8BB841E"
-					type: "item"
-					item: "minecraft:pink_tulip"
-					count: 5
-				}
-				{
-					id: "65D71FFFDB3314B9"
-					type: "item"
-					item: "minecraft:oxeye_daisy"
-					count: 5
-				}
-				{
-					id: "73AD186CB211DAA3"
-					type: "item"
-					item: "minecraft:cornflower"
 					count: 5
 				}
 			]
@@ -712,6 +469,17 @@
 					type: "item"
 					item: "createbigcannons:cannon_mount"
 				}
+				{
+					id: "60BCB28D53665518"
+					type: "item"
+					item: {
+						id: "createbigcannons:cannon_welder"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
 			]
 		}
 		{
@@ -780,6 +548,17 @@
 					id: "7B3467CC3F97D4E8"
 					type: "item"
 					item: "createbigcannons:cannon_carriage"
+				}
+				{
+					id: "30EBEC0DFC213555"
+					type: "item"
+					item: {
+						id: "createbigcannons:cannon_welder"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			]
 		}
@@ -1272,7 +1051,7 @@
 			y: 3.5d
 			shape: "diamond"
 			subtitle: "15 Silver"
-			description: ["I found them on a road."]
+			description: ["I found them on a dumpster."]
 			dependencies: ["64F3352725385210"]
 			id: "2A0D72DEC444804D"
 			tasks: [{

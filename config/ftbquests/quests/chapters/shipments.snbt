@@ -154,7 +154,7 @@
 		}
 		{
 			x: -7.0d
-			y: 2.5d
+			y: 4.0d
 			width: 26.0d
 			height: 4.0d
 			rotation: 0.0d
@@ -170,7 +170,7 @@
 			icon: "minecraft:writable_book"
 			x: -7.0d
 			y: 11.5d
-			shape: "octagon"
+			shape: "diamond"
 			description: [
 				"&6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Exchange."
 				""
@@ -233,7 +233,7 @@
 			disable_toast: true
 			x: -18.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "2 Silver"
 			dependencies: ["64F3352725385210"]
 			optional: true
@@ -270,7 +270,7 @@
 			disable_toast: true
 			x: -17.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -306,7 +306,7 @@
 			disable_toast: true
 			x: -16.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "2 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -342,7 +342,7 @@
 			disable_toast: true
 			x: -15.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "6 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -378,7 +378,7 @@
 			disable_toast: true
 			x: -14.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -414,7 +414,7 @@
 			disable_toast: true
 			x: -21.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "12 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -450,7 +450,7 @@
 			disable_toast: true
 			x: -20.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "12 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -486,7 +486,7 @@
 			disable_toast: true
 			x: -19.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "1 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -522,7 +522,7 @@
 			disable_toast: true
 			x: -20.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -558,7 +558,7 @@
 			disable_toast: true
 			x: -19.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -594,7 +594,7 @@
 			disable_toast: true
 			x: -18.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -630,7 +630,7 @@
 			disable_toast: true
 			x: -17.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -666,7 +666,7 @@
 			disable_toast: true
 			x: -16.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -702,7 +702,7 @@
 			disable_toast: true
 			x: -15.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -738,7 +738,7 @@
 			disable_toast: true
 			x: -14.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -810,7 +810,7 @@
 			disable_toast: true
 			x: -21.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -846,7 +846,7 @@
 			disable_toast: true
 			x: -21.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "2 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -882,7 +882,7 @@
 			disable_toast: true
 			x: -20.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -918,7 +918,7 @@
 			disable_toast: true
 			x: -19.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -954,7 +954,7 @@
 			disable_toast: true
 			x: -18.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -990,7 +990,7 @@
 			disable_toast: true
 			x: -17.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1026,7 +1026,7 @@
 			disable_toast: true
 			x: -16.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1062,7 +1062,7 @@
 			disable_toast: true
 			x: -15.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1098,7 +1098,7 @@
 			disable_toast: true
 			x: -14.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1134,7 +1134,7 @@
 			disable_toast: true
 			x: -13.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1170,7 +1170,7 @@
 			disable_toast: true
 			x: -21.0d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1206,7 +1206,7 @@
 			disable_toast: true
 			x: -20.0d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1242,7 +1242,7 @@
 			disable_toast: true
 			x: -19.0d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1278,7 +1278,7 @@
 			disable_toast: true
 			x: -18.0d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "32 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1314,7 +1314,7 @@
 			disable_toast: true
 			x: -17.0d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "32 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1350,7 +1350,7 @@
 			disable_toast: true
 			x: -16.0d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "48 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1386,7 +1386,7 @@
 			disable_toast: true
 			x: -15.0d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1422,7 +1422,7 @@
 			disable_toast: true
 			x: -14.0d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1458,7 +1458,7 @@
 			disable_toast: true
 			x: -21.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "48 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1494,7 +1494,7 @@
 			disable_toast: true
 			x: -20.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "64 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1530,7 +1530,7 @@
 			disable_toast: true
 			x: -19.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1566,7 +1566,7 @@
 			disable_toast: true
 			x: -18.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1602,7 +1602,7 @@
 			disable_toast: true
 			x: -17.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1638,7 +1638,7 @@
 			disable_toast: true
 			x: -16.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1674,7 +1674,7 @@
 			disable_toast: true
 			x: -15.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "1 Gold"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1710,7 +1710,7 @@
 			disable_toast: true
 			x: -13.0d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "32 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1746,7 +1746,7 @@
 			disable_toast: true
 			x: -20.0d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "1 Gold"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1782,7 +1782,7 @@
 			disable_toast: true
 			x: -19.0d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			optional: true
@@ -1820,7 +1820,7 @@
 			disable_toast: true
 			x: -16.0d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1856,7 +1856,7 @@
 			disable_toast: true
 			x: -15.0d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "24 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1892,7 +1892,7 @@
 			disable_toast: true
 			x: -21.0d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "24 Silver"
 			dependencies: ["64F3352725385210"]
 			optional: true
@@ -1929,7 +1929,7 @@
 			disable_toast: true
 			x: -13.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "32 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -1965,7 +1965,7 @@
 			disable_toast: true
 			x: -14.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2001,7 +2001,7 @@
 			disable_toast: true
 			x: -17.0d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "2 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2037,7 +2037,7 @@
 			disable_toast: true
 			x: -13.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2073,7 +2073,7 @@
 			disable_toast: true
 			x: -13.0d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2109,7 +2109,7 @@
 			disable_toast: true
 			x: -14.0d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2145,7 +2145,7 @@
 			disable_toast: true
 			x: -1.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			optional: true
@@ -2182,7 +2182,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2218,7 +2218,7 @@
 			disable_toast: true
 			x: 1.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "9 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2254,7 +2254,7 @@
 			disable_toast: true
 			x: 2.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "9 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2290,7 +2290,7 @@
 			disable_toast: true
 			x: 3.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2326,7 +2326,7 @@
 			disable_toast: true
 			x: 4.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2362,7 +2362,7 @@
 			disable_toast: true
 			x: 5.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "5 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2398,7 +2398,7 @@
 			disable_toast: true
 			x: 6.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "10 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2434,7 +2434,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "7 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2470,7 +2470,7 @@
 			disable_toast: true
 			x: 1.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "7 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2506,7 +2506,7 @@
 			disable_toast: true
 			x: 2.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2542,7 +2542,7 @@
 			disable_toast: true
 			x: 3.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2578,7 +2578,7 @@
 			disable_toast: true
 			x: 4.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "5 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2614,7 +2614,7 @@
 			disable_toast: true
 			x: 5.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "11 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2650,7 +2650,7 @@
 			disable_toast: true
 			x: 6.0d
 			y: 9.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "7 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2686,7 +2686,7 @@
 			disable_toast: true
 			x: 7.0d
 			y: 7.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2722,7 +2722,7 @@
 			disable_toast: true
 			x: -1.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "5 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2758,7 +2758,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "4 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2794,7 +2794,7 @@
 			disable_toast: true
 			x: 1.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2830,7 +2830,7 @@
 			disable_toast: true
 			x: 2.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "6 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2866,7 +2866,7 @@
 			disable_toast: true
 			x: 3.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2902,7 +2902,7 @@
 			disable_toast: true
 			x: 4.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2938,7 +2938,7 @@
 			disable_toast: true
 			x: 5.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -2974,7 +2974,7 @@
 			disable_toast: true
 			x: 6.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3010,7 +3010,7 @@
 			disable_toast: true
 			x: 7.0d
 			y: 11.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3046,7 +3046,7 @@
 			disable_toast: true
 			x: 0.5d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3082,7 +3082,7 @@
 			disable_toast: true
 			x: 1.5d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "32 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3118,7 +3118,7 @@
 			disable_toast: true
 			x: 2.5d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "32 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3154,7 +3154,7 @@
 			disable_toast: true
 			x: 3.5d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "1 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3190,7 +3190,7 @@
 			disable_toast: true
 			x: 4.5d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "1 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3226,7 +3226,7 @@
 			disable_toast: true
 			x: 5.5d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "1 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3262,7 +3262,7 @@
 			disable_toast: true
 			x: 6.5d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "1 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3298,7 +3298,7 @@
 			disable_toast: true
 			x: -1.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "24 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3334,7 +3334,7 @@
 			disable_toast: true
 			x: 0.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "5 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3370,7 +3370,7 @@
 			disable_toast: true
 			x: 1.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "6 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3406,7 +3406,7 @@
 			disable_toast: true
 			x: 2.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "7 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3442,7 +3442,7 @@
 			disable_toast: true
 			x: 3.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3478,7 +3478,7 @@
 			disable_toast: true
 			x: 4.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3514,7 +3514,7 @@
 			disable_toast: true
 			x: 5.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3550,7 +3550,7 @@
 			disable_toast: true
 			x: 6.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "2 Gold"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3586,7 +3586,7 @@
 			disable_toast: true
 			x: 0.5d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "10 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3622,7 +3622,7 @@
 			disable_toast: true
 			x: 1.5d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "48 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3658,7 +3658,7 @@
 			disable_toast: true
 			x: 2.5d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "3 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3694,7 +3694,7 @@
 			disable_toast: true
 			x: 3.5d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "20 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3730,7 +3730,7 @@
 			disable_toast: true
 			x: 4.5d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "8 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3766,7 +3766,7 @@
 			disable_toast: true
 			x: -0.5d
 			y: 13.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3802,7 +3802,7 @@
 			disable_toast: true
 			x: -18.0d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "24 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3838,7 +3838,7 @@
 			disable_toast: true
 			x: 5.5d
 			y: 17.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "48 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3874,7 +3874,7 @@
 			disable_toast: true
 			x: 7.0d
 			y: 15.0d
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "16 Silver"
 			dependencies: ["64F3352725385210"]
 			can_repeat: true
@@ -3909,7 +3909,6 @@
 			icon: "thermal:machine_press"
 			x: -7.0d
 			y: 16.0d
-			shape: "hexagon"
 			subtitle: "20 Silver"
 			description: ["There's a lot between starting and brass machinery, the true capitalists buy this as fast as they can."]
 			dependencies: ["64F3352725385210"]
