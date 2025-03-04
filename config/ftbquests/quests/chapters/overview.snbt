@@ -36,7 +36,6 @@
 			dependencies: [
 				"61147823CC87F711"
 				"675C395B2074C24C"
-				"64F3352725385210"
 			]
 			hide: true
 			id: "0E98B4D2BBF55308"
@@ -63,7 +62,6 @@
 			dependencies: [
 				"1E263994D4883A08"
 				"19715EBCBBA1B4AD"
-				"64F3352725385210"
 			]
 			hide: true
 			id: "69275ECFC147E15B"
@@ -90,7 +88,6 @@
 			]
 			dependencies: [
 				"7D872F933F45809B"
-				"64F3352725385210"
 				"4DA3164A6CED529B"
 			]
 			hide: true
@@ -118,10 +115,7 @@
 				""
 				"Note that Scorched Mechanisms are an ingredient to mechanisms and nothing else. The main assembly line will continue with Precision Mechanisms."
 			]
-			dependencies: [
-				"7888F9129E9FE517"
-				"64F3352725385210"
-			]
+			dependencies: ["7888F9129E9FE517"]
 			hide: true
 			id: "2DC3AA8A89005C42"
 			tasks: [{
@@ -140,7 +134,6 @@
 			y: -1.0d
 			shape: "diamond"
 			description: ["From a humble onset, you'll achieve greatness by thy intelligence."]
-			dependencies: ["64F3352725385210"]
 			size: 2.0d
 			id: "75FB28B253B14876"
 			tasks: [{
@@ -165,10 +158,7 @@
 				""
 				"After hitting the Checkmark above, the first Chapter of the Factory Guide will become accessible from the Quest Sidebar."
 			]
-			dependencies: [
-				"75FB28B253B14876"
-				"64F3352725385210"
-			]
+			dependencies: ["75FB28B253B14876"]
 			hide: true
 			id: "61147823CC87F711"
 			tasks: [{
@@ -189,10 +179,7 @@
 				""
 				"After hitting the Checkmark above, the second Chapter of the Factory Guide will become accessible from the Quest Sidebar."
 			]
-			dependencies: [
-				"0E98B4D2BBF55308"
-				"64F3352725385210"
-			]
+			dependencies: ["0E98B4D2BBF55308"]
 			hide: true
 			id: "1E263994D4883A08"
 			tasks: [{
@@ -213,10 +200,7 @@
 				""
 				"After hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar."
 			]
-			dependencies: [
-				"0BAA1B60B372E283"
-				"64F3352725385210"
-			]
+			dependencies: ["0BAA1B60B372E283"]
 			hide: true
 			id: "780E8AE86250C73D"
 			tasks: [{
@@ -237,10 +221,7 @@
 				""
 				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
-			dependencies: [
-				"0E98B4D2BBF55308"
-				"64F3352725385210"
-			]
+			dependencies: ["0E98B4D2BBF55308"]
 			hide: true
 			id: "7D872F933F45809B"
 			tasks: [{
@@ -263,10 +244,7 @@
 				""
 				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
-			dependencies: [
-				"69275ECFC147E15B"
-				"64F3352725385210"
-			]
+			dependencies: ["69275ECFC147E15B"]
 			hide: true
 			id: "7888F9129E9FE517"
 			tasks: [{
@@ -282,10 +260,7 @@
 			y: 0.5d
 			shape: "diamond"
 			description: ["This journey won't be easy without being prepared with the basics, here are some of the essential machines to progress into automation."]
-			dependencies: [
-				"75FB28B253B14876"
-				"64F3352725385210"
-			]
+			dependencies: ["75FB28B253B14876"]
 			hide: true
 			id: "7D6BC99CCCB29924"
 			tasks: [
@@ -352,10 +327,7 @@
 				""
 				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
-			dependencies: [
-				"0BAA1B60B372E283"
-				"64F3352725385210"
-			]
+			dependencies: ["0BAA1B60B372E283"]
 			hide: true
 			id: "2A52615E8E67F885"
 			tasks: [{
@@ -374,7 +346,6 @@
 			description: ["Tiny step for Steve, huge leap in advanced resource exploitation."]
 			dependencies: [
 				"2A52615E8E67F885"
-				"64F3352725385210"
 				"2A3C33E299508572"
 			]
 			hide: true
@@ -414,10 +385,7 @@
 				""
 				"After hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar."
 			]
-			dependencies: [
-				"69275ECFC147E15B"
-				"64F3352725385210"
-			]
+			dependencies: ["69275ECFC147E15B"]
 			hide: true
 			id: "466B6AA648B23C3A"
 			tasks: [{
@@ -436,7 +404,6 @@
 			dependencies: [
 				"466B6AA648B23C3A"
 				"6E7750CE254894B4"
-				"64F3352725385210"
 			]
 			hide: true
 			id: "0BAA1B60B372E283"
@@ -465,7 +432,6 @@
 			dependencies: [
 				"0B2683CCC179B93F"
 				"57EF36B592C45D2C"
-				"64F3352725385210"
 			]
 			hide: true
 			id: "1DDA0F521F4C0290"
@@ -490,10 +456,7 @@
 				""
 				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
-			dependencies: [
-				"0E98B4D2BBF55308"
-				"64F3352725385210"
-			]
+			dependencies: ["0E98B4D2BBF55308"]
 			hide: true
 			id: "57EF36B592C45D2C"
 			tasks: [{
@@ -514,10 +477,7 @@
 				""
 				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
-			dependencies: [
-				"64F3352725385210"
-				"69275ECFC147E15B"
-			]
+			dependencies: ["69275ECFC147E15B"]
 			hide: true
 			id: "141CF17F211E6268"
 			tasks: [{
@@ -537,7 +497,6 @@
 			dependencies: [
 				"780E8AE86250C73D"
 				"4E549678E05D7FA8"
-				"64F3352725385210"
 			]
 			hide: true
 			id: "73CF11A2C0D4A9E5"
@@ -558,10 +517,7 @@
 			shape: "diamond"
 			subtitle: "Chapter 5"
 			description: ["Research advanced laser technology to transform known and unknown materials"]
-			dependencies: [
-				"73CF11A2C0D4A9E5"
-				"64F3352725385210"
-			]
+			dependencies: ["73CF11A2C0D4A9E5"]
 			hide: true
 			id: "20329543D3DB8D7F"
 			tasks: [{
@@ -580,7 +536,6 @@
 			dependencies: [
 				"141CF17F211E6268"
 				"43C6E5ADE52CE877"
-				"64F3352725385210"
 			]
 			hide: true
 			id: "3B414CD7A815A774"
@@ -605,10 +560,7 @@
 				""
 				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
-			dependencies: [
-				"73CF11A2C0D4A9E5"
-				"64F3352725385210"
-			]
+			dependencies: ["73CF11A2C0D4A9E5"]
 			hide: true
 			id: "6C5432493CB78405"
 			tasks: [{
@@ -720,8 +672,13 @@
 		{
 			title: "&5 The End?&f"
 			x: -1.0d
-			y: 14.5d
-			dependencies: ["20329543D3DB8D7F"]
+			y: 15.0d
+			dependencies: [
+				"20329543D3DB8D7F"
+				"4A2CAFA05FF9F099"
+				"26002D6E3B0F08BC"
+			]
+			size: 2.0d
 			id: "730771BF0E2F329D"
 			tasks: [{
 				id: "5481904ACE3975FC"

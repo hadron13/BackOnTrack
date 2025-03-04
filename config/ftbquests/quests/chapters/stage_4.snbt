@@ -133,7 +133,7 @@
 				"3CB6C1CA88F0CBE2"
 				"2589FD16FDDC6953"
 				"6108110497418196"
-				"6EDBCED2A3DEB77A"
+				"201402493BBB283C"
 			]
 			size: 2.0d
 			id: "3E67BA828E888EC5"
@@ -1376,16 +1376,26 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 34.5d
+			title: "Plating"
+			icon: "create:copper_sheet"
+			x: -2.5d
+			y: 33.5d
+			description: ["The basis of the printed circuit board should be deployed first."]
 			hide_dependency_lines: true
 			dependencies: ["6C3258881A44FA46"]
-			id: "6EDBCED2A3DEB77A"
-			tasks: [{
-				id: "75BEFDA14C3FDD9B"
-				type: "item"
-				item: "gearbox:brass_press"
-			}]
+			id: "201402493BBB283C"
+			tasks: [
+				{
+					id: "240FA72D45F6F477"
+					type: "item"
+					item: "create:copper_sheet"
+				}
+				{
+					id: "7083B8FA631CF245"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

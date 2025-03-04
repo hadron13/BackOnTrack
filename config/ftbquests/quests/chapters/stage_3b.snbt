@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	images: [{
 		x: -2.5d
-		y: -5.5d
+		y: -4.0d
 		width: 12.0d
 		height: 2.0d
 		rotation: 0.0d
@@ -36,7 +36,7 @@
 			icon: "thermal:enderium_ingot"
 			x: -5.0d
 			y: 1.5d
-			description: ["One of the finest materials in the game, is now yours."]
+			description: ["One of the finest materials in the whole world, use wisely."]
 			dependencies: ["3D02415BDBC492AA"]
 			id: "2924B038389DFE3D"
 			tasks: [
@@ -53,11 +53,11 @@
 			]
 		}
 		{
-			title: "Endless Grind ¹"
+			title: "Endless Grind"
 			icon: "minecraft:ender_pearl"
 			x: -2.5d
 			y: -2.0d
-			description: ["There is not much secret to this, you either buy or kill endermen."]
+			description: ["This time there is not much secret, either kill endermen on buy them out."]
 			hide_dependency_lines: true
 			dependencies: ["51F030004DBA106F"]
 			hide: true
@@ -79,6 +79,7 @@
 			icon: "ae2:ender_dust"
 			x: -5.0d
 			y: -0.5d
+			description: ["Finally grind down the bits into a fine dust, ready to be turned into enderium."]
 			dependencies: ["316D4E8D569C1441"]
 			id: "3D02415BDBC492AA"
 			tasks: [
@@ -98,6 +99,7 @@
 			icon: "kubejs:ender_mechanism"
 			x: -2.5d
 			y: 4.0d
+			description: ["At last combine the quantified materials to start tunneling tech!"]
 			dependencies: [
 				"0EB3BFB1D2D6D8CC"
 				"171B8663C68FA3A5"
@@ -122,7 +124,7 @@
 			icon: "kubejs:endstone_fluid_bucket"
 			x: -2.5d
 			y: 2.0d
-			description: ["An ending, inside a bucket"]
+			description: ["The end, in a bucket."]
 			dependencies: [
 				"6FC605221CB21F2E"
 				"17F72BBAC47B3731"
@@ -145,6 +147,7 @@
 			icon: "thermal:enderium_gear"
 			x: -4.0d
 			y: 3.0d
+			description: ["Cut the enderium into a gear, for further machination."]
 			dependencies: ["2924B038389DFE3D"]
 			id: "171B8663C68FA3A5"
 			tasks: [
@@ -164,7 +167,7 @@
 			icon: "endersdelight:ender_shard"
 			x: -4.0d
 			y: -1.5d
-			description: ["Tasty bits of your end"]
+			description: ["Crush the pearls into smaller bits."]
 			dependencies: ["77D4BFD83C7B4F82"]
 			id: "316D4E8D569C1441"
 			tasks: [
@@ -185,6 +188,7 @@
 			icon: "kubejs:coal_ring"
 			x: -1.0d
 			y: 3.0d
+			description: ["Cast the cast iron without a cast into a casted iron ring."]
 			dependencies: ["2A2AEE76BAB22ADD"]
 			id: "0EB3BFB1D2D6D8CC"
 			tasks: [
@@ -204,7 +208,7 @@
 			icon: "createbigcannons:cast_iron_ingot"
 			x: 0.0d
 			y: 1.5d
-			description: ["Transform the iron into cast iron, the Steel's little brother."]
+			description: ["Press the iron into cast iron, the darker brother of steel."]
 			dependencies: ["2775946163E178D8"]
 			id: "2A2AEE76BAB22ADD"
 			tasks: [
@@ -225,6 +229,7 @@
 			icon: "minecraft:iron_ingot"
 			x: 0.0d
 			y: 0.0d
+			description: ["Your usual iron generator goes here."]
 			dependencies: ["51F030004DBA106F"]
 			hide: true
 			id: "2775946163E178D8"
@@ -245,7 +250,7 @@
 			icon: "minecraft:cobblestone"
 			x: -1.5d
 			y: 0.5d
-			description: ["Good old cobblegen as the consumable of the liquid end generator"]
+			description: ["The usual cobblestone generator should suffice."]
 			dependencies: ["51F030004DBA106F"]
 			hide: true
 			id: "17F72BBAC47B3731"
@@ -265,13 +270,21 @@
 		{
 			x: -3.5d
 			y: 0.5d
-			description: ["No need for automating this, it serves as a catalyst and will not be consumed."]
+			description: ["Melt down 3 ingots, these will serve as a catalyst, so, this time automation is not required."]
 			dependencies: ["2924B038389DFE3D"]
 			id: "6FC605221CB21F2E"
 			tasks: [{
-				id: "72F721F0F6FE7932"
+				id: "7015FA496760E7DC"
 				type: "item"
-				item: "tconstruct:molten_enderium_bucket"
+				title: "Copper Can (Molten Iron)"
+				item: {
+					id: "tconstruct:copper_can"
+					Count: 1b
+					tag: {
+						fluid: "tconstruct:molten_enderium"
+					}
+				}
+				consume_items: false
 			}]
 		}
 	]

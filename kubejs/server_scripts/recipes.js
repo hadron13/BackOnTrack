@@ -1198,6 +1198,18 @@ function rocketScience(event) {
 	let tank_t1 = "beyond_earth:steel_tank"
 	let failed_engine_t1 = KJ("failed_steel_engine")
 
+	event.recipes.gearboxElectrolyzing([Fluid.of(KJ("oxygen"), 300), Fluid.of(KJ("hydrogen"), 500)], Fluid.of(MC("water"))).energy(1000)
+    event.remove({ type:BE("oxygen_loader")})
+    event.custom({
+        "type":"beyond_earth:oxygen_loader",
+        "input": {
+            "name": "kubejs:oxygen",
+            "amount": 5
+	    },
+        "oxygen": 5 
+    })
+
+
 	event.recipes.createMechanicalCrafting("beyond_earth:engine_frame", [
 		' S ',
 		'S S',
@@ -1366,7 +1378,7 @@ function rocketScience(event) {
 	event.remove({id:'thermal:machines/refinery/refinery_light_oil'})
 	event.remove({id:'thermal:machines/refinery/refinery_heavy_oil'})
 	event.recipes.createMixing(
-		[Fluid.of(TE("refined_fuel"), 20)],
+		[Fluid.of(TE("refined_fuel"), 1)],
 		[Fluid.of('createindustry:kerosene', 100)]
 	).heated()
 

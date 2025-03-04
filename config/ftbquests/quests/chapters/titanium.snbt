@@ -10,7 +10,7 @@
 	quests: [
 		{
 			title: "Rework"
-			x: 4.5d
+			x: 3.0d
 			y: 9.0d
 			dependencies: ["22BF92533EAFDC0C"]
 			id: "7DF7AB0501717B99"
@@ -22,7 +22,7 @@
 		}
 		{
 			title: "Sinterize"
-			x: 4.5d
+			x: 3.0d
 			y: 7.5d
 			dependencies: ["5C706701136292C2"]
 			id: "22BF92533EAFDC0C"
@@ -34,7 +34,7 @@
 		}
 		{
 			title: "Pulverize"
-			x: 4.5d
+			x: 3.0d
 			y: 6.0d
 			dependencies: ["56F4ADFC8DB86BFA"]
 			id: "5C706701136292C2"
@@ -46,7 +46,7 @@
 		}
 		{
 			title: "React"
-			x: 4.5d
+			x: 3.0d
 			y: 4.5d
 			description: ["React all the reagents together with a "]
 			dependencies: [
@@ -63,8 +63,8 @@
 		}
 		{
 			title: "Recycle"
-			x: 2.5d
-			y: 3.5d
+			x: 1.5d
+			y: 5.5d
 			dependencies: ["56F4ADFC8DB86BFA"]
 			id: "631619EDBE434506"
 			tasks: [{
@@ -74,10 +74,11 @@
 			}]
 		}
 		{
+			title: "Inert"
 			icon: "kubejs:tnt5_bucket"
-			x: 6.0d
+			x: 4.5d
 			y: 3.5d
-			description: ["In the edge of I came up with this and industrial processes!"]
+			description: ["In the edge of \"I made it up\" and actual industrial processes."]
 			dependencies: [
 				"418ACEAAA2C8489D"
 				"0B9EB9F3A8FDEF23"
@@ -99,7 +100,7 @@
 		{
 			title: "Scald"
 			icon: "kubejs:tnt2_bucket"
-			x: 4.5d
+			x: 3.0d
 			y: 2.5d
 			dependencies: ["18B63EFABE160051"]
 			id: "5087F3AE4B871644"
@@ -118,8 +119,8 @@
 		}
 		{
 			title: "Oxidize"
-			x: 2.5d
-			y: 5.5d
+			x: 1.5d
+			y: 3.5d
 			hide_dependency_lines: true
 			dependencies: ["3F4D1B3C28BF5E14"]
 			id: "09F11E9897E31607"
@@ -132,7 +133,7 @@
 		{
 			title: "Irradiate"
 			icon: "kubejs:tnt1_bucket"
-			x: 2.0d
+			x: 0.5d
 			y: 1.5d
 			dependencies: [
 				"382D9F7BDE7F5F29"
@@ -156,7 +157,7 @@
 		{
 			title: "Electrolyze"
 			icon: "kubejs:tnt3_bucket"
-			x: 3.5d
+			x: 2.0d
 			y: 0.0d
 			description: ["Electrolyze the brine to obtain chlorine and sodium too."]
 			dependencies: ["0E143ADB2D2F8A87"]
@@ -177,9 +178,9 @@
 		{
 			title: "Translate"
 			icon: "kubejs:limenite"
-			x: 0.5d
+			x: -1.0d
 			y: 0.0d
-			description: ["At last, shine a &cred&r laser at geld to obtain &6ilmenite&r, our starting point for &3titamium&r (yes, with M)"]
+			description: ["Finally, shine a &cred&r laser at geld to obtain &6ilmenite&r, our starting point for &3titamium&r (yes, with M)"]
 			dependencies: ["6E957A7222259ACD"]
 			id: "382D9F7BDE7F5F29"
 			tasks: [
@@ -198,7 +199,7 @@
 		{
 			title: "Pyrolize"
 			icon: "thermal:coal_coke"
-			x: 2.0d
+			x: 0.5d
 			y: -0.5d
 			description: ["Put work to the oven and make some coke."]
 			dependencies: ["711E78390CD71082"]
@@ -219,29 +220,22 @@
 		{
 			title: "Catalyze"
 			icon: "beyond_earth:desh_ingot"
-			x: 6.0d
+			x: 4.5d
 			y: 2.0d
-			description: ["Desh once more as a catalyst, this metal has limitless potential."]
+			description: ["Limitless potential of desh shows up again, catalyzing the production of argon."]
 			hide_dependency_lines: true
 			dependencies: ["3F4D1B3C28BF5E14"]
 			id: "418ACEAAA2C8489D"
-			tasks: [
-				{
-					id: "61F5A30092C589C5"
-					type: "item"
-					item: "beyond_earth:desh_ingot"
-				}
-				{
-					id: "4FDCBA320722CCB4"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
+			tasks: [{
+				id: "61F5A30092C589C5"
+				type: "item"
+				item: "beyond_earth:desh_ingot"
+			}]
 		}
 		{
 			title: "Alkali"
 			icon: "supplementaries:ash"
-			x: 7.5d
+			x: 6.0d
 			y: 2.5d
 			description: ["Ash? You may ask, however, just assume this works."]
 			hide_dependency_lines: true
@@ -263,7 +257,7 @@
 		{
 			title: "Brineing"
 			icon: "kubejs:tnt6_bucket"
-			x: 4.5d
+			x: 3.0d
 			y: -1.5d
 			description: ["Mix sand and water to create brine, a salt rich water."]
 			dependencies: [
@@ -287,7 +281,7 @@
 		{
 			title: "Carbonize"
 			icon: "minecraft:charcoal"
-			x: 2.0d
+			x: 0.5d
 			y: -3.0d
 			description: ["You should have a train for charcoal at this point..."]
 			hide_dependency_lines: true
@@ -308,7 +302,7 @@
 		}
 		{
 			title: "Tasty Powder"
-			x: 5.5d
+			x: 4.0d
 			y: 0.0d
 			description: ["Very good."]
 			dependencies: ["0E143ADB2D2F8A87"]
@@ -322,9 +316,9 @@
 		{
 			title: "Transform"
 			icon: "gearbox:geld_ingot"
-			x: 0.5d
+			x: -1.0d
 			y: -2.0d
-			description: ["Once more shine a &bblue&r laser on silver to obtain this unique and exotic metal, geld."]
+			description: ["Shining a &bblue&r laser on silver will yield this unique and exotic metal, geld. For some reason, it tastes like metal to be around it..."]
 			dependencies: ["34F1D64A281DC259"]
 			id: "6E957A7222259ACD"
 			tasks: [
@@ -343,9 +337,9 @@
 		{
 			title: "Transmute"
 			icon: "thermal:silver_ingot"
-			x: 0.5d
+			x: -1.0d
 			y: -4.0d
-			description: ["Shine a &2green&r laser at gold to obtain silver from the transmution, a material not naturally found."]
+			description: ["Shine a &2green&r laser at gold to obtain silver from the transmution, a material not naturally found in our world, ultimately reversing the chrysopoeia."]
 			dependencies: ["22750FB1C2E653AF"]
 			id: "34F1D64A281DC259"
 			tasks: [
@@ -364,9 +358,9 @@
 		{
 			title: "Reverse Chrysopoeia"
 			icon: "minecraft:gold_ingot"
-			x: 2.0d
+			x: 0.5d
 			y: -5.0d
-			description: ["Wash the red sand to obtain trace ammounts of gold and compress into ingots."]
+			description: ["At this point you should be a professional gold digger, now we have to turn the alchemist's dream upside down."]
 			hide_dependency_lines: true
 			dependencies: ["3F4D1B3C28BF5E14"]
 			id: "22750FB1C2E653AF"
@@ -386,7 +380,7 @@
 		{
 			title: "Water"
 			icon: "minecraft:water_bucket"
-			x: 5.5d
+			x: 4.0d
 			y: -3.0d
 			description: ["Random water source."]
 			hide_dependency_lines: true
@@ -408,7 +402,7 @@
 		{
 			title: "Salty Component"
 			icon: "minecraft:sand"
-			x: 3.5d
+			x: 2.0d
 			y: -3.0d
 			description: ["There should be salt in the sand."]
 			hide_dependency_lines: true
@@ -433,7 +427,7 @@
 			x: 3.0d
 			y: -8.0d
 			shape: "diamond"
-			description: ["With shiny new technology you can transmute materials,"]
+			description: ["With the latest shiny new technology, it is now possible to transmute known materials using powerful laser beams! Transmute and irradiate materials to uncover new possibilities."]
 			dependencies: ["20329543D3DB8D7F"]
 			hide: true
 			size: 2.0d
@@ -461,6 +455,20 @@
 				id: "7A2858303DD85059"
 				type: "item"
 				item: "gearbox:laser"
+			}]
+		}
+		{
+			title: "Transmutation maze"
+			icon: "gearbox:irradiator"
+			x: -2.5d
+			y: 1.5d
+			description: ["This is just the tip of the iceberg of transmutation technology, try exotic recipes and you will be greatly compensated."]
+			dependencies: ["382D9F7BDE7F5F29"]
+			id: "661D4CE5A41F0079"
+			tasks: [{
+				id: "513F5E41CE37A494"
+				type: "checkmark"
+				title: "Aknowleged"
 			}]
 		}
 	]

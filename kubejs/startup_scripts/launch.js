@@ -57,7 +57,6 @@ onEvent('item.registry', event => {
 	mechanism('Scorch', RARITY_UNCOMMON)
 	mechanism('Explosive', RARITY_UNCOMMON)
 	mechanism('Power', RARITY_UNCOMMON)
-	mechanism('Invar', RARITY_UNCOMMON)
 	mechanism('Ender', RARITY_UNCOMMON)
 	mechanism('High Power', RARITY_UNCOMMON)
 
@@ -238,7 +237,17 @@ onEvent('block.registry', event => {
 
 onEvent('fluid.registry', event => {
 
-	event.create('endstone_fluid')
+	event.create('oxygen')
+			.thinTexture(0xa5d4e5)
+			.bucketColor(0xa5d4e5)
+			.displayName('Oxygen')
+
+	event.create('hydrogen')
+			.thinTexture(0x26bbf2)
+			.bucketColor(0x26bbf2)
+			.displayName('Hydrogen')
+	
+    event.create('endstone_fluid')
 			.thickTexture(0xeef6b4)
 			.bucketColor(0xeef6b4)
 			.displayName('Liquid End')

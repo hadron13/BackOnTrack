@@ -27,7 +27,6 @@
 			y: -1.0d
 			shape: "diamond"
 			description: ["Refining ores in this modpack may be &eunusual&f, this questline will give you an oversight on the diverse ways to refine your ores."]
-			dependencies: ["64F3352725385210"]
 			hide: true
 			size: 2.0d
 			id: "5E29260086D6D44C"

@@ -126,6 +126,7 @@ onEvent('jei.hide.items', event => {
 	event.hide('@itemfilters')
 	//event.hide('@enderstorage')
 	event.hide('@davebuildingmod')
+	// event.hide('@')
 
 
 })
