@@ -9,9 +9,9 @@
 	default_hide_dependency_lines: false
 	images: [{
 		x: -1.0d
-		y: -6.0d
-		width: 21.0d
-		height: 4.0d
+		y: -5.0d
+		width: 10.5d
+		height: 2.0d
 		rotation: 0.0d
 		image: "kubejs:textures/images/chapter1.png"
 		hover: [ ]

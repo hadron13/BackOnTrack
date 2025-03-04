@@ -139,6 +139,7 @@
 			x: -1.0d
 			y: -1.0d
 			shape: "diamond"
+			description: ["From a humble onset, you'll achieve greatness by thy intelligence."]
 			dependencies: ["64F3352725385210"]
 			size: 2.0d
 			id: "75FB28B253B14876"

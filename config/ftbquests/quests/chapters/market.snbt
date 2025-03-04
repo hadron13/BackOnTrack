@@ -94,16 +94,16 @@
 				id: "kubejs:diamond_saw"
 				Count: 1b
 				tag: {
-					display: {
-						Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
-					}
+					HideFlags: 1
 					Enchantments: [{
 						id: "minecraft:unbreaking"
 						lvl: 10s
 					}]
 					Unbreakable: 1
 					Damage: 0
-					HideFlags: 1
+					display: {
+						Name: "{\"text\":\"Enchanted Saw\",\"color\":\"gold\",\"italic\":false}"
+					}
 				}
 			}
 			x: -4.5d
@@ -121,16 +121,16 @@
 					id: "kubejs:diamond_saw"
 					Count: 1b
 					tag: {
-						display: {
-							Name: "{\"text\":\"Enchanted Diamond Saw\",\"color\":\"gold\",\"italic\":false}"
-						}
+						HideFlags: 1
 						Enchantments: [{
 							id: "minecraft:unbreaking"
 							lvl: 10s
 						}]
 						Unbreakable: 1
 						Damage: 0
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Diamond Saw\",\"color\":\"gold\",\"italic\":false}"
+						}
 					}
 				}
 				consume_items: true

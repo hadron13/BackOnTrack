@@ -63,6 +63,7 @@
 			y: 7.0d
 			shape: "diamond"
 			subtitle: "Contraption 27"
+			description: ["Finally, deploy the infernal bricks onto precision mechanisms, and then spout lava over it."]
 			dependencies: [
 				"227A9F0308BBE647"
 				"2F99F54B57DDBC49"
@@ -82,7 +83,11 @@
 			x: 3.0d
 			y: 5.0d
 			subtitle: "Contraption 25"
-			description: ["About 2,2 buckets for every scorch mechanism, 18 buckets for a machine, not that ecological but still a hose pulley or even a few hellbarks can handle it."]
+			description: [
+				"If you had not already automated lava production and distribution, this would be a good time to do so, each mechanism requires 2500mb of lava, and the full machine whopping 20 buckets."
+				""
+				"This may be done fairly easily by using a pump in the underworld, combined with a train for transport."
+			]
 			hide_dependency_lines: true
 			dependencies: [
 				"19715EBCBBA1B4AD"
@@ -107,10 +112,13 @@
 		{
 			icon: "minecraft:magma_cream"
 			x: 0.0d
-			y: 3.5d
+			y: 4.0d
 			subtitle: "Contraption 23"
-			description: ["A bit of lava into blood and it turns into magma cream."]
-			dependencies: ["227A9F0308BBE647"]
+			description: ["Drop lava over blood to produce infernal magma cream."]
+			dependencies: [
+				"227A9F0308BBE647"
+				"30AE867E83F0C07A"
+			]
 			id: "43BED22E6E6B3DE7"
 			tasks: [
 				{
@@ -131,6 +139,7 @@
 			x: -3.0d
 			y: 5.0d
 			subtitle: "Contraption 26"
+			description: ["Compact the unholy ingredients into fiery bricks"]
 			dependencies: [
 				"43BED22E6E6B3DE7"
 				"17DDE3C9D26B4F35"
@@ -153,9 +162,9 @@
 		{
 			icon: "minecraft:gravel"
 			x: 0.0d
-			y: 5.0d
+			y: 5.5d
 			subtitle: "Contraption 24"
-			description: ["Don't forget the gravel, it can give a nice texture to the cak... grout."]
+			description: ["Redirect a gravel line for this production line."]
 			dependencies: ["21753CBB528EAADF"]
 			hide: true
 			id: "17DDE3C9D26B4F35"
@@ -177,7 +186,10 @@
 			x: -2.0d
 			y: 2.0d
 			subtitle: "Contraption 22"
-			description: [""]
+			description: [
+				""
+				"The earliest step into this production line is soul sand, which can be produced by bulk haunting with a fan."
+			]
 			dependencies: ["21753CBB528EAADF"]
 			hide: true
 			id: "4A2CE1B515197917"
@@ -200,6 +212,7 @@
 			x: 2.0d
 			y: 2.0d
 			subtitle: "Contraption 21-3"
+			description: ["Whisk the soul until it bleeds, creating an useful pool of hellish blood."]
 			dependencies: ["7B56EFFB4E69C63D"]
 			id: "7444D6A02022E62D"
 			tasks: [
@@ -219,6 +232,7 @@
 		{
 			x: 0.0d
 			y: 2.5d
+			description: ["The soul separated from the sand can now be further tortured for increased shareholder value."]
 			dependencies: ["4A2CE1B515197917"]
 			id: "7B56EFFB4E69C63D"
 			tasks: [{
@@ -231,6 +245,7 @@
 			title: "Unsoulessed sand"
 			x: -1.5d
 			y: 3.5d
+			description: ["Redirect the leftover sand to brick production."]
 			dependencies: ["4A2CE1B515197917"]
 			id: "286EFE73EFDF3FC2"
 			tasks: [{
@@ -238,6 +253,28 @@
 				type: "item"
 				item: "forbidden_arcanus:soulless_sand"
 			}]
+		}
+		{
+			title: "Coagulation"
+			icon: "tconstruct:blood_slime_ball"
+			x: 1.5d
+			y: 3.5d
+			subtitle: "Contraption 23"
+			description: ["Then coagulate the unholy blood into a ball using casting tables."]
+			dependencies: ["7444D6A02022E62D"]
+			id: "30AE867E83F0C07A"
+			tasks: [
+				{
+					id: "12E128D8E4873EF5"
+					type: "item"
+					item: "tconstruct:blood_slime_ball"
+				}
+				{
+					id: "3A710BB5C9C94493"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

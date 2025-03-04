@@ -314,7 +314,7 @@
 			title: "Andezinc Mixer"
 			icon: "create:andesite_alloy"
 			x: 5.5d
-			y: 7.0d
+			y: 8.0d
 			subtitle: "Contraption 5"
 			description: ["Combine the &o&7andesitic blend&r with &o&bzinc&r to create &6&oAndesite Alloy&r, the base material for all your kinetic endeavours."]
 			dependencies: [
@@ -340,7 +340,7 @@
 			title: "Deploy, Deploy, Deploy."
 			icon: "kubejs:rotation_mechanism"
 			x: 4.0d
-			y: 11.5d
+			y: 11.0d
 			subtitle: "Contraption 7"
 			description: [
 				"Bring the &6Mechanism Base&r along with &6Cogwheels&r, &6Large Cogwheels&r and &6Andesite Alloy&r into the final contraption of this chapter."
@@ -534,8 +534,8 @@
 			title: "Teething"
 			icon: "create:cogwheel"
 			x: 4.0d
-			y: 9.0d
-			subtitle: "Contraption 8-2"
+			y: 9.5d
+			subtitle: "Contraption 6-2"
 			description: ["Use a &6Deployer&r to insert teeth onto a &7&oshaft&r to create a &6Cogwheel&r"]
 			dependencies: [
 				"19921941321965A4"
@@ -559,8 +559,8 @@
 			title: "Extra Teething"
 			icon: "create:large_cogwheel"
 			x: 2.5d
-			y: 9.5d
-			subtitle: "Contraption 8-3"
+			y: 10.0d
+			subtitle: "Contraption 6-3"
 			description: ["Once more use a &6Deployer&r to add even more teeth, creating a &6Large Cogwheel&r"]
 			dependencies: [
 				"19921941321965A4"
@@ -584,7 +584,7 @@
 			title: "Shifting Alloy"
 			icon: "create:shaft"
 			x: 4.0d
-			y: 7.5d
+			y: 8.0d
 			subtitle: "Contraption 6-1"
 			description: ["The &6Rotation Mechanism&r production demands &6Cogwheels&r, which in turn require &6Shafts&r, saw &7&oandesite alloy&r in an upwards facing &6Mechanical Saw&r to produce shafts."]
 			dependencies: ["73FCA432DEFC1DED"]

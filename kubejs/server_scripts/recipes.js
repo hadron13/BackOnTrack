@@ -1757,7 +1757,7 @@ function andesiteMachine(event) {
 	event.recipes.createMilling(['4x ' + AE2('ender_dust')], ED('ender_shard')).processingTime(600)
 	event.recipes.createCrushing(['6x ' + AE2('ender_dust')], ED('ender_shard')).processingTime(400)
 
-	event.recipes.createCutting(CR('shaft', 8), CR('andesite_alloy'))
+	event.recipes.createCutting(CR('shaft', 6), CR('andesite_alloy'))
     event.remove({id: "create:deploying/cogwheel"})
 	event.recipes.createDeploying(CR('cogwheel', 4), [CR('shaft'), "#minecraft:planks"])
 
@@ -2582,25 +2582,25 @@ function explosiveMachine(event){
 		],
 		"processingTime": 180
 	})
-
-	event.custom({
+	
+    event.custom({
 		"type": "gearbox:pumpjack",
-		"biome": "terralith:shield_clearing",
+		"biome": "minecraft:swamp",
 		"ingredients": [ ],
 		"results": [{
 			"fluid": "gearbox:petroleum",
-			"amount": 250 },
+			"amount": 300 },
 		],
 		"processingTime": 180
 	})
 
-	event.custom({
+    event.custom({
 		"type": "gearbox:pumpjack",
-		"biome": "terralith:shield",
+		"biome": "minecraft:ocean",
 		"ingredients": [ ],
 		"results": [{
 			"fluid": "gearbox:petroleum",
-			"amount": 250 },
+			"amount": 100 },
 		],
 		"processingTime": 180
 	})
