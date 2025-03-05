@@ -110,6 +110,40 @@ onEvent('jei.hide.items', event => {
 
 	event.hide('createindustry:sulfur_powder')
 	event.hide('createindustry:saltpeter')
+	event.hide('createindustry:pumpjack_hammer')
+	event.hide('createindustry:pumpjack_crank')
+	event.hide('createindustry:pumpjack_hammer_part')
+	event.hide('createindustry:pumpjack_hammer_head')
+	event.hide('createindustry:pumpjack_hammer_connector')
+	event.hide('createindustry:pumpjack_base')
+	event.hide('createindustry:large_pumpjack_hammer_part')
+	event.hide('createindustry:large_pumpjack_hammer_head')
+	event.hide('createindustry:large_pumpjack_hammer_connector')
+
+           
+	event.hide("createindustry:machine_input") 
+	event.hide("createindustry:electric_motor") 
+	event.hide("createindustry:resistor") 
+	event.hide("createindustry:copper_coil") 
+	event.hide("createindustry:neon_tube") 
+	event.hide("createindustry:cable_tube") 
+	event.hide("createindustry:light_bulb") 
+	event.hide("createindustry:energy_meter") 
+	event.hide("createindustry:voltmeter") 
+	event.hide("createindustry:firebox") 
+	event.hide("createindustry:converter") 
+	event.hide("createindustry:capacitor") 
+	event.hide("createindustry:accumulator") 
+	event.hide("createindustry:rotor") 
+	event.hide("createindustry:stator") 
+	event.hide("createindustry:cable_connector") 
+	event.hide("createindustry:electric_casing")
+	event.hide("createindustry:polarizer")      
+	event.hide("createindustry:generator")      
+	event.hide("createindustry:galvanic_cell") 
+	event.hide("createindustry:surface_scanner") 
+	event.hide("createindustry:casting_spout") 
+	event.hide("createindustry:casting_basin")
 
 	event.hide('grapplemod:rocketupgradeitem')
 
@@ -126,7 +160,6 @@ onEvent('jei.hide.items', event => {
 	event.hide('@itemfilters')
 	//event.hide('@enderstorage')
 	event.hide('@davebuildingmod')
-	// event.hide('@')
 
 
 })

@@ -593,10 +593,10 @@ function unwantedRecipes(event) {
 	event.remove({ output: CI("pumpjack_hammer_connector") })
 	event.remove({ output: CI("pumpjack_hammer_head") })
 	event.remove({ output: CI("pumpjack_hammer_part") })
-	event.remove({ output: CI("machine_input") })
 	event.remove({ output: CI("pumpjack_crank") })
 	event.remove({ output: CI("pumpjack_hammer") })
 	event.remove({ output: CI("pumpjack_base") })
+	event.remove({ output: CI("machine_input") })
 	event.remove({ output: CI("electric_motor") })
 	event.remove({ output: CI("resistor") })
 	event.remove({ output: CI("copper_coil") })
@@ -613,7 +613,19 @@ function unwantedRecipes(event) {
 	event.remove({ output: CI("stator") })
 	event.remove({ output: CI("cable_connector") })
 	event.remove({ output: CI("electric_casing") })
-	event.remove({ output: CI("polarizer") })
+	event.remove({ output: CI("polarizer")      })
+	event.remove({ output: CI("generator")      })
+	event.remove({ output: CI("galvanic_cell") })
+	event.remove({ output: CI("surface_scanner") })
+	event.remove({ output: CI("casting_spout") })
+	event.remove({ output: CI("casting_basin") })
+    
+    event.replaceInput({}, CI("copper_cable"), 'createaddition:copper_spool')
+    event.replaceInput({}, CI("copper_wire"), 'createaddition:copper_wire')
+    event.replaceInput({}, CI("steel_mechanism"), KJ('explosive_mechanism'))
+    event.replaceInput({id:'createindustry/sequenced_assembly/turbine_engine'}, CR("precision_mechanism"), KJ('explosive_mechanism'))
+    
+
 	// output
 	event.remove({ output: ('createaddition:capacitor') })
 	event.remove({ output: ("createaddition:electric_motor") })
@@ -2207,7 +2219,6 @@ function brassMachine(event) {
 	brass_machine('create:brass_funnel', 4)
 	brass_machine('create:brass_tunnel', 4)
 	brass_machine('kubejs:pipe_module_tier_1', 4)
-	brass_machine(CI('machine_input'), 1, CI('heavy_machinery_casing'))
 	brass_machine(CR('elevator_pulley'), 1, CR('rope_pulley'))
 
 
@@ -2451,38 +2462,7 @@ function gearboxrecipes(event){
 	event.recipes.gearboxPyroprocessing(AE2("quartz_glass"), AE2("certus_quartz_dust"))
 	event.recipes.gearboxCompressing([TE("sulfur_dust", 3), TE("tar", 2)], Fluid.of(CI("heavy_oil"), 250)).heated()
 
-	event.shaped(GB('pumpjack_well'), [
-		'SCS',
-		'SCB',
-		'SAS'
-	], {
-		C: CR('chute'),
-		B: CR('fluid_pipe'),
-		A: TE('drill_head'),
-		S: ('alloyed:steel_ingot')
-	})
 
-	event.shaped(GB('pumpjack_arm'), [
-		'SRB',
-		'SCB',
-		'SA '
-	], {
-		C: CR('shaft'),
-		B: ('alloyed:steel_block'),
-		A: CI('steel_truss'),
-		R: ('alloyed:steel_bars'),
-		S: MC('chain')
-	})
-
-	event.shaped(GB('pumpjack_crank'), [
-		' R ',
-		'SA ',
-		' A '
-	], {
-		R: CI('steel_truss'),
-		A: ('alloyed:steel_block'),
-		S: CR('shaft')
-	})
 
 }
 
@@ -2665,7 +2645,38 @@ function explosiveMachine(event){
 	})
 
 
+	event.shaped(GB('pumpjack_well'), [
+		'SCS',
+		'SCB',
+		'SAS'
+	], {
+		C: CR('chute'),
+		B: CR('fluid_pipe'),
+		A: TE('drill_head'),
+		S: ('alloyed:steel_ingot')
+	})
 
+	event.shaped(GB('pumpjack_arm'), [
+		'SRB',
+		'SCB',
+		'SA '
+	], {
+		C: CR('shaft'),
+		B: ('alloyed:steel_block'),
+		A: CI('steel_truss'),
+		R: ('alloyed:steel_bars'),
+		S: MC('chain')
+	})
+
+	event.shaped(GB('pumpjack_crank'), [
+		' R ',
+		'SA ',
+		' A '
+	], {
+		R: CI('steel_truss'),
+		A: ('alloyed:steel_block'),
+		S: CR('shaft')
+	})
 
 
 

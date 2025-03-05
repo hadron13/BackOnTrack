@@ -8,8 +8,8 @@
 	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
 	images: [{
-		x: -2.5d
-		y: -4.0d
+		x: -2.0d
+		y: -3.5d
 		width: 10.5d
 		height: 2.0d
 		rotation: 0.0d
@@ -22,7 +22,7 @@
 	quests: [
 		{
 			title: "Chapter 1B Complete!"
-			x: -2.5d
+			x: -2.0d
 			y: 4.75d
 			shape: "diamond"
 			description: ["Good job! Now that you have an easy way of acquiring track machines, you can expand your railway network as big as you want! Trains are cool by themselves and even cooler when automated!"]
@@ -59,7 +59,7 @@
 		{
 			title: "Real Gold"
 			icon: "create:brass_ingot"
-			x: -1.0d
+			x: -0.5d
 			y: 1.5d
 			subtitle: "Contraption 11"
 			description: [
@@ -94,7 +94,7 @@
 					fluid: "tconstruct:molten_zinc"
 				}
 			}
-			x: 0.0d
+			x: 0.5d
 			y: 0.5d
 			description: ["Route some of your zinc nuggets to a melter, and then pump it into a mixer basing for further yellowishfication."]
 			dependencies: ["57EF36B592C45D2C"]
@@ -130,7 +130,7 @@
 					fluid: "tconstruct:molten_copper"
 				}
 			}
-			x: -2.0d
+			x: -1.5d
 			y: 0.5d
 			description: [
 				"Melt some of your copper and pump it into a mixer for further yelloweishfication."
@@ -156,7 +156,7 @@
 		}
 		{
 			title: "A Bit of Lava"
-			x: -3.0d
+			x: -2.5d
 			y: 0.5d
 			description: [
 				"It's not really required to be automated, but it all depends on how many signals, trains and stations your railway will need."
@@ -175,7 +175,7 @@
 		{
 			title: "Sturdying"
 			icon: "create:sturdy_sheet"
-			x: -4.0d
+			x: -3.5d
 			y: 1.5d
 			subtitle: "Contraption 10"
 			description: ["Pour the lava over the obsidian powder and press it 2 times to create a sturdy sheet."]
@@ -201,7 +201,7 @@
 		{
 			title: "Sturdy Reinforcement"
 			icon: "kubejs:train_mechanism"
-			x: -2.5d
+			x: -2.0d
 			y: 2.5d
 			description: ["Just like Chapter 1A, this can only be automated with the more advanced precision technology, but for now manually crafting it should be more than enough for your transportation needs."]
 			dependencies: [
@@ -219,7 +219,7 @@
 		{
 			title: "Crushing Looper"
 			icon: "create:powdered_obsidian"
-			x: -5.0d
+			x: -4.5d
 			y: 0.5d
 			subtitle: "Contraption 9-3"
 			description: ["Crushing obsidian into powder requires a loop to fully grind the obsidian."]
@@ -242,7 +242,7 @@
 		{
 			title: "Crying Glass"
 			icon: "minecraft:crying_obsidian"
-			x: -4.0d
+			x: -3.5d
 			y: -0.5d
 			subtitle: "Contraption 9-2"
 			description: ["Blowing hot air on obsidian makes it cry this purple juice, interesting..."]
@@ -264,7 +264,7 @@
 		{
 			title: "Igneously Vitreous"
 			icon: "minecraft:obsidian"
-			x: -2.5d
+			x: -2.0d
 			y: -1.5d
 			subtitle: "Contraption 9-1"
 			description: [

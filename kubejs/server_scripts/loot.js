@@ -194,6 +194,10 @@ onEvent('block.loot_tables', event => {
     event.addJson("forbidden_arcanus:mysterywood_leaves", mystery_leaves_but_no_gapples)
 
     event.addSimpleBlock('createbigcannons:built_up_steel_cannon_barrel', '64x kubejs:steel_ring')
+    event.addSimpleBlock('createindustry:lead_ore', 'thermal:raw_lead')
+    event.addSimpleBlock('createindustry:deepslate_lead_ore', 'thermal:raw_lead')
+    event.addSimpleBlock('createindustry:nickel_ore', 'thermal:raw_nickel')
+    event.addSimpleBlock('createindustry:deepslate_nickel_ore', 'thermal:raw_nickel')
 
     // event.addSimpleBlock('biomesoplenty:rose_quartz_cluster', '')
 
