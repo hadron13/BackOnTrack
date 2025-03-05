@@ -23,6 +23,7 @@
 		{
 			x: -2.5d
 			y: 5.5d
+			description: ["Quantum Machinery allows for new ways of long range transdimensional transport of items and fluids, however without the same coolness factor of trains..."]
 			dependencies: ["54C5900FA1D351E9"]
 			size: 1.5d
 			id: "1800781724560123"
@@ -31,11 +32,33 @@
 				type: "item"
 				item: "kubejs:enderium_machine"
 			}]
+			rewards: [
+				{
+					id: "3161CDC9A6FB3259"
+					type: "item"
+					item: "kubejs:ender_mechanism"
+					count: 8
+					random_bonus: 8
+				}
+				{
+					id: "22E52BC773E30D49"
+					type: "item"
+					item: "thermal:enderium_ingot"
+					count: 5
+				}
+				{
+					id: "552F45B3D2E964AC"
+					type: "item"
+					item: "minecraft:ender_pearl"
+					count: 3
+				}
+			]
 		}
 		{
 			icon: "thermal:enderium_ingot"
 			x: -5.0d
 			y: 1.5d
+			subtitle: "Contraption 47-4"
 			description: ["One of the finest materials in the whole world, use wisely."]
 			dependencies: ["3D02415BDBC492AA"]
 			id: "2924B038389DFE3D"
@@ -57,6 +80,7 @@
 			icon: "minecraft:ender_pearl"
 			x: -2.5d
 			y: -2.0d
+			subtitle: "Contraption 47-1"
 			description: ["This time there is not much secret, either kill endermen on buy them out."]
 			hide_dependency_lines: true
 			dependencies: ["51F030004DBA106F"]
@@ -79,6 +103,7 @@
 			icon: "ae2:ender_dust"
 			x: -5.0d
 			y: -0.5d
+			subtitle: "Contraption 47-3"
 			description: ["Finally grind down the bits into a fine dust, ready to be turned into enderium."]
 			dependencies: ["316D4E8D569C1441"]
 			id: "3D02415BDBC492AA"
@@ -99,7 +124,8 @@
 			icon: "kubejs:ender_mechanism"
 			x: -2.5d
 			y: 4.0d
-			description: ["At last combine the quantified materials to start tunneling tech!"]
+			subtitle: "Contraption &650&r"
+			description: ["At last combine the quantified materials to kickstart the tunneling revolution."]
 			dependencies: [
 				"0EB3BFB1D2D6D8CC"
 				"171B8663C68FA3A5"
@@ -124,6 +150,7 @@
 			icon: "kubejs:endstone_fluid_bucket"
 			x: -2.5d
 			y: 2.0d
+			subtitle: "Contraption 48-3"
 			description: ["The end, in a bucket."]
 			dependencies: [
 				"6FC605221CB21F2E"
@@ -147,6 +174,7 @@
 			icon: "thermal:enderium_gear"
 			x: -4.0d
 			y: 3.0d
+			subtitle: "Contraption 47-5"
 			description: ["Cut the enderium into a gear, for further machination."]
 			dependencies: ["2924B038389DFE3D"]
 			id: "171B8663C68FA3A5"
@@ -167,6 +195,7 @@
 			icon: "endersdelight:ender_shard"
 			x: -4.0d
 			y: -1.5d
+			subtitle: "Contraption 47-2"
 			description: ["Crush the pearls into smaller bits."]
 			dependencies: ["77D4BFD83C7B4F82"]
 			id: "316D4E8D569C1441"
@@ -188,6 +217,7 @@
 			icon: "kubejs:coal_ring"
 			x: -1.0d
 			y: 3.0d
+			subtitle: "Contraption 49-2"
 			description: ["Cast the cast iron without a cast into a casted iron ring."]
 			dependencies: ["2A2AEE76BAB22ADD"]
 			id: "0EB3BFB1D2D6D8CC"
@@ -208,6 +238,7 @@
 			icon: "createbigcannons:cast_iron_ingot"
 			x: 0.0d
 			y: 1.5d
+			subtitle: "Contraption 49-1"
 			description: ["Press the iron into cast iron, the darker brother of steel."]
 			dependencies: ["2775946163E178D8"]
 			id: "2A2AEE76BAB22ADD"
@@ -250,6 +281,7 @@
 			icon: "minecraft:cobblestone"
 			x: -1.5d
 			y: 0.5d
+			subtitle: "Contraption 48-2"
 			description: ["The usual cobblestone generator should suffice."]
 			dependencies: ["51F030004DBA106F"]
 			hide: true
@@ -270,6 +302,7 @@
 		{
 			x: -3.5d
 			y: 0.5d
+			subtitle: "Contraption 48-1"
 			description: ["Melt down 3 ingots, these will serve as a catalyst, so, this time automation is not required."]
 			dependencies: ["2924B038389DFE3D"]
 			id: "6FC605221CB21F2E"

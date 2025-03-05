@@ -1199,9 +1199,20 @@ function rocketScience(event) {
 	let failed_engine_t1 = KJ("failed_steel_engine")
 
 	event.recipes.gearboxElectrolyzing([Fluid.of(KJ("oxygen"), 300), Fluid.of(KJ("hydrogen"), 500)], Fluid.of(MC("water"))).energy(1000)
+    
     event.remove({ type:BE("oxygen_loader")})
     event.custom({
         "type":"beyond_earth:oxygen_loader",
+        "input": {
+            "name": "kubejs:oxygen",
+            "amount": 5
+	    },
+        "oxygen": 5 
+    })
+
+    event.remove({ type:BE("oxygen_bubble_distributor")})
+    event.custom({
+        "type":"beyond_earth:oxygen_bubble_distributor",
         "input": {
             "name": "kubejs:oxygen",
             "amount": 5

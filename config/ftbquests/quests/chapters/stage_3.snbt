@@ -84,7 +84,7 @@
 			icon: "minecraft:gunpowder"
 			x: 0.0d
 			y: 6.5d
-			subtitle: "Contraption 37-1"
+			subtitle: "Contraption 43-2"
 			description: ["(Un?)Fun fact: this recipe might work in real life..."]
 			dependencies: [
 				"7B86CDFAEE2EAD0D"
@@ -111,7 +111,7 @@
 			icon: "createbigcannons:packed_gunpowder"
 			x: 0.0d
 			y: 9.0d
-			subtitle: "Contraption 37-2"
+			subtitle: "Contraption 43-4"
 			description: ["Less air, more gunpowder, this compactified form of gunpowder stores much more energy for the same space."]
 			dependencies: ["6C7AFF61FB05798A"]
 			id: "5200D0297F0DE8B1"
@@ -134,7 +134,7 @@
 			icon: "minecraft:oak_log"
 			x: 0.0d
 			y: 1.5d
-			subtitle: "Contraption 29-1"
+			subtitle: "Contraption 35-1"
 			description: ["Direct a line of wood to this factory."]
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
@@ -166,7 +166,7 @@
 			icon: "minecraft:cobblestone"
 			x: -1.5d
 			y: -4.5d
-			subtitle: "Contraption 28-1"
+			subtitle: "Contraption 33-1"
 			description: ["Take advantage of the new high tech igneous extruder and remove the loud cobblestone generator from your factories."]
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
@@ -190,7 +190,7 @@
 			icon: "minecraft:gravel"
 			x: -1.5d
 			y: -3.0d
-			subtitle: "Contraption 28-2"
+			subtitle: "Contraption 33-2"
 			description: ["Once more mill the cobblestone down to gravel, (warning: pun) you know the grind"]
 			dependencies: ["0A39053F99978A28"]
 			id: "218397419487B197"
@@ -213,7 +213,7 @@
 			icon: "minecraft:charcoal"
 			x: 0.0d
 			y: 3.5d
-			subtitle: "Contraption 29-2"
+			subtitle: "Contraption 35-2"
 			description: ["Redo pyrolisis, just like last chapter, creating charcoal from wooden logs."]
 			dependencies: ["463701D5CEC99FC8"]
 			id: "4C99F5F60ABE2DFD"
@@ -236,7 +236,7 @@
 			icon: "kubejs:explosive_mechanism"
 			x: 0.0d
 			y: 11.0d
-			subtitle: "Contraption 39"
+			subtitle: "Contraption 45"
 			description: ["Assemble the final mechanism."]
 			dependencies: [
 				"5200D0297F0DE8B1"
@@ -265,7 +265,7 @@
 			icon: "thermal:iron_gear"
 			x: 1.0d
 			y: 9.5d
-			subtitle: "Contraption 38"
+			subtitle: "Contraption 44"
 			description: ["It's a mechanism, and a very explosive one, and it requires a gear."]
 			dependencies: ["65605AC13DF2D359"]
 			id: "6ACE3593A299DEBC"
@@ -338,7 +338,7 @@
 			icon: "minecraft:iron_nugget"
 			x: 3.5d
 			y: -3.0d
-			subtitle: "Contraption 30-1"
+			subtitle: "Contraption 33-3"
 			description: ["Does gravel even contain iron? It might be better to just accept it..."]
 			dependencies: ["218397419487B197"]
 			id: "65605AC13DF2D359"
@@ -366,7 +366,7 @@
 			}
 			x: 5.5d
 			y: 0.5d
-			subtitle: "Contraption 30-2"
+			subtitle: "Contraption 37-1"
 			description: ["Route the nuggets once more into your High-Temperature melting equipment."]
 			dependencies: ["65605AC13DF2D359"]
 			id: "3F0207FF17AA3496"
@@ -402,7 +402,7 @@
 			}
 			x: 5.5d
 			y: 2.5d
-			subtitle: "Contraption 30-3"
+			subtitle: "Contraption 37-2"
 			description: ["Mixing coke (carbon) with the molten iron creates a stronger alloy, our loved steel."]
 			dependencies: [
 				"3F0207FF17AA3496"
@@ -435,7 +435,7 @@
 			icon: "createbigcannons:built_up_steel_cannon_barrel"
 			x: 4.5d
 			y: 8.5d
-			subtitle: "Contraption 32-8"
+			subtitle: "Contraption 40-1"
 			description: ["Join the 2 layers using a cannon builder to create this final shape."]
 			dependencies: [
 				"01ABB67CC244453B"
@@ -459,7 +459,7 @@
 			icon: "kubejs:steel_ring"
 			x: 2.0d
 			y: 10.0d
-			subtitle: "Contraption 33"
+			subtitle: "Contraption 40-2"
 			description: ["It takes a very long time for each chamber, but for each chamber you can gather 48 rings, and assemble 48 mechanisms, or 6 machines."]
 			dependencies: ["37BABDCE5BDA46D4"]
 			id: "6369DB891302D710"
@@ -480,7 +480,7 @@
 			icon: "createbigcannons:very_small_steel_cannon_layer"
 			x: 4.0d
 			y: 7.0d
-			subtitle: "Contraption 32-5"
+			subtitle: "Contraption 38-2"
 			description: ["May alternatively be used as a pot."]
 			dependencies: ["4DF6E9A11BAF8D05"]
 			id: "45502F7F3F53ACE7"
@@ -502,7 +502,7 @@
 			icon: "createbigcannons:small_steel_cannon_layer"
 			x: 5.0d
 			y: 7.0d
-			subtitle: "Contraption 32-6"
+			subtitle: "Contraption 39-2"
 			description: ["It's no longer boring, the drill already passed through here."]
 			dependencies: ["4FF3C7B52A12788B"]
 			id: "01ABB67CC244453B"
@@ -524,7 +524,7 @@
 			icon: "createbigcannons:unbored_very_small_steel_cannon_layer"
 			x: 4.0d
 			y: 5.5d
-			subtitle: "Contraption 32-2"
+			subtitle: "Contraption 38-1"
 			description: ["Despite having the longest name of the three, this is the smallest cast."]
 			dependencies: [
 				"514EC4ADAD6F5535"
@@ -550,7 +550,7 @@
 			icon: "createbigcannons:unbored_small_steel_cannon_layer"
 			x: 5.0d
 			y: 5.5d
-			subtitle: "Contraption 32-3"
+			subtitle: "Contraption 39-1"
 			description: ["Not the longest name, not the biggest nor smallest, (warning: pun) this is the most boring of them."]
 			dependencies: [
 				"514EC4ADAD6F5535"
@@ -576,8 +576,12 @@
 			icon: "createbigcannons:casting_sand"
 			x: 4.5d
 			y: 0.5d
-			subtitle: "Contraption 32-1"
-			description: ["You'll not be dealing with small tool casts now, instead the creation of large multiblock casts will be needed."]
+			subtitle: "Contraption 36"
+			description: [
+				"You'll not be dealing with small tool casts now, instead the creation of large multiblock casts will be needed."
+				""
+				"Therefore, mix clay, dirt and sand to create a resistant material for large casts."
+			]
 			dependencies: [
 				"742453FA9D86B6F2"
 				"0AE25FD59251DB33"
@@ -602,8 +606,8 @@
 			icon: "minecraft:dirt"
 			x: -1.5d
 			y: 0.5d
-			subtitle: "Contraption 31-2"
-			description: ["Mix everything and it magically turns into dirt, but is dirt made of that? Apparently not? but it works... perhaps..."]
+			subtitle: "Contraption 34-1"
+			description: ["Mix water, gravel, sand and clay into classic but synthetic dirt."]
 			dependencies: [
 				"0AE25FD59251DB33"
 				"517FDD9283D653D1"
@@ -629,7 +633,7 @@
 			icon: "thermal:coal_coke"
 			x: 1.5d
 			y: 2.5d
-			subtitle: "Contraption 29-3"
+			subtitle: "Contraption 35-3"
 			description: ["Clearer carbon piece can now be used in steel."]
 			dependencies: ["4C99F5F60ABE2DFD"]
 			id: "6151B95B338E2283"
@@ -649,7 +653,7 @@
 		{
 			x: -1.5d
 			y: 3.0d
-			subtitle: "Contraption 31-3"
+			subtitle: "Contraption 34-2"
 			description: ["Niter, also known as saltpeter or potassium nitrate, can be unrealistically taken from dirt and make most of the gunpowder."]
 			dependencies: ["742453FA9D86B6F2"]
 			id: "7B86CDFAEE2EAD0D"
@@ -664,7 +668,7 @@
 			icon: "minecraft:clay_ball"
 			x: 1.5d
 			y: -0.5d
-			subtitle: "Contraption 28-4"
+			subtitle: "Contraption 33-5"
 			description: ["Wash sand another time."]
 			dependencies: ["3D260BA8C18832B2"]
 			id: "0AE25FD59251DB33"
@@ -686,8 +690,7 @@
 			icon: "minecraft:water_bucket"
 			x: -3.0d
 			y: 0.5d
-			subtitle: "Contraption 31-1"
-			description: ["Tired of water, Walter is way better, isn't it?"]
+			description: ["Walter, simply superior."]
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
 			id: "517FDD9283D653D1"
@@ -709,7 +712,7 @@
 			icon: "minecraft:sand"
 			x: 1.5d
 			y: -1.5d
-			subtitle: "Contraption 28-3"
+			subtitle: "Contraption 33-4"
 			description: ["Crush the gravel into fine sand, again, I don't have anything more to say, just crush it."]
 			dependencies: ["218397419487B197"]
 			id: "3D260BA8C18832B2"
@@ -731,7 +734,7 @@
 			icon: "createindustry:gasoline_bucket"
 			x: -2.0d
 			y: 10.0d
-			subtitle: "Contraption 35-1"
+			subtitle: "Contraption 42-2"
 			description: [
 				"Gasoline sits in the middle of the distilation outputs."
 				""
@@ -757,12 +760,8 @@
 			icon: "createindustry:diesel_bucket"
 			x: -1.0d
 			y: 9.5d
-			subtitle: "Contraption 35-2"
-			description: [
-				"Diesel comes in the lower half of the primary distilation outputs, and as a byproduct of heavy oil distilling."
-				""
-				"Diesel can be used for large combustion engines for a high ammount rotational power, a single oil deposit on average can sustain a 65000 su engine running for more than 3000 hours!"
-			]
+			subtitle: "Contraption 42-3"
+			description: ["Diesel comes in the lower half of the primary distilation outputs, and as a byproduct of heavy oil distilling."]
 			dependencies: ["4AC20A13D7706FA8"]
 			id: "460B7037B1081997"
 			tasks: [
@@ -782,7 +781,7 @@
 			icon: "createindustry:heavy_oil_bucket"
 			x: -2.0d
 			y: 5.5d
-			subtitle: "Contraption 35-3"
+			subtitle: "Contraption 42-1"
 			dependencies: ["4AC20A13D7706FA8"]
 			id: "7933C0A5002337CD"
 			tasks: [
@@ -802,7 +801,7 @@
 			icon: "thermal:sulfur_dust"
 			x: -1.0d
 			y: 6.5d
-			subtitle: "Contraption 36-1"
+			subtitle: "Contraption 43-1"
 			description: ["Another byproduct of the heavy oil distilling, can be used in an explosive compound, aka gunpowder."]
 			dependencies: ["7933C0A5002337CD"]
 			id: "4B2B136BAA03CD1B"
@@ -824,7 +823,7 @@
 			icon: "gearbox:petroleum_bucket"
 			x: -3.5d
 			y: 5.5d
-			subtitle: "Contraption 34"
+			subtitle: "Contraption 41"
 			description: ["Build and power a pumpjack with rotational power to start extracting oil from the ground."]
 			dependencies: ["021C30C187E9A97E"]
 			id: "4AC20A13D7706FA8"

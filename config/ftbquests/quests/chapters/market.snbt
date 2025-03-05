@@ -117,12 +117,6 @@
 				id: "tconstruct:vein_hammer"
 				Count: 1b
 				tag: {
-					tic_multipliers: {
-						"tconstruct:mining_speed": 0.3f
-						"tconstruct:durability": 5.0f
-						"tconstruct:attack_damage": 1.25f
-					}
-					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 6.8875f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -130,12 +124,13 @@
 						"tconstruct:mining_speed": 2.1923997f
 						"tconstruct:attack_speed": 0.8925f
 					}
-					tic_materials: [
-						"tconstruct:steel"
-						"tconstruct:steel"
-						"tconstruct:steel"
-						"tconstruct:steel"
-					]
+					Damage: 0
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:durability": 5.0f
+						"tconstruct:attack_damage": 1.25f
+					}
+					tic_broken: 0b
 					tic_modifiers: [
 						{
 							name: "tconstruct:piercing"
@@ -146,7 +141,12 @@
 							level: 4s
 						}
 					]
-					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:steel"
+						"tconstruct:steel"
+						"tconstruct:steel"
+						"tconstruct:steel"
+					]
 					tic_persistent_data: {
 						upgrades: 2
 						abilities: 1
@@ -753,16 +753,16 @@
 				tag: {
 					tic_modifiers: [ ]
 					tic_broken: 0b
-					tic_multipliers: {
-						"tconstruct:attack_damage": 0.4f
-					}
-					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 0.0f
 						"tconstruct:armor": 7.0f
 						"tconstruct:durability": 480.0f
 						"tconstruct:armor_toughness": 2.0f
 						"tconstruct:knockback_resistance": 0.1f
+					}
+					Damage: 0
+					tic_multipliers: {
+						"tconstruct:attack_damage": 0.4f
 					}
 					tic_persistent_data: {
 						upgrades: 1
@@ -819,11 +819,11 @@
 				tag: {
 					tic_modifiers: [ ]
 					tic_broken: 0b
-					Damage: 0
 					tic_stats: {
 						"tconstruct:armor": 1.0f
 						"tconstruct:durability": 110.0f
 					}
+					Damage: 0
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -1247,16 +1247,16 @@
 				id: "farmersdelight:diamond_knife"
 				Count: 1b
 				tag: {
-					display: {
-						Name: "{\"text\":\"Enchanted Diamond Knife\",\"color\":\"gold\",\"italic\":false}"
-					}
+					HideFlags: 1
 					Enchantments: [{
 						id: "minecraft:unbreaking"
 						lvl: 10s
 					}]
 					Unbreakable: 1
 					Damage: 0
-					HideFlags: 1
+					display: {
+						Name: "{\"text\":\"Enchanted Diamond Knife\",\"color\":\"gold\",\"italic\":false}"
+					}
 				}
 			}
 			x: 1.0d
@@ -1295,16 +1295,16 @@
 					id: "farmersdelight:diamond_knife"
 					Count: 1b
 					tag: {
-						HideFlags: 1
+						display: {
+							Name: "{\"text\":\"Enchanted Diamond Knife\",\"color\":\"gold\",\"italic\":false}"
+						}
 						Enchantments: [{
 							lvl: 10s
 							id: "minecraft:unbreaking"
 						}]
 						Unbreakable: 1
 						Damage: 0
-						display: {
-							Name: "{\"text\":\"Enchanted Diamond Knife\",\"color\":\"gold\",\"italic\":false}"
-						}
+						HideFlags: 1
 					}
 				}
 			}]

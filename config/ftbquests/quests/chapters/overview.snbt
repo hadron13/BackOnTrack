@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	images: [{
 		x: -1.0d
-		y: -4.0d
+		y: -3.5d
 		width: 14.0d
 		height: 2.0d
 		rotation: 0.0d
@@ -613,6 +613,7 @@
 			y: 14.0d
 			shape: "diamond"
 			subtitle: "Milestone"
+			description: ["Get into the next level of power with the newest high power machinery."]
 			dependencies: [
 				"6C5432493CB78405"
 				"0199FF6088F9DE83"
@@ -670,9 +671,10 @@
 			}]
 		}
 		{
-			title: "&5 The End?&f"
+			title: "&5The End?&f"
 			x: -1.0d
 			y: 15.0d
+			subtitle: "&5Ultimate Milestone&r"
 			dependencies: [
 				"20329543D3DB8D7F"
 				"4A2CAFA05FF9F099"
