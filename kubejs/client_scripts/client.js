@@ -255,14 +255,15 @@ onEvent('item.tooltip', tooltip => {
 
 	main_assembly('kubejs:rotation_mechanism', "1")
 	bonus_assembly('kubejs:pressure_mechanism', "1A")
+	bonus_assembly('kubejs:train_mechanism', "1B")
 	main_assembly('create:precision_mechanism', "2")
 	bonus_assembly('kubejs:scorch_mechanism', "2A")
 	bonus_assembly('kubejs:ender_mechanism', "3B")
 	main_assembly('kubejs:explosive_mechanism', "3")
-	bonus_assembly('kubejs:train_mechanism', "3A")
 	bonus_assembly('kubejs:candy_mechanism', "2B")
 	main_assembly('kubejs:power_mechanism', "4")
-
+	bonus_assembly('kubejs:high_power_mechanism', "4A")
+    main_assembly('gearbox:ultimate_mechanism', "5")
 
 
 	not_consumed('farmersdelight:diamond_knife')
