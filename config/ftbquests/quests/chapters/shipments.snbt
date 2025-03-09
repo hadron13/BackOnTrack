@@ -155,8 +155,8 @@
 		{
 			x: -7.0d
 			y: 4.0d
-			width: 26.0d
-			height: 4.0d
+			width: 18.0d
+			height: 3.0d
 			rotation: 0.0d
 			image: "kubejs:textures/images/shipments.png"
 			hover: [ ]
@@ -180,6 +180,7 @@
 				""
 				"The Profession Cards bought here act as a \"Permit\". All they do is unlock the respective recipes in the Trading Machine. You can absolutely have multiple of these."
 			]
+			dependencies: ["1E8052CB531F278B"]
 			size: 2.0d
 			id: "6AC1CED0D341150E"
 			tasks: [{
@@ -193,10 +194,13 @@
 			icon: { id: "thermal:gold_coin", Count: 2b }
 			x: -7.0d
 			y: 13.5d
-			shape: "diamond"
+			shape: "hexagon"
 			subtitle: "Silver <=> Gold"
 			description: ["This Trading card can convert the currency of coins inserted into the Trading Machine."]
-			dependencies: ["6AC1CED0D341150E"]
+			dependencies: [
+				"6AC1CED0D341150E"
+				"1E8052CB531F278B"
+			]
 			optional: true
 			can_repeat: true
 			id: "3B548F2C060C2229"
@@ -231,6 +235,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "2 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			optional: true
 			can_repeat: true
 			id: "3B6D3454B9997A7B"
@@ -267,6 +272,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "15701F4DD84914A5"
 			tasks: [{
@@ -302,6 +308,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "2 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "2ECE97CD9508C63F"
 			tasks: [{
@@ -337,6 +344,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "6 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3F5AEEC293558937"
 			tasks: [{
@@ -372,6 +380,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3EAFCE508C3C35AA"
 			tasks: [{
@@ -407,6 +416,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "12 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3B3D159626931E1D"
 			tasks: [{
@@ -442,6 +452,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "12 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "1E4E21AB0AB98C97"
 			tasks: [{
@@ -477,6 +488,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "1 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "7FAF53ED1A6FE99E"
 			tasks: [{
@@ -512,6 +524,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "06B05A1145B62AE7"
 			tasks: [{
@@ -547,6 +560,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "04F0D6CBA8F3ED63"
 			tasks: [{
@@ -582,6 +596,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "14843083BF6847B2"
 			tasks: [{
@@ -617,6 +632,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "36DF4B9749CC39AA"
 			tasks: [{
@@ -652,6 +668,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "28EFC7B297BD2777"
 			tasks: [{
@@ -687,6 +704,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "7D22E40B56B54A84"
 			tasks: [{
@@ -722,6 +740,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "71B89604C10BA6BD"
 			tasks: [{
@@ -757,6 +776,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "46980D804BF9D7FA"
 			tasks: [{
@@ -792,6 +812,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "6282C6F32D014D28"
 			tasks: [{
@@ -827,6 +848,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "2 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "35ED6889450526A1"
 			tasks: [{
@@ -862,6 +884,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "76FB4B8873FA74A8"
 			tasks: [{
@@ -897,6 +920,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "7E731B1828E6925C"
 			tasks: [{
@@ -932,6 +956,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "4A55F2781B06D049"
 			tasks: [{
@@ -967,6 +992,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "359241E07D99FCC1"
 			tasks: [{
@@ -1002,6 +1028,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "69EF649B1ED3E0F2"
 			tasks: [{
@@ -1037,6 +1064,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "34E28D1855BAD73D"
 			tasks: [{
@@ -1072,6 +1100,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "03DE2AC9CC7AA987"
 			tasks: [{
@@ -1107,6 +1136,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "643428B7261FC3FA"
 			tasks: [{
@@ -1142,6 +1172,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "274B312EA0608D7D"
 			tasks: [{
@@ -1177,6 +1208,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3459D38C1DF7BA1D"
 			tasks: [{
@@ -1212,6 +1244,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "6206C032EC0EB78A"
 			tasks: [{
@@ -1247,6 +1280,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "32 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "18390BC53E1670A4"
 			tasks: [{
@@ -1282,6 +1316,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "32 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "79E7F382504D965F"
 			tasks: [{
@@ -1317,6 +1352,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "48 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "29DD05E3651498A7"
 			tasks: [{
@@ -1352,6 +1388,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3250C6FA14514CF9"
 			tasks: [{
@@ -1387,6 +1424,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "01FC95C429870317"
 			tasks: [{
@@ -1422,6 +1460,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "48 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "191B5330E44E3DFA"
 			tasks: [{
@@ -1457,6 +1496,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "64 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "2982E21F7F0995E0"
 			tasks: [{
@@ -1492,6 +1532,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "50FAE899A508CF83"
 			tasks: [{
@@ -1527,6 +1568,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "655E2D6AC67987AC"
 			tasks: [{
@@ -1562,6 +1604,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "577F73962B0DA8AD"
 			tasks: [{
@@ -1597,6 +1640,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "507E45DE37EB0FE6"
 			tasks: [{
@@ -1632,6 +1676,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "1 Gold"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "0D99B23EB6DA6342"
 			tasks: [{
@@ -1667,6 +1712,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "32 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "324EF571756B16B9"
 			tasks: [{
@@ -1702,6 +1748,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "1 Gold"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3452166A7382A1CE"
 			tasks: [{
@@ -1737,6 +1784,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			optional: true
 			can_repeat: true
 			id: "28AE71DA118CE511"
@@ -1774,6 +1822,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "7C5FCC8E94C3D498"
 			tasks: [{
@@ -1809,6 +1858,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "24 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "57D3C69D7F9B7F49"
 			tasks: [{
@@ -1844,6 +1894,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "24 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			optional: true
 			can_repeat: true
 			id: "49069D36B3770047"
@@ -1880,6 +1931,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "32 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "5046B1614E9F3E16"
 			tasks: [{
@@ -1915,6 +1967,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "2EB0B28210B30E60"
 			tasks: [{
@@ -1950,6 +2003,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "2 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "00AFE9C5F09ED741"
 			tasks: [{
@@ -1985,6 +2039,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "6EA62E9C1FCAA9C9"
 			tasks: [{
@@ -2020,6 +2075,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "19EDEB366A012C7E"
 			tasks: [{
@@ -2055,6 +2111,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "1168310C625955D7"
 			tasks: [{
@@ -2090,6 +2147,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			optional: true
 			can_repeat: true
 			id: "72F722A73353093E"
@@ -2126,6 +2184,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "13ED3262A599EAE2"
 			tasks: [{
@@ -2161,6 +2220,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "9 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "0A09DBE6DF52E9BE"
 			tasks: [{
@@ -2196,6 +2256,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "9 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "55FD63A9DABE468B"
 			tasks: [{
@@ -2231,6 +2292,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "7E5FEF9DFE88E273"
 			tasks: [{
@@ -2266,6 +2328,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3501B67F3566CC12"
 			tasks: [{
@@ -2301,6 +2364,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "5 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "4170CC51B0507A0B"
 			tasks: [{
@@ -2336,6 +2400,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "10 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "411BDA584B441B1F"
 			tasks: [{
@@ -2371,6 +2436,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "7 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "79A332DDEE5D12FE"
 			tasks: [{
@@ -2406,6 +2472,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "7 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "78244A6DF8EA141F"
 			tasks: [{
@@ -2441,6 +2508,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "73F4BDB63821883C"
 			tasks: [{
@@ -2476,6 +2544,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "0F2082A1517A8AF7"
 			tasks: [{
@@ -2511,6 +2580,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "5 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "7FD1691711FA169F"
 			tasks: [{
@@ -2546,6 +2616,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "11 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "5DF1FFE7535BEE4B"
 			tasks: [{
@@ -2581,6 +2652,7 @@
 			y: 9.0d
 			shape: "hexagon"
 			subtitle: "7 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "6E7D547C3BEEFA3A"
 			tasks: [{
@@ -2616,6 +2688,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "720D9695AAA696C3"
 			tasks: [{
@@ -2651,6 +2724,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "5 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3FAAFF5861D981CF"
 			tasks: [{
@@ -2686,6 +2760,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "4 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "1BA03FD22B254013"
 			tasks: [{
@@ -2721,6 +2796,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "7D2CA161E369E971"
 			tasks: [{
@@ -2756,6 +2832,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "6 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "21C3AAB8FC0A3BBE"
 			tasks: [{
@@ -2791,6 +2868,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "33CB579D37C7EF1B"
 			tasks: [{
@@ -2826,6 +2904,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "668BA7CCEDC37181"
 			tasks: [{
@@ -2861,6 +2940,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "2889631FC0EADA39"
 			tasks: [{
@@ -2896,6 +2976,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "40AD9CC0E5F93141"
 			tasks: [{
@@ -2931,6 +3012,7 @@
 			y: 11.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "391E952EC2631429"
 			tasks: [{
@@ -2966,6 +3048,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "32CF72AD67EE63C8"
 			tasks: [{
@@ -3001,6 +3084,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "32 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "7C47EB918D24A315"
 			tasks: [{
@@ -3036,6 +3120,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "32 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "0CB079981692455E"
 			tasks: [{
@@ -3071,6 +3156,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "1 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "70F3E0AC7223655E"
 			tasks: [{
@@ -3106,6 +3192,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "1 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3E4918887B4D601A"
 			tasks: [{
@@ -3141,6 +3228,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "1 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "25F713FBE2D3F223"
 			tasks: [{
@@ -3176,6 +3264,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "1 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "0E6B429BA5C158C5"
 			tasks: [{
@@ -3211,6 +3300,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "24 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "55975EAB3EFBDFD2"
 			tasks: [{
@@ -3246,6 +3336,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "5 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "163B32EBED164431"
 			tasks: [{
@@ -3281,6 +3372,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "6 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3B85DC98D5CA9569"
 			tasks: [{
@@ -3316,6 +3408,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "7 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "28E22C915BAAAD9D"
 			tasks: [{
@@ -3351,6 +3444,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "69680A79A7513674"
 			tasks: [{
@@ -3386,6 +3480,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "018B000ACB9A5840"
 			tasks: [{
@@ -3421,6 +3516,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "688094E68417A7E6"
 			tasks: [{
@@ -3456,6 +3552,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "2 Gold"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "4D7169C09C1C5C8E"
 			tasks: [{
@@ -3491,6 +3588,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "10 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "288F8E0C07ED631D"
 			tasks: [{
@@ -3526,6 +3624,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "48 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "43D1A2DD7A465D3C"
 			tasks: [{
@@ -3561,6 +3660,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "3 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "63DF805C4CA2FA54"
 			tasks: [{
@@ -3596,6 +3696,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "20 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "53DC0F8CD09A0DC0"
 			tasks: [{
@@ -3631,6 +3732,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "8 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "38A7A350C9BE1FD2"
 			tasks: [{
@@ -3666,6 +3768,7 @@
 			y: 13.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "3859CC1509DB94B2"
 			tasks: [{
@@ -3701,6 +3804,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "24 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "4A0F3C7627BC84EC"
 			tasks: [{
@@ -3736,6 +3840,7 @@
 			y: 17.0d
 			shape: "hexagon"
 			subtitle: "48 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "26657AEE04226F5A"
 			tasks: [{
@@ -3771,6 +3876,7 @@
 			y: 15.0d
 			shape: "hexagon"
 			subtitle: "16 Silver"
+			dependencies: ["1E8052CB531F278B"]
 			can_repeat: true
 			id: "35AE0593646EDA39"
 			tasks: [{
@@ -3805,6 +3911,7 @@
 			y: 16.0d
 			subtitle: "20 Silver"
 			description: ["There's a lot between starting and brass machinery, the true capitalists buy this as fast as they can."]
+			dependencies: ["1E8052CB531F278B"]
 			size: 2.0d
 			id: "4DFE4FD3B504AF4B"
 			tasks: [{
@@ -3863,22 +3970,25 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 1.2f
 					}
-					tic_persistent_data: {
-						upgrades: 3
-						abilities: 1
-					}
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:constantan"
 						"tconstruct:electrum"
 					]
+					tic_persistent_data: {
+						upgrades: 3
+						abilities: 1
+					}
 				}
 			}
 			x: -8.5d
 			y: 13.0d
-			shape: "diamond"
+			shape: "hexagon"
 			description: ["Sell &6Igneous Rocks&f, &6Metal Ores&f, &6Gems&f and more with the Mining permit."]
-			dependencies: ["6AC1CED0D341150E"]
+			dependencies: [
+				"6AC1CED0D341150E"
+				"1E8052CB531F278B"
+			]
 			optional: true
 			can_repeat: true
 			id: "50662EBA9AC98E7E"
@@ -3913,6 +4023,9 @@
 				id: "tconstruct:kama"
 				Count: 1b
 				tag: {
+					tic_multipliers: {
+						"tconstruct:attack_damage": 0.5f
+					}
 					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 1.625f
@@ -3920,9 +4033,6 @@
 						"tconstruct:durability": 721.0f
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 1.6f
-					}
-					tic_multipliers: {
-						"tconstruct:attack_damage": 0.5f
 					}
 					tic_materials: [
 						"tconstruct:bronze"
@@ -3960,9 +4070,12 @@
 			}
 			x: -7.0d
 			y: 9.5d
-			shape: "diamond"
+			shape: "hexagon"
 			description: ["Sell &6Crops&f, &6Flowers&f, &6Honey&f and more with the Farming permit."]
-			dependencies: ["6AC1CED0D341150E"]
+			dependencies: [
+				"6AC1CED0D341150E"
+				"1E8052CB531F278B"
+			]
 			optional: true
 			can_repeat: true
 			id: "371CCDC30CD0D603"
@@ -4032,22 +4145,25 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 0.9f
 					}
-					tic_persistent_data: {
-						upgrades: 3
-						abilities: 1
-					}
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:constantan"
 						"tconstruct:electrum"
 					]
+					tic_persistent_data: {
+						upgrades: 3
+						abilities: 1
+					}
 				}
 			}
 			x: -5.0d
 			y: 11.5d
-			shape: "diamond"
+			shape: "hexagon"
 			description: ["Sell &6Wood Logs&f with the Carpentry permit."]
-			dependencies: ["6AC1CED0D341150E"]
+			dependencies: [
+				"6AC1CED0D341150E"
+				"1E8052CB531F278B"
+			]
 			optional: true
 			can_repeat: true
 			id: "112C5FCAA13E5A1A"
@@ -4087,9 +4203,12 @@
 			}
 			x: -8.5d
 			y: 10.0d
-			shape: "diamond"
+			shape: "hexagon"
 			description: ["Sell &6Prepared Food&f with the Cooking permit."]
-			dependencies: ["6AC1CED0D341150E"]
+			dependencies: [
+				"6AC1CED0D341150E"
+				"1E8052CB531F278B"
+			]
 			optional: true
 			can_repeat: true
 			id: "12D1821505ACEEF7"
@@ -4124,7 +4243,11 @@
 				id: "tconstruct:sledge_hammer"
 				Count: 1b
 				tag: {
-					Damage: 0
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:durability": 4.0f
+						"tconstruct:attack_damage": 1.35f
+					}
 					tic_stats: {
 						"tconstruct:attack_damage": 6.58125f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -4132,11 +4255,7 @@
 						"tconstruct:mining_speed": 3.45f
 						"tconstruct:attack_speed": 0.75f
 					}
-					tic_multipliers: {
-						"tconstruct:mining_speed": 0.4f
-						"tconstruct:durability": 4.0f
-						"tconstruct:attack_damage": 1.35f
-					}
+					Damage: 0
 					tic_materials: [
 						"tconstruct:electrum"
 						"tconstruct:constantan"
@@ -4170,10 +4289,13 @@
 			}
 			x: -5.5d
 			y: 10.0d
-			shape: "diamond"
+			shape: "hexagon"
 			description: ["Sell mass-produced &6Building Blocks&f for a profit with the Masonry permit."]
 			hide_dependency_lines: false
-			dependencies: ["6AC1CED0D341150E"]
+			dependencies: [
+				"6AC1CED0D341150E"
+				"1E8052CB531F278B"
+			]
 			optional: true
 			can_repeat: true
 			id: "4035AA180D38095F"
@@ -4208,6 +4330,10 @@
 				id: "tconstruct:sword"
 				Count: 1b
 				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.5f
+						"tconstruct:durability": 1.1f
+					}
 					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 5.25f
@@ -4215,10 +4341,6 @@
 						"tconstruct:durability": 793.10004f
 						"tconstruct:mining_speed": 3.7375f
 						"tconstruct:attack_speed": 1.6f
-					}
-					tic_multipliers: {
-						"tconstruct:mining_speed": 0.5f
-						"tconstruct:durability": 1.1f
 					}
 					tic_materials: [
 						"tconstruct:bronze"
@@ -4248,9 +4370,12 @@
 			}
 			x: -9.0d
 			y: 11.5d
-			shape: "diamond"
+			shape: "hexagon"
 			description: ["Sell all manner of &6Monster Loot&f with the Hunting permit."]
-			dependencies: ["6AC1CED0D341150E"]
+			dependencies: [
+				"6AC1CED0D341150E"
+				"1E8052CB531F278B"
+			]
 			optional: true
 			can_repeat: true
 			id: "10E031AA55ED0E94"
@@ -4290,9 +4415,12 @@
 			}
 			x: -5.5d
 			y: 13.0d
-			shape: "diamond"
+			shape: "hexagon"
 			description: ["Sell &6Tools&f, &6Armour&f and more with the Smithing permit."]
-			dependencies: ["6AC1CED0D341150E"]
+			dependencies: [
+				"6AC1CED0D341150E"
+				"1E8052CB531F278B"
+			]
 			optional: true
 			can_repeat: true
 			id: "25D51CDFB14C6537"

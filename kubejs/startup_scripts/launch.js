@@ -201,7 +201,7 @@ onEvent('item.registry', event => {
 
 	event.create('thing').texture("kubejs:images/thing")
 	
-	event.create('incomplete_rotation_machine', 'create:sequenced_assembly').parentModel("kubejs:block/incomplete_andesite_machine").renderType("solid").displayName('Incomplete Rotation Machine')
+	event.create('incomplete_rotation_machine', 'create:sequenced_assembly').parentModel("kubejs:block/incomplete_andesite_machine").displayName('Incomplete Rotation Machine')
 
 })
 
@@ -231,21 +231,76 @@ onEvent('block.registry', event => {
 	machine('Explosive', 'Explosive', "solid")
 	machine('Enderium', 'Abstruse',"cutout")
 	machine('Power', 'Power', "translucent")
-	machine('Invar', 'Invar', "translucent")
+	machine('Invar', 'Inductive', "translucent")
 
 })
 
 onEvent('fluid.registry', event => {
 
-	event.create('oxygen')
-			.thinTexture(0xa5d4e5)
-			.bucketColor(0xa5d4e5)
-			.displayName('Oxygen')
+    event.create('oil_brine')
+			.thickTexture(0x506677)
+			.bucketColor(0x506677)
+			.displayName('Petroleum Brine')
 
-	event.create('hydrogen')
-			.thinTexture(0x26bbf2)
-			.bucketColor(0x26bbf2)
-			.displayName('Hydrogen')
+    event.create('desalted_oil')
+			.thinTexture(0x222222)
+			.bucketColor(0x222222)
+			.displayName('Desalted Petroleum')
+
+
+    // let oil_set = (name, display, color) => {
+    //     event.create('')
+    // }
+
+
+    event.create('sulfuric_light_oil')
+            .thinTexture('f4d65f')
+            .bucketTexture('f4d65f')
+            .displayName('Sulfuric Light Oil')
+    
+    event.create('sulfuric_heavy_oil')
+            .thinTexture('a3600e')
+            .bucketTexture('a3600e')
+            .displayName('Sulfuric Heavy Oil')
+
+    event.create('sulfuric_naphta')
+            .thinTexture('ede06f')
+            .bucketTexture('ede06f')
+            .displayName('Sulfuric Naphta')
+ 
+    event.create('sulfuric_gas')
+            .thinTexture('f9f5ca')
+            .displayName('Sulfuric Gas')
+            .noBucket()
+            .gaseous()
+
+
+
+
+    event.create('udmh')
+			.thickTexture(0x4054a5)
+			.bucketColor(0x4054a5)
+			.displayName('1,1-dimethylhydrazine')
+    
+    event.create('ethanol')
+			.thinTexture(0xedaf53)
+			.bucketColor(0xedaf53)
+			.displayName('Ethanol')   
+
+    event.create('methanol')
+			.thinTexture(0xdbbb87)
+			.bucketColor(0xdbbb87)
+			.displayName('Methanol')
+
+    event.create('hypochlorous_acid')
+			.thickTexture(0x3a878e)
+			.bucketColor(0x3a878e)
+			.displayName('Hypochlorous Acid')
+    
+    event.create('mercury')
+			.thickTexture(0x8c8c8c)
+			.bucketColor(0x8c8c8c)
+			.displayName('Mercury')
 	
     event.create('endstone_fluid')
 			.thickTexture(0xeef6b4)
@@ -281,11 +336,6 @@ onEvent('fluid.registry', event => {
 			.thinTexture(0xD1D19A)
 			.bucketColor(0xD1D19A)
 			.displayName('Heated Titanium Tetrachloride')
-
-    event.create('tnt3')
-			.thinTexture(0xB1BB5A)
-			.bucketColor(0xB1BB5A)
-			.displayName('Chlorine')
 
     event.create('tnt5')
 			.thinTexture(0xF080FE)

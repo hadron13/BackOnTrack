@@ -9,8 +9,8 @@
 	default_hide_dependency_lines: false
 	images: [{
 		x: -2.0d
-		y: -3.5d
-		width: 10.5d
+		y: -3.0d
+		width: 10.0d
 		height: 2.0d
 		rotation: 0.0d
 		image: "kubejs:textures/images/chapter1.png"

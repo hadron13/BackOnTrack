@@ -7,23 +7,40 @@
 	icon: "kubejs:high_power_mechanism"
 	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
-	images: [{
-		x: 1.0d
-		y: -8.0d
-		width: 18.0d
-		height: 3.0d
-		rotation: 0.0d
-		image: "kubejs:textures/images/chapter4.png"
-		hover: ["chapter 4"]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: 1.0d
+			y: -8.0d
+			width: 18.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/images/chapter4.png"
+			hover: ["chapter 4"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 5.0d
+			y: -5.0d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "createdeco:textures/block/palettes/decal/orange_decal.png"
+			hover: [
+				"Work Ahead!"
+				"May include unfinished questing soon to be done."
+			]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			title: "Complete Chapter 4b"
 			x: 0.5d
-			y: 3.0d
+			y: 2.5d
 			dependencies: [
 				"3F351A36BDBB7495"
 				"3950BE281741D8B1"
@@ -221,6 +238,7 @@
 			}]
 		}
 		{
+			title: "Inductive Machinery"
 			x: 0.5d
 			y: 4.5d
 			dependencies: ["0199FF6088F9DE83"]

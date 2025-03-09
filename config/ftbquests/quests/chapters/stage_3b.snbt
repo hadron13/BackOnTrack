@@ -10,7 +10,7 @@
 	images: [{
 		x: -2.5d
 		y: -4.0d
-		width: 12.0d
+		width: 10.0d
 		height: 2.0d
 		rotation: 0.0d
 		image: "kubejs:textures/images/chapter3.png"

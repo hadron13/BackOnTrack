@@ -27,5 +27,5 @@
 	#Defines Splash Particle Display Amount Around Flowing Water.
 	#Zero Means No Splash Particles.
 	#Range: 0 ~ 65536
-	"splash abundance" = 50
+	"splash abundance" = 4
 

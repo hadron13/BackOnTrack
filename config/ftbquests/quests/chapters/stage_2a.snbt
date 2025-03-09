@@ -10,7 +10,7 @@
 	images: [{
 		x: 0.0d
 		y: 0.0d
-		width: 12.0d
+		width: 10.0d
 		height: 2.0d
 		rotation: 0.0d
 		image: "kubejs:textures/images/chapter2.png"
@@ -70,12 +70,19 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "19B36C589AFFBA16"
-			tasks: [{
-				id: "1824029D075E21FB"
-				type: "item"
-				item: "kubejs:scorch_mechanism"
-				consume_items: false
-			}]
+			tasks: [
+				{
+					id: "1824029D075E21FB"
+					type: "item"
+					item: "kubejs:scorch_mechanism"
+					consume_items: false
+				}
+				{
+					id: "6370578A24EF9D3E"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
 		}
 		{
 			title: "A lot. of lava"

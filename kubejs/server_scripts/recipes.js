@@ -84,6 +84,7 @@ onEvent('recipes', event => {
 	brassMachine(event)
 	trainMachine(event)
 	zincMachine(event)
+    oilComplex(event)
 	explosiveMachine(event)
 	chocolate(event)
 	invarMachine(event)
@@ -1210,13 +1211,14 @@ function rocketScience(event) {
 	let tank_t1 = "beyond_earth:steel_tank"
 	let failed_engine_t1 = KJ("failed_steel_engine")
 
-	event.recipes.gearboxElectrolyzing([Fluid.of(KJ("oxygen"), 300), Fluid.of(KJ("hydrogen"), 500)], Fluid.of(MC("water"))).energy(1000)
+	event.recipes.gearboxElectrolyzing([Fluid.of(GB("oxygen"), 300), Fluid.of(GB("hydrogen"), 500)], Fluid.of(MC("water"))).energy(1000)
+	// event.recipes.gearboxCentrifuging([Fluid.of(KJ("oxygen"), 240), Fluid.of(KJ(""), 500)], Fluid.of(MC("water"))).energy(1000)
     
     event.remove({ type:BE("oxygen_loader")})
     event.custom({
         "type":"beyond_earth:oxygen_loader",
         "input": {
-            "name": "kubejs:oxygen",
+            "name": "gearbox:oxygen",
             "amount": 5
 	    },
         "oxygen": 5 
@@ -1226,7 +1228,7 @@ function rocketScience(event) {
     event.custom({
         "type":"beyond_earth:oxygen_bubble_distributor",
         "input": {
-            "name": "kubejs:oxygen",
+            "name": "gearbox:oxygen",
             "amount": 5
 	    },
         "oxygen": 5 
@@ -1825,8 +1827,9 @@ function andesiteMachine(event) {
 		.damageIngredient(Item.of('cb_microblock:iron_saw'))
 		.damageIngredient(Item.of('cb_microblock:diamond_saw'))
 
+	event.shapeless(GB('kinetic_machine'), KJ('andesite_machine'))
 	// Andesite
-	event.shaped(KJ('andesite_machine'), [
+	event.shaped(GB('kinetic_machine'), [
 		'SSS',
 		'SCS',
 		'SSS'
@@ -1837,7 +1840,7 @@ function andesiteMachine(event) {
 	transitional = 'kubejs:incomplete_rotation_machine'
 
 	event.recipes.createSequencedAssembly([
-		'kubejs:andesite_machine',
+		'gearbox:kinetic_machine',
 	], 'create:andesite_casing', [
 		event.recipes.createDeploying(transitional, [transitional, KJ('rotation_mechanism')])
 	])	.transitionalItem(transitional)
@@ -1847,11 +1850,11 @@ function andesiteMachine(event) {
 	let andesite_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), 'kubejs:andesite_machine', other_ingredient)
-			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:andesite_machine', B: other_ingredient })
+			event.smithing(Item.of(id, amount), 'gearbox:kinetic_machine', other_ingredient)
+			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'gearbox:kinetic_machine', B: other_ingredient })
 		}
 		else
-			event.stonecutting(Item.of(id, amount), 'kubejs:andesite_machine')
+			event.stonecutting(Item.of(id, amount), 'gearbox:kinetic_machine')
 	}
 
 	event.remove({ output: TE('drill_head') })
@@ -1891,55 +1894,55 @@ function andesiteMachine(event) {
 		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: CR('propeller')})  
+	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: CR('propeller')})
 
 	event.shaped(CR('deployer'), [
 		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('piston_extension_pole'), P: CR('brass_hand')})  
+	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: CR('piston_extension_pole'), P: CR('brass_hand')})
 	
 	event.shaped(CR('mechanical_press'), [
 		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('piston_extension_pole'), P: MC('iron_block')})
+	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: CR('piston_extension_pole'), P: MC('iron_block')})
 	
 	event.shaped(CR('mechanical_mixer'), [
 		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('cogwheel'), P: CR('whisk')}) 
+	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: CR('cogwheel'), P: CR('whisk')})
 	
 	event.shaped('sliceanddice:slicer', [
 		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('cogwheel'), P: CR('turntable')})  
+	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: CR('cogwheel'), P: CR('turntable')})
 	
 	event.shaped('waterstrainer:strainer_base', [
 		'   ',
 		'III',
 		'AMA'
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: 'createaddition:iron_rod'}) 
+	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: 'createaddition:iron_rod'})
 	
 	event.shaped(CR('mechanical_drill'), [
 		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: TE('drill_head')})  
+	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: TE('drill_head')})
 	
 	event.shaped(CR('mechanical_saw'), [
 		' I ',
 		'AMA',
 		' P '
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: TE('saw_blade')}) 
+	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: CR('shaft'), P: TE('saw_blade')})
 	
 	event.shaped('thermal:dynamo_stirling', [
 		' P ',
 		'AMA',
 		'AIA'
-	], {M: KJ('andesite_machine'), A: CR('andesite_alloy'), I: MC('furnace'),  P:TE('rf_coil')})  
+	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: MC('furnace'),  P:TE('rf_coil')})
 	
 
 	event.shaped(GB('kiln'), [
@@ -1960,7 +1963,7 @@ function andesiteMachine(event) {
 	], {
 		C: CR('andesite_alloy'),
 		E: CR('fluid_pipe'),
-		B: KJ('andesite_machine'),
+		B: GB('kinetic_machine'),
 		G: CR('industrial_iron_block')
 	})
 
@@ -1970,7 +1973,7 @@ function andesiteMachine(event) {
 		' S '
 	], {
 		C: TE('drill_head'),
-		S: KJ('andesite_machine'),
+		S: GB('kinetic_machine'),
 		E: CR('fluid_pipe'),
 		B: CR('cogwheel'),
 		G: CR('andesite_alloy')
@@ -2231,12 +2234,12 @@ function titaniumStuff(event){
 	event.recipes.createMixing([BE("desh_ingot"), Fluid.of(KJ('tnt5'), 250)], [BE("desh_ingot"), SP("ash")]).heated()
 
 	// event.recipes.createMixing(KJ("sodium_powder"), MC("sand"))
-	event.recipes.gearboxElectrolyzing([KJ("magnesium_ingot"), Fluid.of(KJ("tnt3"), 50)], KJ("magnesium_chloride")).heated().energy(1000)
+	event.recipes.gearboxElectrolyzing([KJ("magnesium_ingot"), Fluid.of(GB("chlorine"), 50)], KJ("magnesium_chloride")).heated().energy(1000)
 
 	event.recipes.createMixing(Fluid.of(KJ('tnt6'), 250), [MC('sand'), Fluid.of(MC('water'), 200)]).processingTime(50)
-	event.recipes.gearboxElectrolyzing([KJ('sodium_powder'), Fluid.of(KJ('tnt3'), 125), Fluid.of(MC('water'), 250)], Fluid.of(KJ('tnt6'), 500)).energy(100)
+	event.recipes.gearboxElectrolyzing([KJ('sodium_powder'), Fluid.of(GB('chlorine'), 125), Fluid.of(MC('water'), 250)], Fluid.of(KJ('tnt6'), 500)).energy(100)
 
-	// event.recipes.gearboxIrradiating([Fluid.of(KJ('tnt3'), 250), KJ("sodium_powder", 2)], Fluid.of(KJ('tnt6'), 250)).color(255, 255, 255).power(5)
+	// event.recipes.gearboxIrradiating([Fluid.of(GB('chlorine'), 250), KJ("sodium_powder", 2)], Fluid.of(KJ('tnt6'), 250)).color(255, 255, 255).power(5)
 	event.recipes.gearboxTransmuting(TE("silver_ingot"), MC("gold_ingot") ).color(0, 255, 0).power(4)
 	event.recipes.gearboxTransmuting(TC("cobalt_ingot"), MC("gold_ingot") ).color(0, 255, 255).power(2)
 	event.recipes.gearboxTransmuting(MC("diamond"), MC("gold_ingot") ).color(255, 255, 128).power(7.5)
@@ -2249,7 +2252,7 @@ function titaniumStuff(event){
 	event.recipes.gearboxTransmuting(MC("netherite_ingot"), MC("gold_ingot") ).color(255, 255, 255).power(75)
 	event.recipes.gearboxTransmuting(TE("enderium_ingot"), MC("diamond") ).color(255, 255, 255).power(75)
 
-    event.recipes.gearboxIrradiating(Fluid.of(KJ('tnt1'), 250), [Fluid.of(KJ('tnt3'), 250), KJ("limenite"), TE("coal_coke")] ).color(227, 52, 255).power(5)
+    event.recipes.gearboxIrradiating(Fluid.of(KJ('tnt1'), 250), [Fluid.of(GB('chlorine'), 250), KJ("limenite"), TE("coal_coke")] ).color(227, 52, 255).power(5)
 	event.recipes.gearboxIrradiating([KJ("titanium_sponge"), KJ("magnesium_chloride")], [Fluid.of(KJ('tnt2'), 375), KJ("magnesium_ingot"), Fluid.of(KJ('tnt5'), 125)] ).color(255, 234, 213).power(7) 
 	event.recipes.gearboxIrradiating(KJ("titanium_blend"), KJ("titanium_dust")).color(93, 255, 227).power(5)
 
@@ -2557,62 +2560,20 @@ function zincMachine(event) {
 
 }
 
-function explosiveMachine(event){
-	event.replaceInput({output: 'createindustry:coal_coke'}, 'minecraft:coal', 'minecraft:charcoal')
-
-	event.replaceOutput({}, 'createindustry:saltpeter', 'thermal:niter_dust')
-	event.replaceOutput({}, 'createindustry:sulfur_powder', 'thermal:sulfur_dust')
-
-	event.replaceInput({}, 'createindustry:coal_coke', 'thermal:coal_coke')
-	event.replaceInput({}, 'createindustry:saltpeter', 'thermal:niter_dust')
-	event.replaceInput({}, 'createindustry:sulfur_powder', 'thermal:sulfur_dust')
-
-	event.recipes.createMixing([MC('dirt')], [Fluid.of(MC('water')), MC('sand'), MC('clay_ball'), MC('gravel')])
-
-	event.recipes.gearboxPyroprocessing([TE('coal_coke')], [MC('charcoal')] ).heated().processingTime(100)
-	event.recipes.createMixing([Fluid.of(BC('molten_steel'), 90)], ['thermal:coal_coke', Fluid.of(TC('molten_iron'), 90)]).heated()
-
-	event.recipes.createFilling(KJ('lube_can'), [TC('copper_can'), Fluid.of(CI('lubrication_oil'))])
-
-
-	event.custom({
-		"type": "gearbox:pumpjack",
-		"biome": "minecraft:desert",
-		"ingredients": [ ],
-		"results": [{
-			"fluid": "gearbox:petroleum",
-			"amount": 250 },
-		],
-		"processingTime": 180
-	})
+function oilComplex(event){
 	
-    event.custom({
-		"type": "gearbox:pumpjack",
-		"biome": "minecraft:swamp",
-		"ingredients": [ ],
-		"results": [{
-			"fluid": "gearbox:petroleum",
-			"amount": 300 },
-		],
-		"processingTime": 180
-	})
+    event.recipes.gearboxPumpjack(Fluid.of(GB("petroleum"), 250), []).biome("minecraft:desert")
+    event.recipes.gearboxPumpjack(Fluid.of(GB("petroleum"), 300), []).biome("minecraft:swamp")
+    event.recipes.gearboxPumpjack(Fluid.of(GB("petroleum"), 100), []).biome("minecraft:ocean")
 
-    event.custom({
-		"type": "gearbox:pumpjack",
-		"biome": "minecraft:ocean",
-		"ingredients": [ ],
-		"results": [{
-			"fluid": "gearbox:petroleum",
-			"amount": 100 },
-		],
-		"processingTime": 180
-	})
+    event.recipes.createMixing(Fluid.of(KJ("oil_brine"), 100), [Fluid.of(GB("petroleum"), 50), Fluid.of(MC("water"), 50)])
+    event.recipes.gearboxElectrolyzing([Fluid.of(KJ("desalted_oil"), 50), Fluid.of(MC("water"), 50)], Fluid.of(KJ("oil_brine"), 100)).energy(100)
 
 	event.custom({
 		"type": "createindustry:distillation",
 		"ingredients": [{
 			"amount": 360,
-			"fluid": "gearbox:petroleum",
+			"fluid": "kubejs:desalted_oil",
 			"nbt": {}
 		}
 		],
@@ -2643,6 +2604,26 @@ function explosiveMachine(event){
 		],
 		"processingTime": 180
 	})
+
+
+}
+
+function explosiveMachine(event){
+	event.replaceInput({output: 'createindustry:coal_coke'}, 'minecraft:coal', 'minecraft:charcoal')
+
+	event.replaceOutput({}, 'createindustry:saltpeter', 'thermal:niter_dust')
+	event.replaceOutput({}, 'createindustry:sulfur_powder', 'thermal:sulfur_dust')
+
+	event.replaceInput({}, 'createindustry:coal_coke', 'thermal:coal_coke')
+	event.replaceInput({}, 'createindustry:saltpeter', 'thermal:niter_dust')
+	event.replaceInput({}, 'createindustry:sulfur_powder', 'thermal:sulfur_dust')
+
+	event.recipes.createMixing([MC('dirt')], [Fluid.of(MC('water')), MC('sand'), MC('clay_ball'), MC('gravel')])
+
+	event.recipes.gearboxPyroprocessing([TE('coal_coke')], [MC('charcoal')] ).heated().processingTime(100)
+	event.recipes.createMixing([Fluid.of(BC('molten_steel'), 90)], ['thermal:coal_coke', Fluid.of(TC('molten_iron'), 90)]).heated()
+
+	event.recipes.createFilling(KJ('lube_can'), [TC('copper_can'), Fluid.of(CI('lubrication_oil'))])
 
 
 	event.shaped(GB('pumpjack_well'), [

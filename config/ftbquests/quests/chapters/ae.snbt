@@ -7,18 +7,35 @@
 	icon: "ae2:engineering_processor"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: 0.5d
-		y: -6.0d
-		width: 18.0d
-		height: 3.0d
-		rotation: 0.0d
-		image: "kubejs:textures/images/chapter4.png"
-		hover: ["chapter 4"]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: 0.5d
+			y: -5.0d
+			width: 12.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "kubejs:textures/images/chapter4.png"
+			hover: ["chapter 4"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			width: 1.5d
+			height: 1.5d
+			rotation: 0.0d
+			image: "createdeco:textures/block/palettes/decal/orange_decal.png"
+			hover: [
+				"To Be Changed!"
+				"The Semiconductor is soon to come."
+			]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			x: -1.5d

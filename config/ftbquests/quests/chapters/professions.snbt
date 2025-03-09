@@ -27,6 +27,7 @@
 			y: -1.0d
 			shape: "diamond"
 			description: ["Here at &3Engineer's Magazine&r we provide the best employement oportunities for getting that bread, the works range from digging dirt to interstellar bounties."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			size: 2.0d
 			id: "36E02479368EAF04"
@@ -48,6 +49,7 @@
 				""
 				"We raised the money, but also the standards."
 			]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "736FC31210F334F2"
 			tasks: [{
@@ -76,6 +78,7 @@
 			shape: "diamond"
 			subtitle: "20 Gold"
 			description: ["This is the rarest of them all, every globe colection needs one of these"]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			size: 1.5d
 			id: "30ED355F76F0A365"
@@ -99,6 +102,7 @@
 			y: 2.0d
 			subtitle: "10 Silver"
 			description: ["Donate that goofy blood you leave in your smeltery"]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "17EAB8633782ADD9"
 			tasks: [
@@ -138,6 +142,7 @@
 			shape: "diamond"
 			subtitle: "5 Gold"
 			description: ["If you have no use for it, you might just sell it."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			size: 1.5d
 			id: "2E51181E7EC6B6E0"
@@ -166,6 +171,7 @@
 			y: -3.5d
 			subtitle: "7 Gold"
 			description: ["Not enough bread! Our factory needs more wheat to continue producing that bread, 7 gold coins are the deal."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "2421E3B7BABCD7B1"
 			tasks: [{
@@ -189,6 +195,7 @@
 			y: -2.5d
 			subtitle: "16 Silver"
 			description: ["The metal processing plants urge for ores, give them a bit of your mining results."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "1E3E3E5533D245A6"
 			tasks: [
@@ -237,7 +244,6 @@
 			description: ["Fancier metals require fancier rewards."]
 			hide_dependency_lines: false
 			dependencies: ["1E3E3E5533D245A6"]
-			hide: true
 			id: "2547BE1B098305A7"
 			tasks: [
 				{
@@ -276,6 +282,7 @@
 			y: 0.5d
 			subtitle: "5 Silver"
 			description: ["Rotten tomatoes are an essential part of movie rating, imagine if tomatoes never got rotten, what would we throw at them?"]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "428584CEC8AC19B6"
 			tasks: [{
@@ -303,6 +310,7 @@
 				""
 				"And why do we need flattening terrain if the earth is flat? checkmate flat earthers."
 			]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "21AA0BE00D934884"
 			tasks: [
@@ -342,6 +350,7 @@
 			y: -3.5d
 			subtitle: "5 Silver"
 			description: ["These fit perfectly on any garden, 5 coins is profit cause you would probably throw them off, ain't you?"]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "0F79FC684268C640"
 			tasks: [
@@ -381,6 +390,7 @@
 			y: -3.5d
 			subtitle: "1 Gold"
 			description: ["The industry demands more traffic cones, increasing cone traffic trains will be safer to ride and less collisions will happen."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "36C7F5DE56EABC0A"
 			tasks: [{
@@ -402,6 +412,7 @@
 			y: 2.0d
 			subtitle: "30 Silver"
 			description: ["Kill those pesky spiders from this land and receive a bounty for that."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "576041A5B3ACFAEF"
 			tasks: [{
@@ -426,6 +437,7 @@
 			y: 0.5d
 			subtitle: "10 Silver"
 			description: ["So you found some skystone? Thank's for your collaboration."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "50C4475040D2064C"
 			tasks: [{
@@ -451,6 +463,7 @@
 			y: -2.0d
 			subtitle: "76 Silver"
 			description: ["Who wouldn't want these delicious treats? Submit some to get a nice reward for it."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "553CBFEE1FF3773A"
 			tasks: [
@@ -499,6 +512,7 @@
 			y: -1.0d
 			subtitle: "10 Silver"
 			description: ["You really deserve a reward for using exactly 100% of your power, no more no less."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "550F1F8DA0F6F8C1"
 			tasks: [{
@@ -521,6 +535,7 @@
 			y: -2.0d
 			subtitle: "15 Silver"
 			description: ["Soap is definitively one of the inventions of all time."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "21B3F8F84911EBCB"
 			tasks: [{
@@ -544,6 +559,7 @@
 			y: -3.5d
 			subtitle: "1 Gold"
 			description: ["Fun Fact: Concrete is basically made of sea shells (limestone). This is a concrete fact."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "477560DE87C620BE"
 			tasks: [
@@ -574,6 +590,7 @@
 			y: 2.0d
 			subtitle: "11 Silver"
 			description: ["Isaac something wants this for his newest album's cover."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "2951074314D10DF7"
 			tasks: [{
@@ -596,6 +613,7 @@
 			x: 11.5d
 			y: -5.0d
 			description: ["Run, swim, and climb because we ain't got a bike, yet."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "60A00E53A1607353"
 			tasks: [
@@ -635,6 +653,7 @@
 			y: -5.0d
 			subtitle: "15 Silver"
 			description: ["Sell some empty glassware for quick and easy money."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "702C4877D3DE961F"
 			tasks: [
@@ -667,6 +686,7 @@
 			y: -5.0d
 			subtitle: "25 Silver"
 			description: ["Collect 5 samples of the nether flora for further research of this seeminly impossible environment blooming with fungi."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "63091234CD1DDC49"
 			tasks: [
@@ -740,6 +760,7 @@
 			y: -5.0d
 			subtitle: "25 Silver"
 			description: ["Build a pumpjack to start extracting the precious viscous black gold from the deposit underground, have some funding for the distillation."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "4E1BEFA4E88258CC"
 			tasks: [{
@@ -764,6 +785,7 @@
 			y: -1.0d
 			subtitle: "12 Silver"
 			description: ["The factory must grow! And it can't stop, get some quick money while we maintain the factory going..."]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "6E986DBE2535EE36"
 			tasks: [{
@@ -787,6 +809,7 @@
 			y: -2.5d
 			subtitle: "15 Silver"
 			description: ["Sell some mechanisms for that early bread!"]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "42264B8771D6E737"
 			tasks: [{
@@ -810,8 +833,8 @@
 			y: -1.0d
 			subtitle: "20 Silver"
 			description: ["Sell some of these aswell for more quick money."]
+			hide_dependency_lines: false
 			dependencies: ["42264B8771D6E737"]
-			hide: true
 			id: "53E0207A5CD7974C"
 			tasks: [{
 				id: "2BA86EE85893B8A9"
@@ -834,6 +857,7 @@
 			y: 0.5d
 			subtitle: "10 Silver"
 			description: ["Sell some basic crops for 10 silver coins"]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			id: "783BE4C5C95DD297"
 			tasks: [
@@ -875,7 +899,6 @@
 			description: ["Sell uncommon crops for even more profit!"]
 			hide_dependency_lines: false
 			dependencies: ["783BE4C5C95DD297"]
-			hide: true
 			id: "6988EE9FA809F774"
 			tasks: [
 				{
@@ -916,6 +939,7 @@
 			shape: "diamond"
 			subtitle: "6 Silver"
 			description: ["Extinguish all of the midnight beasts for a bounty"]
+			dependencies: ["1E8052CB531F278B"]
 			hide: true
 			optional: true
 			can_repeat: true

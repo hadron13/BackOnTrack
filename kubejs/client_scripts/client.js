@@ -210,7 +210,7 @@ onEvent('jei.remove.categories', event => {
 
 onEvent('item.tooltip', tooltip => {
 	let holds = (id, slots) => tooltip.add("metalbarrels:" + id + "_barrel", [`§7${slots} Slots`])
-	let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "4" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
+	let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "5" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
 	let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Secondary Assembly: §6Chapter ${stage}`])
 	let not_consumed = (id, stage) => tooltip.add(id, [`§7Not consumed in the`, `§7Assembly Process`])
 	let ore = (id, y1, y2) => tooltip.add(id, [`§o§7Y level §6${y1} §7to §6${y2}`])

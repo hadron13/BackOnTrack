@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	images: [{
 		x: -8.0d
-		y: -0.5d
+		y: 0.0d
 		width: 10.0d
 		height: 2.0d
 		rotation: 0.0d

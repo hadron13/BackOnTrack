@@ -34,9 +34,9 @@
 		}
 		{
 			x: 0.5d
-			y: 7.5d
-			width: 25.0d
-			height: 5.0d
+			y: 9.0d
+			width: 20.0d
+			height: 4.0d
 			rotation: 0.0d
 			image: "kubejs:textures/images/chapter4.png"
 			hover: ["chapter 4"]
@@ -68,8 +68,6 @@
 			y: 14.0d
 			description: [
 				"Plastic is the main resource used in the new assembly lines."
-				""
-				"It's production requires the new discovered desh as a catalyst and a lot of heavy oil, with a ratio of 1 bucket of heavy oil for 2 white bricks."
 				""
 				"The oil deposits may be enough for now, but in the future renewable ways of producing it will be required."
 			]

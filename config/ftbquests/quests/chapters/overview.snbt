@@ -111,9 +111,9 @@
 			shape: "diamond"
 			subtitle: "Secondary"
 			description: [
-				"Zinc Machines are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready."
+				"Scorch Machines are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready."
 				""
-				"Note that Scorched Mechanisms are an ingredient to mechanisms and nothing else. The main assembly line will continue with Precision Mechanisms."
+				"Note that Scorch Mechanisms are an ingredient to mechanisms and nothing else. The main assembly line will continue with Precision Mechanisms."
 			]
 			dependencies: ["7888F9129E9FE517"]
 			hide: true
@@ -134,6 +134,7 @@
 			y: -1.0d
 			shape: "diamond"
 			description: ["From a humble onset, you'll achieve greatness by thy intelligence."]
+			dependencies: ["64F3352725385210"]
 			size: 2.0d
 			id: "75FB28B253B14876"
 			tasks: [{
@@ -532,7 +533,7 @@
 			y: 8.0d
 			shape: "diamond"
 			subtitle: "Secondary"
-			description: ["This one has no machine, the mechanism itself is the end goal, and you won't ever be hungry again I suppose..."]
+			description: ["This time the mechanism itself is the end goal. It is the one and only edible mechanism, enjoy!"]
 			dependencies: [
 				"141CF17F211E6268"
 				"43C6E5ADE52CE877"
@@ -595,6 +596,7 @@
 			y: 11.0d
 			shape: "diamond"
 			subtitle: "Secondary"
+			description: ["Dive right into teleportation tech, as you can now transport items around anywhere in any dimension with the newly acquired technology."]
 			dependencies: [
 				"51F030004DBA106F"
 				"54C5900FA1D351E9"
@@ -602,9 +604,12 @@
 			hide: true
 			id: "5A58143EF3AB6555"
 			tasks: [{
-				id: "3C7D84C9EC52D164"
-				type: "item"
-				item: "kubejs:ender_mechanism"
+				id: "6D9D56D78CF6651A"
+				type: "stat"
+				title: "Complete Bonus 3B"
+				icon: "kubejs:ender_mechanism"
+				stat: "minecraft:play_time"
+				value: 1
 			}]
 		}
 		{

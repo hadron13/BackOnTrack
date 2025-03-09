@@ -23,8 +23,8 @@
 		{
 			x: 4.5d
 			y: -5.0d
-			width: 25.0d
-			height: 5.0d
+			width: 20.0d
+			height: 4.0d
 			rotation: 0.0d
 			image: "kubejs:textures/images/chapter1.png"
 			hover: [ ]

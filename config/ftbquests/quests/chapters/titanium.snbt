@@ -171,7 +171,7 @@
 		}
 		{
 			title: "Electrolyze"
-			icon: "kubejs:tnt3_bucket"
+			icon: "gearbox:chlorine_bucket"
 			x: 2.0d
 			y: 0.0d
 			description: ["Electrolyze the brine to obtain chlorine and sodium too."]
@@ -181,7 +181,7 @@
 				{
 					id: "35CD0766B427F699"
 					type: "item"
-					item: "kubejs:tnt3_bucket"
+					item: "gearbox:chlorine_bucket"
 				}
 				{
 					id: "686E6A5A13545BBF"

@@ -7,18 +7,35 @@
 	icon: "kubejs:explosive_mechanism"
 	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
-	images: [{
-		x: 0.5d
-		y: -9.5d
-		width: 18.0d
-		height: 3.0d
-		rotation: 0.0d
-		image: "kubejs:textures/images/chapter3.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: 0.5d
+			y: -9.5d
+			width: 18.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/images/chapter3.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -5.5d
+			y: 5.5d
+			width: 1.5d
+			height: 1.5d
+			rotation: 0.0d
+			image: "createdeco:textures/block/palettes/decal/orange_decal.png"
+			hover: [
+				"To Be Changed!"
+				"The Petrochemical Update is soon to come."
+			]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			icon: "create:precision_mechanism"
@@ -364,7 +381,7 @@
 					fluid: "tconstruct:molten_iron"
 				}
 			}
-			x: 5.5d
+			x: 5.0d
 			y: 0.5d
 			subtitle: "Contraption 37-1"
 			description: ["Route the nuggets once more into your High-Temperature melting equipment."]
@@ -400,7 +417,7 @@
 					fluid: "createbigcannons:molten_steel"
 				}
 			}
-			x: 5.5d
+			x: 5.0d
 			y: 2.5d
 			subtitle: "Contraption 37-2"
 			description: ["Mixing coke (carbon) with the molten iron creates a stronger alloy, our loved steel."]
@@ -433,8 +450,8 @@
 		{
 			title: "Stackup"
 			icon: "createbigcannons:built_up_steel_cannon_barrel"
-			x: 4.5d
-			y: 8.5d
+			x: 3.5d
+			y: 8.0d
 			subtitle: "Contraption 40-1"
 			description: ["Join the 2 layers using a cannon builder to create this final shape."]
 			dependencies: [
@@ -478,8 +495,8 @@
 		{
 			title: "Smol Layer"
 			icon: "createbigcannons:very_small_steel_cannon_layer"
-			x: 4.0d
-			y: 7.0d
+			x: 3.0d
+			y: 6.5d
 			subtitle: "Contraption 38-2"
 			description: ["May alternatively be used as a pot."]
 			dependencies: ["4DF6E9A11BAF8D05"]
@@ -500,8 +517,8 @@
 		{
 			title: "Medium Layer"
 			icon: "createbigcannons:small_steel_cannon_layer"
-			x: 5.0d
-			y: 7.0d
+			x: 4.0d
+			y: 6.5d
 			subtitle: "Contraption 39-2"
 			description: ["It's no longer boring, the drill already passed through here."]
 			dependencies: ["4FF3C7B52A12788B"]
@@ -522,8 +539,8 @@
 		{
 			title: "Small Cast"
 			icon: "createbigcannons:unbored_very_small_steel_cannon_layer"
-			x: 4.0d
-			y: 5.5d
+			x: 3.0d
+			y: 5.0d
 			subtitle: "Contraption 38-1"
 			description: ["Despite having the longest name of the three, this is the smallest cast."]
 			dependencies: [
@@ -548,8 +565,8 @@
 		{
 			title: "Medium Cast"
 			icon: "createbigcannons:unbored_small_steel_cannon_layer"
-			x: 5.0d
-			y: 5.5d
+			x: 4.0d
+			y: 5.0d
 			subtitle: "Contraption 39-1"
 			description: ["Not the longest name, not the biggest nor smallest, (warning: pun) this is the most boring of them."]
 			dependencies: [
@@ -574,7 +591,7 @@
 		{
 			title: "Big Casts"
 			icon: "createbigcannons:casting_sand"
-			x: 4.5d
+			x: 3.5d
 			y: 0.5d
 			subtitle: "Contraption 36"
 			description: [
@@ -819,19 +836,19 @@
 			]
 		}
 		{
-			title: "Pumpjacking"
-			icon: "gearbox:petroleum_bucket"
-			x: -3.5d
-			y: 5.5d
-			subtitle: "Contraption 41"
-			description: ["Build and power a pumpjack with rotational power to start extracting oil from the ground."]
-			dependencies: ["021C30C187E9A97E"]
+			title: "De-Salting"
+			icon: "kubejs:desalted_oil_bucket"
+			x: -2.5d
+			y: 7.5d
+			subtitle: "Contraption 41-3"
+			description: ["Electrolyze the petroleum brine to obtain fully desalted petroleum, ready to be distilled in a fracking tower."]
+			dependencies: ["4E9AD52EAC4D6B27"]
 			id: "4AC20A13D7706FA8"
 			tasks: [
 				{
 					id: "2ED78FB4DD158F39"
 					type: "item"
-					item: "gearbox:petroleum_bucket"
+					item: "kubejs:desalted_oil_bucket"
 				}
 				{
 					id: "038CA6D906AB59F0"
@@ -843,7 +860,7 @@
 		{
 			title: "Cannon Casting 101"
 			icon: "createdeco:orange_decal"
-			x: 6.5d
+			x: 5.5d
 			y: 4.5d
 			description: ["Cannon casting is not as simple as it may seem from this quest, ponder the machinery for more information."]
 			dependencies: [
@@ -911,7 +928,7 @@
 			]
 		}
 		{
-			x: 8.0d
+			x: 7.0d
 			y: 3.5d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
@@ -924,7 +941,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 7.0d
 			y: 4.5d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
@@ -937,7 +954,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 7.0d
 			y: 5.5d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
@@ -952,7 +969,7 @@
 			title: "Oil Company 101"
 			icon: "createdeco:orange_decal"
 			x: -3.5d
-			y: 4.0d
+			y: 3.5d
 			dependencies: [
 				"38D3FEF4C99B1ABB"
 				"0CFE8B23F35DEA3D"
@@ -973,7 +990,7 @@
 			title: "Pumpjack"
 			icon: "gearbox:pumpjack_arm"
 			x: -3.5d
-			y: 2.5d
+			y: 2.0d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
 			id: "0CFE8B23F35DEA3D"
@@ -1003,7 +1020,7 @@
 		{
 			title: "Fracking Towers"
 			x: -5.0d
-			y: 4.0d
+			y: 3.5d
 			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
 			id: "38D3FEF4C99B1ABB"
@@ -1027,6 +1044,50 @@
 					id: "1345CA892656D8F7"
 					type: "item"
 					item: "createindustry:industrial_pipe"
+				}
+			]
+		}
+		{
+			title: "Brining"
+			icon: "kubejs:desalted_oil_bucket"
+			x: -3.5d
+			y: 6.5d
+			subtitle: "Contraption 41-2"
+			description: ["Right after extraction, mix the petroleum with water for de-salting."]
+			dependencies: ["040471504911D80C"]
+			id: "4E9AD52EAC4D6B27"
+			tasks: [
+				{
+					id: "64F0610FBB97C54B"
+					type: "item"
+					item: "kubejs:oil_brine_bucket"
+				}
+				{
+					id: "0003C3FAC1F1F3FF"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Pumpjacking"
+			icon: "gearbox:petroleum_bucket"
+			x: -3.5d
+			y: 5.0d
+			subtitle: "Contraption 41-1"
+			description: ["Assemble and power a pumpjack in the right biome to start extracting the black gold."]
+			dependencies: ["021C30C187E9A97E"]
+			id: "040471504911D80C"
+			tasks: [
+				{
+					id: "16B43B7CD0260CF7"
+					type: "item"
+					item: "gearbox:petroleum_bucket"
+				}
+				{
+					id: "0C309E1C7A47C9B8"
+					type: "checkmark"
+					title: "Automated"
 				}
 			]
 		}
