@@ -255,17 +255,17 @@ onEvent('fluid.registry', event => {
 
     event.create('sulfuric_light_oil')
             .thinTexture('f4d65f')
-            .bucketTexture('f4d65f')
+            .bucketColor('f4d65f')
             .displayName('Sulfuric Light Oil')
     
     event.create('sulfuric_heavy_oil')
             .thinTexture('a3600e')
-            .bucketTexture('a3600e')
+            .bucketColor('a3600e')
             .displayName('Sulfuric Heavy Oil')
 
     event.create('sulfuric_naphta')
             .thinTexture('ede06f')
-            .bucketTexture('ede06f')
+            .bucketColor('ede06f')
             .displayName('Sulfuric Naphta')
  
     event.create('sulfuric_gas')

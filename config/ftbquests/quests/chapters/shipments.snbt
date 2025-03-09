@@ -3962,7 +3962,6 @@
 						}
 					]
 					tic_broken: 0b
-					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 2.25f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -3970,15 +3969,16 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 1.2f
 					}
+					Damage: 0
+					tic_persistent_data: {
+						upgrades: 3
+						abilities: 1
+					}
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:constantan"
 						"tconstruct:electrum"
 					]
-					tic_persistent_data: {
-						upgrades: 3
-						abilities: 1
-					}
 				}
 			}
 			x: -8.5d
@@ -4023,10 +4023,6 @@
 				id: "tconstruct:kama"
 				Count: 1b
 				tag: {
-					tic_multipliers: {
-						"tconstruct:attack_damage": 0.5f
-					}
-					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 1.625f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -4034,11 +4030,11 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 1.6f
 					}
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:electrum"
-					]
+					Damage: 0
+					tic_multipliers: {
+						"tconstruct:attack_damage": 0.5f
+					}
+					tic_broken: 0b
 					tic_modifiers: [
 						{
 							name: "tconstruct:maintained"
@@ -4061,7 +4057,11 @@
 							level: 1s
 						}
 					]
-					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:electrum"
+					]
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1
@@ -4137,7 +4137,6 @@
 						}
 					]
 					tic_broken: 0b
-					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 8.25f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -4145,15 +4144,16 @@
 						"tconstruct:mining_speed": 7.475f
 						"tconstruct:attack_speed": 0.9f
 					}
+					Damage: 0
+					tic_persistent_data: {
+						upgrades: 3
+						abilities: 1
+					}
 					tic_materials: [
 						"tconstruct:bronze"
 						"tconstruct:constantan"
 						"tconstruct:electrum"
 					]
-					tic_persistent_data: {
-						upgrades: 3
-						abilities: 1
-					}
 				}
 			}
 			x: -5.0d
@@ -4243,11 +4243,7 @@
 				id: "tconstruct:sledge_hammer"
 				Count: 1b
 				tag: {
-					tic_multipliers: {
-						"tconstruct:mining_speed": 0.4f
-						"tconstruct:durability": 4.0f
-						"tconstruct:attack_damage": 1.35f
-					}
+					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 6.58125f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -4255,13 +4251,12 @@
 						"tconstruct:mining_speed": 3.45f
 						"tconstruct:attack_speed": 0.75f
 					}
-					Damage: 0
-					tic_materials: [
-						"tconstruct:electrum"
-						"tconstruct:constantan"
-						"tconstruct:bronze"
-						"tconstruct:bronze"
-					]
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:durability": 4.0f
+						"tconstruct:attack_damage": 1.35f
+					}
+					tic_broken: 0b
 					tic_modifiers: [
 						{
 							name: "tconstruct:smite"
@@ -4280,7 +4275,12 @@
 							level: 2s
 						}
 					]
-					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:electrum"
+						"tconstruct:constantan"
+						"tconstruct:bronze"
+						"tconstruct:bronze"
+					]
 					tic_persistent_data: {
 						upgrades: 2
 						abilities: 1
@@ -4330,11 +4330,6 @@
 				id: "tconstruct:sword"
 				Count: 1b
 				tag: {
-					tic_multipliers: {
-						"tconstruct:mining_speed": 0.5f
-						"tconstruct:durability": 1.1f
-					}
-					Damage: 0
 					tic_stats: {
 						"tconstruct:attack_damage": 5.25f
 						"tconstruct:harvest_tier": "minecraft:diamond"
@@ -4342,11 +4337,12 @@
 						"tconstruct:mining_speed": 3.7375f
 						"tconstruct:attack_speed": 1.6f
 					}
-					tic_materials: [
-						"tconstruct:bronze"
-						"tconstruct:constantan"
-						"tconstruct:constantan"
-					]
+					Damage: 0
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.5f
+						"tconstruct:durability": 1.1f
+					}
+					tic_broken: 0b
 					tic_modifiers: [
 						{
 							name: "tconstruct:maintained"
@@ -4361,7 +4357,11 @@
 							level: 1s
 						}
 					]
-					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:bronze"
+						"tconstruct:constantan"
+						"tconstruct:constantan"
+					]
 					tic_persistent_data: {
 						upgrades: 3
 						abilities: 1

@@ -13,7 +13,7 @@
 		width: 9.0d
 		height: 8.0d
 		rotation: 0.0d
-		image: "kubejs:textures/images/BH_CBOT_logo.png"
+		image: "kubejs:textures/images/logo.png"
 		hover: [ ]
 		click: ""
 		dev: false
@@ -53,13 +53,13 @@
 							-1145013298
 							92019149
 						]
+						Name: "Nofaxu"
 						Properties: {
 							textures: [{
 								Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg4NjMwNTYzNiwKICAicHJvZmlsZUlkIiA6ICIxN2Q4Yzc2NjYwNDk0ZjdmYmJjMDdiY2UwNTdjMTljZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb2ZheHUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBmNjlmZDU0ZGIwYWJmODkyNDcyNjEyZThhZjYxYTkwY2I4ZGY5OGE5NTMyMzFjMWMyMGE1ZDdmNzZlZjhjYSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlhNzY1Mzc2NDc5ODlmOWEwYjZkMDAxZTMyMGRhYzU5MWMzNTllOWU2MWEzMWY0Y2UxMWM4OGYyMDdmMGFkNCIKICAgIH0KICB9Cn0="
 								Signature: "LZAW7wH4Z2haYSQLmycocwk/UJF5eRZCP3lgPURjJWSszZCsVoR6DZYWasrCP+gBUQtsBrAl38eeXJkIaSmz+WUHUMpUZ7OVrh6Q4NNAwuBtTkvIL7FsCWwHNbMXg2dYUuUs9YTaYXy0dI55Ga9agH5cListkMn+vtT048C5EUKxs9jSSN9WhRrw+pbiPaPnFlTWd6v7LYWQ7Ls33Z1vwcx6Enc45nN+Wm8w6KiJd7c5YxZQv2Ts7+NgDr7QivUcQz9MMPEoIQpQj+JvGdmrmW2Vxf7bBF4s00c1L5J87bDAkgVlUVJlnE+YazTcl0LoxDwAfDFjuzxnWvQKpUh69pZEgOGebyfUWCW95yPxG1lz/m96diM/uhOftW/Kw8eS7TAUc0ANkXUslL83SePVMUtFaOZttQDq7Wl+gwDJ3OWTZpMMIZzZzioOGxhwirjYQpCTa/Fydmf2yG34M0I5sKcWyXMwAtsjXQ5h8v/KtLnPIqPrYEU3LJwBN2mziZGdgGt8qrtTlJV/7h7vS/nUQG9V0QavlGcovuun8EcYzOxQ2jSx5dQ7hPXBWI6aO2MDEdj+VJFkc+aLI42N5vLRjYeP6AR7adOjJ5wfoeg9ItAtbQM2RQrZKClCyjZAIIYD68ioR5U9QAc0jvg9t7rrORyms4qq7of6NQX/kQpUsf8="
 							}]
 						}
-						Name: "Nofaxu"
 					}
 				}
 			}
@@ -98,13 +98,13 @@
 									-1145013298
 									92019149
 								]
+								Name: "Nofaxu"
 								Properties: {
 									textures: [{
 										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg4NjMwNTYzNiwKICAicHJvZmlsZUlkIiA6ICIxN2Q4Yzc2NjYwNDk0ZjdmYmJjMDdiY2UwNTdjMTljZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJOb2ZheHUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBmNjlmZDU0ZGIwYWJmODkyNDcyNjEyZThhZjYxYTkwY2I4ZGY5OGE5NTMyMzFjMWMyMGE1ZDdmNzZlZjhjYSIKICAgIH0sCiAgICAiQ0FQRSIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjlhNzY1Mzc2NDc5ODlmOWEwYjZkMDAxZTMyMGRhYzU5MWMzNTllOWU2MWEzMWY0Y2UxMWM4OGYyMDdmMGFkNCIKICAgIH0KICB9Cn0="
 										Signature: "LZAW7wH4Z2haYSQLmycocwk/UJF5eRZCP3lgPURjJWSszZCsVoR6DZYWasrCP+gBUQtsBrAl38eeXJkIaSmz+WUHUMpUZ7OVrh6Q4NNAwuBtTkvIL7FsCWwHNbMXg2dYUuUs9YTaYXy0dI55Ga9agH5cListkMn+vtT048C5EUKxs9jSSN9WhRrw+pbiPaPnFlTWd6v7LYWQ7Ls33Z1vwcx6Enc45nN+Wm8w6KiJd7c5YxZQv2Ts7+NgDr7QivUcQz9MMPEoIQpQj+JvGdmrmW2Vxf7bBF4s00c1L5J87bDAkgVlUVJlnE+YazTcl0LoxDwAfDFjuzxnWvQKpUh69pZEgOGebyfUWCW95yPxG1lz/m96diM/uhOftW/Kw8eS7TAUc0ANkXUslL83SePVMUtFaOZttQDq7Wl+gwDJ3OWTZpMMIZzZzioOGxhwirjYQpCTa/Fydmf2yG34M0I5sKcWyXMwAtsjXQ5h8v/KtLnPIqPrYEU3LJwBN2mziZGdgGt8qrtTlJV/7h7vS/nUQG9V0QavlGcovuun8EcYzOxQ2jSx5dQ7hPXBWI6aO2MDEdj+VJFkc+aLI42N5vLRjYeP6AR7adOjJ5wfoeg9ItAtbQM2RQrZKClCyjZAIIYD68ioR5U9QAc0jvg9t7rrORyms4qq7of6NQX/kQpUsf8="
 									}]
 								}
-								Name: "Nofaxu"
 							}
 						}
 					}
@@ -124,13 +124,13 @@
 									-1132550338
 									-302041537
 								]
-								Name: "Danrique"
 								Properties: {
 									textures: [{
 										Value: "ewogICJ0aW1lc3RhbXAiIDogMTc0MTExMjQ0ODE4MCwKICAicHJvZmlsZUlkIiA6ICI4YzkzOWQ4ZTVlMjU0ZmNjYmM3ZWE3M2VlZGZmMzYzZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJEYW5yaXF1ZSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85YTVjOTI4YzhjYzdmZTAxOTJmZDU0YjQyMzkxMDk0OTBhMzM4YWE1MjQ2NmViZDVkYTQ5MTFkYTQ4YTYzNTQ2IgogICAgfQogIH0KfQ=="
 										Signature: "HgK68BgIXFam6XtDD5GFfjZ5D7nrKWcrCMHSKjcyRYy/rb3V+GXMVlIf4OfN32JLNN9dIwCfvcPOAmVGyUOBu5y6kEc5syARSr5q+7G7oeh4uPBpvCMdKdTeng7615r5nhJtruxBLZjTedrKAkvtXGxeoaj3iywY37xXG+Hid9zxc8f1D8a2+iqAzPJ6Oq792PrNBUdiFRSAdzuWbHwCnOQh0GMUfMv+vhzNyWDx9pzNRwfK3GGf4DvyuPDmALbNIqmWac8Asuie1nUiAOyskZ3xuaL5JwHb5Ht7FvBCCNz6JaMDmRxwEL7QUWDhw1yM13o59I8yHJ0LDgbuf6YK6mp8Wh5Z4+2Qmw8l9V3FE5oU/nGDYbV1U2w8VnYS8RGn94mMM5Iu2IDaz1cxsTy8NxPk59KzyRJGuFx5hytlyY1F+hjBSIeV0kdZgbRPlZnzv+e2d2ZdoDOdoFttg8Ow7M3HnaEjigJe9nr5qZKVAy3V1YmlEQUgN+VeDjC86DVilgWT1DIAvRC65kgBTGHPtpsJTqH+RRmsoiPu/SkrdQbkirkiUsPF7WD4roVRwelv925q2tN8ix/onp2Z77yoyOnnczSq/gysgiZ9URyZF+tRX8ra6SbpEN4s0oETDxFIIPcSxakC3ZnRp3Za29Sb4wOx/BlW7PzavUYe9kUQNfE="
 									}]
 								}
+								Name: "Danrique"
 							}
 						}
 					}
@@ -150,13 +150,13 @@
 									-1199736988
 									-2089290051
 								]
+								Name: "MitinhoPlayer"
 								Properties: {
 									textures: [{
 										Value: "ewogICJ0aW1lc3RhbXAiIDogMTc0MTExNjYzMTk4MSwKICAicHJvZmlsZUlkIiA6ICIxNjY2MDRhNmY5ODc0ZmQxYjg3ZDc3NjQ4Mzc3ZjZiZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNaXRpbmhvUGxheWVyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI0NmI2NDczMTk4NDdiMGNhMzA2MmUwZmZhZDRlZjRjYThiYzhhNDA4YTQ2NGY3NDkxM2ZiMmFmNzBkOTUwYmIiCiAgICB9CiAgfQp9"
 										Signature: "ApYkfR5Nn5qsPIBDJ1UoP4GpWzD17bq+t4VTonwtIfmNRIGM/ieLOhTx5I0OhRgTclFZ0WqNsiGS9LQCMENNg4zJQoAEHzTzbErvXlAw6bM+W/n6wgY6QycQ+jOGwzIk7mPG6dR3/MnvISeP6bQtbk3WEX30P+Vt8eAVDlyERr7ChHJhoHiKrl69H9IzfXSH97DJ+J3wpfZIM5BAKCMsKwkCbwqizqcVpwhzp36YRym30T2sXPtBzdsoqZ24gwAeY7vUJQGST3Rl6SNl5HXYievRduln/TcYpLYBxLwgfWLiriB3M5bWwLhkyyw0iiNMvdU3hJlYN7aPQdx+VS348LGNVvyJixbAT2kYms0pfw8p3DuYJH2i3zQVnqyWSnSpf5xKTrAyvQjkz/UmVDUAG18ZhhWpckDNkdcJZ0mR2oMV9OLOPfFUNPICMCJChQ8TN6m761FwxcVLX/2/6rYd59ZH6tYp9042bAtaszNf92qxmzelgl8d/xNE2Bwme9i4U3eFbTvF9Y5I5ZwiXXX6nUrT0gJYJJwlhJTZjVAkRvHYGTtSVYQsIsn3DFmr75QGI/69R6QNMOqgRaJiW49AmYjvszWElE+RhyO3QDvX+NlwBEhyoZp2XIt+DOSkgsc82UvDZtBXoxLuNF15bk815A6aWfnX5xm95xuZULGnhBA="
 									}]
 								}
-								Name: "MitinhoPlayer"
 							}
 						}
 					}
