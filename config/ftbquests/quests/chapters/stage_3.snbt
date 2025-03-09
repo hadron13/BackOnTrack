@@ -817,7 +817,7 @@
 		{
 			icon: "thermal:sulfur_dust"
 			x: -1.0d
-			y: 6.5d
+			y: 6.0d
 			subtitle: "Contraption 43-1"
 			description: ["Another byproduct of the heavy oil distilling, can be used in an explosive compound, aka gunpowder."]
 			dependencies: ["7933C0A5002337CD"]

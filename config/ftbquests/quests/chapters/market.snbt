@@ -104,7 +104,7 @@
 				""
 				"Have a look around. I'm sure you'll find something of use, or fun."
 			]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			size: 2.0d
 			id: "0F870BEA235D662D"
 			tasks: [{
@@ -159,7 +159,7 @@
 			shape: "diamond"
 			subtitle: "10 Gold + Anvil"
 			description: ["Buy this legendary relic to upgrade your tools with an extra slot."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "2E6F7F5789855DDC"
 			tasks: [
 				{
@@ -203,7 +203,7 @@
 			shape: "diamond"
 			subtitle: "10 Silver + 1 Egg"
 			description: ["Adopt a cute little duck! May come with a second duck too."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "346A833FFAEC6050"
 			tasks: [
 				{
@@ -236,7 +236,7 @@
 			shape: "diamond"
 			subtitle: "4 Gold"
 			description: ["Only for pro railworkers, comes with one kilometer of track and enough for a simple rail network."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "7093258BE7F2C010"
 			tasks: [{
 				id: "3FED8A9B0CEA6243"
@@ -281,7 +281,7 @@
 			shape: "diamond"
 			subtitle: "5 Silver"
 			description: ["Sweet treats for a small amount of uh, money..."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "49125BC18946F7C6"
 			tasks: [{
 				id: "51B38B4373785506"
@@ -325,7 +325,7 @@
 			y: 1.5d
 			shape: "diamond"
 			subtitle: "10 Silver + Axe"
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "294A24F286C7381F"
 			tasks: [
 				{
@@ -391,7 +391,7 @@
 			shape: "diamond"
 			subtitle: "16 Silver"
 			description: ["It's... salmon, and also quick, for when the hunger rings the doorbell."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "00512C8698D4A983"
 			tasks: [{
 				id: "4E010320D8963F50"
@@ -416,7 +416,7 @@
 			shape: "diamond"
 			subtitle: "25 Silver + 5 Iron"
 			description: ["So you want to destroy a castle's defences? This kit is just for you, comes with a basic assemble-and-play wrought iron cannon you can bring anywhere, comes with 5 shots."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "632AF8573A2BA49E"
 			tasks: [
 				{
@@ -500,7 +500,7 @@
 				""
 				"Comes with 64 shots, if you have a gunpowder factory this will not cost $40000 per second."
 			]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "5006737438B42169"
 			tasks: [{
 				id: "1318EFFD6F502CA8"
@@ -576,7 +576,7 @@
 			shape: "diamond"
 			subtitle: "20 Silver"
 			description: ["This cute cannon may not be able to open a hole in a castle, however it can kill a dragon... And the munition is as cheap as it can get: the food you carry around with you."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "72A119B48FA97E82"
 			tasks: [{
 				id: "2C6EEE2E558B09B4"
@@ -611,7 +611,7 @@
 				"Destroys? Wrong! This cannon is different, it builds things instead of taking them down. "
 				"Use a blueprint, a bit of gunpowder and an inventory on the side to build whatever you want"
 			]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "5B24ABF49C5FC109"
 			tasks: [{
 				id: "279022175F31D295"
@@ -644,7 +644,7 @@
 			shape: "diamond"
 			subtitle: "15 Silver"
 			description: ["Build all the circuits you can imagine in a single block! Comes with many components to play with right now."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "7A2A4BAA82EA5FBF"
 			tasks: [{
 				id: "0E1BBAC34C8B1556"
@@ -736,7 +736,7 @@
 			shape: "diamond"
 			subtitle: "60 Silver"
 			description: ["Deal powerful damage into your enemies with this huge quad cannon, for 3 times the price of it's smaller version it shoots 4 shots each time, dealing 4 times the damage of the small cannon."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "42DB66AD123A52A4"
 			tasks: [{
 				id: "41C661B115151EBD"
@@ -789,7 +789,7 @@
 			shape: "diamond"
 			subtitle: "12 Gold + Anvil"
 			description: ["Buy this legendary relic to buff your armor with an extra slot."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "647796D563859B83"
 			tasks: [
 				{
@@ -850,7 +850,7 @@
 			shape: "diamond"
 			subtitle: "7 Gold + Anvil"
 			description: ["Buy this legendary relic to add an extra ability slot to your tools and armour"]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "080620BF0068805A"
 			tasks: [
 				{
@@ -900,7 +900,7 @@
 			shape: "diamond"
 			subtitle: "3 Silver"
 			description: ["Tired of that boring early game grind? Buy out some basic tools to grind even more!"]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "4AADA9D69242F6E8"
 			tasks: [{
 				id: "39788B1637508F6C"
@@ -960,7 +960,7 @@
 			shape: "diamond"
 			subtitle: "3 Silver"
 			description: ["Enduring enemies early on is difficult, this armor can protect you for some time until you get better gear, can be upgraded to steel aswell."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "719BE99EF09045A7"
 			tasks: [{
 				id: "35C9DE831EFAD2C9"
@@ -1014,7 +1014,7 @@
 			shape: "diamond"
 			subtitle: "6 Silver"
 			description: ["Ready basic machines to start working right now as the new engineer!"]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "4CCC5B847D4CDBE4"
 			tasks: [{
 				id: "3B15C8552E12E253"
@@ -1052,7 +1052,7 @@
 			shape: "diamond"
 			subtitle: "15 Silver"
 			description: ["I found them on a dumpster."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "2A0D72DEC444804D"
 			tasks: [{
 				id: "216952595652D6B0"
@@ -1077,7 +1077,7 @@
 			y: 3.5d
 			subtitle: "7 Silver"
 			description: ["Stop thinking and buy now! Build your new workshop right away!"]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "1B56BD88577AF37C"
 			tasks: [{
 				id: "47F49779C47FC36A"
@@ -1135,7 +1135,10 @@
 			shape: "hexagon"
 			subtitle: "Silver -> Gold"
 			description: ["Sometimes you must have gold coins, which are equivalent to 64 silver coins."]
-			dependencies: ["0F870BEA235D662D"]
+			dependencies: [
+				"0F870BEA235D662D"
+				"64F3352725385210"
+			]
 			optional: true
 			can_repeat: true
 			id: "7A9AB1C774C3BE33"
@@ -1173,7 +1176,10 @@
 			shape: "hexagon"
 			subtitle: "Gold -> Silver"
 			description: ["Sometimes you must have gold coins, which are equivalent to 64 silver coins."]
-			dependencies: ["0F870BEA235D662D"]
+			dependencies: [
+				"0F870BEA235D662D"
+				"64F3352725385210"
+			]
 			optional: true
 			can_repeat: true
 			id: "1730CB92599DCD93"
@@ -1216,7 +1222,7 @@
 			shape: "diamond"
 			subtitle: "15 Silver"
 			description: ["Buy this pack and go diving right now! Comes with fully filled backtank."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "68C032BE0D4AF710"
 			tasks: [{
 				id: "0E2D818F8CA90F12"
@@ -1285,7 +1291,7 @@
 			shape: "diamond"
 			subtitle: "5 Gold"
 			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			can_repeat: true
 			id: "00BB879BB5C81BEA"
 			tasks: [
@@ -1339,7 +1345,7 @@
 			shape: "diamond"
 			subtitle: "16 Gold + Item Terminal"
 			description: ["Buy this bleeding-edge tech innovation right out of the silicon plateu, just enough for a decent matter-energy logistic storage."]
-			dependencies: ["1E8052CB531F278B"]
+			dependencies: ["64F3352725385210"]
 			id: "30A3DB35FEECD798"
 			tasks: [
 				{

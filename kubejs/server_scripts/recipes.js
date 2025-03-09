@@ -2625,6 +2625,17 @@ function explosiveMachine(event){
 
 	event.recipes.createFilling(KJ('lube_can'), [TC('copper_can'), Fluid.of(CI('lubrication_oil'))])
 
+    event.shaped(GB('electrolyzer'), [
+		'SSS',
+		'SMW',
+		'C Z'
+	], {
+		C: MC('copper_ingot'),
+		Z: CR('zinc_ingot'),
+		M: CR('mechanical_mixer'),
+		S: ('alloyed:steel_sheet'),
+        W: 'createaddition:connector'
+	})
 
 	event.shaped(GB('pumpjack_well'), [
 		'SCS',
