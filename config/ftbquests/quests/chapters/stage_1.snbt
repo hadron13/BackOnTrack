@@ -414,7 +414,7 @@
 			tasks: [{
 				id: "2D4BB6A2E22A86E3"
 				type: "item"
-				item: "kubejs:andesite_machine"
+				item: "gearbox:kinetic_machine"
 				consume_items: false
 			}]
 			rewards: [

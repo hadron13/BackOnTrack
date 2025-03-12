@@ -7,35 +7,18 @@
 	icon: "kubejs:explosive_mechanism"
 	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
-	images: [
-		{
-			x: 0.5d
-			y: -9.5d
-			width: 18.0d
-			height: 3.0d
-			rotation: 0.0d
-			image: "kubejs:textures/images/chapter3.png"
-			hover: [ ]
-			click: ""
-			dev: false
-			corner: false
-		}
-		{
-			x: -5.5d
-			y: 5.5d
-			width: 1.5d
-			height: 1.5d
-			rotation: 0.0d
-			image: "createdeco:textures/block/palettes/decal/orange_decal.png"
-			hover: [
-				"To Be Changed!"
-				"The Petrochemical Update is soon to come."
-			]
-			click: ""
-			dev: false
-			corner: false
-		}
-	]
+	images: [{
+		x: 0.5d
+		y: -9.5d
+		width: 18.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "kubejs:textures/images/chapter3.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			icon: "create:precision_mechanism"
@@ -970,6 +953,7 @@
 			icon: "createdeco:orange_decal"
 			x: -3.5d
 			y: 3.5d
+			description: ["Ponder every item to learn how to start off building your own oil extraction and processing complex."]
 			dependencies: [
 				"38D3FEF4C99B1ABB"
 				"0CFE8B23F35DEA3D"
