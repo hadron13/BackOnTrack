@@ -1,130 +1,115 @@
 {
-	id: "2FDA7DFC0C684E58"
-	group: "6F42926B3F0C534A"
-	order_index: 10
-	filename: "stage_4"
-	title: "&f4&r Power Processing"
-	icon: "kubejs:power_mechanism"
-	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "stage_4"
+	group: "6F42926B3F0C534A"
+	icon: "kubejs:power_mechanism"
+	id: "2FDA7DFC0C684E58"
 	images: [
 		{
+			height: 2.0d
+			hover: ["High Voltage"]
+			image: "createdeco:textures/block/palettes/decal/yellow_decal.png"
+			rotation: 0.0d
+			width: 2.0d
 			x: -2.5d
 			y: 12.0d
-			width: 2.0d
-			height: 2.0d
-			rotation: 0.0d
-			image: "createdeco:textures/block/palettes/decal/yellow_decal.png"
-			hover: ["High Voltage"]
-			click: ""
-			dev: false
-			corner: false
 		}
 		{
+			height: 2.0d
+			hover: ["Potential Harm"]
+			image: "createdeco:textures/block/palettes/decal/black_decal.png"
+			rotation: 0.0d
+			width: 2.0d
 			x: 2.5d
 			y: 12.0d
-			width: 2.0d
-			height: 2.0d
-			rotation: 0.0d
-			image: "createdeco:textures/block/palettes/decal/black_decal.png"
-			hover: ["Potential Harm"]
-			click: ""
-			dev: false
-			corner: false
 		}
 		{
+			height: 4.0d
+			hover: ["chapter 4"]
+			image: "kubejs:textures/images/chapter4.png"
+			rotation: 0.0d
+			width: 20.0d
 			x: 0.5d
 			y: 9.0d
-			width: 20.0d
-			height: 4.0d
-			rotation: 0.0d
-			image: "kubejs:textures/images/chapter4.png"
-			hover: ["chapter 4"]
-			click: ""
-			dev: false
-			corner: false
 		}
 	]
+	order_index: 10
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Zappin' Start"
-			icon: "kubejs:explosive_mechanism"
-			x: 0.0d
-			y: 12.0d
-			description: ["Do not let be fooled by the sheer size of this chapter's questing. It revolves around creating common materials and distributing them to each of the 4 component's production."]
 			dependencies: ["780E8AE86250C73D"]
-			hide: true
-			size: 2.0d
+			description: ["Do not let be fooled by the sheer size of this chapter's questing. It revolves around creating common materials and distributing them to each of the 4 component's production."]
+			hide_until_deps_complete: true
+			icon: "kubejs:explosive_mechanism"
 			id: "6C3258881A44FA46"
+			size: 2.0d
 			tasks: [{
 				id: "7EDB86424742184C"
 				type: "checkmark"
 			}]
+			title: "Zappin' Start"
+			x: 0.0d
+			y: 12.0d
 		}
 		{
-			title: "Plastically"
-			icon: "kubejs:plastic"
-			x: 0.0d
-			y: 14.0d
+			dependencies: ["6C3258881A44FA46"]
 			description: [
 				"Plastic is the main resource used in the new assembly lines."
 				""
 				"The oil deposits may be enough for now, but in the future renewable ways of producing it will be required."
 			]
-			dependencies: ["6C3258881A44FA46"]
+			icon: "kubejs:plastic"
 			id: "49DBAD39FC47605C"
 			tasks: [{
 				id: "0DA92CA9A123AD5D"
-				type: "checkmark"
 				title: "Aknowleged"
+				type: "checkmark"
 			}]
+			title: "Plastically"
+			x: 0.0d
+			y: 14.0d
 		}
 		{
-			title: "Chapter 4 Complete!"
-			icon: "kubejs:power_machine"
-			x: 0.0d
-			y: 37.5d
-			shape: "diamond"
-			description: ["Unfathomable job! The new power machine unlocks a range of new possibilities, and opens the way to lasers."]
 			dependencies: ["3E67BA828E888EC5"]
-			hide: true
-			size: 3.0d
+			description: ["Unfathomable job! The new power machine unlocks a range of new possibilities, and opens the way to lasers."]
+			hide_until_deps_visible: true
+			icon: "kubejs:power_machine"
 			id: "4E549678E05D7FA8"
-			tasks: [{
-				id: "16ECBFD01F1B11DD"
-				type: "item"
-				item: "kubejs:power_machine"
-				consume_items: false
-			}]
 			rewards: [
 				{
+					count: 16
 					id: "0592F316F23CCF08"
-					type: "item"
 					item: "kubejs:power_mechanism"
-					count: 16
 					random_bonus: 16
+					type: "item"
 				}
 				{
-					id: "09BBF5E725A90CDD"
-					type: "item"
-					item: "createaddition:connector"
 					count: 16
+					id: "09BBF5E725A90CDD"
+					item: "createaddition:connector"
+					type: "item"
 				}
 				{
-					id: "5F49B09B1FDB6047"
-					type: "item"
-					item: "createaddition:gold_spool"
 					count: 32
+					id: "5F49B09B1FDB6047"
+					item: "createaddition:gold_spool"
+					type: "item"
 				}
 			]
+			shape: "diamond"
+			size: 3.0d
+			tasks: [{
+				consume_items: false
+				id: "16ECBFD01F1B11DD"
+				item: "kubejs:power_machine"
+				type: "item"
+			}]
+			title: "Chapter 4 Complete!"
+			x: 0.0d
+			y: 37.5d
 		}
 		{
-			title: "Analog Circuitry"
-			icon: "kubejs:power_mechanism"
-			x: 0.0d
-			y: 33.5d
-			subtitle: "Contraption 63"
-			description: ["The whole factory converges as you enter the electronic phase of progression, the future shines ahead of you."]
 			dependencies: [
 				"58965B4FA083AD88"
 				"577A18A2CDF91066"
@@ -133,202 +118,202 @@
 				"6108110497418196"
 				"201402493BBB283C"
 			]
-			size: 2.0d
+			description: ["The whole factory converges as you enter the electronic phase of progression, the future shines ahead of you."]
+			icon: "kubejs:power_mechanism"
 			id: "3E67BA828E888EC5"
+			size: 2.0d
+			subtitle: "Contraption 63"
 			tasks: [
 				{
-					id: "681B767EBFC1C30B"
-					type: "item"
-					item: "kubejs:power_mechanism"
 					consume_items: false
+					id: "681B767EBFC1C30B"
+					item: "kubejs:power_mechanism"
+					type: "item"
 				}
 				{
 					id: "69F7ADBE17EFCA43"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Analog Circuitry"
+			x: 0.0d
+			y: 33.5d
 		}
 		{
-			title: "Inducing: &6Teslas&r!"
-			x: -2.5d
-			y: 21.5d
-			shape: "diamond"
-			subtitle: "Contraption 55/56"
-			description: ["As shocking as it may be, this tesla coil can do serious shocking, it can turn that piece of cast iron into a full blown magnet."]
 			dependencies: [
 				"1B692F49BB495B9A"
 				"430006C9D3CFD042"
 			]
+			description: ["As shocking as it may be, this tesla coil can do serious shocking, it can turn that piece of cast iron into a full blown magnet."]
 			id: "4960207A06C7E636"
+			shape: "diamond"
+			subtitle: "Contraption 55/56"
 			tasks: [{
-				id: "021393C5B5FF0AF3"
-				type: "item"
-				item: "createaddition:tesla_coil"
 				consume_items: false
+				id: "021393C5B5FF0AF3"
+				item: "createaddition:tesla_coil"
+				type: "item"
 			}]
+			title: "Inducing: &6Teslas&r!"
+			x: -2.5d
+			y: 21.5d
 		}
 		{
-			x: 2.5d
-			y: 33.5d
+			dependencies: ["278539C35D960C51"]
 			description: ["Coat the outer layer of the board with insulative plastic."]
 			hide_dependency_lines: true
-			dependencies: ["278539C35D960C51"]
 			id: "58965B4FA083AD88"
 			tasks: [{
 				id: "51C3E408887B7A1C"
-				type: "item"
 				item: "kubejs:plastic_bucket"
+				type: "item"
 			}]
+			x: 2.5d
+			y: 33.5d
 		}
 		{
-			title: "Clean Brickapacitor"
-			icon: "kubejs:ceramic_capacitor"
-			x: -1.5d
-			y: 31.5d
-			subtitle: "Contraption 59-2"
-			description: ["Can even see the press marks."]
 			dependencies: ["0F0E47D59BFEB77C"]
+			description: ["Can even see the press marks."]
+			icon: "kubejs:ceramic_capacitor"
 			id: "577A18A2CDF91066"
+			subtitle: "Contraption 59-2"
 			tasks: [
 				{
 					id: "144B83C6F4C7C183"
-					type: "item"
 					item: "kubejs:ceramic_capacitor"
+					type: "item"
 				}
 				{
 					id: "04AD0244D9AD7B72"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Clean Brickapacitor"
+			x: -1.5d
+			y: 31.5d
 		}
 		{
-			title: "Washed Quasisulator"
-			icon: "kubejs:resistor"
-			x: -4.0d
-			y: 31.5d
-			subtitle: "Contraption 49-2"
-			description: ["Successfully power washed resistor."]
 			dependencies: ["20F23B79D5F7B70E"]
+			description: ["Successfully power washed resistor."]
+			icon: "kubejs:resistor"
 			id: "3CB6C1CA88F0CBE2"
+			subtitle: "Contraption 49-2"
 			tasks: [
 				{
 					id: "29EBF5733F7A5B0D"
-					type: "item"
 					item: "kubejs:resistor"
+					type: "item"
 				}
 				{
 					id: "4A1667B2CF2F898F"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Washed Quasisulator"
+			x: -4.0d
+			y: 31.5d
 		}
 		{
-			title: "Cleansed Capacitor"
-			icon: "kubejs:electrolytic_capacitor"
-			x: 1.5d
-			y: 31.5d
-			subtitle: "Contraption 60-2"
-			description: ["Shiny newly made capacitor."]
 			dependencies: ["08C16E14AEE5DB20"]
+			description: ["Shiny newly made capacitor."]
+			icon: "kubejs:electrolytic_capacitor"
 			id: "2589FD16FDDC6953"
+			subtitle: "Contraption 60-2"
 			tasks: [
 				{
 					id: "7CCA43C12FEF616C"
-					type: "item"
 					item: "kubejs:electrolytic_capacitor"
+					type: "item"
 				}
 				{
 					id: "1601B823B0D5AB1C"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Cleansed Capacitor"
+			x: 1.5d
+			y: 31.5d
 		}
 		{
-			title: "Undirty Magnelectric Device"
-			icon: "kubejs:inductor"
-			x: 4.0d
-			y: 31.5d
-			subtitle: "Contraption 61-2"
-			description: ["Dirty was, but dirt is no more."]
 			dependencies: ["15252FE3C58A3343"]
+			description: ["Dirty was, but dirt is no more."]
+			icon: "kubejs:inductor"
 			id: "6108110497418196"
+			subtitle: "Contraption 61-2"
 			tasks: [
 				{
 					id: "134F6848CF35FFAC"
-					type: "item"
 					item: "kubejs:inductor"
+					type: "item"
 				}
 				{
 					id: "7B7DABD5AD6DE83A"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Undirty Magnelectric Device"
+			x: 4.0d
+			y: 31.5d
 		}
 		{
-			title: "Brickapacitor"
-			icon: "kubejs:dirt_ceramic_capacitor"
-			x: -1.5d
-			y: 29.0d
-			subtitle: "Contraption 59-1"
-			description: ["This piece of bri... Capacitor can securely hold a bit of energy in it, useful in many cases."]
 			dependencies: [
 				"7E5BC41A120BDC34"
 				"3E5E54C79E0F1585"
 				"1EA971556B42BD12"
 				"49FDB6ECC1F20CAF"
 			]
+			description: ["This piece of bri... Capacitor can securely hold a bit of energy in it, useful in many cases."]
+			icon: "kubejs:dirt_ceramic_capacitor"
 			id: "0F0E47D59BFEB77C"
+			subtitle: "Contraption 59-1"
 			tasks: [
 				{
 					id: "5AC06046D6B6E96E"
-					type: "item"
 					item: "kubejs:dirt_ceramic_capacitor"
+					type: "item"
 				}
 				{
 					id: "59730E52FE4E1A19"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Brickapacitor"
+			x: -1.5d
+			y: 29.0d
 		}
 		{
-			title: "Magnelectric Device"
-			icon: "kubejs:dirt_inductor"
-			x: 5.5d
-			y: 29.0d
-			subtitle: "Contraption 61-1"
-			description: ["This device generates electromagnetic fields, can be used in motors, alternators, cool gadgets, and weird electric circuits."]
 			dependencies: [
 				"372B49AA8F00707B"
 				"60FEA06B49070E51"
 				"5449FAB57D627B5D"
 			]
+			description: ["This device generates electromagnetic fields, can be used in motors, alternators, cool gadgets, and weird electric circuits."]
+			icon: "kubejs:dirt_inductor"
 			id: "15252FE3C58A3343"
+			subtitle: "Contraption 61-1"
 			tasks: [
 				{
 					id: "14091D9D5410CBD5"
-					type: "item"
 					item: "kubejs:dirt_inductor"
+					type: "item"
 				}
 				{
 					id: "2E22CA533E238585"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Magnelectric Device"
+			x: 5.5d
+			y: 29.0d
 		}
 		{
-			title: "Quasisulator"
-			icon: "kubejs:dirt_resistor"
-			x: -5.5d
-			y: 29.0d
-			subtitle: "Contraption 58-1"
-			description: ["A high quality resistor can now be assembled from the materials, at exactly (±5%) 350kΩ"]
 			dependencies: [
 				"7E5BC41A120BDC34"
 				"552FD6D527EA2CE3"
@@ -336,833 +321,836 @@
 				"7EABB23C5C6218F7"
 				"610B294622019660"
 			]
+			description: ["A high quality resistor can now be assembled from the materials, at exactly (±5%) 350kΩ"]
+			icon: "kubejs:dirt_resistor"
 			id: "20F23B79D5F7B70E"
+			subtitle: "Contraption 58-1"
 			tasks: [
 				{
 					id: "79EA4285208912C1"
-					type: "item"
 					item: "kubejs:dirt_resistor"
+					type: "item"
 				}
 				{
 					id: "4271164BEEF096DF"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Quasisulator"
+			x: -5.5d
+			y: 29.0d
 		}
 		{
-			title: "Boomer Capacitor"
-			icon: "kubejs:dirt_electrolytic_capacitor"
-			x: 1.5d
-			y: 29.0d
-			subtitle: "Contraption 60-1"
-			description: ["This capacitor can hold a ton of energy, truly a lot, but there's a catch: use it wrongly and it explodes."]
 			dependencies: [
 				"7E5BC41A120BDC34"
 				"372B49AA8F00707B"
 				"3E5E54C79E0F1585"
 				"3A4D6F9BDD149EF5"
 			]
+			description: ["This capacitor can hold a ton of energy, truly a lot, but there's a catch: use it wrongly and it explodes."]
+			icon: "kubejs:dirt_electrolytic_capacitor"
 			id: "08C16E14AEE5DB20"
+			subtitle: "Contraption 60-1"
 			tasks: [
 				{
 					id: "490F92DCE1395E90"
-					type: "item"
 					item: "kubejs:dirt_electrolytic_capacitor"
+					type: "item"
 				}
 				{
 					id: "0534437B5695E3CC"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Boomer Capacitor"
+			x: 1.5d
+			y: 29.0d
 		}
 		{
-			title: "Insucasing"
-			x: 3.5d
-			y: 26.5d
+			dependencies: ["32A4925F476AF97E"]
 			description: ["In this case the plastic will insulate and serve as an ourter casing."]
 			hide_dependency_lines: true
-			dependencies: ["32A4925F476AF97E"]
 			id: "372B49AA8F00707B"
 			tasks: [{
 				id: "52409485B461EEC6"
-				type: "item"
 				item: "kubejs:plastic"
+				type: "item"
 			}]
+			title: "Insucasing"
+			x: 3.5d
+			y: 26.5d
 		}
 		{
-			title: "Terminals"
-			x: -1.0d
-			y: 26.5d
+			dependencies: ["370E2874A398E456"]
 			description: ["These copper rods will turn into the terminals for connecting the components into the actual board. True Thru Hole."]
 			hide_dependency_lines: true
-			dependencies: ["370E2874A398E456"]
 			id: "7E5BC41A120BDC34"
 			tasks: [{
 				id: "1AEE6EADEBB1B46E"
-				type: "item"
 				item: "createaddition:copper_rod"
+				type: "item"
 			}]
+			title: "Terminals"
+			x: -1.0d
+			y: 26.5d
 		}
 		{
-			title: "Conduction Area"
-			x: 1.0d
-			y: 26.5d
+			dependencies: ["4675B02BF0D4C34D"]
 			description: ["Both capacitor types rely on very close plates that store energy because they are close, but not so close that the energy flows through."]
 			hide_dependency_lines: true
-			dependencies: ["4675B02BF0D4C34D"]
 			id: "3E5E54C79E0F1585"
 			tasks: [{
 				id: "05F822A5A360A828"
-				type: "item"
 				item: "create:copper_sheet"
+				type: "item"
 			}]
+			title: "Conduction Area"
+			x: 1.0d
+			y: 26.5d
 		}
 		{
-			title: "Magneticore"
-			x: 7.0d
-			y: 29.0d
+			dependencies: ["41DFDBF803C96569"]
 			description: ["This magnetic piece will increase the magnetic field created by the inductor, very helpful."]
 			hide_dependency_lines: true
-			dependencies: ["41DFDBF803C96569"]
 			id: "60FEA06B49070E51"
 			tasks: [{
 				id: "0696B25DE2D07B44"
-				type: "item"
 				item: "kubejs:inductor_core"
+				type: "item"
 			}]
+			title: "Magneticore"
+			x: 7.0d
+			y: 29.0d
 		}
 		{
-			title: "Roughly Enough Area"
-			x: 3.0d
-			y: 29.0d
+			dependencies: ["235FD291165EE222"]
 			description: ["This rough sheet has a lot more area than normal sheets, and why is this good? Well, more area means more capacity, which also means bigger booms."]
 			hide_dependency_lines: true
-			dependencies: ["235FD291165EE222"]
 			id: "3A4D6F9BDD149EF5"
 			tasks: [{
 				id: "283B55716AC04D20"
-				type: "item"
 				item: "kubejs:rough_sheet"
+				type: "item"
 			}]
+			title: "Roughly Enough Area"
+			x: 3.0d
+			y: 29.0d
 		}
 		{
-			title: "Ceramics"
-			x: 0.0d
-			y: 29.0d
+			dependencies: ["7B4A431D5930B0F9"]
 			description: ["Milled brick is used in the outer shell of the ceramic capacitor component."]
 			hide_dependency_lines: true
-			dependencies: ["7B4A431D5930B0F9"]
 			id: "1EA971556B42BD12"
 			tasks: [{
 				id: "6B83F74E90037399"
-				type: "item"
 				item: "kubejs:ceramic_powder"
+				type: "item"
 			}]
+			title: "Ceramics"
+			x: 0.0d
+			y: 29.0d
 		}
 		{
-			title: "Polymer Base"
-			x: -4.0d
-			y: 29.0d
+			dependencies: ["32A4925F476AF97E"]
 			description: ["For this time the plastic will be the base of the resistor component."]
 			hide_dependency_lines: true
-			dependencies: ["32A4925F476AF97E"]
 			id: "552FD6D527EA2CE3"
 			tasks: [{
 				id: "2BAC806DE957695A"
-				type: "item"
 				item: "kubejs:plastic"
+				type: "item"
 			}]
+			title: "Polymer Base"
+			x: -4.0d
+			y: 29.0d
 		}
 		{
-			title: "Rollover"
-			x: 6.5d
-			y: 26.5d
+			dependencies: ["2B16EE336CC23F70"]
 			description: ["Rolling a piece of wire around the core will allow it to generate a big and strong electromagnetic field around it."]
 			hide_dependency_lines: true
-			dependencies: ["2B16EE336CC23F70"]
 			id: "5449FAB57D627B5D"
 			tasks: [{
 				id: "26DBB836D235C2E2"
-				type: "item"
 				item: "createaddition:copper_wire"
+				type: "item"
 			}]
+			title: "Rollover"
+			x: 6.5d
+			y: 26.5d
 		}
 		{
-			title: "Semiconductive"
-			x: -4.5d
-			y: 26.5d
+			dependencies: ["53B8F626824C1ED8"]
 			description: ["A bit conductive but not too much, that's why it resists."]
 			hide_dependency_lines: true
-			dependencies: ["53B8F626824C1ED8"]
 			id: "60A7A7C9FA7514A3"
 			tasks: [{
 				id: "1C58032FCA4842DB"
-				type: "item"
 				item: "kubejs:carbon_sheet"
+				type: "item"
 			}]
+			title: "Semiconductive"
+			x: -4.5d
+			y: 26.5d
 		}
 		{
-			title: "Binding of Resistor"
-			x: -6.5d
-			y: 26.5d
+			dependencies: ["6C3258881A44FA46"]
 			description: ["This piece of clay basically glues everything together inside the resistor."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
 			id: "7EABB23C5C6218F7"
 			tasks: [{
 				id: "4162241405F5D7FB"
-				type: "item"
 				item: "minecraft:clay_ball"
+				type: "item"
 			}]
+			title: "Binding of Resistor"
+			x: -6.5d
+			y: 26.5d
 		}
 		{
+			dependencies: ["6C3258881A44FA46"]
+			description: ["Use a drill head to make a small hole in the plastic to fit all the materials in, don't forget: the drill will not be consumed, and will not wear out."]
+			hide_dependency_lines: true
+			id: "610B294622019660"
+			shape: "diamond"
+			tasks: [{
+				id: "7A5996D073F8D675"
+				item: "thermal:drill_head"
+				type: "item"
+			}]
 			title: "Drilly"
 			x: -7.0d
 			y: 29.0d
-			shape: "diamond"
-			description: ["Use a drill head to make a small hole in the plastic to fit all the materials in, don't forget: the drill will not be consumed, and will not wear out."]
-			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
-			id: "610B294622019660"
-			tasks: [{
-				id: "7A5996D073F8D675"
-				type: "item"
-				item: "thermal:drill_head"
-			}]
 		}
 		{
-			title: "Insulativing"
-			x: -3.0d
-			y: 26.5d
+			dependencies: ["411D59426F3D3B98"]
 			description: ["Use the mica's insulating properties to make ceramic capacitors."]
 			hide_dependency_lines: true
-			dependencies: ["411D59426F3D3B98"]
 			id: "49FDB6ECC1F20CAF"
 			tasks: [{
 				id: "65F917FC027AFC75"
-				type: "item"
 				item: "kubejs:mica_sheet"
+				type: "item"
 			}]
+			title: "Insulativing"
+			x: -3.0d
+			y: 26.5d
 		}
 		{
-			title: "Roughly Copper"
-			icon: "kubejs:rough_sheet"
-			x: -1.0d
-			y: 23.0d
-			subtitle: "Contraption 55-2"
-			description: ["A rough surface means more area, more area is more capacity, therefore more powah!"]
 			dependencies: ["4960207A06C7E636"]
+			description: ["A rough surface means more area, more area is more capacity, therefore more powah!"]
+			icon: "kubejs:rough_sheet"
 			id: "235FD291165EE222"
+			subtitle: "Contraption 55-2"
 			tasks: [
 				{
 					id: "0695121E9CAEA4C2"
-					type: "item"
 					item: "kubejs:rough_sheet"
+					type: "item"
 				}
 				{
 					id: "01DD4C0D7836A01B"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Roughly Copper"
+			x: -1.0d
+			y: 23.0d
 		}
 		{
-			title: "Soaked Sheet"
-			icon: "kubejs:soaked_sheet"
-			x: -4.0d
-			y: 20.0d
-			subtitle: "Contraption 55-1"
+			dependencies: ["6C3258881A44FA46"]
 			description: ["After taking a bath in acid, this sheet can proceed to be shocked by the tesla."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "kubejs:soaked_sheet"
 			id: "430006C9D3CFD042"
+			subtitle: "Contraption 55-1"
 			tasks: [
 				{
 					id: "6E5809E12A14378D"
-					type: "item"
 					item: "kubejs:soaked_sheet"
+					type: "item"
 				}
 				{
 					id: "62263EB8FF0A6F44"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Soaked Sheet"
+			x: -4.0d
+			y: 20.0d
 		}
 		{
-			icon: "createbigcannons:cast_iron_ingot"
-			x: -1.0d
-			y: 20.0d
-			subtitle: "Contraption 56-1"
+			dependencies: ["6C3258881A44FA46"]
 			description: ["After getting beaten a bit by a press, this cast iron ingot can be electrified and turn into a full blown magnet."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "tfmg:cast_iron_ingot"
 			id: "1B692F49BB495B9A"
+			subtitle: "Contraption 56-1"
 			tasks: [
 				{
 					id: "451A0ECDB19D916D"
+					item: "tfmg:cast_iron_ingot"
 					type: "item"
-					item: "createbigcannons:cast_iron_ingot"
 				}
 				{
 					id: "76A7A8DDB4279510"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -1.0d
+			y: 20.0d
 		}
 		{
-			title: "Magneticored"
-			icon: "kubejs:inductor_core"
-			x: -4.0d
-			y: 23.0d
-			subtitle: "Contraption 56-2"
-			description: ["The cast iron is now magnetic and can be used in the inductor component."]
 			dependencies: ["4960207A06C7E636"]
+			description: ["The cast iron is now magnetic and can be used in the inductor component."]
+			icon: "kubejs:inductor_core"
 			id: "41DFDBF803C96569"
+			subtitle: "Contraption 56-2"
 			tasks: [
 				{
 					id: "5C8437F036362857"
-					type: "item"
 					item: "kubejs:inductor_core"
+					type: "item"
 				}
 				{
 					id: "570062261F5B8323"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Magneticored"
+			x: -4.0d
+			y: 23.0d
 		}
 		{
+			dependencies: ["513120696EBEEE02"]
+			description: ["What it does? Squishes metals until they turn into a rod, then a wire."]
+			id: "49C384FD09135F64"
+			shape: "diamond"
+			subtitle: "57"
+			tasks: [{
+				id: "3310788A1C0A601B"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
 			title: "Milling: &6Rolls&r!"
 			x: 2.0d
 			y: 21.5d
-			shape: "diamond"
-			subtitle: "57"
-			description: ["What it does? Squishes metals until they turn into a rod, then a wire."]
-			dependencies: ["513120696EBEEE02"]
-			id: "49C384FD09135F64"
-			tasks: [{
-				id: "3310788A1C0A601B"
-				type: "item"
-				item: "createaddition:rolling_mill"
-			}]
 		}
 		{
+			dependencies: ["4675B02BF0D4C34D"]
+			description: ["good old copper bar to be processed"]
+			hide_dependency_lines: true
+			id: "513120696EBEEE02"
+			subtitle: "Contraption 57-1"
+			tasks: [{
+				id: "5E81574BDEE95420"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
 			title: "Copper Thinning"
 			x: 2.0d
 			y: 20.0d
-			subtitle: "Contraption 57-1"
-			description: ["good old copper bar to be processed"]
-			hide_dependency_lines: true
-			dependencies: ["4675B02BF0D4C34D"]
-			id: "513120696EBEEE02"
-			tasks: [{
-				id: "5E81574BDEE95420"
-				type: "item"
-				item: "minecraft:copper_ingot"
-			}]
 		}
 		{
-			title: "A Rod"
-			icon: "createaddition:copper_rod"
-			x: 0.5d
-			y: 23.0d
-			subtitle: "Contraption 57-2"
-			description: ["The component insertion component composed of copper"]
 			dependencies: ["49C384FD09135F64"]
+			description: ["The component insertion component composed of copper"]
+			icon: "createaddition:copper_rod"
 			id: "370E2874A398E456"
+			subtitle: "Contraption 57-2"
 			tasks: [
 				{
 					id: "257BEDC729EA1F3B"
-					type: "item"
 					item: "createaddition:copper_rod"
+					type: "item"
 				}
 				{
 					id: "43953DAC3482D4BB"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "A Rod"
+			x: 0.5d
+			y: 23.0d
 		}
 		{
-			title: "Flex Copper"
-			icon: "createaddition:copper_wire"
-			x: 3.5d
-			y: 23.0d
-			subtitle: "Contraption 57-3"
-			description: ["Flex copper to flex on the electromagnetic fields."]
 			dependencies: [
 				"49C384FD09135F64"
 				"370E2874A398E456"
 			]
+			description: ["Flex copper to flex on the electromagnetic fields."]
+			icon: "createaddition:copper_wire"
 			id: "2B16EE336CC23F70"
+			subtitle: "Contraption 57-3"
 			tasks: [
 				{
 					id: "597729513AFEED71"
-					type: "item"
 					item: "createaddition:copper_wire"
+					type: "item"
 				}
 				{
 					id: "65328F6A305DE9E5"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Flex Copper"
+			x: 3.5d
+			y: 23.0d
 		}
 		{
-			title: "Desh Catalysis"
-			icon: "beyond_earth:desh_ingot"
-			x: 4.5d
-			y: 20.0d
+			dependencies: ["6C3258881A44FA46"]
 			description: ["This is the third catalytic property of desh, polymerization."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "ad_astra:desh_ingot"
 			id: "24E0D9BD36B09D1E"
 			tasks: [{
 				id: "6B594B8FF590A7DF"
+				item: "ad_astra:desh_ingot"
 				type: "item"
-				item: "beyond_earth:desh_ingot"
 			}]
+			title: "Desh Catalysis"
+			x: 4.5d
+			y: 20.0d
 		}
 		{
-			title: "Solifidificationing"
-			icon: "kubejs:plastic"
-			x: 5.5d
-			y: 23.0d
-			subtitle: "Contraption 58-3"
 			dependencies: ["278539C35D960C51"]
+			icon: "kubejs:plastic"
 			id: "32A4925F476AF97E"
+			subtitle: "Contraption 58-3"
 			tasks: [
 				{
 					id: "18B5CCB90F5AB6E8"
-					type: "item"
 					item: "kubejs:plastic"
+					type: "item"
 				}
 				{
 					id: "7CAF02C31F552018"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Solifidificationing"
+			x: 5.5d
+			y: 23.0d
 		}
 		{
-			title: "Carbonic Solid"
-			icon: "kubejs:carbon_sheet"
-			x: 8.0d
-			y: 23.0d
-			subtitle: "Contraption 56-2"
-			description: ["And there you have it, a conductor, but a pretty terrible conductor, and that's what we want."]
 			dependencies: ["2533C066FCDEF5BA"]
+			description: ["And there you have it, a conductor, but a pretty terrible conductor, and that's what we want."]
+			icon: "kubejs:carbon_sheet"
 			id: "53B8F626824C1ED8"
+			subtitle: "Contraption 56-2"
 			tasks: [
 				{
 					id: "55A125B275016300"
-					type: "item"
 					item: "kubejs:carbon_sheet"
+					type: "item"
 				}
 				{
 					id: "596ACBBAAE20681E"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Carbonic Solid"
+			x: 8.0d
+			y: 23.0d
 		}
 		{
+			dependencies: ["79D607EC86F741A4"]
+			description: ["Press charcoal until it turns into a fine sheet of carbon."]
+			id: "2533C066FCDEF5BA"
+			shape: "diamond"
+			subtitle: "Contraption 56"
+			tasks: [{
+				id: "43580CED67BCCD83"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
 			title: "Carbonking"
 			x: 8.0d
 			y: 21.5d
-			shape: "diamond"
-			subtitle: "Contraption 56"
-			description: ["Press charcoal until it turns into a fine sheet of carbon."]
-			dependencies: ["79D607EC86F741A4"]
-			id: "2533C066FCDEF5BA"
-			tasks: [{
-				id: "43580CED67BCCD83"
-				type: "item"
-				item: "create:mechanical_press"
-			}]
 		}
 		{
-			icon: "minecraft:brick"
-			x: 10.0d
-			y: 20.0d
-			subtitle: "Contraption 57-1"
+			dependencies: ["6C3258881A44FA46"]
 			description: ["What would you do if you bricked something? Of course mill it down to a powder."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "minecraft:brick"
 			id: "5736452A5C6A319C"
+			subtitle: "Contraption 57-1"
 			tasks: [{
 				id: "6259E47935330877"
-				type: "item"
 				item: "minecraft:brick"
+				type: "item"
 			}]
+			x: 10.0d
+			y: 20.0d
 		}
 		{
-			icon: "kubejs:ceramic_powder"
-			x: 10.0d
-			y: 23.0d
-			subtitle: "Contraption 57-2"
-			description: ["Can be used to make a nice insulating shell for your precious ceramic capacitors."]
 			dependencies: ["572BF9C3AD667A69"]
+			description: ["Can be used to make a nice insulating shell for your precious ceramic capacitors."]
+			icon: "kubejs:ceramic_powder"
 			id: "7B4A431D5930B0F9"
+			subtitle: "Contraption 57-2"
 			tasks: [
 				{
 					id: "12F317E01BA217BE"
-					type: "item"
 					item: "kubejs:ceramic_powder"
+					type: "item"
 				}
 				{
 					id: "1353A7E2F2637B55"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: 10.0d
+			y: 23.0d
 		}
 		{
-			title: "Polymerizitificationing"
-			x: 5.5d
-			y: 21.5d
-			subtitle: "Contraption 58-2"
-			description: ["Now that the polymers are being formed, it should be molded into an ingot form for further processing."]
 			dependencies: [
 				"24E0D9BD36B09D1E"
 				"63CD0327AFA1BC4B"
 			]
+			description: ["Now that the polymers are being formed, it should be molded into an ingot form for further processing."]
 			id: "278539C35D960C51"
+			subtitle: "Contraption 58-2"
 			tasks: [{
 				id: "184E40994192CB84"
-				type: "item"
 				item: "kubejs:plastic_bucket"
+				type: "item"
 			}]
+			title: "Polymerizitificationing"
+			x: 5.5d
+			y: 21.5d
 		}
 		{
-			icon: "kubejs:mica_block"
-			x: -5.5d
-			y: 21.5d
-			subtitle: "Contraption 54-1"
-			description: ["A turnaround from your regular cobblestone generator, this time using desh it will generate a cubic meter of &omica&r."]
 			dependencies: ["1B600F92F27C8C74"]
+			description: ["A turnaround from your regular cobblestone generator, this time using desh it will generate a cubic meter of &omica&r."]
+			icon: "kubejs:mica_block"
 			id: "586B19D70273B10C"
+			subtitle: "Contraption 54-1"
 			tasks: [
 				{
 					id: "7D3291C672BB502C"
-					type: "item"
 					item: "kubejs:mica_block"
+					type: "item"
 				}
 				{
 					id: "332417F3AE46C42B"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -5.5d
+			y: 21.5d
 		}
 		{
-			icon: "kubejs:mica_sheet"
-			x: -5.5d
-			y: 23.0d
-			subtitle: "Contraption  54-2"
-			description: ["Mica is great at not conducting, that's it. Also, it's a type of silica, contains &6silicon&r."]
 			dependencies: ["586B19D70273B10C"]
+			description: ["Mica is great at not conducting, that's it. Also, it's a type of silica, contains &6silicon&r."]
+			icon: "kubejs:mica_sheet"
 			id: "411D59426F3D3B98"
+			subtitle: "Contraption  54-2"
 			tasks: [
 				{
 					id: "22AF74CB02CC318C"
-					type: "item"
 					item: "kubejs:mica_sheet"
+					type: "item"
 				}
 				{
 					id: "2A9404BE0F298989"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -5.5d
+			y: 23.0d
 		}
 		{
-			x: -5.5d
-			y: 20.0d
+			dependencies: ["6C3258881A44FA46"]
 			description: [
 				"Never ask how it happens."
 				""
 				"This time i'm sorry for geology professionals, but desh somehow generates mica out of thin air."
 			]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
 			id: "1B600F92F27C8C74"
 			tasks: [{
 				id: "3FECAB41D317CD16"
+				item: "ad_astra:desh_block"
 				type: "item"
-				item: "beyond_earth:desh_block"
 			}]
+			x: -5.5d
+			y: 20.0d
 		}
 		{
-			title: "Cobbling"
-			icon: "minecraft:cobblestone"
-			x: -8.5d
-			y: 16.0d
-			subtitle: "Contraption 51-1"
+			dependencies: ["6C3258881A44FA46"]
 			description: ["You know the drill."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "minecraft:cobblestone"
 			id: "6A09B720008898E5"
+			subtitle: "Contraption 51-1"
 			tasks: [
 				{
 					id: "486C7EA8E35A27CA"
-					type: "item"
 					item: "minecraft:cobblestone"
+					type: "item"
 				}
 				{
 					id: "7765DEB8D3FCB4B4"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Cobbling"
+			x: -8.5d
+			y: 16.0d
 		}
 		{
-			title: "Grave Unmistake"
-			icon: "minecraft:gravel"
-			x: -6.5d
-			y: 16.0d
-			subtitle: "Contraption 51-2"
-			description: ["Usual grind, you can't mistake this"]
 			dependencies: ["6A09B720008898E5"]
+			description: ["Usual grind, you can't mistake this"]
+			icon: "minecraft:gravel"
 			id: "19951A07520C3E63"
+			subtitle: "Contraption 51-2"
 			tasks: [
 				{
 					id: "5F44E3A4294F2757"
-					type: "item"
 					item: "minecraft:gravel"
+					type: "item"
 				}
 				{
 					id: "73382953C5AD7EB8"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Grave Unmistake"
+			x: -6.5d
+			y: 16.0d
 		}
 		{
-			title: "Sanding"
-			icon: "minecraft:sand"
-			x: -4.0d
-			y: 16.0d
-			subtitle: "Contraption 51-4"
-			description: ["This is totally fine, not the finest, but still very fine and ready for the next stage which is not grinding anymore."]
 			dependencies: ["19951A07520C3E63"]
+			description: ["This is totally fine, not the finest, but still very fine and ready for the next stage which is not grinding anymore."]
+			icon: "minecraft:sand"
 			id: "26D82F2F761CACEC"
+			subtitle: "Contraption 51-4"
 			tasks: [
 				{
 					id: "7D7469F2E7ECE0B6"
-					type: "item"
 					item: "minecraft:sand"
+					type: "item"
 				}
 				{
 					id: "698C434EC72C47A0"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Sanding"
+			x: -4.0d
+			y: 16.0d
 		}
 		{
-			title: "Clayton"
-			icon: "minecraft:clay_ball"
-			x: -1.5d
-			y: 16.0d
-			subtitle: "Contraption 51-5"
-			description: ["Clay is an essential part of almost every chapter, incredibly useful for ceramics, bindings, etc..."]
 			dependencies: ["26D82F2F761CACEC"]
+			description: ["Clay is an essential part of almost every chapter, incredibly useful for ceramics, bindings, etc..."]
+			icon: "minecraft:clay_ball"
 			id: "7B0B8F7CA8DD7432"
+			subtitle: "Contraption 51-5"
 			tasks: [
 				{
 					id: "4824901758C0CF37"
-					type: "item"
 					item: "minecraft:clay_ball"
+					type: "item"
 				}
 				{
 					id: "57CE37E700D92887"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Clayton"
+			x: -1.5d
+			y: 16.0d
 		}
 		{
-			title: "CLTN"
-			icon: "minecraft:clay"
-			x: 1.0d
-			y: 16.0d
-			subtitle: "Contraption 52-1"
-			description: ["Seems our friend Clayton got dense, now he can hold the drip."]
 			dependencies: ["7B0B8F7CA8DD7432"]
+			description: ["Seems our friend Clayton got dense, now he can hold the drip."]
+			icon: "minecraft:clay"
 			id: "2B75DFDCDF51EEE8"
+			subtitle: "Contraption 52-1"
 			tasks: [
 				{
 					id: "0D3020E29454FEE7"
-					type: "item"
 					item: "minecraft:clay"
+					type: "item"
 				}
 				{
 					id: "0B72F1A44E58A5A7"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "CLTN"
+			x: 1.0d
+			y: 16.0d
 		}
 		{
-			title: "Hold My Drip"
-			icon: "minecraft:dripstone_block"
-			x: 3.5d
-			y: 16.0d
-			subtitle: "Contraption 52-2"
-			description: ["CLTN has the drip, and copper for some reason, assume it works."]
 			dependencies: ["2B75DFDCDF51EEE8"]
+			description: ["CLTN has the drip, and copper for some reason, assume it works."]
+			icon: "minecraft:dripstone_block"
 			id: "259296CC233792E4"
+			subtitle: "Contraption 52-2"
 			tasks: [
 				{
 					id: "5A7C1A7562F53F4A"
-					type: "item"
 					item: "minecraft:dripstone_block"
+					type: "item"
 				}
 				{
 					id: "4BA486A23E9FD3AE"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Hold My Drip"
+			x: 3.5d
+			y: 16.0d
 		}
 		{
-			title: "Coppery"
-			icon: "create:copper_nugget"
-			x: 6.0d
-			y: 16.0d
-			subtitle: "Contraption 52-3"
-			description: ["Copper from thin air, how did we get here?"]
 			dependencies: ["259296CC233792E4"]
+			description: ["Copper from thin air, how did we get here?"]
+			icon: "create:copper_nugget"
 			id: "5AF91ED1BD145E5F"
+			subtitle: "Contraption 52-3"
 			tasks: [
 				{
 					id: "0E058F3E157B9858"
-					type: "item"
 					item: "create:copper_nugget"
+					type: "item"
 				}
 				{
 					id: "609EFE269887DF31"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Coppery"
+			x: 6.0d
+			y: 16.0d
 		}
 		{
-			title: "Bricked Clay"
-			icon: "minecraft:brick"
-			x: 0.0d
-			y: 17.5d
-			subtitle: "Contraption 51-6"
 			dependencies: ["7B0B8F7CA8DD7432"]
+			icon: "minecraft:brick"
 			id: "0F395B5393BB198F"
+			subtitle: "Contraption 51-6"
 			tasks: [
 				{
 					id: "76CD5D1E5246A954"
-					type: "item"
 					item: "minecraft:brick"
+					type: "item"
 				}
 				{
 					id: "45A63C9122BF91B8"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Bricked Clay"
+			x: 0.0d
+			y: 17.5d
 		}
 		{
-			title: "Extra Conductive"
-			icon: "minecraft:copper_ingot"
-			x: 8.5d
-			y: 16.0d
-			subtitle: "Contraption 52-4"
-			description: ["The best material for our conductive needs at the moment."]
 			dependencies: ["5AF91ED1BD145E5F"]
+			description: ["The best material for our conductive needs at the moment."]
+			icon: "minecraft:copper_ingot"
 			id: "4675B02BF0D4C34D"
+			subtitle: "Contraption 52-4"
 			tasks: [
 				{
 					id: "681EB6F4EE3D5046"
-					type: "item"
 					item: "minecraft:copper_ingot"
+					type: "item"
 				}
 				{
 					id: "5CD909E6FD20D6E4"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Extra Conductive"
+			x: 8.5d
+			y: 16.0d
 		}
 		{
-			title: "Charcoal"
-			icon: "minecraft:charcoal"
-			x: 8.0d
-			y: 20.0d
-			subtitle: "Contraption 59-1"
+			dependencies: ["6C3258881A44FA46"]
 			description: ["Charcoal is a cheap source of carbon and can also be used for pigment!"]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "minecraft:charcoal"
 			id: "79D607EC86F741A4"
+			subtitle: "Contraption 59-1"
 			tasks: [
 				{
 					id: "6E12C63068D256BA"
-					type: "item"
 					item: "minecraft:charcoal"
+					type: "item"
 				}
 				{
 					id: "1473F890A2018F9C"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Charcoal"
+			x: 8.0d
+			y: 20.0d
 		}
 		{
-			title: "Electrolixing"
-			x: -8.5d
-			y: 21.5d
-			shape: "diamond"
 			dependencies: [
 				"2B4FE401C0245428"
 				"239389C7D9222180"
 				"21B807DFB1767669"
 			]
 			id: "1FC573FAC912A7FC"
+			shape: "diamond"
 			tasks: [{
 				id: "07FED41EADD443EF"
-				type: "item"
 				item: "create:mechanical_mixer"
+				type: "item"
 			}]
+			title: "Electrolixing"
+			x: -8.5d
+			y: 21.5d
 		}
 		{
-			title: "Walter"
-			icon: "minecraft:water_bucket"
-			x: -7.0d
-			y: 20.0d
-			subtitle: "Contraption 53-2"
+			dependencies: ["6C3258881A44FA46"]
 			description: ["Walter makes another appearance."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "minecraft:water_bucket"
 			id: "2B4FE401C0245428"
+			subtitle: "Contraption 53-2"
 			tasks: [
 				{
 					id: "74BDF4D555406EC1"
-					type: "item"
 					item: "minecraft:water_bucket"
+					type: "item"
 				}
 				{
 					id: "099FFF89413CBD69"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Walter"
+			x: -7.0d
+			y: 20.0d
 		}
 		{
-			title: "Desh Catalysis"
-			x: -10.0d
-			y: 23.0d
-			subtitle: "Contraption  53-3"
+			dependencies: ["6C3258881A44FA46"]
 			description: [
 				"Don't ask how."
 				""
@@ -1170,140 +1158,143 @@
 				"This modpack team is not responsible for any strokes caused by this process on chemistry professionals."
 			]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
 			id: "21B807DFB1767669"
+			subtitle: "Contraption  53-3"
 			tasks: [{
 				id: "225CBB93806D1BE3"
+				item: "ad_astra:desh_ingot"
 				type: "item"
-				item: "beyond_earth:desh_ingot"
 			}]
+			title: "Desh Catalysis"
+			x: -10.0d
+			y: 23.0d
 		}
 		{
-			title: "Electrolyte"
-			icon: "kubejs:electrolyte_bucket"
-			x: -7.0d
-			y: 23.0d
-			subtitle: "Contraption 53-4"
-			description: ["Sulfuric acid not only can be used to etch copper, it can also serve as an electrolyte, just not a great one..."]
 			dependencies: ["1FC573FAC912A7FC"]
+			description: ["Sulfuric acid not only can be used to etch copper, it can also serve as an electrolyte, just not a great one..."]
+			icon: "kubejs:electrolyte_bucket"
 			id: "65A3ADBC7B498FE3"
+			subtitle: "Contraption 53-4"
 			tasks: [
 				{
 					id: "19FF091389E2A237"
-					type: "item"
 					item: "kubejs:electrolyte_bucket"
+					type: "item"
 				}
 				{
 					id: "5C7AEC35288BD987"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Electrolyte"
+			x: -7.0d
+			y: 23.0d
 		}
 		{
-			title: "Sulfuric Solutions"
-			icon: "thermal:sulfur_dust"
-			x: -10.0d
-			y: 20.0d
-			subtitle: "Contraption 53-1"
+			dependencies: ["6C3258881A44FA46"]
 			description: ["Reuse the previously automated sulfur into creation of sulfuric acid."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "thermal:sulfur_dust"
 			id: "239389C7D9222180"
+			subtitle: "Contraption 53-1"
 			tasks: [
 				{
 					id: "578794CD576EB375"
-					type: "item"
 					item: "thermal:sulfur_dust"
+					type: "item"
 				}
 				{
 					id: "67BD3BF5A94408A7"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Sulfuric Solutions"
+			x: -10.0d
+			y: 20.0d
 		}
 		{
-			title: "Monomers"
-			icon: "createindustry:heavy_oil_bucket"
-			x: 6.5d
-			y: 20.0d
-			subtitle: "Contraption 58-1"
+			dependencies: ["6C3258881A44FA46"]
 			description: ["Polymerize the monomers present in heavy oil with some help of desh."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "tfmg:heavy_oil_bucket"
 			id: "63CD0327AFA1BC4B"
+			subtitle: "Contraption 58-1"
 			tasks: [
 				{
 					id: "1FED7D60D286F9A5"
+					item: "tfmg:heavy_oil_bucket"
 					type: "item"
-					item: "createindustry:heavy_oil_bucket"
 				}
 				{
 					id: "37752D3B686848D5"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Monomers"
+			x: 6.5d
+			y: 20.0d
 		}
 		{
-			title: "Irony Traces"
-			icon: "minecraft:iron_nugget"
-			x: -5.0d
-			y: 14.5d
-			subtitle: "Contraption 51-3"
 			dependencies: ["19951A07520C3E63"]
+			icon: "minecraft:iron_nugget"
 			id: "665344D0E292B115"
+			subtitle: "Contraption 51-3"
 			tasks: [
 				{
 					id: "38BF0D831266E2FB"
-					type: "item"
 					item: "minecraft:iron_nugget"
+					type: "item"
 				}
 				{
 					id: "17F5826780E170D0"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Irony Traces"
+			x: -5.0d
+			y: 14.5d
 		}
 		{
+			dependencies: ["5736452A5C6A319C"]
+			description: ["Again the classical grind comes here."]
+			id: "572BF9C3AD667A69"
+			shape: "diamond"
+			subtitle: "Contraption 57"
+			tasks: [{
+				id: "5CFDF4C215931679"
+				item: "create:millstone"
+				type: "item"
+			}]
 			title: "Ceramilling"
 			x: 10.0d
 			y: 21.5d
-			shape: "diamond"
-			subtitle: "Contraption 57"
-			description: ["Again the classical grind comes here."]
-			dependencies: ["5736452A5C6A319C"]
-			id: "572BF9C3AD667A69"
-			tasks: [{
-				id: "5CFDF4C215931679"
-				type: "item"
-				item: "create:millstone"
-			}]
 		}
 		{
-			title: "Plating"
-			icon: "create:copper_sheet"
-			x: -2.5d
-			y: 33.5d
+			dependencies: ["6C3258881A44FA46"]
 			description: ["The basis of the printed circuit board should be deployed first."]
 			hide_dependency_lines: true
-			dependencies: ["6C3258881A44FA46"]
+			icon: "create:copper_sheet"
 			id: "201402493BBB283C"
 			tasks: [
 				{
 					id: "240FA72D45F6F477"
-					type: "item"
 					item: "create:copper_sheet"
+					type: "item"
 				}
 				{
 					id: "7083B8FA631CF245"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Plating"
+			x: -2.5d
+			y: 33.5d
 		}
 	]
-	quest_links: [ ]
+	title: "&f4&r Power Processing"
 }

@@ -29,5 +29,5 @@
 			#   ["cobblestone", "minecraft:diamond_block", ["minecraft:diamond_block"]],
 			#   ["cobblestone", "minecraft:dirt", ["forge:dirt"]],
 			#   ["cobblestone", "minecraft:white_wool", ["minecraft:wool"]]]
-			custom_generators = [["cobblestone", "beyond_earth:moon_sand", ["minecraft:calcite"]], , ["cobblestone", "beyond_earth:desh_block", ["kubejs:mica_block"]]]
+			custom_generators = [["cobblestone", "ad_astra:moon_sand", ["minecraft:calcite"]], , ["cobblestone", "ad_astra:desh_block", ["kubejs:mica_block"]]]
 

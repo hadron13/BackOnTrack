@@ -445,7 +445,7 @@
 			tasks: [{
 				id: "5AA46C45BD99A874"
 				type: "item"
-				item: "beyond_earth:steel_engine"
+				item: "ad_astra:steel_engine"
 				consume_items: false
 			}]
 		}
@@ -541,7 +541,7 @@
 			]
 		}
 		{
-			icon: "beyond_earth:engine_frame"
+			icon: "ad_astra:engine_frame"
 			x: -1.5d
 			y: 12.0d
 			description: ["You won't need to automate the production of nethersteel, instead you can recycle every failed engine."]
@@ -553,7 +553,7 @@
 				{
 					id: "0994BC1AC724A977"
 					type: "item"
-					item: "beyond_earth:engine_frame"
+					item: "ad_astra:engine_frame"
 					consume_items: false
 				}
 				{
@@ -642,7 +642,7 @@
 		}
 		{
 			title: "Ready To Go"
-			icon: "beyond_earth:earth_globe"
+			icon: "ad_astra:earth_globe"
 			x: 0.0d
 			y: 18.5d
 			shape: "hexagon"
@@ -660,7 +660,7 @@
 				id: "1AE29CA3D2B92487"
 				type: "item"
 				team_reward: false
-				item: "beyond_earth:earth_globe"
+				item: "ad_astra:earth_globe"
 			}]
 		}
 		{
@@ -679,7 +679,7 @@
 				id: "4C5BB2DBC345DB56"
 				type: "item"
 				item: {
-					id: "beyond_earth:rocket_t1"
+					id: "ad_astra:rocket_t1"
 					Count: 1b
 					tag: { }
 				}
@@ -774,7 +774,7 @@
 					id: "1C47D949FE62AA85"
 					type: "item"
 					item: {
-						id: "beyond_earth:oxygen_mask"
+						id: "ad_astra:oxygen_mask"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -786,7 +786,7 @@
 					id: "7E70BAABFE85F060"
 					type: "item"
 					item: {
-						id: "beyond_earth:space_suit"
+						id: "ad_astra:space_suit"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -798,7 +798,7 @@
 					id: "32DF290680CF7F7C"
 					type: "item"
 					item: {
-						id: "beyond_earth:space_pants"
+						id: "ad_astra:space_pants"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -810,7 +810,7 @@
 					id: "4CF6C387EF30880C"
 					type: "item"
 					item: {
-						id: "beyond_earth:space_boots"
+						id: "ad_astra:space_boots"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -822,7 +822,7 @@
 		}
 		{
 			title: "Breathing 101"
-			icon: "beyond_earth:oxygen_tank"
+			icon: "ad_astra:oxygen_tank"
 			x: -1.5d
 			y: 19.5d
 			description: [
@@ -836,13 +836,13 @@
 			tasks: [{
 				id: "0DEA8A7C99ED50B4"
 				type: "item"
-				item: "beyond_earth:oxygen_loader"
+				item: "ad_astra:oxygen_loader"
 				consume_items: false
 			}]
 			rewards: [{
 				id: "00871BACFB276061"
 				type: "item"
-				item: "beyond_earth:oxygen_bubble_distributor"
+				item: "ad_astra:oxygen_bubble_distributor"
 			}]
 		}
 		{
@@ -855,7 +855,7 @@
 			tasks: [{
 				id: "26F9E5D9C47D74FD"
 				type: "item"
-				item: "beyond_earth:rocket_launch_pad"
+				item: "ad_astra:rocket_launch_pad"
 				consume_items: false
 			}]
 		}

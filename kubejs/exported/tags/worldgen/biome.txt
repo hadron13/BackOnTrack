@@ -604,8 +604,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #bettermineshafts:has_structure/has_mineshaft_mushroom
 - minecraft:mushroom_fields
 
-#beyond_earth:has_structure/pygro_village_biomes
-- beyond_earth:venus_desert
+#ad_astra:has_structure/pygro_village_biomes
+- ad_astra:venus_desert
 
 #repurposed_structures:has_structure/ruins/land_hot
 - #repurposed_structures:collections/deserts
@@ -1729,8 +1729,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - minecraft:sunflower_plains
 - minecraft:meadow
 
-#beyond_earth:has_structure/venus_bullet_biomes
-- beyond_earth:venus_desert
+#ad_astra:has_structure/venus_bullet_biomes
+- ad_astra:venus_desert
 
 #repurposed_structures:collections/spooky_forests
 - minecraft:dark_forest
@@ -1924,8 +1924,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - betternether:poor_nether_grasslands?
 - betternether:nether_grasslands?
 
-#beyond_earth:has_structure/alien_village_biomes
-- beyond_earth:moon_desert
+#ad_astra:has_structure/alien_village_biomes
+- ad_astra:moon_desert
 
 #repurposed_structures:collections/nether
 - #minecraft:is_nether
@@ -2026,8 +2026,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - betternether:gravel_desert?
 - betternether:magma_land?
 
-#beyond_earth:has_structure/pygro_tower_biomes
-- beyond_earth:venus_desert
+#ad_astra:has_structure/pygro_tower_biomes
+- ad_astra:venus_desert
 
 #repurposed_structures:collections/stony_shores
 - minecraft:stony_shore
@@ -2104,7 +2104,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #repurposed_structures:has_structure/pyramids/mushroom
 - #repurposed_structures:collections/mushrooms
 
-#beyond_earth:has_structure/oil_well_biomes
+#ad_astra:has_structure/oil_well_biomes
 - #minecraft:is_ocean
 - #minecraft:is_deep_ocean
 - minecraft:swamp
@@ -2127,7 +2127,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:is_spooky
 - minecraft:dark_forest
 
-#beyond_earth:has_structure/meteor_biomes
+#ad_astra:has_structure/meteor_biomes
 - #minecraft:is_jungle
 - #minecraft:is_forest
 - #minecraft:is_taiga

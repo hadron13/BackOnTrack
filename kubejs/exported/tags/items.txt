@@ -124,7 +124,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:white_clear_stained_glass_pane
 
 #forge:storage_blocks/desh
-- beyond_earth:desh_block
+- ad_astra:desh_block
 
 #biomesoplenty:hellbark_logs
 - biomesoplenty:hellbark_log
@@ -160,11 +160,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #tconstruct:casts/multi_use/tool_binding
 - tconstruct:tool_binding_cast
 
-#beyond_earth:compresseds/steel
-- beyond_earth:compressed_steel
+#ad_astra:compresseds/steel
+- ad_astra:compressed_steel
 
-#beyond_earth:tanks/steel
-- beyond_earth:steel_tank
+#ad_astra:tanks/steel
+- ad_astra:steel_tank
 
 #aquaculture:tooltip
 - aquaculture:neptunium_fishing_rod
@@ -416,7 +416,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - frog_legs:frog_legs?
 
 #forge:rods/iron
-- beyond_earth:iron_stick
+- ad_astra:iron_stick
 - createaddition:iron_rod
 
 #forge:coins/tin
@@ -429,8 +429,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:plates/silver
 - thermal:silver_plate
 
-#beyond_earth:compresseds/desh
-- beyond_earth:compressed_desh
+#ad_astra:compresseds/desh
+- ad_astra:compressed_desh
 
 #tconstruct:casts/multi_use/coin
 - tconstruct:coin_cast
@@ -536,7 +536,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - thermal:raw_nickel_block
 
 #forge:storage_blocks/raw_ostrum
-- beyond_earth:raw_ostrum_block
+- ad_astra:raw_ostrum_block
 
 #forge:fruits
 - minecraft:apple
@@ -822,9 +822,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #minecraft:sand
 - minecraft:sand
 - minecraft:red_sand
-- beyond_earth:moon_sand
-- beyond_earth:mars_sand
-- beyond_earth:venus_sand
+- ad_astra:moon_sand
+- ad_astra:mars_sand
+- ad_astra:venus_sand
 - biomesoplenty:black_sand
 - biomesoplenty:orange_sand
 - biomesoplenty:white_sand
@@ -849,7 +849,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:longbow
 
 #forge:nuggets/desh
-- beyond_earth:desh_nugget
+- ad_astra:desh_nugget
 
 #forge:berries
 - minecraft:sweet_berries
@@ -1011,8 +1011,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - createaddition:iron_wire
 - createaddition:gold_wire
 
-#beyond_earth:tanks/calorite
-- beyond_earth:calorite_tank
+#ad_astra:tanks/calorite
+- ad_astra:calorite_tank
 
 #forge:ingots/brass
 - create:brass_ingot
@@ -1020,8 +1020,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:coins/electrum
 - thermal:electrum_coin
 
-#beyond_earth:compresseds/ostrum
-- beyond_earth:compressed_ostrum
+#ad_astra:compresseds/ostrum
+- ad_astra:compressed_ostrum
 
 #forge:storage_blocks/amethyst
 - minecraft:amethyst_block
@@ -1053,7 +1053,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - lootr:lootr_shulker
 
 #forge:raw_materials/ostrum
-- beyond_earth:raw_ostrum
+- ad_astra:raw_ostrum
 
 #forge:magma
 - minecraft:magma_block
@@ -1069,8 +1069,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - forbidden_arcanus:boom_arrow
 - forbidden_arcanus:draco_arcanus_arrow
 
-#beyond_earth:tanks/ostrum
-- beyond_earth:ostrum_tank
+#ad_astra:tanks/ostrum
+- ad_astra:ostrum_tank
 
 #forge:foods/fish/cooked
 - minecraft:cooked_cod
@@ -1328,7 +1328,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - occultism:silver_block
 
 #forge:ores/gold
-- beyond_earth:venus_gold_ore
+- ad_astra:venus_gold_ore
 - #minecraft:gold_ores
 
 #lootr:chests
@@ -1389,7 +1389,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - minecraft:wheat
 
 #forge:nuggets/ostrum
-- beyond_earth:ostrum_nugget
+- ad_astra:ostrum_nugget
 
 #forge:glass/lime
 - minecraft:lime_stained_glass
@@ -1605,12 +1605,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - architects_palette:nether_brass_slab
 - architects_palette:cut_nether_brass_slab
 - architects_palette:smooth_nether_brass_slab
-- beyond_earth:moon_stone_brick_slab
-- beyond_earth:mars_stone_brick_slab
-- beyond_earth:mercury_stone_brick_slab
-- beyond_earth:venus_sandstone_brick_slab
-- beyond_earth:venus_stone_brick_slab
-- beyond_earth:glacio_stone_brick_slab
+- ad_astra:moon_stone_brick_slab
+- ad_astra:mars_stone_brick_slab
+- ad_astra:mercury_stone_brick_slab
+- ad_astra:venus_sandstone_brick_slab
+- ad_astra:venus_stone_brick_slab
+- ad_astra:glacio_stone_brick_slab
 - biomesoplenty:black_sandstone_slab
 - biomesoplenty:cut_black_sandstone_slab
 - biomesoplenty:smooth_black_sandstone_slab
@@ -1939,8 +1939,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - create:zinc_ingot
 - create:brass_ingot
 
-#beyond_earth:engines/desh
-- beyond_earth:desh_engine
+#ad_astra:engines/desh
+- ad_astra:desh_engine
 
 #forbidden_arcanus:edelwood_logs
 - forbidden_arcanus:edelwood_log
@@ -2029,8 +2029,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - minecraft:golden_helmet
 - minecraft:golden_leggings
 
-#beyond_earth:engines/ostrum
-- beyond_earth:ostrum_engine
+#ad_astra:engines/ostrum
+- ad_astra:ostrum_engine
 
 #forge:dyes/black
 - minecraft:black_dye
@@ -2326,7 +2326,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - decorative_blocks:dark_oak_beam
 
 #forge:storage_blocks/steel
-- beyond_earth:steel_block
+- ad_astra:steel_block
 - alloyed:steel_block?
 - thermal:steel_block
 - alloyed:steel_block
@@ -2510,7 +2510,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - forbidden_arcanus:mysterywood_sapling
 
 #forge:ores/copper
-- beyond_earth:glacio_copper_ore
+- ad_astra:glacio_copper_ore
 - #minecraft:copper_ores
 
 #forge:coins/lumium
@@ -2637,8 +2637,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:magenta_clear_stained_glass
 
 #forge:ores/coal
-- beyond_earth:venus_coal_ore
-- beyond_earth:glacio_coal_ore
+- ad_astra:venus_coal_ore
+- ad_astra:glacio_coal_ore
 - #minecraft:coal_ores
 
 #forge:pasta
@@ -2697,7 +2697,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - thermal:raw_nickel
 
 #forge:ores/calorite
-- beyond_earth:venus_calorite_ore
+- ad_astra:venus_calorite_ore
 
 #forge:ingots/gold
 - minecraft:gold_ingot
@@ -2710,7 +2710,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - lootr:lootr_barrel
 
 #forge:storage_blocks/raw_calorite
-- beyond_earth:raw_calorite_block
+- ad_astra:raw_calorite_block
 
 #forge:leather
 - minecraft:leather
@@ -2940,8 +2940,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:ingots/netherite_scrap
 - minecraft:netherite_scrap
 
-#beyond_earth:compresseds/calorite
-- beyond_earth:compressed_calorite
+#ad_astra:compresseds/calorite
+- ad_astra:compressed_calorite
 
 #tconstruct:casts/single_use/tool_binding
 - tconstruct:tool_binding_sand_cast
@@ -2954,11 +2954,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:raw_fishes/glowfish
 - biomemakeover:glowfish?
 
-#beyond_earth:compresseds
-- #beyond_earth:compresseds/steel
-- #beyond_earth:compresseds/desh
-- #beyond_earth:compresseds/ostrum
-- #beyond_earth:compresseds/calorite
+#ad_astra:compresseds
+- #ad_astra:compresseds/steel
+- #ad_astra:compresseds/desh
+- #ad_astra:compresseds/ostrum
+- #ad_astra:compresseds/calorite
 
 #forge:plates/lumium
 - thermal:lumium_plate
@@ -3006,7 +3006,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - create:black_toolbox
 
 #forge:ingots/desh
-- beyond_earth:desh_ingot
+- ad_astra:desh_ingot
 
 #forge:bitumen
 - thermal:bitumen
@@ -3187,11 +3187,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 
 #forge:stone
 - architects_palette:myonite
-- beyond_earth:moon_stone
-- beyond_earth:mars_stone
-- beyond_earth:venus_stone
-- beyond_earth:mercury_stone
-- beyond_earth:glacio_stone
+- ad_astra:moon_stone
+- ad_astra:mars_stone
+- ad_astra:venus_stone
+- ad_astra:mercury_stone
+- ad_astra:glacio_stone
 - minecraft:andesite
 - minecraft:diorite
 - minecraft:granite
@@ -3450,7 +3450,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - fairylights:square_pennant
 
 #forge:ores/lapis
-- beyond_earth:glacio_lapis_ore
+- ad_astra:glacio_lapis_ore
 - #minecraft:lapis_ores
 
 #forge:foods/meat/cooked
@@ -3541,11 +3541,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:tools/screwdriver
 - supercircuitmaker:screwdriver
 
-#beyond_earth:tanks
-- #beyond_earth:tanks/steel
-- #beyond_earth:tanks/desh
-- #beyond_earth:tanks/ostrum
-- #beyond_earth:tanks/calorite
+#ad_astra:tanks
+- #ad_astra:tanks/steel
+- #ad_astra:tanks/desh
+- #ad_astra:tanks/ostrum
+- #ad_astra:tanks/calorite
 
 #forge:dusts/niter
 - thermal:niter_dust
@@ -3568,7 +3568,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - #tconstruct:modifiable/armor/chestplate
 
 #forge:ores/desh
-- beyond_earth:moon_desh_ore
+- ad_astra:moon_desh_ore
 
 #forge:fence_gates/wooden
 - biomesoplenty:fir_fence_gate
@@ -3720,7 +3720,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:rose_gold_nugget
 
 #forge:storage_blocks/calorite
-- beyond_earth:calorite_block
+- ad_astra:calorite_block
 
 #forge:glass/silica
 - minecraft:glass
@@ -3772,21 +3772,21 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - thermal:lumium_gear
 
 #forge:ores
-- beyond_earth:moon_iron_ore
-- beyond_earth:moon_desh_ore
-- beyond_earth:moon_cheese_ore
-- beyond_earth:moon_ice_shard_ore
-- beyond_earth:mars_iron_ore
-- beyond_earth:mars_ostrum_ore
-- beyond_earth:mars_diamond_ore
-- beyond_earth:mars_ice_shard_ore
-- beyond_earth:mercury_iron_ore
-- beyond_earth:venus_gold_ore
-- beyond_earth:venus_coal_ore
-- beyond_earth:venus_diamond_ore
-- beyond_earth:venus_calorite_ore
-- beyond_earth:glacio_lapis_ore
-- beyond_earth:glacio_ice_shard_ore
+- ad_astra:moon_iron_ore
+- ad_astra:moon_desh_ore
+- ad_astra:moon_cheese_ore
+- ad_astra:moon_ice_shard_ore
+- ad_astra:mars_iron_ore
+- ad_astra:mars_ostrum_ore
+- ad_astra:mars_diamond_ore
+- ad_astra:mars_ice_shard_ore
+- ad_astra:mercury_iron_ore
+- ad_astra:venus_gold_ore
+- ad_astra:venus_coal_ore
+- ad_astra:venus_diamond_ore
+- ad_astra:venus_calorite_ore
+- ad_astra:glacio_lapis_ore
+- ad_astra:glacio_ice_shard_ore
 - #forge:ores/coal
 - #forge:ores/copper
 - #forge:ores/diamond
@@ -3818,11 +3818,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - #forge:ores/stella_arcanum
 - #forge:ores/xpetrified_ore
 
-#beyond_earth:engines
-- #beyond_earth:engines/steel
-- #beyond_earth:engines/desh
-- #beyond_earth:engines/ostrum
-- #beyond_earth:engines/calorite
+#ad_astra:engines
+- #ad_astra:engines/steel
+- #ad_astra:engines/desh
+- #ad_astra:engines/ostrum
+- #ad_astra:engines/calorite
 
 #forge:bottles/lingering
 - tconstruct:lingering_bottle
@@ -4004,7 +4004,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - #forge:nuggets/ender_pearl
 
 #forge:storage_blocks/ostrum
-- beyond_earth:ostrum_block
+- ad_astra:ostrum_block
 
 #forge:plates/zinc
 - createdeco:zinc_sheet
@@ -4668,8 +4668,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - thermal:chiller_ingot_cast
 - thermal:chiller_rod_cast
 
-#beyond_earth:tanks/desh
-- beyond_earth:desh_tank
+#ad_astra:tanks/desh
+- ad_astra:desh_tank
 
 #tconstruct:scorched_blocks
 - tconstruct:scorched_stone
@@ -4682,7 +4682,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - thermal:silver_coin
 
 #forge:sandstone
-- beyond_earth:venus_sandstone
+- ad_astra:venus_sandstone
 - biomesoplenty:black_sandstone
 - biomesoplenty:cut_black_sandstone
 - biomesoplenty:chiseled_black_sandstone
@@ -4771,7 +4771,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - thermal:cinnabar_block
 
 #forge:ingots/calorite
-- beyond_earth:calorite_ingot
+- ad_astra:calorite_ingot
 
 #buildersdelight:spruce_planks
 - minecraft:spruce_planks
@@ -4819,8 +4819,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:seared_triangle_bricks
 
 #forge:ores/diamond
-- beyond_earth:mars_diamond_ore
-- beyond_earth:venus_diamond_ore
+- ad_astra:mars_diamond_ore
+- ad_astra:venus_diamond_ore
 - #minecraft:diamond_ores
 
 #forge:ingots/manyullyn
@@ -4956,8 +4956,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - minecraft:cooked_beef
 - farmersdelight:beef_patty
 
-#beyond_earth:engines/steel
-- beyond_earth:steel_engine
+#ad_astra:engines/steel
+- ad_astra:steel_engine
 
 #forge:tools/knives
 - farmersdelight:flint_knife
@@ -5484,12 +5484,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - architects_palette:nether_brass_stairs
 - architects_palette:cut_nether_brass_stairs
 - architects_palette:smooth_nether_brass_stairs
-- beyond_earth:moon_stone_brick_stairs
-- beyond_earth:mars_stone_brick_stairs
-- beyond_earth:mercury_stone_brick_stairs
-- beyond_earth:venus_sandstone_brick_stairs
-- beyond_earth:venus_stone_brick_stairs
-- beyond_earth:glacio_stone_brick_stairs
+- ad_astra:moon_stone_brick_stairs
+- ad_astra:mars_stone_brick_stairs
+- ad_astra:mercury_stone_brick_stairs
+- ad_astra:venus_sandstone_brick_stairs
+- ad_astra:venus_stone_brick_stairs
+- ad_astra:glacio_stone_brick_stairs
 - biomesoplenty:black_sandstone_stairs
 - biomesoplenty:smooth_black_sandstone_stairs
 - biomesoplenty:orange_sandstone_stairs
@@ -5609,9 +5609,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - #tconstruct:scorched_blocks
 
 #forge:ores/ice_shard
-- beyond_earth:moon_ice_shard_ore
-- beyond_earth:mars_ice_shard_ore
-- beyond_earth:glacio_ice_shard_ore
+- ad_astra:moon_ice_shard_ore
+- ad_astra:mars_ice_shard_ore
+- ad_astra:glacio_ice_shard_ore
 
 #forge:nuggets/arcane_gold
 - forbidden_arcanus:arcane_gold_nugget
@@ -5807,9 +5807,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - thermal:enderium_block
 
 #forge:sand
-- beyond_earth:moon_sand
-- beyond_earth:mars_sand
-- beyond_earth:venus_sand
+- ad_astra:moon_sand
+- ad_astra:mars_sand
+- ad_astra:venus_sand
 - biomesoplenty:black_sand
 - biomesoplenty:orange_sand
 - biomesoplenty:white_sand
@@ -5845,8 +5845,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:dyes/yellow
 - minecraft:yellow_dye
 
-#beyond_earth:engines/calorite
-- beyond_earth:calorite_engine
+#ad_astra:engines/calorite
+- ad_astra:calorite_engine
 
 #forge:fruits/kiwi
 - hedgehog:kiwi?
@@ -5866,7 +5866,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - thermal:tar
 
 #forge:raw_materials/calorite
-- beyond_earth:raw_calorite
+- ad_astra:raw_calorite
 
 #forge:storage_blocks/hepatizon
 - tconstruct:hepatizon_block
@@ -5955,10 +5955,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - ae2:nether_quartz_cutting_knife
 
 #forge:ores/iron
-- beyond_earth:mars_iron_ore
-- beyond_earth:mercury_iron_ore
-- beyond_earth:moon_iron_ore
-- beyond_earth:glacio_iron_ore
+- ad_astra:mars_iron_ore
+- ad_astra:mercury_iron_ore
+- ad_astra:moon_iron_ore
+- ad_astra:glacio_iron_ore
 - #minecraft:iron_ores
 
 #buildersdelight:jungle_planks
@@ -6134,7 +6134,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - occultism:datura_seeds
 
 #forge:plates/iron
-- beyond_earth:iron_plate
+- ad_astra:iron_plate
 - thermal:iron_plate
 - create:iron_sheet
 
@@ -6161,7 +6161,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - thermal:lumium_nugget
 
 #forge:nuggets/calorite
-- beyond_earth:calorite_nugget
+- ad_astra:calorite_nugget
 
 #tconstruct:structure_debug/smeltery
 - #tconstruct:structure_debug/general
@@ -6490,9 +6490,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:coins/signalum
 - thermal:signalum_coin
 
-#beyond_earth:flags
-- beyond_earth:flag
-- #beyond_earth:flags/colors
+#ad_astra:flags
+- ad_astra:flag
+- #ad_astra:flags/colors
 
 #forge:dusts/glowstone
 - minecraft:glowstone_dust
@@ -6840,7 +6840,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - minecraft:deepslate_lapis_ore
 
 #forge:ingots/steel
-- beyond_earth:steel_ingot
+- ad_astra:steel_ingot
 - davebuildingmod:steel_ingot
 - thermal:steel_ingot
 - alloyed:steel_ingot
@@ -7076,7 +7076,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:coin_red_sand_cast
 
 #forge:cheese/cheese
-- beyond_earth:cheese
+- ad_astra:cheese
 
 #forge:cooked_chicken
 - minecraft:cooked_chicken
@@ -7163,7 +7163,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - minecraft:cobbled_deepslate
 
 #forge:ores/cheese
-- beyond_earth:moon_cheese_ore
+- ad_astra:moon_cheese_ore
 
 #balm:eggs
 - #forge:eggs?
@@ -7292,7 +7292,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - minecraft:golden_hoe
 - minecraft:raw_gold
 - minecraft:raw_gold_block
-- beyond_earth:venus_gold_ore
+- ad_astra:venus_gold_ore
 - farmersdelight:golden_knife
 - computercraft:computer_advanced
 - computercraft:turtle_advanced
@@ -7362,7 +7362,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - #biomesoplenty:umbran_logs
 
 #forge:raw_materials/desh
-- beyond_earth:raw_desh
+- ad_astra:raw_desh
 
 #supplementaries:blackboard_black
 - minecraft:charcoal?
@@ -7629,20 +7629,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:gears/signalum
 - thermal:signalum_gear
 
-#beyond_earth:flags/colors
-- beyond_earth:flag_blue
-- beyond_earth:flag_brown
-- beyond_earth:flag_cyan
-- beyond_earth:flag_gray
-- beyond_earth:flag_green
-- beyond_earth:flag_light_blue
-- beyond_earth:flag_lime
-- beyond_earth:flag_magenta
-- beyond_earth:flag_orange
-- beyond_earth:flag_pink
-- beyond_earth:flag_purple
-- beyond_earth:flag_red
-- beyond_earth:flag_yellow
+#ad_astra:flags/colors
+- ad_astra:flag_blue
+- ad_astra:flag_brown
+- ad_astra:flag_cyan
+- ad_astra:flag_gray
+- ad_astra:flag_green
+- ad_astra:flag_light_blue
+- ad_astra:flag_lime
+- ad_astra:flag_magenta
+- ad_astra:flag_orange
+- ad_astra:flag_pink
+- ad_astra:flag_purple
+- ad_astra:flag_red
+- ad_astra:flag_yellow
 
 #curios:createplus.backtank_slot
 
@@ -7691,7 +7691,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - create:sturdy_sheet
 
 #forge:storage_blocks/raw_desh
-- beyond_earth:raw_desh_block
+- ad_astra:raw_desh_block
 
 #create:stone_types/crimsite
 - create:cut_crimsite
@@ -7787,7 +7787,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:yellow_clear_stained_glass
 
 #forge:ores/ostrum
-- beyond_earth:mars_ostrum_ore
+- ad_astra:mars_ostrum_ore
 
 #forge:nuggets/cobalt
 - tconstruct:cobalt_nugget
@@ -7967,7 +7967,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - alloyed:steel_shears
 
 #forge:nuggets/steel
-- beyond_earth:steel_nugget
+- ad_astra:steel_nugget
 - createbigcannons:steel_scrap
 - thermal:steel_nugget
 - alloyed:steel_nugget
@@ -8249,7 +8249,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - decorative_blocks:crimson_beam
 
 #forge:ingots/ostrum
-- beyond_earth:ostrum_ingot
+- ad_astra:ostrum_ingot
 
 #forge:dusts/prismarine
 - minecraft:prismarine_shard
@@ -8287,7 +8287,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - ae2:pattern_provider
 
 #forge:plates/desh
-- beyond_earth:desh_plate
+- ad_astra:desh_plate
 
 #tconstruct:structure_debug/foundry
 - #tconstruct:structure_debug/general

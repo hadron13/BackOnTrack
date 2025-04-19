@@ -1,30 +1,23 @@
 {
-	id: "2DCD66B83A8CE709"
-	group: "6F42926B3F0C534A"
-	order_index: 7
-	filename: "stage_3"
-	title: "&f3&r Astounding Explosions"
-	icon: "kubejs:explosive_mechanism"
-	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "stage_3"
+	group: "6F42926B3F0C534A"
+	icon: "kubejs:explosive_mechanism"
+	id: "2DCD66B83A8CE709"
 	images: [{
+		height: 3.0d
+		image: "kubejs:textures/images/chapter3.png"
+		rotation: 0.0d
+		width: 18.0d
 		x: 0.5d
 		y: -9.5d
-		width: 18.0d
-		height: 3.0d
-		rotation: 0.0d
-		image: "kubejs:textures/images/chapter3.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
 	}]
+	order_index: 7
+	quest_links: [ ]
 	quests: [
 		{
-			icon: "create:precision_mechanism"
-			x: 0.0d
-			y: -7.0d
-			shape: "diamond"
+			dependencies: ["466B6AA648B23C3A"]
 			description: [
 				"This chapter is composed of 3 different automation targets, unlike the last chapters, this one is raw, brutal automation, employing many complex processing methods and ingredients."
 				""
@@ -32,212 +25,209 @@
 				""
 				"Good Luck. May the mechanical mayhem have mercy on you."
 			]
-			dependencies: ["466B6AA648B23C3A"]
-			hide: true
-			size: 2.0d
+			hide_until_deps_complete: true
+			icon: "create:precision_mechanism"
 			id: "278B95FF7159DCFC"
-			tasks: [{
-				id: "09AE46E3C89127E0"
-				type: "checkmark"
-				title: "Chapter 3 Start!"
-			}]
 			rewards: [{
 				id: "5B60BE2413E8BDD5"
-				type: "item"
 				item: "minecraft:tnt"
+				type: "item"
 			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "09AE46E3C89127E0"
+				title: "Chapter 3 Start!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -7.0d
 		}
 		{
-			title: "Carbonic Blend"
-			icon: "alloyed:steel_ingot"
-			x: 2.0d
-			y: -7.0d
+			dependencies: ["278B95FF7159DCFC"]
 			description: [
 				"Two materials will be important to assemble the rocket, one of them will need automation."
 				""
 				"Iron will need to be mixed with coke to create steel, and steel will need to be mixed with netherite scrap so that it will resist the extreme heat from rocket engines"
 			]
-			dependencies: ["278B95FF7159DCFC"]
+			icon: "alloyed:steel_ingot"
 			id: "3159F92426161A19"
 			tasks: [
 				{
-					id: "6D56DD512620C5A5"
-					type: "item"
-					item: "alloyed:steel_ingot"
 					consume_items: false
+					id: "6D56DD512620C5A5"
+					item: "alloyed:steel_ingot"
+					type: "item"
 				}
 				{
-					id: "0368936B3C04400F"
-					type: "item"
-					item: "createbigcannons:nethersteel_ingot"
 					consume_items: false
+					id: "0368936B3C04400F"
+					item: "createbigcannons:nethersteel_ingot"
+					type: "item"
 				}
 				{
 					id: "7DC5B8ADB3ED1E7B"
-					type: "checkmark"
 					title: "Acknowleged"
+					type: "checkmark"
 				}
 			]
+			title: "Carbonic Blend"
+			x: 2.0d
+			y: -7.0d
 		}
 		{
-			title: "Explosivity 100"
-			icon: "minecraft:gunpowder"
-			x: 0.0d
-			y: 6.5d
-			subtitle: "Contraption 43-2"
-			description: ["(Un?)Fun fact: this recipe might work in real life..."]
 			dependencies: [
 				"7B86CDFAEE2EAD0D"
 				"4B2B136BAA03CD1B"
 				"4C99F5F60ABE2DFD"
 			]
+			description: ["(Un?)Fun fact: this recipe might work in real life..."]
+			icon: "minecraft:gunpowder"
 			id: "6C7AFF61FB05798A"
+			subtitle: "Contraption 43-2"
 			tasks: [
 				{
-					id: "46AE2315DA79C9CC"
-					type: "item"
-					item: "minecraft:gunpowder"
 					consume_items: false
+					id: "46AE2315DA79C9CC"
+					item: "minecraft:gunpowder"
+					type: "item"
 				}
 				{
 					id: "4C87CDB751C0260C"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Explosivity 100"
+			x: 0.0d
+			y: 6.5d
 		}
 		{
-			title: "Explosivity 300"
-			icon: "createbigcannons:packed_gunpowder"
-			x: 0.0d
-			y: 9.0d
-			subtitle: "Contraption 43-4"
-			description: ["Less air, more gunpowder, this compactified form of gunpowder stores much more energy for the same space."]
 			dependencies: ["6C7AFF61FB05798A"]
+			description: ["Less air, more gunpowder, this compactified form of gunpowder stores much more energy for the same space."]
+			icon: "createbigcannons:packed_gunpowder"
 			id: "5200D0297F0DE8B1"
+			subtitle: "Contraption 43-4"
 			tasks: [
 				{
-					id: "5801CA5413B9628C"
-					type: "item"
-					item: "createbigcannons:packed_gunpowder"
 					consume_items: false
+					id: "5801CA5413B9628C"
+					item: "createbigcannons:packed_gunpowder"
+					type: "item"
 				}
 				{
 					id: "6192AD603DD30CA1"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Explosivity 300"
+			x: 0.0d
+			y: 9.0d
 		}
 		{
-			title: "Automatic Re-Re-Forestation"
-			icon: "minecraft:oak_log"
-			x: 0.0d
-			y: 1.5d
-			subtitle: "Contraption 35-1"
+			dependencies: ["278B95FF7159DCFC"]
 			description: ["Direct a line of wood to this factory."]
 			hide_dependency_lines: true
-			dependencies: ["278B95FF7159DCFC"]
+			icon: "minecraft:oak_log"
 			id: "463701D5CEC99FC8"
+			subtitle: "Contraption 35-1"
 			tasks: [
 				{
-					id: "65449FFCA1E7ADC0"
-					type: "item"
-					title: "Any Wooden Log"
+					consume_items: false
 					icon: "minecraft:oak_log"
+					id: "65449FFCA1E7ADC0"
 					item: {
+						Count: 1
 						id: "itemfilters:tag"
-						Count: 1b
 						tag: {
 							value: "minecraft:logs"
 						}
 					}
-					consume_items: false
+					title: "Any Wooden Log"
+					type: "item"
 				}
 				{
 					id: "5019DA32D4A6AC9B"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Automatic Re-Re-Forestation"
+			x: 0.0d
+			y: 1.5d
 		}
 		{
-			title: "Igneous Fabrication"
-			icon: "minecraft:cobblestone"
-			x: -1.5d
-			y: -4.5d
-			subtitle: "Contraption 33-1"
+			dependencies: ["278B95FF7159DCFC"]
 			description: ["Take advantage of the new high tech igneous extruder and remove the loud cobblestone generator from your factories."]
 			hide_dependency_lines: true
-			dependencies: ["278B95FF7159DCFC"]
+			icon: "minecraft:cobblestone"
 			id: "0A39053F99978A28"
+			subtitle: "Contraption 33-1"
 			tasks: [
 				{
-					id: "37934D2130D39638"
-					type: "item"
-					item: "minecraft:cobblestone"
 					consume_items: false
+					id: "37934D2130D39638"
+					item: "minecraft:cobblestone"
+					type: "item"
 				}
 				{
 					id: "49AA96435EC8FCAB"
-					type: "checkmark"
 					title: "automated"
+					type: "checkmark"
 				}
 			]
+			title: "Igneous Fabrication"
+			x: -1.5d
+			y: -4.5d
 		}
 		{
-			title: "More De-chunkification"
-			icon: "minecraft:gravel"
-			x: -1.5d
-			y: -3.0d
-			subtitle: "Contraption 33-2"
-			description: ["Once more mill the cobblestone down to gravel, (warning: pun) you know the grind"]
 			dependencies: ["0A39053F99978A28"]
+			description: ["Once more mill the cobblestone down to gravel, (warning: pun) you know the grind"]
+			icon: "minecraft:gravel"
 			id: "218397419487B197"
+			subtitle: "Contraption 33-2"
 			tasks: [
 				{
-					id: "1B74E420AE0906B5"
-					type: "item"
-					item: "minecraft:gravel"
 					consume_items: false
+					id: "1B74E420AE0906B5"
+					item: "minecraft:gravel"
+					type: "item"
 				}
 				{
 					id: "40A88A336FD66804"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "More De-chunkification"
+			x: -1.5d
+			y: -3.0d
 		}
 		{
-			title: "Industrial Pyrolisis"
-			icon: "minecraft:charcoal"
-			x: 0.0d
-			y: 3.5d
-			subtitle: "Contraption 35-2"
-			description: ["Redo pyrolisis, just like last chapter, creating charcoal from wooden logs."]
 			dependencies: ["463701D5CEC99FC8"]
+			description: ["Redo pyrolisis, just like last chapter, creating charcoal from wooden logs."]
+			icon: "minecraft:charcoal"
 			id: "4C99F5F60ABE2DFD"
+			subtitle: "Contraption 35-2"
 			tasks: [
 				{
-					id: "260D9CAD808F5D75"
-					type: "item"
-					item: "minecraft:charcoal"
 					consume_items: false
+					id: "260D9CAD808F5D75"
+					item: "minecraft:charcoal"
+					type: "item"
 				}
 				{
 					id: "633C453CFCB5CA19"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Industrial Pyrolisis"
+			x: 0.0d
+			y: 3.5d
 		}
 		{
-			title: "Volatile Deploying"
-			icon: "kubejs:explosive_mechanism"
-			x: 0.0d
-			y: 11.0d
-			subtitle: "Contraption 45"
-			description: ["Assemble the final mechanism."]
 			dependencies: [
 				"5200D0297F0DE8B1"
 				"6ACE3593A299DEBC"
@@ -245,836 +235,837 @@
 				"460B7037B1081997"
 				"3BA0BFC354BA4785"
 			]
+			description: ["Assemble the final mechanism."]
+			icon: "kubejs:explosive_mechanism"
 			id: "5FFB68365F2E821B"
+			subtitle: "Contraption 45"
 			tasks: [
 				{
-					id: "24DDB51FF9CF57A7"
-					type: "item"
-					item: "kubejs:explosive_mechanism"
 					consume_items: false
+					id: "24DDB51FF9CF57A7"
+					item: "kubejs:explosive_mechanism"
+					type: "item"
 				}
 				{
 					id: "5D38A6D45AC1EDDD"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Volatile Deploying"
+			x: 0.0d
+			y: 11.0d
 		}
 		{
-			title: "Gear"
-			icon: "thermal:iron_gear"
-			x: 1.0d
-			y: 9.5d
-			subtitle: "Contraption 44"
-			description: ["It's a mechanism, and a very explosive one, and it requires a gear."]
 			dependencies: ["65605AC13DF2D359"]
+			description: ["It's a mechanism, and a very explosive one, and it requires a gear."]
+			icon: "thermal:iron_gear"
 			id: "6ACE3593A299DEBC"
+			subtitle: "Contraption 44"
 			tasks: [
 				{
-					id: "3F4D0023CC41B491"
-					type: "item"
-					item: "thermal:iron_gear"
 					consume_items: false
+					id: "3F4D0023CC41B491"
+					item: "thermal:iron_gear"
+					type: "item"
 				}
 				{
 					id: "2E58B992EE6F1D42"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Gear"
+			x: 1.0d
+			y: 9.5d
 		}
 		{
-			title: "Chapter 3 Complete!"
-			icon: "kubejs:explosive_machine"
-			x: 0.0d
-			y: 13.0d
-			shape: "diamond"
-			description: ["This new branch of technology will allow for compact power generation and pointless wars with your friends!"]
 			dependencies: ["5FFB68365F2E821B"]
-			size: 2.0d
+			description: ["This new branch of technology will allow for compact power generation and pointless wars with your friends!"]
+			icon: "kubejs:explosive_machine"
 			id: "6E7750CE254894B4"
-			tasks: [
-				{
-					id: "3A3463FEE66D098A"
-					type: "item"
-					item: "kubejs:explosive_machine"
-					consume_items: false
-				}
-				{
-					id: "7A194578829237BE"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
 			rewards: [
 				{
-					id: "64E2DFCF8473CE09"
-					type: "item"
-					item: "alloyed:steel_ingot"
 					count: 8
+					id: "64E2DFCF8473CE09"
+					item: "alloyed:steel_ingot"
 					random_bonus: 8
+					type: "item"
 				}
 				{
-					id: "21243B7088A4C9D4"
-					type: "item"
-					item: "kubejs:explosive_mechanism"
 					count: 8
+					id: "21243B7088A4C9D4"
+					item: "kubejs:explosive_mechanism"
 					random_bonus: 8
+					type: "item"
 				}
 				{
 					id: "1F72C61EBB816EA6"
+					item: "tfmg:gasoline_engine"
 					type: "item"
-					item: "createindustry:gasoline_engine"
 				}
 				{
 					id: "20D181DE06C61358"
+					item: "tfmg:gasoline_engine_back"
 					type: "item"
-					item: "createindustry:gasoline_engine_back"
 				}
 			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "3A3463FEE66D098A"
+					item: "kubejs:explosive_machine"
+					type: "item"
+				}
+				{
+					id: "7A194578829237BE"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Chapter 3 Complete!"
+			x: 0.0d
+			y: 13.0d
 		}
 		{
-			title: "Ferric Gravel"
-			icon: "minecraft:iron_nugget"
-			x: 3.5d
-			y: -3.0d
-			subtitle: "Contraption 33-3"
-			description: ["Does gravel even contain iron? It might be better to just accept it..."]
 			dependencies: ["218397419487B197"]
+			description: ["Does gravel even contain iron? It might be better to just accept it..."]
+			icon: "minecraft:iron_nugget"
 			id: "65605AC13DF2D359"
+			subtitle: "Contraption 33-3"
 			tasks: [
 				{
 					id: "1116AAA2F1D31918"
-					type: "item"
 					item: "minecraft:iron_nugget"
+					type: "item"
 				}
 				{
 					id: "2498ABCFB227BF1F"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Ferric Gravel"
+			x: 3.5d
+			y: -3.0d
 		}
 		{
-			title: "Get Molten"
+			dependencies: ["65605AC13DF2D359"]
+			description: ["Route the nuggets once more into your High-Temperature melting equipment."]
 			icon: {
+				Count: 1
 				id: "tconstruct:copper_can"
-				Count: 1b
 				tag: {
 					fluid: "tconstruct:molten_iron"
 				}
 			}
-			x: 5.0d
-			y: 0.5d
-			subtitle: "Contraption 37-1"
-			description: ["Route the nuggets once more into your High-Temperature melting equipment."]
-			dependencies: ["65605AC13DF2D359"]
 			id: "3F0207FF17AA3496"
+			subtitle: "Contraption 37-1"
 			tasks: [
 				{
+					consume_items: false
 					id: "35656474DD8D488B"
-					type: "item"
-					title: "Copper Can (Molten Iron)"
 					item: {
+						Count: 1
 						id: "tconstruct:copper_can"
-						Count: 1b
 						tag: {
 							fluid: "tconstruct:molten_iron"
 						}
 					}
-					consume_items: false
+					title: "Copper Can (Molten Iron)"
+					type: "item"
 				}
 				{
 					id: "54F707625C099697"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Get Molten"
+			x: 5.0d
+			y: 0.5d
 		}
 		{
-			title: "Get Carbonized"
-			icon: {
-				id: "tconstruct:copper_can"
-				Count: 1b
-				tag: {
-					fluid: "createbigcannons:molten_steel"
-				}
-			}
-			x: 5.0d
-			y: 2.5d
-			subtitle: "Contraption 37-2"
-			description: ["Mixing coke (carbon) with the molten iron creates a stronger alloy, our loved steel."]
 			dependencies: [
 				"3F0207FF17AA3496"
 				"6151B95B338E2283"
 			]
+			description: ["Mixing coke (carbon) with the molten iron creates a stronger alloy, our loved steel."]
+			icon: {
+				Count: 1
+				id: "tconstruct:copper_can"
+				tag: {
+					fluid: "createbigcannons:molten_steel"
+				}
+			}
 			id: "0A75C53447F4FB07"
+			subtitle: "Contraption 37-2"
 			tasks: [
 				{
+					consume_items: false
 					id: "5A21ED46AE34212D"
-					type: "item"
-					title: "Copper Can (Molten Iron)"
 					item: {
+						Count: 1
 						id: "tconstruct:copper_can"
-						Count: 1b
 						tag: {
 							fluid: "createbigcannons:molten_steel"
 						}
 					}
-					consume_items: false
+					title: "Copper Can (Molten Iron)"
+					type: "item"
 				}
 				{
 					id: "0AF1E50D7A90F444"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Get Carbonized"
+			x: 5.0d
+			y: 2.5d
 		}
 		{
-			title: "Stackup"
-			icon: "createbigcannons:built_up_steel_cannon_barrel"
-			x: 3.5d
-			y: 8.0d
-			subtitle: "Contraption 40-1"
-			description: ["Join the 2 layers using a cannon builder to create this final shape."]
 			dependencies: [
 				"01ABB67CC244453B"
 				"45502F7F3F53ACE7"
 			]
+			description: ["Join the 2 layers using a cannon builder to create this final shape."]
+			icon: "createbigcannons:built_up_steel_cannon_barrel"
 			id: "37BABDCE5BDA46D4"
+			subtitle: "Contraption 40-1"
 			tasks: [
 				{
 					id: "36048DE35C2E17CC"
-					type: "item"
 					item: "createbigcannons:built_up_steel_cannon_barrel"
+					type: "item"
 				}
 				{
 					id: "677D8912367B40FB"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Stackup"
+			x: 3.5d
+			y: 8.0d
 		}
 		{
-			icon: "kubejs:steel_ring"
-			x: 2.0d
-			y: 10.0d
-			subtitle: "Contraption 40-2"
-			description: ["It takes a very long time for each chamber, but for each chamber you can gather 48 rings, and assemble 48 mechanisms, or 6 machines."]
 			dependencies: ["37BABDCE5BDA46D4"]
+			description: ["It takes a very long time for each chamber, but for each chamber you can gather 48 rings, and assemble 48 mechanisms, or 6 machines."]
+			icon: "kubejs:steel_ring"
 			id: "6369DB891302D710"
+			subtitle: "Contraption 40-2"
 			tasks: [
 				{
 					id: "085F416C9C7F07DD"
-					type: "item"
 					item: "kubejs:steel_ring"
+					type: "item"
 				}
 				{
 					id: "734B82EAA8DD3750"
 					type: "checkmark"
 				}
 			]
+			x: 2.0d
+			y: 10.0d
 		}
 		{
-			title: "Smol Layer"
-			icon: "createbigcannons:very_small_steel_cannon_layer"
-			x: 3.0d
-			y: 6.5d
-			subtitle: "Contraption 38-2"
-			description: ["May alternatively be used as a pot."]
 			dependencies: ["4DF6E9A11BAF8D05"]
+			description: ["May alternatively be used as a pot."]
+			icon: "createbigcannons:very_small_steel_cannon_layer"
 			id: "45502F7F3F53ACE7"
+			subtitle: "Contraption 38-2"
 			tasks: [
 				{
 					id: "1D5BDF361E0CB7C2"
-					type: "item"
 					item: "createbigcannons:very_small_steel_cannon_layer"
+					type: "item"
 				}
 				{
 					id: "0E2CA63EE943A234"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Smol Layer"
+			x: 3.0d
+			y: 6.5d
 		}
 		{
-			title: "Medium Layer"
-			icon: "createbigcannons:small_steel_cannon_layer"
-			x: 4.0d
-			y: 6.5d
-			subtitle: "Contraption 39-2"
-			description: ["It's no longer boring, the drill already passed through here."]
 			dependencies: ["4FF3C7B52A12788B"]
+			description: ["It's no longer boring, the drill already passed through here."]
+			icon: "createbigcannons:small_steel_cannon_layer"
 			id: "01ABB67CC244453B"
+			subtitle: "Contraption 39-2"
 			tasks: [
 				{
 					id: "602E340073190864"
-					type: "item"
 					item: "createbigcannons:small_steel_cannon_layer"
+					type: "item"
 				}
 				{
 					id: "7D8746C939580B1C"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Medium Layer"
+			x: 4.0d
+			y: 6.5d
 		}
 		{
-			title: "Small Cast"
-			icon: "createbigcannons:unbored_very_small_steel_cannon_layer"
-			x: 3.0d
-			y: 5.0d
-			subtitle: "Contraption 38-1"
-			description: ["Despite having the longest name of the three, this is the smallest cast."]
 			dependencies: [
 				"514EC4ADAD6F5535"
 				"0A75C53447F4FB07"
 				"4C7826C8A5521396"
 			]
+			description: ["Despite having the longest name of the three, this is the smallest cast."]
+			icon: "createbigcannons:unbored_very_small_steel_cannon_layer"
 			id: "4DF6E9A11BAF8D05"
+			subtitle: "Contraption 38-1"
 			tasks: [
 				{
 					id: "7CB88433B3CDA654"
-					type: "item"
 					item: "createbigcannons:unbored_very_small_steel_cannon_layer"
+					type: "item"
 				}
 				{
 					id: "45C4D845C9E689EA"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Small Cast"
+			x: 3.0d
+			y: 5.0d
 		}
 		{
-			title: "Medium Cast"
-			icon: "createbigcannons:unbored_small_steel_cannon_layer"
-			x: 4.0d
-			y: 5.0d
-			subtitle: "Contraption 39-1"
-			description: ["Not the longest name, not the biggest nor smallest, (warning: pun) this is the most boring of them."]
 			dependencies: [
 				"514EC4ADAD6F5535"
 				"0A75C53447F4FB07"
 				"4C7826C8A5521396"
 			]
+			description: ["Not the longest name, not the biggest nor smallest, (warning: pun) this is the most boring of them."]
+			icon: "createbigcannons:unbored_small_steel_cannon_layer"
 			id: "4FF3C7B52A12788B"
+			subtitle: "Contraption 39-1"
 			tasks: [
 				{
 					id: "6C4AEA5459176209"
-					type: "item"
 					item: "createbigcannons:unbored_small_steel_cannon_layer"
+					type: "item"
 				}
 				{
 					id: "21E0492549AA9F57"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Medium Cast"
+			x: 4.0d
+			y: 5.0d
 		}
 		{
-			title: "Big Casts"
-			icon: "createbigcannons:casting_sand"
-			x: 3.5d
-			y: 0.5d
-			subtitle: "Contraption 36"
-			description: [
-				"You'll not be dealing with small tool casts now, instead the creation of large multiblock casts will be needed."
-				""
-				"Therefore, mix clay, dirt and sand to create a resistant material for large casts."
-			]
 			dependencies: [
 				"742453FA9D86B6F2"
 				"0AE25FD59251DB33"
 				"3D260BA8C18832B2"
 			]
+			description: [
+				"You'll not be dealing with small tool casts now, instead the creation of large multiblock casts will be needed."
+				""
+				"Therefore, mix clay, dirt and sand to create a resistant material for large casts."
+			]
+			icon: "createbigcannons:casting_sand"
 			id: "514EC4ADAD6F5535"
+			subtitle: "Contraption 36"
 			tasks: [
 				{
 					id: "0E24980E1677DEB6"
-					type: "item"
 					item: "createbigcannons:casting_sand"
+					type: "item"
 				}
 				{
 					id: "09074713C1D9AD7C"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Big Casts"
+			x: 3.5d
+			y: 0.5d
 		}
 		{
-			title: "Dirty Mix"
-			icon: "minecraft:dirt"
-			x: -1.5d
-			y: 0.5d
-			subtitle: "Contraption 34-1"
-			description: ["Mix water, gravel, sand and clay into classic but synthetic dirt."]
 			dependencies: [
 				"0AE25FD59251DB33"
 				"517FDD9283D653D1"
 				"218397419487B197"
 				"3D260BA8C18832B2"
 			]
+			description: ["Mix water, gravel, sand and clay into classic but synthetic dirt."]
+			icon: "minecraft:dirt"
 			id: "742453FA9D86B6F2"
+			subtitle: "Contraption 34-1"
 			tasks: [
 				{
 					id: "33916BFAA5B9631F"
-					type: "item"
 					item: "minecraft:dirt"
+					type: "item"
 				}
 				{
 					id: "3039BAF329C34F8B"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Dirty Mix"
+			x: -1.5d
+			y: 0.5d
 		}
 		{
-			title: "Double Pyrolisis"
-			icon: "thermal:coal_coke"
-			x: 1.5d
-			y: 2.5d
-			subtitle: "Contraption 35-3"
-			description: ["Clearer carbon piece can now be used in steel."]
 			dependencies: ["4C99F5F60ABE2DFD"]
+			description: ["Clearer carbon piece can now be used in steel."]
+			icon: "thermal:coal_coke"
 			id: "6151B95B338E2283"
+			subtitle: "Contraption 35-3"
 			tasks: [
 				{
 					id: "2CAC5C8DBAF4A198"
-					type: "item"
 					item: "thermal:coal_coke"
+					type: "item"
 				}
 				{
 					id: "56326428778A9417"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Double Pyrolisis"
+			x: 1.5d
+			y: 2.5d
 		}
 		{
-			x: -1.5d
-			y: 3.0d
-			subtitle: "Contraption 34-2"
-			description: ["Niter, also known as saltpeter or potassium nitrate, can be unrealistically taken from dirt and make most of the gunpowder."]
 			dependencies: ["742453FA9D86B6F2"]
+			description: ["Niter, also known as saltpeter or potassium nitrate, can be unrealistically taken from dirt and make most of the gunpowder."]
 			id: "7B86CDFAEE2EAD0D"
+			subtitle: "Contraption 34-2"
 			tasks: [{
 				id: "5659ACE410EC99BD"
+				item: "tfmg:nitrate_dust"
 				type: "item"
-				item: "createindustry:nitrate_dust"
 			}]
+			x: -1.5d
+			y: 3.0d
 		}
 		{
-			title: "Clayfication"
-			icon: "minecraft:clay_ball"
-			x: 1.5d
-			y: -0.5d
-			subtitle: "Contraption 33-5"
-			description: ["Wash sand another time."]
 			dependencies: ["3D260BA8C18832B2"]
+			description: ["Wash sand another time."]
+			icon: "minecraft:clay_ball"
 			id: "0AE25FD59251DB33"
+			subtitle: "Contraption 33-5"
 			tasks: [
 				{
 					id: "6636E2DE0FD26838"
-					type: "item"
 					item: "minecraft:clay_ball"
+					type: "item"
 				}
 				{
 					id: "314D115A3CB6F026"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Clayfication"
+			x: 1.5d
+			y: -0.5d
 		}
 		{
-			title: "Walter"
-			icon: "minecraft:water_bucket"
-			x: -3.0d
-			y: 0.5d
+			dependencies: ["278B95FF7159DCFC"]
 			description: ["Walter, simply superior."]
 			hide_dependency_lines: true
-			dependencies: ["278B95FF7159DCFC"]
+			icon: "minecraft:water_bucket"
 			id: "517FDD9283D653D1"
 			tasks: [
 				{
 					id: "1F27421D3ECCF9B9"
-					type: "item"
 					item: "minecraft:water_bucket"
+					type: "item"
 				}
 				{
 					id: "7350075135849ADB"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Walter"
+			x: -3.0d
+			y: 0.5d
 		}
 		{
-			title: "Snad"
-			icon: "minecraft:sand"
-			x: 1.5d
-			y: -1.5d
-			subtitle: "Contraption 33-4"
-			description: ["Crush the gravel into fine sand, again, I don't have anything more to say, just crush it."]
 			dependencies: ["218397419487B197"]
+			description: ["Crush the gravel into fine sand, again, I don't have anything more to say, just crush it."]
+			icon: "minecraft:sand"
 			id: "3D260BA8C18832B2"
+			subtitle: "Contraption 33-4"
 			tasks: [
 				{
 					id: "08A15F110818C77B"
-					type: "item"
 					item: "minecraft:sand"
+					type: "item"
 				}
 				{
 					id: "058C89E6803A875F"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Snad"
+			x: 1.5d
+			y: -1.5d
 		}
 		{
-			title: "Gas "
-			icon: "createindustry:gasoline_bucket"
-			x: -2.0d
-			y: 10.0d
-			subtitle: "Contraption 42-2"
+			dependencies: ["4AC20A13D7706FA8"]
 			description: [
 				"Gasoline sits in the middle of the distilation outputs."
 				""
 				"It can also be used by smaller engines for rotational power."
 			]
-			dependencies: ["4AC20A13D7706FA8"]
+			icon: "tfmg:gasoline_bucket"
 			id: "3BA0BFC354BA4785"
+			subtitle: "Contraption 42-2"
 			tasks: [
 				{
 					id: "0A7680DD957B772C"
+					item: "tfmg:gasoline_bucket"
 					type: "item"
-					item: "createindustry:gasoline_bucket"
 				}
 				{
 					id: "3586B652B6F771EA"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Gas "
+			x: -2.0d
+			y: 10.0d
 		}
 		{
-			title: "Diesel"
-			icon: "createindustry:diesel_bucket"
-			x: -1.0d
-			y: 9.5d
-			subtitle: "Contraption 42-3"
-			description: ["Diesel comes in the lower half of the primary distilation outputs, and as a byproduct of heavy oil distilling."]
 			dependencies: ["4AC20A13D7706FA8"]
+			description: ["Diesel comes in the lower half of the primary distilation outputs, and as a byproduct of heavy oil distilling."]
+			icon: "tfmg:diesel_bucket"
 			id: "460B7037B1081997"
+			subtitle: "Contraption 42-3"
 			tasks: [
 				{
 					id: "2BD1D04CF2B31F94"
+					item: "tfmg:diesel_bucket"
 					type: "item"
-					item: "createindustry:diesel_bucket"
 				}
 				{
 					id: "6BA1BFB5D5B41D50"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Diesel"
+			x: -1.0d
+			y: 9.5d
 		}
 		{
-			icon: "createindustry:heavy_oil_bucket"
-			x: -2.0d
-			y: 5.5d
-			subtitle: "Contraption 42-1"
 			dependencies: ["4AC20A13D7706FA8"]
+			icon: "tfmg:heavy_oil_bucket"
 			id: "7933C0A5002337CD"
+			subtitle: "Contraption 42-1"
 			tasks: [
 				{
 					id: "158FB3753C758956"
+					item: "tfmg:heavy_oil_bucket"
 					type: "item"
-					item: "createindustry:heavy_oil_bucket"
 				}
 				{
 					id: "7A3B8C71A2165FB2"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -2.0d
+			y: 5.5d
 		}
 		{
-			icon: "thermal:sulfur_dust"
-			x: -1.0d
-			y: 6.0d
-			subtitle: "Contraption 43-1"
-			description: ["Another byproduct of the heavy oil distilling, can be used in an explosive compound, aka gunpowder."]
 			dependencies: ["7933C0A5002337CD"]
+			description: ["Another byproduct of the heavy oil distilling, can be used in an explosive compound, aka gunpowder."]
+			icon: "thermal:sulfur_dust"
 			id: "4B2B136BAA03CD1B"
+			subtitle: "Contraption 43-1"
 			tasks: [
 				{
 					id: "51E6B64C9C8959F7"
-					type: "item"
 					item: "thermal:sulfur_dust"
+					type: "item"
 				}
 				{
 					id: "18F910A2111F7E00"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -1.0d
+			y: 6.0d
 		}
 		{
-			title: "De-Salting"
-			icon: "kubejs:desalted_oil_bucket"
-			x: -2.5d
-			y: 7.5d
-			subtitle: "Contraption 41-3"
-			description: ["Electrolyze the petroleum brine to obtain fully desalted petroleum, ready to be distilled in a fracking tower."]
 			dependencies: ["4E9AD52EAC4D6B27"]
+			description: ["Electrolyze the petroleum brine to obtain fully desalted petroleum, ready to be distilled in a fracking tower."]
+			icon: "kubejs:desalted_oil_bucket"
 			id: "4AC20A13D7706FA8"
+			subtitle: "Contraption 41-3"
 			tasks: [
 				{
 					id: "2ED78FB4DD158F39"
-					type: "item"
 					item: "kubejs:desalted_oil_bucket"
+					type: "item"
 				}
 				{
 					id: "038CA6D906AB59F0"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "De-Salting"
+			x: -2.5d
+			y: 7.5d
 		}
 		{
-			title: "Cannon Casting 101"
-			icon: "createdeco:orange_decal"
-			x: 5.5d
-			y: 4.5d
-			description: ["Cannon casting is not as simple as it may seem from this quest, ponder the machinery for more information."]
 			dependencies: [
 				"3E5A74BBDE39E0FC"
 				"084D5FBCD0FAA13C"
 				"5FF26A886FF04526"
 			]
+			description: ["Cannon casting is not as simple as it may seem from this quest, ponder the machinery for more information."]
+			icon: "createdeco:orange_decal"
 			id: "4C7826C8A5521396"
-			tasks: [{
-				id: "152B357113DEACEC"
-				type: "checkmark"
-				title: "Acknowleged"
-			}]
 			rewards: [
 				{
-					id: "02459A01D9DB69CE"
-					type: "command"
-					title: "Casting"
-					icon: "createbigcannons:casting_sand"
 					command: "/c ponder createbigcannons:casting_sand"
-					player_command: true
+					icon: "createbigcannons:casting_sand"
+					id: "02459A01D9DB69CE"
+					title: "Casting"
+					type: "command"
 				}
 				{
-					id: "225A9245A615D133"
-					type: "command"
-					title: "Boring"
-					icon: "createbigcannons:cannon_drill"
 					command: "/c ponder createbigcannons:cannon_drill"
-					player_command: true
+					icon: "createbigcannons:cannon_drill"
+					id: "225A9245A615D133"
+					title: "Boring"
+					type: "command"
 				}
 				{
-					id: "07EA77A3BD114045"
-					type: "command"
-					title: "Stacking Layers"
-					icon: "createbigcannons:cannon_builder"
 					command: "/c ponder createbigcannons:cannon_builder"
-					player_command: true
-				}
-				{
-					id: "09AEC20E6DF83DD8"
+					icon: "createbigcannons:cannon_builder"
+					id: "07EA77A3BD114045"
+					title: "Stacking Layers"
 					type: "command"
-					title: "Melting Metals"
-					icon: "createbigcannons:basin_foundry_lid"
+				}
+				{
 					command: "/c ponder createbigcannons:basin_foundry_lid"
-					player_command: true
+					icon: "createbigcannons:basin_foundry_lid"
+					id: "09AEC20E6DF83DD8"
+					title: "Melting Metals"
+					type: "command"
 				}
 				{
+					count: 3
 					id: "5F63E6274691C977"
-					type: "item"
 					item: "createbigcannons:very_small_cast_mould"
-					count: 3
+					type: "item"
 				}
 				{
+					count: 3
 					id: "26D05AEE1AEE1ECB"
-					type: "item"
 					item: "createbigcannons:small_cast_mould"
-					count: 3
+					type: "item"
 				}
 				{
-					id: "21FBF4F0B0C7EBEE"
-					type: "item"
-					item: "createbigcannons:medium_cast_mould"
 					count: 3
+					id: "21FBF4F0B0C7EBEE"
+					item: "createbigcannons:medium_cast_mould"
+					type: "item"
 				}
 			]
+			tasks: [{
+				id: "152B357113DEACEC"
+				title: "Acknowleged"
+				type: "checkmark"
+			}]
+			title: "Cannon Casting 101"
+			x: 5.5d
+			y: 4.5d
 		}
 		{
-			x: 7.0d
-			y: 3.5d
-			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
+			hide_dependency_lines: true
 			id: "084D5FBCD0FAA13C"
 			tasks: [{
-				id: "4D9F531A7FF98562"
-				type: "item"
-				item: "createbigcannons:cannon_builder"
 				consume_items: false
+				id: "4D9F531A7FF98562"
+				item: "createbigcannons:cannon_builder"
+				type: "item"
 			}]
+			x: 7.0d
+			y: 3.5d
 		}
 		{
-			x: 7.0d
-			y: 4.5d
-			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
+			hide_dependency_lines: true
 			id: "5FF26A886FF04526"
 			tasks: [{
-				id: "385F56F96D9F2645"
-				type: "item"
-				item: "createbigcannons:cannon_drill"
 				consume_items: false
+				id: "385F56F96D9F2645"
+				item: "createbigcannons:cannon_drill"
+				type: "item"
 			}]
+			x: 7.0d
+			y: 4.5d
 		}
 		{
-			x: 7.0d
-			y: 5.5d
-			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
+			hide_dependency_lines: true
 			id: "3E5A74BBDE39E0FC"
 			tasks: [{
 				id: "12627A9994C2F360"
-				type: "item"
 				item: "createbigcannons:basin_foundry_lid"
+				type: "item"
 			}]
+			x: 7.0d
+			y: 5.5d
 		}
 		{
-			title: "Oil Company 101"
-			icon: "createdeco:orange_decal"
-			x: -3.5d
-			y: 3.5d
-			description: ["Ponder every item to learn how to start off building your own oil extraction and processing complex."]
 			dependencies: [
 				"38D3FEF4C99B1ABB"
 				"0CFE8B23F35DEA3D"
 			]
+			icon: "createdeco:decal_fluid"
 			id: "021C30C187E9A97E"
-			tasks: [{
-				id: "006F970A1DBA0BE3"
-				type: "checkmark"
-				title: "Acknowleged"
-			}]
 			rewards: [{
 				id: "1CC48D026D97643C"
 				type: "xp"
 				xp: 100
 			}]
+			tasks: [{
+				id: "006F970A1DBA0BE3"
+				title: "Acknowleged"
+				type: "checkmark"
+			}]
+			title: "Oil Company 101"
+			x: -3.5d
+			y: 3.5d
 		}
 		{
-			title: "Pumpjack"
-			icon: "gearbox:pumpjack_arm"
-			x: -3.5d
-			y: 2.0d
-			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
+			hide_dependency_lines: true
+			icon: "gearbox:pumpjack_arm"
 			id: "0CFE8B23F35DEA3D"
 			tasks: [
 				{
 					id: "795CF4E3458495FD"
-					type: "item"
 					item: "gearbox:pumpjack_crank"
+					type: "item"
 				}
 				{
 					id: "6DE515661E1DFD83"
-					type: "item"
 					item: "gearbox:pumpjack_arm"
+					type: "item"
 				}
 				{
 					id: "15A8D9D5037C613A"
-					type: "item"
 					item: "gearbox:pumpjack_well"
+					type: "item"
 				}
 				{
 					id: "18B7455BE8A616BD"
-					type: "item"
 					item: "create:fluid_pipe"
+					type: "item"
 				}
 			]
+			title: "Pumpjack"
+			x: -3.5d
+			y: 2.0d
 		}
 		{
-			title: "Fracking Towers"
-			x: -5.0d
-			y: 3.5d
-			hide_dependency_lines: true
 			dependencies: ["278B95FF7159DCFC"]
+			hide_dependency_lines: true
 			id: "38D3FEF4C99B1ABB"
 			tasks: [
 				{
 					id: "62558AF18EB266A5"
+					item: "tfmg:steel_fluid_tank"
 					type: "item"
-					item: "createindustry:steel_fluid_tank"
 				}
 				{
 					id: "6984B75B06F74F79"
+					item: "tfmg:steel_distillation_output"
 					type: "item"
-					item: "createindustry:steel_distillation_output"
 				}
 				{
 					id: "458B80065DCFDF5A"
+					item: "tfmg:steel_distillation_controller"
 					type: "item"
-					item: "createindustry:steel_distillation_controller"
 				}
 				{
 					id: "1345CA892656D8F7"
+					item: "tfmg:industrial_pipe"
 					type: "item"
-					item: "createindustry:industrial_pipe"
 				}
 			]
+			title: "Fracking Towers"
+			x: -5.0d
+			y: 3.5d
 		}
 		{
-			title: "Brining"
-			icon: "kubejs:desalted_oil_bucket"
-			x: -3.5d
-			y: 6.5d
-			subtitle: "Contraption 41-2"
-			description: ["Right after extraction, mix the petroleum with water for de-salting."]
 			dependencies: ["040471504911D80C"]
+			description: ["Right after extraction, mix the petroleum with water for de-salting."]
+			icon: "kubejs:desalted_oil_bucket"
 			id: "4E9AD52EAC4D6B27"
+			subtitle: "Contraption 41-2"
 			tasks: [
 				{
 					id: "64F0610FBB97C54B"
-					type: "item"
 					item: "kubejs:oil_brine_bucket"
+					type: "item"
 				}
 				{
 					id: "0003C3FAC1F1F3FF"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Brining"
+			x: -3.5d
+			y: 6.5d
 		}
 		{
-			title: "Pumpjacking"
-			icon: "gearbox:petroleum_bucket"
-			x: -3.5d
-			y: 5.0d
-			subtitle: "Contraption 41-1"
-			description: ["Assemble and power a pumpjack in the right biome to start extracting the black gold."]
 			dependencies: ["021C30C187E9A97E"]
+			description: ["Assemble and power a pumpjack in the right biome to start extracting the black gold."]
+			icon: "gearbox:petroleum_bucket"
 			id: "040471504911D80C"
+			subtitle: "Contraption 41-1"
 			tasks: [
 				{
 					id: "16B43B7CD0260CF7"
-					type: "item"
 					item: "gearbox:petroleum_bucket"
+					type: "item"
 				}
 				{
 					id: "0C309E1C7A47C9B8"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Pumpjacking"
+			x: -3.5d
+			y: 5.0d
 		}
 	]
-	quest_links: [ ]
+	title: "&f3&r Astounding Explosions"
 }

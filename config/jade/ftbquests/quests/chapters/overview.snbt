@@ -213,7 +213,7 @@
 		}
 		{
 			title: "..to a Spacefarer"
-			icon: "beyond_earth:glacio_globe"
+			icon: "ad_astra:glacio_globe"
 			x: 13.0d
 			y: 0.0d
 			shape: "hexagon"
@@ -231,7 +231,7 @@
 			tasks: [{
 				id: "68543E92A6B517DC"
 				type: "item"
-				item: "beyond_earth:moon_sand"
+				item: "ad_astra:moon_sand"
 				consume_items: false
 			}]
 		}
@@ -499,7 +499,7 @@
 		}
 		{
 			title: "Rocketry by Eye"
-			icon: "beyond_earth:steel_engine"
+			icon: "ad_astra:steel_engine"
 			x: -0.5d
 			y: 0.0d
 			subtitle: "Chapter 3A"
@@ -513,7 +513,7 @@
 		}
 		{
 			title: "To the Moon!"
-			icon: "beyond_earth:moon_globe"
+			icon: "ad_astra:moon_globe"
 			x: 1.5d
 			y: 0.0d
 			shape: "hexagon"
@@ -526,8 +526,8 @@
 				id: "52827346577F7B48"
 				type: "dimension"
 				title: "Visit the moon"
-				icon: "beyond_earth:moon_sand"
-				dimension: "beyond_earth:moon"
+				icon: "ad_astra:moon_sand"
+				dimension: "ad_astra:moon"
 			}]
 			rewards: [{
 				id: "04ABE73CD8CED4C1"

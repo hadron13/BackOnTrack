@@ -1,21 +1,21 @@
 // priority: 0
 
-onEvent('item.registry', event => {
+StartupEvents.registry('item', event => {
 
 	event.create('purified_certus_quartz_crystal').texture("kubejs:item/purified_certus_quartz_crystal").displayName("Pure Certus Quartz Crystal")
 	event.create('purified_fluix_crystal').texture("kubejs:item/purified_fluix_crystal").displayName("Pure Fluix Crystal")
 
 	event.create('rose_quartz_seed').texture("kubejs:item/rose_quartz_seed_0").displayName("Rose Quartz Seed")
 
-	let types = [/*'Nether',*/ 'Certus', 'Fluix']
-	types.forEach(e => {
-		let id = e.toLowerCase()
-		event.create('growing_' + id + '_seed', 'create:sequenced_assembly').texture("ae2:item/crystal_seed_" + id).displayName(e + ' Quartz Seed')
-		event.create('tiny_' + id + '_crystal').texture("ae2:item/crystal_seed_" + id + "2").displayName('Tiny ' + e + ' Quartz Crystal')
-		event.create('growing_tiny_' + id + '_crystal', 'create:sequenced_assembly').texture("ae2:item/crystal_seed_" + id + "2").displayName('Tiny ' + e + ' Quartz Crystal')
-		event.create('small_' + id + '_crystal').texture("ae2:item/crystal_seed_" + id + "3").displayName('Small ' + e + ' Quartz Crystal')		
-		event.create('growing_small_' + id + '_crystal', 'create:sequenced_assembly').texture("ae2:item/crystal_seed_" + id + "3").displayName('Small ' + e + ' Quartz Crystal')
-	});
+	// let types = [/*'Nether',*/ /*'Certus',*/ 'Fluix']
+	// types.forEach(e => {
+	// 	let id = e.toLowerCase()
+	// 	event.create('growing_' + id + '_seed', 'create:sequenced_assembly').texture("ae2:item/crystal_seed_" + id).displayName(e + ' Quartz Seed')
+	// 	event.create('tiny_' + id + '_crystal').texture("ae2:item/crystal_seed_" + id + "2").displayName('Tiny ' + e + ' Quartz Crystal')
+	// 	event.create('growing_tiny_' + id + '_crystal', 'create:sequenced_assembly').texture("ae2:item/crystal_seed_" + id + "2").displayName('Tiny ' + e + ' Quartz Crystal')
+	// 	event.create('small_' + id + '_crystal').texture("ae2:item/crystal_seed_" + id + "3").displayName('Small ' + e + ' Quartz Crystal')		
+	// 	event.create('growing_small_' + id + '_crystal', 'create:sequenced_assembly').texture("ae2:item/crystal_seed_" + id + "3").displayName('Small ' + e + ' Quartz Crystal')
+	// });
 
 	event.create('growing_rose_seed', 'create:sequenced_assembly')			.texture("kubejs:item/rose_quartz_seed_0").displayName('Rose Quartz Seed')
 	event.create('tiny_rose_crystal')										.texture("kubejs:item/rose_quartz_seed_1").displayName('Tiny Rose Quartz')
@@ -35,7 +35,7 @@ onEvent('item.registry', event => {
 		event.create('incomplete_' + e + '_processor', 'create:sequenced_assembly').texture('kubejs:item/incomplete_' + e + '_processor').displayName('Incomplete ' + name + ' Processor')
 	})
 
-	event.create('sodium_powder').texture("kubejs:item/sodium_powder").displayName('Sodium Powder').rarity(RARITY_EPIC).food(food => {
+	event.create('sodium_powder').texture("kubejs:item/sodium_powder").displayName('Sodium Powder').food(food => {
 		food
 		.hunger(10)
 		.saturation(10)
@@ -45,20 +45,20 @@ onEvent('item.registry', event => {
 		})
 	})
 
-	let mechanism = (name, rarity) => {
+	let mechanism = (name) => {
 		let id = name.toLowerCase().replace(' ', '_')
-		event.create(id + '_mechanism').texture("kubejs:item/" + id + "_mechanism").displayName(name + ' Mechanism').rarity(rarity ? rarity : RARITY_COMMON)
+		event.create(id + '_mechanism').texture("kubejs:item/" + id + "_mechanism").displayName(name + ' Mechanism')
 		event.create('incomplete_' + id + '_mechanism', 'create:sequenced_assembly').texture("kubejs:item/incomplete_" + id + "_mechanism").displayName('Incomplete ' + name + ' Mechanism')
 	}
 
 	mechanism('Rotation')
 	mechanism('Pressure')
 	mechanism('Train')
-	mechanism('Scorch', RARITY_UNCOMMON)
-	mechanism('Explosive', RARITY_UNCOMMON)
-	mechanism('Power', RARITY_UNCOMMON)
-	mechanism('Ender', RARITY_UNCOMMON)
-	mechanism('High Power', RARITY_UNCOMMON)
+	mechanism('Scorch')
+	mechanism('Explosive')
+	mechanism('Power')
+	mechanism('Ender')
+	mechanism('High Power')
 
     //event.create('ender_mechanism').texture("kubejs:item/ender_mechanism").displayName('Ender Mechanism').rarity(RARITY_UNCOMMON)
 	//event.create('incomplete_ender_mechanism', 'create:sequenced_assembly').texture("kubejs:item/incomplete_ender_mechanism").displayName('Incomplete Ender Mechanism')
@@ -66,7 +66,7 @@ onEvent('item.registry', event => {
 	//event.create('invar_mechanism').texture("kubejs:item/invar_mechanism").displayName('invar Mechanism').rarity(RARITY_UNCOMMON)
 	//event.create('incomplete_invar_mechanism', 'create:sequenced_assembly').texture("kubejs:item/incomplete_invar_mechanism").displayName('Incomplete Invar Mechanism')
 
-	event.create('candy_mechanism').texture("kubejs:item/chocolate_bomb").displayName('Chocolate Bomb').rarity(RARITY_EPIC).food(food => {
+	event.create('candy_mechanism').texture("kubejs:item/chocolate_bomb").displayName('Chocolate Bomb').food(food => {
 		food
 		.hunger(17)
 		.saturation(2)
@@ -131,6 +131,8 @@ onEvent('item.registry', event => {
 	event.create('soaked_sheet').texture("kubejs:item/soaked_sheet").displayName('Soaked Copper Sheet')
 	event.create('rough_sheet').texture("kubejs:item/rough_sheet").displayName('Rough Copper Sheet')
 
+	event.create('rotation_template').texture("kubejs:item/brass_template").displayName('Rotation Template')
+
 	event.create('resistor').texture("kubejs:item/resistor").displayName('Resistor')
 	event.create('inductor').texture("kubejs:item/inductor").displayName('Induction Coil')
 	event.create('ceramic_capacitor').texture("kubejs:item/capacitor_ceramic").displayName('Ceramic Capacitor')
@@ -169,7 +171,7 @@ onEvent('item.registry', event => {
 	event.create('tungstem_sword_tuned', 'sword').tier('netherite').attackDamageBaseline(50.0).speedBaseline(10).displayName('Titamium Sword').unstackable()
 
 	// event.create('alchemical_laser').parentModel("kubejs:block/ponder_laser_lamp_on").displayName('Alchemical Laser (Ponder Entry)').unstackable()
-	event.create('thermal_cast').texture("kubejs:item/thermal_cast").displayName('Thermal Cast').unstackable()
+	//event.create('thermal_cast').texture("kubejs:item/thermal_cast").displayName('Thermal Cast').unstackable()
 
 
 	let atom = (name, color) => {
@@ -199,18 +201,22 @@ onEvent('item.registry', event => {
 	// 	.color(1, "#FFFFFF");
 
 
-	event.create('thing').texture("kubejs:images/thing")
+	// event.create('thing').texture("kubejs:images/thing")
 	
 	event.create('incomplete_rotation_machine', 'create:sequenced_assembly').parentModel("kubejs:block/incomplete_andesite_machine").displayName('Incomplete Rotation Machine')
 
 })
 
-onEvent('block.registry', event => {
+StartupEvents.registry('block', event => {
 	event.create('enderium_casing').model('kubejs:block/enderium_casing').material('metal').hardness(4.0).displayName('Ender Casing')
 	event.create('zinc_casing').material('metal').hardness(3.0).displayName('Zinc Casing')
 	event.create('invar_casing').material('metal').hardness(3.0).displayName('Invar Casing')
 	event.create('fluix_casing').material('metal').hardness(3.0).displayName('Fluix Casing')
 	event.create('mica_block').material('metal').hardness(3.0).displayName('Mica Block')
+
+	event.create('ae2:3x_sky_stone_block').model('kubejs:block/sky_stone_block').material('metal').hardness(4.0).displayName('sky stone block 3x')
+	event.create('ae2:2x_sky_stone_block').model('kubejs:block/sky_stone_block').material('metal').hardness(4.0).displayName('sky stone block 2x')
+	event.create('ae2:1x_sky_stone_block').model('kubejs:block/sky_stone_block').material('metal').hardness(4.0).displayName('sky stone block 1x')
 
 	let machine = (name, display, layer) => {
 		let id = name.toLowerCase()
@@ -235,7 +241,7 @@ onEvent('block.registry', event => {
 
 })
 
-onEvent('fluid.registry', event => {
+StartupEvents.registry('fluid', event => {
 
     event.create('oil_brine')
 			.thickTexture(0x506677)
@@ -267,7 +273,7 @@ onEvent('fluid.registry', event => {
             .thinTexture('ede06f')
             .bucketColor('ede06f')
             .displayName('Sulfuric Naphta')
- 
+
     event.create('sulfuric_gas')
             .thinTexture('f9f5ca')
             .displayName('Sulfuric Gas')
@@ -357,8 +363,8 @@ onEvent('fluid.registry', event => {
 
 })
 
-onEvent('item.modification', event => {
-	event.modify('beyond_earth:hammer', item => {item.maxDamage = 50})
+ItemEvents.modification(event => {
+	event.modify('ad_astra:hammer', item => {item.maxDamage = 50})
 	event.modify('waterstrainer:strainer_survivalist', item => {item.maxDamage = 250})
 	
 	let colors = ["red", "yellow", "green", "blue", "magenta", "black"]
@@ -369,7 +375,7 @@ onEvent('item.modification', event => {
 	});
 
 })
-onEvent('block.modification', event => {
+BlockEvents.modification(event => {
 
 
 })

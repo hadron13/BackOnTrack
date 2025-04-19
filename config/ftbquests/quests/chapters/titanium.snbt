@@ -1,476 +1,458 @@
 {
-	id: "738F783F64B6138D"
-	group: "6F42926B3F0C534A"
-	order_index: 13
-	filename: "titanium"
-	title: "&f5&r Optic Synthesis"
-	icon: "kubejs:titamium_ingot"
-	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
-	images: [
-		{
-			x: 0.5d
-			y: -8.0d
-			width: 2.0d
-			height: 2.0d
-			rotation: 0.0d
-			image: "createdeco:textures/block/palettes/decal/orange_decal.png"
-			hover: [
-				"Work Ahead!"
-				"May include unfinished questing soon to be done."
-			]
-			click: ""
-			dev: false
-			corner: false
-		}
-		{
-			x: 3.0d
-			y: -10.5d
-			width: 12.0d
-			height: 2.0d
-			rotation: 0.0d
-			image: "kubejs:textures/images/chapter5.png"
-			hover: ["chapter 5"]
-			click: ""
-			dev: false
-			corner: false
-		}
-	]
+	default_quest_shape: "diamond"
+	filename: "titanium"
+	group: "6F42926B3F0C534A"
+	icon: "kubejs:titamium_ingot"
+	id: "738F783F64B6138D"
+	images: [{
+		height: 2.0d
+		hover: [
+			"Work Ahead!"
+			"May include unfinished questing soon to be done."
+		]
+		image: "createdeco:textures/block/palettes/decal/orange_decal.png"
+		rotation: 0.0d
+		width: 2.0d
+		x: 0.5d
+		y: -8.0d
+	}]
+	order_index: 13
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Rework"
-			x: 3.0d
-			y: 9.0d
 			dependencies: ["22BF92533EAFDC0C"]
 			id: "7DF7AB0501717B99"
 			tasks: [{
 				id: "2C346A15057F266A"
-				type: "item"
 				item: "kubejs:titamium_ingot"
+				type: "item"
 			}]
+			title: "Rework"
+			x: 3.0d
+			y: 9.0d
 		}
 		{
-			title: "Sinterize"
-			x: 3.0d
-			y: 7.5d
 			dependencies: ["5C706701136292C2"]
 			id: "22BF92533EAFDC0C"
 			tasks: [{
 				id: "60574F52876B8F19"
-				type: "item"
 				item: "kubejs:titanium_blend"
+				type: "item"
 			}]
+			title: "Sinterize"
+			x: 3.0d
+			y: 7.5d
 		}
 		{
-			title: "Pulverize"
-			x: 3.0d
-			y: 6.0d
 			dependencies: ["56F4ADFC8DB86BFA"]
 			id: "5C706701136292C2"
 			tasks: [{
 				id: "547ABDF8A2E7413F"
-				type: "item"
 				item: "kubejs:titanium_dust"
+				type: "item"
 			}]
+			title: "Pulverize"
+			x: 3.0d
+			y: 6.0d
 		}
 		{
-			title: "React"
-			x: 3.0d
-			y: 4.5d
-			description: ["React all the reagents together with a "]
 			dependencies: [
 				"7C969FDB65165999"
 				"09F11E9897E31607"
 				"5087F3AE4B871644"
 			]
+			description: ["React all the reagents together with a "]
 			id: "56F4ADFC8DB86BFA"
 			tasks: [{
 				id: "2B6089F1ACB2D64C"
-				type: "item"
 				item: "kubejs:titanium_sponge"
+				type: "item"
 			}]
+			title: "React"
+			x: 3.0d
+			y: 4.5d
 		}
 		{
-			title: "Recycle"
-			x: 1.5d
-			y: 5.5d
 			dependencies: ["56F4ADFC8DB86BFA"]
 			id: "631619EDBE434506"
 			tasks: [{
 				id: "0D68720DE28EF1E7"
-				type: "item"
 				item: "kubejs:magnesium_chloride"
+				type: "item"
 			}]
+			title: "Recycle"
+			x: 1.5d
+			y: 5.5d
 		}
 		{
-			title: "Inert"
-			icon: "kubejs:tnt5_bucket"
-			x: 4.5d
-			y: 3.5d
-			description: ["In the edge of \"I made it up\" and actual industrial processes."]
 			dependencies: [
 				"418ACEAAA2C8489D"
 				"0B9EB9F3A8FDEF23"
 			]
+			description: ["In the edge of \"I made it up\" and actual industrial processes."]
+			icon: "kubejs:tnt5_bucket"
 			id: "7C969FDB65165999"
 			tasks: [
 				{
 					id: "684209ADA70DA970"
-					type: "item"
 					item: "kubejs:tnt5_bucket"
+					type: "item"
 				}
 				{
 					id: "219681BEB000C930"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Inert"
+			x: 4.5d
+			y: 3.5d
 		}
 		{
-			title: "Scald"
-			icon: "kubejs:tnt2_bucket"
-			x: 3.0d
-			y: 2.5d
 			dependencies: ["18B63EFABE160051"]
+			icon: "kubejs:tnt2_bucket"
 			id: "5087F3AE4B871644"
 			tasks: [
 				{
 					id: "12802251C8DE5DE5"
-					type: "item"
 					item: "kubejs:tnt2_bucket"
+					type: "item"
 				}
 				{
 					id: "3A323185739E9129"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Scald"
+			x: 3.0d
+			y: 2.5d
 		}
 		{
-			title: "Oxidize"
-			x: 1.5d
-			y: 3.5d
-			hide_dependency_lines: true
 			dependencies: ["3F4D1B3C28BF5E14"]
+			hide_dependency_lines: true
 			id: "09F11E9897E31607"
 			tasks: [{
 				id: "149268BFF21F4733"
-				type: "item"
 				item: "kubejs:magnesium_ingot"
+				type: "item"
 			}]
+			title: "Oxidize"
+			x: 1.5d
+			y: 3.5d
 		}
 		{
-			title: "Irradiate"
-			icon: "kubejs:tnt1_bucket"
-			x: 0.5d
-			y: 1.5d
 			dependencies: [
 				"382D9F7BDE7F5F29"
 				"2C5C74C072F1238E"
 				"59D37D0BF8D94515"
 			]
+			icon: "kubejs:tnt1_bucket"
 			id: "18B63EFABE160051"
 			tasks: [
 				{
 					id: "03613D057DA70FAD"
-					type: "item"
 					item: "kubejs:tnt1_bucket"
+					type: "item"
 				}
 				{
 					id: "280565D8BE31D2EA"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Irradiate"
+			x: 0.5d
+			y: 1.5d
 		}
 		{
-			title: "Electrolyze"
-			icon: "gearbox:chlorine_bucket"
-			x: 2.0d
-			y: 0.0d
-			description: ["Electrolyze the brine to obtain chlorine and sodium too."]
 			dependencies: ["0E143ADB2D2F8A87"]
+			description: ["Electrolyze the brine to obtain chlorine and sodium too."]
+			icon: "gearbox:chlorine_bucket"
 			id: "2C5C74C072F1238E"
 			tasks: [
 				{
 					id: "35CD0766B427F699"
-					type: "item"
 					item: "gearbox:chlorine_bucket"
+					type: "item"
 				}
 				{
 					id: "686E6A5A13545BBF"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Electrolyze"
+			x: 2.0d
+			y: 0.0d
 		}
 		{
-			title: "Translate"
-			icon: "kubejs:limenite"
-			x: -1.0d
-			y: 0.0d
-			description: ["Finally, shine a &cred&r laser at geld to obtain &6ilmenite&r, our starting point for &3titamium&r (yes, with M)"]
 			dependencies: ["6E957A7222259ACD"]
+			description: ["Finally, shine a &cred&r laser at geld to obtain &6ilmenite&r, our starting point for &3titamium&r (yes, with M)"]
+			icon: "kubejs:limenite"
 			id: "382D9F7BDE7F5F29"
 			tasks: [
 				{
 					id: "0DE30D3E841F1B3B"
-					type: "item"
 					item: "kubejs:limenite"
+					type: "item"
 				}
 				{
 					id: "29DD41B88DA78ACA"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Translate"
+			x: -1.0d
+			y: 0.0d
 		}
 		{
-			title: "Pyrolize"
-			icon: "thermal:coal_coke"
-			x: 0.5d
-			y: -0.5d
-			description: ["Put work to the oven and make some coke."]
 			dependencies: ["711E78390CD71082"]
+			description: ["Put work to the oven and make some coke."]
+			icon: "thermal:coal_coke"
 			id: "59D37D0BF8D94515"
 			tasks: [
 				{
 					id: "71AA18CC15C643B2"
-					type: "item"
 					item: "thermal:coal_coke"
+					type: "item"
 				}
 				{
 					id: "47514C2AAFA9C3C4"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Pyrolize"
+			x: 0.5d
+			y: -0.5d
 		}
 		{
-			title: "Catalyze"
-			icon: "beyond_earth:desh_ingot"
-			x: 4.5d
-			y: 2.0d
+			dependencies: ["3F4D1B3C28BF5E14"]
 			description: ["Limitless potential of desh shows up again, catalyzing the production of argon."]
 			hide_dependency_lines: true
-			dependencies: ["3F4D1B3C28BF5E14"]
+			icon: "ad_astra:desh_ingot"
 			id: "418ACEAAA2C8489D"
 			tasks: [{
 				id: "61F5A30092C589C5"
+				item: "ad_astra:desh_ingot"
 				type: "item"
-				item: "beyond_earth:desh_ingot"
 			}]
+			title: "Catalyze"
+			x: 4.5d
+			y: 2.0d
 		}
 		{
-			title: "Alkali"
-			icon: "supplementaries:ash"
-			x: 6.0d
-			y: 2.5d
+			dependencies: ["3F4D1B3C28BF5E14"]
 			description: ["Ash? You may ask, however, just assume this works."]
 			hide_dependency_lines: true
-			dependencies: ["3F4D1B3C28BF5E14"]
+			icon: "supplementaries:ash"
 			id: "0B9EB9F3A8FDEF23"
 			tasks: [
 				{
 					id: "36081BAEEAED587A"
-					type: "item"
 					item: "supplementaries:ash"
+					type: "item"
 				}
 				{
 					id: "3FB9705853938183"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Alkali"
+			x: 6.0d
+			y: 2.5d
 		}
 		{
-			title: "Brineing"
-			icon: "kubejs:tnt6_bucket"
-			x: 3.0d
-			y: -1.5d
-			description: ["Mix sand and water to create brine, a salt rich water."]
 			dependencies: [
 				"5B79FEEAEBB4B319"
 				"245E4AF3FE04B6C4"
 			]
+			description: ["Mix sand and water to create brine, a salt rich water."]
+			icon: "kubejs:tnt6_bucket"
 			id: "0E143ADB2D2F8A87"
 			tasks: [
 				{
 					id: "5C9854A4A78BC8DD"
-					type: "item"
 					item: "kubejs:tnt6_bucket"
+					type: "item"
 				}
 				{
 					id: "3BEC577B5B431B67"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Brineing"
+			x: 3.0d
+			y: -1.5d
 		}
 		{
-			title: "Carbonize"
-			icon: "minecraft:charcoal"
-			x: 0.5d
-			y: -3.0d
+			dependencies: ["3F4D1B3C28BF5E14"]
 			description: ["You should have a train for charcoal at this point..."]
 			hide_dependency_lines: true
-			dependencies: ["3F4D1B3C28BF5E14"]
+			icon: "minecraft:charcoal"
 			id: "711E78390CD71082"
 			tasks: [
 				{
 					id: "3523418E2331D7B4"
-					type: "item"
 					item: "minecraft:charcoal"
+					type: "item"
 				}
 				{
 					id: "20E99F58E2319059"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Carbonize"
+			x: 0.5d
+			y: -3.0d
 		}
 		{
-			title: "Tasty Powder"
-			x: 4.0d
-			y: 0.0d
-			description: ["Very good."]
 			dependencies: ["0E143ADB2D2F8A87"]
+			description: ["Very good."]
 			id: "395E1C91CF8C1986"
 			tasks: [{
 				id: "2021CB37C97EA8F6"
-				type: "item"
 				item: "kubejs:sodium_powder"
+				type: "item"
 			}]
+			title: "Tasty Powder"
+			x: 4.0d
+			y: 0.0d
 		}
 		{
-			title: "Transform"
-			icon: "gearbox:geld_ingot"
-			x: -1.0d
-			y: -2.0d
-			description: ["Shining a &bblue&r laser on silver will yield this unique and exotic metal, geld. For some reason, it tastes like metal to be around it..."]
 			dependencies: ["34F1D64A281DC259"]
+			description: ["Shining a &bblue&r laser on silver will yield this unique and exotic metal, geld. For some reason, it tastes like metal to be around it..."]
+			icon: "gearbox:geld_ingot"
 			id: "6E957A7222259ACD"
 			tasks: [
 				{
 					id: "7C00A89C905F79B8"
-					type: "item"
 					item: "gearbox:geld_ingot"
+					type: "item"
 				}
 				{
 					id: "752F3520E5CA3D68"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Transform"
+			x: -1.0d
+			y: -2.0d
 		}
 		{
-			title: "Transmute"
-			icon: "thermal:silver_ingot"
-			x: -1.0d
-			y: -4.0d
-			description: ["Shine a &2green&r laser at gold to obtain silver from the transmution, a material not naturally found in our world, ultimately reversing the chrysopoeia."]
 			dependencies: ["22750FB1C2E653AF"]
+			description: ["Shine a &2green&r laser at gold to obtain silver from the transmution, a material not naturally found in our world, ultimately reversing the chrysopoeia."]
+			icon: "thermal:silver_ingot"
 			id: "34F1D64A281DC259"
 			tasks: [
 				{
 					id: "6A263FFDBF2653D0"
-					type: "item"
 					item: "thermal:silver_ingot"
+					type: "item"
 				}
 				{
 					id: "3095AF90757EA8AA"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Transmute"
+			x: -1.0d
+			y: -4.0d
 		}
 		{
-			title: "Reverse Chrysopoeia"
-			icon: "minecraft:gold_ingot"
-			x: 0.5d
-			y: -5.0d
+			dependencies: ["3F4D1B3C28BF5E14"]
 			description: ["At this point you should be a professional gold digger, now we have to turn the alchemist's dream upside down."]
 			hide_dependency_lines: true
-			dependencies: ["3F4D1B3C28BF5E14"]
+			icon: "minecraft:gold_ingot"
 			id: "22750FB1C2E653AF"
 			tasks: [
 				{
 					id: "1C322203C5B37937"
-					type: "item"
 					item: "minecraft:gold_ingot"
+					type: "item"
 				}
 				{
 					id: "62C0544ADF5E7795"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Reverse Chrysopoeia"
+			x: 0.5d
+			y: -5.0d
 		}
 		{
-			title: "Water"
-			icon: "minecraft:water_bucket"
-			x: 4.0d
-			y: -3.0d
+			dependencies: ["3F4D1B3C28BF5E14"]
 			description: ["Random water source."]
 			hide_dependency_lines: true
-			dependencies: ["3F4D1B3C28BF5E14"]
+			icon: "minecraft:water_bucket"
 			id: "5B79FEEAEBB4B319"
 			tasks: [
 				{
 					id: "28F95EC8E81169F7"
-					type: "item"
 					item: "minecraft:water_bucket"
+					type: "item"
 				}
 				{
 					id: "38B4DC54ED14C013"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Water"
+			x: 4.0d
+			y: -3.0d
 		}
 		{
-			title: "Salty Component"
-			icon: "minecraft:sand"
-			x: 2.0d
-			y: -3.0d
+			dependencies: ["3F4D1B3C28BF5E14"]
 			description: ["There should be salt in the sand."]
 			hide_dependency_lines: true
-			dependencies: ["3F4D1B3C28BF5E14"]
+			icon: "minecraft:sand"
 			id: "245E4AF3FE04B6C4"
 			tasks: [
 				{
 					id: "2CF97B2AD1AE7DAD"
-					type: "item"
 					item: "minecraft:sand"
+					type: "item"
 				}
 				{
 					id: "2777A3203F3676C7"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Salty Component"
+			x: 2.0d
+			y: -3.0d
 		}
 		{
-			title: "Chapter 5 Start!"
-			icon: "kubejs:power_mechanism"
-			x: 3.0d
-			y: -8.0d
-			shape: "diamond"
-			description: ["With the latest shiny new technology, it is now possible to transmute known materials using powerful laser beams! Transmute and irradiate materials to uncover new possibilities."]
 			dependencies: ["20329543D3DB8D7F"]
-			hide: true
-			size: 2.0d
+			description: ["With the latest shiny new technology, it is now possible to transmute known materials using powerful laser beams! Transmute and irradiate materials to uncover new possibilities."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "kubejs:power_mechanism"
 			id: "3F4D1B3C28BF5E14"
+			shape: "diamond"
+			size: 2.0d
 			tasks: [{
 				id: "54A19D5C80F285FD"
-				type: "checkmark"
 				title: "Chapter 3 Start!"
+				type: "checkmark"
 			}]
+			title: "Chapter 5 Start!"
+			x: 3.0d
+			y: -8.0d
 		}
 		{
-			title: "Lasers!"
-			x: 5.0d
-			y: -8.0d
+			dependencies: ["3F4D1B3C28BF5E14"]
 			description: [
 				"The chapter ahead involves working with lasers, here's a few things you should know:"
 				""
@@ -478,28 +460,30 @@
 				"- Lasers are &opowerful&r, stand on front and face death in an instant."
 				"-Lasers have 2 properties: &l&6Power&r and &l&aColor&r. You can change the color of your laser with &cRedstone power&r"
 			]
-			dependencies: ["3F4D1B3C28BF5E14"]
 			id: "6303106D8E0A3ABD"
 			tasks: [{
 				id: "7A2858303DD85059"
-				type: "item"
 				item: "gearbox:laser"
+				type: "item"
 			}]
+			title: "Lasers!"
+			x: 5.0d
+			y: -8.0d
 		}
 		{
-			title: "Transmutation maze"
-			icon: "gearbox:irradiator"
-			x: -2.5d
-			y: 1.5d
-			description: ["This is just the tip of the iceberg of transmutation technology, try exotic recipes and you will be greatly compensated."]
 			dependencies: ["382D9F7BDE7F5F29"]
+			description: ["This is just the tip of the iceberg of transmutation technology, try exotic recipes and you will be greatly compensated."]
+			icon: "gearbox:irradiator"
 			id: "661D4CE5A41F0079"
 			tasks: [{
 				id: "513F5E41CE37A494"
-				type: "checkmark"
 				title: "Aknowleged"
+				type: "checkmark"
 			}]
+			title: "Transmutation maze"
+			x: -2.5d
+			y: 1.5d
 		}
 	]
-	quest_links: [ ]
+	title: "&f5&r Optic Synthesis"
 }

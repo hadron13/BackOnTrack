@@ -489,7 +489,7 @@ function process(level, block, entity, face) {
 
 }
 
-onEvent('block.left_click', event => {
+BlockEvents.leftClicked( event => {
 
     let block = event.getBlock()
     let tags = block.getTags()
@@ -590,8 +590,7 @@ onEvent('block.left_click', event => {
 
 
 })
-
-onEvent('item.pickup', event => {
+ItemEvents.canPickUp( event => {
     let entity = event.getEntity()
     if (event.getItem().id == 'kubejs:missingno') {
         event.getLevel().getBlock(entity.x, entity.y, entity.z)

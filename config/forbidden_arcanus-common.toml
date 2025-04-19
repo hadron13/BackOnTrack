@@ -1,142 +1,4 @@
 
-[world_gen]
-	#Which dimensions ores should spawn in? [example: ["minecraft:overworld"], default empty allows all dimensions]
-	ore_whitelist = []
-	#Which dimensions ores shouldn't spawn in? [example: ["minecraft:overworld"], default empty allows all dimensions]
-	ore_blacklist = []
-	#Which dimensions trees should spawn in? [example: ["minecraft:the_end"], default empty allows all dimensions]
-	tree_whitelist = []
-	#Which dimensions trees shouldn't spawn in? [example: ["minecraft:the_end"], empty allows all dimensions]
-	tree_blacklist = ["minecraft:the_end"]
-	#Which dimensions nipa structures should spawn in? [example: ["minecraft:the_end"], default empty allows all dimensions]
-	nipa_whitelist = []
-	#Which dimensions nipa structures  shouldn't spawn in? [example: ["minecraft:the_end"], empty allows all dimensions]
-	nipa_blacklist = ["minecraft:the_end"]
-
-	[world_gen.arcane_crystal]
-		#Generate Arcane Crystal Ore? [default: true]
-		generate = true
-		#Maximum size of Arcane Crystal Ore veins [default: 6]
-		#Range: 0 ~ 100
-		max_vein_size = 5
-		#Maximum Arcane Crystal Ore veins per chunk [default: 3]
-		#Range: 1 ~ 100
-		count = 3
-		#Minimum height for Arcane Crystal Ore to generate [default: -40]
-		#Range: > -2147483648
-		min_height = -40
-		#Maximum height for Arcane Crystal Ore to generate [default: 14]
-		#Range: > -2147483648
-		max_height = 14
-
-	[world_gen.runestone]
-		#Generate Runestone? [default: true]
-		generate = true
-		#Maximum size of Runestone veins [default: 3]
-		#Range: 0 ~ 100
-		max_vein_size = 3
-		#Maximum Runestone veins per chunk [default: 3]
-		#Range: 1 ~ 100
-		count = 3
-		#Minimum height for the Runestone to generate [default: -64]
-		#Range: > -2147483648
-		min_height = -64
-		#Maximum height for the Runestone to generate [default: 2]
-		#Range: > -2147483648
-		max_height = 2
-
-	[world_gen.darkstone]
-		#Generate Darkstone? [default: true]
-		generate = true
-		#Maximum size of Darkstone veins [default: 20]
-		#Range: 0 ~ 100
-		max_vein_size = 20
-		#Maximum Darkstone veins per chunk [default: 28]
-		#Range: 1 ~ 100
-		count = 28
-		#Minimum height for Darkstone to generate [default: -64]
-		#Range: > -2147483648
-		min_height = -64
-		#Maximum height for Darkstone to generate [default: -51]
-		#Range: > -2147483648
-		max_height = -51
-
-	[world_gen.arcane_gilded_darkstone]
-		#Generate Arcane Gilded Darkstone? [default: true]
-		generate = true
-		#Maximum size of Arcane Gilded Darkstone veins [default: 4]
-		#Range: 0 ~ 100
-		max_vein_size = 4
-		#Maximum Arcane Gilded Darkstone veins per chunk [default: 4]
-		#Range: 1 ~ 100
-		count = 4
-		#Mimumum height for Arcane Gilded Darkstone to generate [default: -64]
-		#Range: > -2147483648
-		min_height = -64
-		#Maximum height for Arcane Gilded Darkstone to generate [default: -51]
-		#Range: > -2147483648
-		max_height = -51
-
-	[world_gen.xpetrified_ore]
-		#Generate Xpetrified Ore? [default: true]
-		generate = true
-		#Maximum size of Xpetrified Ore veins [default: 3]
-		#Range: 0 ~ 100
-		max_vein_size = 3
-		#Maximum Xpetrified Ore veins per chunk [default: 18]
-		#Range: 1 ~ 100
-		count = 18
-		#Minumum height for Xpetrified Ore to generate [default: -6]
-		#Range: > -2147483648
-		min_height = -6
-		#Maximum height for Xpetrified Ore to generate [default: 35]
-		#Range: > -2147483648
-		max_height = 35
-
-	[world_gen.stella_arcanum]
-		#Generate Should Stella Arcanum? [default: true]
-		generate = true
-		#Maximum size of Stella Arcanum veins [default: 3]
-		#Range: 0 ~ 100
-		max_vein_size = 3
-		#Maximum Stella Arcanum veins per chunk [default: 2]
-		#Range: 1 ~ 100
-		count = 2
-		#Minimum height for Stella Arcanum to generate [default: -44]
-		#Range: > -2147483648
-		min_height = -44
-		#Maximum height for Stella Arcanum to generate [default: 42]
-		#Range: > -2147483648
-		max_height = 42
-
-	[world_gen.cherrywood_tree]
-		#Generate Cherrywood Trees? [default: true]
-		generate = true
-
-	[world_gen.mysterywood_tree]
-		#Generate Mysterywood Trees? [default: true]
-		generate = true
-
-	[world_gen.edelwood_tree]
-		#Generate Edelwood Trees? [default: true]
-		generate = true
-
-	[world_gen.yellow_orchid]
-		#Generate Yellow Orchids? [default: true]
-		generate = true
-
-	[world_gen.petrified_root]
-		#Generate Petrified Roots? [default: true]
-		generate = true
-
-	[world_gen.nipa]
-		#Nipa Structure Spacing [default: 35]
-		#Range: > 0
-		spacing = 35
-		#Nipa Structure Separation [default: 8]
-		#Range: > 0
-		separation = 8
-
 [items]
 
 	[items.orb_of_temporary_flight]
@@ -190,20 +52,15 @@
 		#Range: 1 ~ 10
 		explosion_radius = 3
 
-	[blocks.runic_chiseled_polished_darkstone]
-		#Radius the Activated Runic Chiseled Polished Darkstone prevents Entities from spawning in (in Blocks) [default: 25]
-		#Range: 1 ~ 100
-		entity_spawn_blocking_radius = 25
-
 	[blocks.edelwood_ladder]
-		#How much speed is added to the player when using an Edelwood Ladder [default: 0.07
+		#The speed multiplier that gets added to the players y movement when on the ladder [default: 2.0
 		#Range: 0.0 ~ 10.0
 		speed = 0.07
 
 [enchantments]
 
-	[enchantments.indestructible]
-		#Should the item be repaired after applying the Indestructible enchantment [default: true]
+	[enchantments.eternal]
+		#Should the item be repaired after applying the Eternal modifier [default: true]
 		repair_item = true
 
 [aureal]

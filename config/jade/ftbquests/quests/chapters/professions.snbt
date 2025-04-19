@@ -1407,7 +1407,7 @@
 			tasks: [{
 				id: "186F15C15373C885"
 				type: "item"
-				item: "beyond_earth:glacio_globe"
+				item: "ad_astra:glacio_globe"
 			}]
 			rewards: [{
 				id: "1C0512EE817937AC"

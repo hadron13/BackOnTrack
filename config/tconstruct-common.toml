@@ -3,32 +3,15 @@
 [gameplay]
 	#Set this to false to disable new players spawning with the Tinkers' Book.
 	shouldSpawnWithTinkersBook = true
-	#If non-empty, only this material will be shown on tools in creative and JEI (or the first valid material if this is invalid for the tool).
-	#If empty, all materials will show
-	showOnlyToolMaterial = ""
-	#If non-empty, only material will be shown on parts in creative and JEI (or the first valid material if this is invalid for the part).
-	#If empty, all materials will show
-	showOnlyPartMaterial = ""
-	#If true, tables such as the part builder and tinker station will show all variants. If false shows only a variant with a default texture.
-	showAllTableVariants = true
-	#If true, anvils will show all metal variants. If false, shows only a variant with the default texture
-	showAllAnvilVariants = true
-	#If true, smeltery and foundry controllers, drains, ducts, and chutes will show all variants
-	showAllSmelteryVariants = true
-
-	#Tweaks to vanilla damage sources to better work with armor
-	[gameplay.damageTweaks]
-		#Makes withering damage count as magic
-		wither = true
-		#Makes dragons breath count as magic
-		dragon_breath = true
-		#Makes falling blocks count as projectile
-		falling_block = false
-		#Makes lightning count as fire damage
-		lightning = true
-		#Amount of durability restored by a repair kit in terms of ingots. Does not affect the cost to create the kit, that is controlled by JSON.
-		#Range: 0.0 ~ 32767.0
-		repairKitAmount = 2.0
+	#If true, extends the applicable slots for the fire protection enchantment to work better with shields. Will not impact gameplay with the vanilla enchantment.
+	#If false, fire protection on a shield will not reduce fire tick time.
+	extendFireProtectionSlots = true
+	#If true, extends the applicable slots for the blast protection enchantment to work better with shields. Will not impact gameplay with the vanilla enchantment.
+	#If false, blast protection on a shield will not reduce explosion knockback.
+	extendBlastProtectionSlots = true
+	#Amount of durability restored by a repair kit in terms of ingots. Does not affect the cost to create the kit, that is controlled by JSON.
+	#Range: 0.0 ~ 32767.0
+	repairKitAmount = 2.0
 
 #Options related to recipes, limited options as a datapack allows most recipes to be modified
 [recipes]
@@ -92,7 +75,6 @@
 		drowned = true
 		spider = true
 		cave_spider = true
-		piglin = true
 		piglin_brute = true
 		zombified_piglin = true
 
@@ -101,35 +83,11 @@
 [loot]
 	#Adds slimy saplings and seeds into various loot chests. Helps for worlds without slime islands
 	slimy_loot = true
-	#Weight of blazing blood in the piglin bartering tables. Set to 0 to disable
-	#Range: 0 ~ 100
-	barter_blazing_blood = 20
-	#Weight of tinker tools in the vanilla spawn bonus chest, randomly replacing the vanilla axe or shovel. Tool will have a random tier 1 head and binding, plus a wooden handle. Set to 0 to disable.
-	#For comparison, vanilla wooden axes and pickaxes have a weight of 3, and stone axes/pickaxes have a weight of 1
-	#Range: 0 ~ 25
-	tinker_tool_bonus_chest = 2
 	#If true, ender dragons will drop scales when damaged by explosions
 	drop_dragon_Scales = true
-
-#Everything to do with world generation
-[worldgen]
-	#Generate Cobalt
-	generateCobalt = true
-	#Approx Ores per Chunk
-	veinCountCobalt = 8
-
-	#Options related to slime geodes
-	[worldgen.geodes]
-		#If true, recipes using slime crystals will ignore the other geode configs, useful if you add other ways to get the slime crystals. When false (default), recipes using slime crystals will be substituted for an alternative if the geode is disabled.
-		forceRecipes = false
-		#If true, earthslime geodes generate deep in the world as another way to get slime
-		earth = true
-		#If true, skyslime geodes generate above amethyst as another way to get skyslime
-		sky = true
-		#If true, ichor geodes generate high in the nether. Strongly encouraged to keep enabled even if you disable the other geodes, as ichor crystals have some unique recipes and the fallbacks kinda suck for gameplay.
-		ichor = true
-		#If true, enderslime geodes generate as additional islands in the end
-		ender = true
+	#Weight of the ancient tool trade for the wandering trader. All traders randomly choose 1 rare trade, so this is roughly the chance the trade occurs compared to the vanilla options (of which there are 6).
+	#Range: 0 ~ 100
+	wanderer_ancient_tool_weight = 6
 
 #Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
 [debug]
@@ -139,4 +97,7 @@
 	#If STACKTRACE, logs the stacktrace whenever a tool stack is created from a non-modifiable item. If WARNING (default), logs a shorter but more efficient error. If IGNORE, disables logging (useful for modpacks/players *after* they reported the issue). The stacktrace helps debug which mod is causing it, but is rather expensive on the chance they are doing it a lot.
 	#Allowed Values: STACKTRACE, WARNING, IGNORED
 	logInvalidToolStack = "WARNING"
+	#Set to true if you wish to test whether a side inventory works without constantly reloading datapacks.
+	#Once you find an inventory works, add it to the block entity tag `tconstruct:side_inventories` and disable this option; leaving it enabled will lead to crashes and dupe bugs.
+	disableSideInventoryWhitelist = false
 

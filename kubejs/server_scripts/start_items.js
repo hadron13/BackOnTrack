@@ -1,4 +1,4 @@
-onEvent('player.logged_in', event => {
+PlayerEvents.loggedIn( event => {
     // Check if player doesn't have "starting_items" stage yet
     if (!event.player.stages.has('starting_items')) {
       // Add the stage

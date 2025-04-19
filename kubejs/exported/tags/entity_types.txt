@@ -166,7 +166,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #forge:sheep
 - minecraft:sheep
 
-#beyond_earth:entities/oxygen
+#ad_astra:entities/oxygen
 - minecraft:bat
 - minecraft:bee
 - minecraft:cat
@@ -205,10 +205,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #delightful:drops_acorn
 - ecologics:squirrel?
 
-#beyond_earth:entities/venus_rain
-- beyond_earth:pygro
-- beyond_earth:pygro_brute
-- beyond_earth:mogler
+#ad_astra:entities/venus_rain
+- ad_astra:pygro
+- ad_astra:pygro_brute
+- ad_astra:mogler
 
 #minecraft:axolotl_always_hostiles
 - minecraft:drowned
@@ -310,10 +310,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - druidcraft:lunar_moth?
 - druidcraft:dreadfish?
 
-#beyond_earth:entities/planet_fire
-- beyond_earth:pygro
-- beyond_earth:pygro_brute
-- beyond_earth:mogler
+#ad_astra:entities/planet_fire
+- ad_astra:pygro
+- ad_astra:pygro_brute
+- ad_astra:mogler
 
 #forge:slimes
 - minecraft:slime
@@ -395,10 +395,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - minecraft:magma_cube
 
 #carryon:entity_blacklist
-- beyond_earth:rocket_t1
-- beyond_earth:rocket_t2
-- beyond_earth:rocket_t3
-- beyond_earth:rocket_t4
+- ad_astra:rocket_t1
+- ad_astra:rocket_t2
+- ad_astra:rocket_t3
+- ad_astra:rocket_t4
 
 #forge:chicken
 - minecraft:chicken

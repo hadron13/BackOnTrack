@@ -1,287 +1,283 @@
 {
-	id: "746A5B7EB6A97E43"
-	group: "6F42926B3F0C534A"
-	order_index: 3
-	filename: "stage_1a"
-	title: "&f1b&r Sturdy Production"
-	icon: "kubejs:train_mechanism"
-	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "stage_1a"
+	group: "6F42926B3F0C534A"
+	icon: "kubejs:train_mechanism"
+	id: "746A5B7EB6A97E43"
 	images: [{
+		height: 2.0d
+		image: "kubejs:textures/images/chapter1.png"
+		rotation: 0.0d
+		width: 10.0d
 		x: -2.0d
 		y: -3.0d
-		width: 10.0d
-		height: 2.0d
-		rotation: 0.0d
-		image: "kubejs:textures/images/chapter1.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
 	}]
+	order_index: 3
+	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["0B2683CCC179B93F"]
+			description: ["Good job! Now that you have an easy way of acquiring track machines, you can expand your railway network as big as you want! Trains are cool by themselves and even cooler when automated!"]
+			id: "38DCA5905F400ADB"
+			rewards: [
+				{
+					count: 16
+					id: "0B86F1F53ADE04A0"
+					item: "kubejs:train_mechanism"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "11237426CFBFB0AB"
+					item: "create:railway_casing"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "655941BA3E4CEDE4"
+					item: "create:track"
+					random_bonus: 32
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "24FB13A7AE499AFB"
+				item: "kubejs:train_machine"
+				type: "item"
+			}]
 			title: "Chapter 1B Complete!"
 			x: -2.0d
 			y: 4.75d
-			shape: "diamond"
-			description: ["Good job! Now that you have an easy way of acquiring track machines, you can expand your railway network as big as you want! Trains are cool by themselves and even cooler when automated!"]
-			dependencies: ["0B2683CCC179B93F"]
-			size: 2.0d
-			id: "38DCA5905F400ADB"
-			tasks: [{
-				id: "24FB13A7AE499AFB"
-				type: "item"
-				item: "kubejs:train_machine"
-			}]
-			rewards: [
-				{
-					id: "0B86F1F53ADE04A0"
-					type: "item"
-					item: "kubejs:train_mechanism"
-					count: 16
-				}
-				{
-					id: "11237426CFBFB0AB"
-					type: "item"
-					item: "create:railway_casing"
-					count: 5
-				}
-				{
-					id: "655941BA3E4CEDE4"
-					type: "item"
-					item: "create:track"
-					count: 64
-					random_bonus: 32
-				}
-			]
 		}
 		{
-			title: "Real Gold"
-			icon: "create:brass_ingot"
-			x: -0.5d
-			y: 1.5d
-			subtitle: "Contraption 11"
+			dependencies: [
+				"27EE93C8836444B2"
+				"21870FF88F53BA52"
+			]
 			description: [
 				"Mix the copper and the zinc and welcome to the brass age!"
 				""
 				"Brass will not only be useful for trains, but for the future precision machinery aswell, and drip casing."
 			]
-			dependencies: [
-				"27EE93C8836444B2"
-				"21870FF88F53BA52"
-			]
+			icon: "create:brass_ingot"
 			id: "20FD27DE45C29BB7"
+			subtitle: "Contraption 11"
 			tasks: [
 				{
 					id: "2A93469A860E448A"
-					type: "item"
 					item: "create:brass_ingot"
+					type: "item"
 				}
 				{
 					id: "13ABA90197E2653F"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Real Gold"
+			x: -0.5d
+			y: 1.5d
 		}
 		{
-			title: "Gray Vitamin"
+			dependencies: ["57EF36B592C45D2C"]
+			description: ["Route some of your zinc nuggets to a melter, and then pump it into a mixer basing for further yellowishfication."]
+			hide_until_deps_complete: true
 			icon: {
+				Count: 1
 				id: "tconstruct:copper_can"
-				Count: 1b
 				tag: {
 					fluid: "tconstruct:molten_zinc"
 				}
 			}
-			x: 0.5d
-			y: 0.5d
-			description: ["Route some of your zinc nuggets to a melter, and then pump it into a mixer basing for further yellowishfication."]
-			dependencies: ["57EF36B592C45D2C"]
-			hide: true
 			id: "27EE93C8836444B2"
 			tasks: [
 				{
+					consume_items: false
 					id: "60F39810052B4CD4"
-					type: "item"
-					title: "Copper Can (Molten Zinc)"
 					item: {
+						Count: 1
 						id: "tconstruct:copper_can"
-						Count: 1b
 						tag: {
 							fluid: "tconstruct:molten_zinc"
 						}
 					}
-					consume_items: false
+					title: "Copper Can (Molten Zinc)"
+					type: "item"
 				}
 				{
 					id: "3DEBA9536D7E5F40"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Gray Vitamin"
+			x: 0.5d
+			y: 0.5d
 		}
 		{
-			title: "Orange Juice"
-			icon: {
-				id: "tconstruct:copper_can"
-				Count: 1b
-				tag: {
-					fluid: "tconstruct:molten_copper"
-				}
-			}
-			x: -1.5d
-			y: 0.5d
+			dependencies: ["57EF36B592C45D2C"]
 			description: [
 				"Melt some of your copper and pump it into a mixer for further yelloweishfication."
 				""
 				"It's not required to be automated, it's a secondary chapter but it's probably a good idea to automate it early."
 			]
-			dependencies: ["57EF36B592C45D2C"]
-			hide: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tconstruct:copper_can"
+				tag: {
+					fluid: "tconstruct:molten_copper"
+				}
+			}
 			id: "21870FF88F53BA52"
 			tasks: [{
+				consume_items: false
 				id: "40B42C1909AB68A4"
-				type: "item"
-				title: "Copper Can (Molten Copper)"
 				item: {
+					Count: 1
 					id: "tconstruct:copper_can"
-					Count: 1b
 					tag: {
 						fluid: "tconstruct:molten_copper"
 					}
 				}
-				consume_items: false
+				title: "Copper Can (Molten Copper)"
+				type: "item"
 			}]
+			title: "Orange Juice"
+			x: -1.5d
+			y: 0.5d
 		}
 		{
-			title: "A Bit of Lava"
-			x: -2.5d
-			y: 0.5d
+			dependencies: ["57EF36B592C45D2C"]
 			description: [
 				"It's not really required to be automated, but it all depends on how many signals, trains and stations your railway will need."
 				""
 				"It may be a good idea to tap the mantle later... and use the trains to bring onto the overworld!"
 			]
-			dependencies: ["57EF36B592C45D2C"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "070EDAC9772994A6"
 			tasks: [{
 				id: "28901F1975B067E5"
-				type: "item"
 				item: "minecraft:lava_bucket"
+				type: "item"
 			}]
+			title: "A Bit of Lava"
+			x: -2.5d
+			y: 0.5d
 		}
 		{
-			title: "Sturdying"
-			icon: "create:sturdy_sheet"
-			x: -3.5d
-			y: 1.5d
-			subtitle: "Contraption 10"
-			description: ["Pour the lava over the obsidian powder and press it 2 times to create a sturdy sheet."]
 			dependencies: [
 				"7CD3D075A2C03DD2"
 				"070EDAC9772994A6"
 			]
+			description: ["Pour the lava over the obsidian powder and press it 2 times to create a sturdy sheet."]
+			icon: "create:sturdy_sheet"
 			id: "5BC9DD08C47121C0"
+			subtitle: "Contraption 10"
 			tasks: [
 				{
-					id: "5271D16C4505C635"
-					type: "item"
-					item: "create:sturdy_sheet"
 					consume_items: false
+					id: "5271D16C4505C635"
+					item: "create:sturdy_sheet"
+					type: "item"
 				}
 				{
 					id: "6B765C2DAD5E1096"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Sturdying"
+			x: -3.5d
+			y: 1.5d
 		}
 		{
-			title: "Sturdy Reinforcement"
-			icon: "kubejs:train_mechanism"
-			x: -2.0d
-			y: 2.5d
-			description: ["Just like Chapter 1A, this can only be automated with the more advanced precision technology, but for now manually crafting it should be more than enough for your transportation needs."]
 			dependencies: [
 				"5BC9DD08C47121C0"
 				"20FD27DE45C29BB7"
 			]
+			description: ["Just like Chapter 1A, this can only be automated with the more advanced precision technology, but for now manually crafting it should be more than enough for your transportation needs."]
+			icon: "kubejs:train_mechanism"
 			id: "0B2683CCC179B93F"
 			tasks: [{
-				id: "23AEA057F086B5B1"
-				type: "item"
-				item: "kubejs:train_mechanism"
 				consume_items: false
+				id: "23AEA057F086B5B1"
+				item: "kubejs:train_mechanism"
+				type: "item"
 			}]
+			title: "Sturdy Reinforcement"
+			x: -2.0d
+			y: 2.5d
 		}
 		{
-			title: "Crushing Looper"
-			icon: "create:powdered_obsidian"
-			x: -4.5d
-			y: 0.5d
-			subtitle: "Contraption 9-3"
-			description: ["Crushing obsidian into powder requires a loop to fully grind the obsidian."]
 			dependencies: ["0FC49FBEB4B08CBD"]
+			description: ["Crushing obsidian into powder requires a loop to fully grind the obsidian."]
+			icon: "create:powdered_obsidian"
 			id: "7CD3D075A2C03DD2"
+			subtitle: "Contraption 9-3"
 			tasks: [
 				{
-					id: "22C99AF56AE26DEC"
-					type: "item"
-					item: "create:powdered_obsidian"
 					consume_items: false
+					id: "22C99AF56AE26DEC"
+					item: "create:powdered_obsidian"
+					type: "item"
 				}
 				{
 					id: "1050D0630F8A5E22"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Crushing Looper"
+			x: -4.5d
+			y: 0.5d
 		}
 		{
-			title: "Crying Glass"
-			icon: "minecraft:crying_obsidian"
-			x: -3.5d
-			y: -0.5d
-			subtitle: "Contraption 9-2"
-			description: ["Blowing hot air on obsidian makes it cry this purple juice, interesting..."]
 			dependencies: ["043E8CE4F784E8F0"]
+			description: ["Blowing hot air on obsidian makes it cry this purple juice, interesting..."]
+			icon: "minecraft:crying_obsidian"
 			id: "0FC49FBEB4B08CBD"
+			subtitle: "Contraption 9-2"
 			tasks: [
 				{
 					id: "17C00DCC36F3E476"
-					type: "item"
 					item: "minecraft:crying_obsidian"
+					type: "item"
 				}
 				{
 					id: "1157FDBE86B0FF93"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Crying Glass"
+			x: -3.5d
+			y: -0.5d
 		}
 		{
-			title: "Igneously Vitreous"
-			icon: "minecraft:obsidian"
-			x: -2.0d
-			y: -1.5d
-			subtitle: "Contraption 9-1"
+			dependencies: ["57EF36B592C45D2C"]
 			description: [
 				"Obtaining obsidian is an essential part of the factory, however you won't need a constant supply of it as the process is very forgiving."
 				""
 				"However it may be a good idea to use some automated lava from the nether to create some."
 			]
-			dependencies: ["57EF36B592C45D2C"]
-			hide: true
+			hide_until_deps_complete: true
+			icon: "minecraft:obsidian"
 			id: "043E8CE4F784E8F0"
+			subtitle: "Contraption 9-1"
 			tasks: [{
-				id: "33042C0DE00CBEE3"
-				type: "item"
-				item: "minecraft:obsidian"
 				consume_items: false
+				id: "33042C0DE00CBEE3"
+				item: "minecraft:obsidian"
+				type: "item"
 			}]
+			title: "Igneously Vitreous"
+			x: -2.0d
+			y: -1.5d
 		}
 	]
-	quest_links: [ ]
+	title: "&f1b&r Sturdy Production"
 }

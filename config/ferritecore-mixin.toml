@@ -18,4 +18,6 @@ populateNeighborTable = false
 replacePropertyMap = true
 #Deduplicate vertex data of baked quads in the basic model implementations
 bakedQuadDeduplication = true
+#Use smaller data structures for "simple" models, especially models with few side-specific faces
+modelSides = true
 

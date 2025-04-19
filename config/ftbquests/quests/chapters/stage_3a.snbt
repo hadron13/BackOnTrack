@@ -1,212 +1,203 @@
 {
-	id: "1FC13C28BB661DF6"
-	group: "6F42926B3F0C534A"
-	order_index: 8
-	filename: "stage_3a"
-	title: "&f3a&r Rocketry by Eye"
-	icon: "beyond_earth:steel_engine"
-	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "stage_3a"
+	group: "6F42926B3F0C534A"
+	icon: "ad_astra:steel_engine"
+	id: "1FC13C28BB661DF6"
 	images: [{
+		height: 2.0d
+		image: "kubejs:textures/images/chapter3.png"
+		rotation: 0.0d
+		width: 10.0d
 		x: -8.0d
 		y: 0.0d
-		width: 10.0d
-		height: 2.0d
-		rotation: 0.0d
-		image: "kubejs:textures/images/chapter3.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
 	}]
+	order_index: 8
+	quest_links: [ ]
 	quests: [
 		{
-			icon: "kubejs:pressure_mechanism"
-			x: -7.0d
-			y: 2.0d
-			subtitle: "Contraption 46-3"
+			dependencies: ["2A52615E8E67F885"]
 			description: ["Due to the metallurgic way the engines are recycled, the rubber is vaporized and you can't recover it."]
 			hide_dependency_lines: true
-			dependencies: ["2A52615E8E67F885"]
-			hide: true
+			hide_until_deps_complete: true
+			icon: "kubejs:pressure_mechanism"
 			id: "7BD36C9922B17B5C"
+			subtitle: "Contraption 46-3"
 			tasks: [
 				{
-					id: "0CC9CB1731C81F82"
-					type: "item"
-					item: "kubejs:pressure_mechanism"
 					consume_items: false
+					id: "0CC9CB1731C81F82"
+					item: "kubejs:pressure_mechanism"
+					type: "item"
 				}
 				{
 					id: "29F0A38F8EEAB1B2"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -7.0d
+			y: 2.0d
 		}
 		{
+			dependencies: [
+				"7BD36C9922B17B5C"
+				"4656D3887F0D3FCB"
+				"0773CAB0CF8E9FB6"
+				"6B3A2C329FFF054B"
+			]
+			description: ["In 499 universes this sole engine would fail, who would imagine that in this specific universe it just past through everything without trouble."]
+			id: "2A3C33E299508572"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				consume_items: false
+				id: "5AA46C45BD99A874"
+				item: "ad_astra:steel_engine"
+				type: "item"
+			}]
 			title: "Trial And Success"
 			x: -8.0d
 			y: 5.25d
-			shape: "diamond"
-			description: ["In 499 universes this sole engine would fail, who would imagine that in this specific universe it just past through everything without trouble."]
-			dependencies: [
-				"7BD36C9922B17B5C"
-				"4656D3887F0D3FCB"
-				"0773CAB0CF8E9FB6"
-				"6B3A2C329FFF054B"
-			]
-			size: 1.5d
-			id: "2A3C33E299508572"
-			tasks: [{
-				id: "5AA46C45BD99A874"
-				type: "item"
-				item: "beyond_earth:steel_engine"
-				consume_items: false
-			}]
 		}
 		{
-			icon: "create:brass_sheet"
-			x: -6.0d
-			y: 3.0d
-			subtitle: "Contraption 46-4"
+			dependencies: ["2A52615E8E67F885"]
 			description: ["Automating brass is also not needed, you can get it back by melting the failed engines"]
 			hide_dependency_lines: true
-			dependencies: ["2A52615E8E67F885"]
-			hide: true
+			hide_until_deps_complete: true
+			icon: "create:brass_sheet"
 			id: "4656D3887F0D3FCB"
+			subtitle: "Contraption 46-4"
 			tasks: [
 				{
-					id: "6AF87BFBC408EAB9"
-					type: "item"
-					item: "create:brass_sheet"
 					consume_items: false
+					id: "6AF87BFBC408EAB9"
+					item: "create:brass_sheet"
+					type: "item"
 				}
 				{
 					id: "48385FF67A03CE9B"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -6.0d
+			y: 3.0d
 		}
 		{
-			title: "Not a Total Failure"
-			x: -6.5d
-			y: 4.5d
-			description: ["The most likely item you'll get after assemblying is a failed engine that can be recycled afterwards."]
 			dependencies: [
 				"7BD36C9922B17B5C"
 				"4656D3887F0D3FCB"
 				"0773CAB0CF8E9FB6"
 				"6B3A2C329FFF054B"
 			]
+			description: ["The most likely item you'll get after assemblying is a failed engine that can be recycled afterwards."]
 			id: "709101B912067727"
 			tasks: [{
-				id: "32362878D493AE16"
-				type: "item"
-				item: "kubejs:failed_steel_engine"
 				consume_items: false
+				id: "32362878D493AE16"
+				item: "kubejs:failed_steel_engine"
+				type: "item"
 			}]
+			title: "Not a Total Failure"
+			x: -6.5d
+			y: 4.5d
 		}
 		{
-			title: "Recycling"
-			icon: {
-				id: "tconstruct:copper_can"
-				Count: 1b
-				tag: {
-					fluid: "createbigcannons:molten_nethersteel"
-				}
-			}
-			x: -5.5d
-			y: 5.5d
-			subtitle: "Contraption 47"
+			dependencies: ["709101B912067727"]
 			description: [
 				"Unless you are extremely rich and lazy it's a good idea to recycle your failed attempts to recover brass and the expensive nethersteel"
 				""
 				"The only way to recycle is by melting them down in a basin with a foundry lid and a blaze burner underneath"
 			]
-			dependencies: ["709101B912067727"]
+			icon: {
+				Count: 1
+				id: "tconstruct:copper_can"
+				tag: {
+					fluid: "createbigcannons:molten_nethersteel"
+				}
+			}
 			id: "477D7034BC5805B9"
+			subtitle: "Contraption 47"
 			tasks: [
 				{
+					consume_items: false
 					id: "2F83263E9FB1BF37"
-					type: "item"
 					item: {
+						Count: 1
 						id: "tconstruct:copper_can"
-						Count: 1b
 						tag: {
 							fluid: "tconstruct:molten_brass"
 						}
 					}
-					consume_items: false
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "4D6509618BD8C254"
-					type: "item"
 					item: {
+						Count: 1
 						id: "tconstruct:copper_can"
-						Count: 1b
 						tag: {
 							fluid: "createbigcannons:molten_nethersteel"
 						}
 					}
-					consume_items: false
+					type: "item"
 				}
 			]
+			title: "Recycling"
+			x: -5.5d
+			y: 5.5d
 		}
 		{
-			icon: "beyond_earth:engine_frame"
-			x: -10.0d
-			y: 3.0d
-			subtitle: "Contraption 46-1"
+			dependencies: ["2A52615E8E67F885"]
 			description: ["You won't need to automate the production of nethersteel, instead you can recycle every failed engine."]
 			hide_dependency_lines: true
-			dependencies: ["2A52615E8E67F885"]
-			hide: true
+			hide_until_deps_complete: true
+			icon: "ad_astra:engine_frame"
 			id: "0773CAB0CF8E9FB6"
+			subtitle: "Contraption 46-1"
 			tasks: [
 				{
-					id: "0994BC1AC724A977"
-					type: "item"
-					item: "beyond_earth:engine_frame"
 					consume_items: false
+					id: "0994BC1AC724A977"
+					item: "ad_astra:engine_frame"
+					type: "item"
 				}
 				{
 					id: "01C6E62D9F36A19F"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -10.0d
+			y: 3.0d
 		}
 		{
-			icon: "kubejs:explosive_mechanism"
-			x: -9.0d
-			y: 2.0d
-			subtitle: "Contraption 46-2"
-			description: ["Obviously you can't get your precious mechanisms back, only make new ones."]
 			dependencies: ["2A52615E8E67F885"]
-			hide: true
+			description: ["Obviously you can't get your precious mechanisms back, only make new ones."]
+			hide_until_deps_complete: true
+			icon: "kubejs:explosive_mechanism"
 			id: "6B3A2C329FFF054B"
+			subtitle: "Contraption 46-2"
 			tasks: [
 				{
-					id: "4D55C1A7A24E4E03"
-					type: "item"
-					item: "kubejs:explosive_mechanism"
 					consume_items: false
+					id: "4D55C1A7A24E4E03"
+					item: "kubejs:explosive_mechanism"
+					type: "item"
 				}
 				{
 					id: "0EC351C50D6EBD9F"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -9.0d
+			y: 2.0d
 		}
 		{
-			title: "Ready To Go"
-			icon: "beyond_earth:earth_globe"
-			x: -8.0d
-			y: 9.5d
-			description: ["12... 11... 10... All engines started 9... 8... 7..."]
 			dependencies: [
 				"21EB310FAFD26E87"
 				"188CE1E15AFA5266"
@@ -214,165 +205,181 @@
 				"7338B90F77B09C71"
 				"5A282C02F42A8AD7"
 			]
-			size: 2.0d
+			description: ["12... 11... 10... All engines started 9... 8... 7..."]
+			icon: "ad_astra:earth_globe"
 			id: "0EBDF8D760B024F1"
 			rewards: [{
 				id: "1AE29CA3D2B92487"
-				type: "item"
+				item: "ad_astra:earth_globe"
 				team_reward: false
-				item: "beyond_earth:earth_globe"
+				type: "item"
 			}]
+			size: 2.0d
+			title: "Ready To Go"
+			x: -8.0d
+			y: 9.5d
 		}
 		{
-			title: "The Rock-et"
-			icon: "grapplemod:rocketupgradeitem"
-			x: -8.0d
-			y: 7.0d
-			description: ["This unrealistic rocket will lead you to the moon, but you need to pack some stuff before departing..."]
 			dependencies: [
 				"2A52615E8E67F885"
 				"2A3C33E299508572"
 			]
-			hide: true
+			description: ["This unrealistic rocket will lead you to the moon, but you need to pack some stuff before departing..."]
+			hide_until_deps_visible: true
+			icon: "grapplemod:rocketupgradeitem"
 			id: "5A282C02F42A8AD7"
 			tasks: [{
+				consume_items: false
 				id: "4C5BB2DBC345DB56"
-				type: "item"
 				item: {
-					id: "beyond_earth:rocket_t1"
-					Count: 1b
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
 					tag: { }
 				}
-				consume_items: false
+				type: "item"
 			}]
+			title: "The Rock-et"
+			x: -8.0d
+			y: 7.0d
 		}
 		{
+			dependencies: ["1B83E13206357F0F"]
+			description: ["It takes just about 30 buckets of crude oil for a single trip, if you wanna know."]
+			id: "188CE1E15AFA5266"
+			tasks: [{
+				consume_items: false
+				id: "3A707B933F9CC51B"
+				item: "thermal:refined_fuel_bucket"
+				type: "item"
+			}]
 			title: "Finest Fuel"
 			x: -6.0d
 			y: 11.0d
-			description: ["It takes just about 30 buckets of crude oil for a single trip, if you wanna know."]
-			dependencies: ["1B83E13206357F0F"]
-			id: "188CE1E15AFA5266"
-			tasks: [{
-				id: "3A707B933F9CC51B"
-				type: "item"
-				item: "thermal:refined_fuel_bucket"
-				consume_items: false
-			}]
 		}
 		{
-			title: "Suitable Suit"
-			x: -10.0d
-			y: 8.0d
-			description: ["Space is a dangerous place, radiation, extreme temperature, vaccum, only a suitable suit can suit you to your space suite."]
 			dependencies: ["2A52615E8E67F885"]
-			hide: true
+			description: ["Space is a dangerous place, radiation, extreme temperature, vaccum, only a suitable suit can suit you to your space suite."]
+			hide_until_deps_complete: true
 			id: "7338B90F77B09C71"
 			tasks: [
 				{
+					consume_items: false
 					id: "1C47D949FE62AA85"
-					type: "item"
 					item: {
-						id: "beyond_earth:oxygen_mask"
-						Count: 1b
+						Count: 1
+						id: "ad_astra:space_helmet"
 						tag: {
 							Damage: 0
 						}
 					}
-					consume_items: false
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "7E70BAABFE85F060"
-					type: "item"
 					item: {
-						id: "beyond_earth:space_suit"
-						Count: 1b
+						Count: 1
+						id: "ad_astra:space_suit"
 						tag: {
 							Damage: 0
 						}
 					}
-					consume_items: false
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "32DF290680CF7F7C"
-					type: "item"
 					item: {
-						id: "beyond_earth:space_pants"
-						Count: 1b
+						Count: 1
+						id: "ad_astra:space_pants"
 						tag: {
 							Damage: 0
 						}
 					}
-					consume_items: false
+					type: "item"
 				}
 				{
+					consume_items: false
 					id: "4CF6C387EF30880C"
-					type: "item"
 					item: {
-						id: "beyond_earth:space_boots"
-						Count: 1b
+						Count: 1
+						id: "ad_astra:space_boots"
 						tag: {
 							Damage: 0
 						}
 					}
-					consume_items: false
+					type: "item"
 				}
 			]
+			title: "Suitable Suit"
+			x: -10.0d
+			y: 8.0d
 		}
 		{
-			title: "Breathing 101"
-			icon: "beyond_earth:oxygen_tank"
-			x: -10.0d
-			y: 11.0d
+			dependencies: ["2A52615E8E67F885"]
 			description: [
 				"Unlike Earth, space has no free oxygen floating around, instead you will need to package some with you for your journey, all you need is to power this machine and input water."
 				""
 				"The bubble distributor can distribute oxygen in a cube above it, anyone inside the cube will not need a suitable suit to survive."
 			]
-			dependencies: ["2A52615E8E67F885"]
-			hide: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ad_astra:gas_tank"
+				tag: {
+					BotariumData: {
+						StoredFluids: [{
+							Amount: 1000L
+							Fluid: "ad_astra:oxygen"
+						}]
+					}
+				}
+			}
 			id: "0949D0AF4DA8F8FD"
-			tasks: [{
-				id: "0DEA8A7C99ED50B4"
-				type: "item"
-				item: "beyond_earth:oxygen_loader"
-				consume_items: false
-			}]
 			rewards: [{
 				id: "00871BACFB276061"
+				item: "ad_astra:oxygen_distributor"
 				type: "item"
-				item: "beyond_earth:oxygen_bubble_distributor"
 			}]
+			tasks: [{
+				consume_items: false
+				id: "0DEA8A7C99ED50B4"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			title: "Breathing 101"
+			x: -10.0d
+			y: 11.0d
 		}
 		{
-			x: -8.0d
-			y: 12.0d
-			description: ["The Rock-et requires a solid base to be launched, thus this launchpad is a requirement."]
 			dependencies: ["2A52615E8E67F885"]
-			hide: true
+			description: ["The Rock-et requires a solid base to be launched, thus this launchpad is a requirement."]
+			hide_until_deps_complete: true
 			id: "21EB310FAFD26E87"
 			tasks: [{
-				id: "26F9E5D9C47D74FD"
-				type: "item"
-				item: "beyond_earth:rocket_launch_pad"
-				count: 9L
 				consume_items: false
+				count: 9L
+				id: "26F9E5D9C47D74FD"
+				item: "ad_astra:launch_pad"
+				type: "item"
 			}]
+			x: -8.0d
+			y: 12.0d
 		}
 		{
-			title: "Kerosene"
-			x: -6.0d
-			y: 8.0d
-			description: ["Kerosene is the base of the rocket fuel here, just need to distill to a really fine form."]
 			dependencies: ["2A52615E8E67F885"]
-			hide: true
+			description: ["Kerosene is the base of the rocket fuel here, just need to distill to a really fine form."]
+			hide_until_deps_complete: true
 			id: "1B83E13206357F0F"
 			tasks: [{
 				id: "4D319309C77AF410"
+				item: "tfmg:kerosene_bucket"
 				type: "item"
-				item: "createindustry:kerosene_bucket"
 			}]
+			title: "Kerosene"
+			x: -6.0d
+			y: 8.0d
 		}
 	]
-	quest_links: [ ]
+	title: "&f3a&r Rocketry by Eye"
 }

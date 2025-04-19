@@ -43,72 +43,58 @@
 
 	#Stack size overrides
 	[overrides.stack_size]
-		#Should SoupItems in the following list become stackable to 16, much like Farmer's Delight's meals?
+		#Should BowlFoodItems in the following list become stackable to 16, much like Farmer's Delight's meals?
 		enableStackableSoupItems = true
-		#List of SoupItems. Default: vanilla soups and stews.
+		#List of BowlFoodItems. They must extend this class to be affected. Default: vanilla soups and stews.
 		soupItemList = ["minecraft:mushroom_stew", "minecraft:beetroot_soup", "minecraft:rabbit_stew"]
-		#Toggle this setting to instead make ALL SoupItems stackable, except the ones on the list (deny-list). This affects items from other mods, so be careful!
-		overrideAllSoupItems = false
 
 #World generation
 [world]
 	#Should this mod add some of its items (ropes, seeds, knives, meals etc.) as extra chest loot across Minecraft?
 	generateFDChestLoot = true
-	#Generate Compost Heaps across all village biomes
+	#Should FD generate Compost Heaps across all village biomes?
 	genVillageCompostHeaps = true
+	#Should FD crops show up planted randomly in various village farms?
+	genFDCropsOnVillageFarms = true
 
 	#Wild Cabbage generation
 	[world.wild_cabbages]
-		#Generate wild cabbages on beaches
-		genWildCabbages = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 30
 
 	#Sea Beet generation
 	[world.wild_beetroots]
-		#Generate sea beets on beaches
-		genWildBeetroots = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 30
 
 	#Wild Potato generation
 	[world.wild_potatoes]
-		#Generate wild potatoes on cold biomes (temperature between 0.0 and 0.3)
-		genWildPotatoes = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 100
 
 	#Wild Carrot generation
 	[world.wild_carrots]
-		#Generate wild carrots on temperate biomes (temperature between 0.4 and 0.9)
-		genWildCarrots = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 120
 
 	#Wild Onion generation
 	[world.wild_onions]
-		#Generate wild onions on temperate biomes (temperature between 0.4 and 0.9)
-		genWildOnions = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 120
 
 	#Tomato Vines generation
 	[world.wild_tomatoes]
-		#Generate tomato vines on arid biomes (temperature 1.0 or higher)
-		genWildTomatoes = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 100
 
 	#Wild Rice generation
 	[world.wild_rice]
-		#Generate wild rice on swamps and jungles
-		genWildRice = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 20

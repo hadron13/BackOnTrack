@@ -22,7 +22,7 @@ let AC = (id, x) => MOD("aquaculture", id, x)
 //
 
 
-onEvent('item.registry', event => {
+StartupEvents.registry('item', event => {
 
 	global.trades = []
 	global.professions = []
@@ -95,7 +95,7 @@ onEvent('item.registry', event => {
 		{ in: BOP('dead_log', 64), out: S(1) },
 		{ in: MC('acacia_log', 64), out: S(2) },
 		{ in: MC('birch_log', 64), out: S(2) },
-		{ in: BOP('cherry_log', 64), out: S(2) },
+		{ in: MC('cherry_log', 64), out: S(2) },
 		{ in: BOP('willow_log', 64), out: S(3) },
 		{ in: BOP('palm_log', 64), out: S(3) },
 		{ in: BOP('mahogany_log', 64), out: S(3) },
@@ -143,14 +143,14 @@ onEvent('item.registry', event => {
 		{ in: AP('abyssaline', 64), out: S(12) },
 		{ in: AP('gilded_sandstone', 64), out: S(10) },
 		{ in: MC('bricks', 64), out: S(6) },
-		{ in: TC('mud_bricks', 64), out: S(6) },
+//		{ in: TC('mud_bricks', 64), out: S(6) },
 		{ in: AP('olivestone_bricks', 64), out: S(4) },
 		{ in: MC('quartz_bricks', 64), out: S(18) },
 		{ in: AP('algal_bricks', 64), out: S(6) },
-		{ in: TC('lavawood', 64), out: S(6) },
+//		{ in: TC('lavawood', 64), out: S(6) },
 		{ in: CR('ornate_iron_window', 64), out: S(10) },
 		{ in: MC('mossy_cobblestone', 64), out: S(6) },
-		{ in: F('#glazed_terracotta', 64), out: S(6) },
+//		{ in: F('#glazed_terracotta', 64), out: S(6) },
 		{ in: SP('daub_brace', 64), out: S(8) }
 	])
 

@@ -1,325 +1,321 @@
 {
-	id: "74115F735EEC5F67"
-	group: "6F42926B3F0C534A"
-	order_index: 9
-	filename: "stage_3b"
-	title: "&f3b&r Tunnel Quantification"
-	icon: "kubejs:ender_mechanism"
-	default_quest_shape: "diamond"
 	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "stage_3b"
+	group: "6F42926B3F0C534A"
+	icon: "kubejs:ender_mechanism"
+	id: "74115F735EEC5F67"
 	images: [{
+		height: 2.0d
+		image: "kubejs:textures/images/chapter3.png"
+		rotation: 0.0d
+		width: 10.0d
 		x: -2.5d
 		y: -4.0d
-		width: 10.0d
-		height: 2.0d
-		rotation: 0.0d
-		image: "kubejs:textures/images/chapter3.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
 	}]
+	order_index: 9
+	quest_links: [ ]
 	quests: [
 		{
-			x: -2.5d
-			y: 5.5d
-			description: ["Quantum Machinery allows for new ways of long range transdimensional transport of items and fluids, however without the same coolness factor of trains..."]
 			dependencies: ["54C5900FA1D351E9"]
-			size: 1.5d
+			description: ["Quantum Machinery allows for new ways of long range transdimensional transport of items and fluids, however without the same coolness factor of trains..."]
 			id: "1800781724560123"
-			tasks: [{
-				id: "3A178DD51CDC3C31"
-				type: "item"
-				item: "kubejs:enderium_machine"
-			}]
 			rewards: [
 				{
-					id: "3161CDC9A6FB3259"
-					type: "item"
-					item: "kubejs:ender_mechanism"
 					count: 8
+					id: "3161CDC9A6FB3259"
+					item: "kubejs:ender_mechanism"
 					random_bonus: 8
+					type: "item"
 				}
 				{
-					id: "22E52BC773E30D49"
-					type: "item"
-					item: "thermal:enderium_ingot"
 					count: 5
+					id: "22E52BC773E30D49"
+					item: "thermal:enderium_ingot"
+					type: "item"
 				}
 				{
-					id: "552F45B3D2E964AC"
-					type: "item"
-					item: "minecraft:ender_pearl"
 					count: 3
+					id: "552F45B3D2E964AC"
+					item: "minecraft:ender_pearl"
+					type: "item"
 				}
 			]
+			size: 1.5d
+			tasks: [{
+				id: "3A178DD51CDC3C31"
+				item: "kubejs:enderium_machine"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
 		}
 		{
-			icon: "thermal:enderium_ingot"
-			x: -5.0d
-			y: 1.5d
-			subtitle: "Contraption 47-4"
-			description: ["One of the finest materials in the whole world, use wisely."]
 			dependencies: ["3D02415BDBC492AA"]
+			description: ["One of the finest materials in the whole world, use wisely."]
+			icon: "thermal:enderium_ingot"
 			id: "2924B038389DFE3D"
+			subtitle: "Contraption 47-4"
 			tasks: [
 				{
 					id: "13221A4CD05B24F7"
-					type: "item"
 					item: "thermal:enderium_ingot"
+					type: "item"
 				}
 				{
 					id: "469935D19D6A5BDD"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -5.0d
+			y: 1.5d
 		}
 		{
-			title: "Endless Grind"
-			icon: "minecraft:ender_pearl"
-			x: -2.5d
-			y: -2.0d
-			subtitle: "Contraption 47-1"
+			dependencies: ["51F030004DBA106F"]
 			description: ["This time there is not much secret, either kill endermen on buy them out."]
 			hide_dependency_lines: true
-			dependencies: ["51F030004DBA106F"]
-			hide: true
+			hide_until_deps_complete: true
+			icon: "minecraft:ender_pearl"
 			id: "77D4BFD83C7B4F82"
+			subtitle: "Contraption 47-1"
 			tasks: [
 				{
 					id: "258C3ECE214532D4"
-					type: "item"
 					item: "minecraft:ender_pearl"
+					type: "item"
 				}
 				{
 					id: "256958FDA4350613"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Endless Grind"
+			x: -2.5d
+			y: -2.0d
 		}
 		{
-			icon: "ae2:ender_dust"
-			x: -5.0d
-			y: -0.5d
-			subtitle: "Contraption 47-3"
-			description: ["Finally grind down the bits into a fine dust, ready to be turned into enderium."]
 			dependencies: ["316D4E8D569C1441"]
+			description: ["Finally grind down the bits into a fine dust, ready to be turned into enderium."]
+			icon: "ae2:ender_dust"
 			id: "3D02415BDBC492AA"
+			subtitle: "Contraption 47-3"
 			tasks: [
 				{
 					id: "2BCA2EB19D6B52BF"
-					type: "item"
 					item: "ae2:ender_dust"
+					type: "item"
 				}
 				{
 					id: "1D781155F62AF296"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -5.0d
+			y: -0.5d
 		}
 		{
-			icon: "kubejs:ender_mechanism"
-			x: -2.5d
-			y: 4.0d
-			subtitle: "Contraption &650&r"
-			description: ["At last combine the quantified materials to kickstart the tunneling revolution."]
 			dependencies: [
 				"0EB3BFB1D2D6D8CC"
 				"171B8663C68FA3A5"
 				"197F7868DAF44740"
 			]
+			description: ["At last combine the quantified materials to kickstart the tunneling revolution."]
+			icon: "kubejs:ender_mechanism"
 			id: "54C5900FA1D351E9"
+			subtitle: "Contraption &650&r"
 			tasks: [
 				{
 					id: "422ACFBE90E2A553"
-					type: "item"
 					item: "kubejs:ender_mechanism"
+					type: "item"
 				}
 				{
 					id: "3AC59E20E3122EB2"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -2.5d
+			y: 4.0d
 		}
 		{
-			title: "Liquid Ending"
-			icon: "kubejs:endstone_fluid_bucket"
-			x: -2.5d
-			y: 2.0d
-			subtitle: "Contraption 48-3"
-			description: ["The end, in a bucket."]
 			dependencies: [
 				"6FC605221CB21F2E"
 				"17F72BBAC47B3731"
 			]
+			description: ["The end, in a bucket."]
+			icon: "kubejs:endstone_fluid_bucket"
 			id: "197F7868DAF44740"
+			subtitle: "Contraption 48-3"
 			tasks: [
 				{
 					id: "6B75C1A71FA0D1EE"
-					type: "item"
 					item: "kubejs:endstone_fluid_bucket"
+					type: "item"
 				}
 				{
 					id: "74228EEA60FEC01B"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Liquid Ending"
+			x: -2.5d
+			y: 2.0d
 		}
 		{
-			icon: "thermal:enderium_gear"
-			x: -4.0d
-			y: 3.0d
-			subtitle: "Contraption 47-5"
-			description: ["Cut the enderium into a gear, for further machination."]
 			dependencies: ["2924B038389DFE3D"]
+			description: ["Cut the enderium into a gear, for further machination."]
+			icon: "thermal:enderium_gear"
 			id: "171B8663C68FA3A5"
+			subtitle: "Contraption 47-5"
 			tasks: [
 				{
 					id: "7875CFA87CCC1045"
-					type: "item"
 					item: "thermal:enderium_gear"
+					type: "item"
 				}
 				{
 					id: "2746113B0E842F5A"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -4.0d
+			y: 3.0d
 		}
 		{
-			icon: "endersdelight:ender_shard"
-			x: -4.0d
-			y: -1.5d
-			subtitle: "Contraption 47-2"
-			description: ["Crush the pearls into smaller bits."]
 			dependencies: ["77D4BFD83C7B4F82"]
+			description: ["Crush the pearls into smaller bits."]
+			icon: "endersdelight:ender_shard"
 			id: "316D4E8D569C1441"
+			subtitle: "Contraption 47-2"
 			tasks: [
 				{
 					id: "059F052EDB3B85B5"
-					type: "item"
 					item: "endersdelight:ender_shard"
+					type: "item"
 				}
 				{
 					id: "125A9E4D59DA92FF"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -4.0d
+			y: -1.5d
 		}
 		{
-			title: "Dark Ringing"
-			icon: "kubejs:coal_ring"
-			x: -1.0d
-			y: 3.0d
-			subtitle: "Contraption 49-2"
-			description: ["Cast the cast iron without a cast into a casted iron ring."]
 			dependencies: ["2A2AEE76BAB22ADD"]
+			description: ["Cast the cast iron without a cast into a casted iron ring."]
+			icon: "kubejs:coal_ring"
 			id: "0EB3BFB1D2D6D8CC"
+			subtitle: "Contraption 49-2"
 			tasks: [
 				{
 					id: "67ED60C6B5479165"
-					type: "item"
 					item: "kubejs:coal_ring"
+					type: "item"
 				}
 				{
 					id: "309E72A7068227DA"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Dark Ringing"
+			x: -1.0d
+			y: 3.0d
 		}
 		{
-			icon: "createbigcannons:cast_iron_ingot"
-			x: 0.0d
-			y: 1.5d
-			subtitle: "Contraption 49-1"
-			description: ["Press the iron into cast iron, the darker brother of steel."]
 			dependencies: ["2775946163E178D8"]
+			description: ["Press the iron into cast iron, the darker brother of steel."]
+			icon: "tfmg:cast_iron_ingot"
 			id: "2A2AEE76BAB22ADD"
+			subtitle: "Contraption 49-1"
 			tasks: [
 				{
 					id: "611743D54F700A2A"
+					item: "tfmg:cast_iron_ingot"
 					type: "item"
-					item: "createbigcannons:cast_iron_ingot"
 				}
 				{
 					id: "1652CB6C64D910FD"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: 0.0d
+			y: 1.5d
 		}
 		{
-			title: "Iron Ingot"
-			icon: "minecraft:iron_ingot"
-			x: 0.0d
-			y: 0.0d
-			description: ["Your usual iron generator goes here."]
 			dependencies: ["51F030004DBA106F"]
-			hide: true
+			description: ["Your usual iron generator goes here."]
+			hide_until_deps_complete: true
+			icon: "minecraft:iron_ingot"
 			id: "2775946163E178D8"
 			tasks: [
 				{
 					id: "0C5F0B6A900FBCE3"
-					type: "item"
 					item: "minecraft:iron_ingot"
+					type: "item"
 				}
 				{
 					id: "754AAB44D7AC4D94"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			title: "Iron Ingot"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			icon: "minecraft:cobblestone"
-			x: -1.5d
-			y: 0.5d
-			subtitle: "Contraption 48-2"
-			description: ["The usual cobblestone generator should suffice."]
 			dependencies: ["51F030004DBA106F"]
-			hide: true
+			description: ["The usual cobblestone generator should suffice."]
+			hide_until_deps_complete: true
+			icon: "minecraft:cobblestone"
 			id: "17F72BBAC47B3731"
+			subtitle: "Contraption 48-2"
 			tasks: [
 				{
 					id: "362F103A61A02C92"
-					type: "item"
 					item: "minecraft:cobblestone"
+					type: "item"
 				}
 				{
 					id: "60FEB43AA1F0EC18"
-					type: "checkmark"
 					title: "Automated"
+					type: "checkmark"
 				}
 			]
+			x: -1.5d
+			y: 0.5d
 		}
 		{
-			x: -3.5d
-			y: 0.5d
-			subtitle: "Contraption 48-1"
-			description: ["Melt down 3 ingots, these will serve as a catalyst, so, this time automation is not required."]
 			dependencies: ["2924B038389DFE3D"]
+			description: ["Melt down 3 ingots, these will serve as a catalyst, so, this time automation is not required."]
 			id: "6FC605221CB21F2E"
+			subtitle: "Contraption 48-1"
 			tasks: [{
+				consume_items: false
 				id: "7015FA496760E7DC"
-				type: "item"
-				title: "Copper Can (Molten Iron)"
 				item: {
+					Count: 1
 					id: "tconstruct:copper_can"
-					Count: 1b
 					tag: {
 						fluid: "tconstruct:molten_enderium"
 					}
 				}
-				consume_items: false
+				title: "Copper Can (Molten Iron)"
+				type: "item"
 			}]
+			x: -3.5d
+			y: 0.5d
 		}
 	]
-	quest_links: [ ]
+	title: "&f3b&r Tunnel Quantification"
 }

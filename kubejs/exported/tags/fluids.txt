@@ -15,10 +15,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 #minecraft:water
 - minecraft:water
 - minecraft:flowing_water
-- beyond_earth:fuel
-- beyond_earth:flowing_fuel
-- beyond_earth:oil
-- beyond_earth:flowing_oil
+- ad_astra:fuel
+- ad_astra:flowing_fuel
+- ad_astra:oil
+- ad_astra:flowing_oil
 - sliceanddice:flowing_fertilizer
 - sliceanddice:fertilizer
 - create_confectionery:black_chocolate
@@ -83,16 +83,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:molten_refined_obsidian
 - tconstruct:flowing_molten_refined_obsidian
 
-#beyond_earth:molten_ostrum
-- beyond_earth:molten_ostrum?
-- beyond_earth:flowing_molten_ostrum?
+#ad_astra:molten_ostrum
+- ad_astra:molten_ostrum?
+- ad_astra:flowing_molten_ostrum?
 
 #forge:molten_copper
 - #tconstruct:molten_copper
 
-#beyond_earth:oil
-- beyond_earth:oil
-- beyond_earth:flowing_oil
+#ad_astra:oil
+- ad_astra:oil
+- ad_astra:flowing_oil
 
 #tconstruct:earth_slime
 - tconstruct:earth_slime
@@ -127,8 +127,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - #tconstruct:molten_silver
 
 #forge:oil
-- beyond_earth:oil
-- beyond_earth:flowing_oil
+- ad_astra:oil
+- ad_astra:flowing_oil
 
 #forge:molten_rose_gold
 - #tconstruct:molten_rose_gold
@@ -268,9 +268,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:molten_steel
 - tconstruct:flowing_molten_steel
 
-#beyond_earth:molten_desh
-- beyond_earth:molten_desh?
-- beyond_earth:flowing_molten_desh?
+#ad_astra:molten_desh
+- ad_astra:molten_desh?
+- ad_astra:flowing_molten_desh?
 
 #tconstruct:tooltips/slime
 - #forge:magma
@@ -320,9 +320,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - create_enchantment_industry:flowing_hyper_experience
 - create_enchantment_industry:hyper_experience
 
-#beyond_earth:molten_calorite
-- beyond_earth:molten_calorite?
-- beyond_earth:flowing_molten_calorite?
+#ad_astra:molten_calorite
+- ad_astra:molten_calorite?
+- ad_astra:flowing_molten_calorite?
 
 #tconstruct:molten_tin
 - tconstruct:molten_tin
@@ -349,7 +349,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:flowing_molten_osmium
 
 #forge:molten_desh
-- #beyond_earth:molten_desh
+- #ad_astra:molten_desh
 
 #tconstruct:molten_refined_glowstone
 - tconstruct:molten_refined_glowstone
@@ -474,8 +474,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:flowing_molten_pig_iron
 
 #forge:fuel
-- beyond_earth:fuel
-- beyond_earth:flowing_fuel
+- ad_astra:fuel
+- ad_astra:flowing_fuel
 
 #forge:molten_hepatizon
 - #tconstruct:molten_hepatizon
@@ -485,7 +485,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:flowing_venom
 
 #forge:molten_ostrum
-- #beyond_earth:molten_ostrum
+- #ad_astra:molten_ostrum
 
 #tconstruct:molten_bronze
 - tconstruct:molten_bronze
@@ -597,9 +597,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:molten_queens_slime
 - tconstruct:flowing_molten_queens_slime
 
-#beyond_earth:vehicle_fuel
-- beyond_earth:fuel
-- beyond_earth:flowing_fuel
+#ad_astra:vehicle_fuel
+- ad_astra:fuel
+- ad_astra:flowing_fuel
 
 #forge:molten_refined_obsidian
 - #tconstruct:molten_refined_obsidian
@@ -612,7 +612,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Mar
 - tconstruct:flowing_molten_hepatizon
 
 #forge:molten_calorite
-- #beyond_earth:molten_calorite
+- #ad_astra:molten_calorite
 
 #decorative_blocks:thatch
 - decorative_blocks:thatch

@@ -15,7 +15,7 @@
 	#
 	tick_falling_blocks = true
 	#----------------------------------------------------------------------------------------------------+
-	# Makes the entire dungeon solid, preventing caves, ravines, etc... from interfering with the dungeon.
+	# When enabled, the dungeons will ignore caves instead of trying to adjust to them (by not generating specific blocks).
 	#
 	solid = false
 

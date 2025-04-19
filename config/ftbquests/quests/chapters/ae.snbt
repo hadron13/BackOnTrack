@@ -1,84 +1,72 @@
 {
-	id: "03AB763E827ABEDB"
-	group: "6F42926B3F0C534A"
-	order_index: 12
-	filename: "ae"
-	title: "&f4b&r Semiconductor Hammering"
-	icon: "ae2:engineering_processor"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ae"
+	group: "6F42926B3F0C534A"
+	icon: "ae2:engineering_processor"
+	id: "03AB763E827ABEDB"
 	images: [
 		{
+			height: 2.0d
+			hover: ["chapter 4"]
+			image: "kubejs:textures/images/chapter4.png"
+			rotation: 0.0d
+			width: 12.0d
 			x: 0.5d
 			y: -5.0d
-			width: 12.0d
-			height: 2.0d
-			rotation: 0.0d
-			image: "kubejs:textures/images/chapter4.png"
-			hover: ["chapter 4"]
-			click: ""
-			dev: false
-			corner: false
 		}
 		{
-			x: 3.5d
-			y: -2.5d
-			width: 1.5d
 			height: 1.5d
-			rotation: 0.0d
-			image: "createdeco:textures/block/palettes/decal/orange_decal.png"
 			hover: [
 				"To Be Changed!"
 				"The Semiconductor is soon to come."
 			]
-			click: ""
-			dev: false
-			corner: false
+			image: "createdeco:textures/block/palettes/decal/orange_decal.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 3.5d
+			y: 0.0d
 		}
 	]
+	order_index: 12
+	quest_links: [ ]
 	quests: [
 		{
-			x: -1.5d
-			y: -1.5d
-			dependencies: [
-				"4595F825A8A21E53"
-				"4E549678E05D7FA8"
-			]
+			dependencies: ["48C3CEB3BBD7BCFD"]
+			hide_dependency_lines: true
 			id: "71396BE6ABFD23A6"
 			tasks: [{
 				id: "43B8759DA39F59A3"
-				type: "item"
 				item: "minecraft:sand"
+				type: "item"
 			}]
+			x: -1.5d
+			y: 1.0d
 		}
 		{
-			x: 0.0d
-			y: -3.0d
-			dependencies: [
-				"4595F825A8A21E53"
-				"4E549678E05D7FA8"
-			]
+			dependencies: ["48C3CEB3BBD7BCFD"]
+			hide_dependency_lines: true
 			id: "10CEF83AAD114760"
 			tasks: [{
 				id: "5105D1041F3002C6"
-				type: "item"
 				item: "minecraft:charcoal"
+				type: "item"
 			}]
+			x: 0.0d
+			y: -0.5d
 		}
 		{
-			x: 1.5d
-			y: -1.5d
 			dependencies: ["10CEF83AAD114760"]
 			id: "5394E767BDDA9D77"
 			tasks: [{
 				id: "2580533A6FC93599"
-				type: "item"
 				item: "thermal:coal_coke"
+				type: "item"
 			}]
+			x: 1.5d
+			y: 1.0d
 		}
 		{
-			x: 0.0d
-			y: 0.0d
 			dependencies: [
 				"71396BE6ABFD23A6"
 				"5394E767BDDA9D77"
@@ -86,121 +74,115 @@
 			id: "5186E068F742B83A"
 			tasks: [{
 				id: "77959CFEFF640957"
-				type: "item"
 				item: "kubejs:silicon_compound"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 2.5d
 		}
 		{
-			x: 0.0d
-			y: 1.5d
 			dependencies: ["5186E068F742B83A"]
 			id: "1DE06F050CF4F712"
 			tasks: [{
 				id: "27EA2B6F466016B5"
-				type: "item"
 				item: "kubejs:metallurgic_silicon"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 4.0d
 		}
 		{
-			x: -1.5d
-			y: 1.5d
-			dependencies: [
-				"4595F825A8A21E53"
-				"4E549678E05D7FA8"
-			]
+			dependencies: ["48C3CEB3BBD7BCFD"]
+			hide_dependency_lines: true
 			id: "0ED9617DEB5738D4"
 			tasks: [{
 				id: "14CE7BA1E6AF4C03"
-				type: "item"
 				item: "ae2:certus_quartz_dust"
+				type: "item"
 			}]
+			x: -1.5d
+			y: 4.0d
 		}
 		{
-			x: 1.5d
-			y: 0.0d
-			dependencies: [
-				"4595F825A8A21E53"
-				"4E549678E05D7FA8"
-			]
+			dependencies: ["48C3CEB3BBD7BCFD"]
+			hide_dependency_lines: true
 			id: "5002C8BE3CA838E3"
 			tasks: [{
 				id: "0F45B911F3C2CA88"
+				item: "ad_astra:desh_ingot"
 				type: "item"
-				item: "beyond_earth:desh_ingot"
 			}]
+			x: 1.5d
+			y: 2.5d
 		}
 		{
-			x: 3.0d
-			y: 0.0d
-			dependencies: [
-				"4595F825A8A21E53"
-				"4E549678E05D7FA8"
-			]
+			dependencies: ["48C3CEB3BBD7BCFD"]
+			hide_dependency_lines: true
 			id: "0F00A171BA3BD9CB"
 			tasks: [{
 				id: "676EFB6C5817BBE6"
-				type: "item"
 				item: "thermal:apatite"
+				type: "item"
 			}]
+			x: 3.0d
+			y: 2.5d
 		}
 		{
-			x: 0.0d
-			y: 4.5d
 			dependencies: ["618F33E789A1DA3D"]
 			id: "3F10D4492B0A2F54"
 			tasks: [{
 				id: "5729F088C3EF1075"
-				type: "item"
 				item: "ae2:silicon"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 7.0d
 		}
 		{
-			x: 0.0d
-			y: 6.0d
 			dependencies: ["3F10D4492B0A2F54"]
 			id: "0EDCA4434591E1B0"
 			tasks: [{
 				id: "129B696B9DBB3F2B"
-				type: "item"
 				item: "ae2:printed_silicon"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 8.5d
 		}
 		{
-			x: -1.5d
-			y: 8.0d
 			dependencies: ["0EDCA4434591E1B0"]
 			id: "4E227A3704CA42FB"
 			tasks: [{
 				id: "33CF29C25083578B"
-				type: "item"
 				item: "ae2:logic_processor"
+				type: "item"
 			}]
+			x: -1.5d
+			y: 10.5d
 		}
 		{
-			x: 0.0d
-			y: 8.0d
 			dependencies: ["0EDCA4434591E1B0"]
 			id: "12854F6B6793A8E0"
 			tasks: [{
 				id: "00B76D571A46B978"
-				type: "item"
 				item: "ae2:engineering_processor"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 10.5d
 		}
 		{
-			x: 1.5d
-			y: 8.0d
 			dependencies: ["0EDCA4434591E1B0"]
 			id: "42EE5C0D570C7071"
 			tasks: [{
 				id: "3C5167670B93502D"
-				type: "item"
 				item: "ae2:calculation_processor"
+				type: "item"
 			}]
+			x: 1.5d
+			y: 10.5d
 		}
 		{
-			x: 1.5d
-			y: 1.5d
 			dependencies: [
 				"0F00A171BA3BD9CB"
 				"5002C8BE3CA838E3"
@@ -208,13 +190,13 @@
 			id: "3D21C820D1796234"
 			tasks: [{
 				id: "34825C54B70D6989"
-				type: "item"
 				item: "kubejs:sif4_bucket"
+				type: "item"
 			}]
+			x: 1.5d
+			y: 4.0d
 		}
 		{
-			x: 0.0d
-			y: 3.0d
 			dependencies: [
 				"1DE06F050CF4F712"
 				"0ED9617DEB5738D4"
@@ -223,10 +205,23 @@
 			id: "618F33E789A1DA3D"
 			tasks: [{
 				id: "00205B93F773F203"
-				type: "item"
 				item: "kubejs:sif2_bucket"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4595F825A8A21E53"]
+			hide_until_deps_complete: true
+			id: "48C3CEB3BBD7BCFD"
+			tasks: [{
+				id: "2C80E19209DF8844"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
 		}
 	]
-	quest_links: [ ]
+	title: "&f4b&r Semiconductor Hammering"
 }

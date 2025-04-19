@@ -1,0 +1,27 @@
+
+[crystals]
+	#Allow crafting of budding Amethyst block
+	enable_crafting_budding_amethyst = false
+	#Allow crafting of budding Prismarine block
+	enable_crafting_budding_prismarine = false
+	#Allow crafting of budding Diamond block
+	enable_crafting_budding_diamond = false
+	#Allow crafting of budding Nether Quartz block
+	enable_crafting_budding_nether_quartz = false
+	#Allow crafting of budding Salt block
+	enable_crafting_budding_salt = false
+	#Allow crafting of budding Lapis Lazuli block
+	enable_crafting_budding_lapis_lazuli = false
+	#Allow crafting of budding Certus Quartz block
+	enable_crafting_budding_certus_quartz = false
+	#Allow crafting of budding Fluorite block
+	enable_crafting_budding_fluorite = false
+	#Allow crafting of budding Redstone block
+	enable_crafting_budding_redstone = false
+	#Allow crafting of budding Emerald block
+	enable_crafting_budding_emerald = false
+	#Allow crafting of budding Glowstone block
+	enable_crafting_budding_glowstone = false
+	#Allow crafting of budding Fluix block
+	enable_crafting_budding_fluix = false
+

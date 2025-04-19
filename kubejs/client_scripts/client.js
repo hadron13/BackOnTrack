@@ -1,21 +1,33 @@
 // priority: 0
-onEvent('jei.hide.items', event => {
+JEIEvents.hideItems(event => {
 	event.hide('ae2:facade')
 	event.hide('thermal:cinnabar_dust')
+
+	// event.hide("create_connected:parallel_gearbox")
+	// event.hide("create_connected:vertical_parallel_gearbox")
+	// event.hide("create_connected:six_way_gearbox")
+	// event.hide("create_connected:vertical_six_way_gearbox")
+	// event.hide("create_connected:shear_pin")
+	// event.hide("create_connected:overstress_clutch")
+	// event.hide("create_connected:centrifugal_clutch")
+	// event.hide("create_connected:freewheel_clutch")
+	// event.hide("create_connected:brake")
+
 
 	let hide_metal = (mod, type) =>{
 		event.hide(mod+':'+type+'_ingot')
 		event.hide(mod+':'+type+'_nugget')
 		event.hide(mod+':'+type+'_block')
 	}
+	hide_metal('tconstruct', 'steel')
 	hide_metal('thermal', 'steel')
 	hide_metal('thermal', 'tin')
 	hide_metal('thermal', 'bronze')
     hide_metal('thermal', 'electrum')
 	hide_metal('createdeco', 'cast_iron')
-	hide_metal('createindustry', 'cast_iron')
+//	hide_metal('tfmg', 'cast_iron')
 	hide_metal('davebuildingmod', 'steel')
-	hide_metal('beyond_earth', 'steel')
+	hide_metal('ad_astra', 'steel')
 
 	let hide_ores = (mod, type) =>{
 		event.hide(mod+':'+type+'_ore')
@@ -42,7 +54,7 @@ onEvent('jei.hide.items', event => {
 	event.hide('thermal:oil_sand')
 	event.hide('thermal:oil_red_sand')
 
-	event.hide('createindustry:steel_casing')
+	event.hide('tfmg:steel_casing')
 	event.hide('waterstrainer:string_mesh')
 	event.hide('waterstrainer:iron_mesh')
 	event.hide('waterstrainer:obsidian_mesh')
@@ -54,21 +66,21 @@ onEvent('jei.hide.items', event => {
 	event.hide('ae2:vibration_chamber')
 	event.hide('ae2:quartz_growth_accelerator')
 
-	event.hide('createindustry:coal_coke')
-	event.hide('createindustry:saltpeter')
-	event.hide('createindustry:steel_ingot')
+	event.hide('tfmg:coal_coke')
+	event.hide('tfmg:saltpeter')
+	event.hide('tfmg:steel_ingot')
 
-	event.hide('beyond_earth:iron_plate')
-	event.hide('beyond_earth:compressed_steel')
-	event.hide('beyond_earth:engine_fan')
-	event.hide('beyond_earth:oxygen_tank')
-	event.hide('beyond_earth:iron_stick')
-	event.hide('beyond_earth:water_pump')
-	event.hide('beyond_earth:compressor')
-	event.hide('beyond_earth:coal_generator')
-	event.hide('beyond_earth:nasa_workbench')
-	event.hide('beyond_earth:fuel_refinery')
-	event.hide('beyond_earth:oxygen_gear')
+	event.hide('ad_astra:iron_plate')
+	event.hide('ad_astra:compressed_steel')
+	event.hide('ad_astra:engine_fan')
+	event.hide('ad_astra:oxygen_tank')
+	event.hide('ad_astra:iron_stick')
+	event.hide('ad_astra:water_pump')
+	event.hide('ad_astra:compressor')
+	event.hide('ad_astra:coal_generator')
+	event.hide('ad_astra:nasa_workbench')
+	event.hide('ad_astra:fuel_refinery')
+	event.hide('ad_astra:oxygen_gear')
 	event.hide('biomesoplenty:rose_quartz_shard')
 
 	event.hide('create:crushed_raw_silver')
@@ -102,52 +114,78 @@ onEvent('jei.hide.items', event => {
 	event.hide('thermal:gold_plate')
 	event.hide('thermal:netherite_plate')
 
-	// let coin_materials = ['zinc', 'copper', 'brass', 'iron', 'gold', 'cast_iron', 'netherite']
-	// coin_materials.foreach(e => {
-	// 	event.hide(`createdeco:${e}_coin`)
-	// 	event.hide(`createdeco:${e}_coinstack`)
-	// })
+	event.hide('tfmg:sulfur_powder')
+	event.hide('tfmg:saltpeter')
+	event.hide('tfmg:pumpjack_hammer')
+	event.hide('tfmg:pumpjack_crank')
+	event.hide('tfmg:pumpjack_hammer_part')
+	event.hide('tfmg:pumpjack_hammer_head')
+	event.hide('tfmg:pumpjack_hammer_connector')
+	event.hide('tfmg:pumpjack_base')
+	event.hide('tfmg:large_pumpjack_hammer_part')
+	event.hide('tfmg:large_pumpjack_hammer_head')
+	event.hide('tfmg:large_pumpjack_hammer_connector')
 
-	event.hide('createindustry:sulfur_powder')
-	event.hide('createindustry:saltpeter')
-	event.hide('createindustry:pumpjack_hammer')
-	event.hide('createindustry:pumpjack_crank')
-	event.hide('createindustry:pumpjack_hammer_part')
-	event.hide('createindustry:pumpjack_hammer_head')
-	event.hide('createindustry:pumpjack_hammer_connector')
-	event.hide('createindustry:pumpjack_base')
-	event.hide('createindustry:large_pumpjack_hammer_part')
-	event.hide('createindustry:large_pumpjack_hammer_head')
-	event.hide('createindustry:large_pumpjack_hammer_connector')
+	event.hide("kubejs:growing_rose_seed")
+	event.hide("kubejs:growing_tiny_rose_crystal")
+	event.hide("kubejs:growing_small_rose_crystal")
+	event.hide("kubejs:incomplete_calculation_processor")
+	event.hide("kubejs:incomplete_logic_processor")
+	event.hide("kubejs:incomplete_engineering_processor")
+	event.hide("kubejs:incomplete_rotation_mechanism")
+	event.hide("kubejs:incomplete_pressure_mechanism")
+	event.hide("kubejs:incomplete_train_mechanism")
+	event.hide("kubejs:incomplete_scorch_mechanism")
+	event.hide("kubejs:incomplete_power_mechanism")
+	event.hide("kubejs:incomplete_explosive_mechanism")
+	event.hide("kubejs:incomplete_ender_mechanism")
+	event.hide("kubejs:incomplete_high_power_mechanism")
+	event.hide("kubejs:incomplete_candy_mechanism")
+	event.hide("kubejs:incomplete_steel_engine")
+	event.hide("kubejs:incomplete_resistor")
+	event.hide("kubejs:incomplete_inductor")
+	event.hide("kubejs:incomplete_ceramic_capacitor")
+	event.hide("kubejs:incomplete_electrolytic_capacitor")
+	event.hide("kubejs:incomplete_rotation_machine")
+	event.hide("kubejs:calculator")
+	event.hide("kubejs:charged_calculator")
 
-           
-	event.hide("createindustry:machine_input") 
-	event.hide("createindustry:electric_motor") 
-	event.hide("createindustry:resistor") 
-	event.hide("createindustry:copper_coil") 
-	event.hide("createindustry:neon_tube") 
-	event.hide("createindustry:cable_tube") 
-	event.hide("createindustry:light_bulb") 
-	event.hide("createindustry:energy_meter") 
-	event.hide("createindustry:voltmeter") 
-	event.hide("createindustry:firebox") 
-	event.hide("createindustry:converter") 
-	event.hide("createindustry:capacitor") 
-	event.hide("createindustry:accumulator") 
-	event.hide("createindustry:rotor") 
-	event.hide("createindustry:stator") 
-	event.hide("createindustry:cable_connector") 
-	event.hide("createindustry:electric_casing")
-	event.hide("createindustry:polarizer")      
-	event.hide("createindustry:generator")      
-	event.hide("createindustry:galvanic_cell") 
-	event.hide("createindustry:surface_scanner") 
-	event.hide("createindustry:casting_spout") 
-	event.hide("createindustry:casting_basin")
+	event.hide("tfmg:machine_input") 
+	event.hide("tfmg:electric_motor") 
+	event.hide("tfmg:resistor") 
+	event.hide("tfmg:copper_coil") 
+	event.hide("tfmg:neon_tube") 
+	event.hide("tfmg:cable_tube") 
+	event.hide("tfmg:light_bulb") 
+	event.hide("tfmg:energy_meter") 
+	event.hide("tfmg:voltmeter") 
+	event.hide("tfmg:firebox") 
+	event.hide("tfmg:converter") 
+	event.hide("tfmg:capacitor") 
+	event.hide("tfmg:accumulator") 
+	event.hide("tfmg:rotor")
+	event.hide("tfmg:oil_deposit")
+	event.hide("tfmg:stator") 
+	event.hide("tfmg:cable_connector") 
+	event.hide("tfmg:electric_casing")
+	event.hide("tfmg:polarizer")      
+	event.hide("tfmg:generator")      
+	event.hide("tfmg:galvanic_cell") 
+	event.hide("tfmg:surface_scanner") 
+	event.hide("tfmg:casting_spout") 
+	event.hide("tfmg:casting_basin")
+	event.hide("tfmg:steel_mechanism")
+
+	event.hide("gearbox:mirror")
+	event.hide("gearbox:laser_drill")
+	event.hide("gearbox:chemical_reactor")
+	event.hide("gearbox:dipper")
+	event.hide("gearbox:tau_cannon")
+	event.hide("gearbox:geld_ingot")
 
 	event.hide('grapplemod:rocketupgradeitem')
 
-
+// occultism e forbidden nerfar
 	event.hide('createaddition:diamond_grit')
 	event.hide('createaddition:capacitor')
 	event.hide('createaddition:zinc_sheet')
@@ -160,25 +198,30 @@ onEvent('jei.hide.items', event => {
 	event.hide('@itemfilters')
 	//event.hide('@enderstorage')
 	event.hide('@davebuildingmod')
+	event.hide('@buddingcrystals')
 
 
 })
 
-onEvent('jei.subtypes', event => {
+JEIEvents.subtypes(event => {
 	// event.useNBT('advancedrocketry:planet_id_chip')
 })
 
-onEvent('jei.hide.fluids', event => {
-	event.hide('beyond_earth:fuel')
+JEIEvents.hideFluids(event => {
+	event.hide('ad_astra:fuel')
 })
 
-onEvent('jei.add.items', event => {
+JEIEvents.addItems(event => {
+	event.add('buddingcrystals:budding_budding_skystone')
+	event.add('buddingcrystals:budding_skystone_cluster')
+
 	event.add('pipez:fluid_pipe')
 	event.add('pipez:energy_pipe')
 
 	event.add('toms_storage:ts.crafting_terminal')
 	event.add('toms_storage:ts.storage_terminal')
 	event.add('toms_storage:ts.inventory_connector')
+	event.add('toms_storage:ts.inventory_cable_connector')
 	event.add('toms_storage:ts.inventory_cable')
 
 	event.add('metalbarrels:wood_to_copper')
@@ -205,10 +248,10 @@ onEvent('jei.add.items', event => {
 	event.add('thermal:gold_coin')
 })
 
-onEvent('jei.remove.categories', event => {
+JEIEvents.removeCategories(event => {
 })
 
-onEvent('item.tooltip', tooltip => {
+ItemEvents.tooltip(tooltip => {
 	let holds = (id, slots) => tooltip.add("metalbarrels:" + id + "_barrel", [`§7${slots} Slots`])
 	let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "5" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
 	let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Secondary Assembly: §6Chapter ${stage}`])
@@ -267,10 +310,10 @@ onEvent('item.tooltip', tooltip => {
 
 
 	not_consumed('farmersdelight:diamond_knife')
-	not_consumed('kubejs:stone_saw')
-	not_consumed('kubejs:iron_saw')
-	not_consumed('kubejs:diamond_saw')
-	not_consumed('createindustry:screwdriver')
+	// not_consumed('kubejs:stone_saw')
+	// not_consumed('kubejs:iron_saw')
+	// not_consumed('kubejs:diamond_saw')
+	// not_consumed('tfmg:screwdriver')
 	// not_consumed('create:super_glue')
 	// not_consumed('xreliquary:mercy_cross')
 	// not_consumed('xreliquary:ender_staff')
@@ -297,12 +340,12 @@ onEvent('item.tooltip', tooltip => {
 
 	tooltip.add("kubejs:steel_ring", ["§7Obtained breaking a §6built-up steel cannon barrel"])
 
-	tooltip.add("createindustry:steel_pump", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
-	tooltip.add("createindustry:steel_pipe", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
-	tooltip.add("createindustry:steel_fluid_tank", ["§eWarning: this item may not work correctly outside a tower."])
+	tooltip.add("tfmg:steel_pump", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
+	tooltip.add("tfmg:steel_pipe", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
+	tooltip.add("tfmg:steel_fluid_tank", ["§eWarning: this item may not work correctly outside a tower."])
 
 })
 
-onEvent('jei.information', event => {
+JEIEvents.information(event => {
 
 })

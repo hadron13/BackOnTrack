@@ -186,26 +186,14 @@ let mystery_leaves_but_no_gapples =
     ]
 }
 
-onEvent('block.loot_tables', event => {
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier('buddingcrystals:small_budding_skystone_bud').addLoot('2x ae2:sky_stone_block')
+    event.addBlockLootModifier('buddingcrystals:medium_budding_skystone_bud').addLoot('2x ae2:sky_stone_block')
+    event.addBlockLootModifier('buddingcrystals:large_budding_skystone_bud').addLoot('2x ae2:sky_stone_block')
 
-    event.addSimpleBlock('minecraft:twisting_vines', 'minecraft:twisting_vines')
-    event.addSimpleBlock('minecraft:weeping_vines', 'minecraft:weeping_vines')
+    // event.addBlockLootModifier('tfmg:lead_ore').addLoot('thermal:raw_lead')
+    // event.addBlockLootModifier('tfmg:deepslate_lead_ore').addLoot('thermal:raw_lead')
+    // event.addBlockLootModifier('tfmg:nickel_ore').addLoot('thermal:raw_nickel')
+    // event.addBlockLootModifier('tfmg:deepslate_nickel_ore').addLoot('thermal:raw_nickel')
+});
 
-    event.addJson("forbidden_arcanus:mysterywood_leaves", mystery_leaves_but_no_gapples)
-
-    event.addSimpleBlock('createbigcannons:built_up_steel_cannon_barrel', '64x kubejs:steel_ring')
-    event.addSimpleBlock('createindustry:lead_ore', 'thermal:raw_lead')
-    event.addSimpleBlock('createindustry:deepslate_lead_ore', 'thermal:raw_lead')
-    event.addSimpleBlock('createindustry:nickel_ore', 'thermal:raw_nickel')
-    event.addSimpleBlock('createindustry:deepslate_nickel_ore', 'thermal:raw_nickel')
-
-    // event.addSimpleBlock('biomesoplenty:rose_quartz_cluster', '')
-
-    event.addBlock('biomesoplenty:rose_quartz_cluster', table => {
-        table.addPool(pool => {
-            pool.addItem('create:rose_quartz').randomChance(0.3)
-            pool.addItem('minecraft:air').randomChance(0.7)
-        })
-    })
-
-})
