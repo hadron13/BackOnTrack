@@ -1,0 +1,9 @@
+{
+  "dropped_item": "minecraft:prismarine",
+  "recipe_item": "minecraft:prismarine",
+  "normal_drop_chance": 2.0,
+  "max_drop_chance": 4.0,
+  "translation": "Prismarine",
+  "texture": "minecraft:item/prismarine_shard",
+  "growth_chance": 5
+}

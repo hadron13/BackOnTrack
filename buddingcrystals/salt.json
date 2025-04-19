@@ -1,0 +1,10 @@
+{
+  "dropped_item": "minecraft:air",
+  "recipe_item": "minecraft:air",
+  "normal_drop_chance": 2.0,
+  "max_drop_chance": 4.0,
+  "compat_mod": "mekanism",
+  "translation": "Salt",
+  "texture": "mekanism:item/salt",
+  "growth_chance": 1
+}

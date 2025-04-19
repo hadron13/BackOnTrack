@@ -1,0 +1,13 @@
+{
+  "dropped_item": "ae2:fluix_crystal",
+  "recipe_item": "ae2:fluix_crystal",
+  "normal_drop_chance": 2.0,
+  "max_drop_chance": 4.0,
+  "compat_mod": "ae2",
+  "translation": "Fluix",
+  "texture": {
+    "budding_texture": "ae2:block/fluix_block",
+    "crystal_texture": "ae2:item/fluix_dust"
+  },
+  "growth_chance": 5
+}

@@ -1,0 +1,10 @@
+{
+  "dropped_item": "ae2:certus_quartz_crystal",
+  "recipe_item": "ae2:certus_quartz_crystal",
+  "normal_drop_chance": 2.0,
+  "max_drop_chance": 4.0,
+  "compat_mod": "ae2",
+  "translation": "Certus Quartz",
+  "texture": "ae2:item/certus_quartz_crystal",
+  "growth_chance": 5
+}

@@ -1,0 +1,9 @@
+{
+  "dropped_item": "minecraft:glowstone_dust",
+  "recipe_item": "minecraft:glowstone_dust",
+  "normal_drop_chance": 2.0,
+  "max_drop_chance": 4.0,
+  "translation": "Glowstone",
+  "texture": "minecraft:item/glowstone_dust",
+  "growth_chance": 5
+}
