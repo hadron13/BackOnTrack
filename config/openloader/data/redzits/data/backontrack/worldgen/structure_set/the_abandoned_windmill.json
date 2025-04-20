@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "backontrack:the_abandoned_windmill",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 27,
+    "separation": 9,
+    "salt": 4225642
+  }
+}

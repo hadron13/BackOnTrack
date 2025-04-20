@@ -37,6 +37,7 @@ let CC = (id, x) => MOD("create_connected", id, x)
 let AL = (id, x) => MOD("alloyed", id, x)
 let SS = (id, x) => MOD("sophisticatedstorage", id, x)
 let SB = (id, x) => MOD("sophisticatedbackpacks", id, x)
+let ML = (id, x) => MOD("createmetallurgy", id, x)
 //
 
 let colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
@@ -71,6 +72,7 @@ function ifiniDeploying(output, input, tool) {
 ServerEvents.recipes(event => {
 	log.push('Registering Recipes')
 
+	MetallurgyRecipes(event)
 	unwantedRecipes(event)
 	tweaks(event)
 	unify(event)
@@ -2186,6 +2188,11 @@ function copperMachine(event) {
 	abstruse_machine(ES('ender_chest'), 2, MC("chest"))
 	abstruse_machine(ES('ender_tank'), 2, CR("fluid_tank"))
 	abstruse_machine(TE('upgrade_augment_3'), 1, KJ('power_mechanism'))
+}
+
+function MetallurgyRecipes(event){
+    event.remove({output: ML("foundry_mixer")})
+
 }
 
 function brassMachine(event) {
