@@ -131,7 +131,8 @@ StartupEvents.registry('item', event => {
 	event.create('soaked_sheet').texture("kubejs:item/soaked_sheet").displayName('Soaked Copper Sheet')
 	event.create('rough_sheet').texture("kubejs:item/rough_sheet").displayName('Rough Copper Sheet')
 
-	event.create('rotation_template').texture("kubejs:item/brass_template").displayName('Rotation Template')
+	event.create('rotation_template').texture("kubejs:item/andesite_template").displayName('Andesite Template')
+	event.create('brass_template').texture("kubejs:item/brass_template").displayName('Brass Template')
 
 	event.create('resistor').texture("kubejs:item/resistor").displayName('Resistor')
 	event.create('inductor').texture("kubejs:item/inductor").displayName('Induction Coil')

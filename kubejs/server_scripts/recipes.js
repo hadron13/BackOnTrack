@@ -1174,6 +1174,15 @@ function prettierpipes(event) {
 		L: '#minecraft:planks'
 	})
 
+	event.shaped(KJ("brass_template", 8), [
+		'MLM',
+		'MLM',
+		'MMM'
+	], {
+		M: CR('brass_ingot'),
+		L: '#minecraft:planks'
+	})
+
 	event.shaped("8x pipez:energy_pipe", [
 		'PMP'
 	], {
@@ -2163,6 +2172,20 @@ function copperMachine(event) {
 	copper_machine('thermal:device_water_gen', 1, MC('bucket'))
 	copper_machine('create:smart_fluid_pipe', 2)
 	copper_machine('create_enchantment_industry:disenchanter', 1, "#create:sandpaper")
+
+	let abstruse_machine = (id, amount, other_ingredient) => {
+		event.remove({ output: id })
+		if (other_ingredient) {
+			event.smithing(Item.of(id, amount), KJ('brass_template'), 'kubejs:enderium_machine', other_ingredient)
+			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:copper_machine', B: other_ingredient })
+		}
+		else
+			event.stonecutting(Item.of(id, amount), 'kubejs:copper_machine')
+	}
+
+	abstruse_machine(ES('ender_chest'), 2, MC("chest"))
+	abstruse_machine(ES('ender_tank'), 2, CR("fluid_tank"))
+	abstruse_machine(TE('upgrade_augment_3'), 1, KJ('power_mechanism'))
 }
 
 function brassMachine(event) {
@@ -2250,7 +2273,7 @@ function brassMachine(event) {
 	let brass_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('rotation_template'), 'kubejs:brass_machine', other_ingredient)
+			event.smithing(Item.of(id, amount), KJ('brass_template'), 'kubejs:brass_machine', other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:brass_machine', B: other_ingredient })
 		}
 		else
@@ -2322,9 +2345,12 @@ function brassMachine(event) {
 	andesite_machine('create:andesite_funnel', 4)
 	andesite_machine('kubejs:pipe_module_utility', 4)
 
-	event.remove({output: PP('item_terminal')})
-	event.smithing(PP('item_terminal'),'toms_storage:ts.storage_terminal', KJ('brass_machine'))
 
+	event.smithing('toms_storage:ts.crafting_terminal', "kubejs:rotation_template",'toms_storage:ts.storage_terminal', MC('crafting_table'))
+	event.remove({output: PP('item_terminal')})
+	event.smithing(PP('item_terminal'), KJ('brass_template'), 'toms_storage:ts.storage_terminal', KJ('brass_machine'))
+	event.remove({output: PP('item_terminal')})
+	event.smithing(CI('steel_fluid_tank'), KJ('brass_template'), CR('fluid_tank'), AL('steel_sheet'))
 	event.remove({output: CC('parallel_gearbox')})
 	event.remove({output: CC('vertical_parallel_gearbox')})
 	event.remove({output: CC('six_way_gearbox')})
@@ -2410,14 +2436,7 @@ function enderStuff(event){
 
 	event.recipes.gearboxMechanizing(KJ("coal_ring"), CI("cast_iron_ingot"))
 	event.recipes.gearboxMechanizing(TE("enderium_gear"), TE("enderium_ingot"))
-	
-	event.remove({output: ES('ender_tank') })
-	event.remove({output: ES('ender_chest') })
-	event.smithing(ES('ender_tank', 2), KJ('enderium_machine'), CR('fluid_tank'))
-	event.smithing(ES('ender_chest', 2), KJ('enderium_machine'), MC('chest'))
 
-	event.remove({output:'upgrade_augment_3'})
-	event.smithing(TE('upgrade_augment_3'), KJ('enderium_machine'), KJ('power_mechanism'))
 	event.recipes.gearboxPyroprocessing(TE('enderium_ingot'), AE2('ender_dust'))
 
 	event.replaceInput({id: "create:compat/ae2/milling/ender_pearl"}, MC("ender_pearl"), ED("ender_shard"))
@@ -2506,7 +2525,7 @@ function invarChapter(event){
 	let invar_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('rotation_template'), KJ('invar_machine'), other_ingredient)
+			event.smithing(Item.of(id, amount), KJ('brass_template'), KJ('invar_machine'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: KJ('invar_machine'), B: other_ingredient })
 		}
 		else
@@ -2646,7 +2665,7 @@ function zincMachine(event) {
 	let zinc_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('rotation_template'), 'kubejs:zinc_machine', other_ingredient)
+			event.smithing(Item.of(id, amount), KJ('brass_template'), 'kubejs:zinc_machine', other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:zinc_machine', B: other_ingredient })
 		}
 		else
@@ -2855,7 +2874,7 @@ function explosiveMachine(event){
 	// explosive_machine(BC("cannon_mount"), 1, CR('mechanical_bearing'))
 	// explosive_machine(BC("yaw_controller"), 1, CR('turntable'))
 
-	event.smithing(CI('steel_fluid_tank'), CR('fluid_tank'), 'alloyed:steel_sheet')
+
 	event.replaceInput({output:CI('engine_base')}, CI('heavy_machinery_casing'), KJ('explosive_machine'))
 	event.replaceInput({output:CI('engine_base')}, 'alloyed:steel_ingot', KJ('explosive_machine'))
 
@@ -3066,7 +3085,7 @@ function fluixMachine(event) {
 	let fluix_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('rotation_template'), KJ('power_machine'), other_ingredient)
+			event.smithing(Item.of(id, amount), KJ('brass_template'), KJ('power_machine'), other_ingredient)
 			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: KJ('power_machine'), B: other_ingredient })
 		}
 	}
