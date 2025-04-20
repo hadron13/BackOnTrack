@@ -175,6 +175,12 @@ JEIEvents.hideItems(event => {
 	event.hide("tfmg:casting_spout") 
 	event.hide("tfmg:casting_basin")
 	event.hide("tfmg:steel_mechanism")
+	event.hide("tfmg:lead_ore")
+	event.hide("tfmg:deepslate_lead_ore")
+	event.hide("tfmg:lead_ore")
+	event.hide("tfmg:deepslate_nickel_ore")
+	event.hide("tfmg:nickel_ore")
+	event.hide("tfmg:sulfur")
 
 	event.hide("gearbox:mirror")
 	event.hide("gearbox:laser_drill")
@@ -221,7 +227,6 @@ JEIEvents.addItems(event => {
 	event.add('toms_storage:ts.crafting_terminal')
 	event.add('toms_storage:ts.storage_terminal')
 	event.add('toms_storage:ts.inventory_connector')
-	event.add('toms_storage:ts.inventory_cable_connector')
 	event.add('toms_storage:ts.inventory_cable')
 
 	event.add('metalbarrels:wood_to_copper')
