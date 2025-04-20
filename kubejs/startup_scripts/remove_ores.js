@@ -6,9 +6,15 @@ WorldgenEvents.remove(event => {
         'tfmg:nickel_ore',
         'tfmg:sulfur'
     ];
+    
+    let metallugyrOreList = [
+        'createmetallurgy:wolframite_ore',
+
+    ]
 
     event.removeOres (props => {
         props.blocks = tfmgOreList
+        props.blocks = metallugyrOreList
     });
 
 });
