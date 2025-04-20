@@ -330,7 +330,7 @@ ItemEvents.tooltip(tooltip => {
 	tooltip.add("kubejs:resistor", [`350kΩ`])
 	tooltip.add("kubejs:electrolytic_capacitor", [`200V 470uF`])
 	tooltip.add("kubejs:ceramic_capacitor", [`50V 0.1uF`])
-	tooltip.add("kubejs:inductor", [`60uH`])
+//	tooltip.add("kubejs:inductor", [`60uH`])
 
 
 	// tooltip.add("xreliquary:alkahestry_tome", [`§6Cannot be used in Mechanical Crafting`]);
