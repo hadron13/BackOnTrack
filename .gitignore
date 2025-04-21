@@ -8,3 +8,7 @@
 !.gitignore
 /config/jei/world
 !/buddingcrystals
+config/xaerominimap_entities.json
+config/oculus.properties
+config/sound_physics_remastered/occlusion.properties
+config/sound_physics_remastered/reflectivity.properties
