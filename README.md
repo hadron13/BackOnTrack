@@ -1,4 +1,4 @@
-# Create: Back on Track – Innovative Automation Modpack for Minecraft
+# Create: Back on Track
 
 > **Meta Description**  
 > Discover Create: Back on Track – an innovative Minecraft modpack featuring 180+ mods, 15 chapters, and 15 exclusive machines. Build advanced contraptions and automated factories for an unparalleled Create experience!
@@ -48,7 +48,7 @@ With over **180 integrated mods**, this modpack delivers a structured experience
 
 ---
 
-# Create: Back on Track – Modpack de Automação Inovadora para Minecraft
+# Create: Back on Track
 
 > **Meta Description**  
 > Descubra Create: Back on Track – um modpack inovador para Minecraft com mais de 180 mods, 15 capítulos e 15 máquinas exclusivas. Construa contraptions avançadas e fábricas automatizadas para uma experiência única no mundo Create!
@@ -80,7 +80,7 @@ Com mais de **180 mods integrados**, este modpack oferece uma progressão única
 
 - **Versão do Minecraft:** 1.20.1  
 - **Mod Loader:** Forge  
-- **Requisitos Mínimos:** Sistema com memória e CPU potentes para suportar a carga de mods  
+- **Requisitos Mínimos:** Sistema com memória e CPU potentes para suportar os mods  
 - **Instalação:** Via CurseForge Launcher ou alternativas como MultiMC/Prism
 
 ## 🎯 Por que escolher o Create: Back on Track?
