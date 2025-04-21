@@ -121,7 +121,7 @@ StartupEvents.registry('item', event => {
 	event.create('magnesium_chloride').texture("kubejs:item/magnesium_chloride").displayName('Magnesium Chloride')
 	event.create('magnesium_ingot').texture("kubejs:item/magnesium_ingot").displayName('Magnesium Ingot')
 	
-	event.create('steel_ring').texture("kubejs:item/oring").displayName('Steel Ring')
+	event.create('steel_ring').texture("kubejs:item/steel_ring").displayName('Steel Ring')
 	event.create('gold_ring').texture("kubejs:item/precision_mechanism_ring").displayName('Gold Ring')
 	event.create('coal_ring').texture("kubejs:item/ender_mechanism_ring").displayName('Cast Ring')
 	event.create('invar_ring').texture("kubejs:item/invar_mechanism_ring").displayName('Invar Ring')
