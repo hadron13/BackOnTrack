@@ -1838,7 +1838,6 @@ function electronTube(event) {
 	event.recipes.createFilling(KJ('empty_tube'), [MC('glass'), Fluid.of(TC('molten_iron'), 20)])
 	event.recipes.createDeploying(CR('electron_tube'), [KJ('empty_tube'), CR('polished_rose_quartz')])
 	event.recipes.createDeploying(KJ('diamond_tube'), [KJ('empty_tube'), MC('diamond')])
-	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(TC('molten_gold'), 45)])
 
 	let grow = (from, via, to) => {
 		event.recipes.createSequencedAssembly([to], from, [
@@ -2196,6 +2195,15 @@ function MetallurgyRecipes(event){
 	event.remove({output: ML("steel_ingot")})
 	event.remove({output: ML("steel_block")})
 
+	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(ML('molten_gold'), 90)])
+
+    event.recipes.createmetallurgy.casting_in_table(KJ('gold_ring'), [Fluid.of(ML('molten_gold'), 90), TC('coin_cast')], 90, false)
+    
+    //Casting in Basin -> Diamond Block from 900mb Molten Gold without mold in 120 ticks, mold not consumed.
+//   event.recipes.createmetallurgy.casting_in_basin('diamond_block', Fluid.of('createmetallurgy:molten_gold', 900), 120)
+
+
+
 }
 
 function brassMachine(event) {
@@ -2215,14 +2223,6 @@ function brassMachine(event) {
 
 
 	event.recipes.gearboxPyroprocessing(TC('coin_cast'), MC('gold_ingot'))
-	event.custom({
-		"type": "tconstruct:casting_table",
-		"cast": { "item": TC("coin_cast") },
-		"cast_consumed": false,
-		"fluid": { "tag": "tconstruct:molten_gold", "amount": 90 },
-		"result": { "item": KJ("gold_ring") },
-		"cooling_time": 150
-	})
 
 	event.recipes.createCompacting(CR("brass_ingot"), Fluid.of(TC('molten_brass'), 90))
 

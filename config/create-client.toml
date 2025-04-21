@@ -48,6 +48,18 @@
 	rotateWhenSeated = true
 
 	#.
+	#Configure your vision range when submerged in Create's custom fluids
+	[client.fluidFogSettings]
+		#.
+		#The vision range through honey will be multiplied by this factor
+		#Range: 0.125 ~ 256.0
+		honey = 1.0
+		#.
+		#The vision range though chocolate will be multiplied by this factor
+		#Range: 0.125 ~ 256.0
+		chocolate = 1.0
+
+	#.
 	#Settings for the Goggle Overlay
 	[client.goggleOverlay]
 		#.
@@ -92,6 +104,13 @@
 		ambientVolumeCap = 0.10000000149011612
 
 	#.
+	#Mod Integration and JEI
+	[client.jeiIntegration]
+		#.
+		#Whether to auto-update the JEI search when searching in the stock keeper UI
+		syncJeiSearch = true
+
+	#.
 	#Railway related settings
 	[client.trains]
 		#.
@@ -111,23 +130,4 @@
 		#Track Network Color on maps
 		#Allowed Values: RED, GREY, WHITE
 		trainMapColorTheme = "RED"
-
-	#.
-	#Configure your vision range when submerged in Create's custom fluids
-	[client.fluidFogSettings]
-		#.
-		#The vision range through honey will be multiplied by this factor
-		#Range: 0.125 ~ 256.0
-		honey = 1.0
-		#.
-		#The vision range though chocolate will be multiplied by this factor
-		#Range: 0.125 ~ 256.0
-		chocolate = 1.0
-
-	#.
-	#Mod Integration and JEI
-	[client.jeiIntegration]
-		#.
-		#Whether to auto-update the JEI search when searching in the stock keeper UI
-		syncJeiSearch = true
 
