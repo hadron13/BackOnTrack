@@ -2192,6 +2192,9 @@ function copperMachine(event) {
 
 function MetallurgyRecipes(event){
     event.remove({output: ML("foundry_mixer")})
+	event.remove({output: ML("coke")})
+	event.remove({output: ML("steel_ingot")})
+	event.remove({output: ML("steel_block")})
 
 }
 
