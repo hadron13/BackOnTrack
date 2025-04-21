@@ -2190,6 +2190,7 @@ function copperMachine(event) {
 
 function MetallurgyRecipes(event){
     event.remove({output: ML("foundry_mixer")})
+	event.remove({output: ML("glassed_foundry_lid")})
 	event.remove({output: ML("coke")})
 	event.remove({output: ML("steel_ingot")})
 	event.remove({output: ML("steel_block")})
@@ -2347,6 +2348,9 @@ function brassMachine(event) {
 	andesite_machine('toms_storage:ts.inventory_cable_connector', 1, CR('electron_tube'))
     andesite_machine('gearbox:brass_press', 1, CR('brass_block'))
     andesite_machine(CR('chain_conveyor'), 2, MC('chain'))
+	andesite_machine(ML('mechanical_belt_grinder'), 1, ML('sandpaper_belt'))
+	andesite_machine(ML('industrial_crucible'), 3, TC('seared_bricks'))
+	andesite_machine(ML('foundry_basin'), 1, TC('seared_melter'))
 
 	andesite_machine('toms_storage:ts.inventory_cable', 8)
 	andesite_machine('create:portable_storage_interface', 2)
