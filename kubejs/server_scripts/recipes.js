@@ -2200,9 +2200,6 @@ function MetallurgyRecipes(event){
 
     event.recipes.createmetallurgy.casting_in_table(KJ('gold_ring'), [Fluid.of(ML('molten_gold'), 90), TC('coin_cast')], 90, false)
     
-    //Casting in Basin -> Diamond Block from 900mb Molten Gold without mold in 120 ticks, mold not consumed.
-//   event.recipes.createmetallurgy.casting_in_basin('diamond_block', Fluid.of('createmetallurgy:molten_gold', 900), 120)
-
 
 
 }
