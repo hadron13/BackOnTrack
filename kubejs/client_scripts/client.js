@@ -245,6 +245,7 @@ JEIEvents.addItems(event => {
 	event.add('toms_storage:ts.storage_terminal')
 	event.add('toms_storage:ts.inventory_connector')
 	event.add('toms_storage:ts.inventory_cable')
+	event.add('toms_storage:ts.inventory_cable_connector')
 
 	event.add('metalbarrels:wood_to_copper')
 	event.add('metalbarrels:wood_to_iron')

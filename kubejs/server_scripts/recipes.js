@@ -2346,9 +2346,9 @@ function brassMachine(event) {
 	andesite_machine('toms_storage:ts.inventory_connector', 1, CR('andesite_funnel'))
 	andesite_machine('toms_storage:ts.inventory_cable_connector', 1, CR('electron_tube'))
     andesite_machine('gearbox:brass_press', 1, CR('brass_block'))
+    andesite_machine(CR('chain_conveyor'), 2, MC('chain'))
 
-	andesite_machine(CR('chain_conveyor'), 2, MC('chain'))
-
+	andesite_machine('toms_storage:ts.inventory_cable', 8)
 	andesite_machine('create:portable_storage_interface', 2)
 	andesite_machine('create:mechanical_harvester', 2)
 	andesite_machine('create:mechanical_plough', 2)
