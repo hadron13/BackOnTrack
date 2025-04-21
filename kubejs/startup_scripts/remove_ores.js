@@ -9,8 +9,7 @@ WorldgenEvents.remove(event => {
     
     let metallugyrOreList = [
         'createmetallurgy:wolframite_ore',
-
-    ]
+    ];
 
     event.removeOres (props => {
         props.blocks = tfmgOreList
