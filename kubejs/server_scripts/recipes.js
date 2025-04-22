@@ -769,13 +769,6 @@ function tweaks(event) {
 		S: F("#rods/wooden")
 	})
 
-	event.remove({ output: 'create_security:blank_card' })
-	event.shaped('create_security:blank_card', [
-		'SS'
-	], {
-		S: CR("copper_sheet")
-	})
-
 	event.shaped("trashcans:item_trash_can", [
 		'SSS',
 		'AEA',
@@ -2195,6 +2188,9 @@ function MetallurgyRecipes(event){
 	event.remove({output: ML("steel_ingot")})
 	event.remove({output: ML("steel_block")})
 
+	    //Melting -> Diamond into 200mb Molten Gold in 90 ticks with Heated condition.
+		event.recipes.createmetallurgy.melting(Fluid.of(TE('redstone'), 100), MC("redstone"), 90, 'heated')
+
 	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(ML('molten_gold'), 90)])
 	event.recipes.createFilling(KJ('empty_tube'), [MC('glass'), Fluid.of(ML('molten_iron'), 20)])
 
@@ -2313,6 +2309,7 @@ function brassMachine(event) {
 	brass_machine('create:stockpile_switch', 2)
 	brass_machine('create:content_observer', 2)
 	brass_machine('thermal:machine_press', 1, MC('dropper'))
+	brass_machine(AE2('storage_bus'), 1, AE2('item_storage_cell_1k'))
 	brass_machine('torchmaster:feral_flare_lantern', 1, MC('glowstone_dust'))
 	brass_machine(PP('pressurizer'), 1, CR('propeller'))
 	brass_machine('create:brass_funnel', 4)
