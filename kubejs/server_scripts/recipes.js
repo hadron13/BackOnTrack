@@ -2188,15 +2188,21 @@ function MetallurgyRecipes(event){
 	event.remove({output: ML("steel_ingot")})
 	event.remove({output: ML("steel_block")})
 
-	    //Melting -> Diamond into 200mb Molten Gold in 90 ticks with Heated condition.
-		event.recipes.createmetallurgy.melting(Fluid.of(TE('redstone'), 100), MC("redstone"), 90, 'heated')
+	event.recipes.createmetallurgy.melting(Fluid.of(TE('redstone'), 100), MC("redstone"), 90, 'heated')
 
 	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(ML('molten_gold'), 90)])
 	event.recipes.createFilling(KJ('empty_tube'), [MC('glass'), Fluid.of(ML('molten_iron'), 20)])
 
     event.recipes.createmetallurgy.casting_in_table(KJ('gold_ring'), [Fluid.of(ML('molten_gold'), 90), TC('coin_cast')], 90, false)
     
-
+	event.recipes.tfmg.distillation(Fluid.of(KJ("desalted_oil"), 360), [
+		Fluid.of(CI("heavy_oil"), 120), 
+		Fluid.of(CI("diesel"), 80),
+		Fluid.of(CI("kerosene"), 60),
+		Fluid.of(CI("naphtha"), 60),
+		Fluid.of(CI("gasoline"), 80),
+		Fluid.of(CI("lpg"), 60)
+	])
 
 }
 
@@ -2720,43 +2726,6 @@ function oilComplex(event){
     event.recipes.gearboxElectrolyzing([Fluid.of(KJ("desalted_oil"), 50), Fluid.of(MC("water"), 50)], Fluid.of(KJ("oil_brine"), 100)).energy(100)
 
     event.recipes.createMixing(Fluid.of(TC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), MC('charcoal')]).heated()
-
-	event.custom({
-		"type": "tfmg:distillation",
-		"ingredients": [{
-			"amount": 360,
-			"fluid": "kubejs:desalted_oil",
-			"nbt": {}
-		}
-		],
-		"results": [{
-			"amount": 120,
-			"fluid": "tfmg:heavy_oil"
-		},
-		{
-			"amount": 80,
-			"fluid": "tfmg:diesel"
-		},
-		{
-			"amount": 60,
-			"fluid": "tfmg:kerosene"
-		},
-		{
-			"amount": 60,
-			"fluid": "tfmg:naphtha"
-		},
-		{
-			"amount": 80,
-			"fluid": "tfmg:gasoline"
-		},
-		{
-			"amount": 60,
-			"fluid": "tfmg:lpg"
-		},
-		],
-		"processingTime": 180
-	})
-
 
 }
 
