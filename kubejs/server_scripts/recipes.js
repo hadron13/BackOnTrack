@@ -483,7 +483,6 @@ function Alloys(event) {
 	event.remove({ type: MC("crafting_shapeless"), output: TE('bronze_dust') })
 	event.remove({ type: MC("crafting_shapeless"), output: TE('invar_dust') })
 
-	event.recipes.createMixing(Fluid.of(TC('molten_brass'), 18), [Fluid.of(TC('molten_copper'), 9), Fluid.of(TC('molten_zinc'), 9)]).processingTime(1)
 	event.recipes.createMixing(Fluid.of(TC('molten_constantan'), 4), [Fluid.of(TC('molten_copper'), 4), Fluid.of(TC('molten_nickel'), 4)]).processingTime(1)
 	event.recipes.createMixing(Fluid.of(TC('molten_rose_gold'), 4), [Fluid.of(TC('molten_copper'), 4), Fluid.of(TC('molten_gold'), 4)]).processingTime(1)
 
@@ -2187,20 +2186,27 @@ function copperMachine(event) {
 
 function MetallurgyRecipes(event){
 	event.remove({output: "pipeorgans:copper_boot"})
-    event.remove({output: ML("foundry_mixer")})
+  event.remove({output: ML("foundry_mixer")})
 	event.remove({output: ML("glassed_foundry_lid")})
 	event.remove({output: ML("coke")})
 	event.remove({output: ML("steel_ingot")})
 	event.remove({output: ML("steel_block")})
 	event.remove({output: TE("device_lava_gen")})
+	event.remove({output: TC("molten_brass")})
+
+
+	event.remove({id: TC("smeltery/casting/metal/brass/ingot_sand_cast")})
+	event.remove({id: TC("smeltery/casting/metal/brass/ingot_gold_cast")})
+	event.remove({id: ML("casting_in_table/brass/ingot")})
 
 	event.recipes.createmetallurgy.melting(Fluid.of(TE('redstone'), 100), MC("redstone"), 90, 'heated')
 
 	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(ML('molten_gold'), 90)])
 	event.recipes.createFilling(KJ('empty_tube'), [MC('glass'), Fluid.of(ML('molten_iron'), 20)])
 
-    event.recipes.createmetallurgy.casting_in_table(KJ('gold_ring'), [Fluid.of(ML('molten_gold'), 90), TC('coin_cast')], 90, false)
-    
+  event.recipes.createmetallurgy.casting_in_table(KJ('gold_ring'), [Fluid.of(ML('molten_gold'), 90), TC('coin_cast')], 90, false)
+	event.recipes.createmetallurgy.casting_in_table(CR('brass_ingot'), [Fluid.of(ML('molten_brass'), 90), TC('ingot_cast')], 90, false)
+
 	event.recipes.tfmg.distillation(Fluid.of(KJ("desalted_oil"), 360), [
 		Fluid.of(CI("heavy_oil"), 120), 
 		Fluid.of(CI("diesel"), 80),
@@ -2230,7 +2236,7 @@ function brassMachine(event) {
 
 	event.recipes.gearboxPyroprocessing(TC('coin_cast'), MC('gold_ingot'))
 
-	event.recipes.createCompacting(CR("brass_ingot"), Fluid.of(TC('molten_brass'), 90))
+	event.recipes.createCompacting(CR("brass_ingot"), Fluid.of(ML('molten_brass'), 90))
 
 	redstoneTransmute(MC("cobblestone"), MC("netherrack"))
 	redstoneTransmute(MC("sand"), MC("red_sand"))

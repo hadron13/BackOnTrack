@@ -1101,11 +1101,6 @@
 			id: "30A3DB35FEECD798"
 			rewards: [
 				{
-					id: "0AE65EC18E359903"
-					item: "ae2:drive"
-					type: "item"
-				}
-				{
 					count: 8
 					id: "301E84028BCEF960"
 					item: "ae2:fluix_glass_cable"
@@ -1117,18 +1112,13 @@
 					type: "item"
 				}
 				{
-					count: 8
-					id: "4A4B5E2D82B1458E"
-					item: {
-						Count: 1
-						id: "ae2:item_storage_cell_1k"
-						tag: { }
-					}
+					id: "26DA27F441D106B1"
+					item: "ae2:energy_acceptor"
 					type: "item"
 				}
 				{
-					id: "26DA27F441D106B1"
-					item: "ae2:energy_acceptor"
+					id: "7BBB7CFE4ACB7391"
+					item: "ae2:storage_bus"
 					type: "item"
 				}
 			]
