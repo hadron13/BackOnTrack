@@ -38,6 +38,7 @@ let AL = (id, x) => MOD("alloyed", id, x)
 let SS = (id, x) => MOD("sophisticatedstorage", id, x)
 let SB = (id, x) => MOD("sophisticatedbackpacks", id, x)
 let ML = (id, x) => MOD("createmetallurgy", id, x)
+let CFL = (id, x) => MOD("create_factory_logistics", id, x)
 //
 
 let colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
@@ -2166,6 +2167,9 @@ function copperMachine(event) {
 	copper_machine('create:smart_fluid_pipe', 2)
 	copper_machine('create_enchantment_industry:disenchanter', 1, "#create:sandpaper")
 
+	copper_machine(CFL('jar_packager'), 1, CR('packager'))
+	copper_machine(CFL('factory_fluid_gauge'), 2, CR('stock_link'))
+
 	let abstruse_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -2182,11 +2186,13 @@ function copperMachine(event) {
 }
 
 function MetallurgyRecipes(event){
+	event.remove({output: "pipeorgans:copper_boot"})
     event.remove({output: ML("foundry_mixer")})
 	event.remove({output: ML("glassed_foundry_lid")})
 	event.remove({output: ML("coke")})
 	event.remove({output: ML("steel_ingot")})
 	event.remove({output: ML("steel_block")})
+	event.remove({output: TE("device_lava_gen")})
 
 	event.recipes.createmetallurgy.melting(Fluid.of(TE('redstone'), 100), MC("redstone"), 90, 'heated')
 

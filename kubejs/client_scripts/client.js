@@ -199,6 +199,8 @@ JEIEvents.hideItems(event => {
 	event.hide("tfmg:nickel_ore")
 	event.hide("tfmg:sulfur")
 
+	event.hide("create_factory_logistics:fluid_mechanism")
+
 	event.hide("gearbox:mirror")
 	event.hide("gearbox:laser_drill")
 	event.hide("gearbox:chemical_reactor")
