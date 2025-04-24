@@ -28,7 +28,7 @@ let F = (id, x) =>  MOD("forge", id, x)
 let WT = (id, x) =>  MOD("waystones", id, x)
 let AC = (id, x) => MOD("aquaculture", id, x)
 let PP = (id, x) => MOD("prettypipes", id, x)
-let OC = (id, x) => MOD("occultism", id, x)
+let FB = (id, x) => MOD("forbidden_arcanus", id, x)
 let BC = (id, x) => MOD("createbigcannons", id, x)
 let CI = (id, x) => MOD("tfmg", id, x)
 let ED = (id, x) => MOD("endersdelight", id, x)
@@ -39,6 +39,7 @@ let SS = (id, x) => MOD("sophisticatedstorage", id, x)
 let SB = (id, x) => MOD("sophisticatedbackpacks", id, x)
 let ML = (id, x) => MOD("createmetallurgy", id, x)
 let CFL = (id, x) => MOD("create_factory_logistics", id, x)
+let CP = (id, x) => MOD("chipped", id, x)
 //
 
 let colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
@@ -103,7 +104,6 @@ ServerEvents.recipes(event => {
 	rocketScience(event)
 	drawersop(event)
 	trading(event)
-	beforeNuke(event)
 	oreProcessing(event)
     Alloys(event)
 
@@ -145,7 +145,6 @@ ServerEvents.tags('item', event => {
 
 	event.get("forbidden_arcanus:indestructible_blacklisted")
 		.add(/waterstrainer:.*/)
-		.add(OC("#miners/ores"))
 
 	event.get("minecraft:planks").add("forbidden_arcanus:mysterywood_planks").add("forbidden_arcanus:cherrywood_planks")
 	event.get("minecraft:logs_that_burn").add("#forbidden_arcanus:mysterywood_logs").add("#forbidden_arcanus:cherrywood_logs")
@@ -252,21 +251,14 @@ ServerEvents.tags('fluid', event => {
 
 // Scripts
 
-function beforeNuke(event) {
-	event.replaceInput({ id: "occultism:ritual/summon_foliot_crusher" }, F("#raw_materials/silver"), CR("raw_zinc"))
-	event.replaceInput({ id: "occultism:ritual/summon_djinni_crusher" }, F("#raw_materials/silver"), CR("raw_zinc"))
-}
-
 function oreProcessing(event){
 	let stone = Item.of(MC("cobblestone"), 1).withChance(.5)
-	let otherstone = Item.of(OC("otherstone"), 1).withChance(.5)
 
 	event.recipes.createMixing(Fluid.of(MC('molten_nickel'), 90), [Fluid.of(TC('molten_copper'), 90), Fluid.of(TC('molten_iron'), 90)]).processingTime(1)
 
 	event.recipes.createCrushing([Item.of("forbidden_arcanus:stellarite_piece", 1), Item.of("forbidden_arcanus:stellarite_piece", 1).withChance(.25), stone], "forbidden_arcanus:stella_arcanum")
 	event.recipes.createCrushing([Item.of("forbidden_arcanus:xpetrified_orb", 2), Item.of("forbidden_arcanus:xpetrified_orb", 1).withChance(.25), stone], "forbidden_arcanus:xpetrified_ore")
 	event.recipes.createCrushing([Item.of("forbidden_arcanus:arcane_crystal", 2), Item.of("forbidden_arcanus:arcane_crystal_dust", 1).withChance(.25), stone], "forbidden_arcanus:arcane_crystal_ore")
-	event.recipes.createCrushing([Item.of(OC("iesnium_dust"), 2), Item.of(OC("iesnium_dust"), 1).withChance(.25), otherstone], OC("iesnium_ore"))
 	event.recipes.createCrushing([Item.of(TE("sapphire"), 2), Item.of(TE("sapphire"), 1).withChance(.25), stone], TE("sapphire_ore"))
 	event.recipes.createCrushing([Item.of(TE("ruby"), 2), Item.of(TE("ruby"), 1).withChance(.25), stone], TE("ruby_ore"))
 
@@ -546,10 +538,7 @@ function unwantedRecipes(event) {
 	event.remove({ id: "grapplemod:magnethook" })
 	event.remove({ id: "grapplemod:rockethook" })
 	event.remove({ id: "forbidden_arcanus:eternal_stella" })
-	event.remove({ id: OC('miner/ores/redstone_ore') })
-	event.remove({ id: OC('miner/ores/aluminum_ore') })
-	event.remove({ id: OC('miner/ores/tin_ore') })
-	event.remove({ id: OC('miner/ores/silver_ore') })
+
 	event.remove({ id: MC('diorite') })
 	event.remove({ id: MC('andesite') })
 	event.remove({ id: MC('granite') })
@@ -989,6 +978,7 @@ function tweaks(event) {
 	cobblegen(MC("polished_andesite"), MC("andesite"))
 	cobblegen(MC("polished_granite"), MC("granite"))
 	cobblegen(MC("polished_diorite"), MC("diorite"))
+	cobblegen(CP("polished_calcite"), MC ("calcite"))
 
 	event.remove({ output: MC('basalt') })
 	cobblegen(MC("soul_soil"), MC("basalt"))
@@ -1508,24 +1498,13 @@ function unify(event) {
 	event.recipes.createMilling(TE("copper_dust"), MC("copper_ingot"))
 	event.recipes.createMilling(KJ("zinc_dust"), CR("zinc_ingot"))
 
-	event.replaceInput({ id: OC("ritual/summon_djinni_crusher") }, '#forge:raw_materials/silver', CR('raw_zinc'))
+
 	event.replaceOutput({ id: CR('compat/ae2/milling/gold') }, AE2('gold_dust'), TE('gold_dust'))
 	event.replaceOutput({ id: CR('compat/ae2/milling/iron') }, AE2('iron_dust'), TE('iron_dust'))
-	event.replaceOutput({ id: OC('crushing/iron_dust_from_ingot') }, OC('iron_dust'), TE('iron_dust'))
-	event.replaceOutput({ id: OC('crushing/gold_dust_from_ingot') }, OC('gold_dust'), TE('gold_dust'))
-	event.replaceOutput({ id: OC('crushing/obsidian_dust') }, OC('obsidian_dust'), CR('powdered_obsidian'))
-	event.replaceInput({ id: OC('crafting/chalk_purple_impure') }, OC('obsidian_dust'), CR('powdered_obsidian'))
-	event.replaceInput({ id: OC('ritual/craft_infused_lenses') }, F('#ingots/silver'), TE('nickel_ingot'))
-	event.replaceInput({ id: OC('crafting/magic_lamp_empty') }, F('#ingots/silver'), MC('iron_ingot'))
-	event.replaceInput({ id: OC('crafting/lens_frame') }, F('#ingots/silver'), TE('nickel_ingot'))
 	event.replaceInput({ id: TE('augments/rf_coil_storage_augment') }, F('#ingots/silver'), MC('iron_ingot'))
 	event.replaceInput({ id: TE('augments/rf_coil_xfer_augment') }, F('#ingots/silver'), MC('iron_ingot'))
 	event.replaceInput({ id: TE('augments/rf_coil_augment') }, F('#ingots/silver'), MC('iron_ingot'))
 	event.replaceInput({ id: TE('tools/detonator') }, F('#ingots/silver'), TE('lead_ingot'))
-	event.replaceOutput({ type: OC("crushing") }, OC('copper_dust'), TE('copper_dust'))
-	event.replaceOutput({ type: OC("crushing") }, OC('iron_dust'), TE('iron_dust'))
-	event.replaceOutput({ type: OC("crushing") }, OC('gold_dust'), TE('gold_dust'))
-	event.replaceOutput({ type: OC("crushing") }, OC('silver_dust'), TE('silver_dust'))
 	event.replaceInput({}, '#forge:plates/iron', CR('iron_sheet'))
 	event.replaceInput({}, '#forge:plates/gold', CR('golden_sheet'))
 	event.replaceInput({}, '#forge:dusts/gold', TE('gold_dust'))
@@ -2203,7 +2182,7 @@ function MetallurgyRecipes(event){
 	event.remove({type: "tconstruct:entity_melting"})
 
 	event.remove({output: "pipeorgans:copper_boot"})
-  event.remove({output: ML("foundry_mixer")})
+	event.remove({output: ML("foundry_mixer")})
 	event.remove({output: ML("glassed_foundry_lid")})
 	event.remove({output: ML("coke")})
 	event.remove({output: ML("steel_ingot")})
@@ -2224,8 +2203,9 @@ function MetallurgyRecipes(event){
 
 	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(ML('molten_gold'), 90)])
 	event.recipes.createFilling(KJ('empty_tube'), [MC('glass'), Fluid.of(ML('molten_iron'), 20)])
+	event.recipes.createFilling(MC('magma_cream'), [FB('soul'), Fluid.of(TC('magma'), 25)])
 
-  event.recipes.createmetallurgy.casting_in_table(KJ('gold_ring'), [Fluid.of(ML('molten_gold'), 90), TC('coin_cast')], 90, false)
+	event.recipes.createmetallurgy.casting_in_table(KJ('gold_ring'), [Fluid.of(ML('molten_gold'), 90), TC('coin_cast')], 90, false)
 	event.recipes.createmetallurgy.casting_in_table(CR('brass_ingot'), [Fluid.of(ML('molten_brass'), 90), TC('ingot_cast')], 90, false)
 
 	event.recipes.tfmg.distillation(Fluid.of(KJ("desalted_oil"), 360), [
@@ -2272,7 +2252,7 @@ function brassMachine(event) {
 	event.recipes.createMixing(Fluid.of(KJ('ash_water'), 500), [Item.of(SP('ash'), 1), Fluid.of(MC('water'), 500)])
 	event.recipes.createMilling([KJ('impure_sky_chunks')], AE2('sky_stone_block')).processingTime(75)
 	event.recipes.createMixing([KJ('clean_sky_chunks'), Fluid.of(KJ('dirt_water'), 50)], [KJ('impure_sky_chunks'), Fluid.of(KJ("ash_water"), 250)])
-
+	event.recipes.createMixing([Fluid.of(TC('magma'), 50)], [MC('iron_nugget'), MC('calcite'), Fluid.of(KJ("dirt_water"), 50)]).heated()
 	event.custom({
 
 		"type": "farmersdelight:cutting",

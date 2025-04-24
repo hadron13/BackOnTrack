@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 {
    "pack": {
       "pack_format": 15,
       "description": ""
    }
+=======
+{
+   "pack": {
+      "pack_format": 15,
+      "description": ""
+   }
+>>>>>>> 961a3972ef29af9543698b3cc0209f78fdb8a395
 }
