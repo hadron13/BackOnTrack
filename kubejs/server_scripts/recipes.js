@@ -2203,7 +2203,7 @@ function MetallurgyRecipes(event){
 
 	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(ML('molten_gold'), 90)])
 	event.recipes.createFilling(KJ('empty_tube'), [MC('glass'), Fluid.of(ML('molten_iron'), 20)])
-	event.recipes.createFilling(MC('magma_cream'), [FB('soul	'), Fluid.of(TC('magma'), 25)])
+	event.recipes.createFilling(MC('magma_cream'), [FB('soul'), Fluid.of(TC('magma'), 25)])
 
 	event.recipes.createmetallurgy.casting_in_table(KJ('gold_ring'), [Fluid.of(ML('molten_gold'), 90), TC('coin_cast')], 90, false)
 	event.recipes.createmetallurgy.casting_in_table(CR('brass_ingot'), [Fluid.of(ML('molten_brass'), 90), TC('ingot_cast')], 90, false)
