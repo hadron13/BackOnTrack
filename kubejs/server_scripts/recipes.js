@@ -2185,6 +2185,23 @@ function copperMachine(event) {
 }
 
 function MetallurgyRecipes(event){
+	removeMetallugyOre(event, 'copper')
+	removeMetallugyOre(event, 'tin')
+	removeMetallugyOre(event, 'lead')
+	removeMetallugyOre(event, 'silver')
+	removeMetallugyOre(event, 'zinc')
+	removeMetallugyOre(event, 'invar')
+	removeMetallugyOre(event, 'gold')
+	removeMetallugyOre(event, 'constantan')
+	removeMetallugyOre(event, 'nickel')
+	removeMetallugyOre(event, 'iron')
+	removeMetallugyOre(event, 'netherite')
+	removeMetallugyOre(event, 'tungsten')
+	removeMetallugyOre(event, 'steel')
+
+	event.remove({type: "createmetallurgy:entity_melting"})
+	event.remove({type: "tconstruct:entity_melting"})
+
 	event.remove({output: "pipeorgans:copper_boot"})
   event.remove({output: ML("foundry_mixer")})
 	event.remove({output: ML("glassed_foundry_lid")})
@@ -2194,6 +2211,10 @@ function MetallurgyRecipes(event){
 	event.remove({output: TE("device_lava_gen")})
 	event.remove({output: TC("molten_brass")})
 
+	event.remove({output: SB("void_upgrade")})
+	event.remove({output: SB("advanced_void_upgrade")})
+	event.remove({output: SS("advanced_void_upgrade")})
+	event.remove({output: SS("void_upgrade")})
 
 	event.remove({id: TC("smeltery/casting/metal/brass/ingot_sand_cast")})
 	event.remove({id: TC("smeltery/casting/metal/brass/ingot_gold_cast")})
@@ -2216,6 +2237,12 @@ function MetallurgyRecipes(event){
 		Fluid.of(CI("lpg"), 60)
 	])
 
+}
+
+function removeMetallugyOre(event, ore){
+	event.remove({id: "createmetallurgy:melting/"+ore+"/ore"})
+	event.remove({id: "createmetallurgy:melting/"+ore+"/dirty_dust"})
+	event.remove({id: "createmetallurgy:melting/"+ore+"/dust"})
 }
 
 function brassMachine(event) {
@@ -2334,7 +2361,9 @@ function brassMachine(event) {
 	brass_machine('create:brass_tunnel', 4)
 	brass_machine(SS('advanced_magnet_upgrade'), 1)
 	brass_machine(SB('advanced_magnet_upgrade'), 1)
-	brass_machine('kubejs:pipe_module_tier_1', 4)
+	brass_machine(KJ('pipe_module_tier_1'), 4)
+	brass_machine(SS('hopper_upgrade'), 2)
+	brass_machine(SS('advanced_hopper_upgrade'), 2)
 	brass_machine(CR('elevator_pulley'), 1, CR('rope_pulley'))
 
 	let andesite_machine = (id, amount, other_ingredient) => {

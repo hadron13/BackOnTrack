@@ -396,13 +396,7 @@
 				"&6Factory Guide&r - This is the real questing, this will guide you on the journey from start to end."
 			]
 			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "occultism:book_of_calling_foliot_cleaner"
-				tag: {
-					spiritName: "Krredder"
-				}
-			}
+			icon: "computercraft:printed_book"
 			id: "1E8052CB531F278B"
 			rewards: [{
 				id: "137712A52617E5B3"

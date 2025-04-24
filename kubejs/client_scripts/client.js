@@ -199,7 +199,13 @@ JEIEvents.hideItems(event => {
 	event.hide("tfmg:nickel_ore")
 	event.hide("tfmg:sulfur")
 
+	event.hide ("sophisticatedbackpacks:void_upgrade")
+	event.hide ("sophisticatedbackpacks:advanced_void_upgrade")
+	event.hide ("sophisticatedstorage:advanced_void_upgrade")
+	event.hide ("sophisticatedstorage:void_upgrade")
+
 	event.hide("create_factory_logistics:fluid_mechanism")
+	event.hide("create_factory_logistics:incomplete_fluid_mechanism")
 
 	event.hide("gearbox:mirror")
 	event.hide("gearbox:laser_drill")
