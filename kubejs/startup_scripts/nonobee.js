@@ -1,5 +1,5 @@
 StartupEvents.registry('entity_type', event => {
-    event.create('kubejs:nonobee', 'entityjs:mob')
+    let teste = event.create('kubejs:nonobee', 'minecraft:parrot')
         .sized(1, 1)
         .modelSize(1/16, 1/16)
         .animationResource(entity => {
@@ -17,8 +17,21 @@ StartupEvents.registry('entity_type', event => {
         .setMoveControl(entity => {
             return EntityJSUtils.createMoveControl(entity, moveControlBuilder => {
                 moveControlBuilder
-                    .setMaxSpeed(0.2);
+                    .setMaxSpeed(1/16);
             })
         })
-        .followLeashSpeed(1.0);
+        .fireImmune(true)
+        .isInvulnerableTo(context => {
+            return true;
+        })
+        // .setBlockJumpFactor(entity => {
+        //     return 4;
+        // })
+        .setJumpControl(entity => {
+            return EntityJSUtils.createJumpControl(entity, jumpControlBuilder => {
+                jumpControlBuilder
+                    .tick(30)
+                    .jump(3);
+            })
+        })
 });
