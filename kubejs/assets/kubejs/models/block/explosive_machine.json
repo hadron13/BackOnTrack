@@ -9,7 +9,7 @@
 		"6": "kubejs:block/chute_block",
 		"7": "alloyed:block/steel_catwalk_rail",
 		"8": "alloyed:block/bronze/bronze_block",
-		"9": "createbigcannons:block/autocannon/bronze_autocannon",
+		"9": "create:block/mechanical_drill_top",
 		"particle": "alloyed:block/steel_block"
 	},
 	"elements": [

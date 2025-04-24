@@ -28,7 +28,6 @@ let F = (id, x) =>  MOD("forge", id, x)
 let WT = (id, x) =>  MOD("waystones", id, x)
 let AC = (id, x) => MOD("aquaculture", id, x)
 let PP = (id, x) => MOD("prettypipes", id, x)
-let FB = (id, x) => MOD("forbidden_arcanus", id, x)
 let BC = (id, x) => MOD("createbigcannons", id, x)
 let CI = (id, x) => MOD("tfmg", id, x)
 let ED = (id, x) => MOD("endersdelight", id, x)
@@ -131,8 +130,6 @@ ServerEvents.tags('item', event => {
 		event.get('thermal:crafting/dies').add(`kubejs:profession_card_${element}`)
 	});
 
-	event.get("farmersdelight:offhand_equipment").add("forbidden_arcanus:obsidian_skull_shield")
-
 	event.get("forge:tools/axes").add(TC("hand_axe"))
 	event.get("forge:vines").add(MC("vine")).add(BOP("willow_vine")).add(BOP("spanish_moss"))
 
@@ -143,11 +140,6 @@ ServerEvents.tags('item', event => {
 		.add(AE2("engineering_processor_press"))
 		.add(AE2("calculation_processor_press"))
 
-	event.get("forbidden_arcanus:indestructible_blacklisted")
-		.add(/waterstrainer:.*/)
-
-	event.get("minecraft:planks").add("forbidden_arcanus:mysterywood_planks").add("forbidden_arcanus:cherrywood_planks")
-	event.get("minecraft:logs_that_burn").add("#forbidden_arcanus:mysterywood_logs").add("#forbidden_arcanus:cherrywood_logs")
 
 	//event.get('forge:screwdrivers').add('tfmg:screwdriver')
 	event.get('forge:super_glues').add(CR('super_glue'))
@@ -256,9 +248,6 @@ function oreProcessing(event){
 
 	event.recipes.createMixing(Fluid.of(MC('molten_nickel'), 90), [Fluid.of(TC('molten_copper'), 90), Fluid.of(TC('molten_iron'), 90)]).processingTime(1)
 
-	event.recipes.createCrushing([Item.of("forbidden_arcanus:stellarite_piece", 1), Item.of("forbidden_arcanus:stellarite_piece", 1).withChance(.25), stone], "forbidden_arcanus:stella_arcanum")
-	event.recipes.createCrushing([Item.of("forbidden_arcanus:xpetrified_orb", 2), Item.of("forbidden_arcanus:xpetrified_orb", 1).withChance(.25), stone], "forbidden_arcanus:xpetrified_ore")
-	event.recipes.createCrushing([Item.of("forbidden_arcanus:arcane_crystal", 2), Item.of("forbidden_arcanus:arcane_crystal_dust", 1).withChance(.25), stone], "forbidden_arcanus:arcane_crystal_ore")
 	event.recipes.createCrushing([Item.of(TE("sapphire"), 2), Item.of(TE("sapphire"), 1).withChance(.25), stone], TE("sapphire_ore"))
 	event.recipes.createCrushing([Item.of(TE("ruby"), 2), Item.of(TE("ruby"), 1).withChance(.25), stone], TE("ruby_ore"))
 
@@ -537,7 +526,6 @@ function unwantedRecipes(event) {
 	event.remove({ id: "grapplemod:rocketdoublemotorhook" })
 	event.remove({ id: "grapplemod:magnethook" })
 	event.remove({ id: "grapplemod:rockethook" })
-	event.remove({ id: "forbidden_arcanus:eternal_stella" })
 
 	event.remove({ id: MC('diorite') })
 	event.remove({ id: MC('andesite') })
@@ -596,8 +584,6 @@ function unwantedRecipes(event) {
 	event.remove({ input: TE('lightning_charge') })
 	event.remove({ input: TE('ice_charge') })
 	event.remove({ input: TE('earth_charge') })
-	event.remove({ input: "forbidden_arcanus:edelwood_bucket" })
-	event.remove({ output: "forbidden_arcanus:edelwood_bucket" })
 	event.remove({ mod: 'ad_astra', type: 'minecraft:crafting_shaped'})
 	event.remove({ mod: 'ad_astra', type: 'ad_astra:nasa_workbench'})
 	event.remove({ mod: 'ad_astra', type: 'ad_astra:compressor'})
@@ -795,21 +781,6 @@ function tweaks(event) {
 		S: MC('gold_ingot')
 	})
 
-	// event.recipes.createMechanicalCrafting("forbidden_arcanus:eternal_stella", [
-	// 	'PEEEP',
-	// 	'EDS E',
-	// 	'ESDSE',
-	// 	'E SDE',
-	// 	'PEEEP'
-	// ], {
-	// 	E: "forbidden_arcanus:xpetrified_orb",
-	// 	D: "minecraft:diamond",
-	// 	S: "forbidden_arcanus:stellarite_piece",
-	// 	P: "createbigcannons:nethersteel_ingot"
-	// })
-
-	donutCraft(event, MC("weeping_vines"), "forbidden_arcanus:rune", MC("twisting_vines"))
-	donutCraft(event, MC("twisting_vines"), "forbidden_arcanus:rune", MC("weeping_vines"))
 
 	event.shaped(AE2('entropy_manipulator'), [
 		'S  ',
@@ -860,15 +831,6 @@ function tweaks(event) {
 	event.replaceInput({ id: "architects_palette:withered_bone_block" }, AP('withered_bone'), TC('necrotic_bone'))
 	event.remove({ id: "architects_palette:withered_bone" })
 
-	event.remove({ id: "forbidden_arcanus:edelwood_stick" })
-	event.shaped("3x forbidden_arcanus:edelwood_stick", [
-		'S',
-		'A',
-		'S'
-	], {
-		S: 'forbidden_arcanus:edelwood_planks',
-		A: MC('stick')
-	})
 
 	// event.replaceInput({ id: "computercraft:cable" }, MC('redstone'), PR_C('red_ingot'))
 	// event.replaceInput({ id: "computercraft:wired_modem" }, MC('redstone'), PR_C('red_ingot'))
@@ -1229,11 +1191,9 @@ function barrels(event) {
 // 	event.remove({ id: TE("dynamo_lapidary") })
 // 	smithAndMechCraft(TE("dynamo_lapidary"), TE("dynamo_numismatic"), [TE("lapis_gear")])
 // 	event.remove({ id: TE("dynamo_disenchantment") })
-// 	smithAndMechCraft(TE("dynamo_disenchantment"), TE("dynamo_compression"), ["forbidden_arcanus:rune"])
 
 // 	smithAndMechCraft("metalbarrels:copper_barrel", MC("barrel"), "alloyed:bronze_sheet")
 // 	smithAndMechCraft("metalbarrels:iron_barrel", MC("barrel"), "alloyed:steel_sheet")
-// 	smithAndMechCraft("metalbarrels:silver_barrel", MC("barrel"), "forbidden_arcanus:rune")
 // 	smithAndMechCraft("metalbarrels:gold_barrel", MC("barrel"), TC("cobalt_ingot"))
 // //	smithAndMechCraft("metalbarrels:netherite_barrel", MC("barrel"), BC("nethersteel_ingot"))
 
@@ -1567,8 +1527,6 @@ function unify(event) {
 		event.recipes.createCutting([Item.of(mod + ":" + slab, 2)], mod + ":" + planks).processingTime(50)
 	}
 
-	woodcutting("forbidden_arcanus", "cherrywood_log", "cherrywood_planks", "cherrywood_slab")
-	woodcutting("forbidden_arcanus", "mysterywood_log", "mysterywood_planks", "mysterywood_slab")
 	woodcutting("architects_palette", "twisted_log", "twisted_planks", "twisted_slab")
 	woodcutting("tconstruct", "greenheart_log", "greenheart_planks", "greenheart_planks_slab")
 	woodcutting("tconstruct", "skyroot_log", "skyroot_planks", "skyroot_planks_slab")
@@ -2189,11 +2147,13 @@ function MetallurgyRecipes(event){
 	event.remove({output: ML("steel_block")})
 	event.remove({output: TE("device_lava_gen")})
 	event.remove({output: TC("molten_brass")})
-
+	event.remove({output: TC("ingot_cast")})
 	event.remove({output: SB("void_upgrade")})
 	event.remove({output: SB("advanced_void_upgrade")})
 	event.remove({output: SS("advanced_void_upgrade")})
 	event.remove({output: SS("void_upgrade")})
+
+	event.remove({output: "magicfeather:primeval_feather"})
 
 	event.remove({id: TC("smeltery/casting/metal/brass/ingot_sand_cast")})
 	event.remove({id: TC("smeltery/casting/metal/brass/ingot_gold_cast")})
@@ -2203,10 +2163,11 @@ function MetallurgyRecipes(event){
 
 	event.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(ML('molten_gold'), 90)])
 	event.recipes.createFilling(KJ('empty_tube'), [MC('glass'), Fluid.of(ML('molten_iron'), 20)])
-	event.recipes.createFilling(MC('magma_cream'), [FB('soul'), Fluid.of(TC('magma'), 25)])
+	event.recipes.createFilling(MC('magma_cream'), [KJ('soul'), Fluid.of(TC('magma'), 25)])
 
 	event.recipes.createmetallurgy.casting_in_table(KJ('gold_ring'), [Fluid.of(ML('molten_gold'), 90), TC('coin_cast')], 90, false)
 	event.recipes.createmetallurgy.casting_in_table(CR('brass_ingot'), [Fluid.of(ML('molten_brass'), 90), TC('ingot_cast')], 90, false)
+	event.recipes.createmetallurgy.casting_in_table(TC('ingot_cast'), [Fluid.of(ML('molten_gold'), 90), '#forge:ingots'], 90, true)
 
 	event.recipes.tfmg.distillation(Fluid.of(KJ("desalted_oil"), 360), [
 		Fluid.of(CI("heavy_oil"), 120), 
@@ -2668,12 +2629,12 @@ function trainMachine(event){
 function zincMachine(event) {
 	donutCraft(event, TC('foundry_controller'), TC('scorched_bricks'), KJ('scorch_mechanism'))
 
-    event.recipes.createCompacting(['forbidden_arcanus:soul', 'forbidden_arcanus:soulless_sand'], MC("soul_sand"))
-    event.recipes.createMixing(Fluid.of(TC("blood"), 250), 'forbidden_arcanus:soul').heated()
+    event.recipes.createCompacting([KJ('soul'), KJ('soulless_sand')], MC("soul_sand"))
+    event.recipes.createMixing(Fluid.of(TC("blood"), 250), KJ('soul')).heated()
     event.recipes.createFilling(MC("magma_cream"),[Fluid.of(MC("lava"), 250), TC("blood_slime_ball")])
 
     event.remove({output: TC("scorched_brick")})
-    event.recipes.createCompacting(TC("scorched_brick"), ['forbidden_arcanus:soulless_sand', MC("magma_cream"), MC("gravel")] ).heated()
+    event.recipes.createCompacting(TC("scorched_brick"), [KJ('soulless_sand'), MC("magma_cream"), MC("gravel")] ).heated()
 
 
 	let t = KJ('incomplete_scorch_mechanism')
@@ -3485,7 +3446,7 @@ function alchemy(event) {
 	recompact(TE("niter_dust"), TE("niter"))
 	recompact(TE("sapphire_dust"), TE("sapphire"))
 	recompact(TE("ruby_dust"), TE("ruby"))
-	recompact("forbidden_arcanus:arcane_crystal_dust", "forbidden_arcanus:arcane_crystal")
+
 
 }
 

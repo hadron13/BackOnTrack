@@ -8,12 +8,18 @@ WorldgenEvents.remove(event => {
     ];
     
     let metallugyrOreList = [
-        'createmetallurgy:wolframite_ore',
+        'createmetallurgy:wolframite_ore'
+    ];
+
+    let IMQUEBRAVELOreList = [
+        'create_unbreakable:luminarchy_block',
+        'create_unbreakable:philolite_block'
     ];
 
     event.removeOres (props => {
         props.blocks = tfmgOreList
         props.blocks = metallugyrOreList
+        props.blocks = IMQUEBRAVELOreList
     });
 
 });

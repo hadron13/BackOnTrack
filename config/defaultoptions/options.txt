@@ -1,6 +1,6 @@
 version:3465
 autoJump:false
-operatorItemsTab:true
+operatorItemsTab:false
 autoSuggestions:true
 chatColors:true
 chatLinks:true
@@ -15,7 +15,7 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:false
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:true
 toggleCrouch:false
 toggleSprint:false
@@ -36,14 +36,14 @@ simulationDistance:12
 entityDistanceScaling:1.0
 guiScale:2
 particles:0
-maxFps:150
+maxFps:260
 graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","resources/Stay_True_1.20.zip","resources/BVB-Edited.zip","resources/ComputerCreate.zip","resources/CreateSimpleStorage1.1","resources/Create_Style_Redstone_Pen","resources/Created--Updated","resources/ftb_resources","resources/simis_redzits","resources/Create Old Timey Copper - v0.10.zip","resources/Create Simple Storage 2.1.zip","resources/FA+All_Extensions-v1.4.zip","resources/FreshAnimations_v1.9.2.zip","resources/Moonsu Better Create GUI Tom\u0027s Simple Storage 1.3.zip","file/Create New Age Retexture 0.2.1.zip","delightful:overhauls","file/Create Styled Ad Astra NASA Workbench.zip","file/Create-Energistics-1.1.1-mc1.20.1.zip","file/CreateWaystones v1.0.2.b.zip","file/Thermal_Create_1.20.zip"]
-incompatibleResourcePacks:["resources/BVB-Edited.zip","resources/CreateSimpleStorage1.1","resources/Create_Style_Redstone_Pen","resources/Created--Updated","resources/ftb_resources","resources/simis_redzits","resources/Create Simple Storage 2.1.zip","file/Thermal_Create_1.20.zip"]
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","file/Stay_True_1.20.zip","file/staytrue1.20.1.zip","resources/BVB-Edited.zip","resources/simis_redzits.zip","resources/ftb_resources.zip","file/Thermal_Create_1.20.zip","resources/Create_Style_Redstone_Pen.zip","file/Create Simple Storage 2.1.zip","file/Create Back On Track.zip","file/FreshAnimations_v1.9.2.zip","file/FA+All_Extensions-v1.4.zip","file/mobs-refreshed-fa-v2.1.zip","file/villagers-refrehsed+FA-v1.0.zip","file/Create New Age Retexture 0.2.1.zip","delightful:overhauls","file/Create Styled Ad Astra NASA Workbench.zip","file/ComputerCreate.zip","file/Create-Energistics-1.1.1-mc1.20.1.zip","file/CreateWaystones v1.0.2.b.zip","file/Create Old Timey Copper - v0.10.zip"]
+incompatibleResourcePacks:["resources/BVB-Edited.zip","resources/simis_redzits.zip","resources/ftb_resources.zip","file/Thermal_Create_1.20.zip","resources/Create_Style_Redstone_Pen.zip","file/Create Simple Storage 2.1.zip"]
 lastServer:
 lang:en_us
 soundDevice:""
@@ -84,7 +84,7 @@ onlyShowSecureChat:false
 panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
-soundCategory_master:1.0
+soundCategory_master:0.5231788079470199
 soundCategory_music:0.0
 soundCategory_record:0.0
 soundCategory_weather:1.0

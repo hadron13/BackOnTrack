@@ -371,6 +371,8 @@ ItemEvents.tooltip(tooltip => {
 
 	tooltip.add("kubejs:steel_ring", ["§7Obtained breaking a §6built-up steel cannon barrel"])
 
+	tooltip.add('buddingcrystals:budding_budding_skystone', ["§cwarning, this block cannot be broken after being placed, if it breaks, it will disappear"])
+
 	tooltip.add("tfmg:steel_pump", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
 	tooltip.add("tfmg:steel_pipe", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
 	tooltip.add("tfmg:steel_fluid_tank", ["§eWarning: this item may not work correctly outside a tower."])

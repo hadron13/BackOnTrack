@@ -7,6 +7,8 @@ StartupEvents.registry('item', event => {
 
 	event.create('rose_quartz_seed').texture("kubejs:item/rose_quartz_seed_0").displayName("Rose Quartz Seed")
 
+	event.create('soul').texture("kubejs:item/soul").displayName("Soul")
+
 	// let types = [/*'Nether',*/ /*'Certus',*/ 'Fluix']
 	// types.forEach(e => {
 	// 	let id = e.toLowerCase()
@@ -214,6 +216,8 @@ StartupEvents.registry('block', event => {
 	event.create('invar_casing').material('metal').hardness(3.0).displayName('Invar Casing')
 	event.create('fluix_casing').material('metal').hardness(3.0).displayName('Fluix Casing')
 	event.create('mica_block').material('metal').hardness(3.0).displayName('Mica Block')
+
+	event.create('soulless_sand').model('kubejs:block/soulless_sand').material('metal').hardness(4.0).displayName('Souless Sand')
 
 	event.create('ae2:3x_sky_stone_block').model('kubejs:block/sky_stone_block').material('metal').hardness(4.0).displayName('sky stone block 3x')
 	event.create('ae2:2x_sky_stone_block').model('kubejs:block/sky_stone_block').material('metal').hardness(4.0).displayName('sky stone block 2x')

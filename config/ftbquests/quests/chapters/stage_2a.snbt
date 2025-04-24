@@ -11,7 +11,7 @@
 		rotation: 0.0d
 		width: 10.0d
 		x: 0.0d
-		y: 0.0d
+		y: -1.0d
 	}]
 	order_index: 5
 	quest_links: [ ]
@@ -81,10 +81,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"19715EBCBBA1B4AD"
-				"21753CBB528EAADF"
-			]
+			dependencies: ["054599A626D50945"]
 			description: [
 				"If you had not already automated lava production and distribution, this would be a good time to do so, each mechanism requires 2500mb of lava, and the full machine whopping 20 buckets."
 				""
@@ -108,13 +105,14 @@
 				}
 			]
 			title: "A lot. of lava"
-			x: 3.0d
-			y: 5.0d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"227A9F0308BBE647"
-				"30AE867E83F0C07A"
+				"0F1B8FCEE040517A"
+				"7B56EFFB4E69C63D"
 			]
 			description: ["Drop lava over blood to produce infernal magma cream."]
 			icon: "minecraft:magma_cream"
@@ -133,7 +131,7 @@
 				}
 			]
 			x: 0.0d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -159,12 +157,13 @@
 				}
 			]
 			title: "Brownies"
-			x: -3.0d
-			y: 5.0d
+			x: -1.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["21753CBB528EAADF"]
+			dependencies: ["054599A626D50945"]
 			description: ["Redirect a gravel line for this production line."]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:gravel"
 			id: "17DDE3C9D26B4F35"
@@ -181,14 +180,15 @@
 				}
 			]
 			x: 0.0d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["21753CBB528EAADF"]
+			dependencies: ["054599A626D50945"]
 			description: [
 				""
 				"The earliest step into this production line is soul sand, which can be produced by bulk haunting with a fan."
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:soul_sand"
 			id: "4A2CE1B515197917"
@@ -205,31 +205,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["7B56EFFB4E69C63D"]
-			description: ["Whisk the soul until it bleeds, creating an useful pool of hellish blood."]
-			icon: "tconstruct:blood_bucket"
-			id: "7444D6A02022E62D"
-			subtitle: "Contraption 23-2"
-			tasks: [
-				{
-					consume_items: false
-					id: "1F6768DFAB02150A"
-					item: "tconstruct:blood_bucket"
-					type: "item"
-				}
-				{
-					id: "04F0BDDC9D5C14B0"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Soup"
-			x: 2.0d
-			y: 2.0d
+			x: -3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4A2CE1B515197917"]
@@ -238,11 +215,11 @@
 			subtitle: "Contraption 23-1"
 			tasks: [{
 				id: "708756B9574CBDE3"
-				item: "forbidden_arcanus:soul"
+				item: "kubejs:soul"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4A2CE1B515197917"]
@@ -251,34 +228,77 @@
 			subtitle: "Contraption 22-2"
 			tasks: [{
 				id: "7F8F32F374BD0461"
-				item: "forbidden_arcanus:soulless_sand"
+				item: "kubejs:soulless_sand"
 				type: "item"
 			}]
 			title: "Unsoulessed sand"
-			x: -1.5d
-			y: 3.5d
+			x: -3.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["7444D6A02022E62D"]
-			description: ["Then coagulate the unholy blood into a ball using casting tables."]
-			icon: "tconstruct:blood_slime_ball"
-			id: "30AE867E83F0C07A"
-			subtitle: "Contraption 23-3"
-			tasks: [
-				{
-					id: "12E128D8E4873EF5"
-					item: "tconstruct:blood_slime_ball"
-					type: "item"
-				}
-				{
-					id: "3A710BB5C9C94493"
-					title: "Automated"
-					type: "checkmark"
-				}
+			dependencies: [
+				"27A610B4521DECDE"
+				"47AF956BCE09C5E5"
+				"78F2683FDF9C62D9"
 			]
-			title: "Coagulation"
+			id: "0F1B8FCEE040517A"
+			tasks: [{
+				id: "1557308262C43EFF"
+				item: "tconstruct:magma_bucket"
+				type: "item"
+			}]
 			x: 1.5d
-			y: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["054599A626D50945"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "78F2683FDF9C62D9"
+			tasks: [{
+				id: "60B70F80D4638200"
+				item: "kubejs:dirt_water_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["054599A626D50945"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "47AF956BCE09C5E5"
+			tasks: [{
+				id: "74E6284B282E5F78"
+				item: "minecraft:calcite"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["054599A626D50945"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "27A610B4521DECDE"
+			tasks: [{
+				id: "38386E1A9C6C8053"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21753CBB528EAADF"]
+			icon: "create:clipboard"
+			id: "054599A626D50945"
+			tasks: [{
+				id: "6860ED8A69BD3768"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "&f2a&r Hell Processing"
