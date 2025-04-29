@@ -853,7 +853,11 @@
 				"5FF26A886FF04526"
 			]
 			description: ["Cannon casting is not as simple as it may seem from this quest, ponder the machinery for more information."]
-			icon: "createdeco:orange_decal"
+			icon: {
+				Count: 1
+				id: "createbigcannons:autocannon_ammo_container"
+				tag: { }
+			}
 			id: "4C7826C8A5521396"
 			rewards: [
 				{

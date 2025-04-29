@@ -50,10 +50,8 @@ JEIEvents.hideItems(event => {
     hide_thermal_set('electrum')
 
 	event.hide('occultism:silver_ore_deepslate')
-
 	event.hide('thermal:oil_sand')
 	event.hide('thermal:oil_red_sand')
-
 	event.hide('tfmg:steel_casing')
 	event.hide('waterstrainer:string_mesh')
 	event.hide('waterstrainer:iron_mesh')
@@ -61,11 +59,9 @@ JEIEvents.hideItems(event => {
 	event.hide('waterstrainer:strainer_survivalist_solid')
 	event.hide('waterstrainer:strainer_survivalist_reinforced')
 	event.hide('waterstrainer:strainer_fisherman_solid')
-
 	event.hide('ae2:inscriber')
 	event.hide('ae2:vibration_chamber')
 	event.hide('ae2:quartz_growth_accelerator')
-
 	event.hide('createmetallurgy:wolframite_ore')
 	event.hide('createmetallurgy:dirty_wolframite_dust')
 	event.hide('createmetallurgy:wolframite__dust')
@@ -82,11 +78,9 @@ JEIEvents.hideItems(event => {
 	event.hide('createmetallurgy:coke')
 	event.hide('createmetallurgy:steel_block')
 	event.hide('createmetallurgy:steel_ingot')
-
 	event.hide('tfmg:coal_coke')
 	event.hide('tfmg:saltpeter')
 	event.hide('tfmg:steel_ingot')
-
 	event.hide('ad_astra:iron_plate')
 	event.hide('ad_astra:compressed_steel')
 	event.hide('ad_astra:engine_fan')
@@ -99,16 +93,13 @@ JEIEvents.hideItems(event => {
 	event.hide('ad_astra:fuel_refinery')
 	event.hide('ad_astra:oxygen_gear')
 	event.hide('biomesoplenty:rose_quartz_shard')
-
 	event.hide('create:crushed_raw_silver')
-
 	event.hide('createdeco:andesite_door')
 	event.hide('createdeco:copper_door')
 	event.hide('createdeco:brass_door')
 	event.hide('createdeco:locked_andesite_door')
 	event.hide('createdeco:locked_copper_door')
 	event.hide('createdeco:locked_brass_door')
-
 	event.hide('createdeco:zinc_coin')
 	event.hide('createdeco:copper_coin')
 	event.hide('createdeco:brass_coin')
@@ -123,14 +114,11 @@ JEIEvents.hideItems(event => {
 	event.hide('createdeco:gold_coinstack')
 	event.hide('createdeco:cast_iron_coinstack')
 	event.hide('createdeco:netherite_coinstack')
-
 	event.hide('#forge:coins')
-
 	event.hide('thermal:iron_plate')
 	event.hide('thermal:copper_plate')
 	event.hide('thermal:gold_plate')
 	event.hide('thermal:netherite_plate')
-
 	event.hide('tfmg:sulfur_powder')
 	event.hide('tfmg:saltpeter')
 	event.hide('tfmg:pumpjack_hammer')
@@ -142,7 +130,6 @@ JEIEvents.hideItems(event => {
 	event.hide('tfmg:large_pumpjack_hammer_part')
 	event.hide('tfmg:large_pumpjack_hammer_head')
 	event.hide('tfmg:large_pumpjack_hammer_connector')
-
 	event.hide("kubejs:growing_rose_seed")
 	event.hide("kubejs:growing_tiny_rose_crystal")
 	event.hide("kubejs:growing_small_rose_crystal")
@@ -166,7 +153,6 @@ JEIEvents.hideItems(event => {
 	event.hide("kubejs:incomplete_rotation_machine")
 	event.hide("kubejs:calculator")
 	event.hide("kubejs:charged_calculator")
-
 	event.hide("tfmg:machine_input") 
 	event.hide("tfmg:electric_motor") 
 	event.hide("tfmg:resistor") 
@@ -198,39 +184,36 @@ JEIEvents.hideItems(event => {
 	event.hide("tfmg:deepslate_nickel_ore")
 	event.hide("tfmg:nickel_ore")
 	event.hide("tfmg:sulfur")
-
 	event.hide ("sophisticatedbackpacks:void_upgrade")
 	event.hide ("sophisticatedbackpacks:advanced_void_upgrade")
 	event.hide ("sophisticatedstorage:advanced_void_upgrade")
 	event.hide ("sophisticatedstorage:void_upgrade")
-
 	event.hide("create_factory_logistics:fluid_mechanism")
 	event.hide("create_factory_logistics:incomplete_fluid_mechanism")
-
 	event.hide("gearbox:mirror")
 	event.hide("gearbox:laser_drill")
 	event.hide("gearbox:chemical_reactor")
 	event.hide("gearbox:dipper")
 	event.hide("gearbox:tau_cannon")
 	event.hide("gearbox:geld_ingot")
-
 	event.hide('grapplemod:rocketupgradeitem')
-
-// occultism e forbidden nerfar
 	event.hide('createaddition:diamond_grit')
 	event.hide('createaddition:capacitor')
 	event.hide('createaddition:zinc_sheet')
-
 	// event.hide('#forge:tools/pickaxes')
 	event.hide('@trashcans')
 	event.hide('@metalbarrels')
 	event.hide('@pipez')
 	event.hide('@toms_storage')
 	event.hide('@itemfilters')
-	//event.hide('@enderstorage')
 	event.hide('@davebuildingmod')
 	event.hide('@buddingcrystals')
-
+	event.hide('@expatternprovider')
+	event.hide('@ae2')
+	event.hide('@ae2things')
+	event.hide('@ae2wtlib')
+	event.hide('@aeinfinitybooster')
+	event.hide('@trashcans')
 
 })
 
@@ -248,6 +231,18 @@ JEIEvents.addItems(event => {
 
 	event.add('pipez:fluid_pipe')
 	event.add('pipez:energy_pipe')
+
+	event.add('ae2:charger')
+	event.add('ae2:certus_quartz_crystal')
+	event.add('ae2:charged_certus_quartz_crystal')
+	event.add('ae2:sky_dust')
+	event.add('ae2:sky_stone_block')
+	event.add('ae2:1x_sky_stone_block')
+	event.add('ae2:2x_sky_stone_block')
+	event.add('ae2:3x_sky_stone_block')
+	event.add('ae2:ender_dust')
+	event.add('ae2:crystal_resonance_generator')
+
 
 	event.add('toms_storage:ts.crafting_terminal')
 	event.add('toms_storage:ts.storage_terminal')
@@ -370,6 +365,8 @@ ItemEvents.tooltip(tooltip => {
 		"  §6in §ecorrect §6slots will not be consumed"]);
 
 	tooltip.add("kubejs:steel_ring", ["§7Obtained breaking a §6built-up steel cannon barrel"])
+
+	tooltip.add("thermal:machine_press", ["§eWarning: crash when viewing recipes."])
 
 	tooltip.add('buddingcrystals:budding_budding_skystone', ["§cwarning, this block cannot be broken after being placed, if it breaks, it will disappear"])
 

@@ -291,6 +291,7 @@
 		}
 		{
 			dependencies: ["21753CBB528EAADF"]
+			hide_until_deps_complete: true
 			icon: "create:clipboard"
 			id: "054599A626D50945"
 			tasks: [{

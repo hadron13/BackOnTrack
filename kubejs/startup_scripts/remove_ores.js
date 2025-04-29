@@ -13,7 +13,8 @@ WorldgenEvents.remove(event => {
 
     let IMQUEBRAVELOreList = [
         'create_unbreakable:luminarchy_block',
-        'create_unbreakable:philolite_block'
+        'create_unbreakable:philolite_block',
+        'forbidden_arcanus:stella_arcanum'
     ];
 
     event.removeOres (props => {

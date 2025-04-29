@@ -75,6 +75,10 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "expatternprovider": {
+    "jade_chamber": true,
+    "jade_wireless": true
+  },
   "waystones": {
     "waystone": true
   },
