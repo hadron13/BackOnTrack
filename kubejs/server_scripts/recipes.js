@@ -1796,15 +1796,6 @@ function andesiteMachine(event) {
 		C: CR('andesite_casing'),
 		S: KJ('rotation_mechanism')
 	})
-	
-	transitional = 'kubejs:incomplete_rotation_machine'
-	event.recipes.createSequencedAssembly([
-		'gearbox:kinetic_machine',
-	], 'create:andesite_casing', [
-		event.recipes.createDeploying(transitional, [transitional, KJ('rotation_mechanism')])
-	])	.transitionalItem(transitional)
-		.loops(8)
-		.id('kubejs:rotation_machine_by_deployer')
 
 	event.remove({ output: TE('drill_head') })
 	event.shaped(TE('drill_head'), [
@@ -2076,6 +2067,28 @@ function copperMachine(event) {
 }
 
 function MetallurgyRecipes(event){
+
+	let assembly_machine = (mechanism, machine, casing) => {
+		let t = machine + "_machine"
+		event.recipes.createSequencedAssembly([
+			machine + '_machine',
+		], casing + '_casing', [
+			event.recipes.createDeploying(t, [t, mechanism + '_mechanism'])
+		])	.transitionalItem(t)
+			.loops(8)
+			.id(machine+'_machine_by_deployer')
+	}
+
+	assembly_machine(KJ("rotation"), GB("kinetic"), CR("andesite"))
+	assembly_machine(CR("precision"), KJ("brass"), CR("brass"))
+	assembly_machine(KJ("pressure"), KJ("copper"), CR("copper"))
+	assembly_machine(KJ("scorch"), KJ("zinc"), KJ("zinc"))
+	assembly_machine(KJ("train"), KJ("train"), CR("railway"))
+	assembly_machine(KJ("explosive"), KJ("explosive"), AL("steel"))
+	assembly_machine(KJ("ender"), KJ("enderium"), KJ("enderium"))
+	assembly_machine(KJ("power"), KJ("power"), KJ("fluix"))
+	assembly_machine(KJ("high_power"), KJ("invar"), KJ("invar"))
+
 	// removeMetallugyOre(event, 'copper')
 	// removeMetallugyOre(event, 'tin')
 	// removeMetallugyOre(event, 'lead')
@@ -2108,7 +2121,7 @@ function MetallurgyRecipes(event){
 	// event.remove({output: ML("steel_block")})
 	event.remove({output: TE("device_lava_gen")})
 	event.remove({output: TC("molten_brass")})
-	event.remove({output: TC("ingot_cast")})
+	//event.remove({output: TC("ingot_cast")})
 	event.remove({output: SB("void_upgrade")})
 	event.remove({output: SB("advanced_void_upgrade")})
 	event.remove({output: SS("advanced_void_upgrade")})
@@ -2151,14 +2164,6 @@ function MetallurgyRecipes(event){
 
 	event.shapeless(CR("white_sail"), CR("sail_frame"))
 
-	let toRemove = [
-		{output: 'forbidden_arcanus:hephaestus_forge'},
-];
-
-for (const remove of toRemove) {
-		event.remove(remove);
-}
-
 	event.recipes.tfmg.distillation(Fluid.of(KJ("desalted_oil"), 360), [
 		Fluid.of(CI("heavy_oil"), 120), 
 		Fluid.of(CI("diesel"), 80),
@@ -2179,7 +2184,7 @@ for (const remove of toRemove) {
 
 	event.custom({
 		"type": "tconstruct:casting_table",
-		"cast": { "item": TC("ingot_cast") },
+		"cast": { "item": TC("coin_cast") },
 		"cast_consumed": false,
 		"fluid": { "tag": "tconstruct:molten_gold", "amount": 20 },
 		"result": { "item": KJ("gold_ring") },
@@ -2319,8 +2324,8 @@ function brassMachine(event) {
 	brass_machine(SS('advanced_magnet_upgrade'), 1)
 	brass_machine(SB('advanced_magnet_upgrade'), 1)
 	brass_machine(KJ('pipe_module_tier_1'), 4)
-	brass_machine(SS('hopper_upgrade'), 2)
-	brass_machine(SS('advanced_hopper_upgrade'), 2)
+	brass_machine(SS('hopper_upgrade'), 1)
+	brass_machine(SS('advanced_hopper_upgrade'), 1)
 	brass_machine(CR('elevator_pulley'), 1, CR('rope_pulley'))
 
 	let andesite_machine = (id, amount, other_ingredient) => {
