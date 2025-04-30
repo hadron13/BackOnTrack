@@ -2067,7 +2067,6 @@ function copperMachine(event) {
 }
 
 function MetallurgyRecipes(event){
-
 	let assembly_machine = (mechanism, machine, casing) => {
 		let t = machine + "_machine"
 		event.recipes.createSequencedAssembly([
@@ -2132,7 +2131,7 @@ function MetallurgyRecipes(event){
 	event.remove({mod: 'ae2things'})
 	event.remove({mod: 'ae2wtlib'})
 	event.remove({mod: 'aeinfinitybooster'})
-	event.remove({mod: 'ae2'})
+	// event.remove({mod: 'ae2'})
 
 
 	event.remove({output: BC("cast_iron_ingot")})
@@ -2431,6 +2430,22 @@ function enderStuff(event){
 		S: KJ('ender_mechanism')
 	})
 
+	event.custom({
+		"type": "tconstruct:melting",
+			"ingredient": {
+				"item": "ad_astra:desh_ingot"
+	},
+			"result": {
+	"fluid": "kubejs:molten_desh",
+			"amount": 90
+		},
+	"temperature": 425,
+	"time": 60,
+"byproducts": []
+});
+
+	event.recipes.createMechanicalExtruderExtruding(KJ('mica_block'), [Fluid.of('minecraft:lava'),Fluid.of('kubejs:molten_desh')])
+	event.recipes.createMechanicalExtruderExtruding(MC('calcite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('chipped:polished_calcite').requiredBonks(8)
 	event.recipes.createMechanicalExtruderExtruding(MC('andesite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('minecraft:polished_andesite').requiredBonks(4)
 	event.recipes.createMechanicalExtruderExtruding(MC('granite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('minecraft:polished_granite').requiredBonks(4)
 	event.recipes.createMechanicalExtruderExtruding(MC('diorite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('minecraft:polished_diorite').requiredBonks(4)
@@ -2931,7 +2946,6 @@ function invarMachine(event) {
 	event.recipes.createCompacting(MC('dripstone_block'), MC('clay'));
 	event.recipes.createCrushing([Item.of(MC('clay_ball')).withChance(1),Item.of(CR('copper_nugget')).withChance(0.65),Item.of(CR('copper_nugget')).withChance(0.5)], MC("dripstone_block"))
 	event.recipes.createCutting(KJ('mica_sheet', 3), KJ('mica_block'))
-	event.recipes.createMechanicalExtruderExtruding(KJ('mica_block'), [Fluid.of('minecraft:lava'),Fluid.of('ad_astra:molten_desh')])
 	event.recipes.createMixing([Fluid.of(KJ('electrolyte'), 1000), 'ad_astra:desh_ingot'], [TE('sulfur_dust'), "ad_astra:desh_ingot", Fluid.of(MC('water'), 1000)])
 	event.recipes.createMixing([Fluid.of(KJ('plastic'), 50), 'ad_astra:desh_ingot'], ["ad_astra:desh_ingot", Fluid.of(CI('heavy_oil'), 100)]).heated()
 	event.recipes.createPressing(KJ('carbon_sheet'), MC('charcoal'))

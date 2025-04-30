@@ -293,10 +293,15 @@ StartupEvents.registry('fluid', event => {
 			.bucketColor(0x4054a5)
 			.displayName('1,1-dimethylhydrazine')
     
-    event.create('ethanol')
+    event.create('molten_desh')
 			.thinTexture(0xedaf53)
 			.bucketColor(0xedaf53)
-			.displayName('Ethanol')   
+			.displayName('Molten Desh') 
+			
+			event.create('ethanol')
+			.thinTexture(0xedaf53)
+			.bucketColor(0xedaf53)
+			.displayName('Ethanol')
 
     event.create('methanol')
 			.thinTexture(0xdbbb87)
