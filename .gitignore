@@ -25,3 +25,9 @@ config/jei/recipe-category-sort-order.ini
 config/sound_physics_remastered/allowed_sounds.properties
 config/sound_physics_remastered/occlusion.properties
 config/sound_physics_remastered/reflectivity.properties
+config/embeddium-fingerprint.json
+config/embeddium-options.json
+config/oculus.properties
+config/xaerominimap_entities.json
+config/sound_physics_remastered/occlusion.properties
+config/sound_physics_remastered/reflectivity.properties
