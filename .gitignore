@@ -31,3 +31,15 @@ config/oculus.properties
 config/xaerominimap_entities.json
 config/sound_physics_remastered/occlusion.properties
 config/sound_physics_remastered/reflectivity.properties
+config/embeddium-fingerprint.json
+config/embeddium-options.json
+config/oculus.properties
+config/xaerominimap_entities.json
+config/forgeendertech/Biomes/minecraft$crimson_forest.cfg
+config/forgeendertech/Biomes/terralith$ashen_savanna.cfg
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-type-sort-order.ini
+config/jei/recipe-category-sort-order.ini
+config/sound_physics_remastered/occlusion.properties
+config/sound_physics_remastered/reflectivity.properties
+config/spark/tmp/spark-3e2add060a2e-profile-data.jfr.tmp
