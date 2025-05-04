@@ -628,7 +628,7 @@ function unwantedRecipes(event) {
     
     event.replaceInput({}, CI("copper_cable"), 'createaddition:copper_spool')
     event.replaceInput({}, CI("copper_wire"), 'createaddition:copper_wire')
-    event.replaceInput({}, CI("steel_mechanism"), KJ('explosive_mechanism'))
+    event.replaceInput({}, CI("steel_mechanism"), CR('precision_mechanism'))
     event.replaceInput({id:'tfmg/sequenced_assembly/turbine_engine'}, CR("precision_mechanism"), KJ('explosive_mechanism'))
     
 

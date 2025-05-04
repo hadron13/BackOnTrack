@@ -914,6 +914,45 @@
 			x: 8.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["64F3352725385210"]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "minecraft:player_head"
+				tag: {
+					SkullOwner: {
+						Id: [I;
+							375784614
+							-108572719
+							-1199736988
+							-2089290051
+						]
+						Name: "MitinhoPlayer"
+						Properties: {
+							textures: [{
+								Signature: "ApYkfR5Nn5qsPIBDJ1UoP4GpWzD17bq+t4VTonwtIfmNRIGM/ieLOhTx5I0OhRgTclFZ0WqNsiGS9LQCMENNg4zJQoAEHzTzbErvXlAw6bM+W/n6wgY6QycQ+jOGwzIk7mPG6dR3/MnvISeP6bQtbk3WEX30P+Vt8eAVDlyERr7ChHJhoHiKrl69H9IzfXSH97DJ+J3wpfZIM5BAKCMsKwkCbwqizqcVpwhzp36YRym30T2sXPtBzdsoqZ24gwAeY7vUJQGST3Rl6SNl5HXYievRduln/TcYpLYBxLwgfWLiriB3M5bWwLhkyyw0iiNMvdU3hJlYN7aPQdx+VS348LGNVvyJixbAT2kYms0pfw8p3DuYJH2i3zQVnqyWSnSpf5xKTrAyvQjkz/UmVDUAG18ZhhWpckDNkdcJZ0mR2oMV9OLOPfFUNPICMCJChQ8TN6m761FwxcVLX/2/6rYd59ZH6tYp9042bAtaszNf92qxmzelgl8d/xNE2Bwme9i4U3eFbTvF9Y5I5ZwiXXX6nUrT0gJYJJwlhJTZjVAkRvHYGTtSVYQsIsn3DFmr75QGI/69R6QNMOqgRaJiW49AmYjvszWElE+RhyO3QDvX+NlwBEhyoZp2XIt+DOSkgsc82UvDZtBXoxLuNF15bk815A6aWfnX5xm95xuZULGnhBA="
+								Value: "ewogICJ0aW1lc3RhbXAiIDogMTc0MTExNjYzMTk4MSwKICAicHJvZmlsZUlkIiA6ICIxNjY2MDRhNmY5ODc0ZmQxYjg3ZDc3NjQ4Mzc3ZjZiZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNaXRpbmhvUGxheWVyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI0NmI2NDczMTk4NDdiMGNhMzA2MmUwZmZhZDRlZjRjYThiYzhhNDA4YTQ2NGY3NDkxM2ZiMmFmNzBkOTUwYmIiCiAgICB9CiAgfQp9"
+							}]
+						}
+					}
+				}
+			}
+			id: "39AEA30F6406CE6E"
+			rewards: [{
+				id: "31DFC14AFF67B16B"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C73479865CB6CF9"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 50
+			}]
+			x: 17.5d
+			y: -3.5d
+		}
 	]
 	title: "&a Engineer's Magazine"
 }
