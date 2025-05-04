@@ -1,0 +1,6 @@
+#Whether to allow factory gauges cascade ingredient requests
+factoryGaugeCascadeRequest = true
+#Capacity of the jar in millibuckets
+#Range: 1 ~ 999999999
+jarCapacity = 9000
+

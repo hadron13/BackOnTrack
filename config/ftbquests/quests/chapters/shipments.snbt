@@ -3033,7 +3033,7 @@
 				type: "item"
 			}]
 			title: "32x Osseous Bricks"
-			x: 1.5d
+			x: 1.0d
 			y: 13.0d
 		}
 		{
@@ -3069,7 +3069,7 @@
 				type: "item"
 			}]
 			title: "16x Seared Stone"
-			x: 2.5d
+			x: 2.0d
 			y: 13.0d
 		}
 		{
@@ -3105,7 +3105,7 @@
 				type: "item"
 			}]
 			title: "16x Scorched Stone"
-			x: 3.5d
+			x: 3.0d
 			y: 13.0d
 		}
 		{
@@ -3141,7 +3141,7 @@
 				type: "item"
 			}]
 			title: "1x Lantern"
-			x: 4.5d
+			x: 4.0d
 			y: 13.0d
 		}
 		{
@@ -3645,7 +3645,7 @@
 				type: "item"
 			}]
 			title: "4x Prismarine Shard"
-			x: 0.5d
+			x: 0.0d
 			y: 13.0d
 		}
 		{
@@ -3753,7 +3753,7 @@
 				type: "item"
 			}]
 			title: "1x Blaze Cake"
-			x: 5.5d
+			x: 5.0d
 			y: 13.0d
 		}
 		{
@@ -4320,6 +4320,41 @@
 			}]
 			title: "Blacksmith"
 			x: -5.5d
+			y: 13.0d
+		}
+		{
+			can_repeat: true
+			disable_toast: true
+			icon: "tconstruct:scorched_brick"
+			id: "5A0A02386C57453E"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "7BA7D06C06AD3EAA"
+					item: "kubejs:trade_card_scorched_brick"
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "11371176E1D2263D"
+					tags: ["reset"]
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "16 Silver"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				icon: { Count: 10, id: "thermal:silver_coin" }
+				id: "7A3E62B648EAAE3B"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "2x Scorched Bricks"
+			x: 6.0d
 			y: 13.0d
 		}
 	]

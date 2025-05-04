@@ -1603,16 +1603,16 @@ function rubberMatters(event) {
 	sap_tree('minecraft', Fluid.of(TE('resin'), 40), "acacia")
 	sap_tree('minecraft', Fluid.of(TE('resin'), 60), "dark_oak")
 
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 50), 	"redwood")
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 60), 	"fir")
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 50), 	"jacaranda")
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 70), 	"mahogany")
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 10), 	"dead")
-	sap_tree('biomesoplenty', Fluid.of(MC('lava'), 5), 		"hellbark")
-	sap_tree('biomesoplenty', Fluid.of(MC('water'), 100), 	"willow")
+	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 50), "redwood")
+	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 60), "fir")
+	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 50), "jacaranda")
+	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 70), "mahogany")
+	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 10), "dead")
+	sap_tree('biomesoplenty', Fluid.of(MC('lava'), 15), "hellbark")
+	sap_tree('biomesoplenty', Fluid.of(MC('water'), 100), "willow")
 	sap_tree('biomesoplenty', Fluid.of(KJ('dirt_water'), 100), "palm")
-	sap_tree('biomesoplenty', Fluid.of(('create_enchantment_industry:ink'), 50), 	"umbran")
-	sap_tree('biomesoplenty', Fluid.of(('create_enchantment_industry:experience'), 1), 	"magic")
+	sap_tree('biomesoplenty', Fluid.of(('create_enchantment_industry:ink'), 50), "umbran")
+	sap_tree('biomesoplenty', Fluid.of(('create_enchantment_industry:experience'), 1), "magic")
 
 	event.recipes.gearboxSapping(Fluid.of(TE("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:white_cherry_leaves"])
 	event.recipes.gearboxSapping(Fluid.of(TE("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:pink_cherry_leaves"])
@@ -2277,6 +2277,14 @@ function brassMachine(event) {
 	], {
 		C: CR('brass_casing'),
 		S: CR('precision_mechanism')
+	})
+
+	event.remove({ output: CR("factory_gauge") })
+	event.shaped(CR("factory_gauge"), [
+		'SC'
+	], {
+		C: KJ('rotation_mechanism'),
+		S: CR('stock_link')
 	})
 
 	let brass_machine = (id, amount, other_ingredient) => {

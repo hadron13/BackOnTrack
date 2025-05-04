@@ -413,6 +413,7 @@ StartupEvents.registry('item', event => {
 		simple("Lead Ingot", TE('lead_ingot', 8), 32, S, 0x232456, 0x7C95A4)
 		simple("Gold Ingot", MC('gold_ingot', 8), 48, S, 0xD99413, 0xFAF25E)
 		
+		simple("Scorched Brick", TC('scorched_brick', 2), 16, S, 0xFDF5E6, 0x111111)
 		simple("Andesite Alloy", CR('andesite_alloy', 16), 8, S, 0x505050, 0x878787)
 		simple("Steel", "8x alloyed:steel_ingot", 16, S, 0x3E4644, 0xB8DAC8)
 		simple("Brass Ingot", CR('brass_ingot', 8), 48, S, 0x6F3C2D, 0xFCF085)
