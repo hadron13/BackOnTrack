@@ -2138,6 +2138,8 @@ function MetallurgyRecipes(event){
 	event.remove({output: TE("redstone_mushroom_spores")})
 	event.remove({id: "create_connected:crafting/kinetics/item_silo"})
 
+	event.remove({id: CR("industrial_iron_block_from_ingots_iron_stonecutting")})
+
 //	event.remove({id: ML('alloying/brass')})
 
 	event.remove({output: "magicfeather:primeval_feather"})
@@ -2644,7 +2646,7 @@ function gearboxrecipes(event){
 	event.recipes.gearboxPyroprocessing(KJ("andesite_blend"), MC("andesite"))
 	event.recipes.gearboxPyroprocessing(MC("brick"), MC("clay_ball"))
 	event.recipes.gearboxPyroprocessing(AE2("quartz_glass"), AE2("certus_quartz_dust"))
-	// event.recipes.gearboxCompressing([TE("sulfur_dust", 3), TE("tar", 2)], Fluid.of(CI("lpg"), 250)).heated()
+	event.recipes.gearboxCompressing([TE("sulfur_dust", 3), TE("tar", 2)], Fluid.of(CI("lpg"), 250)).heated()
 
 
 
@@ -2720,7 +2722,7 @@ function zincMachine(event) {
 	zinc_machine('storagedrawers:controller_slave', 1, MC('gold_ingot'))
 	zinc_machine('torchmaster:megatorch', 1, MC('torch'))
 	zinc_machine('thermal:upgrade_augment_2', 1, MC('redstone'))
-	zinc_machine(BC("cannon_builder"), 1, 'createbigcannons:cast_iron_block')
+	zinc_machine(BC("cannon_builder"), 1, 'tfmg:cast_iron_block')
 	zinc_machine('createbigcannons:cannon_drill', 1, TE('drill_head'))
 
 	let train_machine = (id, amount, other_ingredient) => {
@@ -2768,7 +2770,7 @@ function explosiveMachine(event){
 	event.recipes.createMixing([MC('dirt')], [Fluid.of(MC('water')), MC('sand'), MC('clay_ball'), MC('gravel')])
 
 	event.recipes.gearboxPyroprocessing([TE('coal_coke')], [MC('charcoal')] ).heated().processingTime(100)
-	//event.recipes.createMixing([Fluid.of(BC('molten_steel'), 90)], ['thermal:coal_coke', Fluid.of(TC('molten_iron'), 90)]).heated()
+	event.recipes.createMixing([Fluid.of(BC('molten_steel'), 90)], ['thermal:coal_coke', Fluid.of(TC('molten_iron'), 90)]).heated()
 
 	event.recipes.createFilling(KJ('lube_can'), [TC('copper_can'), Fluid.of(CI('lubrication_oil'))])
 

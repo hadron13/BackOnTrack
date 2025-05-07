@@ -967,6 +967,7 @@
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "&6First, go to the specific biome shown in JEI-no similar bioems, only the exact one listed, Then, dig a hole all the way down to bedrock and place pipes (no pumps, please),After that,connect the torque. Don't try anything complicated-keeping it simples will work If you follow thiw, you'll get your oil."
 			tasks: [{
 				id: "006F970A1DBA0BE3"
 				title: "Acknowleged"

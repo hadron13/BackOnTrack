@@ -268,7 +268,7 @@
 				item: "create:builders_tea"
 				type: "item"
 			}]
-			shape: "circle"
+			shape: "diamond"
 			size: 2.0d
 			tasks: [{
 				id: "1B5F1E9F5EE6EB2C"
