@@ -1,7 +1,7 @@
 
 ["Create Railways Navigator Config"]
 	#The language that should be used for announcements of the navigator. Can be different from the game's language settings. (Default: Default)
-	#Allowed Values: DEFAULT, ENGLISH, GERMAN, DUTCH, POLISH, CHINESE_SIMPLIFIED, SAXON, BAVARIAN, SPANISH, RUSSIAN, FRENCH, KOREAN, SWEDISH, PORTUGUESE, BASQUE, ITALIAN, JAPANESE, PORTUGUESE_brazilian, UKRAINIAN
+	#Allowed Values: DEFAULT, ENGLISH, GERMAN, DUTCH, POLISH, CHINESE_SIMPLIFIED, SAXON, BAVARIAN, SPANISH, RUSSIAN, FRENCH, KOREAN, SWEDISH, PORTUGUESE, BASQUE, ITALIAN, JAPANESE, PORTUGUESE_BRAZILIAN, UKRAINIAN, ARABIC, CZECH, GERMAN_SWITZERLAND, ROMANIAN, TURKISH
 	language = "DEFAULT"
 	#The unit to be used to represent speed. (Default: KMH)
 	#Allowed Values: MS, KMH, MPH, FTS, KT, CMS
@@ -12,7 +12,7 @@
 
 	["Create Railways Navigator Config".general]
 		#[in Ticks]
-		#The next stop or information about the start of the journey is announced in the specified number of ticks before the scheduled arrival at the next station. (Default: 500, 30 real life seconds)
+		#The next stop or information about the start of the journey is announced in the specified number of ticks before the scheduled arrival at the next station. (Default: 600, 30 real life seconds)
 		#Range: 100 ~ 1000
 		next_stop_announcement = 500
 		#[in Ticks]
@@ -20,7 +20,7 @@
 		#Range: 1 ~ 1000
 		realtime_precision_threshold = 167
 		#[in Ticks]
-		#How early a train should be shown on the display. (Default: 1000, 1 in-game hour)
+		#How early a train should be shown on the display. (Default: 1200, 1 real life minute)
 		#Range: 100 ~ 24000
 		display_lead_time = 1000
 

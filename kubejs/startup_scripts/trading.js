@@ -385,7 +385,7 @@ StartupEvents.registry('item', event => {
 		simple("Diorite", MC('diorite', 16), 3, S, 0x7F7F7F, 0xD4D4D4)
 		simple("Andesite", MC('andesite', 16), 3, S, 0x5F5F5F, 0x8E8E8E)
 		simple("Deepslate", MC('deepslate', 16), 3, S, 0xA7A89E, 0xC0C2BA)
-		simple("Dripstone", MC('dripstone_block', 16), 3, S, 0x5E6055, 0x797E74)
+		simple("Dripstone", MC('dripstone_block', 16), 32, S, 0x5E6055, 0x797E74)
 		simple("Calcite", MC('calcite', 16), 3, S, 0xC2C2C2, 0xDADADA)
 		simple("Tuff", MC('tuff', 16), 3, S, 0x6B5D4F, 0x7D6B5A)
 		simple("Scoria", CR('scoria', 16), 3, S, 0x2A130C, 0x553427)
