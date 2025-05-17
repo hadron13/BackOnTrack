@@ -4324,6 +4324,7 @@
 		}
 		{
 			can_repeat: true
+			dependencies: ["64F3352725385210"]
 			disable_toast: true
 			icon: "tconstruct:scorched_brick"
 			id: "5A0A02386C57453E"

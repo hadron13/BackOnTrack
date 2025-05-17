@@ -215,6 +215,10 @@
 				type: "item"
 			}]
 			size: 2.0d
+			tasks: [{
+				id: "73311ABC8E64D0AF"
+				type: "checkmark"
+			}]
 			title: "Ready To Go"
 			x: -8.0d
 			y: 9.5d

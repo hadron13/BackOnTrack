@@ -440,6 +440,7 @@
 			dependencies: [
 				"01ABB67CC244453B"
 				"45502F7F3F53ACE7"
+				"25631418F91A20D5"
 			]
 			description: ["Join the 2 layers using a cannon builder to create this final shape."]
 			icon: "createbigcannons:built_up_steel_cannon_barrel"
@@ -447,19 +448,23 @@
 			subtitle: "Contraption 40-1"
 			tasks: [
 				{
-					id: "36048DE35C2E17CC"
-					item: "createbigcannons:built_up_steel_cannon_barrel"
-					type: "item"
-				}
-				{
 					id: "677D8912367B40FB"
 					title: "Automated"
 					type: "checkmark"
 				}
+				{
+					icon: "createbigcannons:steel_cannon_chamber"
+					id: "08C6F93B09334A08"
+					observe_type: 0
+					timer: 0L
+					title: "Observe The Steel Cannon Chamber"
+					to_observe: "createbigcannons:steel_cannon_chamber"
+					type: "observation"
+				}
 			]
 			title: "Stackup"
 			x: 3.5d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["37BABDCE5BDA46D4"]
@@ -487,43 +492,29 @@
 			icon: "createbigcannons:very_small_steel_cannon_layer"
 			id: "45502F7F3F53ACE7"
 			subtitle: "Contraption 38-2"
-			tasks: [
-				{
-					id: "1D5BDF361E0CB7C2"
-					item: "createbigcannons:very_small_steel_cannon_layer"
-					type: "item"
-				}
-				{
-					id: "0E2CA63EE943A234"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "0E2CA63EE943A234"
+				title: "Automated"
+				type: "checkmark"
+			}]
 			title: "Smol Layer"
-			x: 3.0d
+			x: 3.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["4FF3C7B52A12788B"]
 			description: ["It's no longer boring, the drill already passed through here."]
-			icon: "createbigcannons:small_steel_cannon_layer"
+			icon: "createbigcannons:medium_steel_cannon_layer"
 			id: "01ABB67CC244453B"
 			subtitle: "Contraption 39-2"
-			tasks: [
-				{
-					id: "602E340073190864"
-					item: "createbigcannons:small_steel_cannon_layer"
-					type: "item"
-				}
-				{
-					id: "7D8746C939580B1C"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "7D8746C939580B1C"
+				title: "Automated"
+				type: "checkmark"
+			}]
 			title: "Medium Layer"
-			x: 4.0d
-			y: 6.5d
+			x: 5.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -537,18 +528,18 @@
 			subtitle: "Contraption 38-1"
 			tasks: [
 				{
-					id: "7CB88433B3CDA654"
-					item: "createbigcannons:unbored_very_small_steel_cannon_layer"
-					type: "item"
-				}
-				{
 					id: "45C4D845C9E689EA"
 					title: "Automated"
 					type: "checkmark"
 				}
+				{
+					id: "35B75E35488A877A"
+					item: "createbigcannons:very_small_cast_mould"
+					type: "item"
+				}
 			]
 			title: "Small Cast"
-			x: 3.0d
+			x: 3.5d
 			y: 5.0d
 		}
 		{
@@ -558,24 +549,24 @@
 				"4C7826C8A5521396"
 			]
 			description: ["Not the longest name, not the biggest nor smallest, (warning: pun) this is the most boring of them."]
-			icon: "createbigcannons:unbored_small_steel_cannon_layer"
+			icon: "createbigcannons:unbored_medium_steel_cannon_layer"
 			id: "4FF3C7B52A12788B"
 			subtitle: "Contraption 39-1"
 			tasks: [
-				{
-					id: "6C4AEA5459176209"
-					item: "createbigcannons:unbored_small_steel_cannon_layer"
-					type: "item"
-				}
 				{
 					id: "21E0492549AA9F57"
 					title: "Automated"
 					type: "checkmark"
 				}
+				{
+					id: "5A0FD35CDEE865D5"
+					item: "createbigcannons:medium_cast_mould"
+					type: "item"
+				}
 			]
 			title: "Medium Cast"
-			x: 4.0d
-			y: 5.0d
+			x: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -913,8 +904,8 @@
 				type: "checkmark"
 			}]
 			title: "Cannon Casting 101"
-			x: 5.5d
-			y: 4.5d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
@@ -926,8 +917,8 @@
 				item: "createbigcannons:cannon_builder"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 3.5d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
@@ -939,8 +930,8 @@
 				item: "createbigcannons:cannon_drill"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 4.5d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
@@ -951,8 +942,8 @@
 				item: "createbigcannons:basin_foundry_lid"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 5.5d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1081,6 +1072,39 @@
 			title: "Pumpjacking"
 			x: -3.5d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"4C7826C8A5521396"
+				"0A75C53447F4FB07"
+				"514EC4ADAD6F5535"
+			]
+			icon: "createbigcannons:unbored_small_steel_cannon_layer"
+			id: "67D018087458C17F"
+			tasks: [
+				{
+					id: "0B671629479FED2F"
+					type: "checkmark"
+				}
+				{
+					id: "347367003B31E683"
+					item: "createbigcannons:small_cast_mould"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["67D018087458C17F"]
+			icon: "createbigcannons:small_steel_cannon_layer"
+			id: "25631418F91A20D5"
+			tasks: [{
+				id: "570F22007A9E5D47"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 7.0d
 		}
 	]
 	title: "&f3&r Astounding Explosions"

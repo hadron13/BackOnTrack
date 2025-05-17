@@ -140,7 +140,6 @@
 				"286EFE73EFDF3FC2"
 			]
 			description: ["Compact the unholy ingredients into fiery bricks"]
-			hide_until_deps_complete: true
 			icon: "tconstruct:scorched_brick"
 			id: "2F99F54B57DDBC49"
 			subtitle: "Contraption 22-3"

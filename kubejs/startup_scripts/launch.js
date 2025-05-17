@@ -2,8 +2,8 @@
 
 StartupEvents.registry('item', event => {
 
-	event.create('purified_certus_quartz_crystal').texture("kubejs:item/purified_certus_quartz_crystal").displayName("Pure Certus Quartz Crystal")
-	event.create('purified_fluix_crystal').texture("kubejs:item/purified_fluix_crystal").displayName("Pure Fluix Crystal")
+//	event.create('purified_certus_quartz_crystal').texture("kubejs:item/purified_certus_quartz_crystal").displayName("Pure Certus Quartz Crystal")
+//	event.create('purified_fluix_crystal').texture("kubejs:item/purified_fluix_crystal").displayName("Pure Fluix Crystal")
 
 	event.create('rose_quartz_seed').texture("kubejs:item/rose_quartz_seed_0").displayName("Rose Quartz Seed")
 

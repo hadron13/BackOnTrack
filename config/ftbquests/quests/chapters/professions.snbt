@@ -570,7 +570,7 @@
 					stat: "minecraft:climb_one_cm"
 					title: "Climbing"
 					type: "stat"
-					value: 10000
+					value: 100000
 				}
 				{
 					id: "690B4C3EF0E7C936"
@@ -579,7 +579,7 @@
 					value: 100000
 				}
 			]
-			title: "Thriatlon"
+			title: "Triathlon"
 			x: 11.5d
 			y: -5.0d
 		}
@@ -1090,6 +1090,7 @@
 				type: "stat"
 				value: 50
 			}]
+			title: "Eu Nao Morri vei e mentira"
 			x: 11.5d
 			y: -2.0d
 		}
@@ -1262,6 +1263,7 @@
 				id: "7B46541AB8DB981F"
 				type: "advancement"
 			}]
+			title: "O Chocolatinho Do Chocolatinho"
 			x: 13.5d
 			y: -2.0d
 		}
@@ -1427,6 +1429,7 @@
 				}
 				type: "item"
 			}]
+			subtitle: "me ajuda a te ajudar help me to help you"
 			tasks: [
 				{
 					consume_items: true
@@ -1447,6 +1450,7 @@
 					type: "item"
 				}
 			]
+			title: "O Poder Do Roxo!"
 			x: 15.5d
 			y: -2.0d
 		}

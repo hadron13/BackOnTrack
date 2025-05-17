@@ -208,11 +208,11 @@ JEIEvents.hideItems(event => {
 	event.hide('@itemfilters')
 	event.hide('@davebuildingmod')
 	event.hide('@buddingcrystals')
-	event.hide('@expatternprovider')
-	event.hide('@ae2')
-	event.hide('@ae2things')
-	event.hide('@ae2wtlib')
-	event.hide('@aeinfinitybooster')
+	// event.hide('@expatternprovider')
+	// event.hide('@ae2')
+	// event.hide('@ae2things')
+	// event.hide('@ae2wtlib')
+	// event.hide('@aeinfinitybooster')
 	event.hide('@trashcans')
 
 })
@@ -232,16 +232,16 @@ JEIEvents.addItems(event => {
 	event.add('pipez:fluid_pipe')
 	event.add('pipez:energy_pipe')
 
-	event.add('ae2:charger')
-	event.add('ae2:certus_quartz_crystal')
-	event.add('ae2:charged_certus_quartz_crystal')
-	event.add('ae2:sky_dust')
-	event.add('ae2:sky_stone_block')
-	event.add('ae2:1x_sky_stone_block')
-	event.add('ae2:2x_sky_stone_block')
-	event.add('ae2:3x_sky_stone_block')
-	event.add('ae2:ender_dust')
-	event.add('ae2:crystal_resonance_generator')
+	// event.add('ae2:charger')
+	// event.add('ae2:certus_quartz_crystal')
+	// event.add('ae2:charged_certus_quartz_crystal')
+	// event.add('ae2:sky_dust')
+	// event.add('ae2:sky_stone_block')
+	// event.add('ae2:1x_sky_stone_block')
+	// event.add('ae2:2x_sky_stone_block')
+	// event.add('ae2:3x_sky_stone_block')
+	// event.add('ae2:ender_dust')
+	// event.add('ae2:crystal_resonance_generator')
 
 
 	event.add('toms_storage:ts.crafting_terminal')
@@ -364,7 +364,7 @@ ItemEvents.tooltip(tooltip => {
 	tooltip.add("kubejs:accellerator_glowstone", ["§7When used in Alchemy Research:", "  §6One of the §ecorrect §6Reagents",
 		"  §6in §ecorrect §6slots will not be consumed"]);
 
-	tooltip.add("kubejs:steel_ring", ["§7Obtained breaking a §6built-up steel cannon barrel"])
+	tooltip.add("kubejs:steel_ring", ["§7Obtained breaking a §6steel cannon chamber"])
 
 	tooltip.add("thermal:machine_press", ["§eWarning: crash when viewing recipes."])
 
@@ -372,7 +372,7 @@ ItemEvents.tooltip(tooltip => {
 
 	tooltip.add("tfmg:steel_pump", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
 	tooltip.add("tfmg:steel_pipe", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
-	tooltip.add("tfmg:steel_fluid_tank", ["§eWarning: this item may not work correctly outside a tower."])
+	//tooltip.add("tfmg:steel_fluid_tank", ["§eWarning: this item may not work correctly outside a tower."])
 
 })
 
