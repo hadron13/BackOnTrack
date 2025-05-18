@@ -186,9 +186,9 @@ let mystery_leaves_but_no_gapples =
 }
 
 LootJS.modifiers((event) => {
-    event.addBlockLootModifier('buddingcrystals:small_budding_skystone_bud').addLoot('8x ae2:sky_stone_block')
-    event.addBlockLootModifier('buddingcrystals:medium_budding_skystone_bud').addLoot('8x ae2:sky_stone_block')
-    event.addBlockLootModifier('buddingcrystals:large_budding_skystone_bud').addLoot('8x ae2:sky_stone_block')
+    //event.addBlockLootModifier('buddingcrystals:small_budding_skystone_bud').addLoot('8x ae2:sky_stone_block')
+    //event.addBlockLootModifier('buddingcrystals:medium_budding_skystone_bud').addLoot('8x ae2:sky_stone_block')
+    //event.addBlockLootModifier('buddingcrystals:large_budding_skystone_bud').addLoot('8x ae2:sky_stone_block')
 
     event.addBlockLootModifier('createbigcannons:steel_cannon_chamber').addLoot('64x kubejs:steel_ring')
 

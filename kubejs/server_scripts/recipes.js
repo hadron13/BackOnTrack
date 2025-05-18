@@ -2136,7 +2136,7 @@ function MetallurgyRecipes(event){
 	], {C: AE2("printed_silicon"), B: KJ("power_mechanism"), A: "ae2:printed_"+type+"_processor"})
 	}
 
-	inscriber("calculation", TC('molten_copper'), 90, 40)
+	inscriber("calculation", TC('molten_zinc'), 90, 40)
 	inscriber("engineering", TC('molten_diamond'), 90, 40)
 	inscriber("logic", TC('molten_gold'), 90, 40)
 
@@ -2183,6 +2183,33 @@ function MetallurgyRecipes(event){
 	// 	[" A ", "ABA", " A "], { A: TE("invar_ingot"), B: F("#circuit_press") })
 
 }
+
+BlockEvents.broken(event => {
+  const { block, player, item } = event;
+
+  // Lista de todos os brotos de skystone
+  const buddingSkystoneBuds = [
+    'buddingcrystals:small_budding_skystone_bud',
+    'buddingcrystals:medium_budding_skystone_bud',
+    'buddingcrystals:large_budding_skystone_bud'
+  ];
+
+  if (buddingSkystoneBuds.includes(block.id)) {
+    // Verifica se a ferramenta tem Silk Touch
+    const hasSilkTouch = item?.enchantments?.some(e => e.id === 'minecraft:silk_touch');
+
+    if (hasSilkTouch) {
+      // Cancela o drop padrão
+      event.cancelDrop();
+
+      // Remove o bloco quebrado (simula a quebra)
+      block.set('minecraft:air');
+
+      // Dropa o loot personalizado
+      block.level.spawnItem('8x ae2:sky_stone_block', block.pos);
+    }
+  }
+});
 
 function removeMetallugyOre(event, ore){
 	// event.remove({id: "createmetallurgy:melting/"+ore+"/ore"})

@@ -46,7 +46,7 @@
 	rolling_mill_processing_duration = 100
 	#Rolling Mill base stress impact.
 	#Range: 0 ~ 1024
-	rolling_mill_stress = 16
+	rolling_mill_stress = 8
 
 #Wires
 [wires]
@@ -60,7 +60,7 @@
 	small_connector_max_output = 1024
 	#Small Connector max wire length in blocks.
 	#Range: 0 ~ 256
-	small_connector_wire_length = 16
+	small_connector_wire_length = 64
 	#Large Connector max input in FE/t (Energy transfer).
 	#Range: > 0
 	large_connector_max_input = 4096
@@ -69,21 +69,21 @@
 	large_connector_max_output = 4096
 	#Large Connector max wire length in blocks.
 	#Range: 0 ~ 256
-	large_connector_wire_length = 32
+	large_connector_wire_length = 128
 	#Allows blocks attached to a connector to freely pass energy to and from the connector network.
 	connector_allow_passive_io = true
 	#Small Connector With Light energy consumption in FE/t.
 	#Range: > 0
-	small_light_connector_consumption = 1
+	small_light_connector_consumption = 0
 
 #Accumulator
 [accumulator]
 	#Accumulator max input in FE/t (Energy transfer).
 	#Range: > 0
-	accumulator_max_input = 4096
+	accumulator_max_input = 8192
 	#Accumulator max output in FE/t (Energy transfer).
 	#Range: > 0
-	accumulator_max_output = 4096
+	accumulator_max_output = 8192
 	#Accumulator internal capacity per block in FE.
 	#Range: > 0
 	accumulator_capacity = 409600
@@ -92,7 +92,7 @@
 	accumulator_max_height = 5
 	#Accumulator max multiblock width.
 	#Range: 1 ~ 8
-	accumulator_max_width = 3
+	accumulator_max_width = 5
 
 #Tesla Coil
 [tesla_coil]
