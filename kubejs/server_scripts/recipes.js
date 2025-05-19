@@ -1209,8 +1209,8 @@ function rocketScience(event) {
 
 	let t = KJ('incomplete_steel_engine')
 	event.recipes.createSequencedAssembly([
-		Item.of(engine_t1).withChance(10),
-		Item.of("kubejs:failed_steel_engine").withChance(90)
+		Item.of(engine_t1).withChance(1),
+		Item.of("kubejs:failed_steel_engine").withChance(99)
 	], "ad_astra:engine_frame", [
 		event.recipes.createDeploying(t, [t, KJ("explosive_mechanism")]),
 		event.recipes.createDeploying(t, [t, KJ("pressure_mechanism")]),
@@ -1686,7 +1686,7 @@ function dioriticAndesite(event) {
 	event.remove({ output: MC('gunpowder') })
 	event.recipes.createMixing(Item.of(MC('gunpowder'), 6), [MC('charcoal', 2), TE('sulfur_dust'), CI("nitrate_dust", 3)]).processingTime(1)
 	event.recipes.createMixing(Item.of(CR('andesite_alloy'), 2), [CR("zinc_nugget"), KJ("andesite_blend")])
-	event.recipes.createMilling([Item.of(MC('red_sand')).withChance(0.35), Item.of(KJ('asurine_bits')).withChance(0.65)], MC("granite"))
+	event.recipes.createMilling([Item.of(MC('red_sand')).withChance(0.40), Item.of(KJ('asurine_bits')).withChance(0.60)], MC("granite"))
 	event.remove({id:CR("milling/andesite")})
 	event.recipes.createMilling(Item.of(KJ('andesite_dust')), MC("andesite"))
 	event.recipes.createSplashing([CR("zinc_nugget"), Item.of(CR("zinc_nugget")).withChance(0.5)], KJ('asurine_bits'))

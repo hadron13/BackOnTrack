@@ -196,14 +196,14 @@ LootJS.modifiers((event) => {
                 n.matchMainHand(Item.of(
                     item,
                     {
-                      tic_modifiers: [
+                    tic_modifiers: [
                         { level: 1, name: "tconstruct:silky" }
-                      ],
-                      tic_upgrades: [
+                    ],
+                    tic_upgrades: [
                         { level: 1, name: "tconstruct:silky" }
-                      ]
+                    ]
                     }
-                  ))
+                ))
             })   
         })
     };
