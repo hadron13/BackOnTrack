@@ -42,7 +42,7 @@ let CP = (id, x) => MOD("chipped", id, x)
 let MOL = (id, x) => MOD("morelights", id, x)
 //
 
-let colours = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
+let colors = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
 let native_metals = ['iron', 'zinc', 'lead', 'copper', 'nickel', 'gold']
 let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), BOP('fir'), BOP('redwood'), BOP('cherry'), BOP('mahogany'), BOP('jacaranda'), BOP('palm'), BOP('willow'), BOP('dead'), BOP('magic'), BOP('umbran'), BOP('hellbark'), AP('twisted')]
 
@@ -117,7 +117,7 @@ ServerEvents.tags('block', event => {
 
 })
 ServerEvents.tags('item', event => {
-	colours.forEach(element => {
+	colors.forEach(element => {
 		event.get(F('glazed_terracotta')).add(MC(`${element}_glazed_terracotta`))
 	});
 
@@ -1508,6 +1508,11 @@ function unify(event) {
 	event.remove({output: 'createdeco:cast_iron_block'})
 	event.remove({input:  'createdeco:cast_iron_ingot'})
 
+	colors.forEach(color => {
+		event.remove({id:  'createdeco:' + color + '_shipping_container'})
+	});
+
+
 	//event.remove({input:  'tfmg:cast_iron_ingot'})
 	//event.remove({output: 'tfmg:cast_iron_ingot'})
 	//event.remove({input:  'tfmg:cast_iron_block'})
@@ -2184,33 +2189,6 @@ function MetallurgyRecipes(event){
 
 }
 
-BlockEvents.broken(event => {
-  const { block, player, item } = event;
-
-  // Lista de todos os brotos de skystone
-  const buddingSkystoneBuds = [
-    'buddingcrystals:small_budding_skystone_bud',
-    'buddingcrystals:medium_budding_skystone_bud',
-    'buddingcrystals:large_budding_skystone_bud'
-  ];
-
-  if (buddingSkystoneBuds.includes(block.id)) {
-    // Verifica se a ferramenta tem Silk Touch
-    const hasSilkTouch = item?.enchantments?.some(e => e.id === 'minecraft:silk_touch');
-
-    if (hasSilkTouch) {
-      // Cancela o drop padrão
-      event.cancelDrop();
-
-      // Remove o bloco quebrado (simula a quebra)
-      block.set('minecraft:air');
-
-      // Dropa o loot personalizado
-      block.level.spawnItem('8x ae2:sky_stone_block', block.pos);
-    }
-  }
-});
-
 function removeMetallugyOre(event, ore){
 	// event.remove({id: "createmetallurgy:melting/"+ore+"/ore"})
 	// event.remove({id: "createmetallurgy:melting/"+ore+"/dirty_dust"})
@@ -2392,8 +2370,11 @@ function brassMachine(event) {
 	event.remove({output: CC('freewheel_clutch')})
 	event.remove({output: CC('brake')})
 	event.remove({output: CC('overstress_clutch')})
-	event.remove({output: CC('fluid_vessel')})
 	event.remove({output: CC('shear_pin')})
+	event.remove({id: CC('crafting/kinetics/fluid_vessel')})
+	event.shapeless(CR('fluid_tank'), [CC('fluid_vessel')])
+	event.shapeless(CR('item_vault'), [CC('item_silo')])
+	
 
 	event.remove({output: SS('controller')})
 	event.remove({output: SS('storage_link')})
