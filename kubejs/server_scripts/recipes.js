@@ -627,12 +627,12 @@ function unwantedRecipes(event) {
 	event.remove({ output: CI("surface_scanner") })
 	event.remove({ output: CI("casting_spout") })
 	event.remove({ output: CI("casting_basin") })
-    
-    event.replaceInput({}, CI("copper_cable"), 'createaddition:copper_spool')
-    event.replaceInput({}, CI("copper_wire"), 'createaddition:copper_wire')
-    event.replaceInput({}, CI("steel_mechanism"), CR('precision_mechanism'))
-    event.replaceInput({id:'tfmg/sequenced_assembly/turbine_engine'}, CR("precision_mechanism"), KJ('explosive_mechanism'))
-    
+
+	event.replaceInput({}, CI("copper_cable"), 'createaddition:copper_spool')
+	event.replaceInput({}, CI("copper_wire"), 'createaddition:copper_wire')
+	event.replaceInput({}, CI("steel_mechanism"), CR('precision_mechanism'))
+	event.replaceInput({}, CI("plastic_sheet"), KJ('plastic'))
+	event.replaceInput({id:'tfmg/sequenced_assembly/turbine_engine'}, CR("precision_mechanism"), KJ('explosive_mechanism'))
 
 	// output
 	event.remove({ output: ('createaddition:capacitor') })
@@ -1210,7 +1210,7 @@ function rocketScience(event) {
 	let t = KJ('incomplete_steel_engine')
 	event.recipes.createSequencedAssembly([
 		Item.of(engine_t1).withChance(1),
-		Item.of("kubejs:failed_steel_engine").withChance(99)
+		Item.of("kubejs:failed_steel_engine").withChance(199)
 	], "ad_astra:engine_frame", [
 		event.recipes.createDeploying(t, [t, KJ("explosive_mechanism")]),
 		event.recipes.createDeploying(t, [t, KJ("pressure_mechanism")]),
@@ -2159,6 +2159,27 @@ function MetallurgyRecipes(event){
 	luz(MOL('small_green_sconce'), 1)
 	luz(MOL('small_edison_bulb'), 1)
 
+	let encased = (type) => {
+  event.remove({output: "createcasing:"+type+"_configurable_gearbox"})
+	event.remove({output: "createcasing:"+type+"_mixer"})
+	event.remove({output: "createcasing:"+type+"_press"})
+	event.remove({output: "createcasing:"+type+"_depot"})
+	}
+	let creative = (type) => {
+	event.remove({output: "createcasing:vertical_"+type+"_gearbox"})
+	event.remove({output: "createcasing:"+type+"_encased_chain_drive"})
+	event.remove({output: "createcasing:"+type+"_adjustable_chain_gearshift"})
+  event.remove({output: "createcasing:"+type+"_casing"})
+	event.remove({output: "createcasing:"+type+"_gearbox"})
+	event.remove({output: "createcasing:"+type+"_cogwheel"})
+	}
+	encased("railway")
+	encased("copper")
+	encased("andesite")
+	encased("brass")
+	encased("industrial_iron")
+	encased("creative")
+  creative("creative")
 	// event.remove({output: ML('sturdy_whisk')})
 	// event.shaped(ML('sturdy_whisk'), [
 	// 	' G ',
@@ -2395,6 +2416,7 @@ function titaniumStuff(event){
 
 	event.recipes.createMixing(Fluid.of(KJ('tnt6'), 250), [MC('sand'), Fluid.of(MC('water'), 200)]).processingTime(50)
 	event.recipes.gearboxElectrolyzing([KJ('sodium_powder'), Fluid.of(GB('chlorine'), 125), Fluid.of(MC('water'), 250)], Fluid.of(KJ('tnt6'), 500)).energy(100)
+	event.recipes.gearboxElectrolyzing(Fluid.of(AD('fuel'), 100), [CR('cinder_flour'), Fluid.of(TE('refined_fuel'), 500)]).energy(200)
 
 //	event.recipes.gearboxIrradiating([Fluid.of(GB('chlorine'), 250), KJ("sodium_powder", 2)], Fluid.of(KJ('tnt6'), 250)).color(255, 255, 255).power(5)
 	// event.recipes.gearboxTransmuting(TE("silver_ingot"), MC("gold_ingot") ).color(0, 255, 0).power(4)
@@ -2442,7 +2464,7 @@ function enderStuff(event){
 "byproducts": []
 });
 
-	event.recipes.createMechanicalExtruderExtruding(KJ('mica_block'), [Fluid.of('minecraft:lava'),Fluid.of('kubejs:molten_desh')])
+	event.recipes.createMechanicalExtruderExtruding(KJ('mica_block'), [Fluid.of('minecraft:lava'),Fluid.of('kubejs:molten_desh')]).requiredBonks(8)
 	event.recipes.createMechanicalExtruderExtruding(MC('calcite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('chipped:polished_calcite').requiredBonks(8)
 	event.recipes.createMechanicalExtruderExtruding(MC('andesite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('minecraft:polished_andesite').requiredBonks(4)
 	event.recipes.createMechanicalExtruderExtruding(MC('granite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('minecraft:polished_granite').requiredBonks(4)
@@ -2912,6 +2934,60 @@ function chocolate(event){
 		.loops(1)
 	event.recipes.createMixing(Fluid.of("create_confectionery:ruby_chocolate", 250), [Fluid.of(MC('milk'), 250), MC('sugar'), CR('polished_rose_quartz'), MC('cocoa_beans')])
 
+	t = KJ('incomplete_inductor')
+	event.recipes.createSequencedAssembly([
+		KJ('dirt_inductor'),
+	], KJ('inductor_core'), [
+		event.recipes.createDeploying(t, [t, "createaddition:copper_wire"]),
+		event.recipes.createDeploying(t, [t, KJ('plastic')]),
+		event.recipes.createDeploying(t, [t, "createaddition:copper_wire"]),
+		event.recipes.createDeploying(t, [t, KJ('plastic')]),
+		event.recipes.gearboxMechanizing(t, t)
+	]).transitionalItem(t)
+		.loops(1)
+		.id('kubejs:inductor')
+
+	t = KJ('incomplete_resistor')
+	event.recipes.createSequencedAssembly([
+		KJ('dirt_resistor'),
+	], KJ('plastic'), [
+		event.recipes.createDeploying(t, [t, KJ('carbon_sheet')]),
+		event.recipes.createDeploying(t, [t, KJ('carbon_sheet')]),
+		event.recipes.createDeploying(t, [t, MC('clay_ball')]),
+		event.recipes.createDeploying(t, [t, "createaddition:copper_rod"]),
+		event.recipes.gearboxMechanizing(t, t)
+	]).transitionalItem(t)
+		.loops(1)
+		.id('kubejs:resistor_assembly')
+
+	t = KJ('incomplete_electrolytic_capacitor')
+	event.recipes.createSequencedAssembly([
+		KJ('dirt_electrolytic_capacitor'),
+	], KJ('rough_sheet'), [
+		event.recipes.createFilling  (t, [t, Fluid.of(MC('water'), 500)]),
+		event.recipes.createFilling  (t, [t, Fluid.of(KJ('electrolyte'), 200)]),
+		event.recipes.createDeploying(t, [t, CR('copper_sheet')]),
+		event.recipes.createDeploying(t, [t, "createaddition:copper_rod"]),
+		event.recipes.createDeploying(t, [t, KJ('plastic')]),
+		event.recipes.gearboxMechanizing(t, t)
+	]).transitionalItem(t)
+		.loops(1)
+		.id('kubejs:electrolytic_capacitor_assembly')
+
+	t = KJ('incomplete_ceramic_capacitor')
+	event.recipes.createSequencedAssembly([
+		KJ('dirt_ceramic_capacitor'),
+	], KJ('ceramic_powder'), [
+		event.recipes.createPressing(t, t),
+		event.recipes.createDeploying(t, [t, CR('copper_sheet')]),
+		event.recipes.createDeploying(t, [t, KJ('mica_sheet')]),
+		event.recipes.createDeploying(t, [t, CR('copper_sheet')]),
+		event.recipes.createDeploying(t, [t, KJ('ceramic_powder')]),
+		event.recipes.createDeploying(t, [t, "createaddition:copper_rod"]),
+		event.recipes.gearboxMechanizing(t, t)
+	]).transitionalItem(t)
+		.loops(1)
+		.id('kubejs:resistor')
 }
 
 function invarMachine(event) {
@@ -2952,68 +3028,12 @@ function invarMachine(event) {
 	event.recipes.createFilling(KJ('soaked_sheet'), [CR('copper_sheet'), Fluid.of(KJ('electrolyte'), 100)])
 	event.shapeless(TE('machine_frame'), KJ('power_machine'))
 
-	let t = KJ('incomplete_inductor')
-	event.recipes.createSequencedAssembly([
-		KJ('dirt_inductor'),
-	], KJ('inductor_core'), [
-		event.recipes.createDeploying(t, [t, "createaddition:copper_wire"]),
-		event.recipes.createDeploying(t, [t, KJ('plastic')]),
-		event.recipes.createDeploying(t, [t, "createaddition:copper_wire"]),
-		event.recipes.createDeploying(t, [t, KJ('plastic')]),
-		event.recipes.createPressing(t, t)
-	]).transitionalItem(t)
-		.loops(1)
-		.id('kubejs:inductor')
-	t = KJ('incomplete_resistor')
-
-	// event.recipes.createSequencedAssembly([
-	// 	KJ('dirt_resistor'),
-	// ], KJ('plastic'), [
-	// 	event.custom(ifiniDeploying(t, t, TE('drill_head'))),
-	// 	event.recipes.createDeploying(t, [t, KJ('carbon_sheet')]),
-	// 	event.recipes.createDeploying(t, [t, KJ('carbon_sheet')]),
-	// 	event.recipes.createDeploying(t, [t, MC('clay_ball')]),
-	// 	event.recipes.createDeploying(t, [t, "createaddition:copper_rod"]),
-	// 	event.recipes.createPressing(t, t)
-	// ]).transitionalItem(t)
-	// 	.loops(1)
-	// 	.id('kubejs:resistor_assembly')
-	// t = KJ('incomplete_electrolytic_capacitor')
-
-	event.recipes.createSequencedAssembly([
-		KJ('dirt_electrolytic_capacitor'),
-	], KJ('rough_sheet'), [
-		event.recipes.createFilling  (t, [t, Fluid.of(MC('water'), 500)]),
-		event.recipes.createFilling  (t, [t, Fluid.of(KJ('electrolyte'), 200)]),
-		event.recipes.createDeploying(t, [t, CR('copper_sheet')]),
-		event.recipes.createDeploying(t, [t, "createaddition:copper_rod"]),
-		event.recipes.createDeploying(t, [t, KJ('plastic')]),
-		event.recipes.createPressing (t, t)
-	]).transitionalItem(t)
-		.loops(1)
-		.id('kubejs:electrolytic_capacitor_assembly')
-
-	t = KJ('incomplete_ceramic_capacitor')
-	event.recipes.createSequencedAssembly([
-		KJ('dirt_ceramic_capacitor'),
-	], KJ('ceramic_powder'), [
-		event.recipes.createPressing(t, t),
-		event.recipes.createDeploying(t, [t, CR('copper_sheet')]),
-		event.recipes.createDeploying(t, [t, KJ('mica_sheet')]),
-		event.recipes.createDeploying(t, [t, CR('copper_sheet')]),
-		event.recipes.createDeploying(t, [t, KJ('ceramic_powder')]),
-		event.recipes.createDeploying(t, [t, "createaddition:copper_rod"]),
-		event.recipes.createPressing(t, t)
-	]).transitionalItem(t)
-		.loops(1)
-		.id('kubejs:resistor')
-
 	event.recipes.createMixing([KJ('resistor'), Fluid.of(KJ('dirt_water'), 110)], [KJ('dirt_resistor'), Fluid.of(MC('water'), 100)])
 	event.recipes.createMixing([KJ('ceramic_capacitor'), Fluid.of(KJ('dirt_water'), 110)], [KJ('dirt_ceramic_capacitor'), Fluid.of(MC('water'), 100)])
 	event.recipes.createMixing([KJ('electrolytic_capacitor'), Fluid.of(KJ('dirt_water'), 110)], [KJ('dirt_electrolytic_capacitor'), Fluid.of(MC('water'), 100)])
 	event.recipes.createMixing([KJ('inductor'), Fluid.of(KJ('dirt_water'), 110)], [KJ('dirt_inductor'), Fluid.of(MC('water'), 100)])
 
-	t = KJ('incomplete_power_mechanism')
+	let t = KJ('incomplete_power_mechanism')
 	event.recipes.createSequencedAssembly([
 		KJ('power_mechanism'),
 	], KJ('explosive_mechanism'), [
