@@ -113,6 +113,7 @@ ServerEvents.tags('block', event => {
 
 	event.add('forge:ores', 'ae2:sky_stone_block')
 	event.add('forge:ores', 'tfmg:lignite')
+	event.add('ae2:growth_acceleratable', 'buddingcrystals:budding_budding_skystone')
 
 
 })
@@ -2344,6 +2345,7 @@ function brassMachine(event) {
 	brass_machine(SS('hopper_upgrade'), 1)
 	brass_machine(SS('advanced_hopper_upgrade'), 1)
 	brass_machine(CR('elevator_pulley'), 1, CR('rope_pulley'))
+	brass_machine(AE2('growth_accelerator'), 1, KJ('candy_mechanism'))
 
 	let andesite_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })

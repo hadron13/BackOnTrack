@@ -390,6 +390,8 @@ ItemEvents.tooltip(tooltip => {
 
 	tooltip.add("thermal:machine_press", ["§eWarning: crash when viewing recipes."])
 
+	tooltip.add("ae2:growth_accelerator", ["§erecipe by volit <3"])
+
 	tooltip.add('buddingcrystals:budding_budding_skystone', ["§cwarning, this block cannot be broken after being placed, if it breaks, it will disappear"])
 
 	tooltip.add("tfmg:steel_pump", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
