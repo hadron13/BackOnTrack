@@ -187,46 +187,8 @@ let mystery_leaves_but_no_gapples =
 
 LootJS.modifiers((event) => {
     //#obrigadoboatpaking
-    const condition = (and) => {
-        and.not((n) => {
-            n.matchMainHand(ItemFilter.hasEnchantment('minecraft:silk_touch'))
-        });
-        removeItens.forEach((item) => {
-            and.not((n) => {
-                n.matchMainHand(Item.of(
-                    item,
-                    {
-                      tic_modifiers: [
-                        { level: 1, name: "tconstruct:silky" }
-                      ],
-                      tic_upgrades: [
-                        { level: 1, name: "tconstruct:silky" }
-                      ]
-                    }
-                  ))
-            })   
-        })
-    };
-    const removeItens = [
-        'tconstruct:scythe',
-        'tconstruct:mattock',
-        'tconstruct:pickadze',
-        'tconstruct:pickaxe',
-        'tconstruct:excavator',
-        'tconstruct:hand_axe',
-        'tconstruct:broad_axe',
-        'tconstruct:kama',
-        'tconstruct:melting_pan',
-        'tconstruct:war_pick',
-        'tconstruct:dagger',
-        'tconstruct:sword',
-        'tconstruct:cleaver',
-        'tconstruct:swasher',
-        'tconstruct:sledge_hammer',
-        'tconstruct:vein_hammer',
-    ]
 
-    const customLoot = (block, loot) => event.addBlockLootModifier(block).and(condition).addLoot(loot);
+    const customLoot = (block, loot) => event.addBlockLootModifier(block).not((not) => {not.matchLoot(block)}).addLoot(loot);
 
     customLoot('buddingcrystals:small_budding_skystone_bud', '8x ae2:sky_stone_block')
     customLoot('buddingcrystals:medium_budding_skystone_bud', '8x ae2:sky_stone_block')
