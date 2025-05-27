@@ -200,10 +200,10 @@
 		{
 			dependencies: [
 				"21EB310FAFD26E87"
-				"188CE1E15AFA5266"
 				"0949D0AF4DA8F8FD"
 				"7338B90F77B09C71"
 				"5A282C02F42A8AD7"
+				"67F984C41B16F045"
 			]
 			description: ["12... 11... 10... All engines started 9... 8... 7..."]
 			icon: "ad_astra:earth_globe"
@@ -257,8 +257,8 @@
 				type: "item"
 			}]
 			title: "Finest Fuel"
-			x: -6.0d
-			y: 11.0d
+			x: -5.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["2A52615E8E67F885"]
@@ -362,7 +362,6 @@
 			id: "21EB310FAFD26E87"
 			tasks: [{
 				consume_items: false
-				count: 9L
 				id: "26F9E5D9C47D74FD"
 				item: "ad_astra:launch_pad"
 				type: "item"
@@ -383,6 +382,17 @@
 			title: "Kerosene"
 			x: -6.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["188CE1E15AFA5266"]
+			id: "67F984C41B16F045"
+			tasks: [{
+				id: "447E1A89A932E220"
+				item: "ad_astra:fuel_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 11.0d
 		}
 	]
 	title: "&f3a&r Rocketry by Eye"

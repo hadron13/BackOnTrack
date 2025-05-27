@@ -74,7 +74,7 @@
 	connector_allow_passive_io = true
 	#Small Connector With Light energy consumption in FE/t.
 	#Range: > 0
-	small_light_connector_consumption = 0
+	small_light_connector_consumption = 1
 
 #Accumulator
 [accumulator]

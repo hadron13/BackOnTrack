@@ -319,7 +319,6 @@
 				"552FD6D527EA2CE3"
 				"60A7A7C9FA7514A3"
 				"7EABB23C5C6218F7"
-				"610B294622019660"
 			]
 			description: ["A high quality resistor can now be assembled from the materials, at exactly (±5%) 350kΩ"]
 			icon: "kubejs:dirt_resistor"
@@ -421,8 +420,8 @@
 				type: "item"
 			}]
 			title: "Magneticore"
-			x: 7.0d
-			y: 29.0d
+			x: 3.5d
+			y: 30.0d
 		}
 		{
 			dependencies: ["235FD291165EE222"]
@@ -435,8 +434,8 @@
 				type: "item"
 			}]
 			title: "Roughly Enough Area"
-			x: 3.0d
-			y: 29.0d
+			x: 3.5d
+			y: 28.5d
 		}
 		{
 			dependencies: ["7B4A431D5930B0F9"]
@@ -449,8 +448,8 @@
 				type: "item"
 			}]
 			title: "Ceramics"
-			x: 0.0d
-			y: 29.0d
+			x: -3.0d
+			y: 28.5d
 		}
 		{
 			dependencies: ["32A4925F476AF97E"]
@@ -463,8 +462,8 @@
 				type: "item"
 			}]
 			title: "Polymer Base"
-			x: -4.0d
-			y: 29.0d
+			x: -3.0d
+			y: 30.0d
 		}
 		{
 			dependencies: ["2B16EE336CC23F70"]
@@ -507,21 +506,6 @@
 			title: "Binding of Resistor"
 			x: -6.5d
 			y: 26.5d
-		}
-		{
-			dependencies: ["6C3258881A44FA46"]
-			description: ["Use a drill head to make a small hole in the plastic to fit all the materials in, don't forget: the drill will not be consumed, and will not wear out."]
-			hide_dependency_lines: true
-			id: "610B294622019660"
-			shape: "diamond"
-			tasks: [{
-				id: "7A5996D073F8D675"
-				item: "thermal:drill_head"
-				type: "item"
-			}]
-			title: "Drilly"
-			x: -7.0d
-			y: 29.0d
 		}
 		{
 			dependencies: ["411D59426F3D3B98"]

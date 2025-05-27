@@ -49,6 +49,28 @@ JEIEvents.hideItems(event => {
     hide_thermal_set('bronze')
     hide_thermal_set('electrum')
 
+	let encased = (type) => {
+  event.hide("createcasing:"+type+"_configurable_gearbox")
+	event.hide("createcasing:"+type+"_mixer")
+	event.hide("createcasing:"+type+"_press")
+	event.hide("createcasing:"+type+"_depot")
+	}
+	let creative = (type) => {
+	event.hide("createcasing:vertical_"+type+"_gearbox")
+	event.hide("createcasing:"+type+"_encased_chain_drive")
+	event.hide("createcasing:"+type+"_adjustable_chain_gearshift")
+  event.hide("createcasing:"+type+"_casing")
+	event.hide("createcasing:"+type+"_gearbox")
+	event.hide("createcasing:"+type+"_cogwheel")
+	}
+	encased("railway")
+	encased("copper")
+	encased("andesite")
+	encased("brass")
+	encased("industrial_iron")
+	encased("creative")
+  creative("creative")
+
 	event.hide('occultism:silver_ore_deepslate')
 	event.hide('thermal:oil_sand')
 	event.hide('thermal:oil_red_sand')
@@ -367,6 +389,8 @@ ItemEvents.tooltip(tooltip => {
 	tooltip.add("kubejs:steel_ring", ["§7Obtained breaking a §6steel cannon chamber"])
 
 	tooltip.add("thermal:machine_press", ["§eWarning: crash when viewing recipes."])
+
+	tooltip.add("ae2:growth_accelerator", ["§erecipe by volit <3"])
 
 	tooltip.add('buddingcrystals:budding_budding_skystone', ["§cwarning, this block cannot be broken after being placed, if it breaks, it will disappear"])
 
