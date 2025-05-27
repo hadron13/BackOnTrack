@@ -3465,7 +3465,7 @@
 				type: "item"
 			}]
 			title: "4x Spider Eye"
-			x: 1.0d
+			x: 0.5d
 			y: 17.0d
 		}
 		{
@@ -3501,7 +3501,7 @@
 				type: "item"
 			}]
 			title: "1x Ender Pearl"
-			x: 2.0d
+			x: 1.5d
 			y: 17.0d
 		}
 		{
@@ -3537,7 +3537,7 @@
 				type: "item"
 			}]
 			title: "4x Rotten Flesh"
-			x: 3.0d
+			x: 2.5d
 			y: 17.0d
 		}
 		{
@@ -3573,20 +3573,20 @@
 				type: "item"
 			}]
 			title: "1x Blaze Rod"
-			x: 4.0d
+			x: 3.5d
 			y: 17.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["64F3352725385210"]
 			disable_toast: true
-			icon: "minecraft:bone"
+			icon: "minecraft:milk_bucket"
 			id: "38A7A350C9BE1FD2"
 			rewards: [
 				{
 					auto: "enabled"
 					id: "468F38585FF15D5A"
-					item: "kubejs:trade_card_bone"
+					item: "kubejs:trade_card_milk_bottle"
 					type: "item"
 				}
 				{
@@ -3599,7 +3599,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "8 Silver"
+			subtitle: "18 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
@@ -3608,8 +3608,8 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "4x Bone"
-			x: 5.0d
+			title: "1x Milk"
+			x: 5.5d
 			y: 17.0d
 		}
 		{
@@ -4357,6 +4357,42 @@
 			title: "2x Scorched Bricks"
 			x: 6.0d
 			y: 13.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["64F3352725385210"]
+			disable_toast: true
+			icon: "minecraft:bone"
+			id: "178C579B028CD7BC"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "769425C99BC03175"
+					item: "kubejs:trade_card_bone"
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "14A26B20C6C04495"
+					tags: ["reset"]
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				icon: { Count: 10, id: "thermal:silver_coin" }
+				id: "1C77D607372E22C1"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "4x Bone"
+			x: 4.5d
+			y: 17.0d
 		}
 	]
 	title: "&a Shipments"

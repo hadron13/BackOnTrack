@@ -922,6 +922,7 @@ function tweaks(event) {
 
 	event.remove({ output: MC('basalt') })
 	cobblegen(MC("soul_soil"), MC("basalt"))
+	//cobblegen(MC("red_nether_bricks"), MC("netherrack"))
 	// bedrock_cobblegen(AP("packed_ice_pillar"), CR("gabbro_cobblestone"))
 
 	// event.recipes.createPressing([KJ('zinc_sheet')], CR('zinc_ingot'))
@@ -1585,6 +1586,17 @@ function rubberMatters(event) {
 		'NSN'
 	], {
 		A: TE('steel_gear'),
+		N: MC('copper_ingot'),
+		S: '#forge:glass'
+	})
+
+  event.remove({ output: TE('energy_cell_frame') })
+	event.shaped(TE('energy_cell_frame'), [
+		'NSN',
+		'SAS',
+		'NSN'
+	], {
+		A: KJ('power_mechanism'),
 		N: MC('copper_ingot'),
 		S: '#forge:glass'
 	})
