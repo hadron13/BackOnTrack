@@ -389,7 +389,7 @@ StartupEvents.registry('item', event => {
 		simple("Calcite", MC('calcite', 16), 3, S, 0xC2C2C2, 0xDADADA)
 		simple("Tuff", MC('tuff', 16), 3, S, 0x6B5D4F, 0x7D6B5A)
 		simple("Scoria", CR('scoria', 16), 3, S, 0x2A130C, 0x553427)
-		simple("Scorchia", CR('scorchia', 16), 3, S, 0x0D0706, 0x23201A)
+		// simple("Scorchia", CR('scorchia', 16), 3, S, 0x0D0706, 0x23201A)
 		simple("Obsidian", MC('obsidian', 1), 8, S, 0x05030A, 0x36234C)
 		
 		next_group()
@@ -457,7 +457,7 @@ StartupEvents.registry('item', event => {
 		simple("Clover Petal", BOP('huge_clover_petal', 4), 10, S, 0x5B8A4F, 0x6FA960)
 		simple("Spanish Moss", BOP('spanish_moss', 4), 7, S, 0x395B2A, 0xA2C790)
 		simple("Willow Vine", BOP('willow_vine', 4), 7, S, 0x265F0D, 0x317B10)
-		simple("Cattail", BOP('cattail', 4), 4, S, 0x186B2B, 0x845738)
+		// simple("Cattail", BOP('cattail', 4), 4, S, 0x186B2B, 0x845738)
 		simple("Sugar Cane", MC('sugar_cane', 4), 3, S, 0x688546, 0xC5FC85)
 		simple("Kelp", MC('kelp', 8), 3, S, 0x5B8131, 0x58A92F)
 		simple("Bamboo", MC('bamboo', 8), 5, S, 0x4F7416, 0x88AC5F)
@@ -483,9 +483,9 @@ StartupEvents.registry('item', event => {
 		simple("Scorched Stone", TC('scorched_stone', 16), 32, S, 0x382C25, 0x4C3F37)
 		
 		simple("Lantern", MC('lantern', 1), 1, S, 0x484F64, 0xF6C765)
-		simple("Copper Lantern", SP('copper_lantern', 1), 1, S, 0xB36535, 0xF3B154)
-		simple("Brass Lantern", SP('brass_lantern', 1), 1, S, 0xA47C37, 0xFAEACF)
-		simple("Crimson Lantern", SP('crimson_lantern', 1), 1, S, 0x9C0E2C, 0xE7EB56)
+		// simple("Copper Lantern", SP('copper_lantern', 1), 1, S, 0xB36535, 0xF3B154)
+		// simple("Brass Lantern", SP('brass_lantern', 1), 1, S, 0xA47C37, 0xFAEACF)
+		// simple("Crimson Lantern", SP('crimson_lantern', 1), 1, S, 0x9C0E2C, 0xE7EB56)
 		
 		next_group()
 		entry_cost = 10
