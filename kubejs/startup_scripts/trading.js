@@ -501,6 +501,7 @@ StartupEvents.registry('item', event => {
 		simple("Ender Pearl", MC('ender_pearl', 1), 48, S, 0x0B4C41, 0x2BCBAF)
 		simple("Rotten Flesh", MC('rotten_flesh', 4), 3, S, 0xB24320, 0x695C18)
 		simple("Blaze Rod", MC('blaze_rod', 1), 20, S, 0xAC3B00, 0xD5AC26)
+		simple("Milk Bottle", FD('milk_bottle', 1), 18, S, 0xAC3B00, 0xD5AC26)
 		simple("Bone", MC('bone', 4), 8, S, 0xC9C4A3, 0xC9C4A3)
 		simple("Prismarine Shard", MC('prismarine_shard', 4), 16, S, 0x2F6355, 0x8FC0AA)
 		simple("Prismarine Crystals", MC('prismarine_crystals', 4), 24, S, 0x71A296, 0xDCE6D9)

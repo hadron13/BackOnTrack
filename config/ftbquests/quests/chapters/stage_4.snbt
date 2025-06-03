@@ -866,7 +866,7 @@
 			id: "1B600F92F27C8C74"
 			tasks: [{
 				id: "3FECAB41D317CD16"
-				item: "ad_astra:desh_block"
+				item: "kubejs:molten_desh_bucket"
 				type: "item"
 			}]
 			x: -5.5d
