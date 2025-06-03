@@ -199,13 +199,14 @@
 		}
 		{
 			dependencies: ["7C6435C9ACEFA985"]
+			hide_details_until_startable: false
 			icon: "minecraft:iron_ingot"
 			id: "085F65B18F65DCCE"
 			tasks: [{
 				id: "29AC59845B8D4598"
 				type: "checkmark"
 			}]
-			title: "2x Ingot"
+			title: "1x Ingot"
 			x: 3.5d
 			y: 12.5d
 		}

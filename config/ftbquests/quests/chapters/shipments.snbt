@@ -3033,7 +3033,7 @@
 				type: "item"
 			}]
 			title: "32x Osseous Bricks"
-			x: 1.0d
+			x: 0.5d
 			y: 13.0d
 		}
 		{
@@ -3069,7 +3069,7 @@
 				type: "item"
 			}]
 			title: "16x Seared Stone"
-			x: 2.0d
+			x: 1.5d
 			y: 13.0d
 		}
 		{
@@ -3105,7 +3105,7 @@
 				type: "item"
 			}]
 			title: "16x Scorched Stone"
-			x: 3.0d
+			x: 2.5d
 			y: 13.0d
 		}
 		{
@@ -3141,7 +3141,7 @@
 				type: "item"
 			}]
 			title: "1x Lantern"
-			x: 4.0d
+			x: 3.5d
 			y: 13.0d
 		}
 		{
@@ -3645,7 +3645,7 @@
 				type: "item"
 			}]
 			title: "4x Prismarine Shard"
-			x: 0.0d
+			x: -0.5d
 			y: 13.0d
 		}
 		{
@@ -3753,7 +3753,7 @@
 				type: "item"
 			}]
 			title: "1x Blaze Cake"
-			x: 5.0d
+			x: 4.5d
 			y: 13.0d
 		}
 		{
@@ -4355,7 +4355,7 @@
 				type: "item"
 			}]
 			title: "2x Scorched Bricks"
-			x: 6.0d
+			x: 5.5d
 			y: 13.0d
 		}
 		{
@@ -4393,6 +4393,42 @@
 			title: "4x Bone"
 			x: 4.5d
 			y: 17.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["64F3352725385210"]
+			disable_toast: true
+			icon: "thermal:apatite"
+			id: "6B2906589AF69071"
+			rewards: [
+				{
+					auto: "enabled"
+					id: "2EA2DE0D345E684F"
+					item: "kubejs:trade_card_apatite"
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "thermal:machine_cycle_augment"
+					id: "64234DA2430A47C2"
+					tags: ["reset"]
+					title: "Repeatable"
+					type: "custom"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "8 Silver"
+			tasks: [{
+				consume_items: true
+				count: 10L
+				icon: { Count: 10, id: "thermal:silver_coin" }
+				id: "312C039183366ECD"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
+			title: "8x Apatite"
+			x: 6.5d
+			y: 13.0d
 		}
 	]
 	title: "&a Shipments"

@@ -21,7 +21,7 @@
 	#NOTE: This may entail some visual downgrades. Affected graphics include:
 	#- Cannon smoke
 	#- Adaptive debris particles (splinters, leaves, glass shards)
-	useShaderCompatibleGraphics = false
+	useShaderCompatibleGraphics = true
 	#.
 	#[in Meters per Second]
 	#Range: 0.0 ~ 1000.0

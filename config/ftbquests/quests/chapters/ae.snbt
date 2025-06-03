@@ -53,7 +53,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["10CEF83AAD114760"]
@@ -124,8 +124,8 @@
 				item: "thermal:apatite"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.5d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["618F33E789A1DA3D"]

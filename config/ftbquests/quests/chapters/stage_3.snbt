@@ -5,24 +5,14 @@
 	group: "6F42926B3F0C534A"
 	icon: "kubejs:explosive_mechanism"
 	id: "2DCD66B83A8CE709"
-	images: [
-		{
-			height: 3.0d
-			image: "kubejs:textures/images/chapter3.png"
-			rotation: 0.0d
-			width: 18.0d
-			x: 0.5d
-			y: -9.5d
-		}
-		{
-			height: 5.0d
-			image: "kubejs:textures/images/painel_das_mulas.png"
-			rotation: 0.0d
-			width: 5.5d
-			x: -7.0d
-			y: 6.5d
-		}
-	]
+	images: [{
+		height: 3.0d
+		image: "kubejs:textures/images/chapter3.png"
+		rotation: 0.0d
+		width: 18.0d
+		x: 0.5d
+		y: -9.5d
+	}]
 	order_index: 7
 	quest_links: [ ]
 	quests: [
@@ -950,7 +940,6 @@
 				"38D3FEF4C99B1ABB"
 				"0CFE8B23F35DEA3D"
 			]
-			description: ["{image:kubejs:textures/images/painel_das_mulas.png width:150 height:120 align:center}"]
 			icon: "createdeco:decal_fluid"
 			id: "021C30C187E9A97E"
 			rewards: [{

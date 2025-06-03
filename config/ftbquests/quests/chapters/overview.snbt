@@ -378,7 +378,7 @@
 				"After hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar."
 			]
 			hide_until_deps_visible: true
-			icon: "thermal:gunpowder_block"
+			icon: "createbigcannons:packed_gunpowder"
 			id: "466B6AA648B23C3A"
 			shape: "diamond"
 			subtitle: "Chapter 3"
@@ -553,7 +553,7 @@
 				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
 			hide_until_deps_visible: true
-			icon: "kubejs:smoke_mote"
+			icon: "kubejs:high_power_coil"
 			id: "6C5432493CB78405"
 			shape: "diamond"
 			subtitle: "Secondary 4A"
@@ -637,7 +637,7 @@
 				""
 				"After hitting the Checkmark above, optional quests will appear in the side bar."
 			]
-			icon: "ae2:silicon"
+			icon: "kubejs:silicon_compound"
 			id: "4595F825A8A21E53"
 			shape: "diamond"
 			subtitle: "Secondary 4B"

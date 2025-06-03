@@ -51,10 +51,14 @@ JEIEvents.hideItems(event => {
 
 	let encased = (type) => {
   event.hide("createcasing:"+type+"_configurable_gearbox")
-	event.hide("createcasing:"+type+"_mixer")
-	event.hide("createcasing:"+type+"_press")
-	event.hide("createcasing:"+type+"_depot")
 	}
+
+	encased("railway")
+	encased("copper")
+	encased("andesite")
+	encased("brass")
+	encased("industrial_iron")
+
 	let creative = (type) => {
 	event.hide("createcasing:vertical_"+type+"_gearbox")
 	event.hide("createcasing:"+type+"_encased_chain_drive")
@@ -62,13 +66,12 @@ JEIEvents.hideItems(event => {
   event.hide("createcasing:"+type+"_casing")
 	event.hide("createcasing:"+type+"_gearbox")
 	event.hide("createcasing:"+type+"_cogwheel")
+	event.hide("createcasing:"+type+"_configurable_gearbox")
+	event.hide("createcasing:"+type+"_mixer")
+	event.hide("createcasing:"+type+"_press")
+	event.hide("createcasing:"+type+"_depot")
 	}
-	encased("railway")
-	encased("copper")
-	encased("andesite")
-	encased("brass")
-	encased("industrial_iron")
-	encased("creative")
+
   creative("creative")
 
 	event.hide('occultism:silver_ore_deepslate')

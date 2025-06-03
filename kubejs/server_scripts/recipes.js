@@ -677,6 +677,7 @@ function unwantedRecipes(event) {
 	event.remove({id: TC('smeltery/casting/scorched/foundry_controller') })
 	event.remove({id: CI('mixing/coal_coke') })
 	event.remove({id: TE("machine/pyrolyzer/pyrolyzer_logs") })
+	event.remove({id: TE("devices/rock_gen/rock_gen_cobbled_deepslate") })
 	event.remove({id: CR("crushing/obsidian") })
 	event.remove({id: TE('compat/tconstruct/chiller_tconstruct_tin_ingot') })
 	event.remove({id: TE("machine/crucible/crucible_ender_pearl") })
@@ -858,17 +859,17 @@ function tweaks(event) {
 		// event.recipes.createDeploying(r, [i2, i1])
 	}
 
-
 	tweak_casing('create:andesite_casing', 	'create:andesite_alloy', 'minecraft:logs', true)
 	tweak_casing('create:copper_casing', 	'create:copper_sheet', 	'minecraft:logs', true)
 	tweak_casing('create:brass_casing', 	'create:brass_sheet', 	'minecraft:logs', true)
-	tweak_casing('kubejs:zinc_casing', 		'createdeco:zinc_sheet', 'minecraft:stone')
-	tweak_casing('kubejs:enderium_casing', 'thermal:enderium_plate', 'minecraft:stone')
-	// tweak_casing('create:railway_casing', 	'create:sturdy_sheet', 	'create:brass_casing')
-	tweak_casing('kubejs:invar_casing', 	'thermal:invar_plate', 	'minecraft:stone')
-	tweak_casing('kubejs:fluix_casing', 	'thermal:lead_plate', 	'minecraft:basalt')
+  tweak_casing('create:railway_casing', 	'create:sturdy_sheet', 	'minecraft:logs', true)
 	tweak_casing('alloyed:steel_casing', 	'alloyed:steel_sheet', 	'minecraft:logs', true)
-	tweak_casing('tfmg:heavy_machinery_casing', 'tfmg:heavy_plate', 'alloyed:steel_casing')
+
+	tweak_casing('kubejs:zinc_casing', 		'createdeco:zinc_sheet', 'minecraft:logs', true)
+	tweak_casing('kubejs:enderium_casing', 'thermal:enderium_plate', 'minecraft:logs', true)
+	tweak_casing('kubejs:invar_casing', 	'thermal:invar_plate', 	'minecraft:logs', true)
+	tweak_casing('kubejs:fluix_casing', 	'thermal:lead_plate', 	'minecraft:logs', true)
+	tweak_casing('tfmg:heavy_machinery_casing', 'tfmg:heavy_plate', 'minecraft:logs', true)
 	// tweak_casing('enderium', [MC('ender_pearl'), 'minecraft:obsidian'], KJ)
 
 	event.custom({
@@ -906,6 +907,11 @@ function tweaks(event) {
 		S: TE("gold_gear")
 	})
 
+	event.custom({
+			"type": "thermal:rock_gen",
+			"adjacent": "kubejs:molten_desh",
+			"result": { "item": KJ('mica_block') }
+		})
 	let cobblegen = (below, output) => {
 		event.custom({
 			"type": "thermal:rock_gen",
@@ -922,6 +928,7 @@ function tweaks(event) {
 
 	event.remove({ output: MC('basalt') })
 	cobblegen(MC("soul_soil"), MC("basalt"))
+	cobblegen(MC("polished_deepslate"), MC("cobbled_deepslate"))
 	//cobblegen(MC("red_nether_bricks"), MC("netherrack"))
 	// bedrock_cobblegen(AP("packed_ice_pillar"), CR("gabbro_cobblestone"))
 
@@ -1368,7 +1375,7 @@ function rocketScience(event) {
 	event.remove({id:'thermal:machines/refinery/refinery_light_oil'})
 	event.remove({id:'thermal:machines/refinery/refinery_heavy_oil'})
 	event.recipes.createMixing(
-		[Fluid.of(TE("refined_fuel"), 1)],
+		[Fluid.of(TE("refined_fuel"), 10)],
 		[Fluid.of('tfmg:kerosene', 100)]
 	).heated()
 
@@ -2104,13 +2111,13 @@ function MetallurgyRecipes(event){
 
 	event.shapeless(CR("white_sail"), CR("sail_frame"))
 
-	event.recipes.tfmg.distillation(Fluid.of(KJ("desalted_oil"), 360), [
+	event.recipes.tfmg.distillation(Fluid.of(KJ("desalted_oil"), 250), [
 		Fluid.of(CI("heavy_oil"), 120), 
-		Fluid.of(CI("diesel"), 80),
-		Fluid.of(CI("kerosene"), 60),
-		Fluid.of(CI("naphtha"), 60),
-		Fluid.of(CI("gasoline"), 80),
-		Fluid.of(CI("lpg"), 60)
+		Fluid.of(CI("diesel"), 90),
+		Fluid.of(CI("kerosene"), 70),
+		Fluid.of(CI("naphtha"), 70),
+		Fluid.of(CI("gasoline"), 90),
+		Fluid.of(CI("lpg"), 70)
 	])
 
 	event.custom({
@@ -2158,6 +2165,8 @@ function MetallurgyRecipes(event){
 	inscriber("engineering", TC('molten_diamond'), 90, 40)
 	inscriber("logic", TC('molten_gold'), 90, 40)
 
+	event.shaped(AE2('fluix_glass_cable', 16), ['AB',], {A: KJ("power_mechanism"), B: AE2('logic_processor')})
+
 	event.recipes.gearboxCompressing(AE2("silicon"), 	Fluid.of(KJ("sif2"), 50)).heated()
   let luz = (id, amount) => {
 	event.stonecutting(Item.of(id, amount), 'createaddition:small_light_connector')
@@ -2172,12 +2181,6 @@ function MetallurgyRecipes(event){
 	luz(MOL('small_green_sconce'), 1)
 	luz(MOL('small_edison_bulb'), 1)
 
-	let encased = (type) => {
-  event.remove({output: "createcasing:"+type+"_configurable_gearbox"})
-	event.remove({output: "createcasing:"+type+"_mixer"})
-	event.remove({output: "createcasing:"+type+"_press"})
-	event.remove({output: "createcasing:"+type+"_depot"})
-	}
 	let creative = (type) => {
 	event.remove({output: "createcasing:vertical_"+type+"_gearbox"})
 	event.remove({output: "createcasing:"+type+"_encased_chain_drive"})
@@ -2185,13 +2188,22 @@ function MetallurgyRecipes(event){
   event.remove({output: "createcasing:"+type+"_casing"})
 	event.remove({output: "createcasing:"+type+"_gearbox"})
 	event.remove({output: "createcasing:"+type+"_cogwheel"})
+	event.remove({output: "createcasing:"+type+"_configurable_gearbox"})
+	event.remove({output: "createcasing:"+type+"_mixer"})
+	event.remove({output: "createcasing:"+type+"_press"})
+	event.remove({output: "createcasing:"+type+"_depot"})
 	}
+	
+	let encased = (type) => {
+  event.remove({output: "createcasing:"+type+"_configurable_gearbox"})
+	}
+
 	encased("railway")
 	encased("copper")
 	encased("andesite")
 	encased("brass")
 	encased("industrial_iron")
-	encased("creative")
+
   creative("creative")
 	// event.remove({output: ML('sturdy_whisk')})
 	// event.shaped(ML('sturdy_whisk'), [
@@ -2793,7 +2805,7 @@ function explosiveMachine(event){
 	event.replaceInput({}, 'tfmg:saltpeter', 'thermal:niter_dust')
 	event.replaceInput({}, 'tfmg:sulfur_powder', 'thermal:sulfur_dust')
 
-	event.recipes.createMixing([MC('dirt')], [Fluid.of(MC('water')), MC('sand'), MC('clay_ball'), MC('gravel')])
+	event.recipes.createMixing([MC('dirt', 12)], [Fluid.of(MC('water')), MC('sand', 4), MC('clay_ball', 4), MC('gravel', 4)])
 
 	event.recipes.gearboxPyroprocessing([TE('coal_coke')], [MC('charcoal')] ).heated().processingTime(100)
 	event.recipes.createMixing([Fluid.of(BC('molten_steel'), 90)], ['thermal:coal_coke', Fluid.of(TC('molten_iron'), 90)]).heated()
@@ -3036,7 +3048,7 @@ function invarMachine(event) {
 	event.recipes.createCrushing([Item.of(MC('clay_ball')).withChance(1),Item.of(CR('copper_nugget')).withChance(0.65),Item.of(CR('copper_nugget')).withChance(0.5)], MC("dripstone_block"))
 	event.recipes.createCutting(KJ('mica_sheet', 3), KJ('mica_block'))
 	event.recipes.createMixing([Fluid.of(KJ('electrolyte'), 1000), 'ad_astra:desh_ingot'], [TE('sulfur_dust'), "ad_astra:desh_ingot", Fluid.of(MC('water'), 1000)])
-	event.recipes.createMixing([Fluid.of(KJ('plastic'), 50), 'ad_astra:desh_ingot'], ["ad_astra:desh_ingot", Fluid.of(CI('heavy_oil'), 100)]).heated()
+	event.recipes.createMixing([Fluid.of(KJ('plastic'), 100), 'ad_astra:desh_ingot'], ["ad_astra:desh_ingot", Fluid.of(CI('heavy_oil'), 100)]).heated()
 	event.recipes.createPressing(KJ('carbon_sheet'), MC('charcoal'))
 	event.recipes.createCompacting(KJ('carbon_sheet'), MC('coal', 2))
 	event.recipes.createFilling(KJ('soaked_sheet'), [CR('copper_sheet'), Fluid.of(KJ('electrolyte'), 100)])
@@ -3052,7 +3064,7 @@ function invarMachine(event) {
 		KJ('power_mechanism'),
 	], KJ('explosive_mechanism'), [
 		event.recipes.createDeploying(t, [t, CR('copper_sheet')]),
-		event.recipes.createFilling(t, [t, Fluid.of(KJ('plastic'), 30)]),
+		// event.recipes.createFilling(t, [t, Fluid.of(KJ('plastic'), 30)]),
 		event.recipes.createDeploying(t, [t, KJ('electrolytic_capacitor')]),
 		event.recipes.createDeploying(t, [t, KJ('ceramic_capacitor')]),
 		event.recipes.createDeploying(t, [t, KJ('resistor')]),
@@ -3119,7 +3131,7 @@ function fluixMachine(event) {
 
 	fluix_machine(AE2('formation_core'), 4, AE2("logic_processor"))
 	fluix_machine(AE2('annihilation_core'), 4, AE2("calculation_processor"))
-	fluix_machine(AE2('fluix_glass_cable'), 16, AE2("fluix_crystal"))
+	// fluix_machine(AE2('fluix_glass_cable'), 16, AE2("fluix_crystal"))
 
 	event.recipes.thermal.smelter(("projectred_core:red_iron_comp"), [MC("iron_ingot"), MC("redstone")]).energy(1500)
 	event.recipes.gearboxPyroprocessing(("projectred_core:red_ingot"), ("projectred_core:red_iron_comp"))

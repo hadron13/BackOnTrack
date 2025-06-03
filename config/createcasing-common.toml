@@ -15,7 +15,7 @@
 	#.
 	#.
 	#Can swap casing between block (Mixer, Press, Depot, Gearbox, etc...)
-	casingBlockSwappable = false
+	casingBlockSwappable = true
 	#.
 	#Can swap material between shafts,cogwheels and large cogwheels (includes brass,andesite and glass)
 	shaftCogwheelsSwappable = true
