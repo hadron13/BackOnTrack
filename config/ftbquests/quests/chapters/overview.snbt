@@ -95,7 +95,7 @@
 				value: 1
 			}]
 			title: "Pressure Machinery"
-			x: -2.5d
+			x: -3.0d
 			y: 5.0d
 		}
 		{
@@ -120,7 +120,7 @@
 				value: 1
 			}]
 			title: "Scorching Machinery"
-			x: -2.5d
+			x: -3.0d
 			y: 8.0d
 		}
 		{
@@ -366,7 +366,7 @@
 				type: "dimension"
 			}]
 			title: "To the Moon!"
-			x: -2.5d
+			x: -3.0d
 			y: 11.0d
 		}
 		{
@@ -438,7 +438,7 @@
 				value: 1
 			}]
 			title: "Train Machinery"
-			x: 0.5d
+			x: 1.0d
 			y: 5.0d
 		}
 		{
@@ -515,9 +515,10 @@
 			shape: "diamond"
 			subtitle: "Chapter 5"
 			tasks: [{
-				id: "242A17BBDA2D8506"
-				title: "Unlock Chapter 5"
-				type: "checkmark"
+				icon: "thermal:lock"
+				id: "71F725B338681043"
+				title: "soon available"
+				type: "custom"
 			}]
 			title: "Optic Synthesis"
 			x: -1.0d
@@ -542,7 +543,7 @@
 				value: 1
 			}]
 			title: "Candy Machinery"
-			x: 0.5d
+			x: 1.0d
 			y: 8.0d
 		}
 		{
@@ -605,7 +606,7 @@
 				type: "stat"
 				value: 1
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 11.0d
 		}
 		{

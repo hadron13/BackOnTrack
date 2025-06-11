@@ -114,8 +114,15 @@ ServerEvents.tags('block', event => {
 	event.add('forge:ores', 'ae2:sky_stone_block')
 	event.add('forge:ores', 'tfmg:lignite')
 	event.add('ae2:growth_acceleratable', 'buddingcrystals:budding_budding_skystone')
-
-
+  let tweak_casing = (r) => {
+	event.add('create:wrench_pickup', r)
+	}
+	// tweak_casing('alloyed:steel_casing')
+	tweak_casing('kubejs:zinc_casing')
+	tweak_casing('kubejs:enderium_casing')
+	tweak_casing('kubejs:invar_casing')
+	tweak_casing('kubejs:fluix_casing')
+	// tweak_casing('tfmg:heavy_machinery_casing')
 })
 ServerEvents.tags('item', event => {
 	colors.forEach(element => {
@@ -2205,6 +2212,10 @@ function MetallurgyRecipes(event){
 	encased("industrial_iron")
 
   creative("creative")
+
+//event.recipes.gearboxCentrifuging([Fluid.of(TC('molten_iron'), 250), Fluid.of(TC('molten_copper'), 250),Fluid.of(TC('molten_gold'), 250)], Fluid.of(MC('lava'))).processingTime(150)
+
+
 	// event.remove({output: ML('sturdy_whisk')})
 	// event.shaped(ML('sturdy_whisk'), [
 	// 	' G ',
@@ -2592,7 +2603,7 @@ function invarChapter(event){
 		event.recipes.createDeploying(t, [t, KJ("golden_tube")]),
 		event.recipes.createDeploying(t, [t, KJ("high_power_coil")]),
 		event.recipes.createDeploying(t, [t, KJ("smoke_mote")]),
-	    event.recipes.gearboxMechanizing(t, t)
+		event.recipes.gearboxMechanizing(t, t)
 	]).transitionalItem(t)
 		.loops(1)
 
@@ -2611,11 +2622,9 @@ function invarChapter(event){
 			event.stonecutting(Item.of(id, amount), KJ('invar_machine'))
 	}
 
-	invar_machine(TE('dynamo_compression'), 1, TE('rf_coil'))
-
 	event.replaceInput({ type: "minecraft:crafting_shaped", id: /ae2:.*/ }, F("#ingots/iron"), TE("lead_plate"))
 
-//	invar_machine(TE('machine_crucible'), 1, 'createbigcannons:nethersteel_ingot')
+	invar_machine(TE('dynamo_compression'), 1, TE('rf_coil'))
 	invar_machine(TE('machine_furnace'), 1, 'alloyed:steel_ingot')
 	invar_machine(TE('machine_chiller'), 1, MC('blue_ice'))
 	invar_machine(TE('machine_pyrolyzer'), 1, MC('blaze_rod'))
@@ -2624,11 +2633,20 @@ function invarChapter(event){
 	invar_machine(TE('machine_refinery'), 1, '#forge:glass')
 	invar_machine(TE('machine_pulverizer'), 1, CR('millstone'))
 	invar_machine(TE('machine_smelter'), 1, MC('blast_furnace'))
-	invar_machine(TE('machine_sawmill'), 1, TE('saw_blade'))
+	invar_machine(TE('machine_sawmill'), 1, CR('mechanical_saw'))
 	invar_machine(TE('machine_brewer'), 1, MC('brewing_stand'))
 	invar_machine(TE('machine_insolator'), 1, FD('rich_soil'))
 	invar_machine(TE('machine_crystallizer'), 1, AE2('certus_quartz_crystal'))
 	invar_machine(TE('machine_crafter'), 1, MC('crafting_table'))
+
+	invar_machine(TE('flux_saw'), 1, TE('saw_blade'))
+	invar_machine(TE('flux_drill'), 1, TE('drill_head'))
+	invar_machine(TE('flux_capacitor'), 1, 'createaddition:modular_accumulator')
+	invar_machine(TE('flux_magnet'), 1, 'ae2wtlib:magnet_card')
+	invar_machine(TE('fluid_reservoir'), 1, SP('jar'))
+
+	event.remove({ output: TE('potion_infuser') })
+	event.remove({ output: TE('potion_quiver') })
 
 	event.stonecutting(KJ('pipe_module_tier_3', 4), KJ('invar_machine'))
 	event.stonecutting(KJ('pipe_module_tier_2', 4), KJ('enderium_machine'))
@@ -2785,8 +2803,8 @@ function zincMachine(event) {
 function oilComplex(event){
 
     event.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 250), [],"minecraft:desert")
-	event.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 300), [],"minecraft:swamp")
-	event.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 100), [],"minecraft:ocean")
+		event.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 300), [],"minecraft:swamp")
+		event.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 100), [],"minecraft:ocean")
 
     event.recipes.createMixing(Fluid.of(KJ("oil_brine"), 100), [Fluid.of(GB("petroleum"), 50), Fluid.of(MC("water"), 50)])
     event.recipes.gearboxElectrolyzing(Fluid.of(KJ("desalted_oil"), 50), Fluid.of(KJ("oil_brine"), 100)).energy(100)
@@ -3131,7 +3149,7 @@ function fluixMachine(event) {
 
 	fluix_machine(AE2('formation_core'), 4, AE2("logic_processor"))
 	fluix_machine(AE2('annihilation_core'), 4, AE2("calculation_processor"))
-	// fluix_machine(AE2('fluix_glass_cable'), 16, AE2("fluix_crystal"))
+	fluix_machine(AE2('blank_pattern'), 16, AE2("fluix_crystal"))
 
 	event.recipes.thermal.smelter(("projectred_core:red_iron_comp"), [MC("iron_ingot"), MC("redstone")]).energy(1500)
 	event.recipes.gearboxPyroprocessing(("projectred_core:red_ingot"), ("projectred_core:red_iron_comp"))

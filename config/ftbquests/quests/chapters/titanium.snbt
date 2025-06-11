@@ -443,9 +443,9 @@
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
-				id: "54A19D5C80F285FD"
-				title: "Chapter 3 Start!"
-				type: "checkmark"
+				icon: "thermal:lock"
+				id: "2BF303AEF59432D3"
+				type: "custom"
 			}]
 			title: "Chapter 5 Start!"
 			x: 3.0d

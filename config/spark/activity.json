@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "titammods",
+      "uniqueId": "0792ce1f-cec1-4e6f-ba7d-c80123bc25a6"
+    },
+    "time": 1749270792063,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Kc7ynDYlxE"
+    }
+  }
+]
