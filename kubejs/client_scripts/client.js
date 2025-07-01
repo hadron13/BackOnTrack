@@ -1,19 +1,11 @@
 // priority: 0
+let MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id.startsWith('#') ? '#' : "") + domain + ":" + id.replace('#', '')
+let AD = (id, x) => MOD("ad_astra", id, x)
+let CC = (id, x) => MOD("createcasing", id, x)
+
+let colors = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
+let wood_nomes = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'crimson', 'warped', 'mangrove', 'cherry', 'bamboo']
 JEIEvents.hideItems(event => {
-	event.hide('ae2:facade')
-	event.hide('thermal:cinnabar_dust')
-
-	// event.hide("create_connected:parallel_gearbox")
-	// event.hide("create_connected:vertical_parallel_gearbox")
-	// event.hide("create_connected:six_way_gearbox")
-	// event.hide("create_connected:vertical_six_way_gearbox")
-	// event.hide("create_connected:shear_pin")
-	// event.hide("create_connected:overstress_clutch")
-	// event.hide("create_connected:centrifugal_clutch")
-	// event.hide("create_connected:freewheel_clutch")
-	// event.hide("create_connected:brake")
-
-
 	let hide_metal = (mod, type) =>{
 		event.hide(mod+':'+type+'_ingot')
 		event.hide(mod+':'+type+'_nugget')
@@ -23,11 +15,16 @@ JEIEvents.hideItems(event => {
 	hide_metal('thermal', 'steel')
 	hide_metal('thermal', 'tin')
 	hide_metal('thermal', 'bronze')
-    hide_metal('thermal', 'electrum')
+  hide_metal('thermal', 'electrum')
 	hide_metal('createdeco', 'cast_iron')
-//	hide_metal('tfmg', 'cast_iron')
+	hide_metal('createbigcannons', 'cast_iron')
 	hide_metal('davebuildingmod', 'steel')
 	hide_metal('ad_astra', 'steel')
+	hide_metal('tconstruct', 'steel')
+	hide_metal('tfmg', 'steel')
+	hide_metal('tfmg', 'lead')
+	hide_metal('tfmg', 'constantan')
+	hide_metal('tfmg', 'nickel')
 
 	let hide_ores = (mod, type) =>{
 		event.hide(mod+':'+type+'_ore')
@@ -39,73 +36,84 @@ JEIEvents.hideItems(event => {
 	hide_ores('thermal', 'tin')
 	hide_ores('thermal', 'silver')
 	hide_ores('occultism', 'silver')
+	hide_ores('tfmg', 'nickel')
+	hide_ores('tfmg', 'lead')
 
-    let hide_thermal_set = (type) => {
-        event.hide('thermal:'+type+'_gear')
-        event.hide('thermal:'+type+'_plate')
-        event.hide('thermal:'+type+'_dust')
+  let hide_thermal_set = (type) => {
+    event.hide('thermal:'+type+'_gear')
+    event.hide('thermal:'+type+'_plate')
+    event.hide('thermal:'+type+'_dust')
     }
-    hide_thermal_set('tin')
-    hide_thermal_set('bronze')
-    hide_thermal_set('electrum')
+  hide_thermal_set('tin')
+  hide_thermal_set('bronze')
+  hide_thermal_set('electrum')
 
 	let encased = (type) => {
-  event.hide("createcasing:"+type+"_configurable_gearbox")
+  event.hide(CC(`${type}_configurable_gearbox`))
 	}
-
 	encased("railway")
 	encased("copper")
 	encased("andesite")
 	encased("brass")
 	encased("industrial_iron")
+	encased("weathered_iron")
+	encased("refined_radiance")
+	encased("shadow_steel")
 
 	let creative = (type) => {
-	event.hide("createcasing:vertical_"+type+"_gearbox")
-	event.hide("createcasing:"+type+"_encased_chain_drive")
-	event.hide("createcasing:"+type+"_adjustable_chain_gearshift")
-  event.hide("createcasing:"+type+"_casing")
-	event.hide("createcasing:"+type+"_gearbox")
-	event.hide("createcasing:"+type+"_cogwheel")
-	event.hide("createcasing:"+type+"_configurable_gearbox")
-	event.hide("createcasing:"+type+"_mixer")
-	event.hide("createcasing:"+type+"_press")
-	event.hide("createcasing:"+type+"_depot")
+		event.hide(CC(`vertical_${type}_gearbox`))
+		event.hide(CC(`${type}_encased_chain_drive`))
+		event.hide(CC(`${type}_adjustable_chain_gearshift`))
+		event.hide(CC(`${type}_casing`))
+		event.hide(CC(`${type}_gearbox`))
+		event.hide(CC(`${type}_cogwheel`))
+		event.hide(CC(`${type}_configurable_gearbox`))
+		event.hide(CC(`${type}_mixer`))
+		event.hide(CC(`${type}_press`))
+		event.hide(CC(`${type}_depot`))
+		event.hide(CC(`${type}_chain_conveyor`))
 	}
-
   creative("creative")
 
-	event.hide('occultism:silver_ore_deepslate')
-	event.hide('thermal:oil_sand')
-	event.hide('thermal:oil_red_sand')
-	event.hide('tfmg:steel_casing')
-	event.hide('waterstrainer:string_mesh')
-	event.hide('waterstrainer:iron_mesh')
-	event.hide('waterstrainer:obsidian_mesh')
-	event.hide('waterstrainer:strainer_survivalist_solid')
-	event.hide('waterstrainer:strainer_survivalist_reinforced')
-	event.hide('waterstrainer:strainer_fisherman_solid')
+  colors.forEach(color => {
+		event.hide(AD(`small_${color}_industrial_lamp`))
+		event.hide(AD(`${color}_industrial_lamp`))
+		event.hide(AD(`${color}_flag`))
+	});
+
+	wood_nomes.forEach(type => {
+		event.hide(CC(`${type}_shaft`))
+		event.hide(CC(`${type}_cogwheel`))
+		event.hide(CC(`${type}_large_cogwheel`))
+	});
+
+	let adastra = (item) => {
+		event.hide(AD(`encased_${item}_block`))
+		event.hide(AD(`${item}_plateblock`))
+		event.hide(AD(`${item}_panel`))
+		event.hide(AD(`${item}_plating`))
+		event.hide(AD(`${item}_plating_stairs`))
+		event.hide(AD(`${item}_plating_slab`))
+		event.hide(AD(`${item}_pillar`))
+		event.hide(AD(`glowing_${item}_pillar`))
+		event.hide(AD(`${item}_plating_button`))
+		event.hide(AD(`${item}_plating_pressure_plate`))
+		event.hide(AD(`${item}_sliding_door`))
+		event.hide(AD(`${item}_factory_block`))
+		event.hide(AD(`${item}_block`))
+		event.hide(AD(`raw_${item}_block`))
+	}
+	adastra('ostrum')
+	adastra('calorite')
+	adastra('etrium')
+
+	event.hide('#forge:coins')
+
+	event.hide('ae2:facade')
 	event.hide('ae2:inscriber')
 	event.hide('ae2:vibration_chamber')
 	event.hide('ae2:quartz_growth_accelerator')
-	event.hide('createmetallurgy:wolframite_ore')
-	event.hide('createmetallurgy:dirty_wolframite_dust')
-	event.hide('createmetallurgy:wolframite__dust')
-	event.hide('createmetallurgy:dirty_gold_dust')
-	event.hide('createmetallurgy:gold_dust')
-	event.hide('createmetallurgy:dirty_iron_dust')
-	event.hide('createmetallurgy:iron_dust')
-	event.hide('createmetallurgy:dirty_copper_dust')
-	event.hide('createmetallurgy:copper_dust')
-	event.hide('createmetallurgy:dirty_zinc_dust')
-	event.hide('createmetallurgy:zinc_dust')
-	event.hide('createmetallurgy:slag')
-	event.hide('createmetallurgy:coke_block')
-	event.hide('createmetallurgy:coke')
-	event.hide('createmetallurgy:steel_block')
-	event.hide('createmetallurgy:steel_ingot')
-	event.hide('tfmg:coal_coke')
-	event.hide('tfmg:saltpeter')
-	event.hide('tfmg:steel_ingot')
+
 	event.hide('ad_astra:iron_plate')
 	event.hide('ad_astra:compressed_steel')
 	event.hide('ad_astra:engine_fan')
@@ -117,7 +125,9 @@ JEIEvents.hideItems(event => {
 	event.hide('ad_astra:nasa_workbench')
 	event.hide('ad_astra:fuel_refinery')
 	event.hide('ad_astra:oxygen_gear')
+
 	event.hide('biomesoplenty:rose_quartz_shard')
+
 	event.hide('create:crushed_raw_silver')
 	event.hide('createdeco:andesite_door')
 	event.hide('createdeco:copper_door')
@@ -139,11 +149,36 @@ JEIEvents.hideItems(event => {
 	event.hide('createdeco:gold_coinstack')
 	event.hide('createdeco:cast_iron_coinstack')
 	event.hide('createdeco:netherite_coinstack')
-	event.hide('#forge:coins')
+
+	event.hide('thermal:cinnabar_dust')
+	event.hide('thermal:oil_sand')
+	event.hide('thermal:oil_red_sand')
 	event.hide('thermal:iron_plate')
 	event.hide('thermal:copper_plate')
 	event.hide('thermal:gold_plate')
 	event.hide('thermal:netherite_plate')
+
+	event.hide('createqol:trash_can')
+	event.hide('createqol:inventory_linker')
+	event.hide('createqol:brass_trash_can')
+	event.hide('createqol:player_paper')
+	event.hide('createqol:shadow_radiance_helmet')
+	event.hide('createqol:shadow_radiance_chestplate')
+	event.hide('createqol:shadow_radiance_leggings')
+	event.hide('createqol:shadow_radiance_boots')
+
+	event.hide("tfmg:turbine_engine")
+	event.hide("tfmg:regular_engine")
+	event.hide("tfmg:radial_engine")
+	event.hide("tfmg:large_engine")
+	event.hide("tfmg:simple_large_engine")
+	event.hide("tfmg:engine_gearbox")
+	event.hide("tfmg:engine_controller")
+	event.hide('tfmg:nickel_sheet')
+	event.hide('tfmg:lead_sheet')
+	event.hide('tfmg:coal_coke')
+	event.hide('tfmg:saltpeter')
+	event.hide('tfmg:steel_ingot')
 	event.hide('tfmg:sulfur_powder')
 	event.hide('tfmg:saltpeter')
 	event.hide('tfmg:pumpjack_hammer')
@@ -155,29 +190,6 @@ JEIEvents.hideItems(event => {
 	event.hide('tfmg:large_pumpjack_hammer_part')
 	event.hide('tfmg:large_pumpjack_hammer_head')
 	event.hide('tfmg:large_pumpjack_hammer_connector')
-	event.hide("kubejs:growing_rose_seed")
-	event.hide("kubejs:growing_tiny_rose_crystal")
-	event.hide("kubejs:growing_small_rose_crystal")
-	event.hide("kubejs:incomplete_calculation_processor")
-	event.hide("kubejs:incomplete_logic_processor")
-	event.hide("kubejs:incomplete_engineering_processor")
-	event.hide("kubejs:incomplete_rotation_mechanism")
-	event.hide("kubejs:incomplete_pressure_mechanism")
-	event.hide("kubejs:incomplete_train_mechanism")
-	event.hide("kubejs:incomplete_scorch_mechanism")
-	event.hide("kubejs:incomplete_power_mechanism")
-	event.hide("kubejs:incomplete_explosive_mechanism")
-	event.hide("kubejs:incomplete_ender_mechanism")
-	event.hide("kubejs:incomplete_high_power_mechanism")
-	event.hide("kubejs:incomplete_candy_mechanism")
-	event.hide("kubejs:incomplete_steel_engine")
-	event.hide("kubejs:incomplete_resistor")
-	event.hide("kubejs:incomplete_inductor")
-	event.hide("kubejs:incomplete_ceramic_capacitor")
-	event.hide("kubejs:incomplete_electrolytic_capacitor")
-	event.hide("kubejs:incomplete_rotation_machine")
-	event.hide("kubejs:calculator")
-	event.hide("kubejs:charged_calculator")
 	event.hide("tfmg:machine_input") 
 	event.hide("tfmg:electric_motor") 
 	event.hide("tfmg:resistor") 
@@ -208,37 +220,68 @@ JEIEvents.hideItems(event => {
 	event.hide("tfmg:lead_ore")
 	event.hide("tfmg:deepslate_nickel_ore")
 	event.hide("tfmg:nickel_ore")
-	event.hide("tfmg:sulfur")
+	event.hide("tfmg:sulfur_dust")
+	event.hide('tfmg:steel_chemical_vat')
+	event.hide('tfmg:cast_iron_chemical_vat')
+	event.hide('tfmg:fireproof_chemical_vat')
+	event.hide('tfmg:industrial_mixer')
+	event.hide('tfmg:electrode_holder')
+	event.hide('tfmg:aluminum_fluid_tank')
+	event.hide('tfmg:cast_iron_fluid_tank')
+
+	event.hide("kubejs:growing_rose_seed")
+	event.hide("kubejs:growing_tiny_rose_crystal")
+	event.hide("kubejs:growing_small_rose_crystal")
+	event.hide("kubejs:incomplete_calculation_processor")
+	event.hide("kubejs:incomplete_logic_processor")
+	event.hide("kubejs:incomplete_engineering_processor")
+	event.hide("kubejs:incomplete_rotation_mechanism")
+	event.hide("kubejs:incomplete_pressure_mechanism")
+	event.hide("kubejs:incomplete_train_mechanism")
+	event.hide("kubejs:incomplete_scorch_mechanism")
+	event.hide("kubejs:incomplete_power_mechanism")
+	event.hide("kubejs:incomplete_explosive_mechanism")
+	event.hide("kubejs:incomplete_ender_mechanism")
+	event.hide("kubejs:incomplete_high_power_mechanism")
+	event.hide("kubejs:incomplete_candy_mechanism")
+	event.hide("kubejs:incomplete_steel_engine")
+	event.hide("kubejs:incomplete_resistor")
+	event.hide("kubejs:incomplete_inductor")
+	event.hide("kubejs:incomplete_ceramic_capacitor")
+	event.hide("kubejs:incomplete_electrolytic_capacitor")
+	event.hide("kubejs:incomplete_rotation_machine")
+	event.hide("kubejs:calculator")
+	event.hide("kubejs:charged_calculator")
+
 	event.hide ("sophisticatedbackpacks:void_upgrade")
 	event.hide ("sophisticatedbackpacks:advanced_void_upgrade")
 	event.hide ("sophisticatedstorage:advanced_void_upgrade")
 	event.hide ("sophisticatedstorage:void_upgrade")
-	event.hide("create_factory_logistics:fluid_mechanism")
-	event.hide("create_factory_logistics:incomplete_fluid_mechanism")
+
 	event.hide("gearbox:mirror")
 	event.hide("gearbox:laser_drill")
 	event.hide("gearbox:chemical_reactor")
 	event.hide("gearbox:dipper")
 	event.hide("gearbox:tau_cannon")
 	event.hide("gearbox:geld_ingot")
+
 	event.hide('grapplemod:rocketupgradeitem')
+
 	event.hide('createaddition:diamond_grit')
 	event.hide('createaddition:capacitor')
 	event.hide('createaddition:zinc_sheet')
-	// event.hide('#forge:tools/pickaxes')
+
 	event.hide('@trashcans')
-	event.hide('@metalbarrels')
 	event.hide('@pipez')
 	event.hide('@toms_storage')
 	event.hide('@itemfilters')
 	event.hide('@davebuildingmod')
 	event.hide('@buddingcrystals')
-	// event.hide('@expatternprovider')
-	// event.hide('@ae2')
-	// event.hide('@ae2things')
-	// event.hide('@ae2wtlib')
-	// event.hide('@aeinfinitybooster')
+	event.hide('@create_factory_logistics')
 	event.hide('@trashcans')
+
+	//event.hide('@tfmg')
+
 
 })
 
@@ -248,33 +291,33 @@ JEIEvents.subtypes(event => {
 
 JEIEvents.hideFluids(event => {
 	event.hide('ad_astra:fuel')
+	event.hide('tfmg:molten_steel')
+	event.hide('tconstruct:molten_steel')
 })
 
 JEIEvents.addItems(event => {
+
+  let tfmg = (item) => {
+  event.add(item)
+	}
+tfmg("cast_iron_ingot")
+tfmg("steel_fluid_tank")
+tfmg("steel_distillation_output")
+tfmg("steel_distillation_controller")
+tfmg("industrial_pipe")
+tfmg("steel_pipe")
+
+
+
 	event.add('buddingcrystals:budding_budding_skystone')
 	event.add('buddingcrystals:budding_skystone_cluster')
-
 	event.add('pipez:fluid_pipe')
 	event.add('pipez:energy_pipe')
-
-	// event.add('ae2:charger')
-	// event.add('ae2:certus_quartz_crystal')
-	// event.add('ae2:charged_certus_quartz_crystal')
-	// event.add('ae2:sky_dust')
-	// event.add('ae2:sky_stone_block')
-	// event.add('ae2:1x_sky_stone_block')
-	// event.add('ae2:2x_sky_stone_block')
-	// event.add('ae2:3x_sky_stone_block')
-	// event.add('ae2:ender_dust')
-	// event.add('ae2:crystal_resonance_generator')
-
-
 	event.add('toms_storage:ts.crafting_terminal')
 	event.add('toms_storage:ts.storage_terminal')
 	event.add('toms_storage:ts.inventory_connector')
 	event.add('toms_storage:ts.inventory_cable')
 	event.add('toms_storage:ts.inventory_cable_connector')
-
 	event.add('metalbarrels:wood_to_copper')
 	event.add('metalbarrels:wood_to_iron')
 	event.add('metalbarrels:wood_to_silver')
@@ -285,16 +328,12 @@ JEIEvents.addItems(event => {
 	event.add('metalbarrels:silver_barrel')
 	event.add('metalbarrels:gold_barrel')
 	event.add('metalbarrels:netherite_barrel')
-
 	event.add('thermal:apatite_ore')
 	event.add('thermal:deepslate_apatite_ore')
-
 	event.add('trashcans:item_trash_can')
-
 	event.add('davebuildingmod:track_end')
 	event.add('davebuildingmod:thomas_face')
 	event.add('davebuildingmod:small_thomas_face')
-
 	event.add('thermal:silver_coin')
 	event.add('thermal:gold_coin')
 })
@@ -303,7 +342,6 @@ JEIEvents.removeCategories(event => {
 })
 
 ItemEvents.tooltip(tooltip => {
-	let holds = (id, slots) => tooltip.add("metalbarrels:" + id + "_barrel", [`§7${slots} Slots`])
 	let main_assembly = (id, stage) => tooltip.add(id, [`§7Main Assembly: ${stage == "5" ? "§6Finale" : "§6Chapter " + stage}`, '§8Consider automating this item'])
 	let bonus_assembly = (id, stage) => tooltip.add(id, [`§7Secondary Assembly: §6Chapter ${stage}`])
 	let not_consumed = (id, stage) => tooltip.add(id, [`§7Not consumed in the`, `§7Assembly Process`])
@@ -339,14 +377,6 @@ ItemEvents.tooltip(tooltip => {
 	//ore("minecraft:gold_ore", 1, 32)
 	//ore("minecraft:diamond_ore", 1, 16)
 
-
-
-	holds('copper', 5 * 9)
-	holds('iron', 6 * 9)
-	holds('silver', 8 * 9)
-	holds('gold', 9 * 9)
-	holds('netherite', 15*9)
-
 	main_assembly('kubejs:rotation_mechanism', "1")
 	bonus_assembly('kubejs:pressure_mechanism', "1A")
 	bonus_assembly('kubejs:train_mechanism', "1B")
@@ -378,6 +408,7 @@ ItemEvents.tooltip(tooltip => {
 	tooltip.add("kubejs:ceramic_capacitor", [`50V 0.1uF`])
 	tooltip.add("kubejs:inductor", [`60uH`])
 
+	tooltip.add("kubejs:candy_mechanism", [`Nourishment: 04:00`])
 
 	// tooltip.add("xreliquary:alkahestry_tome", [`§6Cannot be used in Mechanical Crafting`]);
 

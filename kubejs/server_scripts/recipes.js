@@ -26,7 +26,6 @@ let SD = (id, x) => MOD("storagedrawers", id, x)
 let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) =>  MOD("forge", id, x)
 let WT = (id, x) =>  MOD("waystones", id, x)
-let AC = (id, x) => MOD("aquaculture", id, x)
 let PP = (id, x) => MOD("prettypipes", id, x)
 let BC = (id, x) => MOD("createbigcannons", id, x)
 let CI = (id, x) => MOD("tfmg", id, x)
@@ -45,7 +44,7 @@ let MOL = (id, x) => MOD("morelights", id, x)
 let colors = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
 let native_metals = ['iron', 'zinc', 'lead', 'copper', 'nickel', 'gold']
 let wood_types = [MC('oak'), MC('spruce'), MC('birch'), MC('jungle'), MC('acacia'), MC('dark_oak'), MC('crimson'), MC('warped'), BOP('fir'), BOP('redwood'), BOP('cherry'), BOP('mahogany'), BOP('jacaranda'), BOP('palm'), BOP('willow'), BOP('dead'), BOP('magic'), BOP('umbran'), BOP('hellbark'), AP('twisted')]
-
+let wood_nomes = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'crimson', 'warped', 'mangrove', 'cherry', 'bamboo']
 let donutCraft = (event, output, center, ring) => {
 	event.shaped(output, [
 		'SSS',
@@ -55,20 +54,6 @@ let donutCraft = (event, output, center, ring) => {
 		C: center,
 		S: ring
 	})
-}
-
-function ifiniDeploying(output, input, tool) {
-	return {
-		"type": "create:deploying",
-		"ingredients": [
-			Ingredient.of(input).toJson(),
-			Ingredient.of(tool).toJson()
-		],
-		"results": [
-			Item.of(output).toResultJson()
-		],
-		"keepHeldItem": true
-	}
 }
 
 ServerEvents.recipes(event => {
@@ -83,7 +68,7 @@ ServerEvents.recipes(event => {
 	prettierpipes(event)
 	dioriticAndesite(event)
 	electronTube(event)
-    enderStuff(event)
+  enderStuff(event)
 	thermalstuff(event)
 	invarChapter(event)
 	gearboxrecipes(event)
@@ -92,7 +77,7 @@ ServerEvents.recipes(event => {
 	brassMachine(event)
 	trainMachine(event)
 	zincMachine(event)
-    oilComplex(event)
+  oilComplex(event)
 	explosiveMachine(event)
 	chocolate(event)
 	invarMachine(event)
@@ -105,24 +90,75 @@ ServerEvents.recipes(event => {
 	drawersop(event)
 	trading(event)
 	oreProcessing(event)
-    Alloys(event)
+  Alloys(event)
 
 	log.push('Recipes Updated')
 })
-ServerEvents.tags('block', event => {
 
+ServerEvents.tags('item', event => {
+  const mods = [
+    'thermal', 'create', 'alloyed', 'tconstruct', 'createbigcannons', 'tfmg', 'forbidden_arcanus'
+  ];
+
+  const materials = [
+    'copper', 'tin', 'silver', 'lead', 'constantan', 'bronze', 'enderium',
+    'netherite', 'nickel', 'gold', 'aluminum', 'zinc', 'steel', 'cast_iron', 'aluminum', 'nickel'
+  ];
+
+  const types = [
+    { suffix: '_ingot', forgePrefix: 'ingots/', createSuffix: '_ingot' },
+    { suffix: '_nugget', forgePrefix: 'nuggets/', createSuffix: '_nugget' },
+    { suffix: '_block', forgePrefix: 'storage_blocks/', createSuffix: '_block' }
+  ];
+
+  mods.forEach(mod => {
+    materials.forEach(material => {
+      types.forEach(type => {
+        const itemId = `${mod}:${material}${type.suffix}`;
+        const forgeTag = `forge:${type.forgePrefix}${material}`;
+        const createTag = `create:${material}${type.createSuffix}`;
+
+        event.add(forgeTag, itemId);
+        event.add(createTag, itemId);
+      });
+    });
+  });
+});
+
+ServerEvents.tags('block', event => {
+  const mods = [
+    'thermal', 'create', 'alloyed', 'tconstruct', 'createbigcannons', 'tfmg', 'forbidden_arcanus'
+  ];
+
+  const materials = [
+    'copper', 'tin', 'silver', 'lead', 'constantan', 'bronze', 'enderium',
+    'netherite', 'nickel', 'gold', 'aluminum', 'zinc', 'steel', 'cast_iron', 'aluminum', 'nickel'
+  ];
+
+  mods.forEach(mod => {
+    materials.forEach(material => {
+      const blockId = `${mod}:${material}_block`;
+      const forgeTag = `forge:storage_blocks/${material}`;
+      event.add(forgeTag, blockId);
+    });
+  });
+});
+
+ServerEvents.tags('block', event => {
 	event.add('forge:ores', 'ae2:sky_stone_block')
 	event.add('forge:ores', 'tfmg:lignite')
 	event.add('ae2:growth_acceleratable', 'buddingcrystals:budding_budding_skystone')
   let tweak_casing = (r) => {
 	event.add('create:wrench_pickup', r)
 	}
-	// tweak_casing('alloyed:steel_casing')
 	tweak_casing('kubejs:zinc_casing')
 	tweak_casing('kubejs:enderium_casing')
 	tweak_casing('kubejs:invar_casing')
 	tweak_casing('kubejs:fluix_casing')
-	// tweak_casing('tfmg:heavy_machinery_casing')
+	tweak_casing('@kubejs')
+	tweak_casing('@chipped')
+	tweak_casing('@createdeco')
+	tweak_casing('@gearbox')
 })
 ServerEvents.tags('item', event => {
 	colors.forEach(element => {
@@ -149,8 +185,6 @@ ServerEvents.tags('item', event => {
 		.add(AE2("engineering_processor_press"))
 		.add(AE2("calculation_processor_press"))
 
-
-	//event.get('forge:screwdrivers').add('tfmg:screwdriver')
 	event.get('forge:super_glues').add(CR('super_glue'))
 	event.get('forge:wrenches').add(CR('wrench'))
 	event.get('forge:tools/wrench').add(CR('wrench'))
@@ -171,7 +205,6 @@ ServerEvents.tags('item', event => {
 	let remove_metal =(ingot, block, nugget, type, substitute)=>{
 		event.remove('forge:ingots/' + type, ingot)
 		event.remove('forge:ingots', ingot)
-//		event.remove('createbigcannons:ingot_'+type, ingot)
 
 		event.remove('balm:ingots', ingot)
 
@@ -182,17 +215,12 @@ ServerEvents.tags('item', event => {
 		event.remove('forge:storage_blocks', block)
 	}
 
-	remove_metal(TE('steel_ingot'), 			TE('steel_block'), 				TE('steel_nugget'), 		    'steel')
-	remove_metal('davebuildingmod:steel_ingot', 'davebuildingmod:steel_block', 	'', 						    'steel')
-//	remove_metal('ad_astra:steel_ingot', 	'ad_astra:steel_block', 	'ad_astra:steel_nugget',    'steel')
+	remove_metal(TE('steel_ingot'), TE('steel_block'), TE('steel_nugget'), 'steel')
+	remove_metal('davebuildingmod:steel_ingot', 'davebuildingmod:steel_block', '', 'steel')
 	remove_metal('tfmg:steel_ingot', 	'',								'',							    'steel')
-	remove_metal('createdeco:cast_iron_ingot',  'createdeco:cast_iron_nugget',  'createdeco:cast_iron_block',	'cast_iron')
-//	remove_metal('tfmg:cast_iron_ingot',  '',  'tfmg:cast_iron_block',						'cast_iron')
-
+	remove_metal('createdeco:cast_iron_ingot', 'createdeco:cast_iron_nugget', 'createdeco:cast_iron_block',	'cast_iron')
 	remove_metal(TE('bronze_ingot'), TE('bronze_block'), TE('bronze_nugget'), 'bronze')
 	remove_metal(TE('electrum_ingot'), TE('electrum_block'), TE('electrum_nugget'), 'electrum')
-
-
 
 	let remove_thermal_plate = (type) =>{
 		event.remove("forge:plates", TE(type+'_plate'))
@@ -225,29 +253,20 @@ ServerEvents.tags('item', event => {
 	remove_thermal_plate('copper')
 	remove_thermal_plate('netherite')
 
-//	event.add('forge:ingots/cast_iron', BC('cast_iron_ingot'))
-
 	event.remove('forge:gems/rose_quartz', 'biomesoplenty:rose_quartz_shard')
-
 	event.remove('forge:dusts/diamond', 'createaddition:diamond_grit')
 	event.remove('forge:dusts', 'createaddition:diamond_grit')
-
 	event.remove('forge:plates/zinc', 'createaddition:zinc_sheet')
 	event.remove('forge:plates', 'createaddition:zinc_sheet')
 
-
 })
 
-
 ServerEvents.tags('fluid', event => {
-
 	event.add('ad_astra:vehicle_fuel', 'thermal:refined_fuel')
 	event.remove('ad_astra:vehicle_fuel', 'ad_astra:fuel')
-
 })
 
 // Scripts
-
 function oreProcessing(event){
 	let stone = Item.of(MC("cobblestone"), 1).withChance(.5)
 
@@ -303,8 +322,6 @@ function oreProcessing(event){
 		event.recipes.createMilling([Item.of(dust, 1), Item.of(dust, 1).withChance(0.5)], crushed)
 
 		event.recipes.createMilling([Item.of(dust, 1), Item.of(dust, 1).withChance(0.5)], crushed)
-		// event.recipes.createMilling(TE("lead_dust", 1), "createnuclear:raw_lead")
-		// event.recipes.createMilling(TE("lead_dust", 1), "tfmg:raw_lead")
 
 		event.recipes.createCrushing([Item.of(crushed, 2), CR('experience_nugget', 2), MC('cobblestone')], ore_raw)
 		event.recipes.createCrushing([Item.of(dust, 1), Item.of(dust, 1).withChance(0.8)], crushed)
@@ -318,7 +335,6 @@ function oreProcessing(event){
 		event.recipes.thermal.crucible(Fluid.of(fluid, 90), dust).energy(3000)
 
 		event.recipes.createSplashing([Item.of(nugget, 9)], dust)
-
 
 		event.custom({
 			"type": "thermal:smelter",
@@ -344,14 +360,12 @@ function oreProcessing(event){
 		})
     }
 
-
     dust_process('nickel', 	TE('nickel_ingot'), TE('nickel_nugget'), TE('nickel_dust'), TE('raw_nickel'), TE('nickel_ore'),	 CR('copper_nugget'), 'copper')
     dust_process('lead', 	TE('lead_ingot'), 	TE('lead_nugget'), 	 TE('lead_dust'), 	TE('raw_lead'),   TE('lead_ore'), 	 MC('iron_nugget'), 'iron')
     dust_process('iron', 	MC('iron_ingot'), 	MC('iron_nugget'), 	 TE('iron_dust'), 	MC('raw_iron'),   MC('iron_ore'),	 TE('nickel_nugget'), 'nickel')
     dust_process('gold', 	MC('gold_ingot'), 	MC('gold_nugget'), 	 TE('gold_dust'), 	MC('raw_gold'),   MC('gold_ore'),TE('cinnabar'), 'zinc')
     dust_process('copper', 	MC('copper_ingot'), CR('copper_nugget'), TE('copper_dust'), MC('raw_copper'), MC('copper_ore'),  MC('gold_nugget'), 'gold')
     dust_process('zinc', 	CR('zinc_ingot'), 	CR('zinc_nugget'), 	 KJ('zinc_dust'), 	CR('raw_zinc'),   CR('zinc_ore'), 	 TE('sulfur'), 'lead')
-	//dust_process('cobalt', 	TC('cobalt_ingot'), TC('cobalt_nugget'), KJ('cobalt_dust'), TC('raw_cobalt'), TC('cobalt_ore'),  TE('sulfur'), 'cobalt')
 
 	{
 		let name = 'cobalt'
@@ -361,7 +375,6 @@ function oreProcessing(event){
 		let ingot = TC('cobalt_ingot')
 
 		let fluid = TC("molten_" + name)
-		let crushed = CR('crushed_raw_' + name)
 
 		event.remove({ id: TC('smeltery/melting/metal/' + name + '/raw') })
 		event.remove({ id: TC('smeltery/melting/metal/' + name + '/raw_block') })
@@ -404,27 +417,6 @@ function oreProcessing(event){
 
 		event.recipes.thermal.pulverizer([Item.of(dust, 6)], ore_raw).energy(15000)
 	}
-
-
-
-	// event.custom({
-	// 	"type": "tconstruct:melting",
-	// 	"ingredient": {
-	// 		"item": "tfmg:crushed_raw_aluminum"
-	// 	},
-	// 	"result": {
-	// 		"fluid": "tconstruct:molten_aluminum",
-	// 		"amount": 60
-	// 	},
-	// 	"temperature": 425,
-	// 	"time": 90,
-	// 	"byproducts": [
-	// 		{
-	// 			"fluid": "tconstruct:molten_iron",
-	// 			"amount": 10
-	// 		}
-	// 	]
-	// });
 }
 
 function Alloys(event) {
@@ -492,6 +484,39 @@ function Alloys(event) {
 }
 
 function unwantedRecipes(event) {
+	event.replaceInput({}, CI("copper_cable"), 'createaddition:copper_spool')
+	event.replaceInput({}, CI("copper_wire"), 'createaddition:copper_wire')
+	event.replaceInput({}, CI("steel_mechanism"), CR('precision_mechanism'))
+	event.replaceInput({}, CI("plastic_sheet"), KJ('plastic'))
+	event.replaceInput({id:'tfmg/sequenced_assembly/turbine_engine'}, CR("precision_mechanism"), KJ('explosive_mechanism'))
+
+	// mod
+	event.remove({ mod: "create_factory_logistics"})
+	event.remove({ mod: "gearbox"})
+	event.remove({ mod: 'pipez' })
+	event.remove({ mod: 'davebuildingmod'})
+	event.remove({ mod: 'ad_astra', type: 'minecraft:crafting_shaped'})
+	event.remove({ mod: 'ad_astra', type: 'ad_astra:nasa_workbench'})
+	event.remove({ mod: 'ad_astra', type: 'ad_astra:compressor'})
+	event.remove({ mod: 'ad_astra', type: 'ad_astra:coal_generator'})
+	event.remove({ mod: 'ad_astra', type: 'ad_astra:nasa_workbench'})
+	event.remove({ mod: 'trashcans' })
+
+	// input
+	event.remove({ input: TE('signalum_dust'), output: TE('signalum_ingot') })
+	event.remove({ output: TE('signalum_dust'), input: TE('signalum_ingot') })
+	event.remove({ input: TE('oil_sand')})
+	event.remove({ input: TE('oil_red_sand')})
+	event.remove({ input: TE('lightning_charge') })
+	event.remove({ input: TE('ice_charge') })
+	event.remove({ input: TE('earth_charge') })
+	event.remove({ input: '#forge:coins' })
+	event.remove({ input: '#forge:ores/redstone' })
+	event.remove({ input: '#create:crushed_raw_materials' })
+	event.remove({ input: '#forge:ores/tin' })
+	event.remove({ input: '#forge:ores/silver' })
+
+	// output
 	event.remove({ output: '#forge:coins' })
 	event.remove({ output: AE2('grindstone') })
 	event.remove({ output: TE('tin_block') })
@@ -500,11 +525,6 @@ function unwantedRecipes(event) {
 	event.remove({ output: AE2('quartz_glass') })
 	event.remove({ output: AE2('silicon') })
 	event.remove({ output: CR('chromatic_compound') })
-	event.remove({ input: '#forge:coins' })
-	event.remove({ input: '#forge:ores/redstone' })
-	event.remove({ input: '#create:crushed_raw_materials' })
-	event.remove({ input: '#forge:ores/tin' })
-	event.remove({ input: '#forge:ores/silver' })
 	event.remove({ output: '#forge:plates/tin' })
 	event.remove({ output: '#forge:plates/silver' })
 	event.remove({ output: '#forge:gears/tin' })
@@ -512,8 +532,93 @@ function unwantedRecipes(event) {
 	event.remove({ output: TE('steel_plate') })
 	event.remove({ output: TE('steel_ingot') })
 	event.remove({ output: TE('steel_block') })
+	event.remove({ output: 'createdeco:andesite_door'})
+	event.remove({ output: 'createdeco:copper_door'})
+	event.remove({ output: 'createdeco:brass_door'})
+	event.remove({ output: 'createdeco:locked_andesite_door'})
+	event.remove({ output: 'createdeco:locked_copper_door'})
+	event.remove({ output: 'createdeco:locked_brass_door'})
+	event.remove({ output: 'createaddition:zinc_sheet'})
+	event.remove({ output: TE('lightning_charge') })
+	event.remove({ output: TE('ice_charge') })
+	event.remove({ output: TE('earth_charge') })
+	event.remove({ output: CI("large_pumpjack_hammer_connector") })
+	event.remove({ output: CI("large_pumpjack_hammer_head") })
+	event.remove({ output: CI("large_pumpjack_hammer_part") })
+	event.remove({ output: CI("pumpjack_hammer_connector") })
+	event.remove({ output: CI("pumpjack_hammer_head") })
+	event.remove({ output: CI("pumpjack_hammer_part") })
+	event.remove({ output: CI("pumpjack_crank") })
+	event.remove({ output: CI("pumpjack_hammer") })
+	event.remove({ output: CI("pumpjack_base") })
+	event.remove({ output: CI("machine_input") })
+	event.remove({ output: CI("electric_motor") })
+	event.remove({ output: CI("resistor") })
+	event.remove({ output: CI("copper_coil") })
+	event.remove({ output: CI("neon_tube") })
+	event.remove({ output: CI("turbine_engine") })
+	event.remove({ output: CI("regular_engine") })
+	event.remove({ output: CI("radial_engine") })
+	event.remove({ output: CI("large_engine") })
+	event.remove({ output: CI("simple_large_engine") })
+	event.remove({ output: CI("engine_gearbox") })
+	event.remove({ output: CI("engine_controller") })
+	event.remove({ output: CI("cable_tube") })
+	event.remove({ output: CI("light_bulb") })
+	event.remove({ output: CI("energy_meter") })
+	event.remove({ output: CI("voltmeter") })
+	event.remove({ output: CI("firebox") })
+	event.remove({ output: CI("converter") })
+	event.remove({ output: CI("capacitor") })
+	event.remove({ output: CI("accumulator") })
+	event.remove({ output: CI("rotor") })
+	event.remove({ output: CI("stator") })
+	event.remove({ output: CI("cable_connector") })
+	event.remove({ output: CI("electric_casing") })
+	event.remove({ output: CI("polarizer") })
+	event.remove({ output: CI("generator") })
+	event.remove({ output: CI("galvanic_cell") })
+	event.remove({ output: CI("surface_scanner") })
+	event.remove({ output: CI("casting_spout") })
+	event.remove({ output: CI("casting_basin") })
+	event.remove({ output: ('createaddition:capacitor') })
+	event.remove({ output: ("createaddition:electric_motor") })
+	event.remove({ output: ("createaddition:alternator") })
+	event.remove({ output: ("projectred_core:red_ingot") })
+	event.remove({ output: ("projectred_core:red_iron_comp") })
+	event.remove({ output: AE2("printed_calculation_processor") })
+	event.remove({ output: AE2("printed_engineering_processor") })
+	event.remove({ output: AE2("printed_logic_processor") })
+	event.remove({ output: AE2("silicon") })
+	event.remove({ output: TE("rubber") })
+	event.remove({ output: CI('heavy_plate') })
+	event.remove({ output: CI('quad_potato_cannon') })
+	event.remove({ output: CI('steel_fluid_tank') })
+	event.remove({ output: TE('machine_frame') })
+	event.remove({ output: TE("basalz_powder") })
+	event.remove({ output: TE("blizz_powder") })
+	event.remove({ output: TE('chiller_ball_cast') })
+	event.remove({ output: TE('chiller_rod_cast') })
+	event.remove({ output: TE('chiller_ingot_cast') })
+	event.remove({ output: WT('warp_scroll') })
+	event.remove({ output: WT('return_scroll') })
+	event.remove({ output: WT('bound_scroll') })
+	event.remove({ output: WT('warp_stone') })
+	event.remove({ output: WT('warp_dust') })
+	event.remove({ output: ES('ender_pouch') })
+	event.remove({ output: TE('enderium_ingot') })
+	event.remove({ output: TC('steel_block') })
+
+    // type
+	event.remove({ type: TE("tree_extractor") })
+	event.remove({ type: CI("distillation") })
+	event.remove({ type: TE("sawmill") })
+	event.remove({ type: TE("centrifuge") })
+	event.remove({ type: AE2('inscriber') })
 	event.remove({ type: AE2('grinder') })
 	event.remove({ type: TE('press') })
+
+    // id
 	event.remove({ id: /thermal:earth_charge\/.*/ })
 	event.remove({ id: /thermal:machine\/smelter\/.*dust/ })
 	event.remove({ id: /tconstruct:smeltery\/.*\/ore/ })
@@ -524,19 +629,12 @@ function unwantedRecipes(event) {
 	event.remove({ id: /tconstruct:smeltery\/casting\/ender\/.*/ })
 	event.remove({ id: /tconstruct:smeltery\/.*\/tin.*/ })
 	event.remove({ id: /ae2:tools\/paintballs.*/ })
-	event.remove({ output: 'createdeco:andesite_door'})
-	event.remove({ output: 'createdeco:copper_door'})
-	event.remove({ output: 'createdeco:brass_door'})
-	event.remove({ output: 'createdeco:locked_andesite_door'})
-	event.remove({ output: 'createdeco:locked_copper_door'})
-	event.remove({ output: 'createdeco:locked_brass_door'})
 	event.remove({ id: "grapplemod:repeller" })
 	event.remove({ id: "grapplemod:forcefieldupgradeitem" })
 	event.remove({ id: "grapplemod:rocketupgradeitem" })
 	event.remove({ id: "grapplemod:rocketdoublemotorhook" })
 	event.remove({ id: "grapplemod:magnethook" })
 	event.remove({ id: "grapplemod:rockethook" })
-
 	event.remove({ id: MC('diorite') })
 	event.remove({ id: MC('andesite') })
 	event.remove({ id: MC('granite') })
@@ -576,135 +674,46 @@ function unwantedRecipes(event) {
 	event.remove({ id: TE('machine/pulverizer/pulverizer_electrum_ingot_to_dust') })
 	event.remove({ id: TE('parts/electrum_gear') })
 	event.remove({ id: TE('gunpowder_4')})
-	event.remove({ input: TE('oil_sand')})
-	event.remove({ input: TE('oil_red_sand')})
+	event.remove({ id: BC('compacting/forge_steel_ingot')})
 	event.remove({ id: AP('smelting/charcoal_block_from_logs_that_burn_smoking') })
 	event.remove({ id: 'portality:generator' })
-	event.remove({ mod: 'pipez' })
-	event.remove({ mod: 'davebuildingmod'})
-    event.remove({ id: TC('smeltery/melting/metals/gold/dust')}) 
-    event.remove({ id: TC('smeltery/melting/metals/zinc/dust')}) 
-    event.remove({ id: TC('smeltery/melting/metals/iron/dust')}) 
-    event.remove({ id: TC('smeltery/melting/metals/iron/dust')}) 
-	event.remove({ input: TE('signalum_dust'), output: TE('signalum_ingot') })
-	event.remove({ output: TE('signalum_dust'), input: TE('signalum_ingot') })
-	event.remove({ output: TE('lightning_charge') })
-	event.remove({ output: TE('ice_charge') })
-	event.remove({ output: TE('earth_charge') })
-	event.remove({ input: TE('lightning_charge') })
-	event.remove({ input: TE('ice_charge') })
-	event.remove({ input: TE('earth_charge') })
-	event.remove({ mod: 'ad_astra', type: 'minecraft:crafting_shaped'})
-	event.remove({ mod: 'ad_astra', type: 'ad_astra:nasa_workbench'})
-	event.remove({ mod: 'ad_astra', type: 'ad_astra:compressor'})
-	event.remove({ mod: 'ad_astra', type: 'ad_astra:coal_generator'})
-	event.remove({ mod: 'ad_astra', type: 'ad_astra:nasa_workbench'})
-    event.remove({ id: 'ad_astra:steel_ingot_blasting'})
-	event.remove({ mod: 'trashcans' })
-	event.remove({ output: 'createaddition:zinc_sheet'})
-
-	event.remove({ output: CI("large_pumpjack_hammer_connector") })
-	event.remove({ output: CI("large_pumpjack_hammer_head") })
-	event.remove({ output: CI("large_pumpjack_hammer_part") })
-	event.remove({ output: CI("pumpjack_hammer_connector") })
-	event.remove({ output: CI("pumpjack_hammer_head") })
-	event.remove({ output: CI("pumpjack_hammer_part") })
-	event.remove({ output: CI("pumpjack_crank") })
-	event.remove({ output: CI("pumpjack_hammer") })
-	event.remove({ output: CI("pumpjack_base") })
-	event.remove({ output: CI("machine_input") })
-	event.remove({ output: CI("electric_motor") })
-	event.remove({ output: CI("resistor") })
-	event.remove({ output: CI("copper_coil") })
-	event.remove({ output: CI("neon_tube") })
-	event.remove({ output: CI("cable_tube") })
-	event.remove({ output: CI("light_bulb") })
-	event.remove({ output: CI("energy_meter") })
-	event.remove({ output: CI("voltmeter") })
-	event.remove({ output: CI("firebox") })
-	event.remove({ output: CI("converter") })
-	event.remove({ output: CI("capacitor") })
-	event.remove({ output: CI("accumulator") })
-	event.remove({ output: CI("rotor") })
-	event.remove({ output: CI("stator") })
-	event.remove({ output: CI("cable_connector") })
-	event.remove({ output: CI("electric_casing") })
-	event.remove({ output: CI("polarizer")      })
-	event.remove({ output: CI("generator")      })
-	event.remove({ output: CI("galvanic_cell") })
-	event.remove({ output: CI("surface_scanner") })
-	event.remove({ output: CI("casting_spout") })
-	event.remove({ output: CI("casting_basin") })
-
-	event.replaceInput({}, CI("copper_cable"), 'createaddition:copper_spool')
-	event.replaceInput({}, CI("copper_wire"), 'createaddition:copper_wire')
-	event.replaceInput({}, CI("steel_mechanism"), CR('precision_mechanism'))
-	event.replaceInput({}, CI("plastic_sheet"), KJ('plastic'))
-	event.replaceInput({id:'tfmg/sequenced_assembly/turbine_engine'}, CR("precision_mechanism"), KJ('explosive_mechanism'))
-
-	// output
-	event.remove({ output: ('createaddition:capacitor') })
-	event.remove({ output: ("createaddition:electric_motor") })
-	event.remove({ output: ("createaddition:alternator") })
-	event.remove({ output: ("projectred_core:red_ingot") })
-	event.remove({ output: ("projectred_core:red_iron_comp") })
-	event.remove({ output: AE2("printed_calculation_processor") })
-	event.remove({ output: AE2("printed_engineering_processor") })
-	event.remove({ output: AE2("printed_logic_processor") })
-	event.remove({ output: AE2("silicon") })
-	event.remove({ output: TE("rubber") })
-	event.remove({ output: CI('heavy_plate') })
-	event.remove({ output: CI('quad_potato_cannon') })
-	event.remove({ output: CI('steel_fluid_tank') })
-	event.remove({ output: TE('machine_frame') })
-	event.remove({ output: TE("basalz_powder") })
-	event.remove({ output: TE("blizz_powder") })
-	event.remove({ output: TE('chiller_ball_cast') })
-	event.remove({ output: TE('chiller_rod_cast') })
-	event.remove({ output: TE('chiller_ingot_cast') })
-	event.remove({ output: WT('warp_scroll') })
-	event.remove({ output: WT('return_scroll') })
-	event.remove({ output: WT('bound_scroll') })
-	event.remove({ output: WT('warp_stone') })
-	event.remove({ output: WT('warp_dust') })
-	event.remove({ output: ES('ender_pouch') })
-	event.remove({ output: TE('enderium_ingot') })
-    // type
-	event.remove({ type: TE("tree_extractor") })
-	event.remove({ type: CI("distillation") })
-	event.remove({ type: TE("sawmill") })
-	event.remove({ type: TE("centrifuge") })
-	event.remove({ type: AE2('inscriber') })
-    // id
-	event.remove({id: ('alloyed:mixing/steel_ingot') })
-    event.remove({id: ("create_confectionery:ruby_chocolate_recipe") })
-	event.remove({id: ('create:milling/dripstone_block') })
-	event.remove({id: CR('smeltery/melting/soul/sand') })
-	event.remove({id: TC('smeltery/melting/soul/sand') })
-	event.remove({id: TC('smeltery/casting/scorched/foundry_controller') })
-	event.remove({id: CI('mixing/coal_coke') })
-	event.remove({id: TE("machine/pyrolyzer/pyrolyzer_logs") })
-	event.remove({id: TE("devices/rock_gen/rock_gen_cobbled_deepslate") })
-	event.remove({id: CR("crushing/obsidian") })
-	event.remove({id: TE('compat/tconstruct/chiller_tconstruct_tin_ingot') })
-	event.remove({id: TE("machine/crucible/crucible_ender_pearl") })
-	event.remove({id: TC('smeltery/casting/metal/nickel/ingot_gold_cast') })
-	event.remove({id: TC('smeltery/casting/metal/nickel/ingot_sand_cast') })
-	event.remove({id: ED("cutting/ender_shard") })
-	event.remove({id: XT("extruding/basalt") })
-	event.remove({id: XT("extruding/cobblestone") })
-	event.remove({id: XT("extruding/stone") })
-	event.remove({id: CR("milling/compat/ae2/sky_stone_block") })
-	event.remove({mod: "gearbox"})
-	event.remove({id: XT("extruding/limestone") })
-	event.remove({id: XT("extruding/scoria") })
-	event.remove({id: CR("sandpaper_polishing/rose_quartz") })
-	event.remove({id: CR("sandpaper_polishing/rose_quartz_using_deployer") })
-
-	event.remove({id: TC('smeltery/casting/metal/gold/coin_gold_cast') })
-	event.remove({id: TC('smeltery/casting/metal/gold/coin_sand_cast') })
-	event.remove({id: TC('smeltery/casting/metal/silver/coin_gold_cast') })
-	event.remove({id: TC('smeltery/casting/metal/silver/coin_sand_cast') })
+  event.remove({ id: TC('smeltery/melting/metals/gold/dust')}) 
+  event.remove({ id: TC('smeltery/melting/metals/zinc/dust')}) 
+  event.remove({ id: TC('smeltery/melting/metals/iron/dust')}) 
+  event.remove({ id: TC('smeltery/melting/metals/iron/dust')}) 
+  event.remove({ id: 'ad_astra:steel_ingot_blasting'})
+	event.remove({ id: ('alloyed:mixing/steel_ingot') })
+  event.remove({ id: ("create_confectionery:ruby_chocolate_recipe") })
+	event.remove({ id: ('create:milling/dripstone_block') })
+	event.remove({ id: CR('smeltery/melting/soul/sand') })
+	event.remove({ id: TC('smeltery/melting/soul/sand') })
+	event.remove({ id: TC('smeltery/casting/scorched/foundry_controller') })
+	event.remove({ id: CI('mixing/coal_coke') })
+	event.remove({ id: TE("machine/pyrolyzer/pyrolyzer_logs") })
+	event.remove({ id: TE("devices/rock_gen/rock_gen_cobbled_deepslate") })
+	event.remove({ id: CR("crushing/obsidian") })
+	event.remove({ id: TE('compat/tconstruct/chiller_tconstruct_tin_ingot') })
+	event.remove({ id: TE("machine/crucible/crucible_ender_pearl") })
+	event.remove({ id: TC('smeltery/casting/metal/nickel/ingot_gold_cast') })
+	event.remove({ id: TC('smeltery/casting/metal/nickel/ingot_sand_cast') })
+	event.remove({ id: ED("cutting/ender_shard") })
+	event.remove({ id: XT("extruding/basalt") })
+	event.remove({ id: XT("extruding/cobblestone") })
+	event.remove({ id: XT("extruding/stone") })
+	event.remove({ id: CR("milling/compat/ae2/sky_stone_block") })
+	event.remove({ id: XT("extruding/limestone") })
+	event.remove({ id: XT("extruding/scoria") })
+	event.remove({ id: CR("sandpaper_polishing/rose_quartz") })
+	event.remove({ id: CR("sandpaper_polishing/rose_quartz_using_deployer") })
+	event.remove({ id: TC('smeltery/casting/metal/gold/coin_gold_cast') })
+	event.remove({ id: TC('smeltery/casting/metal/gold/coin_sand_cast') })
+	event.remove({ id: TC('smeltery/casting/metal/silver/coin_gold_cast') })
+	event.remove({ id: TC('smeltery/casting/metal/silver/coin_sand_cast') })
+	event.remove({ id: TE("augments/item_filter_augment") })
+	event.remove({ id: FD("flint_knife") })
+	event.remove({ id: FD("iron_knife") })
+	event.remove({ id: FD("golden_knife") })
+	event.remove({ id: FD("diamond_knife") })
 
 	native_metals.forEach(e => {
 		event.remove({ type: MC("smelting"), input: F("#dusts/" + e) })
@@ -717,28 +726,13 @@ function unwantedRecipes(event) {
 
 function tweaks(event) {
 	event.remove({ mod:'toms_storage'})
-	event.remove({ id: 'waterstrainer:string_mesh' })
-	event.remove({ id: 'waterstrainer:iron_mesh' })
-	event.remove({ id: 'waterstrainer:obsidian_mesh' })
-	event.remove({ id: 'waterstrainer:strainer_survivalist' })
-	event.remove({ id: 'waterstrainer:strainer_survivalist_solid' })
-	event.remove({ id: 'waterstrainer:strainer_survivalist_reinforced' })
-	event.remove({ id: 'waterstrainer:strainer_fisherman' })
-	event.remove({ id: 'waterstrainer:strainer_fisherman_solid' })
-	event.remove({ id: 'waterstrainer:strainer_fisherman_reinforced' })
 
-	event.remove({ id: TE("augments/item_filter_augment") })
 	event.shapeless(TE("item_filter_augment"), [CR("filter"), TE("lapis_gear")])
 
-	event.remove({ id: FD("flint_knife") })
-	event.remove({ id: FD("iron_knife") })
-	event.remove({ id: FD("golden_knife") })
-	event.remove({ id: FD("diamond_knife") })
 	event.shaped(FD('flint_knife'), ['S ', ' M'], { M: MC("flint"), S: F('#rods/wooden') })
 	event.shaped(FD('iron_knife'), ['S ', ' M'], { M: MC("iron_ingot"), S: F('#rods/wooden') })
 	event.shaped(FD('golden_knife'), ['S ', ' M'], { M: MC("gold_ingot"), S: F('#rods/wooden') })
 	event.shaped(FD('diamond_knife'), ['S ', ' M'], { M: MC("diamond"), S: F('#rods/wooden') })
-
 
 	event.remove({ id: "decorative_blocks:lattice" })
 	event.shaped("decorative_blocks:lattice", [
@@ -777,34 +771,6 @@ function tweaks(event) {
 		S: MC('gold_ingot')
 	})
 
-	// event.shaped('waterstrainer:strainer_survivalist', [
-	// 	'SSS',
-	// 	'MMM',
-	// 	'SSS'
-	// ], {
-	// 	M: 'createdeco:andesite_mesh_fence',
-	// 	S: 'minecraft:stick'
-	// })
-
-	// event.shaped('waterstrainer:strainer_fisherman', [
-	// 	'SSS',
-	// 	'MMM',
-	// 	'SSS'
-	// ], {
-	// 	M: FD('canvas'),
-	// 	S: MC('bamboo')
-	// })
-
-	// event.shaped('waterstrainer:strainer_fisherman_reinforced', [
-	// 	'SSS',
-	// 	'MAM',
-	// 	'SSS'
-	// ], {
-	// 	A: AC('neptunium_ingot'),
-	// 	M: FD('canvas'),
-	// 	S: MC('bamboo')
-	// })
-
 	event.remove({ output: TC('obsidian_pane') })
 	event.shaped(TC('obsidian_pane', 8), [
 		'SSS',
@@ -817,16 +783,11 @@ function tweaks(event) {
 	event.replaceInput({ id: "architects_palette:withered_bone_block" }, AP('withered_bone'), TC('necrotic_bone'))
 	event.remove({ id: "architects_palette:withered_bone" })
 
-
-	// event.replaceInput({ id: "computercraft:cable" }, MC('redstone'), PR_C('red_ingot'))
-	// event.replaceInput({ id: "computercraft:wired_modem" }, MC('redstone'), PR_C('red_ingot'))
 	event.replaceInput({ id: CR('crafting/kinetics/rope_pulley') }, '#forge:wool', '#supplementaries:ropes')
 	event.replaceInput({ output: CR('adjustable_chain_gearshift') }, CR('electron_tube'), MC('redstone'))
 
 	let tweak_casing = (r, i1, i2, tag) => {
 		event.remove({ output: r })
-		// event.smithing(r, i2, i1)
-		// event.recipes.createMechanicalCrafting(r, "AB", { A: i1, B: i2 })
 		if(tag){
 			event.custom({
 				"type": "create:item_application",
@@ -863,21 +824,23 @@ function tweaks(event) {
 			})
 		}
 
-		// event.recipes.createDeploying(r, [i2, i1])
 	}
 
 	tweak_casing('create:andesite_casing', 	'create:andesite_alloy', 'minecraft:logs', true)
 	tweak_casing('create:copper_casing', 	'create:copper_sheet', 	'minecraft:logs', true)
 	tweak_casing('create:brass_casing', 	'create:brass_sheet', 	'minecraft:logs', true)
   tweak_casing('create:railway_casing', 	'create:sturdy_sheet', 	'minecraft:logs', true)
+  tweak_casing('create:shadow_steel_casing', 	'create:shadow_steel', 	'minecraft:logs', true)
+	tweak_casing('create:refined_radiance_casing', 	'create:refined_radiance', 	'minecraft:logs', true)
+
 	tweak_casing('alloyed:steel_casing', 	'alloyed:steel_sheet', 	'minecraft:logs', true)
 
 	tweak_casing('kubejs:zinc_casing', 		'createdeco:zinc_sheet', 'minecraft:logs', true)
 	tweak_casing('kubejs:enderium_casing', 'thermal:enderium_plate', 'minecraft:logs', true)
 	tweak_casing('kubejs:invar_casing', 	'thermal:invar_plate', 	'minecraft:logs', true)
 	tweak_casing('kubejs:fluix_casing', 	'thermal:lead_plate', 	'minecraft:logs', true)
+
 	tweak_casing('tfmg:heavy_machinery_casing', 'tfmg:heavy_plate', 'minecraft:logs', true)
-	// tweak_casing('enderium', [MC('ender_pearl'), 'minecraft:obsidian'], KJ)
 
 	event.custom({
 		"type": "tconstruct:melting",
@@ -900,8 +863,6 @@ function tweaks(event) {
 		"temperature": 500,
 		"time": 40
 	})
-
-
 
 	event.remove({ output: TE("side_config_augment") })
 	event.shaped(TE("side_config_augment"), [
@@ -936,15 +897,10 @@ function tweaks(event) {
 	event.remove({ output: MC('basalt') })
 	cobblegen(MC("soul_soil"), MC("basalt"))
 	cobblegen(MC("polished_deepslate"), MC("cobbled_deepslate"))
-	//cobblegen(MC("red_nether_bricks"), MC("netherrack"))
-	// bedrock_cobblegen(AP("packed_ice_pillar"), CR("gabbro_cobblestone"))
 
-	// event.recipes.createPressing([KJ('zinc_sheet')], CR('zinc_ingot'))
 	event.recipes.createPressing([TE('nickel_plate')], TE('nickel_ingot'))
 	
-	// event.remove({ id: "chisel:charcoal/raw" })
 	event.remove({ id: AP("charcoal_block") })
-	// event.stonecutting("chisel:charcoal/raw", MC('charcoal'))
 	event.stonecutting(AP("charcoal_block"), MC('charcoal'))
 
 	event.remove({ id: CR('splashing/gravel') })
@@ -956,10 +912,7 @@ function tweaks(event) {
 	event.remove({ id: CR('splashing/red_sand') })
 	event.recipes.createSplashing([
 		Item.of(MC('gold_nugget', 2)).withChance(0.35),
-		// Item.of(CR('copper_nugget', 1)).withChance(0.12)
 	], 'minecraft:red_sand')
-
-	event.recipes.createCrushing([Item.of(AC('neptunium_ingot', 2)), Item.of(AC('neptunium_nugget', 5)).withChance(.5)], AC('neptunes_bounty')).processingTime(500)
 
 	donutCraft(event, AP('plating_block', 8), CR('iron_sheet'), MC('stone'))
 
@@ -1003,7 +956,7 @@ function tweaks(event) {
 	event.remove({ id: TC("smeltery/casting/metal/silver/nugget_sand_cast") })
 	event.remove({ id: TC("smeltery/casting/metal/silver/block") })
 
-	cast("ingot", TC('molten_steel'), 90, AL('steel_ingot'), 50)
+	cast("ingot", BC('molten_steel'), 90, AL('steel_ingot'), 50)
 	cast("ingot", KJ('plastic'), 90, KJ('plastic'), 20)
 	cast("ingot", TC("molten_silver"), 90, TE("silver_ingot"), 50)
 	cast("nugget", TC("molten_silver"), 10, TE("silver_nugget"), 17)
@@ -1078,21 +1031,8 @@ function tweaks(event) {
 		"energy": 2000
 	})
 
-
 	event.stonecutting('2x biomesoplenty:rose_quartz_block', CR('rose_quartz'))
 
-
-	// event.stonecutting('davebuildingmod:thomas_face', 'createdeco:andesite_hull')
-	// event.stonecutting('davebuildingmod:small_thomas_face', 'createdeco:andesite_hull')
-
-	// event.shaped("davebuildingmod:track_end",[
-	// 	'PPP',
-	// 	'STS'
-	// ],{
-	// 	P: '#minecraft:planks',
-	// 	S: MC('stick'),
-	// 	T: CR('track')
-	// })
 }
 
 function prettierpipes(event) {
@@ -1472,8 +1412,6 @@ function unify(event) {
 	event.replaceInput({}, '#forge:ingots/bronze', 'alloyed:bronze_ingot')
 	event.replaceInput({}, '#forge:plates/silver', TE('invar_plate'))
 	event.replaceInput({}, '#forge:plates/constantan', TE('signalum_plate'))
-	// event.replaceInput({}, '#forge:plates/electrum', TE('constantan_plate'))
-	// event.replaceInput({}, '#forge:ingots/electrum', TE('constantan_ingot'))
 
 	event.replaceInput({}, '#forge:gears/tin', TE('lead_gear'))
 	event.replaceInput({}, '#forge:gears/bronze', TE('nickel_gear'))
@@ -1510,35 +1448,26 @@ function unify(event) {
 	event.replaceInput({ id: TC("smeltery/casts/gold_casts/gems") }, TE("ruby"), "#forge:gems")
 
 	event.replaceInput({}, 'tfmg:steel_mechanism', 'create:precision_mechanism')
-
-	// event.replaceInput({}, 'createdeco:cast_iron_ingot', 'createbigcannons:cast_iron_ingot')
-	// event.replaceInput({}, 'createdeco:cast_iron_block', 'createbigcannons:cast_iron_block')
-	// event.replaceInput({}, 'createdeco:cast_iron_nugget', 'createbigcannons:cast_iron_nugget')
-
-	// event.replaceInput({}, 'tfmg:cast_iron_ingot', 'createbigcannons:cast_iron_ingot')
-	// event.replaceInput({}, 'tfmg:cast_iron_block', 'createbigcannons:cast_iron_block')
-
-
-	event.remove({output: 'createdeco:cast_iron_ingot'})
-	event.remove({output: 'createdeco:cast_iron_nugget'})
-	event.remove({output: 'createdeco:cast_iron_block'})
-	event.remove({input:  'createdeco:cast_iron_ingot'})
+  event.replaceInput({}, 'tfmg:nickel_sheet', 'thermal:nickel_plate')
 
 	colors.forEach(color => {
-		event.remove({id:  'createdeco:' + color + '_shipping_container'})
+	event.remove({id:  'createdeco:' + color + '_shipping_container'})
 	});
-
-
-	//event.remove({input:  'tfmg:cast_iron_ingot'})
-	//event.remove({output: 'tfmg:cast_iron_ingot'})
-	//event.remove({input:  'tfmg:cast_iron_block'})
-
+	event.replaceInput({},'tfmg:steel_cogwheel','create:cogwheel')
+  event.replaceInput({},'tfmg:lead_sheet','thermal:lead_plate')
 	event.replaceOutput({},'tfmg:steel_ingot','alloyed:steel_ingot')
 	event.replaceOutput({},'ad_astra:steel_ingot', 'alloyed:steel_ingot')
 
 	event.remove({output: 'ad_astra:steel_nugget'})
 	event.remove({output: TE('steel_nugget')})
 
+  event.remove({output: CI('steel_chemical_vat')})
+	event.remove({output: CI('cast_iron_chemical_vat')})
+	event.remove({output: CI('fireproof_chemical_vat')})
+	event.remove({output: CI('industrial_mixer')})
+	event.remove({output: CI('electrode_holder')})
+	event.remove({output: CI('aluminum_fluid_tank')})
+	event.remove({output: CI('cast_iron_fluid_tank')})
 
     let remove_input_output = (item) =>{
         event.remove({input: item})
@@ -1554,19 +1483,31 @@ function unify(event) {
         remove_input_output(`thermal:${metal}_dust`)
         remove_input_output(`thermal:${metal}_gear`)
     }
+		let replace_metal_set = (mod, metal, mod2, metal2) => {
+        event.replaceOutput({},`${mod}:${metal}_ingot`, `${mod2}:${metal2}_ingot`)
+        event.replaceOutput({},`${mod}:${metal}_block`, `${mod2}:${metal2}_block`)
+        event.replaceOutput({},`${mod}:${metal}_nugget`, `${mod2}:${metal2}_nugget`)
+		}
 
     remove_metal_set('thermal', 'electrum')
-    remove_thermal_set('electrum')
-    
+		remove_metal_set('tfmg', 'lead')
+		remove_metal_set('tfmg', 'constantan')
+		remove_metal_set('createdeco', 'cast_iron')
+		remove_metal_set('tfmg', 'nickel')
 
+    remove_thermal_set('electrum')
+
+    replace_metal_set('tfmg', 'constantan', 'thermal', 'constantan')
+		replace_metal_set('tfmg', 'nickel', 'thermal', 'nickel')
+		replace_metal_set('tfmg', 'lead', 'thermal', 'lead')
+		replace_metal_set('createbigcannons', 'cast_iron', 'tfmg', 'cast_iron')
 
 	event.shapeless('alloyed:steel_ingot','ad_astra:steel_ingot')
 
 	event.remove({output: 'tfmg:steel_block'})
-	event.shapeless('4x tfmg:steel_block',['4x alloyed:steel_block', MC('honeycomb')])
 
 	event.remove({output:TE('bronze_dust')})
-
+  event.remove({output:CI('steel_mechanism')})
 }
 
 function trickierWindmills(event) {
@@ -1624,11 +1565,9 @@ function rubberMatters(event) {
 	event.recipes.gearboxCompressing(TE("cured_rubber", 2), Fluid.of(TE("resin"), 500)).heated()
 	event.recipes.gearboxCompressing(TE("cured_rubber"), 	Fluid.of(TE("resin"), 500))
 
-
 	let sap_tree = (mod, fluid, type) =>{
 		event.recipes.gearboxSapping(fluid, [mod + ":" + type + "_log", mod + ":" +  type + "_leaves"])
 	}
-
 
 	sap_tree('minecraft', Fluid.of(TE('resin'), 20), "oak")
 	sap_tree('minecraft', Fluid.of(TE('resin'), 70), "spruce")
@@ -1655,12 +1594,7 @@ function rubberMatters(event) {
 	event.recipes.gearboxSapping(Fluid.of(TC("sky_slime"), 20),   [TC("skyroot_log"), TC("sky_slime_leaves")])
 	event.recipes.gearboxSapping(Fluid.of(TC("ender_slime"), 20), [TC("greenheart_log"), TC("ender_slime_leaves")])
 
-
-
-	//event.shapeless('tfmg:screwdriver','kubejs:screwdriver')
 	event.remove({output:'tfmg:screwdriver'})
-
-
 
 	event.shaped('tfmg:screwdriver', [
 		'  S',
@@ -1725,14 +1659,12 @@ function electronTube(event) {
 	let redstone = MC('redstone')
 	event.shapeless('create:rose_quartz', [[MC('quartz'), AE2('certus_quartz_crystal'), AE2('charged_certus_quartz_crystal')], redstone, redstone, redstone, redstone, redstone, redstone])
 	event.recipes.createMilling([AE2('certus_quartz_dust')], '#ae2:all_certus_quartz').processingTime(200)
-//	event.shapeless('2x ae2:certus_crystal_seed', ['#forge:sand', 'ae2:certus_quartz_dust'])
 	event.remove({ id: CR('compat/ae2/milling/sky_stone_block') })
 	event.remove({ id: CR('crushing/diorite')})
 	event.remove({ id: CR('compat/ae2/milling/certus_quartz') })
 	event.remove({ id: CR('crafting/materials/electron_tube') })
 	event.remove({ id: CR('crafting/materials/rose_quartz') })
 	event.remove({ id: TC('smeltery/casting/obsidian/block') })
-
 	event.remove({ id: TC("smeltery/alloys/molten_obsidian_from_soup")})
 	event.remove({ id: TC("smeltery/melting/seared/reinforcement")})
 	event.remove({ id: TC("tools/materials/melting/darkthread")})
@@ -1746,9 +1678,6 @@ function electronTube(event) {
 	event.remove({ id: TC('smeltery/melting/metal/emerald/reinforcement') })
 	event.remove({ id: TC('smeltery/melting/metal/amethyst_bronze/reinforcement') })
 	event.remove({ id: TC('smeltery/melting/diamond/enchanting_table') })
-
-//	event.recipes.createMechanicalCrafting(Item.of(AE2('certus_crystal_seed'), 2), ['A'], { A: '#ae2:all_certus_quartz' })
-//	event.recipes.createMechanicalCrafting(Item.of(AE2('fluix_crystal_seed'), 2), ['A'], { A: '#ae2:all_fluix' })
 
 	event.recipes.createCompacting(KJ('rose_quartz_seed'),Fluid.of(TE('redstone'), 500) )
 
@@ -1874,7 +1803,6 @@ function andesiteMachine(event) {
 	event.remove({ output: CR('deployer') })
 	event.remove({ output: 'sliceanddice:slicer' })
 	event.remove({ output: 'thermal:device_tree_extractor' })
-	event.remove({ output: 'waterstrainer:strainer_base' })
 	event.remove({ output: CR('mechanical_drill') })
 	event.remove({ output: CR('mechanical_mixer') })
 	event.remove({ output: CR('mechanical_saw') })
@@ -1911,12 +1839,6 @@ function andesiteMachine(event) {
 		' P '
 	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: CR('cogwheel'), P: CR('turntable')})
 	
-	// event.shaped('waterstrainer:strainer_base', [
-	// 	'   ',
-	// 	'III',
-	// 	'AMA'
-	// ], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: 'createaddition:iron_rod'})
-	
 	event.shaped(CR('mechanical_drill'), [
 		' I ',
 		'AMA',
@@ -1935,17 +1857,6 @@ function andesiteMachine(event) {
 		'AIA'
 	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: MC('furnace'),  P:TE('rf_coil')})
 	
-
-	event.shaped(GB('kiln'), [
-		'SSS',
-		'CBC',
-		'EEE'
-	], {
-		C: MC('iron_ingot'),
-		S: CR('andesite_alloy'),
-		E: CR('industrial_iron_block'),
-		B: MC('furnace')
-	})
 
 	event.shaped(GB('compressor'), [
 		'   ',
@@ -2192,6 +2103,7 @@ function MetallurgyRecipes(event){
 	event.remove({output: "createcasing:vertical_"+type+"_gearbox"})
 	event.remove({output: "createcasing:"+type+"_encased_chain_drive"})
 	event.remove({output: "createcasing:"+type+"_adjustable_chain_gearshift"})
+	event.remove({output: "createcasing:"+type+"_chain_conveyor"})
   event.remove({output: "createcasing:"+type+"_casing"})
 	event.remove({output: "createcasing:"+type+"_gearbox"})
 	event.remove({output: "createcasing:"+type+"_cogwheel"})
@@ -2200,6 +2112,10 @@ function MetallurgyRecipes(event){
 	event.remove({output: "createcasing:"+type+"_press"})
 	event.remove({output: "createcasing:"+type+"_depot"})
 	}
+
+	wood_nomes.forEach(type => {
+	event.remove({output: 'createcasing:'+type+'_shaft'})
+	});
 	
 	let encased = (type) => {
   event.remove({output: "createcasing:"+type+"_configurable_gearbox"})
@@ -2209,47 +2125,82 @@ function MetallurgyRecipes(event){
 	encased("copper")
 	encased("andesite")
 	encased("brass")
+	encased("weathered_iron")
+	encased("refined_radiance")
+	encased("shadow_steel")
 	encased("industrial_iron")
 
   creative("creative")
 
-//event.recipes.gearboxCentrifuging([Fluid.of(TC('molten_iron'), 250), Fluid.of(TC('molten_copper'), 250),Fluid.of(TC('molten_gold'), 250)], Fluid.of(MC('lava'))).processingTime(150)
+	event.shaped(AD('gas_tank'), ['SS','SS'], {S: AD('steel_tank')})
+	event.shaped(AD('large_gas_tank'), ['SS','SS'], {S: AD('gas_tank')})
 
+	event.remove({output: `createqol:trash_can`})
+	event.remove({output: `createqol:inventory_linker`})
+	event.remove({output: `createqol:brass_trash_can`})
+	event.remove({output: `createqol:player_paper`})
+	event.remove({output: `createqol:shadow_radiance_helmet`})
+	event.remove({output: `createqol:shadow_radiance_chestplate`})
+	event.remove({output: `createqol:shadow_radiance_leggings`})
+	event.remove({output: `createqol:shadow_radiance_boots`})
 
-	// event.remove({output: ML('sturdy_whisk')})
-	// event.shaped(ML('sturdy_whisk'), [
-	// 	' G ',
-	// 	'CGC',
-	// 	'CCC'
-	// ], {G: CR('andesite_alloy'), C: CR('sturdy_sheet')})
+  let tfmg = (ingot) => {
+	event.remove({output: CI(ingot)})
+	}
 
-	// removeMetallugyOre(event, 'copper')
-	// removeMetallugyOre(event, 'tin')
-	// removeMetallugyOre(event, 'lead')
-	// removeMetallugyOre(event, 'silver')
-	// removeMetallugyOre(event, 'zinc')
-	// removeMetallugyOre(event, 'invar')
-	// removeMetallugyOre(event, 'gold')
-	// removeMetallugyOre(event, 'constantan')
-	// removeMetallugyOre(event, 'nickel')
-	// removeMetallugyOre(event, 'iron')
-	// removeMetallugyOre(event, 'netherite')
-	// removeMetallugyOre(event, 'tungsten')
-	// removeMetallugyOre(event, 'steel')
+tfmg("lead_ingot")
+tfmg("lead_sheet")
+tfmg("lead_nugget")
 
-	// event.stonecutting(AE2("silicon_press"), KJ("circuit_scrap"))
-	// event.stonecutting(AE2("engineering_processor_press"), KJ("circuit_scrap"))
-	// event.stonecutting(AE2("calculation_processor_press"), KJ("circuit_scrap"))
-	// event.stonecutting(AE2("logic_processor_press"), KJ("circuit_scrap"))
-	// event.shaped(KJ("circuit_scrap", 2),
-	// 	[" A ", "ABA", " A "], { A: TE("invar_ingot"), B: F("#circuit_press") })
+let tfmg1 = (type) => {
+		event.shaped(CI(type+'_frame', 4), [
+		'AAA',
+		'A A',
+		'AAA'
+	], {A: '#create:'+type+'_nugget'})
 
+		event.shaped(CI(type+'_truss', 4), [
+		'A A',
+		'AAA',
+		'A A'
+	], {A: '#create:'+type+'_nugget'})
 }
+tfmg1("lead")
+tfmg1("nickel")
+tfmg1("constantan")
 
-function removeMetallugyOre(event, ore){
-	// event.remove({id: "createmetallurgy:melting/"+ore+"/ore"})
-	// event.remove({id: "createmetallurgy:melting/"+ore+"/dirty_dust"})
-	// event.remove({id: "createmetallurgy:melting/"+ore+"/dust"})
+let adblocks = (item) => {
+event.stonecutting(AD(`encased_${item}_block`, 4), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`${item}_plateblock`, 4), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`${item}_panel`, 4), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`${item}_plating`, 4), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`${item}_plating_stairs`, 4), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`${item}_plating_slab`, 4), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`${item}_pillar`, 4), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`glowing_${item}_pillar`, 4), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`${item}_plating_button`, 2), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`${item}_plating_pressure_plate`, 2), AD(`${item}_factory_block`))//
+event.stonecutting(AD(`${item}_sliding_door`, 2), AD(`${item}_factory_block`))//
+}
+event.stonecutting(AD(`airlock`, 2), AD(`steel_factory_block`))
+event.stonecutting(AD(`reinforced_door`, 2), AD(`steel_factory_block`))
+event.stonecutting(AD(`steel_door`, 2), AD(`steel_factory_block`))
+event.stonecutting(AD(`steel_trapdoor`, 2), AD(`steel_factory_block`))
+event.shaped(AD(`steel_factory_block`, 2), ['SCS','C C','SCS'], {C: MC('cobblestone'), S: AL('steel_ingot')})
+event.shaped(AD(`desh_factory_block`, 2), ['SCS','C C','SCS'], {C: MC('cobblestone'), S: AD('desh_ingot')})
+event.shaped(AD(`iron_factory_block`, 2), ['SCS','C C','SCS'], {C: MC('cobblestone'), S: MC('iron_ingot')})
+
+adblocks('steel')
+adblocks('desh')
+adblocks('iron')
+
+let smith = (item, quantidade, item2, catalyst) => {
+event.smithing(Item.of(item, quantidade), KJ('brass_template'), catalyst, item2)
+}
+smith(AD('netherite_space_helmet'), 1, AD('space_helmet'), MC('netherite_ingot'))
+smith(AD('netherite_space_suit'), 1, AD('space_suit'), MC('netherite_ingot'))
+smith(AD('netherite_space_pants'), 1, AD('space_pants'), MC('netherite_ingot'))
+smith(AD('netherite_space_boots'), 1, AD('space_boots'), MC('netherite_ingot'))
 }
 
 function brassMachine(event) {
@@ -2404,16 +2355,12 @@ function brassMachine(event) {
   andesite_machine(CR('chain_conveyor'), 2, MC('chain'))
 	andesite_machine(CR('andesite_funnel'), 4, TE('cured_rubber'))
 	andesite_machine(CR('andesite_tunnel'), 4, MC('dried_kelp'))
-	// andesite_machine(ML('mechanical_belt_grinder'), 1, ML('sandpaper_belt'))
-	// andesite_machine(ML('industrial_crucible'), 3, TC('seared_bricks'))
-	// andesite_machine(ML('foundry_basin'), 1, TC('seared_melter'))
-
 	andesite_machine('toms_storage:ts.inventory_cable', 8, MC('redstone'))
 	andesite_machine('create:portable_storage_interface', 2)
 	andesite_machine('create:mechanical_harvester', 2)
 	andesite_machine('create:mechanical_plough', 2)
 	andesite_machine('kubejs:pipe_module_utility', 4)
-
+	andesite_machine(GB('kiln'), 1, MC('blast_furnace'))
 
 	event.smithing('toms_storage:ts.crafting_terminal', "kubejs:rotation_template",'toms_storage:ts.storage_terminal', MC('crafting_table'))
 	event.remove({output: PP('item_terminal')})
@@ -2453,7 +2400,7 @@ function titaniumStuff(event){
 
 	event.recipes.createMixing(Fluid.of(KJ('tnt6'), 250), [MC('sand'), Fluid.of(MC('water'), 200)]).processingTime(50)
 	event.recipes.gearboxElectrolyzing([KJ('sodium_powder'), Fluid.of(GB('chlorine'), 125), Fluid.of(MC('water'), 250)], Fluid.of(KJ('tnt6'), 500)).energy(100)
-	event.recipes.gearboxElectrolyzing(Fluid.of(AD('fuel'), 100), [CR('cinder_flour'), Fluid.of(TE('refined_fuel'), 500)]).energy(200)
+	event.recipes.gearboxElectrolyzing(Fluid.of(AD('fuel'), 100), [CR('cinder_flour'), Fluid.of(TE('refined_fuel'), 250)]).energy(200)
 
 //	event.recipes.gearboxIrradiating([Fluid.of(GB('chlorine'), 250), KJ("sodium_powder", 2)], Fluid.of(KJ('tnt6'), 250)).color(255, 255, 255).power(5)
 	// event.recipes.gearboxTransmuting(TE("silver_ingot"), MC("gold_ingot") ).color(0, 255, 0).power(4)
@@ -2809,7 +2756,7 @@ function oilComplex(event){
     event.recipes.createMixing(Fluid.of(KJ("oil_brine"), 100), [Fluid.of(GB("petroleum"), 50), Fluid.of(MC("water"), 50)])
     event.recipes.gearboxElectrolyzing(Fluid.of(KJ("desalted_oil"), 50), Fluid.of(KJ("oil_brine"), 100)).energy(100)
 
-    event.recipes.createMixing(Fluid.of(TC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), MC('charcoal')]).heated()
+    event.recipes.createMixing(Fluid.of(BC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), MC('charcoal')]).heated()
 
 }
 
@@ -2826,7 +2773,6 @@ function explosiveMachine(event){
 	event.recipes.createMixing([MC('dirt', 12)], [Fluid.of(MC('water')), MC('sand', 4), MC('clay_ball', 4), MC('gravel', 4)])
 
 	event.recipes.gearboxPyroprocessing([TE('coal_coke')], [MC('charcoal')] ).heated().processingTime(100)
-	event.recipes.createMixing([Fluid.of(BC('molten_steel'), 90)], ['thermal:coal_coke', Fluid.of(TC('molten_iron'), 90)]).heated()
 
 	event.recipes.createFilling(KJ('lube_can'), [TC('copper_can'), Fluid.of(CI('lubrication_oil'))])
 
@@ -2883,8 +2829,8 @@ function explosiveMachine(event){
 	], CR('precision_mechanism'), [
 		event.recipes.createDeploying(t, [t, KJ("steel_ring")]),
 		event.recipes.createDeploying(t, [t, BC("packed_gunpowder")]),
-		event.recipes.createFilling(t, [t, Fluid.of("tfmg:diesel",  360)]),
-		event.recipes.createFilling(t, [t, Fluid.of("tfmg:gasoline",480)]),
+		event.recipes.createFilling(t, [t, Fluid.of("tfmg:diesel",  90)]),
+		event.recipes.createFilling(t, [t, Fluid.of("tfmg:gasoline", 120)]),
 		event.recipes.createDeploying(t, [t, TE("iron_gear")]),
 		event.recipes.gearboxMechanizing(t, t)
 	]).transitionalItem(t)
@@ -3113,6 +3059,10 @@ function invarMachine(event) {
 
 	event.replaceInput({id: "createaddition:crafting/modular_accumulator"}, "createaddition:capacitor", KJ('electrolytic_capacitor'))
 	event.replaceInput({input: "createaddition:capacitor"}, "createaddition:capacitor", KJ('ceramic_capacitor') )
+	event.replaceInput({}, Fluid.of(TC('molten_steel')), Fluid.of(BC('molten_steel')))
+	event.replaceInput({}, Fluid.of(CI('molten_steel')), Fluid.of(BC('molten_steel')))
+	event.replaceInput({}, TE('steel_plate'), AL('steel_sheet'))
+	event.replaceInput({}, AD('steel_plate'), AL('steel_sheet'))
 
 	event.recipes.createMechanicalCrafting("createaddition:electric_motor", [
 		' BIB ',
@@ -3169,20 +3119,6 @@ function fluixMachine(event) {
 //	event.recipes.gearboxCompressing([AE2("silicon"), TE("apatite")], Fluid.of(KJ("sif2"), 200))
 	event.recipes.gearboxPyroprocessing(KJ('metallurgic_silicon'), KJ("silicon_compound"))
 
-	// let sequence = (type, item) => {
-	// let t = KJ('incomplete_' + type + '_processor')
-	// 	event.recipes.createSequencedAssembly([AE2(type + '_processor'),], AE2('printed_silicon'), [
-	// 	event.recipes.createDeploying(t, [t, item]),
-	// 	event.recipes.createDeploying(t, [t, ("projectred_core:red_ingot")]),
-	// 	event.custom(ifiniDeploying(t, t, 'ae2:' + type + '_processor_press') ),
-	// 	event.recipes.gearboxMechanizing(t, t)
-	// 	]).transitionalItem(t)
-	// 	.loops(1)
-	// 	.id('kubejs:' + type + "_processor")
-	// }
-	// sequence("calculation", MC("copper_ingot"))
-	// sequence("logic", MC("gold_ingot"))
-	// sequence("engineering", MC("diamond"))
 }
 
 function enderMachine(event) {
@@ -3237,7 +3173,6 @@ function circuits(event) {
 	});
 
 	event.recipes.thermal.crucible(Fluid.of(TC("molten_diamond"), 90), MC("diamond")).energy(10000)
-//	event.custom(ifiniDeploying(AE2("printed_silicon"), AE2("silicon"), AE2("silicon_press")))
 }
 
 function madMaths(event) {

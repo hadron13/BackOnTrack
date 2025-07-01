@@ -1,9 +1,0 @@
-{
-  "dropped_item": "minecraft:quartz",
-  "recipe_item": "minecraft:quartz",
-  "normal_drop_chance": 2.0,
-  "max_drop_chance": 4.0,
-  "translation": "Nether Quartz",
-  "texture": "minecraft:item/quartz",
-  "growth_chance": 5
-}

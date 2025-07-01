@@ -11,7 +11,7 @@
 		rotation: 0.0d
 		width: 18.0d
 		x: 0.5d
-		y: -9.5d
+		y: -10.0d
 	}]
 	order_index: 7
 	quest_links: [ ]
@@ -100,7 +100,7 @@
 			]
 			title: "Explosivity 100"
 			x: 0.0d
-			y: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6C7AFF61FB05798A"]
@@ -123,7 +123,7 @@
 			]
 			title: "Explosivity 300"
 			x: 0.0d
-			y: 9.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
@@ -154,8 +154,8 @@
 				}
 			]
 			title: "Automatic Re-Re-Forestation"
-			x: 0.0d
-			y: 1.5d
+			x: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
@@ -178,8 +178,8 @@
 				}
 			]
 			title: "Igneous Fabrication"
-			x: -1.5d
-			y: -4.5d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0A39053F99978A28"]
@@ -201,8 +201,8 @@
 				}
 			]
 			title: "More De-chunkification"
-			x: -1.5d
-			y: -3.0d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["463701D5CEC99FC8"]
@@ -224,8 +224,8 @@
 				}
 			]
 			title: "Industrial Pyrolisis"
-			x: 0.0d
-			y: 3.5d
+			x: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -254,11 +254,12 @@
 			]
 			title: "Volatile Deploying"
 			x: 0.0d
-			y: 11.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["65605AC13DF2D359"]
+			dependencies: ["278B95FF7159DCFC"]
 			description: ["It's a mechanism, and a very explosive one, and it requires a gear."]
+			hide_dependency_lines: true
 			icon: "thermal:iron_gear"
 			id: "6ACE3593A299DEBC"
 			subtitle: "Contraption 44"
@@ -276,8 +277,8 @@
 				}
 			]
 			title: "Gear"
-			x: 1.0d
-			y: 9.5d
+			x: 1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5FFB68365F2E821B"]
@@ -327,137 +328,10 @@
 			]
 			title: "Chapter 3 Complete!"
 			x: 0.0d
-			y: 13.0d
+			y: 10.0d
 		}
 		{
-			dependencies: ["218397419487B197"]
-			description: ["Does gravel even contain iron? It might be better to just accept it..."]
-			icon: "minecraft:iron_nugget"
-			id: "65605AC13DF2D359"
-			subtitle: "Contraption 33-3"
-			tasks: [
-				{
-					id: "1116AAA2F1D31918"
-					item: "minecraft:iron_nugget"
-					type: "item"
-				}
-				{
-					id: "2498ABCFB227BF1F"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Ferric Gravel"
-			x: 3.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["65605AC13DF2D359"]
-			description: ["Route the nuggets once more into your High-Temperature melting equipment."]
-			icon: {
-				Count: 1
-				id: "tconstruct:copper_can"
-				tag: {
-					fluid: "tconstruct:molten_iron"
-				}
-			}
-			id: "3F0207FF17AA3496"
-			subtitle: "Contraption 37-1"
-			tasks: [
-				{
-					consume_items: false
-					id: "35656474DD8D488B"
-					item: {
-						Count: 1
-						id: "tconstruct:copper_can"
-						tag: {
-							fluid: "tconstruct:molten_iron"
-						}
-					}
-					title: "Copper Can (Molten Iron)"
-					type: "item"
-				}
-				{
-					id: "54F707625C099697"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Get Molten"
-			x: 5.0d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"3F0207FF17AA3496"
-				"6151B95B338E2283"
-			]
-			description: ["Mixing coke (carbon) with the molten iron creates a stronger alloy, our loved steel."]
-			icon: {
-				Count: 1
-				id: "tconstruct:copper_can"
-				tag: {
-					fluid: "createbigcannons:molten_steel"
-				}
-			}
-			id: "0A75C53447F4FB07"
-			subtitle: "Contraption 37-2"
-			tasks: [
-				{
-					consume_items: false
-					id: "5A21ED46AE34212D"
-					item: {
-						Count: 1
-						id: "tconstruct:copper_can"
-						tag: {
-							fluid: "createbigcannons:molten_steel"
-						}
-					}
-					title: "Copper Can (Molten Iron)"
-					type: "item"
-				}
-				{
-					id: "0AF1E50D7A90F444"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Get Carbonized"
-			x: 5.0d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"01ABB67CC244453B"
-				"45502F7F3F53ACE7"
-				"25631418F91A20D5"
-			]
-			description: ["Join the 2 layers using a cannon builder to create this final shape."]
-			icon: "createbigcannons:built_up_steel_cannon_barrel"
-			id: "37BABDCE5BDA46D4"
-			subtitle: "Contraption 40-1"
-			tasks: [
-				{
-					id: "677D8912367B40FB"
-					title: "Automated"
-					type: "checkmark"
-				}
-				{
-					icon: "createbigcannons:steel_cannon_chamber"
-					id: "08C6F93B09334A08"
-					observe_type: 0
-					timer: 0L
-					title: "Observe The Steel Cannon Chamber"
-					to_observe: "createbigcannons:steel_cannon_chamber"
-					type: "observation"
-				}
-			]
-			title: "Stackup"
-			x: 3.5d
-			y: 8.5d
-		}
-		{
-			dependencies: ["37BABDCE5BDA46D4"]
+			dependencies: ["1927B8CF9C2E1093"]
 			description: ["It takes a very long time for each chamber, but for each chamber you can gather 48 rings, and assemble 48 mechanisms, or 6 machines."]
 			icon: "kubejs:steel_ring"
 			id: "6369DB891302D710"
@@ -469,94 +343,13 @@
 					type: "item"
 				}
 				{
-					id: "734B82EAA8DD3750"
-					type: "checkmark"
-				}
-			]
-			x: 2.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["4DF6E9A11BAF8D05"]
-			description: ["May alternatively be used as a pot."]
-			icon: "createbigcannons:very_small_steel_cannon_layer"
-			id: "45502F7F3F53ACE7"
-			subtitle: "Contraption 38-2"
-			tasks: [{
-				id: "0E2CA63EE943A234"
-				title: "Automated"
-				type: "checkmark"
-			}]
-			title: "Smol Layer"
-			x: 3.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["4FF3C7B52A12788B"]
-			description: ["It's no longer boring, the drill already passed through here."]
-			icon: "createbigcannons:medium_steel_cannon_layer"
-			id: "01ABB67CC244453B"
-			subtitle: "Contraption 39-2"
-			tasks: [{
-				id: "7D8746C939580B1C"
-				title: "Automated"
-				type: "checkmark"
-			}]
-			title: "Medium Layer"
-			x: 5.5d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"514EC4ADAD6F5535"
-				"0A75C53447F4FB07"
-				"4C7826C8A5521396"
-			]
-			description: ["Despite having the longest name of the three, this is the smallest cast."]
-			icon: "createbigcannons:unbored_very_small_steel_cannon_layer"
-			id: "4DF6E9A11BAF8D05"
-			subtitle: "Contraption 38-1"
-			tasks: [
-				{
-					id: "45C4D845C9E689EA"
+					id: "1000DB1D300FFB1C"
 					title: "Automated"
 					type: "checkmark"
 				}
-				{
-					id: "35B75E35488A877A"
-					item: "createbigcannons:very_small_cast_mould"
-					type: "item"
-				}
 			]
-			title: "Small Cast"
-			x: 3.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"514EC4ADAD6F5535"
-				"0A75C53447F4FB07"
-				"4C7826C8A5521396"
-			]
-			description: ["Not the longest name, not the biggest nor smallest, (warning: pun) this is the most boring of them."]
-			icon: "createbigcannons:unbored_medium_steel_cannon_layer"
-			id: "4FF3C7B52A12788B"
-			subtitle: "Contraption 39-1"
-			tasks: [
-				{
-					id: "21E0492549AA9F57"
-					title: "Automated"
-					type: "checkmark"
-				}
-				{
-					id: "5A0FD35CDEE865D5"
-					item: "createbigcannons:medium_cast_mould"
-					type: "item"
-				}
-			]
-			title: "Medium Cast"
-			x: 5.5d
-			y: 6.0d
+			x: 2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -586,7 +379,7 @@
 			]
 			title: "Big Casts"
 			x: 3.5d
-			y: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -612,8 +405,8 @@
 				}
 			]
 			title: "Dirty Mix"
-			x: -1.5d
-			y: 0.5d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4C99F5F60ABE2DFD"]
@@ -634,21 +427,29 @@
 				}
 			]
 			title: "Double Pyrolisis"
-			x: 1.5d
-			y: 2.5d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["742453FA9D86B6F2"]
 			description: ["Niter, also known as saltpeter or potassium nitrate, can be unrealistically taken from dirt and make most of the gunpowder."]
+			icon: "tfmg:nitrate_dust"
 			id: "7B86CDFAEE2EAD0D"
 			subtitle: "Contraption 34-2"
-			tasks: [{
-				id: "5659ACE410EC99BD"
-				item: "tfmg:nitrate_dust"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.0d
+			tasks: [
+				{
+					id: "5659ACE410EC99BD"
+					item: "tfmg:nitrate_dust"
+					type: "item"
+				}
+				{
+					id: "66F586C5A5CDAADB"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3D260BA8C18832B2"]
@@ -669,8 +470,8 @@
 				}
 			]
 			title: "Clayfication"
-			x: 1.5d
-			y: -0.5d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
@@ -691,8 +492,8 @@
 				}
 			]
 			title: "Walter"
-			x: -3.0d
-			y: 0.5d
+			x: -0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["218397419487B197"]
@@ -713,8 +514,8 @@
 				}
 			]
 			title: "Snad"
-			x: 1.5d
-			y: -1.5d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4AC20A13D7706FA8"]
@@ -739,8 +540,8 @@
 				}
 			]
 			title: "Gas "
-			x: -2.0d
-			y: 10.0d
+			x: -2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["4AC20A13D7706FA8"]
@@ -761,31 +562,11 @@
 				}
 			]
 			title: "Diesel"
-			x: -1.0d
-			y: 9.5d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["4AC20A13D7706FA8"]
-			icon: "tfmg:heavy_oil_bucket"
-			id: "7933C0A5002337CD"
-			subtitle: "Contraption 42-1"
-			tasks: [
-				{
-					id: "158FB3753C758956"
-					item: "tfmg:heavy_oil_bucket"
-					type: "item"
-				}
-				{
-					id: "7A3B8C71A2165FB2"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			x: -2.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["7933C0A5002337CD"]
+			dependencies: ["33CD994BF5DE87F0"]
 			description: ["Another byproduct of the heavy oil distilling, can be used in an explosive compound, aka gunpowder."]
 			icon: "thermal:sulfur_dust"
 			id: "4B2B136BAA03CD1B"
@@ -803,7 +584,7 @@
 				}
 			]
 			x: -1.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4E9AD52EAC4D6B27"]
@@ -824,116 +605,141 @@
 				}
 			]
 			title: "De-Salting"
-			x: -2.5d
-			y: 7.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
-			dependencies: [
-				"3E5A74BBDE39E0FC"
-				"084D5FBCD0FAA13C"
-				"5FF26A886FF04526"
+			dependencies: ["514EC4ADAD6F5535"]
+			description: [
+				"Now that we have all the resources to build the cannons, let's get started by following the steps:"
+				""
+				"1- You need to build a 3x3 cannon cast with a gap in the middle using the &6Casting Sand&r, do this for each part of the cannon."
+				""
+				"2- Now you need to prepare the cannon cast to receive the &6Molten Steel&r, to do this you need to use a &6Cast Mould&r that is compatible for each type of &6Cannon Layer&r, then right click with &6Cast Mould&r in the right hand on the gap to make the sand mould. Right click again to take the &6Cast Mould&r back."
+				""
+				"3- Then you need to fill the gap with &6Molten Steel&r, after this you need to wait a little for the cannon part cool down. You can use both &6Molten Steel&r from Tinkers or Big Cannons."
+				""
+				"{@pagebreak}"
+				""
+				"  Tip: Cannon casts can output redstone signal that can be read by &6Comparator&r, they output a redstone signal from 0 to 14 to show how full it is, when reach 15 it's ready ( put a &6Nixie Tube&r next to the comparator to see the numbers ). If you need a visual explanation hold \"W\" on the &6Casting Sand&r to see the ponder."
+				""
+				"4- Now that we have the &6Unbored Cannon Layer&r just take it back the &6Casting Sand&r, to do this quickly just right click with your empty hand."
 			]
-			description: ["Cannon casting is not as simple as it may seem from this quest, ponder the machinery for more information."]
 			icon: {
 				Count: 1
 				id: "createbigcannons:autocannon_ammo_container"
 				tag: { }
 			}
 			id: "4C7826C8A5521396"
-			rewards: [
-				{
-					command: "/c ponder createbigcannons:casting_sand"
-					icon: "createbigcannons:casting_sand"
-					id: "02459A01D9DB69CE"
-					title: "Casting"
-					type: "command"
-				}
-				{
-					command: "/c ponder createbigcannons:cannon_drill"
-					icon: "createbigcannons:cannon_drill"
-					id: "225A9245A615D133"
-					title: "Boring"
-					type: "command"
-				}
-				{
-					command: "/c ponder createbigcannons:cannon_builder"
-					icon: "createbigcannons:cannon_builder"
-					id: "07EA77A3BD114045"
-					title: "Stacking Layers"
-					type: "command"
-				}
-				{
-					command: "/c ponder createbigcannons:basin_foundry_lid"
-					icon: "createbigcannons:basin_foundry_lid"
-					id: "09AEC20E6DF83DD8"
-					title: "Melting Metals"
-					type: "command"
-				}
-				{
-					count: 3
-					id: "5F63E6274691C977"
-					item: "createbigcannons:very_small_cast_mould"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "26D05AEE1AEE1ECB"
-					item: "createbigcannons:small_cast_mould"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "21FBF4F0B0C7EBEE"
-					item: "createbigcannons:medium_cast_mould"
-					type: "item"
-				}
-			]
 			tasks: [{
-				id: "152B357113DEACEC"
-				title: "Acknowleged"
+				id: "046F9FFA9F2094BF"
+				title: "Automated"
 				type: "checkmark"
 			}]
 			title: "Cannon Casting 101"
-			x: 6.5d
-			y: 3.0d
+			x: 4.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["278B95FF7159DCFC"]
-			hide_dependency_lines: true
+			dependencies: [
+				"4F89EA707FA4EB2D"
+				"43E53DAA34175B35"
+				"181284F9FCDF0979"
+			]
+			icon: "createbigcannons:cannon_builder"
 			id: "084D5FBCD0FAA13C"
-			tasks: [{
-				consume_items: false
-				id: "4D9F531A7FF98562"
-				item: "createbigcannons:cannon_builder"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 2.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "4D9F531A7FF98562"
+					item: "createbigcannons:cannon_builder"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "04F2F7A100B82D9D"
+					item: { Count: 5, id: "create:piston_extension_pole" }
+					type: "item"
+				}
+				{
+					id: "19E89C851715C20B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["278B95FF7159DCFC"]
-			hide_dependency_lines: true
+			dependencies: [
+				"61072A036F885AB9"
+				"130A48A22011EE9E"
+				"5C09C6DC2C2D8D90"
+			]
+			description: [
+				"1- Then we'll transform the &6Unbored Cannon Layer&r in just a &6Cannon Layer&r, now you need to setup a &6Cannon Drill&r and a &6Mechanical Bearing&r to make this happen."
+				""
+				"  Tip: Hold \"W\" on the &6Cannon Drill&r ( The ponder show you exactly how you can make this process ) or press \"U\" in any &6Cannon Layer&r, now you have an idea of how you can setup these machines to work."
+				""
+				"IMPORTANT- You noticed that over the process of drilling the \"Unbored Cannon Layer\" they drop scraps of the material. These scraps you can throw them in a &6Basin&r + &6Basin Foundry Lid&r, heat them up to get a part of your steel back."
+				""
+				"{@pagebreak}"
+				""
+				"2- Repeat the steps 1, 2, 3 and 4 from the previous quest and the first of this one for each type of &6Cannon Layer&r that we're asking for, they are needed to get our &6Cannon Chamber&r because it's from him we get the &6Steel Ring&r. Now you have the very small, small and medium &6Unbored Cannon Layer&r, we'll use them to built up our &6Cannon Chamber&r."
+				""
+				"3- To build our &6Cannon Chamber&r we need a &6Cannon Builder&r with some &6Extension Piston Pole&r. The &6Cannon Builder&r needs redstone signal to work, when the redstone signal is active the &6Cannon Builder&r will glue the &6Cannon Layer&r in him, then ou can add rotation power to bring together the &6Cannon Layer&r, once the layers are stack-up turn off the redstone signal and bring back the piston."
+				""
+				"Tip: If you need a visual explanation of the step 7 you can hold \"W\" on the &6Cannon Builder&r, but notice that they use a different cannon to give you an example."
+				""
+				"{@pagebreak}"
+				""
+				"4- After this you need to give heat to the stacked cannon layers, so they can glue up together. To do this use a &6Encased Fan&r with lava above them, it will take a while so BE PATIENT."
+				""
+				"5- Now you can finally break your &6Cannon Chamber&r and enjoy your steel rings."
+				""
+				"READ THE NEXT PAGE!"
+				""
+				"{@pagebreak}"
+				""
+				"&4THE MOST IMPORTANT TIP&r- \"Patience is a virtue, and if you don't have just create one\""
+				""
+				"Black Wolf, 2025."
+			]
+			icon: "createbigcannons:cannon_drill"
 			id: "5FF26A886FF04526"
-			tasks: [{
-				consume_items: false
-				id: "385F56F96D9F2645"
-				item: "createbigcannons:cannon_drill"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["278B95FF7159DCFC"]
-			hide_dependency_lines: true
-			id: "3E5A74BBDE39E0FC"
-			tasks: [{
-				id: "12627A9994C2F360"
-				item: "createbigcannons:basin_foundry_lid"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 4.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "385F56F96D9F2645"
+					item: "createbigcannons:cannon_drill"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "69BCFE1CF5D2F6F1"
+					item: { Count: 5, id: "create:piston_extension_pole" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "25E0766AD3B16033"
+					item: { Count: 5, id: "create:fluid_pipe" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "45FA8CB3C6DADACE"
+					item: { Count: 2, id: "create:mechanical_pump" }
+					type: "item"
+				}
+				{
+					id: "5231D1B4AA17B0C9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -949,13 +755,13 @@
 			}]
 			subtitle: "&6First, go to the specific biome shown in JEI-no similar bioems, only the exact one listed, Then, dig a hole all the way down to bedrock and place pipes (no pumps, please),After that,connect the torque. Don't try anything complicated-keeping it simples will work If you follow thiw, you'll get your oil."
 			tasks: [{
-				id: "006F970A1DBA0BE3"
-				title: "Acknowleged"
+				id: "3673B9DC2FAD92C6"
+				title: "Automated"
 				type: "checkmark"
 			}]
 			title: "Oil Company 101"
-			x: -3.5d
-			y: 3.5d
+			x: -4.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
@@ -983,22 +789,30 @@
 					item: "create:fluid_pipe"
 					type: "item"
 				}
+				{
+					id: "59556F9B5282B2AA"
+					title: "Automated"
+					type: "checkmark"
+				}
 			]
 			title: "Pumpjack"
-			x: -3.5d
-			y: 2.0d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
 			hide_dependency_lines: true
+			icon: "tfmg:steel_distillation_controller"
 			id: "38D3FEF4C99B1ABB"
 			tasks: [
 				{
+					count: 48L
 					id: "62558AF18EB266A5"
 					item: "tfmg:steel_fluid_tank"
 					type: "item"
 				}
 				{
+					count: 6L
 					id: "6984B75B06F74F79"
 					item: "tfmg:steel_distillation_output"
 					type: "item"
@@ -1009,14 +823,26 @@
 					type: "item"
 				}
 				{
+					count: 5L
 					id: "1345CA892656D8F7"
 					item: "tfmg:industrial_pipe"
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "5BA8901B4FE63617"
+					item: { Count: 4, id: "create:blaze_burner" }
+					type: "item"
+				}
+				{
+					id: "63EDC523946B4707"
+					title: "Automated"
+					type: "checkmark"
+				}
 			]
 			title: "Fracking Towers"
-			x: -5.0d
-			y: 3.5d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["040471504911D80C"]
@@ -1037,8 +863,8 @@
 				}
 			]
 			title: "Brining"
-			x: -3.5d
-			y: 6.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["021C30C187E9A97E"]
@@ -1059,41 +885,110 @@
 				}
 			]
 			title: "Pumpjacking"
-			x: -3.5d
-			y: 5.0d
+			x: -5.0d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"4C7826C8A5521396"
-				"0A75C53447F4FB07"
-				"514EC4ADAD6F5535"
-			]
-			icon: "createbigcannons:unbored_small_steel_cannon_layer"
-			id: "67D018087458C17F"
+			dependencies: ["4AC20A13D7706FA8"]
+			icon: "tfmg:lpg_bucket"
+			id: "33CD994BF5DE87F0"
 			tasks: [
 				{
-					id: "0B671629479FED2F"
-					type: "checkmark"
-				}
-				{
-					id: "347367003B31E683"
-					item: "createbigcannons:small_cast_mould"
+					id: "0E3580DEFE383E19"
+					item: "tfmg:lpg_bucket"
 					type: "item"
 				}
+				{
+					id: "528DC6A4BB62239B"
+					title: "Automated"
+					type: "checkmark"
+				}
 			]
-			x: 4.5d
-			y: 5.5d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["67D018087458C17F"]
-			icon: "createbigcannons:small_steel_cannon_layer"
-			id: "25631418F91A20D5"
+			dependencies: ["4C7826C8A5521396"]
+			icon: "createbigcannons:unbored_very_small_steel_cannon_layer"
+			id: "5C09C6DC2C2D8D90"
 			tasks: [{
-				id: "570F22007A9E5D47"
+				id: "1859E70C9D0E5312"
+				title: "Automated"
 				type: "checkmark"
 			}]
+			title: "Very Small Cannon Layer"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4C7826C8A5521396"]
+			icon: "createbigcannons:unbored_small_steel_cannon_layer"
+			id: "130A48A22011EE9E"
+			tasks: [{
+				id: "54658C237F24DBFC"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Small Cannon Layer"
 			x: 4.5d
-			y: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4C7826C8A5521396"]
+			icon: "createbigcannons:unbored_medium_steel_cannon_layer"
+			id: "61072A036F885AB9"
+			tasks: [{
+				id: "72A2BC806B671DC5"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			title: "Medium Cannon Layer"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5FF26A886FF04526"]
+			id: "43E53DAA34175B35"
+			tasks: [{
+				id: "2ADAFCF1D53AE912"
+				item: "createbigcannons:very_small_steel_cannon_layer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5FF26A886FF04526"]
+			id: "4F89EA707FA4EB2D"
+			tasks: [{
+				id: "0F45504DE73FE999"
+				item: "createbigcannons:small_steel_cannon_layer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5FF26A886FF04526"]
+			id: "181284F9FCDF0979"
+			tasks: [{
+				id: "00E84CD43497190F"
+				item: "createbigcannons:medium_steel_cannon_layer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["084D5FBCD0FAA13C"]
+			id: "1927B8CF9C2E1093"
+			tasks: [{
+				id: "6DD4E39C915653D2"
+				item: "createbigcannons:steel_cannon_chamber"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
 		}
 	]
 	title: "&f3&r Astounding Explosions"

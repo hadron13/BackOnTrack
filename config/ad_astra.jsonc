@@ -43,7 +43,7 @@
         // Type: Long
         "ostrumTierEnergyCapacity": 100000,
         // Type: Long
-        "steelTierFluidCapacity": 3000,
+        "steelTierFluidCapacity": 1000,
         // Type: Long
         "deshTierFluidCapacity": 5000,
         // Type: Long

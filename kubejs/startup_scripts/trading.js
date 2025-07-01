@@ -18,7 +18,6 @@ let RQ = (id, x) => MOD("xreliquary", id, x)
 let SD = (id, x) => MOD("storagedrawers", id, x)
 let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) => MOD("forge", id, x)
-let AC = (id, x) => MOD("aquaculture", id, x)
 //
 
 
@@ -213,7 +212,6 @@ StartupEvents.registry('item', event => {
 		{ in: FD('stuffed_pumpkin', 16), out: S(9) },
 		{ in: FD('honey_glazed_ham', 16), out: S(7) },
 		{ in: FD('shepherds_pie', 16), out: S(7) },
-		{ in: AC('sushi', 16), out: S(3) },
 		{ in: CR('sweet_roll', 16), out: S(4) }
 	])
 
@@ -223,40 +221,6 @@ StartupEvents.registry('item', event => {
 	// 	{ in: MC('salmon', quota), out: S(1) },
 	// 	{ in: MC('pufferfish', quota), out: S(1) },
 	// 	{ in: MC('tropical_fish', quota), out: S(1) },
-	// 	{ in: AC('atlantic_herring', quota), out: S(3) },
-	// 	{ in: AC('synodontis', quota), out: S(3) },
-	// 	{ in: AC('bluegill', quota), out: S(3) },
-	// 	{ in: AC('perch', quota), out: S(3) },
-	// 	{ in: AC('tambaqui', quota), out: S(3) },
-	// 	{ in: AC('minnow', quota), out: S(4) },
-	// 	{ in: AC('blackfish', quota), out: S(4) },
-	// 	{ in: AC('pink_salmon', quota), out: S(5) },
-	// 	{ in: AC('brown_trout', quota), out: S(5) },
-	// 	{ in: AC('carp', quota), out: S(5) },
-	// 	{ in: AC('pollock', quota), out: S(5) },
-	// 	{ in: AC('smallmouth_bass', quota), out: S(5) },
-	// 	{ in: AC('boulti', quota), out: S(5) },
-	// 	{ in: AC('red_shrooma', quota), out: S(5) },
-	// 	{ in: AC('brown_shrooma', quota), out: S(5) },
-	// 	{ in: AC('gar', quota), out: S(7) },
-	// 	{ in: AC('rainbow_trout', quota), out: S(7) },
-	// 	{ in: AC('bayad', quota), out: S(7) },
-	// 	{ in: AC('piranha', quota), out: S(7) },
-	// 	{ in: AC('jellyfish', quota), out: S(7) },
-	// 	{ in: AC('red_grouper', quota), out: S(7) },
-	// 	{ in: AC('atlantic_cod', quota), out: S(7) },
-	// 	{ in: AC('muskellunge', quota), out: S(8) },
-	// 	{ in: AC('pacific_halibut', quota), out: S(8) },
-	// 	{ in: AC('atlantic_halibut', quota), out: S(8) },
-	// 	{ in: AC('catfish', quota), out: S(10) },
-	// 	{ in: AC('capitaine', quota), out: S(10) },
-	// 	{ in: AC('tuna', quota), out: S(10) },
-	// 	{ in: AC('arapaima', quota), out: S(10) },
-	// 	{ in: AC('arrau_turtle', quota), out: S(10) },
-	// 	{ in: AC('box_turtle', quota), out: S(10) },
-	// 	{ in: AC('starshell_turtle', quota), out: S(10) },
-	// 	{ in: AC('goldfish', quota), out: S(10) },
-	// 	{ in: AC('neptunium_ingot', 5), out: S(16) }
 	// ])
 
 	profession("Smithing", 0xFFC93C, 0xFF7A00, [
@@ -507,20 +471,7 @@ StartupEvents.registry('item', event => {
 		simple("Prismarine Crystals", MC('prismarine_crystals', 4), 24, S, 0x71A296, 0xDCE6D9)
 		
 		entry_cost = 10
-		// simple("Witch Hat", RQ('witch_hat', 1), 1, G, 0x424242, 0x568125)
-		// simple("Zombie heart", RQ('zombie_heart', 1), 32, S, 0x532B38, 0x8D584A)
-		// simple("Squid Beak", RQ('squid_beak', 1), 32, S, 0x00613B, 0x5BCDA1)
-		// simple("Rib Bone", RQ('rib_bone', 1), 32, S, 0xDFDDCE, 0xFAF9E9)
-		// simple("Catalyzing Gland", RQ('catalyzing_gland', 1), 48, S, 0x268E23, 0x63CA52)
-		// simple("Chelicerae", RQ('chelicerae', 1), 32, S, 0x251721, 0x4D0C3B)
-		// simple("Slime Pearl", RQ('slime_pearl', 1), 48, S, 0x1B9D33, 0x84F58E)
-		// simple("Bat Wing", RQ('bat_wing', 1), 2, G, 0x464646, 0x6D6D6D)
-		// simple("Withered Rib", RQ('withered_rib', 1), 2, G, 0x2A2E2E, 0x434949)
-		// simple("Molten Core", RQ('molten_core', 1), 48, S, 0xED7102, 0xFAFC58)
-		// simple("Eye of the Storm", RQ('eye_of_the_storm', 1), 2, G, 0xFCD607, 0x96FC52)
-		// simple("Frozen Core", RQ('frozen_core', 1), 48, S, 0x008DC2, 0x7571FB)
-		// simple("Nebulous Heart", RQ('nebulous_heart', 1), 1, G, 0x6200A0, 0xE500C3)
-		// simple("Guardian Spike", RQ('guardian_spike', 1), 1, G, 0x7F4215, 0xE29964)
+		
 		simple("Phantom Membrane", MC('phantom_membrane', 1), 48, S, 0x6E506B, 0xC1B79F)
 		simple("Blaze Cake", CR('blaze_cake', 1), 16, S, 0x834141, 0xFCE083)
 		next_group()

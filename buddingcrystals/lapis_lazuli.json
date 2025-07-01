@@ -1,9 +1,0 @@
-{
-  "dropped_item": "minecraft:lapis_lazuli",
-  "recipe_item": "minecraft:lapis_lazuli",
-  "normal_drop_chance": 2.0,
-  "max_drop_chance": 4.0,
-  "translation": "Lapis Lazuli",
-  "texture": "minecraft:item/lapis_lazuli",
-  "growth_chance": 5
-}
