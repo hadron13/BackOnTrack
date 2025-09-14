@@ -1113,6 +1113,107 @@ function prettierpipes(event) {
 function barrels(event) {
 	event.remove({ mod: "metalbarrels" })
 
+// 	function addAnvilRecipe(materialId) {
+//     const output = Item.of('tconstruct:tinkers_anvil', { material: materialId });
+//     event.shaped(output, [
+//       'BBB',
+//       'RSR',
+//       'R R'
+//     ], {
+//       B: `${materialId}_block`,
+//       S: 'tconstruct:tinker_station',
+//       R: 'tconstruct:seared_bricks'
+//     }).id(`kjs:tcon_anvil_${materialId.replace(':','_')}`);
+//   }
+
+//   const anvils = [
+//     { material: 'tconstruct:slimesteel'},
+//     { material: 'tconstruct:pig_iron'},
+//     { material: 'tconstruct:manyullyn'},
+//     { material: 'tconstruct:rose_gold'},
+//     { material: 'tconstruct:cobalt'},
+//     { material: 'tconstruct:queens_slime'},
+//     { material: 'tconstruct:steel'}
+//   ];
+
+//   anvils.forEach(a => addAnvilRecipe(a.material));
+
+  	event.shaped(CR("chromatic_compound"),[
+		'RSR',
+		'SAS',
+		'RSR'
+	], {
+		R: MC('obsidian'),
+		S: 'createcasing:chorium_ingot',
+		A: "alloyed:bronze_ingot"
+	})
+
+	event.custom({
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "forge:ingots"
+  },
+  "cast_consumed": true,
+  "cooling_time": 57,
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_gold"
+  },
+  "result": "tconstruct:ingot_cast",
+  "switch_slots": true
+})
+
+	event.custom({
+  "type": "mantle:crafting_shaped_retextured",
+  "category": "misc",
+  "key": {
+    "m": {
+      "tag": "tconstruct:anvil_metal"
+    },
+    "s": {
+      "tag": "tconstruct:seared_blocks"
+    }
+  },
+  "match_all": true,
+  "pattern": [
+    "mmm",
+    " s ",
+    "sss"
+  ],
+  "result": {
+    "item": "tconstruct:tinkers_anvil"
+  },
+  "show_notification": true,
+  "texture": {
+    "tag": "tconstruct:anvil_metal"
+  }
+})
+	event.custom({
+  "type": "mantle:crafting_shaped_retextured",
+  "category": "misc",
+  "key": {
+    "m": {
+      "tag": "tconstruct:anvil_metal"
+    },
+    "s": {
+      "tag": "tconstruct:scorched_blocks"
+    }
+  },
+  "match_all": true,
+  "pattern": [
+    "mmm",
+    " s ",
+    "sss"
+  ],
+  "result": {
+    "item": "tconstruct:scorched_anvil"
+  },
+  "show_notification": true,
+  "texture": {
+    "tag": "tconstruct:anvil_metal"
+  }
+})
+
 }
 
 function rocketScience(event) {
@@ -2104,7 +2205,7 @@ function MetallurgyRecipes(event){
 	event.remove({output: "createcasing:"+type+"_encased_chain_drive"})
 	event.remove({output: "createcasing:"+type+"_adjustable_chain_gearshift"})
 	event.remove({output: "createcasing:"+type+"_chain_conveyor"})
-  event.remove({output: "createcasing:"+type+"_casing"})
+    event.remove({output: "createcasing:"+type+"_casing"})
 	event.remove({output: "createcasing:"+type+"_gearbox"})
 	event.remove({output: "createcasing:"+type+"_cogwheel"})
 	event.remove({output: "createcasing:"+type+"_configurable_gearbox"})
@@ -2130,7 +2231,7 @@ function MetallurgyRecipes(event){
 	encased("shadow_steel")
 	encased("industrial_iron")
 
-  creative("creative")
+    creative("creative")
 
 	event.shaped(AD('gas_tank'), ['SS','SS'], {S: AD('steel_tank')})
 	event.shaped(AD('large_gas_tank'), ['SS','SS'], {S: AD('gas_tank')})
@@ -2143,14 +2244,36 @@ function MetallurgyRecipes(event){
 	event.remove({output: `createqol:shadow_radiance_chestplate`})
 	event.remove({output: `createqol:shadow_radiance_leggings`})
 	event.remove({output: `createqol:shadow_radiance_boots`})
-
+	event.remove({output: `createqol:refined_radiance_helmet`})
+	event.remove({output: `createqol:refined_radiance_chestplate`})
+	event.remove({output: `createqol:refined_radiance_leggings`})
+	event.remove({output: `createqol:refined_radiance_boots`})
+	event.remove({output: `createqol:shadow_steel_helmet`})
+	event.remove({output: `createqol:shadow_steel_chestplate`})
+	event.remove({output: `createqol:shadow_steel_leggings`})
+	event.remove({output: `createqol:shadow_steel_boots`})
+	event.remove({output: `createqol:shadow_steel_sword`})
+	event.remove({output: `createqol:shadow_steel_pickaxe`})
+	event.remove({output: `createqol:shadow_steel_axe`})
+	event.remove({output: `createqol:shadow_steel_shovel`})
+	event.remove({output: `createqol:shadow_steel_hoe`})
+	event.remove({output: `createqol:shadow_radiance_sword`})
+	event.remove({output: `createqol:shadow_radiance_pickaxe`})
+	event.remove({output: `createqol:shadow_radiance_axe`})
+	event.remove({output: `createqol:shadow_radiance_shovel`})
+	event.remove({output: `createqol:shadow_radiance_hoe`})
+	event.remove({output: `createqol:refined_radiance_sword`})
+	event.remove({output: `createqol:refined_radiance_pickaxe`})
+	event.remove({output: `createqol:refined_radiance_axe`})
+	event.remove({output: `createqol:refined_radiance_shovel`})
+	event.remove({output: `createqol:refined_radiance_hoe`})
   let tfmg = (ingot) => {
 	event.remove({output: CI(ingot)})
 	}
 
-tfmg("lead_ingot")
-tfmg("lead_sheet")
-tfmg("lead_nugget")
+	tfmg("lead_ingot")
+	tfmg("lead_sheet")
+	tfmg("lead_nugget")
 
 let tfmg1 = (type) => {
 		event.shaped(CI(type+'_frame', 4), [
@@ -2165,9 +2288,9 @@ let tfmg1 = (type) => {
 		'A A'
 	], {A: '#create:'+type+'_nugget'})
 }
-tfmg1("lead")
-tfmg1("nickel")
-tfmg1("constantan")
+	tfmg1("lead")
+	tfmg1("nickel")
+	tfmg1("constantan")
 
 let adblocks = (item) => {
 event.stonecutting(AD(`encased_${item}_block`, 4), AD(`${item}_factory_block`))//

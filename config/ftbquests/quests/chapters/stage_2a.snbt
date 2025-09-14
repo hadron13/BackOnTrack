@@ -49,7 +49,7 @@
 				type: "item"
 			}]
 			title: "Chapter 2A Complete!"
-			x: 0.0d
+			x: -2.5d
 			y: 9.0d
 		}
 		{
@@ -77,7 +77,7 @@
 				}
 			]
 			title: "Heated Treatment"
-			x: 0.0d
+			x: -2.5d
 			y: 7.0d
 		}
 		{
@@ -105,7 +105,7 @@
 				}
 			]
 			title: "A lot. of lava"
-			x: 1.5d
+			x: -1.0d
 			y: 5.5d
 		}
 		{
@@ -129,7 +129,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
+			x: -2.5d
 			y: 3.5d
 		}
 		{
@@ -155,7 +155,7 @@
 				}
 			]
 			title: "Brownies"
-			x: -1.5d
+			x: -4.0d
 			y: 5.5d
 		}
 		{
@@ -177,7 +177,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
+			x: -2.5d
 			y: 5.0d
 		}
 		{
@@ -203,7 +203,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.0d
+			x: -5.5d
 			y: 2.5d
 		}
 		{
@@ -216,7 +216,7 @@
 				item: "kubejs:soul"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.5d
 			y: 1.5d
 		}
 		{
@@ -230,7 +230,7 @@
 				type: "item"
 			}]
 			title: "Unsoulessed sand"
-			x: -3.0d
+			x: -5.5d
 			y: 4.0d
 		}
 		{
@@ -245,7 +245,7 @@
 				item: "tconstruct:magma_bucket"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -1.0d
 			y: 3.0d
 		}
 		{
@@ -258,7 +258,7 @@
 				item: "kubejs:dirt_water_bucket"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 0.5d
 			y: 2.5d
 		}
 		{
@@ -271,7 +271,7 @@
 				item: "minecraft:calcite"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 0.5d
 			y: 4.0d
 		}
 		{
@@ -284,7 +284,7 @@
 				item: "minecraft:iron_nugget"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -1.0d
 			y: 1.5d
 		}
 		{
@@ -296,8 +296,205 @@
 				id: "6860ED8A69BD3768"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -2.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["587CDA54F432AA4E"]
+			description: ["To forge &e&lRefined Radiance&r&r, one must summon a source of light, bound and channeled. Surely, you already know the ways of such a craft. When this light is drawn forth, let it flow through the Chromatic Compound, and it shall drink deeply of its brilliance, becoming transformed."]
+			icon: {
+				Count: 1
+				id: "create:refined_radiance"
+				tag: { }
+			}
+			id: "65C29BD4394DC2BB"
+			subtitle: " "
+			tasks: [
+				{
+					id: "2F32EED4D10A7532"
+					item: {
+						Count: 1
+						id: "create:refined_radiance"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "462D217E86324342"
+					type: "checkmark"
+				}
+			]
+			title: "&l&eThe Light That Transcends&r&r"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["587CDA54F432AA4E"]
+			description: ["To forge &b&lShadow Steel&r&r, one must descend into the world’s lowest depths, where the fabric of reality no longer shows its face. There, instinct must guide you. Cast the Chromatic Compound into that shapeless veil of dark light, and trust the unseen. In time, it shall return, reborn in a new form."]
+			icon: {
+				Count: 1
+				id: "create:shadow_steel"
+				tag: { }
+			}
+			id: "39F3A334BBA5EDAB"
+			subtitle: " "
+			tasks: [
+				{
+					id: "592D4E1D68812DB7"
+					item: {
+						Count: 1
+						id: "create:shadow_steel"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5949AFF16BCDC6A9"
+					type: "checkmark"
+				}
+			]
+			title: "&l&bThe Darkness That Shapes&r&r"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7FD22E964BC59A3A"]
+			description: ["To forge &l&5Chromatic Compound&r&r, one must venture to the very end of all things, where the forbidden plant grows. Claim it, and in the blazing depths of the Nether, bind it into alloy. Thus shall you obtain the essence needed to weave matter from the unseen threads of reality itself."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "create:chromatic_compound"
+				tag: { }
+			}
+			id: "587CDA54F432AA4E"
+			tasks: [
+				{
+					id: "1C334A11F13A7312"
+					item: {
+						Count: 1
+						id: "create:chromatic_compound"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0DA44C0BF9EC9E04"
+					type: "checkmark"
+				}
+			]
+			title: "&5&lThe Essence Beyond Reality&r&r"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"65C29BD4394DC2BB"
+				"39F3A334BBA5EDAB"
+			]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "createqol:shadow_radiance"
+				tag: { }
+			}
+			id: "4F21ED9C5DEBFAF5"
+			subtitle: "From the Light That Transcends and the Darkness That Shapes, is born the Alloy of Shadow Radiance."
+			tasks: [
+				{
+					id: "72C7C0887591A922"
+					item: {
+						Count: 1
+						id: "createqol:shadow_radiance"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1538E0220D7F4FC6"
+					type: "checkmark"
+				}
+			]
+			title: "&lUnity of&r &eLight&r &land&r &9Dark&r"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0AFE8C5B1E2BE9E4"]
+			icon: {
+				Count: 1
+				id: "createqol:ender_packager"
+				tag: { }
+			}
+			id: "3364ADAE97AF5CEA"
+			tasks: [
+				{
+					id: "33E42D017829996B"
+					item: {
+						Count: 1
+						id: "createqol:ender_packager"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2F2F593D3FF2F408"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4F21ED9C5DEBFAF5"]
+			icon: {
+				Count: 1
+				id: "createqol:shadow_radiance_casing"
+				tag: { }
+			}
+			id: "0AFE8C5B1E2BE9E4"
+			tasks: [
+				{
+					id: "418BEBD99E4EC476"
+					item: {
+						Count: 1
+						id: "createqol:shadow_radiance_casing"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7D91E5A2B0EE09C6"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0AFE8C5B1E2BE9E4"]
+			icon: {
+				Count: 1
+				id: "createqol:empty_stock_manager"
+				tag: { }
+			}
+			id: "47368E97B52D977F"
+			tasks: [
+				{
+					id: "3B8691124F942695"
+					item: {
+						Count: 1
+						id: "createqol:empty_stock_manager"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2FDF139D9DEB13B6"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 7.5d
 		}
 	]
 	title: "&f2a&r Hell Processing"
