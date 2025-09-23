@@ -361,6 +361,7 @@
 			dependencies: ["7FD22E964BC59A3A"]
 			description: ["To forge &l&5Chromatic Compound&r&r, one must venture to the very end of all things, where the forbidden plant grows. Claim it, and in the blazing depths of the Nether, bind it into alloy. Thus shall you obtain the essence needed to weave matter from the unseen threads of reality itself."]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "create:chromatic_compound"
@@ -416,7 +417,7 @@
 			]
 			title: "&lUnity of&r &eLight&r &land&r &9Dark&r"
 			x: 4.0d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0AFE8C5B1E2BE9E4"]
@@ -426,6 +427,7 @@
 				tag: { }
 			}
 			id: "3364ADAE97AF5CEA"
+			size: 2.0d
 			tasks: [
 				{
 					id: "33E42D017829996B"
@@ -441,8 +443,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.0d
-			y: 7.5d
+			x: 4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4F21ED9C5DEBFAF5"]
@@ -468,33 +470,7 @@
 				}
 			]
 			x: 4.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["0AFE8C5B1E2BE9E4"]
-			icon: {
-				Count: 1
-				id: "createqol:empty_stock_manager"
-				tag: { }
-			}
-			id: "47368E97B52D977F"
-			tasks: [
-				{
-					id: "3B8691124F942695"
-					item: {
-						Count: 1
-						id: "createqol:empty_stock_manager"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "2FDF139D9DEB13B6"
-					type: "checkmark"
-				}
-			]
-			x: 5.0d
-			y: 7.5d
+			y: 7.0d
 		}
 	]
 	title: "&f2a&r Hell Processing"

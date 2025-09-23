@@ -492,6 +492,7 @@ function unwantedRecipes(event) {
 
 	// mod
 	event.remove({ mod: "create_factory_logistics"})
+	// se voce esta lendo isso, provavelmente quer adicionar o factory logistics dnv, eu nao botei esse mod pq ele esta bugado, ou seja, voce e um idiota.
 	event.remove({ mod: "gearbox"})
 	event.remove({ mod: 'pipez' })
 	event.remove({ mod: 'davebuildingmod'})
