@@ -5,7 +5,7 @@ autoSuggestions:true
 chatColors:true
 chatLinks:true
 chatLinksPrompt:true
-enableVsync:true
+enableVsync:false
 entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
@@ -22,7 +22,7 @@ toggleSprint:false
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
 mouseSensitivity:0.5
-fov:0.0
+fov:0.5
 screenEffectScale:1.0
 fovEffectScale:1.0
 darknessEffectScale:1.0
@@ -31,8 +31,8 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:1.0
-renderDistance:23
-simulationDistance:20
+renderDistance:14
+simulationDistance:14
 entityDistanceScaling:1.0
 guiScale:2
 particles:0
@@ -42,8 +42,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","file/Stay_True_1.20.zip","resources/BVB-Edited.zip","file/staytrue1.20.1.zip","file/Create-Energistics-1.1.1-mc1.20.1.zip","file/Thermal_Create_1.20.zip","resources/Create_Style_Redstone_Pen.zip","file/FreshAnimations_v1.9.2.zip","file/FA+All_Extensions-v1.4.zip","file/Create New Age Retexture 0.2.1.zip","delightful:overhauls","file/Create Styled Ad Astra NASA Workbench.zip","file/ComputerCreate.zip","file/CreateWaystones v1.0.2.b.zip","file/Create Old Timey Copper - v0.10.zip","file/Tom\u0027s Create Style 1.0.zip","file/Create Back On Track 1.4.zip"]
-incompatibleResourcePacks:["resources/BVB-Edited.zip","file/Thermal_Create_1.20.zip","resources/Create_Style_Redstone_Pen.zip"]
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","file/Stay_True_1.20.zip","resources/BVB-Edited.zip","file/staytrue1.20.1.zip","delightful:overhauls","file/Tom\u0027s Create Style 1.0.zip","file/Create_Ultra_v1.0.zip","file/FreshAnimations_v1.10.1.zip","file/FA+All_Extensions-v1.6.zip","file/Create Back On Track 1.5.zip"]
+incompatibleResourcePacks:["resources/BVB-Edited.zip"]
 lastServer:
 lang:en_us
 soundDevice:""

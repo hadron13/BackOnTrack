@@ -1,10 +1,3 @@
-// priority: 0
-
-// settings.logAddedRecipes = true
-// settings.logRemovedRecipes = true
-// settings.logSkippedRecipes = false
-// settings.logErroringRecipes = true
-
 var seed
 var log = []
 
@@ -39,6 +32,7 @@ let ML = (id, x) => MOD("createmetallurgy", id, x)
 let CFL = (id, x) => MOD("create_factory_logistics", id, x)
 let CP = (id, x) => MOD("chipped", id, x)
 let MOL = (id, x) => MOD("morelights", id, x)
+let CF = (id, x) => MOD("fluid", id, x)
 //
 
 let colors = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
@@ -690,6 +684,7 @@ function unwantedRecipes(event) {
 	event.remove({ id: TC('smeltery/melting/soul/sand') })
 	event.remove({ id: TC('smeltery/casting/scorched/foundry_controller') })
 	event.remove({ id: CI('mixing/coal_coke') })
+	event.remove({ id: CI('crushing/limestone') })
 	event.remove({ id: TE("machine/pyrolyzer/pyrolyzer_logs") })
 	event.remove({ id: TE("devices/rock_gen/rock_gen_cobbled_deepslate") })
 	event.remove({ id: CR("crushing/obsidian") })
@@ -702,7 +697,6 @@ function unwantedRecipes(event) {
 	event.remove({ id: XT("extruding/cobblestone") })
 	event.remove({ id: XT("extruding/stone") })
 	event.remove({ id: CR("milling/compat/ae2/sky_stone_block") })
-	event.remove({ id: XT("extruding/limestone") })
 	event.remove({ id: XT("extruding/scoria") })
 	event.remove({ id: CR("sandpaper_polishing/rose_quartz") })
 	event.remove({ id: CR("sandpaper_polishing/rose_quartz_using_deployer") })
@@ -2017,12 +2011,39 @@ function copperMachine(event) {
 		else
 			event.stonecutting(Item.of(id, amount), 'kubejs:copper_machine')
 	}
+	
+	copper_machine('create:copper_backtank', 1, MC("copper_block"))
+	copper_machine('create:portable_fluid_interface', 2)
+	copper_machine('create:fluid_tank', 3, "#forge:glass")
+	copper_machine('thermal:upgrade_augment_1', 1, MC('redstone'))
+	copper_machine('create:item_drain', 1, MC("iron_bars"))
+	copper_machine('thermal:device_water_gen', 1, MC('bucket'))
+	copper_machine('create:smart_fluid_pipe', 2)
+	copper_machine('create_enchantment_industry:disenchanter', 1, "#create:sandpaper")
+	copper_machine('create:fluid_tank', 3, "#forge:glass")
+    copper_machine(CF('pipette'), 1, CR('mechanical_arm'))
+    copper_machine(CF('centrifugal_pump'), 2, CR('mechanical_pump'))
+	copper_machine(CF('copper_tap'), 1, SP('faucet'))
 
 	event.remove({ output: CR('steam_engine') })
 	event.remove({ output: CR('spout') })
 	event.remove({ output: CR('hose_pulley') })
 	event.remove({ output: TE('dynamo_magmatic') })
 	event.remove({ output: 'create_enchantment_industry:printer' })
+
+	let abstruse_machine = (id, amount, other_ingredient) => {
+		event.remove({ output: id })
+		if (other_ingredient) {
+			event.smithing(Item.of(id, amount), KJ('brass_template'), 'kubejs:enderium_machine', other_ingredient)
+			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:enderium_machine', B: other_ingredient })
+		}
+		else
+			event.stonecutting(Item.of(id, amount), 'kubejs:copper_machine')
+	}
+
+	abstruse_machine(ES('ender_chest'), 2, MC("chest"))
+	abstruse_machine(ES('ender_tank'), 2, CR("fluid_tank"))
+	abstruse_machine(TE('upgrade_augment_3'), 1, KJ('power_mechanism'))
 
 	event.shaped(CR('steam_engine'), [
 		' G ',
@@ -2053,31 +2074,6 @@ function copperMachine(event) {
 		'RHR',
 		' I '
 	], {M: KJ('copper_machine'), H: MC('hopper'), I: MC('iron_block'), R: 'create_enchantment_industry:experience_rotor'}) 
-	
-	copper_machine('create:copper_backtank', 1, MC("copper_block"))
-	copper_machine('create:portable_fluid_interface', 2)
-	copper_machine('create:fluid_tank', 3, "#forge:glass")
-	copper_machine('thermal:upgrade_augment_1', 1, MC('redstone'))
-	copper_machine('create:item_drain', 1, MC("iron_bars"))
-	copper_machine('thermal:device_water_gen', 1, MC('bucket'))
-	copper_machine('create:smart_fluid_pipe', 2)
-	copper_machine('create_enchantment_industry:disenchanter', 1, "#create:sandpaper")
-//	copper_machine(CFL('jar_packager'), 1, CR('packager'))
-//	copper_machine(CFL('factory_fluid_gauge'), 2, CR('stock_link'))
-
-	let abstruse_machine = (id, amount, other_ingredient) => {
-		event.remove({ output: id })
-		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('brass_template'), 'kubejs:enderium_machine', other_ingredient)
-			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:enderium_machine', B: other_ingredient })
-		}
-		else
-			event.stonecutting(Item.of(id, amount), 'kubejs:copper_machine')
-	}
-
-	abstruse_machine(ES('ender_chest'), 2, MC("chest"))
-	abstruse_machine(ES('ender_tank'), 2, CR("fluid_tank"))
-	abstruse_machine(TE('upgrade_augment_3'), 1, KJ('power_mechanism'))
 }
 
 function MetallurgyRecipes(event){
@@ -2343,9 +2339,10 @@ function brassMachine(event) {
 	}
 
 	event.recipes.gearboxPyroprocessing(TC('coin_cast'), MC('gold_ingot'))
+	event.recipes.gearboxPyroprocessing(CR('limestone'), MC('cobblestone'))
 
 	event.recipes.createCompacting(CR("brass_ingot"), Fluid.of(TC('molten_brass'), 90))
-  event.recipes.createCompacting(MC("dripstone_block"), MC('clay'))
+    event.recipes.createCompacting(MC("dripstone_block"), MC('clay'))
 
 	redstoneTransmute(MC("cobblestone"), MC("netherrack"))
 	redstoneTransmute(MC("sand"), MC("red_sand"))

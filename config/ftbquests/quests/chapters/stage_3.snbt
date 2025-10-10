@@ -300,16 +300,6 @@
 					random_bonus: 8
 					type: "item"
 				}
-				{
-					id: "1F72C61EBB816EA6"
-					item: "tfmg:gasoline_engine"
-					type: "item"
-				}
-				{
-					id: "20D181DE06C61358"
-					item: "tfmg:gasoline_engine_back"
-					type: "item"
-				}
 			]
 			shape: "diamond"
 			size: 2.0d
