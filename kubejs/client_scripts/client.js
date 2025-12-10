@@ -260,6 +260,7 @@ JEIEvents.hideItems(event => {
 	event.hide("kubejs:incomplete_engineering_processor")
 	event.hide("kubejs:incomplete_rotation_mechanism")
 	event.hide("kubejs:incomplete_pressure_mechanism")
+	event.hide("kubejs:incomplete_logistic_mechanism")
 	event.hide("kubejs:incomplete_train_mechanism")
 	event.hide("kubejs:incomplete_scorch_mechanism")
 	event.hide("kubejs:incomplete_power_mechanism")
@@ -402,6 +403,7 @@ ItemEvents.tooltip(tooltip => {
 
 	main_assembly('kubejs:rotation_mechanism', "1")
 	bonus_assembly('kubejs:pressure_mechanism', "1A")
+	bonus_assembly('kubejs:cardboard_mechanism', "1A")
 	bonus_assembly('kubejs:train_mechanism', "1B")
 	main_assembly('create:precision_mechanism', "2")
 	bonus_assembly('kubejs:scorch_mechanism', "2A")

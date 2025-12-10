@@ -106,7 +106,7 @@
 					}
 					tic_stats: {
 						"tconstruct:armor_toughness": 4.0f
-						"tconstruct:attack_damage": 11.8125f
+						"tconstruct:attack_damage": 11.137499f
 						"tconstruct:attack_speed": 0.8925f
 						"tconstruct:durability": 5696.2495f
 						"tconstruct:harvest_tier": "minecraft:diamond"

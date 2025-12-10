@@ -100,7 +100,7 @@
 	disableSideInventoryWhitelist = false
 	#If true, modifier crystals and creative slots can be applied to tools in the inventory on right click for operators in survival. If false, this only works for players in creative mode.
 	#This option makes testing of tools and modifiers easier, but may cause misleading assumptions about how these items will function for non-operators.
-	quickApplyToolModifiersSurvival = false
+	quickApplyToolModifiersSurvival = true
 
 #Configuration related to integration with other mods
 [compatability]

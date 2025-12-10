@@ -59,9 +59,6 @@
   "pipez": {
     "pipe": true
   },
-  "create_cultivation": {
-    "cultivation_tank": true
-  },
   "delightful": {
     "crop_progress": true,
     "pie_icons": true,

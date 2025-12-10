@@ -42,6 +42,7 @@ StartupEvents.registry('item', event => {
 
 	mechanism('Rotation')
 	mechanism('Pressure')
+	mechanism('Logistic')
 	mechanism('Train')
 	mechanism('Scorch')
 	mechanism('Explosive')

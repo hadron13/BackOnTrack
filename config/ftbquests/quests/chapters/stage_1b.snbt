@@ -44,8 +44,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -0.5d
-			y: 0.0d
+			x: -4.5d
+			y: 0.25d
 		}
 		{
 			dependencies: ["21F77703B8346D68"]
@@ -65,8 +65,8 @@
 				}
 			]
 			title: "Sap Gaming"
-			x: 0.5d
-			y: 1.5d
+			x: -3.5d
+			y: 1.75d
 		}
 		{
 			dependencies: ["015B5B986DF08EAC"]
@@ -85,8 +85,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
-			y: 2.5d
+			x: -5.0d
+			y: 2.75d
 		}
 		{
 			dependencies: ["7EEC92FEA597272F"]
@@ -105,8 +105,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.5d
-			y: 3.5d
+			x: -3.5d
+			y: 3.75d
 		}
 		{
 			dependencies: ["5322ABEEF5DC2312"]
@@ -125,8 +125,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
-			y: 4.5d
+			x: -5.0d
+			y: 4.75d
 		}
 		{
 			dependencies: ["44F131FCAEC5E551"]
@@ -144,8 +144,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
-			y: 6.0d
+			x: -4.0d
+			y: 6.25d
 		}
 		{
 			dependencies: ["7299A14015C4B195"]
@@ -187,8 +187,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
-			y: 8.0d
+			x: -5.0d
+			y: 8.25d
 		}
 		{
 			dependencies: ["7D872F933F45809B"]
@@ -207,8 +207,8 @@
 				type: "checkmark"
 			}]
 			title: "Secondary Chapters"
-			x: -0.75d
-			y: -2.25d
+			x: -4.75d
+			y: -2.0d
 		}
 	]
 	title: "&f1a&r Sap Gaming"

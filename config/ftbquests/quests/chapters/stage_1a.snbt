@@ -49,7 +49,7 @@
 				type: "item"
 			}]
 			title: "Chapter 1B Complete!"
-			x: -2.0d
+			x: -5.5d
 			y: 4.75d
 		}
 		{
@@ -78,7 +78,7 @@
 				}
 			]
 			title: "Real Gold"
-			x: -0.5d
+			x: -4.0d
 			y: 1.5d
 		}
 		{
@@ -114,7 +114,7 @@
 				}
 			]
 			title: "Gray Vitamin"
-			x: 0.5d
+			x: -3.0d
 			y: 0.5d
 		}
 		{
@@ -147,7 +147,7 @@
 				type: "item"
 			}]
 			title: "Orange Juice"
-			x: -1.5d
+			x: -5.0d
 			y: 0.5d
 		}
 		{
@@ -165,7 +165,7 @@
 				type: "item"
 			}]
 			title: "A Bit of Lava"
-			x: -2.5d
+			x: -6.0d
 			y: 0.5d
 		}
 		{
@@ -191,7 +191,7 @@
 				}
 			]
 			title: "Sturdying"
-			x: -3.5d
+			x: -7.0d
 			y: 1.5d
 		}
 		{
@@ -209,7 +209,7 @@
 				type: "item"
 			}]
 			title: "Sturdy Reinforcement"
-			x: -2.0d
+			x: -5.5d
 			y: 2.5d
 		}
 		{
@@ -232,7 +232,7 @@
 				}
 			]
 			title: "Crushing Looper"
-			x: -4.5d
+			x: -8.0d
 			y: 0.5d
 		}
 		{
@@ -254,7 +254,7 @@
 				}
 			]
 			title: "Crying Glass"
-			x: -3.5d
+			x: -7.0d
 			y: -0.5d
 		}
 		{
@@ -275,7 +275,7 @@
 				type: "item"
 			}]
 			title: "Igneously Vitreous"
-			x: -2.0d
+			x: -5.5d
 			y: -1.5d
 		}
 	]
