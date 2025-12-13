@@ -294,16 +294,14 @@
 		{
 			dependencies: ["727B43FD95C4A512"]
 			description: [
+				"The meteor compound known as skystone possesses many strange but useful properties, one of which allows it to create redstone in an industrial scale, which will be absolutely needed for our next pursuit: the electron tubes"
 				""
-				"The skystone has many strange properties and it can be used to make redstone, which is needed for our target item: electron tubes."
+				"To acquire said compound by fully automated means, we must first find ancient deposits where the largest meteors have been long ago buried under hundreds of blocks of sediment, those will always have an indicator on the surface composed of certus quartz and flowers."
 				""
-				"Some big deposits of skystone are deep underground below rings of certus quartz and flowers."
+				"As for the extraction operation, a core drill shall be used to drill out skystone from the deposit below as opposed to regular mining operations."
 				""
-				"You can get an infinite source of skystone if you do a &6budding sky stone"
 				"{image:kubejs:textures/images/thing.png width:160 height:100 align:1}"
 				"    &aCircles indicating a deposit below"
-				""
-				"A &5Meteor Compass&r can greatly help you locate large skystone ammounts scattered in the overworld."
 			]
 			hide_dependency_lines: true
 			icon: "ae2:sky_stone_block"
@@ -313,11 +311,17 @@
 				{
 					consume_items: false
 					id: "623EF09A5BA6164B"
-					item: "buddingcrystals:budding_budding_skystone"
+					item: "gearbox:core_drill"
 					type: "item"
 				}
 				{
-					id: "7F4C239797691652"
+					count: 128L
+					id: "4BAEDA7D7E5F2E7D"
+					item: { Count: 128, id: "gearbox:core_tube" }
+					type: "item"
+				}
+				{
+					id: "38ABAE686606C105"
 					title: "automated"
 					type: "checkmark"
 				}

@@ -16,6 +16,9 @@ ServerEvents.recipes((bot) => {
 
 	bot.smithing('toms_storage:ts.crafting_terminal', "kubejs:rotation_template",'toms_storage:ts.storage_terminal', MC('crafting_table'))
 
+	bot.stonecutting(Item.of(GB('core_tube'), 3), CR('metal_girder')).id('gearbox:core_tube_manual')
+
+	bot.recipes.createCutting(GB('core_tube', 5), CR('metal_girder'))
 	bot.recipes.createCutting(CR('shaft', 6), CR('andesite_alloy'))
 	bot.recipes.createCutting(KJ('rotation_mechanism_base'), MC('#wooden_slabs'))
 
@@ -100,6 +103,11 @@ ServerEvents.recipes((bot) => {
 		'AMA',
 		' P '
 	], {M: GB('kinetic_machine'), A: CR('andesite_alloy'), I: CR('piston_extension_pole'), P: MC('iron_block')})
+	bot.shaped(GB('core_drill'), [
+		' I ',
+		'PMP',
+		'AAA'
+	], {M: GB('kinetic_machine'), A: TE('drill_head'), I: CR('piston_extension_pole'), P: CR('shaft')})
 	bot.shaped(CR('mechanical_mixer'), [
 		' I ',
 		'AMA',
