@@ -165,6 +165,7 @@
 				""
 				"After cleaning up and briefly scanning for bottlenecks, go ahead and check back with the Overview section."
 			]
+			icon: "kubejs:brass_machine"
 			id: "7FC4D1E69377271D"
 			rewards: [
 				{
@@ -188,12 +189,19 @@
 			]
 			shape: "diamond"
 			size: 2.0d
-			tasks: [{
-				consume_items: false
-				id: "4C32A887DA89A75C"
-				item: "kubejs:brass_machine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "4C32A887DA89A75C"
+					item: "kubejs:brass_machine"
+					type: "item"
+				}
+				{
+					id: "2650AD3F94ECF2A7"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Chapter 2 Complete!"
 			x: 0.0d
 			y: 14.0d
@@ -637,13 +645,21 @@
 		{
 			dependencies: ["71F74B9556AEC85F"]
 			description: ["Dump the waste water by using the &6Hose Pulley&r on any convenient location, such as the sea, a dungeon, or even a friend's house!"]
+			icon: "kubejs:dirt_water_bucket"
 			id: "371B1357CC5112BB"
-			tasks: [{
-				consume_items: false
-				id: "22B2536F2F45606D"
-				item: "kubejs:dirt_water_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "22B2536F2F45606D"
+					item: "kubejs:dirt_water_bucket"
+					type: "item"
+				}
+				{
+					id: "6BA9DC8828FB6355"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Useless Piece of Garbage"
 			x: -3.0d
 			y: 0.0d
@@ -786,11 +802,6 @@
 			subtitle: "Contraption 13-1"
 			tasks: [
 				{
-					id: "73C98B54F65DDDBC"
-					title: "Automated"
-					type: "checkmark"
-				}
-				{
 					id: "79744DCCB52AA7F5"
 					item: {
 						Count: 1
@@ -802,6 +813,11 @@
 					title: "Any #minecraft:logs"
 					type: "item"
 				}
+				{
+					id: "3555FD6EA8F8DCC5"
+					title: "Automated"
+					type: "checkmark"
+				}
 			]
 			title: "Automatic Reforest"
 			x: 2.0d
@@ -811,13 +827,21 @@
 			dependencies: ["727B43FD95C4A512"]
 			description: ["Diorite is composed of many sharp crystals useful for cleansing your rocks, automate it using another Mechanical Extruder."]
 			hide_dependency_lines: true
+			icon: "minecraft:diorite"
 			id: "57D690457B087CAB"
 			subtitle: "Contraption 15-1"
-			tasks: [{
-				id: "635C02FBC8043A75"
-				item: "minecraft:diorite"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "635C02FBC8043A75"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+				{
+					id: "4F2B2E6DF8CAE794"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Last Family Member"
 			x: 1.0d
 			y: 2.0d
@@ -828,13 +852,21 @@
 				"73E7812C04BE5CFF"
 			]
 			description: ["Produce the yellow variant of the tube by &6Spouting&r some gold in it."]
+			icon: "kubejs:golden_tube"
 			id: "6B5785E94F8F0EE1"
 			subtitle: "Contraption 19-4"
-			tasks: [{
-				id: "75CD14717E48EE4D"
-				item: "kubejs:golden_tube"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "75CD14717E48EE4D"
+					item: "kubejs:golden_tube"
+					type: "item"
+				}
+				{
+					id: "4A1D7B266C967C51"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: 1.0d
 			y: 10.5d
 		}
@@ -844,26 +876,42 @@
 				"2167272204B6627B"
 			]
 			description: ["&6Spout&r molten iron over a block of glass to produce a casing for the &otubes&r."]
+			icon: "kubejs:empty_tube"
 			id: "7A4CA5CF1CEFE8CA"
 			subtitle: "Contraption 19-2"
-			tasks: [{
-				id: "28AF30FA008401E5"
-				item: "kubejs:empty_tube"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "28AF30FA008401E5"
+					item: "kubejs:empty_tube"
+					type: "item"
+				}
+				{
+					id: "5C2000D1678B4896"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: 1.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["3549968EE4EE3459"]
 			description: ["Smelt the sand into glass using an &6Encased Fan&r or &6Furnace&r."]
+			icon: "minecraft:glass"
 			id: "16E0349C1C9B14F1"
 			subtitle: "Contraption 19-1"
-			tasks: [{
-				id: "3CA754AF8DACE615"
-				item: "minecraft:glass"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3CA754AF8DACE615"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "287ED3FA986796B9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Vitrified"
 			x: 2.0d
 			y: 7.5d
@@ -872,13 +920,21 @@
 			dependencies: ["727B43FD95C4A512"]
 			description: ["You have already automated red sand in the last chapter, unite both lines and get rid of two problems in a single blow."]
 			hide_dependency_lines: true
+			icon: "minecraft:red_sand"
 			id: "3549968EE4EE3459"
-			tasks: [{
-				icon: "minecraft:red_sand"
-				id: "1B95F129E9BF84EF"
-				item: "minecraft:sand"
-				type: "item"
-			}]
+			tasks: [
+				{
+					icon: "minecraft:red_sand"
+					id: "1B95F129E9BF84EF"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "5E9C04BC5A8DB459"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Sand Distribution"
 			x: 3.5d
 			y: 7.0d
@@ -886,13 +942,21 @@
 		{
 			dependencies: ["3549968EE4EE3459"]
 			description: ["Also wash red sand with an &6Encased Fan&r to filter the gold pellets within, soon after melt them."]
+			icon: "minecraft:gold_nugget"
 			id: "73E7812C04BE5CFF"
 			subtitle: "Contraption 20"
-			tasks: [{
-				id: "5FDBE08E0DFEE803"
-				item: "minecraft:gold_nugget"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5FDBE08E0DFEE803"
+					item: "minecraft:gold_nugget"
+					type: "item"
+				}
+				{
+					id: "607A284FA5833DA9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Gold Rush"
 			x: 3.0d
 			y: 9.5d

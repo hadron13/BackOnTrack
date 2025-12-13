@@ -156,7 +156,7 @@
 				type: "item"
 			}]
 			title: "Inducing: &6Teslas&r!"
-			x: -2.5d
+			x: -3.0d
 			y: 21.5d
 		}
 		{
@@ -540,7 +540,7 @@
 				}
 			]
 			title: "Roughly Copper"
-			x: -1.0d
+			x: -1.5d
 			y: 23.0d
 		}
 		{
@@ -563,7 +563,7 @@
 				}
 			]
 			title: "Soaked Sheet"
-			x: -4.0d
+			x: -4.5d
 			y: 20.0d
 		}
 		{
@@ -585,7 +585,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
+			x: -1.5d
 			y: 20.0d
 		}
 		{
@@ -607,7 +607,7 @@
 				}
 			]
 			title: "Magneticored"
-			x: -4.0d
+			x: -4.5d
 			y: 23.0d
 		}
 		{
@@ -622,7 +622,7 @@
 				type: "item"
 			}]
 			title: "Milling: &6Rolls&r!"
-			x: 2.0d
+			x: 1.5d
 			y: 21.5d
 		}
 		{
@@ -637,7 +637,7 @@
 				type: "item"
 			}]
 			title: "Copper Thinning"
-			x: 2.0d
+			x: 1.5d
 			y: 20.0d
 		}
 		{
@@ -659,7 +659,7 @@
 				}
 			]
 			title: "A Rod"
-			x: 0.5d
+			x: 0.0d
 			y: 23.0d
 		}
 		{
@@ -684,7 +684,7 @@
 				}
 			]
 			title: "Flex Copper"
-			x: 3.5d
+			x: 3.0d
 			y: 23.0d
 		}
 		{
@@ -699,7 +699,7 @@
 				type: "item"
 			}]
 			title: "Desh Catalysis"
-			x: 4.5d
+			x: 4.0d
 			y: 20.0d
 		}
 		{
@@ -720,7 +720,7 @@
 				}
 			]
 			title: "Solifidificationing"
-			x: 5.5d
+			x: 5.0d
 			y: 23.0d
 		}
 		{
@@ -742,7 +742,7 @@
 				}
 			]
 			title: "Carbonic Solid"
-			x: 8.0d
+			x: 7.5d
 			y: 23.0d
 		}
 		{
@@ -757,7 +757,7 @@
 				type: "item"
 			}]
 			title: "Carbonking"
-			x: 8.0d
+			x: 7.5d
 			y: 21.5d
 		}
 		{
@@ -772,7 +772,7 @@
 				item: "minecraft:brick"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 9.0d
 			y: 20.0d
 		}
 		{
@@ -793,7 +793,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 10.0d
+			x: 9.0d
 			y: 23.0d
 		}
 		{
@@ -810,7 +810,7 @@
 				type: "item"
 			}]
 			title: "Polymerizitificationing"
-			x: 5.5d
+			x: 5.0d
 			y: 21.5d
 		}
 		{
@@ -831,7 +831,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.5d
+			x: -6.0d
 			y: 21.5d
 		}
 		{
@@ -852,7 +852,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.5d
+			x: -6.0d
 			y: 23.0d
 		}
 		{
@@ -869,7 +869,7 @@
 				item: "kubejs:molten_desh_bucket"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -6.0d
 			y: 20.0d
 		}
 		{
@@ -1090,7 +1090,7 @@
 				}
 			]
 			title: "Charcoal"
-			x: 8.0d
+			x: 7.5d
 			y: 20.0d
 		}
 		{
@@ -1107,7 +1107,7 @@
 				type: "item"
 			}]
 			title: "Electrolixing"
-			x: -8.5d
+			x: -9.0d
 			y: 21.5d
 		}
 		{
@@ -1130,7 +1130,7 @@
 				}
 			]
 			title: "Walter"
-			x: -7.0d
+			x: -7.5d
 			y: 20.0d
 		}
 		{
@@ -1150,7 +1150,7 @@
 				type: "item"
 			}]
 			title: "Desh Catalysis"
-			x: -10.0d
+			x: -10.5d
 			y: 23.0d
 		}
 		{
@@ -1172,7 +1172,7 @@
 				}
 			]
 			title: "Electrolyte"
-			x: -7.0d
+			x: -7.5d
 			y: 23.0d
 		}
 		{
@@ -1195,7 +1195,7 @@
 				}
 			]
 			title: "Sulfuric Solutions"
-			x: -10.0d
+			x: -10.5d
 			y: 20.0d
 		}
 		{
@@ -1218,7 +1218,7 @@
 				}
 			]
 			title: "Monomers"
-			x: 6.5d
+			x: 6.0d
 			y: 20.0d
 		}
 		{
@@ -1254,7 +1254,7 @@
 				type: "item"
 			}]
 			title: "Ceramilling"
-			x: 10.0d
+			x: 9.0d
 			y: 21.5d
 		}
 		{
@@ -1278,6 +1278,115 @@
 			title: "Plating"
 			x: -2.5d
 			y: 33.5d
+		}
+		{
+			dependencies: ["4FF0EA1027D18993"]
+			icon: "ad_astra:desh_ingot"
+			id: "231115537AFEC5DB"
+			tasks: [
+				{
+					id: "288C21CAC8B66CB9"
+					item: "ad_astra:desh_ingot"
+					type: "item"
+				}
+				{
+					id: "3C5FE29042C17538"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 10.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["743650EB68BECD55"]
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: { }
+			}
+			id: "4FF0EA1027D18993"
+			tasks: [
+				{
+					id: "1EB3DD645C6A08F8"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_1_rocket"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "21460745D0C92BF5"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04451C2A373D6150"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "789B419EABC0D542"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2411D4063BD4C9B8"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "364533D41B6218E9"
+					item: { Count: 2, id: "ad_astra:launch_pad" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "415B82C17D715742"
+					item: { Count: 6, id: "ad_astra:fuel_bucket" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["6C3258881A44FA46"]
+			hide_dependency_lines: true
+			id: "743650EB68BECD55"
+			tasks: [{
+				id: "3CC70F68C6FF590D"
+				item: "ad_astra:steel_engine"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 20.0d
 		}
 	]
 	title: "&f4&r Power Processing"

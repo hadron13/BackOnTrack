@@ -19,6 +19,7 @@
 		{
 			dependencies: ["0B2683CCC179B93F"]
 			description: ["Good job! Now that you have an easy way of acquiring track machines, you can expand your railway network as big as you want! Trains are cool by themselves and even cooler when automated!"]
+			icon: "kubejs:train_machine"
 			id: "38DCA5905F400ADB"
 			rewards: [
 				{
@@ -43,11 +44,18 @@
 			]
 			shape: "diamond"
 			size: 2.0d
-			tasks: [{
-				id: "24FB13A7AE499AFB"
-				item: "kubejs:train_machine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "24FB13A7AE499AFB"
+					item: "kubejs:train_machine"
+					type: "item"
+				}
+				{
+					id: "783257519872A5D0"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Chapter 1B Complete!"
 			x: -5.5d
 			y: 4.75d
@@ -133,19 +141,26 @@
 				}
 			}
 			id: "21870FF88F53BA52"
-			tasks: [{
-				consume_items: false
-				id: "40B42C1909AB68A4"
-				item: {
-					Count: 1
-					id: "tconstruct:copper_can"
-					tag: {
-						fluid: "tconstruct:molten_copper"
+			tasks: [
+				{
+					consume_items: false
+					id: "40B42C1909AB68A4"
+					item: {
+						Count: 1
+						id: "tconstruct:copper_can"
+						tag: {
+							fluid: "tconstruct:molten_copper"
+						}
 					}
+					title: "Copper Can (Molten Copper)"
+					type: "item"
 				}
-				title: "Copper Can (Molten Copper)"
-				type: "item"
-			}]
+				{
+					id: "02FA53051D623509"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Orange Juice"
 			x: -5.0d
 			y: 0.5d
@@ -158,12 +173,20 @@
 				"It may be a good idea to tap the mantle later... and use the trains to bring onto the overworld!"
 			]
 			hide_until_deps_complete: true
+			icon: "minecraft:lava_bucket"
 			id: "070EDAC9772994A6"
-			tasks: [{
-				id: "28901F1975B067E5"
-				item: "minecraft:lava_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "28901F1975B067E5"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "683C088558516F65"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "A Bit of Lava"
 			x: -6.0d
 			y: 0.5d
@@ -202,12 +225,19 @@
 			description: ["Just like Chapter 1A, this can only be automated with the more advanced precision technology, but for now manually crafting it should be more than enough for your transportation needs."]
 			icon: "kubejs:train_mechanism"
 			id: "0B2683CCC179B93F"
-			tasks: [{
-				consume_items: false
-				id: "23AEA057F086B5B1"
-				item: "kubejs:train_mechanism"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "23AEA057F086B5B1"
+					item: "kubejs:train_mechanism"
+					type: "item"
+				}
+				{
+					id: "2B261D8A44226679"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Sturdy Reinforcement"
 			x: -5.5d
 			y: 2.5d
@@ -268,12 +298,19 @@
 			icon: "minecraft:obsidian"
 			id: "043E8CE4F784E8F0"
 			subtitle: "Contraption 9-1"
-			tasks: [{
-				consume_items: false
-				id: "33042C0DE00CBEE3"
-				item: "minecraft:obsidian"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "33042C0DE00CBEE3"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "53E8CE0CA1DF328E"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Igneously Vitreous"
 			x: -5.5d
 			y: -1.5d

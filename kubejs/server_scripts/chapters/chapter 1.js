@@ -8,7 +8,6 @@ let KJ = (id, x) => MOD("kubejs", id, x)
 let F = (id, x) =>  MOD("forge", id, x)
 
 ServerEvents.recipes((bot) => {
-
 	bot.recipes.createMechanicalExtruderExtruding(MC('andesite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('minecraft:polished_andesite').requiredBonks(4)
 	bot.recipes.createMechanicalExtruderExtruding(MC('granite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('minecraft:polished_granite').requiredBonks(4)
 
@@ -18,7 +17,6 @@ ServerEvents.recipes((bot) => {
 
 	bot.stonecutting(Item.of(GB('core_tube'), 3), CR('metal_girder')).id('gearbox:core_tube_manual')
 
-	bot.recipes.createCutting(GB('core_tube', 5), CR('metal_girder'))
 	bot.recipes.createCutting(CR('shaft', 6), CR('andesite_alloy'))
 	bot.recipes.createCutting(KJ('rotation_mechanism_base'), MC('#wooden_slabs'))
 

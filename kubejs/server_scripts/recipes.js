@@ -62,7 +62,6 @@ ServerEvents.recipes(event => {
 	dioriticAndesite(event)
 	electronTube(event)
   enderStuff(event)
-	thermalstuff(event)
 	invarChapter(event)
 	gearboxrecipes(event)
 	andesiteMachine(event)
@@ -408,8 +407,8 @@ function tweaks(event) {
 	tweak_casing('create:andesite_casing', 	'create:andesite_alloy', 'minecraft:logs', true)
 	tweak_casing('create:copper_casing', 	'create:copper_sheet', 	'minecraft:logs', true)
 	tweak_casing('create:brass_casing', 	'create:brass_sheet', 	'minecraft:logs', true)
-    tweak_casing('create:railway_casing', 	'create:sturdy_sheet', 	'minecraft:logs', true)
-    tweak_casing('create:shadow_steel_casing', 	'create:shadow_steel', 	'minecraft:logs', true)
+  tweak_casing('create:railway_casing', 	'create:sturdy_sheet', 	'minecraft:logs', true)
+  tweak_casing('create:shadow_steel_casing', 	'create:shadow_steel', 	'minecraft:logs', true)
 	tweak_casing('create:refined_radiance_casing', 	'create:refined_radiance', 	'minecraft:logs', true)
 	tweak_casing('alloyed:steel_casing', 	'alloyed:steel_sheet', 	'minecraft:logs', true)
 	tweak_casing('kubejs:zinc_casing', 		'createdeco:zinc_sheet', 'minecraft:logs', true)
@@ -663,7 +662,6 @@ function prettierpipes(event) {
 }
 
 function barrels(event) {
-
     event.shaped(CR("chromatic_compound"),[
 		'RSR',
 		'SAS',
@@ -739,23 +737,15 @@ function barrels(event) {
     "tag": "tconstruct:anvil_metal"
   }
 })
-
 }
 
 function rocketScience(event) {
-	let gear = TE("diamond_gear")
-	let plastic = KJ("plastic")
 	let steel = "alloyed:steel_sheet"
-	let machine = AE2("controller")
-	let matrix = KJ("computation_matrix")
-
 	let cool_glass = "thermal:signalum_glass"
 	let nose_cone = "ad_astra:rocket_nose_cone"
 	let fin = "ad_astra:rocket_fin"
-	let frame = "ad_astra:engine_frame"
 	let engine_t1 = "ad_astra:steel_engine"
 	let tank_t1 = "ad_astra:steel_tank"
-	let failed_engine_t1 = KJ("failed_steel_engine")
 
 	event.recipes.gearboxElectrolyzing([Fluid.of(GB("oxygen"), 300), Fluid.of(GB("hydrogen"), 500)], Fluid.of(MC("water"))).energy(1000)
 	// //event.recipes.gearboxCentrifuging([Fluid.of(KJ("oxygen"), 240), Fluid.of(KJ(""), 500)], Fluid.of(MC("water"))).energy(1000)
@@ -874,11 +864,6 @@ function rocketScience(event) {
 		T: tank_t1
 	})
 
-	let smithAndMechCraft = (r, i1, i2) => {
-		event.smithing(r, i1, i2)
-		event.recipes.createMechanicalCrafting(r, "AB", { A: i1, B: i2 })
-	}
-
 	event.shapeless(tank_t1, CI('steel_fluid_tank'));
 
 	event.recipes.createMechanicalCrafting("ad_astra:oxygen_loader", [
@@ -948,7 +933,6 @@ function rocketScience(event) {
 		[Fluid.of(TE("refined_fuel"), 10)],
 		[Fluid.of('tfmg:kerosene', 100)]
 	).heated()
-
 }
 
 function drawersop(event) {
@@ -981,7 +965,6 @@ function drawersop(event) {
 			event.stonecutting(Item.of(half, 2), trim)
 		})
 	})
-
 }
 
 function unify(event) {
@@ -1198,7 +1181,6 @@ function rubberMatters(event) {
 		S: 'createaddition:iron_rod',
 		L: CR('copper_sheet'),
 	})
-
 }
 
 function dioriticAndesite(event) {
@@ -1210,7 +1192,6 @@ function electronTube(event) {
 	event.recipes.createMilling([AE2('certus_quartz_dust')], '#ae2:all_certus_quartz').processingTime(200)
 
 	event.recipes.createDeploying(KJ('diamond_tube'), [KJ('empty_tube'), MC('diamond')])
-
 }
 
 function andesiteMachine(event) {
@@ -1262,8 +1243,8 @@ function copperMachine(event) {
 	copper_machine('create:smart_fluid_pipe', 2)
 	copper_machine('create_enchantment_industry:disenchanter', 1, "#create:sandpaper")
 	copper_machine('create:fluid_tank', 3, "#forge:glass")
-    copper_machine(CF('pipette'), 1, CR('mechanical_arm'))
-    copper_machine(CF('centrifugal_pump'), 2, CR('mechanical_pump'))
+  copper_machine(CF('pipette'), 1, CR('mechanical_arm'))
+  copper_machine(CF('centrifugal_pump'), 2, CR('mechanical_pump'))
 	copper_machine(CF('copper_tap'), 1, SP('faucet'))
 
 	let abstruse_machine = (id, amount, other_ingredient) => {
@@ -1680,9 +1661,6 @@ function invarChapter(event){
 
 	event.recipes.createPressing([TE('invar_plate')], TE('invar_ingot'))
 
-	// event.recipes.createPressing([TE('nickel_ingot')], KJ('nickel_compound'))
-	// event.recipes.thermal.smelter([KJ("nickel_compound"), KJ("nickel_compound")], [MC("copper_ingot"), MC("iron_ingot")])
-
 	let invar_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
 		if (other_ingredient) {
@@ -1753,10 +1731,6 @@ function invarChapter(event){
 			"count": 1
 		}
 	})
-
-}
-
-function thermalstuff(event){
 }
 
 function gearboxrecipes(event){
@@ -1795,7 +1769,6 @@ function zincMachine(event) {
     event.recipes.createFilling(MC("magma_cream"),[Fluid.of(MC("lava"), 250), TC("blood_slime_ball")])
 
     event.recipes.createCompacting(TC("scorched_brick"), [KJ('soulless_sand'), MC("magma_cream"), MC("gravel")] ).heated()
-
 
 	let t = KJ('incomplete_scorch_mechanism')
 	event.recipes.createSequencedAssembly([
@@ -1857,7 +1830,6 @@ function zincMachine(event) {
 }
 
 function oilComplex(event){
-
     event.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 250), [],"minecraft:desert")
 		event.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 300), [],"minecraft:swamp")
 		event.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 100), [],"minecraft:ocean")
@@ -1930,8 +1902,6 @@ function explosiveMachine(event){
 		S: CR('shaft')
 	})
 
-
-
 	let t = KJ('incomplete_explosive_mechanism')
 	event.recipes.createSequencedAssembly([
 		KJ('explosive_mechanism'),
@@ -1961,7 +1931,7 @@ function explosiveMachine(event){
 		"processingTime": 180,
 		"heatRequirement": "heated"
 	})
-		
+
 	event.shaped(KJ('explosive_machine'), [
 			'SSS',
 			'SCS',
@@ -1980,8 +1950,6 @@ function explosiveMachine(event){
 		else
 			event.stonecutting(Item.of(id, amount), 'kubejs:explosive_machine')
 	}
-	
-
 
 	explosive_machine('createbigcannons:cannon_loader', 1, CR('piston_extension_pole'))
 	explosive_machine(BC("impact_fuze"), 6)
@@ -1989,7 +1957,6 @@ function explosiveMachine(event){
 	explosive_machine(BC("proximity_fuze"), 6)
 	explosive_machine(BC("cannon_mount"), 1, CR('mechanical_bearing'))
 	explosive_machine(BC("yaw_controller"), 1, CR('turntable'))
-
 
 	event.replaceInput({output:CI('engine_base')}, CI('heavy_machinery_casing'), KJ('explosive_machine'))
 	event.replaceInput({output:CI('engine_base')}, 'alloyed:steel_ingot', KJ('explosive_machine'))
@@ -2015,7 +1982,6 @@ function explosiveMachine(event){
 		event.recipes.createPressing(t, t),
 	]).transitionalItem(t)
 	.loops(1)
-
 
 }
 
@@ -2137,7 +2103,6 @@ function invarMachine(event) {
 		KJ('power_mechanism'),
 	], KJ('explosive_mechanism'), [
 		event.recipes.createDeploying(t, [t, CR('copper_sheet')]),
-		// event.recipes.createFilling(t, [t, Fluid.of(KJ('plastic'), 30)]),
 		event.recipes.createDeploying(t, [t, KJ('electrolytic_capacitor')]),
 		event.recipes.createDeploying(t, [t, KJ('ceramic_capacitor')]),
 		event.recipes.createDeploying(t, [t, KJ('resistor')]),
@@ -2194,7 +2159,6 @@ function invarMachine(event) {
 		P:KJ('power_machine'),
 		I:"createaddition:iron_rod"
 	})
-
 }
 
 function fluixMachine(event) {
@@ -2225,7 +2189,6 @@ function fluixMachine(event) {
 	event.recipes.createMixing([Fluid.of(KJ('sif4'), 100), AD('desh_ingot')], [TE('apatite'), AD('desh_ingot')])
 	event.recipes.createMixing(Fluid.of(KJ('sif2'), 200), [Fluid.of(KJ('sif4'), 100), AE2('certus_quartz_dust'), KJ('metallurgic_silicon')])
 	event.recipes.createMixing(KJ('silicon_compound'), [MC('sand'), TE('coal_coke')])
-//	event.recipes.gearboxCompressing([AE2("silicon"), TE("apatite")], Fluid.of(KJ("sif2"), 200))
 	event.recipes.gearboxPyroprocessing(KJ('metallurgic_silicon'), KJ("silicon_compound"))
 
 }
@@ -2285,38 +2248,6 @@ function circuits(event) {
 }
 
 function madMaths(event) {
-	event.stonecutting(TE('chiller_ball_cast'), TE('nickel_plate'))
-	event.stonecutting(TE('chiller_rod_cast'), TE('nickel_plate'))
-	event.stonecutting(TE('chiller_ingot_cast'), TE('nickel_plate'))
-
-	let types = ["three", "eight", "plus", "minus", "multiply", "divide"]
-	types.forEach(e => {
-		event.stonecutting(KJ(e + '_cast'), TE('nickel_plate'))
-		event.custom({
-			"type": "tconstruct:casting_table",
-			"cast": {
-				"item": KJ(e + '_cast')
-			},
-			"fluid": {
-				"name": "kubejs:raw_logic",
-				"amount": 1
-			},
-			"result": Item.of(KJ(e)).toResultJson(),
-			"cooling_time": 10
-		})
-		event.custom({
-			"type": "thermal:chiller",
-			"ingredients": [
-				Fluid.of(KJ('raw_logic'), 1).toJson(),
-				Item.of(KJ(e + '_cast')).toJson()
-			],
-			"result": [
-				Item.of(KJ(e)).toResultJson()
-			],
-			"energy": 100,
-		})
-	})
-
 	let meltOrCrucible = (id, out, outAmount) => {
 		event.recipes.thermal.crucible(Fluid.of(out, outAmount), [id]).energy(20)
 		event.custom({
@@ -2331,257 +2262,7 @@ function madMaths(event) {
 		})
 	}
 
-	let alloyAmount = 10
-	let outAmount = 50
-	event.custom({
-		"type": "tconstruct:alloy",
-		"inputs": [
-			{ "name": "kubejs:number_0", "amount": alloyAmount },
-			{ "name": "kubejs:number_1", "amount": alloyAmount },
-			{ "name": "kubejs:number_2", "amount": alloyAmount },
-			{ "name": "kubejs:number_3", "amount": alloyAmount },
-			{ "name": "kubejs:number_4", "amount": alloyAmount },
-			{ "name": "kubejs:number_5", "amount": alloyAmount },
-			{ "name": "kubejs:number_6", "amount": alloyAmount },
-			{ "name": "kubejs:number_7", "amount": alloyAmount },
-			{ "name": "kubejs:number_8", "amount": alloyAmount },
-			{ "name": "kubejs:number_9", "amount": alloyAmount }
-		],
-		"result": {
-			"fluid": "kubejs:matrix",
-			"amount": outAmount
-		},
-		"temperature": 200
-	})
-
 	meltOrCrucible(KJ("plastic"), KJ("plastic"), 90)
-
-	event.custom({
-		"type": "tconstruct:casting_basin",
-		"fluid": {
-			"name": "kubejs:matrix",
-			"amount": 1000
-		},
-		"result": Item.of(KJ("computation_matrix")).toResultJson(),
-		"cooling_time": 20
-	})
-
-	let nums = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-	let ops = [(a, b) => a + b, (a, b) => a - b, (a, b) => a * b, (a, b) => b == 0 ? 'error' : a / b]
-	let opNames = ['plus', 'minus', 'multiply', 'divide']
-
-	for (var a = 0; a < 10; a++) {
-		for (var b = 0; b < 10; b++) {
-			for (var op = 0; op < ops.length; op++) {
-
-				let result = ops[op](a, b)
-				var output;
-
-				if (result == 'error')
-					output = KJ('missingno')
-				else if (result < 0)
-					continue
-				else if (result > 9)
-					continue
-				else if (result % 1 != 0)
-					continue
-				else
-					output = KJ(nums[result])
-
-				event.custom({
-					"type": "create:mechanical_crafting",
-					"pattern": [
-						"AOB"
-					],
-					"key": {
-						"A": {
-							"item": KJ(nums[a])
-						},
-						"O": {
-							"item": KJ(opNames[op])
-						},
-						"B": {
-							"item": KJ(nums[b])
-						}
-					},
-					"result": {
-						"item": output
-					},
-					"acceptMirrored": false
-				})
-			}
-		}
-	}
-
-}
-
-function alchemy(event) {
-	event.recipes.thermal.pyrolyzer([MC("charcoal", 2), Fluid.of(TE('creosote'), 50)], MC("#logs")).energy(1000)
-	event.recipes.thermal.pyrolyzer([TE("coal_coke"), Fluid.of(TE('creosote'), 50)], MC("charcoal")).energy(2000)
-	let t = KJ('incomplete_coke_chunk')
-	event.recipes.createSequencedAssembly([
-		KJ('coke_chunk'),
-	], TE('coal_coke'), [
-		event.recipes.createFilling(t, [t, Fluid.of(MC("water"), 250)]),
-		event.recipes.createCutting(t, t).processingTime(100)
-	]).transitionalItem(t)
-		.loops(2)
-		.id('kubejs:coke_cutting')
-
-	event.recipes.createSplashing([
-		Item.of(KJ("sand_ball")).withChance(0.125)
-	], 'minecraft:sandstone')
-	event.recipes.thermal.bottler(KJ("sand_ball"), [Fluid.of(MC("water"), 50), F("#sand/colorless")]).energy(1000)
-
-	event.custom({
-		"type": "thermal:pulverizer",
-		"ingredient": { "item": "thermal:basalz_rod" },
-		"energy": 800,
-		"result": [
-			{ "item": "thermal:basalz_powder", "chance": 2.5 },
-			{ "item": "thermal:slag", "chance": 0.125 }
-		]
-	})
-
-	event.custom({
-		"type": "thermal:pulverizer",
-		"ingredient": { "item": "thermal:blizz_rod" },
-		"energy": 800,
-		"result": [
-			{ "item": "thermal:blizz_powder", "chance": 2.5 },
-			{ "item": "thermal:niter", "chance": 0.125 }
-		]
-	})
-
-	event.recipes.thermal.crucible(Fluid.of("tconstruct:molten_glass", 1000), F("#sand")).energy(6000)
-	event.recipes.thermal.crucible(Fluid.of("tconstruct:molten_glass", 1000), F("#glass/colorless")).energy(3000)
-	event.recipes.thermal.pulverizer([CR("powdered_obsidian")], F("#obsidian")).energy(7000)
-
-	let blizz = TE("blizz_powder")
-	let basalz = TE("basalz_powder")
-	event.recipes.createEmptying([KJ("rough_sand"), Fluid.of(KJ("fine_sand"), 500)], KJ("sand_ball"))
-	event.recipes.createCrushing([Item.of(blizz, 1), Item.of(blizz, 1).withChance(.5)], TE("blizz_rod"))
-	event.recipes.createCrushing([Item.of(basalz, 1), Item.of(basalz, 1).withChance(.5)], TE("basalz_rod"))
-	event.recipes.createCompacting(TE("ice_charge"), [blizz, blizz, blizz, blizz, blizz, blizz, blizz, blizz])
-	event.recipes.createCompacting(TE("earth_charge"), [basalz, basalz, basalz, basalz, basalz, basalz, basalz, basalz])
-	event.recipes.createCompacting(KJ("silicon_compound"), [Fluid.of(KJ("fine_sand"), 500), KJ("purified_sand"), KJ("coke_chunk")])
-	event.recipes.thermal.smelter([KJ("purified_sand")], [KJ("rough_sand"), TE("earth_charge")]).energy(5000)
-	event.recipes.thermal.smelter([AE2("silicon")],[KJ("silicon_compound"), TE("ice_charge")]).energy(5000)
-	event.recipes.thermal.numismatic_fuel(TE('silver_coin')).energy(100000)
-	event.recipes.thermal.numismatic_fuel(TE('gold_coin')).energy(6400000)
-	let alchemy_mix = (output, catalyst, r1, r2, amount) => {
-		event.recipes.createMixing([Item.of(KJ("substrate_" + output, amount ? amount : 1)), KJ("substrate_" + catalyst)], [KJ("substrate_" + catalyst), KJ("substrate_" + r1, 2), KJ("substrate_" + r2)]).heated()
-	}
-
-	let alchemy_smelt = (output, catalyst, r1, r2, amount) => {
-		event.recipes.thermal.smelter([Item.of(KJ("substrate_" + output, amount ? amount : 1)), KJ("substrate_" + catalyst)], [KJ("substrate_" + r1, 2), KJ("substrate_" + catalyst), KJ("substrate_" + r2)]).energy(4000)
-	}
-
-	alchemy_mix("red", "herbal", "diorite", "andesite")
-	alchemy_mix("orange", "herbal", "granite", "diorite")
-	alchemy_mix("yellow", "herbal", "cobblestone", "granite")
-	alchemy_mix("green", "herbal", "basalt", "cobblestone")
-	alchemy_mix("blue", "herbal", "tuff", "basalt")
-	alchemy_mix("magenta", "herbal", "andesite", "tuff")
-
-	alchemy_smelt("nether", "volatile", "red", "tuff")
-	alchemy_smelt("blaze", "volatile", "orange", "andesite")
-	alchemy_smelt("gunpowder", "volatile", "yellow", "diorite")
-	alchemy_smelt("slime", "volatile", "green", "granite")
-	alchemy_smelt("prismarine", "volatile", "blue", "cobblestone")
-	alchemy_smelt("obsidian", "volatile", "magenta", "basalt")
-
-	alchemy_mix("arcane", "crystal", "nether", "magenta")
-	alchemy_mix("niter", "crystal", "blaze", "red")
-	alchemy_mix("quartz", "crystal", "gunpowder", "orange")
-	alchemy_mix("sulfur", "crystal", "slime", "yellow")
-	alchemy_mix("apatite", "crystal", "prismarine", "green")
-	alchemy_mix("certus", "crystal", "obsidian", "blue")
-
-	alchemy_smelt("lead", "metal", "arcane", "obsidian")
-	alchemy_smelt("copper", "metal", "niter", "nether")
-	alchemy_smelt("gold", "metal", "quartz", "blaze")
-	alchemy_smelt("nickel", "metal", "sulfur", "gunpowder")
-	alchemy_smelt("zinc", "metal", "apatite", "slime")
-	alchemy_smelt("iron", "metal", "certus", "prismarine")
-
-	alchemy_mix("emerald", "gem", "lead", "certus")
-	alchemy_mix("sapphire", "gem", "copper", "arcane")
-	alchemy_mix("diamond", "gem", "gold", "niter")
-	alchemy_mix("lapis", "gem", "nickel", "quartz")
-	alchemy_mix("ruby", "gem", "zinc", "sulfur")
-	alchemy_mix("cinnabar", "gem", "iron", "apatite")
-
-	alchemy_smelt("andesite", "igneous", "emerald", "iron", 20)
-	alchemy_smelt("diorite", "igneous", "sapphire", "lead", 20)
-	alchemy_smelt("granite", "igneous", "diamond", "copper", 20)
-	alchemy_smelt("cobblestone", "igneous", "lapis", "gold", 20)
-	alchemy_smelt("basalt", "igneous", "ruby", "nickel", 20)
-	alchemy_smelt("tuff", "igneous", "cinnabar", "zinc", 20)
-
-	let mundane = (id, outputs) => {
-		let jsonOut = []
-		if (outputs[0] > 0)
-			jsonOut.push({
-				"item": "supplementaries:ash",
-				"count": outputs[0]
-			})
-		if (outputs[1] > 0)
-			jsonOut.push({
-				"item": MC("redstone"),
-				"count": outputs[1]
-			})
-		if (outputs[2] > 0)
-			jsonOut.push({
-				"item": MC("glowstone_dust"),
-				"count": outputs[2]
-			})
-		event.custom({
-			"type": "thermal:centrifuge",
-			"ingredient": {
-				"item": KJ(`failed_alchemy_${id}`)
-			},
-			"result": jsonOut
-		})
-	}
-
-	let i = 0;
-
-	mundane(i++, [4, 0, 0])
-	mundane(i++, [3, 1, 0])
-	mundane(i++, [3, 0, 1])
-	mundane(i++, [2, 2, 0])
-	mundane(i++, [2, 0, 2])
-
-	mundane(i++, [2, 1, 1])
-	mundane(i++, [1, 3, 0])
-	mundane(i++, [1, 0, 3])
-	mundane(i++, [1, 2, 1])
-	mundane(i++, [1, 1, 2])
-
-	mundane(i++, [0, 4, 0])
-	mundane(i++, [0, 0, 4])
-	mundane(i++, [0, 3, 1])
-	mundane(i++, [0, 1, 3])
-	mundane(i++, [0, 2, 2])
-
-	let recompact = (id, id2) => {
-		event.recipes.createCompacting(id2, [id])
-	}
-
-
-
-	recompact(CR("powdered_obsidian"), MC("obsidian"))
-	recompact(TE("diamond_dust"), MC("diamond"))
-	recompact(TE("emerald_dust"), MC("emerald"))
-	recompact(TE("lapis_dust"), MC("lapis_lazuli"))
-	recompact(TE("sulfur_dust"), TE("sulfur"))
-	recompact(TE("apatite_dust"), TE("apatite"))
-	recompact(TE("niter_dust"), TE("niter"))
-	recompact(TE("sapphire_dust"), TE("sapphire"))
-	recompact(TE("ruby_dust"), TE("ruby"))
-
-
 }
 
 function trading(event) {

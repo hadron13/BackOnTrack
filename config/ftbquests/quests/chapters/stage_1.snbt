@@ -45,11 +45,6 @@
 			subtitle: "Contraption 1"
 			tasks: [
 				{
-					id: "0842082756DA73FE"
-					title: "Automated"
-					type: "checkmark"
-				}
-				{
 					id: "2CE84BAB16018E31"
 					item: {
 						Count: 1
@@ -61,6 +56,11 @@
 					only_from_crafting: false
 					title: "Any #minecraft:logs"
 					type: "item"
+				}
+				{
+					id: "5F0E2C373A6A6983"
+					title: "Automated"
+					type: "checkmark"
 				}
 			]
 			title: "Automatic Forest"
@@ -107,11 +107,6 @@
 			subtitle: "Contraption 4-1"
 			tasks: [
 				{
-					id: "7B60357D06FE3ADC"
-					title: "Automated"
-					type: "checkmark"
-				}
-				{
 					id: "53006D3936A3820C"
 					item: {
 						Count: 1
@@ -122,6 +117,11 @@
 					}
 					title: "Any #forge:stripped_logs"
 					type: "item"
+				}
+				{
+					id: "356F4B9A9F29C0E1"
+					title: "Automated"
+					type: "checkmark"
 				}
 			]
 			title: "Log Stripper"
@@ -140,11 +140,6 @@
 			subtitle: "Contraption 4-2"
 			tasks: [
 				{
-					id: "175767726FBCAA8D"
-					title: "Automated"
-					type: "checkmark"
-				}
-				{
 					id: "04D4FB03F3118AFC"
 					item: {
 						Count: 1
@@ -155,6 +150,11 @@
 					}
 					title: "Any #minecraft:planks"
 					type: "item"
+				}
+				{
+					id: "19EB662DCA394703"
+					title: "Automated"
+					type: "checkmark"
 				}
 			]
 			title: "Plank Cutter"
@@ -169,11 +169,6 @@
 			subtitle: "Contraption 4-3"
 			tasks: [
 				{
-					id: "59B260F52722A1FE"
-					title: "Automated"
-					type: "checkmark"
-				}
-				{
 					id: "6D5B894276285C20"
 					item: {
 						Count: 1
@@ -184,6 +179,11 @@
 					}
 					title: "Any #minecraft:slabs"
 					type: "item"
+				}
+				{
+					id: "235B4E5F326BC176"
+					title: "Automated"
+					type: "checkmark"
 				}
 			]
 			title: "Cutter of Cut Planks"
@@ -286,6 +286,7 @@
 				"Before moving on, check back through your factory and search for any major bottlenecks."
 				"It'd be a shame if a really efficient andesitic blend generator is held back only by the zinc not coming in quickly enough."
 			]
+			icon: "gearbox:kinetic_machine"
 			id: "3F45DFEF31838A00"
 			rewards: [
 				{
@@ -309,12 +310,19 @@
 			]
 			shape: "diamond"
 			size: 2.0d
-			tasks: [{
-				consume_items: false
-				id: "2D4BB6A2E22A86E3"
-				item: "gearbox:kinetic_machine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "2D4BB6A2E22A86E3"
+					item: "gearbox:kinetic_machine"
+					type: "item"
+				}
+				{
+					id: "209277DFECF40580"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Chapter 1 Complete!"
 			x: 4.0d
 			y: 14.0d
@@ -585,13 +593,21 @@
 		{
 			dependencies: ["59E4A6163753BC12"]
 			description: ["... and now you have a base for your future machinations."]
+			icon: "kubejs:rotation_mechanism_base"
 			id: "378374260932467B"
 			subtitle: "Contraption 4-4"
-			tasks: [{
-				id: "21AA91C94E91E492"
-				item: "kubejs:rotation_mechanism_base"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "21AA91C94E91E492"
+					item: "kubejs:rotation_mechanism_base"
+					type: "item"
+				}
+				{
+					id: "0A9B1428BC6F7778"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: 1.0d
 			y: 10.5d
 		}

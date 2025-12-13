@@ -8,7 +8,6 @@ let KJ = (id, x) => MOD("kubejs", id, x)
 let F = (id, x) =>  MOD("forge", id, x)
 
 ServerEvents.recipes((bot) => {
-
 	bot.recipes.createCompacting(KJ('rose_quartz_seed'),Fluid.of(TE('redstone'), 500) )
 
 	bot.recipes.createDeploying(CR('electron_tube'), [KJ('empty_tube'), CR('polished_rose_quartz')])
@@ -124,7 +123,4 @@ ServerEvents.recipes((bot) => {
 		'H  ',
 		'HMR'
 	], {M: KJ('brass_machine'), H: CR('brass_sheet'), R: CR('cogwheel'), T: CR('brass_hand')})  
-
-
-
 })

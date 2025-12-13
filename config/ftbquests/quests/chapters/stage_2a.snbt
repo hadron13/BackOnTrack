@@ -19,6 +19,7 @@
 		{
 			dependencies: ["19B36C589AFFBA16"]
 			description: ["Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line."]
+			icon: "kubejs:zinc_machine"
 			id: "7FD22E964BC59A3A"
 			rewards: [
 				{
@@ -42,12 +43,19 @@
 			]
 			shape: "diamond"
 			size: 2.0d
-			tasks: [{
-				consume_items: false
-				id: "563AE30C7584D0D5"
-				item: "kubejs:zinc_machine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "563AE30C7584D0D5"
+					item: "kubejs:zinc_machine"
+					type: "item"
+				}
+				{
+					id: "78714BA1137C5DF1"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Chapter 2A Complete!"
 			x: -2.5d
 			y: 9.0d
@@ -209,26 +217,42 @@
 		{
 			dependencies: ["4A2CE1B515197917"]
 			description: ["The soul separated from the sand can now be further tortured for increased shareholder value."]
+			icon: "kubejs:soul"
 			id: "7B56EFFB4E69C63D"
 			subtitle: "Contraption 23-1"
-			tasks: [{
-				id: "708756B9574CBDE3"
-				item: "kubejs:soul"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "708756B9574CBDE3"
+					item: "kubejs:soul"
+					type: "item"
+				}
+				{
+					id: "6753429E98E580F4"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: -4.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["4A2CE1B515197917"]
 			description: ["Redirect the leftover sand to brick production."]
+			icon: "kubejs:soulless_sand"
 			id: "286EFE73EFDF3FC2"
 			subtitle: "Contraption 22-2"
-			tasks: [{
-				id: "7F8F32F374BD0461"
-				item: "kubejs:soulless_sand"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7F8F32F374BD0461"
+					item: "kubejs:soulless_sand"
+					type: "item"
+				}
+				{
+					id: "160A4B609960F9CB"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			title: "Unsoulessed sand"
 			x: -5.5d
 			y: 4.0d
@@ -239,12 +263,20 @@
 				"47AF956BCE09C5E5"
 				"78F2683FDF9C62D9"
 			]
+			icon: "tconstruct:magma_bucket"
 			id: "0F1B8FCEE040517A"
-			tasks: [{
-				id: "1557308262C43EFF"
-				item: "tconstruct:magma_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1557308262C43EFF"
+					item: "tconstruct:magma_bucket"
+					type: "item"
+				}
+				{
+					id: "7FFE3EC72FCBBF9A"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: -1.0d
 			y: 3.0d
 		}
@@ -252,12 +284,20 @@
 			dependencies: ["054599A626D50945"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
+			icon: "kubejs:dirt_water_bucket"
 			id: "78F2683FDF9C62D9"
-			tasks: [{
-				id: "60B70F80D4638200"
-				item: "kubejs:dirt_water_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "60B70F80D4638200"
+					item: "kubejs:dirt_water_bucket"
+					type: "item"
+				}
+				{
+					id: "340F6CB97B66CD1B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: 2.5d
 		}
@@ -265,12 +305,20 @@
 			dependencies: ["054599A626D50945"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
+			icon: "minecraft:calcite"
 			id: "47AF956BCE09C5E5"
-			tasks: [{
-				id: "74E6284B282E5F78"
-				item: "minecraft:calcite"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "74E6284B282E5F78"
+					item: "minecraft:calcite"
+					type: "item"
+				}
+				{
+					id: "53454C88FF102D09"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: 0.5d
 			y: 4.0d
 		}
@@ -278,12 +326,20 @@
 			dependencies: ["054599A626D50945"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
+			icon: "minecraft:iron_nugget"
 			id: "27A610B4521DECDE"
-			tasks: [{
-				id: "38386E1A9C6C8053"
-				item: "minecraft:iron_nugget"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "38386E1A9C6C8053"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "38E73589848A2E3B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
 			x: -1.0d
 			y: 1.5d
 		}
