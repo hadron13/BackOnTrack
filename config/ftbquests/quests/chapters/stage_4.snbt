@@ -1379,12 +1379,20 @@
 		{
 			dependencies: ["6C3258881A44FA46"]
 			hide_dependency_lines: true
+			icon: "ad_astra:steel_engine"
 			id: "743650EB68BECD55"
-			tasks: [{
-				id: "3CC70F68C6FF590D"
-				item: "ad_astra:steel_engine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3CC70F68C6FF590D"
+					item: "ad_astra:steel_engine"
+					type: "item"
+				}
+				{
+					id: "4E7736531EDEB99E"
+					item: "ad_astra:engine_frame"
+					type: "item"
+				}
+			]
 			x: 10.5d
 			y: 20.0d
 		}
