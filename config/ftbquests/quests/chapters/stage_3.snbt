@@ -570,6 +570,18 @@
 			x: -2.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["278B95FF7159DCFC"]
+			hide_dependency_lines: true
+			id: "0EB428DE8C4B3DFF"
+			subtitle: "esse cap sera liberado em breve"
+			tasks: [{
+				id: "0E8A4C9D98ECF8AB"
+				type: "custom"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
 	]
 	title: "&f3&r Astounding Explosions"
 }

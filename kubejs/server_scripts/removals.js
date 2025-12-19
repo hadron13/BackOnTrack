@@ -37,6 +37,7 @@ const removeByMod = [
   'trashcans',
   'gearbox',
   'toms_storage',
+  'tfmg',
   'create_factory_logistics', //voce quer re-colocar o factory logistics, eu nao botei esse mod pq ele esta bugado, ou seja, voce e um idiota se apagar isso.
 ];
 

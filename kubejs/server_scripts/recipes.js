@@ -864,7 +864,7 @@ function rocketScience(event) {
 		T: tank_t1
 	})
 
-	event.shapeless(tank_t1, CI('steel_fluid_tank'));
+	event.shapeless(tank_t1, GB('steel_fluid_tank'));
 
 	event.recipes.createMechanicalCrafting("ad_astra:oxygen_loader", [
 		'AAA',
@@ -1140,33 +1140,33 @@ function rubberMatters(event) {
 
 	event.shapeless(TE("cured_rubber", 3), [MC("slime_ball"), TE("sulfur")])
 
-	event.recipes.gearboxCompressing(TE("cured_rubber", 2), Fluid.of(TE("resin"), 500)).heated()
-	event.recipes.gearboxCompressing(TE("cured_rubber"), 	Fluid.of(TE("resin"), 500))
+	event.recipes.gearboxCompressing(TE("cured_rubber", 2), Fluid.of(GB("resin"), 500)).heated()
+	event.recipes.gearboxCompressing(TE("cured_rubber"), 	Fluid.of(GB("resin"), 500))
 
 	let sap_tree = (mod, fluid, type) =>{
 		event.recipes.gearboxSapping(fluid, [mod + ":" + type + "_log", mod + ":" +  type + "_leaves"])
 	}
 
-	sap_tree('minecraft', Fluid.of(TE('resin'), 20), "oak")
-	sap_tree('minecraft', Fluid.of(TE('resin'), 70), "spruce")
-	sap_tree('minecraft', Fluid.of(TE('resin'), 30), "birch")
-	sap_tree('minecraft', Fluid.of(TE('resin'), 70), "jungle")
-	sap_tree('minecraft', Fluid.of(TE('resin'), 40), "acacia")
-	sap_tree('minecraft', Fluid.of(TE('resin'), 60), "dark_oak")
+	sap_tree('minecraft', Fluid.of(GB('resin'), 20), "oak")
+	sap_tree('minecraft', Fluid.of(GB('resin'), 70), "spruce")
+	sap_tree('minecraft', Fluid.of(GB('resin'), 30), "birch")
+	sap_tree('minecraft', Fluid.of(GB('resin'), 70), "jungle")
+	sap_tree('minecraft', Fluid.of(GB('resin'), 40), "acacia")
+	sap_tree('minecraft', Fluid.of(GB('resin'), 60), "dark_oak")
 
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 50), "redwood")
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 60), "fir")
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 50), "jacaranda")
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 70), "mahogany")
-	sap_tree('biomesoplenty', Fluid.of(TE('resin'), 10), "dead")
+	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 50), "redwood")
+	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 60), "fir")
+	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 50), "jacaranda")
+	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 70), "mahogany")
+	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 10), "dead")
 	sap_tree('biomesoplenty', Fluid.of(MC('lava'), 15), "hellbark")
 	sap_tree('biomesoplenty', Fluid.of(MC('water'), 100), "willow")
 	sap_tree('biomesoplenty', Fluid.of(KJ('dirt_water'), 100), "palm")
 	sap_tree('biomesoplenty', Fluid.of(('create_enchantment_industry:ink'), 50), "umbran")
 	sap_tree('biomesoplenty', Fluid.of(('create_enchantment_industry:experience'), 1), "magic")
 
-	event.recipes.gearboxSapping(Fluid.of(TE("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:white_cherry_leaves"])
-	event.recipes.gearboxSapping(Fluid.of(TE("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:pink_cherry_leaves"])
+	event.recipes.gearboxSapping(Fluid.of(GB("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:white_cherry_leaves"])
+	event.recipes.gearboxSapping(Fluid.of(GB("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:pink_cherry_leaves"])
 
 	event.recipes.gearboxSapping(Fluid.of(TC("earth_slime"), 20), [TC("greenheart_log"), TC("earth_slime_leaves")])
 	event.recipes.gearboxSapping(Fluid.of(TC("sky_slime"), 20),   [TC("skyroot_log"), TC("sky_slime_leaves")])
@@ -1322,15 +1322,6 @@ function MetallurgyRecipes(event){
 
 	event.shapeless(CR("white_sail"), CR("sail_frame"))
 
-	event.recipes.tfmg.distillation(Fluid.of(KJ("desalted_oil"), 250), [
-		Fluid.of(CI("heavy_oil"), 120), 
-		Fluid.of(CI("diesel"), 90),
-		Fluid.of(CI("kerosene"), 70),
-		Fluid.of(CI("naphtha"), 70),
-		Fluid.of(CI("gasoline"), 90),
-		Fluid.of(CI("lpg"), 70)
-	])
-
 	event.custom({
 		"type": "tconstruct:casting_table",
 		"cast": { "item": TC("ingot_cast") },
@@ -1348,7 +1339,7 @@ function MetallurgyRecipes(event){
 
 	event.recipes.createCrushing(MC('redstone', 5), CR('polished_rose_quartz'))
 
-	event.recipes.createMechanicalCrafting(CI('steel_fluid_tank', 1), "AB", { A: CR('fluid_tank'), B: AL('steel_sheet') })
+	event.recipes.createMechanicalCrafting(GB('steel_fluid_tank', 1), "AB", { A: CR('fluid_tank'), B: AL('steel_sheet') })
 
 	let inscriber = (type, fluid, amount, time) => {
 	event.custom({

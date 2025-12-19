@@ -99,7 +99,7 @@ ServerEvents.recipes((bot) => {
 	grow(KJ("small_rose_crystal"), KJ('growing_small_rose_crystal'), CR('polished_rose_quartz'))
 
   bot.smithing(PP('item_terminal'), KJ('brass_template'), 'toms_storage:ts.storage_terminal', KJ('brass_machine'))
-	bot.smithing(CI('steel_fluid_tank'), KJ('brass_template'), CR('fluid_tank'), AL('steel_sheet'))
+	bot.smithing(GB('steel_fluid_tank'), KJ('brass_template'), CR('fluid_tank'), AL('steel_sheet'))
 
 	bot.shapeless(CR('fluid_tank'), [CC('fluid_vessel')])
 	bot.shapeless(CR('item_vault'), [CC('item_silo')])
@@ -108,10 +108,7 @@ ServerEvents.recipes((bot) => {
 		'SSS',
 		'SCS',
 		'SSS'
-	], {
-		C: CR('brass_casing'),
-		S: CR('precision_mechanism')
-	})
+	], {C: CR('brass_casing'), S: CR('precision_mechanism')})
 	bot.shaped(CR('mechanical_crafter', 3), [
 		' R ',
 		'HTH',

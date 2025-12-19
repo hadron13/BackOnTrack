@@ -251,6 +251,11 @@ JEIEvents.hideItems(event => {
 	event.hide('tfmg:electrode_holder')
 	event.hide('tfmg:aluminum_fluid_tank')
 	event.hide('tfmg:cast_iron_fluid_tank')
+	event.hide('tfmg:steel_fluid_tank')
+	event.hide('tfmg:steel_distillation_output')
+	event.hide('tfmg:steel_distillation_controller')
+	event.hide('tfmg:industrial_pipe')
+	event.hide('tfmg:steel_pipe')
 
 	event.hide("kubejs:growing_rose_seed")
 	event.hide("kubejs:growing_tiny_rose_crystal")
@@ -297,6 +302,7 @@ JEIEvents.hideItems(event => {
 
 	event.hide('@trashcans')
 	event.hide('@pipez')
+	event.hide('@tfmg')
 	event.hide('@toms_storage')
 	event.hide('@itemfilters')
 	event.hide('@davebuildingmod')
@@ -325,13 +331,13 @@ JEIEvents.addItems(event => {
   event.add(item)
 	}
 tfmg("cast_iron_ingot")
-tfmg("steel_fluid_tank")
-tfmg("steel_distillation_output")
-tfmg("steel_distillation_controller")
-tfmg("industrial_pipe")
-tfmg("steel_pipe")
-
-
+tfmg("naphtha_bucket")
+tfmg("gasoline_bucket")
+tfmg("kerosene_bucket")
+tfmg("diesel_bucket")
+tfmg("lpg_bucket")
+tfmg("heavy_oil_bucket")
+tfmg("nitrate_dust")
 
 	event.add('buddingcrystals:budding_budding_skystone')
 	event.add('buddingcrystals:budding_skystone_cluster')
