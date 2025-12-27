@@ -16,6 +16,8 @@
 	#Disables small ore veins of a certain type
 	#Allowed Values: NONE, VANILLA, CUSTOM, MODDED, ALL, ALL_BUT_CUSTOM, ALL_BUT_VANILLA, ALL_BUT_MODDED
 	disabledVeins = "NONE"
+	#If enabled, all non-ore veins such as andesite, granite, diorite, dirt, etc. will also be affected by these settings
+	includeNonOreVeins = false
 
 [Indicators]
 	#Enables/disables all above-ground indicators
@@ -30,4 +32,8 @@
 	#To see available features, use the '/place feature' command
 	#
 	disabledFeatures = []
+
+[Stripper]
+	#Automatically dress previously stripped chunks before unloading them to prevent data loss
+	dressUnloadedChunks = true
 

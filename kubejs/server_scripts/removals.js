@@ -216,6 +216,7 @@ const recipeTypesToRemove = [
   "tconstruct:entity_melting",
   TE("tree_extractor"),
   CI("distillation"),
+  GB("distilling"),
   TE("sawmill"),
   TE("centrifuge"),
   AE2("inscriber"),

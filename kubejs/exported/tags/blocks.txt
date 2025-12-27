@@ -20126,7 +20126,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Oct
 - alloyed:steel_ladder
 - alloyed:steel_catwalk
 - alloyed:steel_catwalk_stairs
-- alloyed:steel_sheet_vertical_slab
 - alloyed:steel_mesh_fence
 - create:schematicannon
 - create:schematic_table

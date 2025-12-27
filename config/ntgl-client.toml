@@ -60,7 +60,7 @@ buttonAlignment = "RIGHT"
 		#The percentage of the maximum life that must pass before particles begin fading away. 0 makes the particles always fade and 1 removes facing completely
 		#Range: 0.0 ~ 1.0
 		bulletHoleFadeThreshold = 0.98
-		#If true, blood will spawn from entities that are hit from a ammo
+		#If true, blood will spawn from entities that are hit from a projectile
 		enableBlood = true
 		enableDeathFX = true
 		#The maximum distance impact particles can be seen from the player

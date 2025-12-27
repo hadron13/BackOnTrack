@@ -3,22 +3,22 @@
 
 	#Properties relating to gameplay
 	[common.gameplay]
-		#The extra amount to expand an entity's bounding box when checking for ammo collision. Setting this value higher will make it easier to hit entities
+		#The extra amount to expand an entity's bounding box when checking for projectile collision. Setting this value higher will make it easier to hit entities
 		#Range: 0.0 ~ 1.0
 		growBoundingBoxAmount = 0.3
 		#Enables the check for head shots for players. Projectiles that hit the head of a player will have increased damage.
 		enableHeadShots = true
-		#The value to multiply the damage by if ammo hit the players head
+		#The value to multiply the damage by if projectile hit the players head
 		#Range: 1.0 ~ 1.7976931348623157E308
 		headShotDamageMultiplier = 1.25
-		#The value to multiply the damage by if ammo is a critical hit
+		#The value to multiply the damage by if projectile is a critical hit
 		#Range: 1.0 ~ 1.7976931348623157E308
 		criticalDamageMultiplier = 1.5
-		#If true, projectiles will ignore leaves when checking for collision
+		#If true, ammoData will ignore leaves when checking for collision
 		ignoreLeaves = true
-		#If true, projectiles will cause knockback when an entity is hit. By default this is set to true to match the behaviour of Minecraft.
+		#If true, ammoData will cause knockback when an entity is hit. By default this is set to true to match the behaviour of Minecraft.
 		enableKnockback = true
-		#Sets the strength of knockback when shot by a bullet ammo. Knockback must be enabled for this to take effect. If value is equal to zero, knockback will use default minecraft value
+		#Sets the strength of knockback when shot by a bullet projectile. Knockback must be enabled for this to take effect. If value is equal to zero, knockback will use default minecraft value
 		#Range: 0.0 ~ 1.0
 		knockbackStrength = 0.15
 		#If true, improves the accuracy of weapons by considering the ping of the player. This has no affect on singleplayer. This will add a little overhead if enabled.
@@ -35,10 +35,12 @@
 			fragileBlockBreakChance = 1.0
 			#If true, allows guns enchanted with Fire Starter to light and spread fires on blocks
 			setFireToBlocks = true
+			#If true, allows projectile explosions to destroy blocks
+			enableBlockRemovalOnExplosions = true
 
 	#Properties relating to network
 	[common.network]
-		#The distance players need to be within to be able to track new projectiles trails. Higher values means you can see projectiles from that start from further away.
+		#The distance players need to be within to be able to track new ammoData trails. Higher values means you can see ammoData from that start from further away.
 		#Range: 1.0 ~ 1.7976931348623157E308
 		projectileTrackingRange = 200.0
 
@@ -53,22 +55,6 @@
 		unsilencedRange = 20.0
 		#Any mobs of defined will not aggro on shooters
 		exemptMobs = []
-
-	#Properties relating to missiles
-	[common.missiles]
-		#If enabled, allows block removal on explosions
-		enableBlockRemoval = false
-		#The max distance which the explosion is effective to
-		#Range: 0.0 ~ 1.7976931348623157E308
-		explosionRadius = 5.0
-
-	#Properties relating to grenades
-	[common.grenades]
-		#If enabled, allows block removal on explosions
-		enableBlockRemoval = false
-		#The max distance which the explosion is effective to
-		#Range: 0.0 ~ 1.7976931348623157E308
-		explosionRadius = 5.0
 
 	#Properties relating to stun grenades
 	[common.stun_grenades]
@@ -121,7 +107,7 @@
 				#If true, the effect is only applied if the line between the eyes and the grenade does not intersect any non-liquid blocks with an opacity greater than 0.
 				raytraceOpaqueBlocks = false
 
-	#Properties relating to ammo spread
+	#Properties relating to projectile spread
 	[common.projectile_spread]
 		#The amount of time in milliseconds before logic to apply spread is skipped. The value indicates a reasonable amount of time before a weapon is considered stable again.
 		#Range: 0 ~ 1000
