@@ -11,22 +11,22 @@ let AL = (id, x) => MOD("alloyed", id, x)
 ServerEvents.recipes((bot) => {
 
   bot.recipes.gearboxDistilling([
-    Fluid.of("tfmg:lpg", 160), 
+    Fluid.of("kubejs:lpg", 160), 
     Fluid.of("kubejs:light_oil", 120)], 
     Fluid.of("kubejs:desalted_oil", 375
     )).mode("distil_flash")
 
   bot.recipes.gearboxDistilling([
     Fluid.of("kubejs:oil_residue", 120),
-    Fluid.of("tfmg:naphtha", 105),
-    Fluid.of("tfmg:gasoline", 120),
-    Fluid.of("tfmg:kerosene", 90)],
+    Fluid.of("kubejs:naphtha", 105),
+    Fluid.of("kubejs:gasoline", 120),
+    Fluid.of("kubejs:kerosene", 90)],
     Fluid.of("kubejs:light_oil", 240
     )).mode("distil_atmospheric")
 
   bot.recipes.gearboxDistilling([
-    Fluid.of("tfmg:diesel", 130), 
-    Fluid.of("tfmg:heavy_oil", 110)], 
+    Fluid.of("kubejs:diesel", 130), 
+    Fluid.of("kubejs:heavy_oil", 110)], 
     Fluid.of("kubejs:oil_residue", 240
     )).mode("distil_vacuum")
 
@@ -38,27 +38,6 @@ ServerEvents.recipes((bot) => {
   bot.recipes.gearboxElectrolyzing(Fluid.of(KJ("desalted_oil"), 50), Fluid.of(KJ("oil_brine"), 100)).energy(100)
 
   bot.recipes.createMixing(Fluid.of(BC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), MC('charcoal')]).heated()
-
-// 	bot.custom({
-//   "type": "gearbox:distilling",
-//   "mode": "distil_flash",
-//   "ingredients": [
-//     {"fluid": KJ("desalted_oil"),
-//       "amount": 250}], "results": [
-//     {"fluid": CI("heavy_oil"),
-//       "amount": 120},
-//     {"fluid": CI("diesel"),
-//       "amount": 90},
-//     {"fluid": CI("kerosene"),
-//       "amount": 70},
-//     {"fluid": CI("naphtha"),
-//       "amount": 70},
-//     {"fluid": CI("gasoline"),
-//       "amount": 90},
-//     {"fluid": CI("lpg"),
-//       "amount": 70}],
-//   "processingTime": 60
-// })
 
   bot.shaped(GB('distillation_output'), [
 		'SSS',

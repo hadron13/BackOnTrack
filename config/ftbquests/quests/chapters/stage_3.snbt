@@ -295,13 +295,13 @@
 		}
 		{
 			description: ["Niter, also known as saltpeter or potassium nitrate, can be unrealistically taken from dirt and make most of the gunpowder."]
-			icon: "tfmg:nitrate_dust"
+			icon: "thermal:niter_dust"
 			id: "7B86CDFAEE2EAD0D"
 			subtitle: "Contraption 34-2"
 			tasks: [
 				{
 					id: "5659ACE410EC99BD"
-					item: "tfmg:nitrate_dust"
+					item: "thermal:niter_dust"
 					type: "item"
 				}
 				{
@@ -320,13 +320,13 @@
 				""
 				"It can also be used by smaller engines for rotational power."
 			]
-			icon: "tfmg:gasoline_bucket"
+			icon: "kubejs:gasoline_bucket"
 			id: "3BA0BFC354BA4785"
 			subtitle: "Contraption 42-2"
 			tasks: [
 				{
 					id: "0A7680DD957B772C"
-					item: "tfmg:gasoline_bucket"
+					item: "kubejs:gasoline_bucket"
 					type: "item"
 				}
 				{
@@ -342,13 +342,13 @@
 		{
 			dependencies: ["4AC20A13D7706FA8"]
 			description: ["Diesel comes in the lower half of the primary distilation outputs, and as a byproduct of heavy oil distilling."]
-			icon: "tfmg:diesel_bucket"
+			icon: "kubejs:diesel_bucket"
 			id: "460B7037B1081997"
 			subtitle: "Contraption 42-3"
 			tasks: [
 				{
 					id: "2BD1D04CF2B31F94"
-					item: "tfmg:diesel_bucket"
+					item: "kubejs:diesel_bucket"
 					type: "item"
 				}
 				{
@@ -465,30 +465,30 @@
 		{
 			dependencies: ["278B95FF7159DCFC"]
 			hide_dependency_lines: true
-			icon: "tfmg:steel_distillation_controller"
+			icon: "gearbox:distillation_controller"
 			id: "38D3FEF4C99B1ABB"
 			tasks: [
 				{
 					count: 48L
 					id: "62558AF18EB266A5"
-					item: "tfmg:steel_fluid_tank"
+					item: "gearbox:steel_fluid_tank"
 					type: "item"
 				}
 				{
 					count: 6L
 					id: "6984B75B06F74F79"
-					item: "tfmg:steel_distillation_output"
+					item: "gearbox:distillation_output"
 					type: "item"
 				}
 				{
 					id: "458B80065DCFDF5A"
-					item: "tfmg:steel_distillation_controller"
+					item: "gearbox:distillation_controller"
 					type: "item"
 				}
 				{
-					count: 5L
+					count: 25L
 					id: "1345CA892656D8F7"
-					item: "tfmg:industrial_pipe"
+					item: "gearbox:steel_fluid_pipe"
 					type: "item"
 				}
 				{
@@ -553,12 +553,12 @@
 		}
 		{
 			dependencies: ["4AC20A13D7706FA8"]
-			icon: "tfmg:lpg_bucket"
+			icon: "kubejs:lpg_bucket"
 			id: "33CD994BF5DE87F0"
 			tasks: [
 				{
 					id: "0E3580DEFE383E19"
-					item: "tfmg:lpg_bucket"
+					item: "kubejs:lpg_bucket"
 					type: "item"
 				}
 				{
