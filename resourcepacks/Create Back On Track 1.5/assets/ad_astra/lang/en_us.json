@@ -1,6 +1,8 @@
 {
 
 	"item.ad_astra.steel_engine": "Brass Engine",
-	"item.ad_astra.engine_frame": "Engine Chamber"
+	"item.ad_astra.engine_frame": "Engine Chamber",
+	"item.ad_astra.fuel_bucket": "Bucket of RP-1",
+	"fluid.ad_astra.fuel": "RP-1"
 
 }
