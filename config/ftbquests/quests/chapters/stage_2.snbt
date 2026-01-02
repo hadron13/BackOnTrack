@@ -83,7 +83,7 @@
 				"06B061C0EE94BC90"
 				"7A4CA5CF1CEFE8CA"
 			]
-			description: ["Insert the red gem carefully with a deployer to create this funny tube that's incredibly useful."]
+			description: ["Insert the red gem carefully with a &6Deployer&r to create this funny tube that's incredibly useful."]
 			icon: "create:electron_tube"
 			id: "5351AF6CA73CB8E0"
 			subtitle: "Contraption 19-3"
@@ -137,7 +137,7 @@
 				"5351AF6CA73CB8E0"
 				"6B5785E94F8F0EE1"
 			]
-			description: ["Bringing together the Tubes and Rotation Mechanisms using a row of Deployers concludes your second Assembly Line."]
+			description: ["Bringing together the Tubes and Rotation Mechanisms using a row of &6Deployers&r and a &6Mechanizing Press&r concludes your second Assembly Line."]
 			icon: "create:precision_mechanism"
 			id: "19715EBCBBA1B4AD"
 			subtitle: "Contraption 21"
@@ -302,7 +302,7 @@
 		{
 			dependencies: ["727B43FD95C4A512"]
 			description: [
-				"The meteor compound known as skystone possesses many strange but useful properties, one of which allows it to create redstone in an industrial scale, which will be absolutely needed for our next pursuit: the electron tubes"
+				"The meteor compound known as skystone possesses many strange but useful properties, one of which allows it to create redstone in an industrial scale, which will be required for our next pursuit: the &l&celectron tubes&r"
 				""
 				"To acquire said compound by fully automated means, we must first find ancient deposits where the largest meteors have been long ago buried under hundreds of blocks of sediment, those will always have an indicator on the surface composed of certus quartz and flowers."
 				""
@@ -458,7 +458,7 @@
 				"54324AF50D307D62"
 				"1093C4FC660FDECA"
 			]
-			description: ["The abrasive approach of diorite dust finally turns the skystone into lab-grade skystone by using a &6Mechanical Mixer&r."]
+			description: ["The abrasive approach of diorite dust finally turns the skystone into lab purity grade skystone by using a &6Mechanical Mixer&r."]
 			icon: "kubejs:pure_sky_chunks"
 			id: "05995BA72CAA9BE8"
 			subtitle: "Contraption 14-4"
@@ -621,7 +621,7 @@
 		}
 		{
 			dependencies: ["05995BA72CAA9BE8"]
-			description: ["At last grind it once more to obtain the finest, the purest and most unstable sample yet, it yearns for reaction."]
+			description: ["At last grind it again in a &6Millstone&r to obtain the finest, the purest and most unstable sample yet, it yearns for reaction."]
 			icon: "ae2:sky_dust"
 			id: "4381D03BD83785B4"
 			subtitle: "Contraption 14-5"

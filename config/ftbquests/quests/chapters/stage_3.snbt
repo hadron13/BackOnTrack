@@ -13,7 +13,7 @@
 		x: 0.5d
 		y: -10.0d
 	}]
-	order_index: 7
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -48,11 +48,11 @@
 		}
 		{
 			dependencies: [
-				"6369DB891302D710"
 				"4507B3C7E43DC447"
 				"53708965E1F0A88E"
 				"06BD2FC52B826516"
 				"25A4B65AB272EB74"
+				"47FDABBF3680A2B4"
 			]
 			description: ["Assemble the final mechanism."]
 			icon: "kubejs:explosive_mechanism"
@@ -98,53 +98,27 @@
 			]
 			shape: "diamond"
 			size: 2.0d
-			tasks: [
-				{
-					consume_items: false
-					id: "3A3463FEE66D098A"
-					item: "kubejs:explosive_machine"
-					type: "item"
-				}
-				{
-					id: "7A194578829237BE"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "7A194578829237BE"
+				title: "Automated"
+				type: "checkmark"
+			}]
 			title: "Chapter 3 Complete!"
 			x: 0.0d
 			y: 20.0d
 		}
 		{
-<<<<<<< Updated upstream
-			dependencies: ["278B95FF7159DCFC"]
-=======
-<<<<<<< Updated upstream
-			dependencies: ["278B95FF7159DCFC"]
-=======
 			dependencies: ["5A045E7A94C03FC0"]
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-			description: ["It takes a very long time for each chamber, but for each chamber you can gather 48 rings, and assemble 48 mechanisms, or 6 machines."]
 			hide_dependency_lines: true
 			icon: "kubejs:steel_ring"
-			id: "6369DB891302D710"
-			subtitle: "Contraption 40-2"
-<<<<<<< Updated upstream
-			tasks: [
-				{
-					id: "085F416C9C7F07DD"
-					item: "kubejs:steel_ring"
-					type: "item"
-				}
-				{
-					id: "1000DB1D300FFB1C"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			x: 2.5d
-			y: 7.5d
+			id: "47FDABBF3680A2B4"
+			tasks: [{
+				id: "085F416C9C7F07DD"
+				item: "kubejs:steel_ring"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
@@ -169,55 +143,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4AC20A13D7706FA8"]
-			description: [
-				"Gasoline sits in the middle of the distilation outputs."
-				""
-				"It can also be used by smaller engines for rotational power."
-			]
-			icon: "kubejs:gasoline_bucket"
-			id: "3BA0BFC354BA4785"
-			subtitle: "Contraption 42-2"
-			tasks: [
-				{
-					id: "0A7680DD957B772C"
-					item: "kubejs:gasoline_bucket"
-					type: "item"
-				}
-				{
-					id: "3586B652B6F771EA"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Gas "
-			x: -2.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["4AC20A13D7706FA8"]
-			description: ["Diesel comes in the lower half of the primary distilation outputs, and as a byproduct of heavy oil distilling."]
-			icon: "kubejs:diesel_bucket"
-			id: "460B7037B1081997"
-			subtitle: "Contraption 42-3"
-			tasks: [
-				{
-					id: "2BD1D04CF2B31F94"
-					item: "kubejs:diesel_bucket"
-					type: "item"
-				}
-				{
-					id: "6BA1BFB5D5B41D50"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Diesel"
-			x: -1.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["33CD994BF5DE87F0"]
 			description: ["Another byproduct of the heavy oil distilling, can be used in an explosive compound, aka gunpowder."]
 			icon: "thermal:sulfur_dust"
 			id: "4B2B136BAA03CD1B"
@@ -236,51 +161,6 @@
 			]
 			x: -1.0d
 			y: 4.5d
-		}
-		{
-			dependencies: ["4E9AD52EAC4D6B27"]
-			description: ["Electrolyze the petroleum brine to obtain fully desalted petroleum, ready to be distilled in a fracking tower."]
-			icon: "kubejs:desalted_oil_bucket"
-			id: "4AC20A13D7706FA8"
-			subtitle: "Contraption 41-3"
-			tasks: [
-				{
-					id: "2ED78FB4DD158F39"
-					item: "kubejs:desalted_oil_bucket"
-					type: "item"
-				}
-				{
-					id: "038CA6D906AB59F0"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "De-Salting"
-			x: -3.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"38D3FEF4C99B1ABB"
-				"0CFE8B23F35DEA3D"
-			]
-			icon: "createdeco:decal_fluid"
-			id: "021C30C187E9A97E"
-			rewards: [{
-				id: "1CC48D026D97643C"
-				type: "xp"
-				xp: 100
-			}]
-			subtitle: "&6First, go to the specific biome shown in JEI-no similar bioems, only the exact one listed, Then, dig a hole all the way down to bedrock and place pipes (no pumps, please),After that,connect the torque. Don't try anything complicated-keeping it simples will work If you follow thiw, you'll get your oil."
-=======
->>>>>>> Stashed changes
-			tasks: [{
-				id: "085F416C9C7F07DD"
-				item: "kubejs:steel_ring"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 17.0d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
@@ -1512,6 +1392,7 @@
 				item: "kubejs:desulfurized_light_diesel_bucket"
 				type: "item"
 			}]
+			title: "Refined Diesel"
 			x: -1.5d
 			y: 16.0d
 		}
@@ -1631,6 +1512,7 @@
 					type: "checkmark"
 				}
 			]
+			title: "Steel Ringing"
 			x: -10.0d
 			y: 10.0d
 		}

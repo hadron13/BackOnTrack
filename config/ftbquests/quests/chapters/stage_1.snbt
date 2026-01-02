@@ -519,7 +519,6 @@
 		}
 		{
 			dependencies: ["718B4AEA38DD5EEB"]
-			description: ["The longer this factory takes to be built, less machines become available in the market and prices rise..."]
 			hide_dependency_lines: true
 			icon: "kubejs:andesite_machine"
 			id: "05092C227E729611"
@@ -545,7 +544,6 @@
 		}
 		{
 			dependencies: ["05092C227E729611"]
-			description: ["These are the last available machines, spend wisely."]
 			hide_dependency_lines: true
 			icon: "kubejs:andesite_machine"
 			id: "6090224FB9CF8269"
@@ -571,6 +569,7 @@
 		}
 		{
 			dependencies: ["106C6DFDCB97327C"]
+			description: ["Use a &6Kiln&r to melt down andesite into andesite blend for mixing."]
 			icon: "kubejs:andesite_blend"
 			id: "7C08D832EEA6483E"
 			subtitle: "Contraption 2-2"

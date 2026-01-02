@@ -142,4 +142,17 @@ ServerEvents.recipes((bot) => {
 	]).transitionalItem(t)
 		.loops(1)
 
+    
+
+
+	event.shaped(KJ('explosive_machine'), [
+			'SSS',
+			'SCS',
+			'SSS'
+		], {
+		C: 'alloyed:steel_casing',
+		S: KJ('explosive_mechanism')
+	})
+
+
 })

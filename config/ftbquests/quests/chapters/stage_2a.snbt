@@ -57,7 +57,7 @@
 				}
 			]
 			title: "Chapter 2A Complete!"
-			x: -2.5d
+			x: 0.0d
 			y: 9.0d
 		}
 		{
@@ -85,15 +85,17 @@
 				}
 			]
 			title: "Heated Treatment"
-			x: -2.5d
+			x: 0.0d
 			y: 7.0d
 		}
 		{
-			dependencies: ["054599A626D50945"]
+			dependencies: ["7888F9129E9FE517"]
 			description: [
-				"If you had not already automated lava production and distribution, this would be a good time to do so, each mechanism requires 2500mb of lava, and the full machine whopping 20 buckets."
+				"The deal of this line, lava is a remarkably hard resource to gather in the early chapters, but now there are various methods:"
 				""
-				"This may be done fairly easily by using a pump in the underworld, combined with a train for transport."
+				"Method 1: train from the nether, pump and load huge quantities from the deep nether seas."
+				""
+				"Method 2: sap hellbark, use a sapper to gather a small amount of lava, enough for this chapter."
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -112,8 +114,8 @@
 					type: "checkmark"
 				}
 			]
-			title: "A lot. of lava"
-			x: -1.0d
+			title: "A lot. of. lava"
+			x: 1.5d
 			y: 5.5d
 		}
 		{
@@ -121,7 +123,7 @@
 				"0F1B8FCEE040517A"
 				"7B56EFFB4E69C63D"
 			]
-			description: ["Drop lava over blood to produce infernal magma cream."]
+			description: ["Pour hot magma over the pour soul to get magma cream."]
 			icon: "minecraft:magma_cream"
 			id: "43BED22E6E6B3DE7"
 			subtitle: "Contraption 23-4"
@@ -137,7 +139,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.5d
+			x: 0.0d
 			y: 3.5d
 		}
 		{
@@ -146,7 +148,7 @@
 				"17DDE3C9D26B4F35"
 				"286EFE73EFDF3FC2"
 			]
-			description: ["Compact the unholy ingredients into fiery bricks"]
+			description: ["Lastly compact the unholy ingredients into fiery bricks."]
 			icon: "tconstruct:scorched_brick"
 			id: "2F99F54B57DDBC49"
 			subtitle: "Contraption 22-3"
@@ -163,11 +165,11 @@
 				}
 			]
 			title: "Brownies"
-			x: -4.0d
+			x: -1.5d
 			y: 5.5d
 		}
 		{
-			dependencies: ["054599A626D50945"]
+			dependencies: ["7888F9129E9FE517"]
 			description: ["Redirect a gravel line for this production line."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -185,15 +187,15 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.5d
+			x: 0.0d
 			y: 5.0d
 		}
 		{
-			dependencies: ["054599A626D50945"]
-			description: [
-				""
-				"The earliest step into this production line is soul sand, which can be produced by bulk haunting with a fan."
+			dependencies: [
+				"7888F9129E9FE517"
+				"0F1B8FCEE040517A"
 			]
+			description: ["The earliest step into this production line is soul sand, which can be produced by bulk haunting with a fan."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:soul_sand"
@@ -211,7 +213,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.5d
+			x: -3.0d
 			y: 2.5d
 		}
 		{
@@ -232,12 +234,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
+			x: -2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["4A2CE1B515197917"]
-			description: ["Redirect the leftover sand to brick production."]
+			description: ["Use the leftover sand to brick production."]
 			icon: "kubejs:soulless_sand"
 			id: "286EFE73EFDF3FC2"
 			subtitle: "Contraption 22-2"
@@ -254,7 +256,7 @@
 				}
 			]
 			title: "Unsoulessed sand"
-			x: -5.5d
+			x: -3.0d
 			y: 4.0d
 		}
 		{
@@ -263,6 +265,7 @@
 				"47AF956BCE09C5E5"
 				"78F2683FDF9C62D9"
 			]
+			description: ["Combine the materials in a mixer, but now there is a requirement of a &6Blaze Burner&r, there are multiple ways to tackle this problem, use either solid fuel and a deployer or a mechanical arm you now have, or use liquid fuel such as lava from this very same chapter."]
 			icon: "tconstruct:magma_bucket"
 			id: "0F1B8FCEE040517A"
 			tasks: [
@@ -277,11 +280,16 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["054599A626D50945"]
+			dependencies: ["7888F9129E9FE517"]
+			description: [
+				"Transport the byproduct waste water from your previous factory into this one, it's better than dumping on a river..."
+				""
+				"You can also generate with a palm tree."
+			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "kubejs:dirt_water_bucket"
@@ -298,11 +306,13 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.5d
+			title: "Not garbage anymore"
+			x: 3.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["054599A626D50945"]
+			dependencies: ["7888F9129E9FE517"]
+			description: ["Just like previous igneous generators, calcite can also be created in a mechanical extruder."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:calcite"
@@ -319,11 +329,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.5d
+			x: 3.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["054599A626D50945"]
+			dependencies: ["7888F9129E9FE517"]
+			description: ["Redirect some iron from your previous factory."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:iron_nugget"
@@ -340,24 +351,19 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.0d
+			title: "Iron for hours"
+			x: 1.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["21753CBB528EAADF"]
-			hide_until_deps_complete: true
-			icon: "create:clipboard"
-			id: "054599A626D50945"
-			tasks: [{
-				id: "6860ED8A69BD3768"
-				type: "checkmark"
-			}]
-			x: -2.5d
-			y: 2.0d
-		}
-		{
 			dependencies: ["587CDA54F432AA4E"]
-			description: ["To forge &e&lRefined Radiance&r&r, one must summon a source of light, bound and channeled. Surely, you already know the ways of such a craft. When this light is drawn forth, let it flow through the Chromatic Compound, and it shall drink deeply of its brilliance, becoming transformed."]
+			description: [
+				"One must overcharge the chromatic compound with light to obtain what is essentially solid light."
+				""
+				"Accomplishing this will either consume a plethora of lights, or something stronger than solid light itself..."
+				""
+				"Perhaps a &lstar&r would suffice."
+			]
 			icon: {
 				Count: 1
 				id: "create:refined_radiance"
@@ -380,13 +386,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "&l&eThe Light That Transcends&r&r"
-			x: 3.0d
-			y: 3.0d
+			title: "Essence of light"
+			x: -1.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["587CDA54F432AA4E"]
-			description: ["To forge &b&lShadow Steel&r&r, one must descend into the world’s lowest depths, where the fabric of reality no longer shows its face. There, instinct must guide you. Cast the Chromatic Compound into that shapeless veil of dark light, and trust the unseen. In time, it shall return, reborn in a new form."]
+			description: ["The very opposite of overcharging with light, is absenting it of all the lights, only the &lvoid&r would create such environment..."]
 			icon: {
 				Count: 1
 				id: "create:shadow_steel"
@@ -409,13 +415,17 @@
 					type: "checkmark"
 				}
 			]
-			title: "&l&bThe Darkness That Shapes&r&r"
-			x: 5.0d
-			y: 3.0d
+			title: "Darkest alloy"
+			x: 1.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["7FD22E964BC59A3A"]
-			description: ["To forge &l&5Chromatic Compound&r&r, one must venture to the very end of all things, where the forbidden plant grows. Claim it, and in the blazing depths of the Nether, bind it into alloy. Thus shall you obtain the essence needed to weave matter from the unseen threads of reality itself."]
+			description: [
+				"To accomplish this subtask, you must travel to the farthest dimension: The End."
+				""
+				"The chorus plants are the key component of the mysterious chromatic compound."
+			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: {
@@ -439,23 +449,22 @@
 					type: "checkmark"
 				}
 			]
-			title: "&5&lThe Essence Beyond Reality&r&r"
-			x: 4.0d
-			y: 1.5d
+			title: "Chromatic endeavours"
+			x: 0.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
 				"65C29BD4394DC2BB"
 				"39F3A334BBA5EDAB"
 			]
-			description: [""]
+			description: ["Join the power of light and dark into one single compound, capable of transport in an extra dimension."]
 			icon: {
 				Count: 1
 				id: "createqol:shadow_radiance"
 				tag: { }
 			}
 			id: "4F21ED9C5DEBFAF5"
-			subtitle: "From the Light That Transcends and the Darkness That Shapes, is born the Alloy of Shadow Radiance."
 			tasks: [
 				{
 					id: "72C7C0887591A922"
@@ -471,9 +480,9 @@
 					type: "checkmark"
 				}
 			]
-			title: "&lUnity of&r &eLight&r &land&r &9Dark&r"
-			x: 4.0d
-			y: 5.0d
+			title: "Transcendence"
+			x: 0.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["0AFE8C5B1E2BE9E4"]
@@ -499,11 +508,13 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: 9.0d
+			title: "Ender Packager Obtained!"
+			x: 0.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["4F21ED9C5DEBFAF5"]
+			description: ["Cast the newly created material for proper use in machinery."]
 			icon: {
 				Count: 1
 				id: "createqol:shadow_radiance_casing"
@@ -525,8 +536,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: 7.0d
+			x: 0.0d
+			y: 17.5d
 		}
 	]
 	title: "&f2a&r Hell Processing"

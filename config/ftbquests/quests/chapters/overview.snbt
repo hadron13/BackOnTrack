@@ -392,10 +392,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"466B6AA648B23C3A"
-				"6E7750CE254894B4"
-			]
+			dependencies: ["466B6AA648B23C3A"]
 			description: ["Explosive machinery not only opens up new warfare technology, but very powerful whole new industry sectors, buckle up, next stop: &lThe Moon&r"]
 			hide_until_deps_visible: true
 			id: "0BAA1B60B372E283"
