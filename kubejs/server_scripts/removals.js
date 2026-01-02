@@ -239,6 +239,7 @@ const removeByInput = [
 
 const removeByOutput = [
   TE("side_config_augment"),
+  AD("steel_plate"),
   MC('basalt'),
   PP('pipe'),
   PP('blank_module'),

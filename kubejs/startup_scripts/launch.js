@@ -178,7 +178,6 @@ StartupEvents.registry('block', event => {
 	machine('Copper', 'Pressure', "cutout")
 	machine('Zinc', 'Scorch',"cutout")
 	machine('Train', 'Track', "cutout")
-	machine('Explosive', 'Explosive', "solid")
 	machine('Enderium', 'Abstruse',"cutout")
 	machine('Power', 'Power', "translucent")
 	machine('Invar', 'Inductive', "translucent")

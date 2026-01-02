@@ -257,6 +257,8 @@ JEIEvents.hideItems(event => {
 	event.hide('tfmg:industrial_pipe')
 	event.hide('tfmg:steel_pipe')
 
+	event.hide('ad_astra:steel_plate')
+
 	event.hide("kubejs:growing_rose_seed")
 	event.hide("kubejs:growing_tiny_rose_crystal")
 	event.hide("kubejs:growing_small_rose_crystal")

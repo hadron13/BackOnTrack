@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"render_type": "cutout_mipped",
+	"textures": {
+		"0": "gearbox:block/electrolyzer/top",
+		"2": "gearbox:block/electrolyzer/side2",
+		"3": "gearbox:block/electrolyzer/side3",
+		"particle": "gearbox:block/electrolyzer/top"
+	},
+	"elements": [
+		{
+			"from": [0, 2, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [16, 0, 0, 14], "texture": "#2"},
+				"east": {"uv": [16, 0, 0, 14], "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 14], "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 14], "texture": "#2"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4.5, -0.1, 4.5],
+			"to": [11.5, 2.9, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -1, 8]},
+			"faces": {
+				"north": {"uv": [0, 8.99999, 5.00001, 11.99999], "texture": "#3"},
+				"east": {"uv": [0, 8.99999, 5.00001, 11.99999], "texture": "#3"},
+				"south": {"uv": [0, 8.99999, 5.00001, 11.99999], "texture": "#3"},
+				"west": {"uv": [0, 8.99999, 5.00001, 11.99999], "texture": "#3"},
+				"up": {"uv": [24, 14.00001, 29.00001, 18.99999], "texture": "#missing"},
+				"down": {"uv": [0, 7.00001, 5.00001, 11.99999], "texture": "#3"}
+			}
+		}
+	]
+}

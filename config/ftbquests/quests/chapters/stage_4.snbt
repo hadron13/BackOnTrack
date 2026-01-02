@@ -570,13 +570,13 @@
 			dependencies: ["6C3258881A44FA46"]
 			description: ["After getting beaten a bit by a press, this cast iron ingot can be electrified and turn into a full blown magnet."]
 			hide_dependency_lines: true
-			icon: "tfmg:cast_iron_ingot"
+			icon: "createbigcannons:cast_iron_ingot"
 			id: "1B692F49BB495B9A"
 			subtitle: "Contraption 56-1"
 			tasks: [
 				{
 					id: "451A0ECDB19D916D"
-					item: "tfmg:cast_iron_ingot"
+					item: "createbigcannons:cast_iron_ingot"
 					type: "item"
 				}
 				{
@@ -1202,13 +1202,13 @@
 			dependencies: ["6C3258881A44FA46"]
 			description: ["Polymerize the monomers present in heavy oil with some help of desh."]
 			hide_dependency_lines: true
-			icon: "tfmg:heavy_oil_bucket"
+			icon: "kubejs:heavy_oil_bucket"
 			id: "63CD0327AFA1BC4B"
 			subtitle: "Contraption 58-1"
 			tasks: [
 				{
 					id: "1FED7D60D286F9A5"
-					item: "tfmg:heavy_oil_bucket"
+					item: "kubejs:heavy_oil_bucket"
 					type: "item"
 				}
 				{

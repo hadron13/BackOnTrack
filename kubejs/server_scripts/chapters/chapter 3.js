@@ -18,7 +18,7 @@ ServerEvents.recipes((bot) => {
 
   bot.recipes.gearboxDistilling([
     Fluid.of("kubejs:oil_residue", 120),
-    Fluid.of("kubejs:naphtha", 105),
+    Fluid.of("kubejs:naphta", 105),
     Fluid.of("kubejs:gasoline", 120),
     Fluid.of("kubejs:kerosene", 90)],
     Fluid.of("kubejs:light_oil", 240

@@ -1755,8 +1755,6 @@ function zincMachine(event) {
 	zinc_machine('storagedrawers:controller_slave', 1, MC('gold_ingot'))
 	zinc_machine('torchmaster:megatorch', 1, MC('torch'))
 	zinc_machine('thermal:upgrade_augment_2', 1, MC('redstone'))
-	zinc_machine(BC("cannon_builder"), 1, 'createbigcannons:cast_iron_block')
-	zinc_machine('createbigcannons:cannon_drill', 1, TE('drill_head'))
 
 	let train_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })
@@ -1858,32 +1856,6 @@ function explosiveMachine(event){
 		"processingTime": 180,
 		"heatRequirement": "heated"
 	})
-
-	event.shaped(KJ('explosive_machine'), [
-			'SSS',
-			'SCS',
-			'SSS'
-		], {
-		C: 'alloyed:steel_casing',
-		S: KJ('explosive_mechanism')
-	})
-
-	let explosive_machine = (id, amount, other_ingredient) => {
-		event.remove({ output: id })
-		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('brass_template'), 'kubejs:explosive_machine', other_ingredient)
-			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:explosive_machine', B: other_ingredient })
-		}
-		else
-			event.stonecutting(Item.of(id, amount), 'kubejs:explosive_machine')
-	}
-
-	explosive_machine('createbigcannons:cannon_loader', 1, CR('piston_extension_pole'))
-	explosive_machine(BC("impact_fuze"), 6)
-	explosive_machine(BC("timed_fuze"), 6)
-	explosive_machine(BC("proximity_fuze"), 6)
-	explosive_machine(BC("cannon_mount"), 1, CR('mechanical_bearing'))
-	explosive_machine(BC("yaw_controller"), 1, CR('turntable'))
 
 }
 
