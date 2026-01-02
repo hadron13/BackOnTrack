@@ -15,16 +15,12 @@ JEIEvents.hideItems(event => {
 	hide_metal('thermal', 'steel')
 	hide_metal('thermal', 'tin')
 	hide_metal('thermal', 'bronze')
-  hide_metal('thermal', 'electrum')
+    hide_metal('thermal', 'electrum')
 	hide_metal('createdeco', 'cast_iron')
 	hide_metal('createbigcannons', 'cast_iron')
 	hide_metal('davebuildingmod', 'steel')
 	hide_metal('ad_astra', 'steel')
 	hide_metal('tconstruct', 'steel')
-	hide_metal('tfmg', 'steel')
-	hide_metal('tfmg', 'lead')
-	hide_metal('tfmg', 'constantan')
-	hide_metal('tfmg', 'nickel')
 
 	let hide_ores = (mod, type) =>{
 		event.hide(mod+':'+type+'_ore')
@@ -36,8 +32,6 @@ JEIEvents.hideItems(event => {
 	hide_ores('thermal', 'tin')
 	hide_ores('thermal', 'silver')
 	hide_ores('occultism', 'silver')
-	hide_ores('tfmg', 'nickel')
-	hide_ores('tfmg', 'lead')
 
   let hide_thermal_set = (type) => {
     event.hide('thermal:'+type+'_gear')
@@ -190,76 +184,8 @@ JEIEvents.hideItems(event => {
 	event.hide(`createqol:refined_radiance_shovel`)
 	event.hide(`createqol:refined_radiance_hoe`)
 
-	event.hide("tfmg:turbine_engine")
-	event.hide("tfmg:regular_engine")
-	event.hide("tfmg:radial_engine")
-	event.hide("tfmg:large_engine")
-	event.hide("tfmg:simple_large_engine")
-	event.hide("tfmg:engine_gearbox")
-	event.hide("tfmg:engine_controller")
-	event.hide('tfmg:nickel_sheet')
-	event.hide('tfmg:lead_sheet')
-	event.hide('tfmg:coal_coke')
-	event.hide('tfmg:saltpeter')
-	event.hide('tfmg:steel_ingot')
-	event.hide('tfmg:sulfur_powder')
-	event.hide('tfmg:saltpeter')
-	event.hide('tfmg:pumpjack_hammer')
-	event.hide('tfmg:pumpjack_crank')
-	event.hide('tfmg:pumpjack_hammer_part')
-	event.hide('tfmg:pumpjack_hammer_head')
-	event.hide('tfmg:pumpjack_hammer_connector')
-	event.hide('tfmg:pumpjack_base')
-	event.hide('tfmg:large_pumpjack_hammer_part')
-	event.hide('tfmg:large_pumpjack_hammer_head')
-	event.hide('tfmg:large_pumpjack_hammer_connector')
-	event.hide("tfmg:machine_input") 
-	event.hide("tfmg:electric_motor") 
-	event.hide("tfmg:resistor") 
-	event.hide("tfmg:copper_coil") 
-	event.hide("tfmg:neon_tube") 
-	event.hide("tfmg:cable_tube") 
-	event.hide("tfmg:light_bulb") 
-	event.hide("tfmg:energy_meter") 
-	event.hide("tfmg:voltmeter") 
-	event.hide("tfmg:firebox") 
-	event.hide("tfmg:converter") 
-	event.hide("tfmg:capacitor") 
-	event.hide("tfmg:accumulator") 
-	event.hide("tfmg:rotor")
-	event.hide("tfmg:oil_deposit")
-	event.hide("tfmg:stator") 
-	event.hide("tfmg:cable_connector") 
-	event.hide("tfmg:electric_casing")
-	event.hide("tfmg:polarizer")      
-	event.hide("tfmg:generator")      
-	event.hide("tfmg:galvanic_cell") 
-	event.hide("tfmg:surface_scanner") 
-	event.hide("tfmg:casting_spout") 
-	event.hide("tfmg:casting_basin")
-	event.hide("tfmg:steel_mechanism")
-	event.hide("tfmg:lead_ore")
-	event.hide("tfmg:deepslate_lead_ore")
-	event.hide("tfmg:lead_ore")
-	event.hide("tfmg:deepslate_nickel_ore")
-	event.hide("tfmg:nickel_ore")
-	event.hide("tfmg:sulfur_dust")
-	event.hide('tfmg:steel_chemical_vat')
-	event.hide('tfmg:cast_iron_chemical_vat')
-	event.hide('tfmg:fireproof_chemical_vat')
-	event.hide('tfmg:industrial_mixer')
-	event.hide('tfmg:electrode_holder')
-	event.hide('tfmg:aluminum_fluid_tank')
-	event.hide('tfmg:cast_iron_fluid_tank')
-	event.hide('tfmg:steel_fluid_tank')
-	event.hide('tfmg:steel_distillation_output')
-	event.hide('tfmg:steel_distillation_controller')
-	event.hide('tfmg:industrial_pipe')
-	event.hide('tfmg:steel_pipe')
 
-	event.hide('ad_astra:steel_plate')
-
-	event.hide("kubejs:growing_rose_seed")
+    event.hide("kubejs:growing_rose_seed")
 	event.hide("kubejs:growing_tiny_rose_crystal")
 	event.hide("kubejs:growing_small_rose_crystal")
 	event.hide("kubejs:incomplete_calculation_processor")
@@ -304,7 +230,6 @@ JEIEvents.hideItems(event => {
 
 	event.hide('@trashcans')
 	event.hide('@pipez')
-	event.hide('@tfmg')
 	event.hide('@toms_storage')
 	event.hide('@itemfilters')
 	event.hide('@davebuildingmod')
@@ -312,7 +237,6 @@ JEIEvents.hideItems(event => {
 	event.hide('@create_factory_logistics')
 	event.hide('@trashcans')
 
-	//event.hide('@tfmg')
 
 
 })
@@ -323,23 +247,11 @@ JEIEvents.subtypes(event => {
 
 JEIEvents.hideFluids(event => {
 	event.hide('ad_astra:fuel')
-	event.hide('tfmg:molten_steel')
 	event.hide('tconstruct:molten_steel')
 })
 
 JEIEvents.addItems(event => {
 
-  let tfmg = (item) => {
-  event.add(item)
-	}
-tfmg("cast_iron_ingot")
-tfmg("naphtha_bucket")
-tfmg("gasoline_bucket")
-tfmg("kerosene_bucket")
-tfmg("diesel_bucket")
-tfmg("lpg_bucket")
-tfmg("heavy_oil_bucket")
-tfmg("nitrate_dust")
 
 	event.add('buddingcrystals:budding_budding_skystone')
 	event.add('buddingcrystals:budding_skystone_cluster')
@@ -427,7 +339,6 @@ ItemEvents.tooltip(tooltip => {
 	// not_consumed('kubejs:stone_saw')
 	// not_consumed('kubejs:iron_saw')
 	// not_consumed('kubejs:diamond_saw')
-	// not_consumed('tfmg:screwdriver')
 	// not_consumed('create:super_glue')
 	// not_consumed('xreliquary:mercy_cross')
 	// not_consumed('xreliquary:ender_staff')
@@ -453,17 +364,12 @@ ItemEvents.tooltip(tooltip => {
 	tooltip.add("kubejs:accellerator_glowstone", ["§7When used in Alchemy Research:", "  §6One of the §ecorrect §6Reagents",
 		"  §6in §ecorrect §6slots will not be consumed"]);
 
-	tooltip.add("kubejs:steel_ring", ["§7Obtained breaking a §6steel cannon chamber"])
-
 	tooltip.add("thermal:machine_press", ["§eWarning: crash when viewing recipes."])
 
 	tooltip.add("ae2:growth_accelerator", ["§erecipe by volit <3"])
 
 	tooltip.add('buddingcrystals:budding_budding_skystone', ["§cwarning, this block cannot be broken after being placed, if it breaks, it will disappear"])
 
-	tooltip.add("tfmg:steel_pump", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
-	tooltip.add("tfmg:steel_pipe", ["§cWarning: this item may not work correctly.", "§cIf you do use it, expect problems."])
-	//tooltip.add("tfmg:steel_fluid_tank", ["§eWarning: this item may not work correctly outside a tower."])
 
 })
 

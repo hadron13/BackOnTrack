@@ -920,10 +920,6 @@ function rocketScience(event) {
 			S: TE("hazmat_boots")
 		})
 
-	event.recipes.createMixing(
-		[Fluid.of(TE("refined_fuel"), 10)],
-		[Fluid.of('kubejs:kerosene', 100)]
-	).heated()
 }
 
 function drawersop(event) {
@@ -1457,7 +1453,6 @@ function titaniumStuff(event){
 
 	event.recipes.gearboxElectrolyzing([KJ("magnesium_ingot"), Fluid.of(GB("chlorine"), 50)], KJ("magnesium_chloride")).heated().energy(1000)
 	event.recipes.gearboxElectrolyzing([KJ('sodium_powder'), Fluid.of(GB('chlorine'), 125), Fluid.of(MC('water'), 250)], Fluid.of(KJ('tnt6'), 500)).energy(100)
-	event.recipes.gearboxElectrolyzing(Fluid.of(AD('fuel'), 100), [CR('cinder_flour'), Fluid.of(TE('refined_fuel'), 250)]).energy(200)
 
 	event.recipes.gearboxIrradiating([Fluid.of(GB('chlorine'), 250), KJ("sodium_powder", 2)], Fluid.of(KJ('tnt6'), 250), 0xf005fe, 2)
 	event.recipes.gearboxTransmuting(TE("silver_ingot"), MC("gold_ingot"), 0xff6db6, 4)
@@ -1780,8 +1775,6 @@ function explosiveMachine(event){
 
 	event.recipes.createMixing([MC('dirt', 12)], [Fluid.of(MC('water')), MC('sand', 4), MC('clay_ball', 4), MC('gravel', 4)])
 
-	event.recipes.gearboxPyroprocessing([TE('coal_coke')], [MC('charcoal')] ).heated().processingTime(100)
-
     event.shaped(GB('electrolyzer'), [
 		'SSS',
 		'SMW',
@@ -1791,7 +1784,7 @@ function explosiveMachine(event){
 		Z: CR('zinc_ingot'),
 		M: CR('mechanical_mixer'),
 		S: ('alloyed:steel_sheet'),
-        W: 'createaddition:connector'
+        W: 'create:copper_sheet'
 	})
 
 	event.shaped(GB('pumpjack_well'), [
@@ -1827,18 +1820,7 @@ function explosiveMachine(event){
 		S: CR('shaft')
 	})
 
-	let t = KJ('incomplete_explosive_mechanism')
-	event.recipes.createSequencedAssembly([
-		KJ('explosive_mechanism'),
-	], CR('precision_mechanism'), [
-		event.recipes.createDeploying(t, [t, KJ("steel_ring")]),
-		event.recipes.createDeploying(t, [t, BC("packed_gunpowder")]),
-		event.recipes.createFilling(t, [t, Fluid.of("kubejs:diesel",  90)]),
-		event.recipes.createFilling(t, [t, Fluid.of("kubejs:gasoline", 120)]),
-		event.recipes.createDeploying(t, [t, TE("iron_gear")]),
-		event.recipes.gearboxMechanizing(t, t)
-	]).transitionalItem(t)
-		.loops(1)
+
 
 	event.custom({
 		"type": "createbigcannons:melting",
