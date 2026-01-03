@@ -1,13 +1,12 @@
 /*
 !/kubejs
-!/resourcepacks
+!/resourcepacksCreate Back On Track 1.5
 !/defaultconfigs
 !/config
 !background.png
 !modlist.txt
 !.gitignore
 /config/jei/world
-!/buddingcrystals
 config/spark/tmp
 config/sodiumextras-client.toml
 config/forgeendertech/Biomes/terralith$volcanic_peaks.cfg
