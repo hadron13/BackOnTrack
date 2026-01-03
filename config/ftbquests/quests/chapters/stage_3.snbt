@@ -13,7 +13,7 @@
 		x: 0.5d
 		y: -10.0d
 	}]
-	order_index: 8
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -98,11 +98,18 @@
 			]
 			shape: "diamond"
 			size: 2.0d
-			tasks: [{
-				id: "7A194578829237BE"
-				title: "Automated"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7A194578829237BE"
+					title: "Automated"
+					type: "checkmark"
+				}
+				{
+					id: "3AA5F4C0D4B722EF"
+					item: "kubejs:explosive_machine"
+					type: "item"
+				}
+			]
 			title: "Chapter 3 Complete!"
 			x: 0.0d
 			y: 20.0d

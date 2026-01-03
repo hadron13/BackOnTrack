@@ -5,11 +5,11 @@
 
 		[World.Features."Oil Sand"]
 			#Whether this feature should naturally spawn in the world.
-			Enable = true
+			Enable = false
 
 		[World.Features.Silver]
 			#Whether this feature should naturally spawn in the world.
-			Enable = true
+			Enable = false
 
 		[World.Features.Lead]
 			#Whether this feature should naturally spawn in the world.
@@ -36,6 +36,14 @@
 			Enable = true
 
 		[World.Features.Niter]
+			#Whether this feature should naturally spawn in the world.
+			Enable = true
+
+		[World.Features.Ruby]
+			#Whether this feature should naturally spawn in the world.
+			Enable = true
+
+		[World.Features.Apatite]
 			#Whether this feature should naturally spawn in the world.
 			Enable = true
 

@@ -688,21 +688,6 @@
 			y: 23.0d
 		}
 		{
-			dependencies: ["6C3258881A44FA46"]
-			description: ["This is the third catalytic property of desh, polymerization."]
-			hide_dependency_lines: true
-			icon: "ad_astra:desh_ingot"
-			id: "24E0D9BD36B09D1E"
-			tasks: [{
-				id: "6B594B8FF590A7DF"
-				item: "ad_astra:desh_ingot"
-				type: "item"
-			}]
-			title: "Desh Catalysis"
-			x: 4.0d
-			y: 20.0d
-		}
-		{
 			dependencies: ["278539C35D960C51"]
 			icon: "kubejs:plastic"
 			id: "32A4925F476AF97E"
@@ -719,7 +704,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "Solifidificationing"
+			title: "Solidification"
 			x: 5.0d
 			y: 23.0d
 		}
@@ -797,21 +782,25 @@
 			y: 23.0d
 		}
 		{
-			dependencies: [
-				"24E0D9BD36B09D1E"
-				"63CD0327AFA1BC4B"
-			]
-			description: ["Now that the polymers are being formed, it should be molded into an ingot form for further processing."]
+			description: ["Redirect liquid plastic from your previous factory into this one."]
+			icon: "kubejs:plastic_bucket"
 			id: "278539C35D960C51"
 			subtitle: "Contraption 58-2"
-			tasks: [{
-				id: "184E40994192CB84"
-				item: "kubejs:plastic_bucket"
-				type: "item"
-			}]
-			title: "Polymerizitificationing"
+			tasks: [
+				{
+					id: "184E40994192CB84"
+					item: "kubejs:plastic_bucket"
+					type: "item"
+				}
+				{
+					id: "49D01A6D74931DD9"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			title: "Fluid Plastic"
 			x: 5.0d
-			y: 21.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["1B600F92F27C8C74"]
@@ -1196,29 +1185,6 @@
 			]
 			title: "Sulfuric Solutions"
 			x: -10.5d
-			y: 20.0d
-		}
-		{
-			dependencies: ["6C3258881A44FA46"]
-			description: ["Polymerize the monomers present in heavy oil with some help of desh."]
-			hide_dependency_lines: true
-			icon: "kubejs:heavy_oil_bucket"
-			id: "63CD0327AFA1BC4B"
-			subtitle: "Contraption 58-1"
-			tasks: [
-				{
-					id: "1FED7D60D286F9A5"
-					item: "kubejs:heavy_oil_bucket"
-					type: "item"
-				}
-				{
-					id: "37752D3B686848D5"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Monomers"
-			x: 6.0d
 			y: 20.0d
 		}
 		{
