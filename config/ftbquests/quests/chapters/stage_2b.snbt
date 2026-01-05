@@ -3,7 +3,7 @@
 	default_quest_shape: "diamond"
 	filename: "stage_2b"
 	group: "6F42926B3F0C534A"
-	icon: "kubejs:candy_mechanism"
+	icon: "kubejs:logistic_mechanism"
 	id: "05C7C7CD29EBFAB9"
 	images: [{
 		height: 2.0d
@@ -17,319 +17,100 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"22517F1E5F84FD8E"
-				"78C29DB493B1B701"
-				"106CC397E5472B46"
-				"10690D8E8963D4CB"
-			]
-			description: ["Congratulations! You have just finished Chapter 2b! Now you may not worry about food, forever."]
-			id: "7A80B449DD525F7D"
-			rewards: [
+			dependencies: ["66107B39B6257697"]
+			icon: "kubejs:logistic_machine"
+			id: "2F4948D507C18B70"
+			size: 2.0d
+			tasks: [
 				{
-					id: "2DF8020BA96C5B9A"
-					item: {
-						Count: 1
-						id: "create_confectionery:full_chocolate_bar"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "13889FD39A9C2899"
+					item: "kubejs:logistic_machine"
 					type: "item"
 				}
 				{
-					id: "73FF5388752814EA"
-					item: "createaddition:chocolate_cake"
-					type: "item"
+					id: "5A449EF0B76721D7"
+					title: "Automated"
+					type: "checkmark"
 				}
 			]
-			shape: "diamond"
-			size: 1.5d
-			subtitle: "Contraption 32"
-			tasks: [{
-				id: "49AA585621C21FBA"
-				item: "kubejs:candy_mechanism"
-				type: "item"
-			}]
-			title: "Chapter 2B Complete!"
-			x: 3.75d
-			y: 3.0d
+			x: 0.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
-				"5A48ACD1E1A2D736"
-				"191305FFD7E6A12D"
-				"3BA6DC46EA464C58"
-				"076594A762B3FC88"
+				"3894987A1FB4E1DA"
+				"4B8DEF81CE54A316"
+				"0C50D46146553240"
+				"578E71008DB5251C"
 			]
-			description: ["Crunchy crystals pinki-fy the chocolate, resonance cascade not included."]
-			icon: "create_confectionery:ruby_chocolate_bucket"
-			id: "78C29DB493B1B701"
-			subtitle: "Contraption 31-1"
+			icon: "kubejs:logistic_mechanism"
+			id: "66107B39B6257697"
 			tasks: [
 				{
-					id: "5C0E497EDC5FAFF8"
-					item: "create_confectionery:ruby_chocolate_bucket"
+					id: "2628BB4126676203"
+					item: "kubejs:logistic_mechanism"
 					type: "item"
 				}
 				{
-					id: "625D065139849C70"
+					id: "31C116FDDC36CBE8"
 					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "Pink Crystal Chocolate"
-			x: 2.0d
-			y: 2.0d
+			x: 0.0d
+			y: 7.0d
 		}
 		{
-			dependencies: [
-				"5A48ACD1E1A2D736"
-				"191305FFD7E6A12D"
-				"3BA6DC46EA464C58"
-			]
-			description: ["Mix milk, beans and sugar to Create regular old chocolate."]
-			icon: "create:chocolate_bucket"
-			id: "106CC397E5472B46"
-			subtitle: "Contraption 31-2"
+			dependencies: ["4B4CBB7C0D380568"]
+			icon: "thermal:sawdust"
+			id: "7CEECCE931AFBD11"
 			tasks: [
 				{
-					id: "53FD389A38A66FC4"
-					item: "create:chocolate_bucket"
+					id: "60014CF192529AE3"
+					item: "thermal:sawdust"
 					type: "item"
 				}
 				{
-					id: "6D9261354CB0E481"
+					id: "6822266D058EA63E"
 					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "Just Chocolate"
-			x: 2.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"191305FFD7E6A12D"
-				"098744BFA66730E4"
-				"5A48ACD1E1A2D736"
-				"3BA6DC46EA464C58"
-			]
-			description: ["More cocoa, less sugar, darker tone."]
-			icon: "create_confectionery:black_chocolate_bucket"
-			id: "22517F1E5F84FD8E"
-			subtitle: "Contraption 31-3"
-			tasks: [
-				{
-					id: "2E2C966D37A14D2D"
-					item: "create_confectionery:black_chocolate_bucket"
-					type: "item"
-				}
-				{
-					id: "43BBC388993CD4B5"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Darker Chocolate"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["141CF17F211E6268"]
-			description: ["Milking can be automating by using a deployer on a cow, a bucket will have to be emptied and re-inserted into the deployer for continous milking."]
-			hide_until_deps_complete: true
-			icon: "minecraft:milk_bucket"
-			id: "5A48ACD1E1A2D736"
-			subtitle: "Contraption 29"
-			tasks: [
-				{
-					id: "05FAD6AB385D3F34"
-					item: "minecraft:milk_bucket"
-					type: "item"
-				}
-				{
-					id: "5A16000B1B1BBE2B"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Milked"
-			x: -1.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["141CF17F211E6268"]
-			description: ["Set up a simple honey farm by hooking pipes directly into beehives, this method does not anger bees, and is fully automatable."]
-			hide_until_deps_complete: true
-			icon: "create:honey_bucket"
-			id: "2742F5B931B4492F"
-			subtitle: "Contraption 26"
-			tasks: [
-				{
-					id: "04B701999E480DD3"
-					item: "create:honey_bucket"
-					type: "item"
-				}
-				{
-					id: "1FB00AA66548299C"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Honey"
-			x: -1.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["5BA6722C2A672672"]
-			description: ["Grind down the netherrack to obtain the hell's version of flour, this is also useful for feeding blazes."]
-			icon: "create:cinder_flour"
-			id: "6A0D07E7BCFDC84A"
-			subtitle: "Contraption 27-1"
-			tasks: [
-				{
-					id: "44197E499B33FE1C"
-					item: "create:cinder_flour"
-					type: "item"
-				}
-				{
-					id: "025F0365D53A9847"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Hell Flour"
-			x: 2.0d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"2742F5B931B4492F"
-				"452AC768DFA2D931"
-				"6A0D07E7BCFDC84A"
-				"3BA6DC46EA464C58"
-			]
-			description: ["Combine honey, sugar and flour from the overworld with cinder flower from the underworld to obtain the gingerdough mixture, without ginger, or yet bread."]
-			icon: "create_confectionery:gingerdough"
-			id: "3B7A8138E2826809"
-			subtitle: "Contraption 27-2"
-			tasks: [
-				{
-					id: "2934AFF8052A21F1"
-					item: "create_confectionery:gingerdough"
-					type: "item"
-				}
-				{
-					id: "65AB59FC5A0FB646"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Dough Mix"
-			x: 0.5d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4ED21477B5FD4FE7"]
-			icon: "create:wheat_flour"
-			id: "452AC768DFA2D931"
-			subtitle: "Contraption 25-2"
+			dependencies: ["7F43C29C915B2E1A"]
+			hide_dependency_lines: true
+			icon: "minecraft:stick"
+			id: "4B4CBB7C0D380568"
 			tasks: [
 				{
-					id: "32699EDEDBD09635"
-					item: "create:wheat_flour"
+					id: "6679654B624ECAB5"
+					item: "minecraft:stick"
 					type: "item"
 				}
 				{
-					id: "286BADB87ADB8F1C"
+					id: "18FD21CD52B7F1C1"
 					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "Regular Flour"
-			x: 0.0d
+			x: 0.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["53C5D183F9F513D8"]
-			description: ["The soul of candies. Also known as saccharose (C₁₂H₂₂O₁₁)"]
-			icon: "minecraft:sugar"
-			id: "3BA6DC46EA464C58"
-			subtitle: "Contraption 28-2"
+			dependencies: ["76598864ACE6867B"]
+			icon: "create:cardboard"
+			id: "3894987A1FB4E1DA"
 			tasks: [
 				{
-					id: "08A0B25266B5AA8E"
-					item: "minecraft:sugar"
+					id: "379C711D478A31A9"
+					item: "create:cardboard"
 					type: "item"
 				}
 				{
-					id: "427EF8926CAFA096"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Saccharose"
-			x: -1.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["141CF17F211E6268"]
-			description: ["Beans are simple to automate, you may use a vertical harvester instead of regular horizontal ones."]
-			hide_until_deps_complete: true
-			icon: "minecraft:cocoa_beans"
-			id: "191305FFD7E6A12D"
-			subtitle: "Contraption 30-1"
-			tasks: [
-				{
-					id: "3E31669E12DD6348"
-					item: "minecraft:cocoa_beans"
-					type: "item"
-				}
-				{
-					id: "27E65842F3FC296C"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			x: -1.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["63407E78ED94DCF9"]
-			description: ["Crushing crushed beans again yields (cocoa) butter."]
-			icon: "create_confectionery:cocoa_butter"
-			id: "098744BFA66730E4"
-			subtitle: "Contraption 30-3"
-			tasks: [
-				{
-					id: "6D572CA1B46D395B"
-					item: "create_confectionery:cocoa_butter"
-					type: "item"
-				}
-				{
-					id: "30609735BDA37412"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			x: 1.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["191305FFD7E6A12D"]
-			description: ["Press the beans"]
-			icon: "create_confectionery:crushed_cocoa"
-			id: "63407E78ED94DCF9"
-			subtitle: "Contraption 30-2"
-			tasks: [
-				{
-					id: "337A8B9842F33D48"
-					item: "create_confectionery:crushed_cocoa"
-					type: "item"
-				}
-				{
-					id: "37BB7D202E712503"
+					id: "7E6A15A16914EABD"
 					title: "Automated"
 					type: "checkmark"
 				}
@@ -338,129 +119,235 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["141CF17F211E6268"]
-			description: ["It does NOT grow faster on sand."]
-			hide_until_deps_complete: true
-			icon: "minecraft:sugar_cane"
-			id: "53C5D183F9F513D8"
-			subtitle: "Contraption 28-1"
+			dependencies: ["32B06467D05542D4"]
+			icon: "create:bound_cardboard_block"
+			id: "76598864ACE6867B"
 			tasks: [
 				{
-					id: "3CDBB7467BF0C8F7"
-					item: "minecraft:sugar_cane"
+					id: "16FA6D59BEC94E9B"
+					item: "create:bound_cardboard_block"
 					type: "item"
 				}
 				{
-					id: "7F400B45865F3EA3"
+					id: "0E52C83C9619A6BE"
 					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "Cane, of Sugar"
-			x: -2.5d
-			y: 1.5d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["141CF17F211E6268"]
-			description: ["Either use leftover netherrack from mining contraptions, or simply use homeopathy to turn netherrack into even more netherrack!"]
-			hide_until_deps_complete: true
-			icon: "minecraft:netherrack"
-			id: "5BA6722C2A672672"
+			dependencies: ["4F3A3501CC34253F"]
+			icon: "kubejs:dry_pulp"
+			id: "32B06467D05542D4"
 			tasks: [
 				{
-					id: "450B27FCD9AED84D"
-					item: "minecraft:netherrack"
+					id: "67E4429D176598F1"
+					item: "kubejs:dry_pulp"
 					type: "item"
 				}
 				{
-					id: "74D2C321B2176675"
+					id: "17A322E2474637CD"
 					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "Nether Rack"
-			x: 1.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["141CF17F211E6268"]
-			description: ["A simple rotary farm should sufice, although the odds of you already having one are big."]
-			hide_until_deps_complete: true
-			icon: "minecraft:wheat"
-			id: "4ED21477B5FD4FE7"
-			subtitle: "Contraption 25-1"
-			tasks: [
-				{
-					id: "3914119E40696F13"
-					item: "minecraft:wheat"
-					type: "item"
-				}
-				{
-					id: "4FFD688308B097FB"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			title: "Wheatley"
 			x: -1.5d
-			y: -2.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["141CF17F211E6268"]
-			description: ["The recipe uses some crunchy crystals you produce already in chapter 2."]
-			hide_until_deps_complete: true
-			icon: "create:polished_rose_quartz"
-			id: "076594A762B3FC88"
+			dependencies: ["02723E5F073AB1F0"]
+			icon: "kubejs:resin_pulp"
+			id: "4F3A3501CC34253F"
 			tasks: [
 				{
-					id: "44C51412F7C1BF2C"
-					item: "create:polished_rose_quartz"
+					id: "0CAC8F6E02CC48EF"
+					item: "kubejs:resin_pulp"
 					type: "item"
 				}
 				{
-					id: "5E288E6DFCC2CEA4"
+					id: "1A24FAE20B578CC2"
 					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "Crunchy Crystals"
 			x: 0.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["3B7A8138E2826809"]
-			description: ["Cooking is a delicated method involving multiple steps of chemical reactions, such as baking."]
-			icon: "create_confectionery:gingerbread"
-			id: "10690D8E8963D4CB"
-			subtitle: "Contraption 27-3"
+			dependencies: ["7CEECCE931AFBD11"]
+			icon: "create:pulp"
+			id: "02723E5F073AB1F0"
 			tasks: [
 				{
-					id: "60D0E74CDC75888B"
-					item: "create_confectionery:gingerbread"
+					id: "1658A90EB82949F1"
+					item: "create:pulp"
 					type: "item"
 				}
 				{
-					id: "66A27366098C82A4"
+					id: "471606F04061749A"
 					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "Baking Bread"
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["63407E78ED94DCF9"]
-			description: ["This is a byproduct of pressing beans, you can use it in hot chocolate."]
-			id: "4EBA20DD0311AB5E"
-			tasks: [{
-				id: "08F148DC2A9CC12E"
-				item: "create_confectionery:cocoa_powder"
-				type: "item"
-			}]
-			x: 0.5d
+			dependencies: ["7F43C29C915B2E1A"]
+			hide_dependency_lines: true
+			icon: "create:electron_tube"
+			id: "4B8DEF81CE54A316"
+			tasks: [
+				{
+					id: "56907BAF79010E4E"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "326577E6B3BE53B3"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
 			y: 6.5d
 		}
+		{
+			dependencies: ["7F43C29C915B2E1A"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "create:super_glue"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0C50D46146553240"
+			tasks: [
+				{
+					id: "1E1690C3B0614369"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "214DB99A627A6689"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"6D4542A5DFB651B8"
+				"057CD05A226E1D88"
+				"03FAC9A5972F0F3B"
+			]
+			icon: "alloyed:bronze_ingot"
+			id: "578E71008DB5251C"
+			tasks: [
+				{
+					id: "59EFDB2E88DF0C15"
+					item: "alloyed:bronze_nugget"
+					type: "item"
+				}
+				{
+					id: "2FE1CA8D1B239194"
+					item: "alloyed:bronze_ingot"
+					type: "item"
+				}
+				{
+					id: "600F22C2959E9C3B"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7F43C29C915B2E1A"]
+			hide_dependency_lines: true
+			icon: "minecraft:copper_ingot"
+			id: "6D4542A5DFB651B8"
+			tasks: [
+				{
+					id: "24B9B9B13B819692"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "16D3186DA29557E2"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F43C29C915B2E1A"]
+			hide_dependency_lines: true
+			icon: "create:zinc_ingot"
+			id: "057CD05A226E1D88"
+			tasks: [
+				{
+					id: "3903E3604F8A4200"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+				{
+					id: "6E60CAEB9B29DF9F"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7F43C29C915B2E1A"]
+			hide_dependency_lines: true
+			icon: "create:cinder_flour"
+			id: "03FAC9A5972F0F3B"
+			tasks: [
+				{
+					id: "464827A3182976C0"
+					item: "create:cinder_flour"
+					type: "item"
+				}
+				{
+					id: "2E17712605227B6C"
+					title: "Automated"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["072F6BA76ABDAC10"]
+			hide_until_deps_complete: true
+			icon: "create:clipboard"
+			id: "7F43C29C915B2E1A"
+			size: 1.5d
+			tasks: [{
+				id: "49C64997AE0E61C0"
+				title: "Automated"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
 	]
-	title: "&f2b&r Sacchariferous Industry"
+	title: "&f2b&r Cardboard Chapter"
 }

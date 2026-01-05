@@ -150,26 +150,6 @@
 			y: 2.0d
 		}
 		{
-			description: ["Another byproduct of the heavy oil distilling, can be used in an explosive compound, aka gunpowder."]
-			icon: "thermal:sulfur_dust"
-			id: "4B2B136BAA03CD1B"
-			subtitle: "Contraption 43-1"
-			tasks: [
-				{
-					id: "51E6B64C9C8959F7"
-					item: "thermal:sulfur_dust"
-					type: "item"
-				}
-				{
-					id: "18F910A2111F7E00"
-					title: "Automated"
-					type: "checkmark"
-				}
-			]
-			x: -1.0d
-			y: 4.5d
-		}
-		{
 			dependencies: ["278B95FF7159DCFC"]
 			description: [
 				"The quest for oil starts in searching of biomes where oil is abundant, these are: &6Desert&r, &6Swamp&r and &6Ocean&r."

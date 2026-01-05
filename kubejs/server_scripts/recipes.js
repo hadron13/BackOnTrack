@@ -407,6 +407,7 @@ function tweaks(event) {
 	tweak_casing('kubejs:enderium_casing', 'thermal:enderium_plate', 'minecraft:logs', true)
 	tweak_casing('kubejs:invar_casing', 	'thermal:invar_plate', 	'minecraft:logs', true)
 	tweak_casing('kubejs:fluix_casing', 	'thermal:lead_plate', 	'minecraft:logs', true)
+	tweak_casing('alloyed:bronze_casing', 	'alloyed:bronze_ingot', 	'minecraft:logs', true)
 
 	event.custom({
 		"type": "tconstruct:melting",
@@ -1429,13 +1430,6 @@ function brassMachine(event) {
 
 	event.recipes.createCompacting(CR("brass_ingot"), Fluid.of(TC('molten_brass'), 90))
   event.recipes.createCompacting(MC("dripstone_block"), MC('clay'))
-
-	event.shaped(CR("factory_gauge"), [
-		'SC'
-	], {
-		C: KJ('rotation_mechanism'),
-		S: CR('stock_link')
-	})
 
 	event.shaped(TE('dynamo_numismatic'), [
 		' R ',

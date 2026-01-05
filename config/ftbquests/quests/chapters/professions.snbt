@@ -505,14 +505,14 @@
 					consume_items: true
 					count: 64L
 					id: "5E85F4D1F59E92CD"
-					item: "tfmg:concrete"
+					item: "gearbox:asphalt"
 					type: "item"
 				}
 				{
 					consume_items: true
 					count: 64L
 					id: "13671DFA3F8E4D98"
-					item: "tfmg:concrete"
+					item: "gearbox:asphalt"
 					type: "item"
 				}
 			]

@@ -1,4 +1,5 @@
 {
+	autofocus_id: "1E263994D4883A08"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "overview"
@@ -243,7 +244,7 @@
 			subtitle: "Secondary 2A"
 			tasks: [{
 				id: "21753CBB528EAADF"
-				title: "Unlock Bonus 2A"
+				title: "Unlock Bonus 3A"
 				type: "checkmark"
 			}]
 			title: "Hell Processing"
@@ -311,63 +312,6 @@
 			title: "Preparations"
 			x: 0.5d
 			y: 0.5d
-		}
-		{
-			dependencies: ["0BAA1B60B372E283"]
-			description: [
-				"Reaching the moon is necessary for a very special resource endogenous of the Moon: &6Desh&r."
-				""
-				"After hitting the Checkmark above, optional quests will appear in the side bar."
-			]
-			hide_until_deps_visible: true
-			icon: "ad_astra:steel_engine"
-			id: "2A52615E8E67F885"
-			shape: "diamond"
-			subtitle: "Chapter 3A"
-			tasks: [{
-				id: "3C79237E6F89E65B"
-				title: "Unlock Rocketry by Eye"
-				type: "checkmark"
-			}]
-			title: "Rocketry by Eye"
-			x: -2.5d
-			y: 9.5d
-		}
-		{
-			dependencies: [
-				"2A52615E8E67F885"
-				"2A3C33E299508572"
-			]
-			description: ["Tiny step for Steve, huge leap in advanced resource exploitation."]
-			hide_until_deps_visible: true
-			icon: "ad_astra:moon_globe"
-			id: "3896A55CE3C8AAD9"
-			rewards: [
-				{
-					count: 10
-					icon: { Count: 10, id: "thermal:gold_coin" }
-					id: "04ABE73CD8CED4C1"
-					item: "thermal:gold_coin"
-					type: "item"
-				}
-				{
-					id: "07DD434ADE4AAC5E"
-					item: "ad_astra:moon_globe"
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			subtitle: "Milestone"
-			tasks: [{
-				dimension: "ad_astra:moon"
-				icon: "ad_astra:moon_sand"
-				id: "52827346577F7B48"
-				title: "Visit the moon"
-				type: "dimension"
-			}]
-			title: "To the Moon!"
-			x: -3.0d
-			y: 11.0d
 		}
 		{
 			dependencies: ["69275ECFC147E15B"]
@@ -460,7 +404,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["69275ECFC147E15B"]
+			dependencies: ["0BAA1B60B372E283"]
 			description: [
 				"Sugary explosives is the future of food, crunch random materials into the best food of the game!"
 				""
@@ -470,15 +414,15 @@
 			icon: "create:bar_of_chocolate"
 			id: "141CF17F211E6268"
 			shape: "diamond"
-			subtitle: "Secondary 2B"
+			subtitle: "Secondary 3A"
 			tasks: [{
 				id: "38D16EE235A88EA7"
 				title: "Unlock Bonus 2B"
 				type: "checkmark"
 			}]
 			title: "Sacchariferous Industry"
-			x: 0.5d
-			y: 6.5d
+			x: -2.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -540,8 +484,8 @@
 				value: 1
 			}]
 			title: "Candy Machinery"
-			x: 1.0d
-			y: 8.0d
+			x: -3.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["73CF11A2C0D4A9E5"]
@@ -686,6 +630,32 @@
 			title: "&5The End?&f"
 			x: -1.0d
 			y: 15.0d
+		}
+		{
+			dependencies: ["69275ECFC147E15B"]
+			icon: "create:cardboard"
+			id: "072F6BA76ABDAC10"
+			tasks: [{
+				id: "67F4D326696126CD"
+				title: "Unlock Bonus 2B"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["072F6BA76ABDAC10"]
+			disable_toast: true
+			icon: "kubejs:logistic_mechanism"
+			id: "50E809C7A7254A4B"
+			tasks: [{
+				id: "1F5A647329CEB074"
+				item: "kubejs:logistic_mechanism"
+				title: "Complete Bonus 2B"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.0d
 		}
 	]
 	title: " Progression"

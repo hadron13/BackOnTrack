@@ -405,7 +405,7 @@
 				type: "item"
 			}]
 			title: "Self Defense Mechanism"
-			x: 6.0d
+			x: 7.5d
 			y: -0.5d
 		}
 		{
@@ -445,42 +445,6 @@
 			title: "Un-Cannon"
 			x: 7.5d
 			y: 1.5d
-		}
-		{
-			dependencies: ["64F3352725385210"]
-			description: ["Deal powerful damage into your enemies with this huge quad cannon, for 3 times the price of it's smaller version it shoots 4 shots each time, dealing 4 times the damage of the small cannon."]
-			icon: {
-				Count: 1
-				id: "tfmg:quad_potato_cannon"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "42DB66AD123A52A4"
-			rewards: [{
-				id: "1F3A2A8E1333B400"
-				item: {
-					Count: 1
-					id: "tfmg:quad_potato_cannon"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "60 Silver"
-			tasks: [{
-				consume_items: true
-				count: 60L
-				icon: { Count: 60, id: "thermal:silver_coin" }
-				id: "41C661B115151EBD"
-				item: "thermal:silver_coin"
-				type: "item"
-			}]
-			title: "External Offense Mechanism"
-			x: 7.5d
-			y: -0.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]

@@ -15,7 +15,7 @@ JEIEvents.hideItems(event => {
 	hide_metal('thermal', 'steel')
 	hide_metal('thermal', 'tin')
 	hide_metal('thermal', 'bronze')
-    hide_metal('thermal', 'electrum')
+  hide_metal('thermal', 'electrum')
 	hide_metal('createdeco', 'cast_iron')
 	hide_metal('createbigcannons', 'cast_iron')
 	hide_metal('davebuildingmod', 'steel')
@@ -364,7 +364,7 @@ ItemEvents.tooltip(tooltip => {
 	tooltip.add("kubejs:accellerator_glowstone", ["§7When used in Alchemy Research:", "  §6One of the §ecorrect §6Reagents",
 		"  §6in §ecorrect §6slots will not be consumed"]);
 
-	tooltip.add("thermal:machine_press", ["§eWarning: crash when viewing recipes."])
+	// tooltip.add("thermal:machine_press", ["§eWarning: crash when viewing recipes."])
 
 	tooltip.add("ae2:growth_accelerator", ["§erecipe by volit <3"])
 

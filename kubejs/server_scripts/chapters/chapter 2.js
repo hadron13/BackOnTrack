@@ -8,7 +8,7 @@ let KJ = (id, x) => MOD("kubejs", id, x)
 let F = (id, x) =>  MOD("forge", id, x)
 
 ServerEvents.recipes((bot) => {
-	bot.recipes.createCompacting(KJ('rose_quartz_seed'),Fluid.of(TE('redstone'), 500) )
+	bot.recipes.createCompacting(KJ('rose_quartz_seed'),Fluid.of(TE('redstone'), 500))
 
 	bot.recipes.createDeploying(CR('electron_tube'), [KJ('empty_tube'), CR('polished_rose_quartz')])
 
@@ -120,4 +120,62 @@ ServerEvents.recipes((bot) => {
 		'H  ',
 		'HMR'
 	], {M: KJ('brass_machine'), H: CR('brass_sheet'), R: CR('cogwheel'), T: CR('brass_hand')})  
+})
+
+ServerEvents.recipes((bot) => {
+
+	bot.recipes.createCrushing(TE('sawdust', 2), MC('stick'))
+
+	bot.recipes.createMixing(CR('pulp'), [Item.of(TE('sawdust'), 4), Fluid.of(MC('water'), 250)])
+	bot.recipes.createMixing(KJ('resin_pulp'), [Item.of(CR('pulp'), 1), Fluid.of(GB('resin'), 25)])
+
+	bot.recipes.gearboxPyroprocessing(KJ('dry_pulp'), KJ('resin_pulp'))
+
+	bot.recipes.createCompacting(CR('bound_cardboard_block'), KJ(('dry_pulp'), 8))
+
+	bot.stonecutting(Item.of(CR('cardboard'), 4), CR('bound_cardboard_block'))
+
+	let t = KJ('incomplete_logistic_mechanism')
+	bot.recipes.createSequencedAssembly([
+		KJ('logistic_mechanism'),
+	], CR('precision_mechanism'), [
+		bot.recipes.createDeploying(t, [t, CR('cardboard')]),
+		bot.recipes.createDeploying(t, [t, CR('electron_tube')]),
+		bot.recipes.createDeploying(t, [t, AL('bronze_nugget')]),
+		bot.recipes.createDeploying(t, [t, CR('super_glue')]),
+		bot.recipes.gearboxMechanizing(t, t)
+	]).transitionalItem(t)
+		.loops(1)
+		.id('kubejs:logistic_mechanism')
+
+	let cardboard_machine = (id, amount, other_ingredient) => {
+		bot.remove({ output: id })
+		if (other_ingredient) {
+			bot.smithing(Item.of(id, amount), KJ('brass_template'), KJ('logistic_machine'), other_ingredient)
+			bot.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: KJ('logistic_machine'), B: other_ingredient })
+		}
+		else
+			bot.stonecutting(Item.of(id, amount), KJ('logistic_machine'))}
+
+	cardboard_machine(CR('factory_gauge'), 8, CR('stock_link'))
+	cardboard_machine(CR('stock_link'), 2, CR('transmitter'))
+	cardboard_machine(CR('white_postbox'), 1, MC('barrel'))
+	cardboard_machine(CR('package_frogport'), 2, CR('item_vault'))
+	cardboard_machine(CR('redstone_requester'), 1, CR('redstone_contact'))
+	cardboard_machine(CR('packager'), 2, CR('cardboard'))
+	cardboard_machine(CR('stock_ticker'), 1, CR('factory_gauge'))
+	cardboard_machine('createstockbridge:ae_bridge', 1, AE2('interface'))
+	cardboard_machine('createqol:ender_packager', 2, 'createqol:shadow_radiance_casing')
+
+	bot.shaped(KJ('logistic_machine'), [
+		'SSS',
+		'SCS',
+		'SSS'
+	], {C: AL('bronze_casing'), S: KJ('logistic_mechanism')})
+
+
+
+
+	bot.recipes.createMixing([Fluid.of(MC('milk')),Fluid.of(MC('water'))], [Fluid.of(MC('milk')),Fluid.of(MC('water'))]).processingTime(1)
+
 })

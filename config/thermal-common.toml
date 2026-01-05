@@ -39,11 +39,3 @@
 			#Whether this feature should naturally spawn in the world.
 			Enable = true
 
-		[World.Features.Ruby]
-			#Whether this feature should naturally spawn in the world.
-			Enable = true
-
-		[World.Features.Apatite]
-			#Whether this feature should naturally spawn in the world.
-			Enable = true
-

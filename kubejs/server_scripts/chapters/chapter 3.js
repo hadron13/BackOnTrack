@@ -14,7 +14,6 @@ ServerEvents.recipes((bot) => {
     bot.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 300), [],"minecraft:swamp")
     bot.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 100), [],"minecraft:ocean")
 
-
     bot.recipes.createMixing(Fluid.of(KJ("oil_brine"), 270), [Fluid.of(GB("petroleum"), 250), Fluid.of(MC("water"), 20)] )
     bot.recipes.gearboxElectrolyzing([Fluid.of(KJ("desalted_oil"), 250), GB("salt_dust"), Item.of(MC("sand")).withChance(0.2)], Fluid.of(KJ("oil_brine"), 270)).energy(100).superheated()
 
@@ -34,13 +33,11 @@ ServerEvents.recipes((bot) => {
         Fluid.of("kubejs:desalted_oil", 1300)
     ).mode("distil_flash")
 
-
     let merox = (ingredient, results) =>{
         bot.recipes.createMixing([ Item.of("gearbox:caustic_soda").withChance(0.5)].concat(results) , [ingredient, GB("caustic_soda")])
     }
     let desulfurize = (ingredient_name) =>{
-        bot.recipes.createMixing([ Fluid.of("gearbox:hydrogen_sulfide", 100), Fluid.of("kubejs:desulfurized_" + ingredient_name, 500)] , [Fluid.of("kubejs:" + ingredient_name, 600), Fluid.of("gearbox:hydrogen", 100) ]).heated()
-    }
+        bot.recipes.createMixing([ Fluid.of("gearbox:hydrogen_sulfide", 100), Fluid.of("kubejs:desulfurized_" + ingredient_name, 500)] , [Fluid.of("kubejs:" + ingredient_name, 600), Fluid.of("gearbox:hydrogen", 100) ]).heated()}
 
     merox(Fluid.of("gearbox:volatile_gas", 1000), [Fluid.of("gearbox:butane", 300), Fluid.of("gearbox:propane", 1000)])
     bot.recipes.createMixing(Fluid.of("gearbox:lpg", 1000), [Fluid.of("gearbox:butane", 300), Fluid.of("gearbox:propane", 700)])
@@ -69,8 +66,7 @@ ServerEvents.recipes((bot) => {
     bot.recipes.gearboxDistilling([
         Fluid.of("kubejs:heavy_oil_residue", 200),
         Fluid.of("kubejs:heavy_gas_oil", 200 ),
-        Fluid.of("kubejs:light_gas_oil", 100 )
-        ],
+        Fluid.of("kubejs:light_gas_oil", 100 )],
         Fluid.of("kubejs:oil_residue", 500)
     ).mode("distil_vacuum")
 
@@ -111,6 +107,11 @@ ServerEvents.recipes((bot) => {
         'FPV',
         'SSS'
     ], {S: AL('steel_sheet'), V: CR('stressometer'), F: AL('steel_casing'), P: KJ('brass_machine')})
+	bot.shaped(KJ('explosive_machine'), [
+			'SSS',
+			'SCS',
+			'SSS'
+		], {C: 'alloyed:steel_casing', S: KJ('explosive_mechanism')})
     bot.shaped(GB('steel_fluid_pipe', 6), [
         'SCS'
     ], {C: AL('steel_ingot'), S: AL('steel_sheet')})
@@ -128,7 +129,6 @@ ServerEvents.recipes((bot) => {
 		"cooling_time": 60
 	})
 
-
 	let t = KJ('incomplete_explosive_mechanism')
 	bot.recipes.createSequencedAssembly([
 		KJ('explosive_mechanism'),
@@ -141,18 +141,5 @@ ServerEvents.recipes((bot) => {
 		bot.recipes.gearboxMechanizing(t, t)
 	]).transitionalItem(t)
 		.loops(1)
-
-    
-
-
-	event.shaped(KJ('explosive_machine'), [
-			'SSS',
-			'SCS',
-			'SSS'
-		], {
-		C: 'alloyed:steel_casing',
-		S: KJ('explosive_mechanism')
-	})
-
 
 })

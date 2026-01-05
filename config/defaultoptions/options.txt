@@ -31,8 +31,8 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:1.0
-renderDistance:12
-simulationDistance:12
+renderDistance:11
+simulationDistance:11
 entityDistanceScaling:1.0
 guiScale:2
 particles:0
@@ -42,8 +42,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","file/Stay_True_1.20.zip","resources/BVB-Edited.zip","file/staytrue1.20.1.zip","delightful:overhauls","file/Tom\u0027s Create Style 1.0.zip","file/Create_Ultra_v1.0.zip","file/FreshAnimations_v1.10.1.zip","file/FA+All_Extensions-v1.6.zip","file/Create Back On Track 1.5.zip"]
-incompatibleResourcePacks:["resources/BVB-Edited.zip"]
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","resources/BVB-Edited.zip","delightful:overhauls","file/Create Back On Track 1.5","resources/simis_redzits"]
+incompatibleResourcePacks:["resources/BVB-Edited.zip","resources/simis_redzits"]
 lastServer:
 lang:en_us
 soundDevice:""
@@ -53,7 +53,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -84,10 +84,10 @@ onlyShowSecureChat:false
 panoramaScrollSpeed:1.0
 telemetryOptInExtra:false
 onboardAccessibility:false
-soundCategory_master:0.0
+soundCategory_master:0.11258278145695365
 soundCategory_music:0.0
 soundCategory_record:0.0
-soundCategory_weather:1.0
+soundCategory_weather:0.0
 soundCategory_block:1.0
 soundCategory_hostile:0.176056338028169
 soundCategory_neutral:1.0

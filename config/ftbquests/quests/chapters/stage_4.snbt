@@ -782,7 +782,9 @@
 			y: 23.0d
 		}
 		{
+			dependencies: ["6C3258881A44FA46"]
 			description: ["Redirect liquid plastic from your previous factory into this one."]
+			hide_dependency_lines: true
 			icon: "kubejs:plastic_bucket"
 			id: "278539C35D960C51"
 			subtitle: "Contraption 58-2"

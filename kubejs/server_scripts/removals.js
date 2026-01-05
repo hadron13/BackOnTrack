@@ -42,7 +42,7 @@ const removeByMod = [
 ];
 
 const recipeIdsToRemove = [
-  AP("charcoal_block"),
+  CR('crafting/materials/cardboard_from_bound_block'),
   CR('splashing/gravel'),
   CR('splashing/red_sand'),
   TC("smeltery/casting/metal/copper/ingot_gold_cast"),
@@ -238,6 +238,10 @@ const removeByInput = [
 ];
 
 const removeByOutput = [
+  CR('cardboard'),
+  CR('pulp'),
+  AP("charcoal_block"),
+  CR('bound_cardboard_block'),
   TE("side_config_augment"),
   AD("steel_plate"),
   MC('basalt'),
@@ -327,7 +331,6 @@ const removeByOutput = [
   CI("cast_iron_ingot"),
   TE("redstone_mushroom_spores"),
   "magicfeather:primeval_feather",
-  CR("factory_gauge"),
   CR('mechanical_arm'),
   CR('mechanical_crafter'),
   TE('dynamo_numismatic'),
