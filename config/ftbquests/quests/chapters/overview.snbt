@@ -633,6 +633,13 @@
 		}
 		{
 			dependencies: ["69275ECFC147E15B"]
+			description: [
+				"In this chapter, you’ll need to dive headfirst into nature."
+				""
+				"You’ll require many plants and specific liquids that are hard to obtain."
+				""
+				"You’ll also have to venture deep into the world in search of valuable ores."
+			]
 			icon: "create:cardboard"
 			id: "072F6BA76ABDAC10"
 			tasks: [{
@@ -640,11 +647,16 @@
 				title: "Unlock Bonus 2B"
 				type: "checkmark"
 			}]
+			title: "Early Logistics Boost"
 			x: 0.5d
 			y: 6.5d
 		}
 		{
-			dependencies: ["072F6BA76ABDAC10"]
+			dependencies: [
+				"072F6BA76ABDAC10"
+				"2F4948D507C18B70"
+			]
+			description: ["With this technology, moving resources becomes much easier. Using trains and belts, you can transport any material across any distance you need — so let your imagination run free, but be careful: too much item flow can easily lead to endless bottlenecks."]
 			disable_toast: true
 			icon: "kubejs:logistic_mechanism"
 			id: "50E809C7A7254A4B"

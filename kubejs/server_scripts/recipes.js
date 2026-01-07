@@ -1839,7 +1839,7 @@ function chocolate(event){
 	let t = KJ('incomplete_candy_mechanism')
 	event.recipes.createSequencedAssembly([
 		KJ('candy_mechanism'),
-	], CR('precision_mechanism'), [
+	], KJ('explosive_mechanism'), [
 		event.recipes.createDeploying(t, [t, 'create_confectionery:gingerbread']),
 		event.recipes.createFilling(t, [t, Fluid.of(CR('chocolate'), 500)]),
 		event.recipes.createFilling(t, [t, Fluid.of("create_confectionery:ruby_chocolate",  50)]),

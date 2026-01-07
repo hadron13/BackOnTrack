@@ -160,10 +160,6 @@ StartupEvents.registry('block', event => {
 
 	event.create('soulless_sand').model('kubejs:block/soulless_sand').material('metal').hardness(4.0).displayName('Souless Sand')
 
-	event.create('ae2:3x_sky_stone_block').model('kubejs:block/sky_stone_block').material('metal').hardness(4.0).displayName('sky stone block 3x')
-	event.create('ae2:2x_sky_stone_block').model('kubejs:block/sky_stone_block').material('metal').hardness(4.0).displayName('sky stone block 2x')
-	event.create('ae2:1x_sky_stone_block').model('kubejs:block/sky_stone_block').material('metal').hardness(4.0).displayName('sky stone block 1x')
-
 	let machine = (name, display, layer) => {
 	let id = name.toLowerCase()
 	event.create(id + '_machine')

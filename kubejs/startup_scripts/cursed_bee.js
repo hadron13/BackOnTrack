@@ -17,7 +17,7 @@ global.bees = [
             'background': 0x00cdcf,
             'highlight': 0x0a615a
         },
-        "description": "\u00A75" + "The Power of " + "\u00A7o"  + "\u00A7l" + "CYAN",
+        "description": "\u00A73" + "The Power of " + "\u00A7o"  + "\u00A7l" + "CYAN",
         "egg_name": "Xonerabee Spwan Egg",
         "proportion": 1/16
     },
