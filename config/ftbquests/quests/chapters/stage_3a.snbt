@@ -23,7 +23,7 @@
 				"106CC397E5472B46"
 				"10690D8E8963D4CB"
 			]
-			description: ["Congratulations! You have just finished Chapter 2b! Now you may not worry about food, forever."]
+			description: ["{ftbquest.stage_3a.quests0.description0}"]
 			id: "7A80B449DD525F7D"
 			rewards: [
 				{
@@ -45,13 +45,13 @@
 			]
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "Contraption 32"
+			subtitle: "{ftbquest.stage_3a.quests0.subtitle}"
 			tasks: [{
 				id: "49AA585621C21FBA"
 				item: "kubejs:candy_mechanism"
 				type: "item"
 			}]
-			title: "Chapter 2B Complete!"
+			title: "{ftbquest.stage_3a.quests0.title}"
 			x: -4.25d
 			y: 8.0d
 		}
@@ -62,10 +62,10 @@
 				"3BA6DC46EA464C58"
 				"076594A762B3FC88"
 			]
-			description: ["Crunchy crystals pinki-fy the chocolate, resonance cascade not included."]
+			description: ["{ftbquest.stage_3a.quests1.description0}"]
 			icon: "create_confectionery:ruby_chocolate_bucket"
 			id: "78C29DB493B1B701"
-			subtitle: "Contraption 31-1"
+			subtitle: "{ftbquest.stage_3a.quests1.subtitle}"
 			tasks: [
 				{
 					id: "5C0E497EDC5FAFF8"
@@ -74,11 +74,11 @@
 				}
 				{
 					id: "625D065139849C70"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests1.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Pink Crystal Chocolate"
+			title: "{ftbquest.stage_3a.quests1.title}"
 			x: -6.0d
 			y: 7.0d
 		}
@@ -88,10 +88,10 @@
 				"191305FFD7E6A12D"
 				"3BA6DC46EA464C58"
 			]
-			description: ["Mix milk, beans and sugar to Create regular old chocolate."]
+			description: ["{ftbquest.stage_3a.quests2.description0}"]
 			icon: "create:chocolate_bucket"
 			id: "106CC397E5472B46"
-			subtitle: "Contraption 31-2"
+			subtitle: "{ftbquest.stage_3a.quests2.subtitle}"
 			tasks: [
 				{
 					id: "53FD389A38A66FC4"
@@ -100,11 +100,11 @@
 				}
 				{
 					id: "6D9261354CB0E481"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests2.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Just Chocolate"
+			title: "{ftbquest.stage_3a.quests2.title}"
 			x: -6.0d
 			y: 8.0d
 		}
@@ -115,10 +115,10 @@
 				"5A48ACD1E1A2D736"
 				"3BA6DC46EA464C58"
 			]
-			description: ["More cocoa, less sugar, darker tone."]
+			description: ["{ftbquest.stage_3a.quests3.description0}"]
 			icon: "create_confectionery:black_chocolate_bucket"
 			id: "22517F1E5F84FD8E"
-			subtitle: "Contraption 31-3"
+			subtitle: "{ftbquest.stage_3a.quests3.subtitle}"
 			tasks: [
 				{
 					id: "2E2C966D37A14D2D"
@@ -127,21 +127,21 @@
 				}
 				{
 					id: "43BBC388993CD4B5"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests3.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Darker Chocolate"
+			title: "{ftbquest.stage_3a.quests3.title}"
 			x: -6.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["141CF17F211E6268"]
-			description: ["Milking can be automating by using a deployer on a cow, a bucket will have to be emptied and re-inserted into the deployer for continous milking."]
+			description: ["{ftbquest.stage_3a.quests4.description0}"]
 			hide_until_deps_complete: true
 			icon: "minecraft:milk_bucket"
 			id: "5A48ACD1E1A2D736"
-			subtitle: "Contraption 29"
+			subtitle: "{ftbquest.stage_3a.quests4.subtitle}"
 			tasks: [
 				{
 					id: "05FAD6AB385D3F34"
@@ -150,21 +150,21 @@
 				}
 				{
 					id: "5A16000B1B1BBE2B"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests4.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Milked"
+			title: "{ftbquest.stage_3a.quests4.title}"
 			x: -9.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["141CF17F211E6268"]
-			description: ["Set up a simple honey farm by hooking pipes directly into beehives, this method does not anger bees, and is fully automatable."]
+			description: ["{ftbquest.stage_3a.quests5.description0}"]
 			hide_until_deps_complete: true
 			icon: "create:honey_bucket"
 			id: "2742F5B931B4492F"
-			subtitle: "Contraption 26"
+			subtitle: "{ftbquest.stage_3a.quests5.subtitle}"
 			tasks: [
 				{
 					id: "04B701999E480DD3"
@@ -173,20 +173,20 @@
 				}
 				{
 					id: "1FB00AA66548299C"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests5.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Honey"
+			title: "{ftbquest.stage_3a.quests5.title}"
 			x: -9.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["5BA6722C2A672672"]
-			description: ["Grind down the netherrack to obtain the hell's version of flour, this is also useful for feeding blazes."]
+			description: ["{ftbquest.stage_3a.quests6.description0}"]
 			icon: "create:cinder_flour"
 			id: "6A0D07E7BCFDC84A"
-			subtitle: "Contraption 27-1"
+			subtitle: "{ftbquest.stage_3a.quests6.subtitle}"
 			tasks: [
 				{
 					id: "44197E499B33FE1C"
@@ -195,11 +195,11 @@
 				}
 				{
 					id: "025F0365D53A9847"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests6.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Hell Flour"
+			title: "{ftbquest.stage_3a.quests6.title}"
 			x: -6.0d
 			y: 3.5d
 		}
@@ -210,10 +210,10 @@
 				"6A0D07E7BCFDC84A"
 				"3BA6DC46EA464C58"
 			]
-			description: ["Combine honey, sugar and flour from the overworld with cinder flower from the underworld to obtain the gingerdough mixture, without ginger, or yet bread."]
+			description: ["{ftbquest.stage_3a.quests7.description0}"]
 			icon: "create_confectionery:gingerdough"
 			id: "3B7A8138E2826809"
-			subtitle: "Contraption 27-2"
+			subtitle: "{ftbquest.stage_3a.quests7.subtitle}"
 			tasks: [
 				{
 					id: "2934AFF8052A21F1"
@@ -222,11 +222,11 @@
 				}
 				{
 					id: "65AB59FC5A0FB646"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests7.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Dough Mix"
+			title: "{ftbquest.stage_3a.quests7.title}"
 			x: -7.5d
 			y: 5.0d
 		}
@@ -234,7 +234,7 @@
 			dependencies: ["4ED21477B5FD4FE7"]
 			icon: "create:wheat_flour"
 			id: "452AC768DFA2D931"
-			subtitle: "Contraption 25-2"
+			subtitle: "{ftbquest.stage_3a.quests8.subtitle}"
 			tasks: [
 				{
 					id: "32699EDEDBD09635"
@@ -243,20 +243,20 @@
 				}
 				{
 					id: "286BADB87ADB8F1C"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests8.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Regular Flour"
+			title: "{ftbquest.stage_3a.quests8.title}"
 			x: -8.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["53C5D183F9F513D8"]
-			description: ["The soul of candies. Also known as saccharose (C₁₂H₂₂O₁₁)"]
+			description: ["{ftbquest.stage_3a.quests9.description0}"]
 			icon: "minecraft:sugar"
 			id: "3BA6DC46EA464C58"
-			subtitle: "Contraption 28-2"
+			subtitle: "{ftbquest.stage_3a.quests9.subtitle}"
 			tasks: [
 				{
 					id: "08A0B25266B5AA8E"
@@ -265,21 +265,21 @@
 				}
 				{
 					id: "427EF8926CAFA096"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests9.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Saccharose"
+			title: "{ftbquest.stage_3a.quests9.title}"
 			x: -9.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["141CF17F211E6268"]
-			description: ["Beans are simple to automate, you may use a vertical harvester instead of regular horizontal ones."]
+			description: ["{ftbquest.stage_3a.quests10.description0}"]
 			hide_until_deps_complete: true
 			icon: "minecraft:cocoa_beans"
 			id: "191305FFD7E6A12D"
-			subtitle: "Contraption 30-1"
+			subtitle: "{ftbquest.stage_3a.quests10.subtitle}"
 			tasks: [
 				{
 					id: "3E31669E12DD6348"
@@ -288,7 +288,7 @@
 				}
 				{
 					id: "27E65842F3FC296C"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests10.tasks1.title}"
 					type: "checkmark"
 				}
 			]
@@ -297,10 +297,10 @@
 		}
 		{
 			dependencies: ["63407E78ED94DCF9"]
-			description: ["Crushing crushed beans again yields (cocoa) butter."]
+			description: ["{ftbquest.stage_3a.quests11.description0}"]
 			icon: "create_confectionery:cocoa_butter"
 			id: "098744BFA66730E4"
-			subtitle: "Contraption 30-3"
+			subtitle: "{ftbquest.stage_3a.quests11.subtitle}"
 			tasks: [
 				{
 					id: "6D572CA1B46D395B"
@@ -309,7 +309,7 @@
 				}
 				{
 					id: "30609735BDA37412"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests11.tasks1.title}"
 					type: "checkmark"
 				}
 			]
@@ -318,10 +318,10 @@
 		}
 		{
 			dependencies: ["191305FFD7E6A12D"]
-			description: ["Press the beans"]
+			description: ["{ftbquest.stage_3a.quests12.description0}"]
 			icon: "create_confectionery:crushed_cocoa"
 			id: "63407E78ED94DCF9"
-			subtitle: "Contraption 30-2"
+			subtitle: "{ftbquest.stage_3a.quests12.subtitle}"
 			tasks: [
 				{
 					id: "337A8B9842F33D48"
@@ -330,7 +330,7 @@
 				}
 				{
 					id: "37BB7D202E712503"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests12.tasks1.title}"
 					type: "checkmark"
 				}
 			]
@@ -339,11 +339,11 @@
 		}
 		{
 			dependencies: ["141CF17F211E6268"]
-			description: ["It does NOT grow faster on sand."]
+			description: ["{ftbquest.stage_3a.quests13.description0}"]
 			hide_until_deps_complete: true
 			icon: "minecraft:sugar_cane"
 			id: "53C5D183F9F513D8"
-			subtitle: "Contraption 28-1"
+			subtitle: "{ftbquest.stage_3a.quests13.subtitle}"
 			tasks: [
 				{
 					id: "3CDBB7467BF0C8F7"
@@ -352,17 +352,17 @@
 				}
 				{
 					id: "7F400B45865F3EA3"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests13.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Cane, of Sugar"
+			title: "{ftbquest.stage_3a.quests13.title}"
 			x: -10.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["141CF17F211E6268"]
-			description: ["Either use leftover netherrack from mining contraptions, or simply use homeopathy to turn netherrack into even more netherrack!"]
+			description: ["{ftbquest.stage_3a.quests14.description0}"]
 			hide_until_deps_complete: true
 			icon: "minecraft:netherrack"
 			id: "5BA6722C2A672672"
@@ -374,21 +374,21 @@
 				}
 				{
 					id: "74D2C321B2176675"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests14.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Nether Rack"
+			title: "{ftbquest.stage_3a.quests14.title}"
 			x: -7.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["141CF17F211E6268"]
-			description: ["A simple rotary farm should sufice, although the odds of you already having one are big."]
+			description: ["{ftbquest.stage_3a.quests15.description0}"]
 			hide_until_deps_complete: true
 			icon: "minecraft:wheat"
 			id: "4ED21477B5FD4FE7"
-			subtitle: "Contraption 25-1"
+			subtitle: "{ftbquest.stage_3a.quests15.subtitle}"
 			tasks: [
 				{
 					id: "3914119E40696F13"
@@ -397,17 +397,17 @@
 				}
 				{
 					id: "4FFD688308B097FB"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests15.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Wheatley"
+			title: "{ftbquest.stage_3a.quests15.title}"
 			x: -9.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["141CF17F211E6268"]
-			description: ["The recipe uses some crunchy crystals you produce already in chapter 2."]
+			description: ["{ftbquest.stage_3a.quests16.description0}"]
 			hide_until_deps_complete: true
 			icon: "create:polished_rose_quartz"
 			id: "076594A762B3FC88"
@@ -419,20 +419,20 @@
 				}
 				{
 					id: "5E288E6DFCC2CEA4"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests16.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Crunchy Crystals"
+			title: "{ftbquest.stage_3a.quests16.title}"
 			x: -7.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3B7A8138E2826809"]
-			description: ["Cooking is a delicated method involving multiple steps of chemical reactions, such as baking."]
+			description: ["{ftbquest.stage_3a.quests17.description0}"]
 			icon: "create_confectionery:gingerbread"
 			id: "10690D8E8963D4CB"
-			subtitle: "Contraption 27-3"
+			subtitle: "{ftbquest.stage_3a.quests17.subtitle}"
 			tasks: [
 				{
 					id: "60D0E74CDC75888B"
@@ -441,17 +441,17 @@
 				}
 				{
 					id: "66A27366098C82A4"
-					title: "Automated"
+					title: "{ftbquest.stage_3a.quests17.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Baking Bread"
+			title: "{ftbquest.stage_3a.quests17.title}"
 			x: -6.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["63407E78ED94DCF9"]
-			description: ["This is a byproduct of pressing beans, you can use it in hot chocolate."]
+			description: ["{ftbquest.stage_3a.quests18.description0}"]
 			id: "4EBA20DD0311AB5E"
 			tasks: [{
 				id: "08F148DC2A9CC12E"
@@ -462,5 +462,5 @@
 			y: 11.5d
 		}
 	]
-	title: "&f3a&r Sacchariferous Industry"
+	title: "{ftbquest.stage_3a.title}"
 }
