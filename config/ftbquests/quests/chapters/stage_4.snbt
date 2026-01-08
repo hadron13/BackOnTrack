@@ -39,7 +39,7 @@
 	quests: [
 		{
 			dependencies: ["780E8AE86250C73D"]
-			description: ["Do not let be fooled by the sheer size of this chapter's questing. It revolves around creating common materials and distributing them to each of the 4 component's production."]
+			description: ["{ftbquest.stage_4.quests0.description0}"]
 			hide_until_deps_complete: true
 			icon: "kubejs:explosive_mechanism"
 			id: "6C3258881A44FA46"
@@ -48,31 +48,31 @@
 				id: "7EDB86424742184C"
 				type: "checkmark"
 			}]
-			title: "Zappin' Start"
+			title: "{ftbquest.stage_4.quests0.title}"
 			x: 0.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
 			description: [
-				"Plastic is the main resource used in the new assembly lines."
+				"{ftbquest.stage_4.quests1.description0}"
 				""
-				"The oil deposits may be enough for now, but in the future renewable ways of producing it will be required."
+				"{ftbquest.stage_4.quests1.description1}"
 			]
 			icon: "kubejs:plastic"
 			id: "49DBAD39FC47605C"
 			tasks: [{
 				id: "0DA92CA9A123AD5D"
-				title: "Aknowleged"
+				title: "{ftbquest.stage_4.quests1.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Plastically"
+			title: "{ftbquest.stage_4.quests1.title}"
 			x: 0.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["3E67BA828E888EC5"]
-			description: ["Unfathomable job! The new power machine unlocks a range of new possibilities, and opens the way to lasers."]
+			description: ["{ftbquest.stage_4.quests2.description0}"]
 			hide_until_deps_visible: true
 			icon: "kubejs:power_machine"
 			id: "4E549678E05D7FA8"
@@ -105,7 +105,7 @@
 				item: "kubejs:power_machine"
 				type: "item"
 			}]
-			title: "Chapter 4 Complete!"
+			title: "{ftbquest.stage_4.quests2.title}"
 			x: 0.0d
 			y: 37.5d
 		}
@@ -118,11 +118,11 @@
 				"6108110497418196"
 				"201402493BBB283C"
 			]
-			description: ["The whole factory converges as you enter the electronic phase of progression, the future shines ahead of you."]
+			description: ["{ftbquest.stage_4.quests3.description0}"]
 			icon: "kubejs:power_mechanism"
 			id: "3E67BA828E888EC5"
 			size: 2.0d
-			subtitle: "Contraption 63"
+			subtitle: "{ftbquest.stage_4.quests3.subtitle}"
 			tasks: [
 				{
 					consume_items: false
@@ -132,11 +132,11 @@
 				}
 				{
 					id: "69F7ADBE17EFCA43"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests3.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Analog Circuitry"
+			title: "{ftbquest.stage_4.quests3.title}"
 			x: 0.0d
 			y: 33.5d
 		}
@@ -145,23 +145,23 @@
 				"1B692F49BB495B9A"
 				"430006C9D3CFD042"
 			]
-			description: ["As shocking as it may be, this tesla coil can do serious shocking, it can turn that piece of cast iron into a full blown magnet."]
+			description: ["{ftbquest.stage_4.quests4.description0}"]
 			id: "4960207A06C7E636"
 			shape: "diamond"
-			subtitle: "Contraption 55/56"
+			subtitle: "{ftbquest.stage_4.quests4.subtitle}"
 			tasks: [{
 				consume_items: false
 				id: "021393C5B5FF0AF3"
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			title: "Inducing: &6Teslas&r!"
+			title: "{ftbquest.stage_4.quests4.title}"
 			x: -3.0d
 			y: 21.5d
 		}
 		{
 			dependencies: ["278539C35D960C51"]
-			description: ["Coat the outer layer of the board with insulative plastic."]
+			description: ["{ftbquest.stage_4.quests5.description0}"]
 			hide_dependency_lines: true
 			id: "58965B4FA083AD88"
 			tasks: [{
@@ -174,10 +174,10 @@
 		}
 		{
 			dependencies: ["0F0E47D59BFEB77C"]
-			description: ["Can even see the press marks."]
+			description: ["{ftbquest.stage_4.quests6.description0}"]
 			icon: "kubejs:ceramic_capacitor"
 			id: "577A18A2CDF91066"
-			subtitle: "Contraption 59-2"
+			subtitle: "{ftbquest.stage_4.quests6.subtitle}"
 			tasks: [
 				{
 					id: "144B83C6F4C7C183"
@@ -186,20 +186,20 @@
 				}
 				{
 					id: "04AD0244D9AD7B72"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests6.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Clean Brickapacitor"
+			title: "{ftbquest.stage_4.quests6.title}"
 			x: -1.5d
 			y: 31.5d
 		}
 		{
 			dependencies: ["20F23B79D5F7B70E"]
-			description: ["Successfully power washed resistor."]
+			description: ["{ftbquest.stage_4.quests7.description0}"]
 			icon: "kubejs:resistor"
 			id: "3CB6C1CA88F0CBE2"
-			subtitle: "Contraption 49-2"
+			subtitle: "{ftbquest.stage_4.quests7.subtitle}"
 			tasks: [
 				{
 					id: "29EBF5733F7A5B0D"
@@ -208,20 +208,20 @@
 				}
 				{
 					id: "4A1667B2CF2F898F"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests7.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Washed Quasisulator"
+			title: "{ftbquest.stage_4.quests7.title}"
 			x: -4.0d
 			y: 31.5d
 		}
 		{
 			dependencies: ["08C16E14AEE5DB20"]
-			description: ["Shiny newly made capacitor."]
+			description: ["{ftbquest.stage_4.quests8.description0}"]
 			icon: "kubejs:electrolytic_capacitor"
 			id: "2589FD16FDDC6953"
-			subtitle: "Contraption 60-2"
+			subtitle: "{ftbquest.stage_4.quests8.subtitle}"
 			tasks: [
 				{
 					id: "7CCA43C12FEF616C"
@@ -230,20 +230,20 @@
 				}
 				{
 					id: "1601B823B0D5AB1C"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests8.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Cleansed Capacitor"
+			title: "{ftbquest.stage_4.quests8.title}"
 			x: 1.5d
 			y: 31.5d
 		}
 		{
 			dependencies: ["15252FE3C58A3343"]
-			description: ["Dirty was, but dirt is no more."]
+			description: ["{ftbquest.stage_4.quests9.description0}"]
 			icon: "kubejs:inductor"
 			id: "6108110497418196"
-			subtitle: "Contraption 61-2"
+			subtitle: "{ftbquest.stage_4.quests9.subtitle}"
 			tasks: [
 				{
 					id: "134F6848CF35FFAC"
@@ -252,11 +252,11 @@
 				}
 				{
 					id: "7B7DABD5AD6DE83A"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests9.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Undirty Magnelectric Device"
+			title: "{ftbquest.stage_4.quests9.title}"
 			x: 4.0d
 			y: 31.5d
 		}
@@ -267,10 +267,10 @@
 				"1EA971556B42BD12"
 				"49FDB6ECC1F20CAF"
 			]
-			description: ["This piece of bri... Capacitor can securely hold a bit of energy in it, useful in many cases."]
+			description: ["{ftbquest.stage_4.quests10.description0}"]
 			icon: "kubejs:dirt_ceramic_capacitor"
 			id: "0F0E47D59BFEB77C"
-			subtitle: "Contraption 59-1"
+			subtitle: "{ftbquest.stage_4.quests10.subtitle}"
 			tasks: [
 				{
 					id: "5AC06046D6B6E96E"
@@ -279,11 +279,11 @@
 				}
 				{
 					id: "59730E52FE4E1A19"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests10.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Brickapacitor"
+			title: "{ftbquest.stage_4.quests10.title}"
 			x: -1.5d
 			y: 29.0d
 		}
@@ -293,10 +293,10 @@
 				"60FEA06B49070E51"
 				"5449FAB57D627B5D"
 			]
-			description: ["This device generates electromagnetic fields, can be used in motors, alternators, cool gadgets, and weird electric circuits."]
+			description: ["{ftbquest.stage_4.quests11.description0}"]
 			icon: "kubejs:dirt_inductor"
 			id: "15252FE3C58A3343"
-			subtitle: "Contraption 61-1"
+			subtitle: "{ftbquest.stage_4.quests11.subtitle}"
 			tasks: [
 				{
 					id: "14091D9D5410CBD5"
@@ -305,11 +305,11 @@
 				}
 				{
 					id: "2E22CA533E238585"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests11.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Magnelectric Device"
+			title: "{ftbquest.stage_4.quests11.title}"
 			x: 5.5d
 			y: 29.0d
 		}
@@ -320,10 +320,10 @@
 				"60A7A7C9FA7514A3"
 				"7EABB23C5C6218F7"
 			]
-			description: ["A high quality resistor can now be assembled from the materials, at exactly (±5%) 350kΩ"]
+			description: ["{ftbquest.stage_4.quests12.description0}"]
 			icon: "kubejs:dirt_resistor"
 			id: "20F23B79D5F7B70E"
-			subtitle: "Contraption 58-1"
+			subtitle: "{ftbquest.stage_4.quests12.subtitle}"
 			tasks: [
 				{
 					id: "79EA4285208912C1"
@@ -332,11 +332,11 @@
 				}
 				{
 					id: "4271164BEEF096DF"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests12.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Quasisulator"
+			title: "{ftbquest.stage_4.quests12.title}"
 			x: -5.5d
 			y: 29.0d
 		}
@@ -347,10 +347,10 @@
 				"3E5E54C79E0F1585"
 				"3A4D6F9BDD149EF5"
 			]
-			description: ["This capacitor can hold a ton of energy, truly a lot, but there's a catch: use it wrongly and it explodes."]
+			description: ["{ftbquest.stage_4.quests13.description0}"]
 			icon: "kubejs:dirt_electrolytic_capacitor"
 			id: "08C16E14AEE5DB20"
-			subtitle: "Contraption 60-1"
+			subtitle: "{ftbquest.stage_4.quests13.subtitle}"
 			tasks: [
 				{
 					id: "490F92DCE1395E90"
@@ -359,17 +359,17 @@
 				}
 				{
 					id: "0534437B5695E3CC"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests13.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Boomer Capacitor"
+			title: "{ftbquest.stage_4.quests13.title}"
 			x: 1.5d
 			y: 29.0d
 		}
 		{
 			dependencies: ["32A4925F476AF97E"]
-			description: ["In this case the plastic will insulate and serve as an ourter casing."]
+			description: ["{ftbquest.stage_4.quests14.description0}"]
 			hide_dependency_lines: true
 			id: "372B49AA8F00707B"
 			tasks: [{
@@ -377,13 +377,13 @@
 				item: "kubejs:plastic"
 				type: "item"
 			}]
-			title: "Insucasing"
+			title: "{ftbquest.stage_4.quests14.title}"
 			x: 3.5d
 			y: 26.5d
 		}
 		{
 			dependencies: ["370E2874A398E456"]
-			description: ["These copper rods will turn into the terminals for connecting the components into the actual board. True Thru Hole."]
+			description: ["{ftbquest.stage_4.quests15.description0}"]
 			hide_dependency_lines: true
 			id: "7E5BC41A120BDC34"
 			tasks: [{
@@ -391,13 +391,13 @@
 				item: "createaddition:copper_rod"
 				type: "item"
 			}]
-			title: "Terminals"
+			title: "{ftbquest.stage_4.quests15.title}"
 			x: -1.0d
 			y: 26.5d
 		}
 		{
 			dependencies: ["4675B02BF0D4C34D"]
-			description: ["Both capacitor types rely on very close plates that store energy because they are close, but not so close that the energy flows through."]
+			description: ["{ftbquest.stage_4.quests16.description0}"]
 			hide_dependency_lines: true
 			id: "3E5E54C79E0F1585"
 			tasks: [{
@@ -405,13 +405,13 @@
 				item: "create:copper_sheet"
 				type: "item"
 			}]
-			title: "Conduction Area"
+			title: "{ftbquest.stage_4.quests16.title}"
 			x: 1.0d
 			y: 26.5d
 		}
 		{
 			dependencies: ["41DFDBF803C96569"]
-			description: ["This magnetic piece will increase the magnetic field created by the inductor, very helpful."]
+			description: ["{ftbquest.stage_4.quests17.description0}"]
 			hide_dependency_lines: true
 			id: "60FEA06B49070E51"
 			tasks: [{
@@ -419,13 +419,13 @@
 				item: "kubejs:inductor_core"
 				type: "item"
 			}]
-			title: "Magneticore"
+			title: "{ftbquest.stage_4.quests17.title}"
 			x: 3.5d
 			y: 30.0d
 		}
 		{
 			dependencies: ["235FD291165EE222"]
-			description: ["This rough sheet has a lot more area than normal sheets, and why is this good? Well, more area means more capacity, which also means bigger booms."]
+			description: ["{ftbquest.stage_4.quests18.description0}"]
 			hide_dependency_lines: true
 			id: "3A4D6F9BDD149EF5"
 			tasks: [{
@@ -433,13 +433,13 @@
 				item: "kubejs:rough_sheet"
 				type: "item"
 			}]
-			title: "Roughly Enough Area"
+			title: "{ftbquest.stage_4.quests18.title}"
 			x: 3.5d
 			y: 28.5d
 		}
 		{
 			dependencies: ["7B4A431D5930B0F9"]
-			description: ["Milled brick is used in the outer shell of the ceramic capacitor component."]
+			description: ["{ftbquest.stage_4.quests19.description0}"]
 			hide_dependency_lines: true
 			id: "1EA971556B42BD12"
 			tasks: [{
@@ -447,13 +447,13 @@
 				item: "kubejs:ceramic_powder"
 				type: "item"
 			}]
-			title: "Ceramics"
+			title: "{ftbquest.stage_4.quests19.title}"
 			x: -3.0d
 			y: 28.5d
 		}
 		{
 			dependencies: ["32A4925F476AF97E"]
-			description: ["For this time the plastic will be the base of the resistor component."]
+			description: ["{ftbquest.stage_4.quests20.description0}"]
 			hide_dependency_lines: true
 			id: "552FD6D527EA2CE3"
 			tasks: [{
@@ -461,13 +461,13 @@
 				item: "kubejs:plastic"
 				type: "item"
 			}]
-			title: "Polymer Base"
+			title: "{ftbquest.stage_4.quests20.title}"
 			x: -3.0d
 			y: 30.0d
 		}
 		{
 			dependencies: ["2B16EE336CC23F70"]
-			description: ["Rolling a piece of wire around the core will allow it to generate a big and strong electromagnetic field around it."]
+			description: ["{ftbquest.stage_4.quests21.description0}"]
 			hide_dependency_lines: true
 			id: "5449FAB57D627B5D"
 			tasks: [{
@@ -475,13 +475,13 @@
 				item: "createaddition:copper_wire"
 				type: "item"
 			}]
-			title: "Rollover"
+			title: "{ftbquest.stage_4.quests21.title}"
 			x: 6.5d
 			y: 26.5d
 		}
 		{
 			dependencies: ["53B8F626824C1ED8"]
-			description: ["A bit conductive but not too much, that's why it resists."]
+			description: ["{ftbquest.stage_4.quests22.description0}"]
 			hide_dependency_lines: true
 			id: "60A7A7C9FA7514A3"
 			tasks: [{
@@ -489,13 +489,13 @@
 				item: "kubejs:carbon_sheet"
 				type: "item"
 			}]
-			title: "Semiconductive"
+			title: "{ftbquest.stage_4.quests22.title}"
 			x: -4.5d
 			y: 26.5d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["This piece of clay basically glues everything together inside the resistor."]
+			description: ["{ftbquest.stage_4.quests23.description0}"]
 			hide_dependency_lines: true
 			id: "7EABB23C5C6218F7"
 			tasks: [{
@@ -503,13 +503,13 @@
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			title: "Binding of Resistor"
+			title: "{ftbquest.stage_4.quests23.title}"
 			x: -6.5d
 			y: 26.5d
 		}
 		{
 			dependencies: ["411D59426F3D3B98"]
-			description: ["Use the mica's insulating properties to make ceramic capacitors."]
+			description: ["{ftbquest.stage_4.quests24.description0}"]
 			hide_dependency_lines: true
 			id: "49FDB6ECC1F20CAF"
 			tasks: [{
@@ -517,16 +517,16 @@
 				item: "kubejs:mica_sheet"
 				type: "item"
 			}]
-			title: "Insulativing"
+			title: "{ftbquest.stage_4.quests24.title}"
 			x: -3.0d
 			y: 26.5d
 		}
 		{
 			dependencies: ["4960207A06C7E636"]
-			description: ["A rough surface means more area, more area is more capacity, therefore more powah!"]
+			description: ["{ftbquest.stage_4.quests25.description0}"]
 			icon: "kubejs:rough_sheet"
 			id: "235FD291165EE222"
-			subtitle: "Contraption 55-2"
+			subtitle: "{ftbquest.stage_4.quests25.subtitle}"
 			tasks: [
 				{
 					id: "0695121E9CAEA4C2"
@@ -535,21 +535,21 @@
 				}
 				{
 					id: "01DD4C0D7836A01B"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests25.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Roughly Copper"
+			title: "{ftbquest.stage_4.quests25.title}"
 			x: -1.5d
 			y: 23.0d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["After taking a bath in acid, this sheet can proceed to be shocked by the tesla."]
+			description: ["{ftbquest.stage_4.quests26.description0}"]
 			hide_dependency_lines: true
 			icon: "kubejs:soaked_sheet"
 			id: "430006C9D3CFD042"
-			subtitle: "Contraption 55-1"
+			subtitle: "{ftbquest.stage_4.quests26.subtitle}"
 			tasks: [
 				{
 					id: "6E5809E12A14378D"
@@ -558,21 +558,21 @@
 				}
 				{
 					id: "62263EB8FF0A6F44"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests26.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Soaked Sheet"
+			title: "{ftbquest.stage_4.quests26.title}"
 			x: -4.5d
 			y: 20.0d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["After getting beaten a bit by a press, this cast iron ingot can be electrified and turn into a full blown magnet."]
+			description: ["{ftbquest.stage_4.quests27.description0}"]
 			hide_dependency_lines: true
 			icon: "createbigcannons:cast_iron_ingot"
 			id: "1B692F49BB495B9A"
-			subtitle: "Contraption 56-1"
+			subtitle: "{ftbquest.stage_4.quests27.subtitle}"
 			tasks: [
 				{
 					id: "451A0ECDB19D916D"
@@ -581,7 +581,7 @@
 				}
 				{
 					id: "76A7A8DDB4279510"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests27.tasks1.title}"
 					type: "checkmark"
 				}
 			]
@@ -590,10 +590,10 @@
 		}
 		{
 			dependencies: ["4960207A06C7E636"]
-			description: ["The cast iron is now magnetic and can be used in the inductor component."]
+			description: ["{ftbquest.stage_4.quests28.description0}"]
 			icon: "kubejs:inductor_core"
 			id: "41DFDBF803C96569"
-			subtitle: "Contraption 56-2"
+			subtitle: "{ftbquest.stage_4.quests28.subtitle}"
 			tasks: [
 				{
 					id: "5C8437F036362857"
@@ -602,50 +602,50 @@
 				}
 				{
 					id: "570062261F5B8323"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests28.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Magneticored"
+			title: "{ftbquest.stage_4.quests28.title}"
 			x: -4.5d
 			y: 23.0d
 		}
 		{
 			dependencies: ["513120696EBEEE02"]
-			description: ["What it does? Squishes metals until they turn into a rod, then a wire."]
+			description: ["{ftbquest.stage_4.quests29.description0}"]
 			id: "49C384FD09135F64"
 			shape: "diamond"
-			subtitle: "57"
+			subtitle: "{ftbquest.stage_4.quests29.subtitle}"
 			tasks: [{
 				id: "3310788A1C0A601B"
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
-			title: "Milling: &6Rolls&r!"
+			title: "{ftbquest.stage_4.quests29.title}"
 			x: 1.5d
 			y: 21.5d
 		}
 		{
 			dependencies: ["4675B02BF0D4C34D"]
-			description: ["good old copper bar to be processed"]
+			description: ["{ftbquest.stage_4.quests30.description0}"]
 			hide_dependency_lines: true
 			id: "513120696EBEEE02"
-			subtitle: "Contraption 57-1"
+			subtitle: "{ftbquest.stage_4.quests30.subtitle}"
 			tasks: [{
 				id: "5E81574BDEE95420"
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "Copper Thinning"
+			title: "{ftbquest.stage_4.quests30.title}"
 			x: 1.5d
 			y: 20.0d
 		}
 		{
 			dependencies: ["49C384FD09135F64"]
-			description: ["The component insertion component composed of copper"]
+			description: ["{ftbquest.stage_4.quests31.description0}"]
 			icon: "createaddition:copper_rod"
 			id: "370E2874A398E456"
-			subtitle: "Contraption 57-2"
+			subtitle: "{ftbquest.stage_4.quests31.subtitle}"
 			tasks: [
 				{
 					id: "257BEDC729EA1F3B"
@@ -654,11 +654,11 @@
 				}
 				{
 					id: "43953DAC3482D4BB"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests31.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "A Rod"
+			title: "{ftbquest.stage_4.quests31.title}"
 			x: 0.0d
 			y: 23.0d
 		}
@@ -667,10 +667,10 @@
 				"49C384FD09135F64"
 				"370E2874A398E456"
 			]
-			description: ["Flex copper to flex on the electromagnetic fields."]
+			description: ["{ftbquest.stage_4.quests32.description0}"]
 			icon: "createaddition:copper_wire"
 			id: "2B16EE336CC23F70"
-			subtitle: "Contraption 57-3"
+			subtitle: "{ftbquest.stage_4.quests32.subtitle}"
 			tasks: [
 				{
 					id: "597729513AFEED71"
@@ -679,11 +679,11 @@
 				}
 				{
 					id: "65328F6A305DE9E5"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests32.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Flex Copper"
+			title: "{ftbquest.stage_4.quests32.title}"
 			x: 3.0d
 			y: 23.0d
 		}
@@ -691,7 +691,7 @@
 			dependencies: ["278539C35D960C51"]
 			icon: "kubejs:plastic"
 			id: "32A4925F476AF97E"
-			subtitle: "Contraption 58-3"
+			subtitle: "{ftbquest.stage_4.quests33.subtitle}"
 			tasks: [
 				{
 					id: "18B5CCB90F5AB6E8"
@@ -700,20 +700,20 @@
 				}
 				{
 					id: "7CAF02C31F552018"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests33.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Solidification"
+			title: "{ftbquest.stage_4.quests33.title}"
 			x: 5.0d
 			y: 23.0d
 		}
 		{
 			dependencies: ["2533C066FCDEF5BA"]
-			description: ["And there you have it, a conductor, but a pretty terrible conductor, and that's what we want."]
+			description: ["{ftbquest.stage_4.quests34.description0}"]
 			icon: "kubejs:carbon_sheet"
 			id: "53B8F626824C1ED8"
-			subtitle: "Contraption 56-2"
+			subtitle: "{ftbquest.stage_4.quests34.subtitle}"
 			tasks: [
 				{
 					id: "55A125B275016300"
@@ -722,36 +722,36 @@
 				}
 				{
 					id: "596ACBBAAE20681E"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests34.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Carbonic Solid"
+			title: "{ftbquest.stage_4.quests34.title}"
 			x: 7.5d
 			y: 23.0d
 		}
 		{
 			dependencies: ["79D607EC86F741A4"]
-			description: ["Press charcoal until it turns into a fine sheet of carbon."]
+			description: ["{ftbquest.stage_4.quests35.description0}"]
 			id: "2533C066FCDEF5BA"
 			shape: "diamond"
-			subtitle: "Contraption 56"
+			subtitle: "{ftbquest.stage_4.quests35.subtitle}"
 			tasks: [{
 				id: "43580CED67BCCD83"
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "Carbonking"
+			title: "{ftbquest.stage_4.quests35.title}"
 			x: 7.5d
 			y: 21.5d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["What would you do if you bricked something? Of course mill it down to a powder."]
+			description: ["{ftbquest.stage_4.quests36.description0}"]
 			hide_dependency_lines: true
 			icon: "minecraft:brick"
 			id: "5736452A5C6A319C"
-			subtitle: "Contraption 57-1"
+			subtitle: "{ftbquest.stage_4.quests36.subtitle}"
 			tasks: [{
 				id: "6259E47935330877"
 				item: "minecraft:brick"
@@ -762,10 +762,10 @@
 		}
 		{
 			dependencies: ["572BF9C3AD667A69"]
-			description: ["Can be used to make a nice insulating shell for your precious ceramic capacitors."]
+			description: ["{ftbquest.stage_4.quests37.description0}"]
 			icon: "kubejs:ceramic_powder"
 			id: "7B4A431D5930B0F9"
-			subtitle: "Contraption 57-2"
+			subtitle: "{ftbquest.stage_4.quests37.subtitle}"
 			tasks: [
 				{
 					id: "12F317E01BA217BE"
@@ -774,7 +774,7 @@
 				}
 				{
 					id: "1353A7E2F2637B55"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests37.tasks1.title}"
 					type: "checkmark"
 				}
 			]
@@ -783,11 +783,11 @@
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["Redirect liquid plastic from your previous factory into this one."]
+			description: ["{ftbquest.stage_4.quests38.description0}"]
 			hide_dependency_lines: true
 			icon: "kubejs:plastic_bucket"
 			id: "278539C35D960C51"
-			subtitle: "Contraption 58-2"
+			subtitle: "{ftbquest.stage_4.quests38.subtitle}"
 			tasks: [
 				{
 					id: "184E40994192CB84"
@@ -796,20 +796,20 @@
 				}
 				{
 					id: "49D01A6D74931DD9"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests38.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Fluid Plastic"
+			title: "{ftbquest.stage_4.quests38.title}"
 			x: 5.0d
 			y: 20.0d
 		}
 		{
 			dependencies: ["1B600F92F27C8C74"]
-			description: ["A turnaround from your regular cobblestone generator, this time using desh it will generate a cubic meter of &omica&r."]
+			description: ["{ftbquest.stage_4.quests39.description0}"]
 			icon: "kubejs:mica_block"
 			id: "586B19D70273B10C"
-			subtitle: "Contraption 54-1"
+			subtitle: "{ftbquest.stage_4.quests39.subtitle}"
 			tasks: [
 				{
 					id: "7D3291C672BB502C"
@@ -818,7 +818,7 @@
 				}
 				{
 					id: "332417F3AE46C42B"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests39.tasks1.title}"
 					type: "checkmark"
 				}
 			]
@@ -827,10 +827,10 @@
 		}
 		{
 			dependencies: ["586B19D70273B10C"]
-			description: ["Mica is great at not conducting, that's it. Also, it's a type of silica, contains &6silicon&r."]
+			description: ["{ftbquest.stage_4.quests40.description0}"]
 			icon: "kubejs:mica_sheet"
 			id: "411D59426F3D3B98"
-			subtitle: "Contraption  54-2"
+			subtitle: "{ftbquest.stage_4.quests40.subtitle}"
 			tasks: [
 				{
 					id: "22AF74CB02CC318C"
@@ -839,7 +839,7 @@
 				}
 				{
 					id: "2A9404BE0F298989"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests40.tasks1.title}"
 					type: "checkmark"
 				}
 			]
@@ -849,9 +849,9 @@
 		{
 			dependencies: ["6C3258881A44FA46"]
 			description: [
-				"Never ask how it happens."
+				"{ftbquest.stage_4.quests41.description0}"
 				""
-				"This time i'm sorry for geology professionals, but desh somehow generates mica out of thin air."
+				"{ftbquest.stage_4.quests41.description1}"
 			]
 			hide_dependency_lines: true
 			id: "1B600F92F27C8C74"
@@ -865,11 +865,11 @@
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["You know the drill."]
+			description: ["{ftbquest.stage_4.quests42.description0}"]
 			hide_dependency_lines: true
 			icon: "minecraft:cobblestone"
 			id: "6A09B720008898E5"
-			subtitle: "Contraption 51-1"
+			subtitle: "{ftbquest.stage_4.quests42.subtitle}"
 			tasks: [
 				{
 					id: "486C7EA8E35A27CA"
@@ -878,20 +878,20 @@
 				}
 				{
 					id: "7765DEB8D3FCB4B4"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests42.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Cobbling"
+			title: "{ftbquest.stage_4.quests42.title}"
 			x: -8.5d
 			y: 16.0d
 		}
 		{
 			dependencies: ["6A09B720008898E5"]
-			description: ["Usual grind, you can't mistake this"]
+			description: ["{ftbquest.stage_4.quests43.description0}"]
 			icon: "minecraft:gravel"
 			id: "19951A07520C3E63"
-			subtitle: "Contraption 51-2"
+			subtitle: "{ftbquest.stage_4.quests43.subtitle}"
 			tasks: [
 				{
 					id: "5F44E3A4294F2757"
@@ -900,20 +900,20 @@
 				}
 				{
 					id: "73382953C5AD7EB8"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests43.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Grave Unmistake"
+			title: "{ftbquest.stage_4.quests43.title}"
 			x: -6.5d
 			y: 16.0d
 		}
 		{
 			dependencies: ["19951A07520C3E63"]
-			description: ["This is totally fine, not the finest, but still very fine and ready for the next stage which is not grinding anymore."]
+			description: ["{ftbquest.stage_4.quests44.description0}"]
 			icon: "minecraft:sand"
 			id: "26D82F2F761CACEC"
-			subtitle: "Contraption 51-4"
+			subtitle: "{ftbquest.stage_4.quests44.subtitle}"
 			tasks: [
 				{
 					id: "7D7469F2E7ECE0B6"
@@ -922,20 +922,20 @@
 				}
 				{
 					id: "698C434EC72C47A0"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests44.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Sanding"
+			title: "{ftbquest.stage_4.quests44.title}"
 			x: -4.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["26D82F2F761CACEC"]
-			description: ["Clay is an essential part of almost every chapter, incredibly useful for ceramics, bindings, etc..."]
+			description: ["{ftbquest.stage_4.quests45.description0}"]
 			icon: "minecraft:clay_ball"
 			id: "7B0B8F7CA8DD7432"
-			subtitle: "Contraption 51-5"
+			subtitle: "{ftbquest.stage_4.quests45.subtitle}"
 			tasks: [
 				{
 					id: "4824901758C0CF37"
@@ -944,20 +944,20 @@
 				}
 				{
 					id: "57CE37E700D92887"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests45.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Clayton"
+			title: "{ftbquest.stage_4.quests45.title}"
 			x: -1.5d
 			y: 16.0d
 		}
 		{
 			dependencies: ["7B0B8F7CA8DD7432"]
-			description: ["Seems our friend Clayton got dense, now he can hold the drip."]
+			description: ["{ftbquest.stage_4.quests46.description0}"]
 			icon: "minecraft:clay"
 			id: "2B75DFDCDF51EEE8"
-			subtitle: "Contraption 52-1"
+			subtitle: "{ftbquest.stage_4.quests46.subtitle}"
 			tasks: [
 				{
 					id: "0D3020E29454FEE7"
@@ -966,20 +966,20 @@
 				}
 				{
 					id: "0B72F1A44E58A5A7"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests46.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "CLTN"
+			title: "{ftbquest.stage_4.quests46.title}"
 			x: 1.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["2B75DFDCDF51EEE8"]
-			description: ["CLTN has the drip, and copper for some reason, assume it works."]
+			description: ["{ftbquest.stage_4.quests47.description0}"]
 			icon: "minecraft:dripstone_block"
 			id: "259296CC233792E4"
-			subtitle: "Contraption 52-2"
+			subtitle: "{ftbquest.stage_4.quests47.subtitle}"
 			tasks: [
 				{
 					id: "5A7C1A7562F53F4A"
@@ -988,20 +988,20 @@
 				}
 				{
 					id: "4BA486A23E9FD3AE"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests47.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Hold My Drip"
+			title: "{ftbquest.stage_4.quests47.title}"
 			x: 3.5d
 			y: 16.0d
 		}
 		{
 			dependencies: ["259296CC233792E4"]
-			description: ["Copper from thin air, how did we get here?"]
+			description: ["{ftbquest.stage_4.quests48.description0}"]
 			icon: "create:copper_nugget"
 			id: "5AF91ED1BD145E5F"
-			subtitle: "Contraption 52-3"
+			subtitle: "{ftbquest.stage_4.quests48.subtitle}"
 			tasks: [
 				{
 					id: "0E058F3E157B9858"
@@ -1010,11 +1010,11 @@
 				}
 				{
 					id: "609EFE269887DF31"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests48.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Coppery"
+			title: "{ftbquest.stage_4.quests48.title}"
 			x: 6.0d
 			y: 16.0d
 		}
@@ -1022,7 +1022,7 @@
 			dependencies: ["7B0B8F7CA8DD7432"]
 			icon: "minecraft:brick"
 			id: "0F395B5393BB198F"
-			subtitle: "Contraption 51-6"
+			subtitle: "{ftbquest.stage_4.quests49.subtitle}"
 			tasks: [
 				{
 					id: "76CD5D1E5246A954"
@@ -1031,20 +1031,20 @@
 				}
 				{
 					id: "45A63C9122BF91B8"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests49.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Bricked Clay"
+			title: "{ftbquest.stage_4.quests49.title}"
 			x: 0.0d
 			y: 17.5d
 		}
 		{
 			dependencies: ["5AF91ED1BD145E5F"]
-			description: ["The best material for our conductive needs at the moment."]
+			description: ["{ftbquest.stage_4.quests50.description0}"]
 			icon: "minecraft:copper_ingot"
 			id: "4675B02BF0D4C34D"
-			subtitle: "Contraption 52-4"
+			subtitle: "{ftbquest.stage_4.quests50.subtitle}"
 			tasks: [
 				{
 					id: "681EB6F4EE3D5046"
@@ -1053,21 +1053,21 @@
 				}
 				{
 					id: "5CD909E6FD20D6E4"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests50.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Extra Conductive"
+			title: "{ftbquest.stage_4.quests50.title}"
 			x: 8.5d
 			y: 16.0d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["Charcoal is a cheap source of carbon and can also be used for pigment!"]
+			description: ["{ftbquest.stage_4.quests51.description0}"]
 			hide_dependency_lines: true
 			icon: "minecraft:charcoal"
 			id: "79D607EC86F741A4"
-			subtitle: "Contraption 59-1"
+			subtitle: "{ftbquest.stage_4.quests51.subtitle}"
 			tasks: [
 				{
 					id: "6E12C63068D256BA"
@@ -1076,11 +1076,11 @@
 				}
 				{
 					id: "1473F890A2018F9C"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests51.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Charcoal"
+			title: "{ftbquest.stage_4.quests51.title}"
 			x: 7.5d
 			y: 20.0d
 		}
@@ -1097,17 +1097,17 @@
 				item: "create:mechanical_mixer"
 				type: "item"
 			}]
-			title: "Electrolixing"
+			title: "{ftbquest.stage_4.quests52.title}"
 			x: -9.0d
 			y: 21.5d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["Walter makes another appearance."]
+			description: ["{ftbquest.stage_4.quests53.description0}"]
 			hide_dependency_lines: true
 			icon: "minecraft:water_bucket"
 			id: "2B4FE401C0245428"
-			subtitle: "Contraption 53-2"
+			subtitle: "{ftbquest.stage_4.quests53.subtitle}"
 			tasks: [
 				{
 					id: "74BDF4D555406EC1"
@@ -1116,40 +1116,40 @@
 				}
 				{
 					id: "099FFF89413CBD69"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests53.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Walter"
+			title: "{ftbquest.stage_4.quests53.title}"
 			x: -7.5d
 			y: 20.0d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
 			description: [
-				"Don't ask how."
+				"{ftbquest.stage_4.quests54.description0}"
 				""
 				""
-				"This modpack team is not responsible for any strokes caused by this process on chemistry professionals."
+				"{ftbquest.stage_4.quests54.description1}"
 			]
 			hide_dependency_lines: true
 			id: "21B807DFB1767669"
-			subtitle: "Contraption  53-3"
+			subtitle: "{ftbquest.stage_4.quests54.subtitle}"
 			tasks: [{
 				id: "225CBB93806D1BE3"
 				item: "ad_astra:desh_ingot"
 				type: "item"
 			}]
-			title: "Desh Catalysis"
+			title: "{ftbquest.stage_4.quests54.title}"
 			x: -10.5d
 			y: 23.0d
 		}
 		{
 			dependencies: ["1FC573FAC912A7FC"]
-			description: ["Sulfuric acid not only can be used to etch copper, it can also serve as an electrolyte, just not a great one..."]
+			description: ["{ftbquest.stage_4.quests55.description0}"]
 			icon: "kubejs:electrolyte_bucket"
 			id: "65A3ADBC7B498FE3"
-			subtitle: "Contraption 53-4"
+			subtitle: "{ftbquest.stage_4.quests55.subtitle}"
 			tasks: [
 				{
 					id: "19FF091389E2A237"
@@ -1158,21 +1158,21 @@
 				}
 				{
 					id: "5C7AEC35288BD987"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests55.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Electrolyte"
+			title: "{ftbquest.stage_4.quests55.title}"
 			x: -7.5d
 			y: 23.0d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["Reuse the previously automated sulfur into creation of sulfuric acid."]
+			description: ["{ftbquest.stage_4.quests56.description0}"]
 			hide_dependency_lines: true
 			icon: "thermal:sulfur_dust"
 			id: "239389C7D9222180"
-			subtitle: "Contraption 53-1"
+			subtitle: "{ftbquest.stage_4.quests56.subtitle}"
 			tasks: [
 				{
 					id: "578794CD576EB375"
@@ -1181,11 +1181,11 @@
 				}
 				{
 					id: "67BD3BF5A94408A7"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests56.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Sulfuric Solutions"
+			title: "{ftbquest.stage_4.quests56.title}"
 			x: -10.5d
 			y: 20.0d
 		}
@@ -1193,7 +1193,7 @@
 			dependencies: ["19951A07520C3E63"]
 			icon: "minecraft:iron_nugget"
 			id: "665344D0E292B115"
-			subtitle: "Contraption 51-3"
+			subtitle: "{ftbquest.stage_4.quests57.subtitle}"
 			tasks: [
 				{
 					id: "38BF0D831266E2FB"
@@ -1202,32 +1202,32 @@
 				}
 				{
 					id: "17F5826780E170D0"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests57.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Irony Traces"
+			title: "{ftbquest.stage_4.quests57.title}"
 			x: -5.0d
 			y: 14.5d
 		}
 		{
 			dependencies: ["5736452A5C6A319C"]
-			description: ["Again the classical grind comes here."]
+			description: ["{ftbquest.stage_4.quests58.description0}"]
 			id: "572BF9C3AD667A69"
 			shape: "diamond"
-			subtitle: "Contraption 57"
+			subtitle: "{ftbquest.stage_4.quests58.subtitle}"
 			tasks: [{
 				id: "5CFDF4C215931679"
 				item: "create:millstone"
 				type: "item"
 			}]
-			title: "Ceramilling"
+			title: "{ftbquest.stage_4.quests58.title}"
 			x: 9.0d
 			y: 21.5d
 		}
 		{
 			dependencies: ["6C3258881A44FA46"]
-			description: ["The basis of the printed circuit board should be deployed first."]
+			description: ["{ftbquest.stage_4.quests59.description0}"]
 			hide_dependency_lines: true
 			icon: "create:copper_sheet"
 			id: "201402493BBB283C"
@@ -1239,11 +1239,11 @@
 				}
 				{
 					id: "7083B8FA631CF245"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests59.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Plating"
+			title: "{ftbquest.stage_4.quests59.title}"
 			x: -2.5d
 			y: 33.5d
 		}
@@ -1259,7 +1259,7 @@
 				}
 				{
 					id: "3C5FE29042C17538"
-					title: "Automated"
+					title: "{ftbquest.stage_4.quests60.tasks1.title}"
 					type: "checkmark"
 				}
 			]
@@ -1331,13 +1331,19 @@
 				{
 					count: 2L
 					id: "364533D41B6218E9"
-					item: { Count: 2, id: "ad_astra:launch_pad" }
+					item: {
+						Count: 2
+						id: "ad_astra:launch_pad"
+					}
 					type: "item"
 				}
 				{
 					count: 6L
 					id: "415B82C17D715742"
-					item: { Count: 6, id: "ad_astra:fuel_bucket" }
+					item: {
+						Count: 6
+						id: "ad_astra:fuel_bucket"
+					}
 					type: "item"
 				}
 			]
@@ -1365,5 +1371,5 @@
 			y: 20.0d
 		}
 	]
-	title: "&f4&r Power Processing"
+	title: "{ftbquest.stage_4.title}"
 }
