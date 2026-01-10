@@ -129,13 +129,13 @@
 		{
 			dependencies: ["64F3352725385210"]
 			description: [
-				"{ftbquest.shipments.quests0.description0}"
+				"&6Shipments&r are the Automated way to exchange coin for resources. Here you can buy Import Cards for use in the Exchange."
 				""
-				"{ftbquest.shipments.quests0.description1}"
+				"Each import card comes with a cost up front. Once that is paid you can limitlessly buy the respective goods priced at what's stated in the subtitle."
 				""
-				"{ftbquest.shipments.quests0.description2}"
+				"Taking on a &6Profession&r gives you access to a more consistent source of income."
 				""
-				"{ftbquest.shipments.quests0.description3}"
+				"The Profession Cards bought here act as a \"Permit\". All they do is unlock the respective recipes in the Trading Machine. You can absolutely have multiple of these."
 			]
 			icon: "minecraft:writable_book"
 			id: "6AC1CED0D341150E"
@@ -143,7 +143,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "214F623C75A92809"
-				title: "{ftbquest.shipments.quests0.tasks0.title}"
+				title: "Shipments"
 				type: "checkmark"
 			}]
 			x: -7.0d
@@ -155,11 +155,8 @@
 				"6AC1CED0D341150E"
 				"64F3352725385210"
 			]
-			description: ["{ftbquest.shipments.quests1.description0}"]
-			icon: {
-				Count: 2
-				id: "thermal:gold_coin"
-			}
+			description: ["This Trading card can convert the currency of coins inserted into the Trading Machine."]
+			icon: { Count: 2, id: "thermal:gold_coin" }
 			id: "3B548F2C060C2229"
 			optional: true
 			rewards: [
@@ -174,19 +171,19 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "3D6C47FD645D7471"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests1.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests1.subtitle}"
+			subtitle: "Silver <=> Gold"
 			tasks: [{
 				consume_items: true
 				id: "601161A1565C5161"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests1.title}"
+			title: "Automatic Exchange"
 			x: -7.0d
 			y: 13.5d
 		}
@@ -209,24 +206,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "5A661CC15495D0FF"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests2.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests2.subtitle}"
+			subtitle: "2 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6F8CCEC6D6B3080B"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests2.title}"
+			title: "16x Dirt"
 			x: -18.0d
 			y: 9.0d
 		}
@@ -248,24 +242,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "063AAB8CE0A4CD8D"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests3.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests3.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "55FC13926FE1FC21"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests3.title}"
+			title: "16x Sand"
 			x: -17.0d
 			y: 9.0d
 		}
@@ -287,24 +278,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "2EBDE9C959F2C844"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests4.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests4.subtitle}"
+			subtitle: "2 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0C37DDF7952E2FB5"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests4.title}"
+			title: "16x Gravel"
 			x: -16.0d
 			y: 9.0d
 		}
@@ -326,24 +314,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "20D0CED128B56A05"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests5.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests5.subtitle}"
+			subtitle: "6 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "72FDEED6F69FE4FC"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests5.title}"
+			title: "16x Clay"
 			x: -15.0d
 			y: 9.0d
 		}
@@ -365,24 +350,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "36216B91DB297A33"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests6.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests6.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "51487A391245A460"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests6.title}"
+			title: "16x Ice"
 			x: -14.0d
 			y: 9.0d
 		}
@@ -404,24 +386,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "30BF875421CFCFE6"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests7.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests7.subtitle}"
+			subtitle: "12 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3A255761725DB151"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests7.title}"
+			title: "16x Blackstone"
 			x: -21.0d
 			y: 9.0d
 		}
@@ -443,24 +422,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4DC1CDEB5955F4EE"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests8.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests8.subtitle}"
+			subtitle: "12 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "33D256BA0986B7E9"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests8.title}"
+			title: "16x Grout"
 			x: -20.0d
 			y: 9.0d
 		}
@@ -482,24 +458,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "0B1BF175C4DC3A7D"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests9.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests9.subtitle}"
+			subtitle: "1 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2970624707A9679D"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests9.title}"
+			title: "16x Cobblestone"
 			x: -19.0d
 			y: 9.0d
 		}
@@ -521,24 +494,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "32F6513EC0746244"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests10.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests10.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "588FAB13D3651293"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests10.title}"
+			title: "16x Granite"
 			x: -20.0d
 			y: 7.0d
 		}
@@ -560,24 +530,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "306F03D8D42C5256"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests11.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests11.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "15147CB09CEF4F8D"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests11.title}"
+			title: "16x Diorite"
 			x: -19.0d
 			y: 7.0d
 		}
@@ -599,24 +566,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "009B6D2E23E03309"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests12.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests12.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "436C948233B6C948"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests12.title}"
+			title: "16x Andesite"
 			x: -18.0d
 			y: 7.0d
 		}
@@ -638,24 +602,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "76609F5C89B0FD3F"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests13.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests13.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6967035271202685"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests13.title}"
+			title: "16x Deepslate"
 			x: -17.0d
 			y: 7.0d
 		}
@@ -677,24 +638,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "265DB2CE9A153D99"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests14.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests14.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3DF37C94D8A35EE8"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests14.title}"
+			title: "16x Dripstone"
 			x: -16.0d
 			y: 7.0d
 		}
@@ -716,24 +674,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4DB960DC81BBD1BC"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests15.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests15.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "630EBD4ECC2591A5"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests15.title}"
+			title: "16x Calcite"
 			x: -15.0d
 			y: 7.0d
 		}
@@ -755,24 +710,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "5A2E9088BFBCE42B"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests16.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests16.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2B00EDD7E0736BBA"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests16.title}"
+			title: "16x Tuff"
 			x: -14.0d
 			y: 7.0d
 		}
@@ -794,24 +746,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "6597E88D3706B5B3"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests17.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests17.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "39277FE5AECA8D87"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests17.title}"
+			title: "16x Scoria"
 			x: -13.0d
 			y: 7.0d
 		}
@@ -833,24 +782,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "52BC84C4FA2DEEE7"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests18.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests18.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1FC403FE3BD2C422"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests18.title}"
+			title: "1x Obsidian"
 			x: -21.0d
 			y: 7.0d
 		}
@@ -872,24 +818,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "688EDCF3F62015EC"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests19.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests19.subtitle}"
+			subtitle: "2 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2DA062BA42A444D8"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests19.title}"
+			title: "16x Dead Log"
 			x: -21.0d
 			y: 11.0d
 		}
@@ -911,24 +854,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "0B147EF0D641C4BE"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests20.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests20.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "34F5EF75BBC934A7"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests20.title}"
+			title: "16x Oak Log"
 			x: -20.0d
 			y: 11.0d
 		}
@@ -950,24 +890,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "751ACE45DECEBC50"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests21.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests21.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6ED31E195DA85C12"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests21.title}"
+			title: "16x Birch Log"
 			x: -19.0d
 			y: 11.0d
 		}
@@ -989,24 +926,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "2F045E295CBB7C3C"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests22.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests22.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0B61D1AE262BF6E0"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests22.title}"
+			title: "16x Spruce Log"
 			x: -18.0d
 			y: 11.0d
 		}
@@ -1028,24 +962,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "361DD367C10C81E5"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests23.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests23.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "320F3EAF646D1887"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests23.title}"
+			title: "16x Jungle Log"
 			x: -17.0d
 			y: 11.0d
 		}
@@ -1067,24 +998,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "6D283F15C4BFC6AD"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests24.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests24.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "380EB2E68AAE13C5"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests24.title}"
+			title: "16x Acacia Log"
 			x: -16.0d
 			y: 11.0d
 		}
@@ -1106,24 +1034,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "54C532DB718A84BF"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests25.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests25.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "640E310ACF422D19"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests25.title}"
+			title: "16x Dark Oak Log"
 			x: -15.0d
 			y: 11.0d
 		}
@@ -1145,24 +1070,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "216BB1F4330AC515"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests26.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests26.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "30B7523A0BD8B7AC"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests26.title}"
+			title: "16x Crimson Stem"
 			x: -14.0d
 			y: 11.0d
 		}
@@ -1184,24 +1106,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4E572F23EBE67252"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests27.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests27.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6389A37BF8A5CB6B"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests27.title}"
+			title: "16x Warped Stem"
 			x: -13.0d
 			y: 11.0d
 		}
@@ -1223,24 +1142,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "724DA426E5F72F4F"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests28.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests28.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "11516A405E67FC37"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests28.title}"
+			title: "8x Iron Ingot"
 			x: -21.0d
 			y: 13.0d
 		}
@@ -1262,24 +1178,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "7051E0947E15BFB8"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests29.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests29.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4CCF761274E1D3E0"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests29.title}"
+			title: "8x Zinc Ingot"
 			x: -20.0d
 			y: 13.0d
 		}
@@ -1301,24 +1214,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "76BE7B5BD216EAF3"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests30.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests30.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "211DC81A5832239F"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests30.title}"
+			title: "8x Copper Ingot"
 			x: -19.0d
 			y: 13.0d
 		}
@@ -1340,24 +1250,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "0278F1B77FC6B521"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests31.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests31.subtitle}"
+			subtitle: "32 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1231AA9B4B55059B"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests31.title}"
+			title: "8x Nickel Ingot"
 			x: -18.0d
 			y: 13.0d
 		}
@@ -1379,24 +1286,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4A2B3532D1368F64"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests32.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests32.subtitle}"
+			subtitle: "32 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "5FB9387622338E67"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests32.title}"
+			title: "8x Lead Ingot"
 			x: -17.0d
 			y: 13.0d
 		}
@@ -1418,24 +1322,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "5CCCFAF1BA679686"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests33.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests33.subtitle}"
+			subtitle: "48 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "505254A6D4682E80"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests33.title}"
+			title: "8x Gold Ingot"
 			x: -16.0d
 			y: 13.0d
 		}
@@ -1457,24 +1358,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "422A77BCDC679676"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests34.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests34.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4CD911C4F89DC3D1"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests34.title}"
+			title: "16x Andesite Alloy"
 			x: -15.0d
 			y: 13.0d
 		}
@@ -1496,24 +1394,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "5A485F59CD8188F0"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests35.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests35.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "72B4767C40D0A4D0"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests35.title}"
+			title: "8x Steel"
 			x: -14.0d
 			y: 13.0d
 		}
@@ -1535,24 +1430,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "2C52871B2C6CDB5C"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests36.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests36.subtitle}"
+			subtitle: "48 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "757EDBCC0E915E1F"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests36.title}"
+			title: "8x Brass Ingot"
 			x: -21.0d
 			y: 15.0d
 		}
@@ -1574,24 +1466,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "398FF79B64E024F1"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests37.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests37.subtitle}"
+			subtitle: "64 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "51B3504081B70710"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests37.title}"
+			title: "4x Invar Ingot"
 			x: -20.0d
 			y: 15.0d
 		}
@@ -1613,24 +1502,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "19A112D5DC6D93F6"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests38.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests38.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3895A9B357338D59"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests38.title}"
+			title: "16x Coal"
 			x: -19.0d
 			y: 15.0d
 		}
@@ -1652,24 +1538,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "3CFF78EBCDE27BD8"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests39.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests39.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4A7B91AE36FD4C42"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests39.title}"
+			title: "16x Flint"
 			x: -18.0d
 			y: 15.0d
 		}
@@ -1691,24 +1574,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4D0D6988C15FB932"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests40.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests40.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "18C935F0FAF8A1BD"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests40.title}"
+			title: "4x Cinnabar"
 			x: -17.0d
 			y: 15.0d
 		}
@@ -1730,24 +1610,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "35259944AEE5F284"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests41.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests41.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "62AE0858AD9713A9"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests41.title}"
+			title: "16x Redstone Dust"
 			x: -16.0d
 			y: 15.0d
 		}
@@ -1769,24 +1646,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "5C16E1982735C647"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests42.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests42.subtitle}"
+			subtitle: "1 Gold"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "49E6A65CA063E150"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests42.title}"
+			title: "1x Diamond"
 			x: -15.0d
 			y: 15.0d
 		}
@@ -1808,24 +1682,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "1EF89BEE5FF49131"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests43.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests43.subtitle}"
+			subtitle: "32 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7BFBCF6ED5FEBB17"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests43.title}"
+			title: "8x Lapis Lazuli"
 			x: -13.0d
 			y: 13.0d
 		}
@@ -1847,24 +1718,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "01BBAF89BF26A683"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests44.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests44.subtitle}"
+			subtitle: "1 Gold"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2977122666FC6515"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests44.title}"
+			title: "1x Emerald"
 			x: -20.0d
 			y: 17.0d
 		}
@@ -1888,24 +1756,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "23E210EEA88CD965"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests45.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests45.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6D5B38661F9DF663"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests45.title}"
+			title: "4x Sulfur"
 			x: -19.0d
 			y: 17.0d
 		}
@@ -1927,24 +1792,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "257A0B0FB112118F"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests46.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests46.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "31FC105A1CA262C4"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests46.title}"
+			title: "4x Niter"
 			x: -16.0d
 			y: 17.0d
 		}
@@ -1966,24 +1828,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "443EF42686BFE72A"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests47.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests47.subtitle}"
+			subtitle: "24 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3233F949DD162EFF"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests47.title}"
+			title: "8x Nether Quartz"
 			x: -15.0d
 			y: 17.0d
 		}
@@ -2006,24 +1865,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "358DDDF59A249661"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests48.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests48.subtitle}"
+			subtitle: "24 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6B11481EE4EBC2AA"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests48.title}"
+			title: "8x Certus Quartz"
 			x: -21.0d
 			y: 17.0d
 		}
@@ -2045,24 +1901,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "76372B5D03434F1F"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests49.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests49.subtitle}"
+			subtitle: "32 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3BF8CC3CE10C3716"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests49.title}"
+			title: "8x Fluix Quartz"
 			x: -13.0d
 			y: 15.0d
 		}
@@ -2084,24 +1937,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "19DE0D20D1B82E52"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests50.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests50.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "22B374646C7A9954"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests50.title}"
+			title: "6x Cured Rubber"
 			x: -14.0d
 			y: 15.0d
 		}
@@ -2123,24 +1973,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "1CF33854EBE3802B"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests51.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests51.subtitle}"
+			subtitle: "2 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "156AC7D51579AE94"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests51.title}"
+			title: "16x Scaffolding"
 			x: -17.0d
 			y: 17.0d
 		}
@@ -2162,24 +2009,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "5C4C7F360CB6B7F7"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests52.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests52.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "328A85BF51249D67"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests52.title}"
+			title: "1x Wool"
 			x: -13.0d
 			y: 9.0d
 		}
@@ -2201,24 +2045,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "176958A306E00EEA"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests53.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests53.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "31140290FA3BC542"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests53.title}"
+			title: "1x Sponge"
 			x: -13.0d
 			y: 17.0d
 		}
@@ -2240,24 +2081,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "7FF883895003373B"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests54.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests54.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1A5C7FBC5D9396B8"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests54.title}"
+			title: "1x Cobweb"
 			x: -14.0d
 			y: 17.0d
 		}
@@ -2280,24 +2118,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4DB1F41D7160BCEF"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests55.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests55.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0F45F63FF517FEEB"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests55.title}"
+			title: "1x Rice"
 			x: -1.0d
 			y: 7.0d
 		}
@@ -2319,24 +2154,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "0E95886299649DF5"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests56.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests56.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2A938EFDF053CC45"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests56.title}"
+			title: "32x Straw"
 			x: 0.0d
 			y: 7.0d
 		}
@@ -2358,24 +2190,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "616EB4CB6E6675BE"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests57.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests57.subtitle}"
+			subtitle: "9 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "027462492DA30CA1"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests57.title}"
+			title: "4x Glowshroom"
 			x: 1.0d
 			y: 7.0d
 		}
@@ -2397,24 +2226,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "0E711B3225BA4395"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests58.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests58.subtitle}"
+			subtitle: "9 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "5DFAF0BCF6592931"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests58.title}"
+			title: "4x Bramble"
 			x: 2.0d
 			y: 7.0d
 		}
@@ -2436,24 +2262,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "0E26BC79ED274324"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests59.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests59.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "065266FE4B3A58E3"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests59.title}"
+			title: "4x Barley"
 			x: 3.0d
 			y: 7.0d
 		}
@@ -2475,24 +2298,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "76815FB7E827F3BC"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests60.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests60.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "65422190A142CC71"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests60.title}"
+			title: "4x Watergrass"
 			x: 4.0d
 			y: 7.0d
 		}
@@ -2514,24 +2334,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "0E75EE32277145CC"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests61.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests61.subtitle}"
+			subtitle: "5 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "45A3C8EE2D5D9018"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests61.title}"
+			title: "4x Reed"
 			x: 5.0d
 			y: 7.0d
 		}
@@ -2553,24 +2370,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "619644DED8C21E39"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests62.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests62.subtitle}"
+			subtitle: "10 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "27B4BF4858DEE127"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests62.title}"
+			title: "4x Clover Petal"
 			x: 6.0d
 			y: 7.0d
 		}
@@ -2592,24 +2406,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "716DE6995638735D"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests63.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests63.subtitle}"
+			subtitle: "7 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6745609393609A42"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests63.title}"
+			title: "4x Spanish Moss"
 			x: 0.0d
 			y: 9.0d
 		}
@@ -2631,24 +2442,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "3992B23F552DAF09"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests64.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests64.subtitle}"
+			subtitle: "7 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "188D7970C0B8A137"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests64.title}"
+			title: "4x Willow Vine"
 			x: 1.0d
 			y: 9.0d
 		}
@@ -2670,24 +2478,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "726C6E60CA9DF439"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests65.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests65.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1BDE015BD0798542"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests65.title}"
+			title: "4x Sugar Cane"
 			x: 2.0d
 			y: 9.0d
 		}
@@ -2709,24 +2514,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "52C2BEA25DCD5829"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests66.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests66.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "156A996C92F63772"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests66.title}"
+			title: "8x Kelp"
 			x: 3.0d
 			y: 9.0d
 		}
@@ -2748,24 +2550,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "059675773076693E"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests67.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests67.subtitle}"
+			subtitle: "5 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3552FA1686F674AC"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests67.title}"
+			title: "8x Bamboo"
 			x: 4.0d
 			y: 9.0d
 		}
@@ -2787,24 +2586,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "7E75E2436E1F9265"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests68.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests68.subtitle}"
+			subtitle: "11 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3FD4151E4F663AF3"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests68.title}"
+			title: "8x Sweet Berries"
 			x: 5.0d
 			y: 9.0d
 		}
@@ -2826,24 +2622,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "614D63F875D3B153"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests69.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests69.subtitle}"
+			subtitle: "7 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2FD3E8713AE8F599"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests69.title}"
+			title: "4x Vines"
 			x: 6.0d
 			y: 9.0d
 		}
@@ -2865,24 +2658,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "1C00A423A6460A4C"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests70.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests70.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "35322C05C0E949C4"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests70.title}"
+			title: "1x Tree Fertilizer"
 			x: 7.0d
 			y: 7.0d
 		}
@@ -2904,24 +2694,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4FE12A2F04BF63D8"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests71.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests71.subtitle}"
+			subtitle: "5 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2CFF22FA4C545CEB"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests71.title}"
+			title: "16x Daub"
 			x: -1.0d
 			y: 11.0d
 		}
@@ -2943,24 +2730,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "784DC5A555846F51"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests72.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests72.subtitle}"
+			subtitle: "4 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7554564777DAB3D9"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests72.title}"
+			title: "16x Clear Glass"
 			x: 0.0d
 			y: 11.0d
 		}
@@ -2982,24 +2766,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "1A0CEEEE71FBA37E"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests73.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests73.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "347E3E00466901BB"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests73.title}"
+			title: "16x Copper Shingles"
 			x: 1.0d
 			y: 11.0d
 		}
@@ -3021,24 +2802,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "2F871DE4C38533A5"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests74.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests74.subtitle}"
+			subtitle: "6 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "0B669CD589180851"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests74.title}"
+			title: "32x Algal Bricks"
 			x: 2.0d
 			y: 11.0d
 		}
@@ -3060,24 +2838,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4954B63875430AB2"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests75.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests75.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "534B8F92DB275C0A"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests75.title}"
+			title: "32x Olivestone Bricks"
 			x: 3.0d
 			y: 11.0d
 		}
@@ -3099,24 +2874,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "560689C2568FBC3D"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests76.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests76.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4F03A35FB3CD6D13"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests76.title}"
+			title: "32x Limestone"
 			x: 4.0d
 			y: 11.0d
 		}
@@ -3138,24 +2910,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "00B9864C038FA921"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests77.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests77.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "169EF78148FD575E"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests77.title}"
+			title: "32x Sunmetal"
 			x: 5.0d
 			y: 11.0d
 		}
@@ -3177,24 +2946,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "7F62DBDC73AA90CC"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests78.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests78.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "67860C5494021630"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests78.title}"
+			title: "32x Plating Block"
 			x: 6.0d
 			y: 11.0d
 		}
@@ -3216,24 +2982,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "5AFE77AD3EE2D3B8"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests79.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests79.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "090308A753589FDE"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests79.title}"
+			title: "32x Twisted Planks"
 			x: 7.0d
 			y: 11.0d
 		}
@@ -3255,24 +3018,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "6298CC916BA98BC4"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests80.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests80.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2B34D39C23D004A1"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests80.title}"
+			title: "32x Osseous Bricks"
 			x: 0.5d
 			y: 13.0d
 		}
@@ -3294,24 +3054,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "2451C51A27A0F4A4"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests81.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests81.subtitle}"
+			subtitle: "32 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4312F195FCF45B05"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests81.title}"
+			title: "16x Seared Stone"
 			x: 1.5d
 			y: 13.0d
 		}
@@ -3333,24 +3090,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "65B015FF77D7F5A8"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests82.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests82.subtitle}"
+			subtitle: "32 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "71C036FBAFEE827B"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests82.title}"
+			title: "16x Scorched Stone"
 			x: 2.5d
 			y: 13.0d
 		}
@@ -3372,24 +3126,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "6FA6246B637EA4AD"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests83.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests83.subtitle}"
+			subtitle: "1 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "4E5ED23C6F2ABCB5"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests83.title}"
+			title: "1x Lantern"
 			x: 3.5d
 			y: 13.0d
 		}
@@ -3411,24 +3162,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "687A8D0735306E17"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests84.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests84.subtitle}"
+			subtitle: "24 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6E4D224D4160CB9D"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests84.title}"
+			title: "4x Slime Ball"
 			x: 7.0d
 			y: 15.0d
 		}
@@ -3450,24 +3198,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "12C2122626B8D8FE"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests85.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests85.subtitle}"
+			subtitle: "5 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "358AEE0F235FE8BF"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests85.title}"
+			title: "4x String"
 			x: 0.0d
 			y: 15.0d
 		}
@@ -3489,24 +3234,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "273C5923A8D0CAEC"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests86.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests86.subtitle}"
+			subtitle: "6 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "38C8825A2D904A24"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests86.title}"
+			title: "4x Feather"
 			x: 1.0d
 			y: 15.0d
 		}
@@ -3528,24 +3270,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "74110D48DD4E2EFE"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests87.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests87.subtitle}"
+			subtitle: "7 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "21AFBB9FD4B3CEAF"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests87.title}"
+			title: "4x Gunpowder"
 			x: 2.0d
 			y: 15.0d
 		}
@@ -3567,24 +3306,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "25A4F2DFD206BBE5"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests88.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests88.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "58A51F93A07154D1"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests88.title}"
+			title: "4x Leather"
 			x: 3.0d
 			y: 15.0d
 		}
@@ -3606,24 +3342,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4F05E3235E5FA81F"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests89.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests89.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "37AAB71B66544423"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests89.title}"
+			title: "4x Ink Sac"
 			x: 4.0d
 			y: 15.0d
 		}
@@ -3645,24 +3378,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "7E2E987048105E80"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests90.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests90.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "6239765014C985DF"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests90.title}"
+			title: "1x Experience"
 			x: 5.0d
 			y: 15.0d
 		}
@@ -3684,24 +3414,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "1FAC2EC8D80D34B1"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests91.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests91.subtitle}"
+			subtitle: "2 Gold"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "2CD56572FCAA1736"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests91.title}"
+			title: "1x Shulker Shell"
 			x: 6.0d
 			y: 15.0d
 		}
@@ -3723,24 +3450,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "34433452B4A271AC"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests92.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests92.subtitle}"
+			subtitle: "10 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "5B278F975D1E8019"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests92.title}"
+			title: "4x Spider Eye"
 			x: 0.5d
 			y: 17.0d
 		}
@@ -3762,24 +3486,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "22F649DB3879A442"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests93.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests93.subtitle}"
+			subtitle: "48 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "74F53F06BE1BB4B9"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests93.title}"
+			title: "1x Ender Pearl"
 			x: 1.5d
 			y: 17.0d
 		}
@@ -3801,24 +3522,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "63EFACB4047CB66B"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests94.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests94.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "581E799045FC7E7F"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests94.title}"
+			title: "4x Rotten Flesh"
 			x: 2.5d
 			y: 17.0d
 		}
@@ -3840,24 +3558,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4BEBC7C5D8013C62"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests95.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests95.subtitle}"
+			subtitle: "20 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "47473E81ADD8D5AF"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests95.title}"
+			title: "1x Blaze Rod"
 			x: 3.5d
 			y: 17.0d
 		}
@@ -3879,24 +3594,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "684BCBA67CE56058"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests96.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests96.subtitle}"
+			subtitle: "18 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "37D17348D030D475"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests96.title}"
+			title: "1x Milk"
 			x: 5.5d
 			y: 17.0d
 		}
@@ -3918,24 +3630,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "7C32B806C5E72CD3"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests97.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests97.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "3E6EF51401E17793"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests97.title}"
+			title: "4x Prismarine Shard"
 			x: -0.5d
 			y: 13.0d
 		}
@@ -3957,24 +3666,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "46312740FF6A9D6E"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests98.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests98.subtitle}"
+			subtitle: "24 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1F0D9D90B360741C"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests98.title}"
+			title: "4x Prismarine Crystals"
 			x: -18.0d
 			y: 17.0d
 		}
@@ -3996,24 +3702,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "501E51A4473C172D"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests99.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests99.subtitle}"
+			subtitle: "48 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "588F6FF589A2C076"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests99.title}"
+			title: "1x Phantom Membrane"
 			x: -1.0d
 			y: 15.0d
 		}
@@ -4035,30 +3738,27 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "6E7713FBD49D8640"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests100.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests100.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7DF5EAF6B22D1E59"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests100.title}"
+			title: "1x Blaze Cake"
 			x: 4.5d
 			y: 13.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.shipments.quests101.description0}"]
+			description: ["There's a lot between starting and brass machinery, the true capitalists buy this as fast as they can."]
 			icon: "thermal:machine_press"
 			id: "4DFE4FD3B504AF4B"
 			rewards: [
@@ -4076,19 +3776,16 @@
 				}
 			]
 			size: 2.0d
-			subtitle: "{ftbquest.shipments.quests101.subtitle}"
+			subtitle: "20 Silver"
 			tasks: [{
 				consume_items: true
 				count: 20L
-				icon: {
-					Count: 20
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 20, id: "thermal:silver_coin" }
 				id: "3E2EAC7B2D274669"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests101.title}"
+			title: "Early Shipping"
 			x: -7.0d
 			y: 16.0d
 		}
@@ -4098,7 +3795,7 @@
 				"6AC1CED0D341150E"
 				"64F3352725385210"
 			]
-			description: ["{ftbquest.shipments.quests102.description0}"]
+			description: ["Sell &6Igneous Rocks&f, &6Metal Ores&f, &6Gems&f and more with the Mining permit."]
 			icon: {
 				Count: 1
 				id: "tconstruct:pickaxe"
@@ -4160,7 +3857,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "301F2E283C01C02A"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests102.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
@@ -4168,15 +3865,12 @@
 			tasks: [{
 				consume_items: true
 				count: 30L
-				icon: {
-					Count: 30
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 30, id: "thermal:silver_coin" }
 				id: "0B22F506E3CF8F4A"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests102.title}"
+			title: "Miner"
 			x: -8.5d
 			y: 13.0d
 		}
@@ -4186,7 +3880,7 @@
 				"6AC1CED0D341150E"
 				"64F3352725385210"
 			]
-			description: ["{ftbquest.shipments.quests103.description0}"]
+			description: ["Sell &6Crops&f, &6Flowers&f, &6Honey&f and more with the Farming permit."]
 			icon: {
 				Count: 1
 				id: "tconstruct:kama"
@@ -4259,7 +3953,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "5A9525E949CE31B6"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests103.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
@@ -4267,15 +3961,12 @@
 			tasks: [{
 				consume_items: true
 				count: 30L
-				icon: {
-					Count: 30
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 30, id: "thermal:silver_coin" }
 				id: "60E0E5EAFF6FB8CD"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests103.title}"
+			title: "Farmer"
 			x: -7.0d
 			y: 9.5d
 		}
@@ -4285,7 +3976,7 @@
 				"6AC1CED0D341150E"
 				"64F3352725385210"
 			]
-			description: ["{ftbquest.shipments.quests104.description0}"]
+			description: ["Sell &6Wood Logs&f with the Carpentry permit."]
 			icon: {
 				Count: 1
 				id: "tconstruct:hand_axe"
@@ -4347,7 +4038,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "5FA55593A6A09BD3"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests104.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
@@ -4355,15 +4046,12 @@
 			tasks: [{
 				consume_items: true
 				count: 30L
-				icon: {
-					Count: 30
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 30, id: "thermal:silver_coin" }
 				id: "26412FF7A7B01D0E"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests104.title}"
+			title: "Carpenter"
 			x: -5.0d
 			y: 11.5d
 		}
@@ -4373,7 +4061,7 @@
 				"6AC1CED0D341150E"
 				"64F3352725385210"
 			]
-			description: ["{ftbquest.shipments.quests105.description0}"]
+			description: ["Sell &6Prepared Food&f with the Cooking permit."]
 			icon: {
 				Count: 1
 				id: "farmersdelight:golden_knife"
@@ -4395,7 +4083,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "4F34841C8D3F6A63"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests105.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
@@ -4403,15 +4091,12 @@
 			tasks: [{
 				consume_items: true
 				count: 30L
-				icon: {
-					Count: 30
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 30, id: "thermal:silver_coin" }
 				id: "709CD40FD9A871E8"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests105.title}"
+			title: "Chef"
 			x: -8.5d
 			y: 10.0d
 		}
@@ -4421,7 +4106,7 @@
 				"6AC1CED0D341150E"
 				"64F3352725385210"
 			]
-			description: ["{ftbquest.shipments.quests106.description0}"]
+			description: ["Sell mass-produced &6Building Blocks&f for a profit with the Masonry permit."]
 			hide_dependency_lines: false
 			icon: {
 				Count: 1
@@ -4490,7 +4175,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "454A1BBA1FC932A2"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests106.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
@@ -4498,15 +4183,12 @@
 			tasks: [{
 				consume_items: true
 				count: 30L
-				icon: {
-					Count: 30
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 30, id: "thermal:silver_coin" }
 				id: "51E438933A640AFF"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests106.title}"
+			title: "Mason"
 			x: -5.5d
 			y: 10.0d
 		}
@@ -4516,7 +4198,7 @@
 				"6AC1CED0D341150E"
 				"64F3352725385210"
 			]
-			description: ["{ftbquest.shipments.quests107.description0}"]
+			description: ["Sell all manner of &6Monster Loot&f with the Hunting permit."]
 			icon: {
 				Count: 1
 				id: "tconstruct:sword"
@@ -4578,7 +4260,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "3A37C7E4DB38641D"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests107.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
@@ -4586,15 +4268,12 @@
 			tasks: [{
 				consume_items: true
 				count: 30L
-				icon: {
-					Count: 30
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 30, id: "thermal:silver_coin" }
 				id: "227FDCDAE6D34745"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests107.title}"
+			title: "Hunter"
 			x: -9.0d
 			y: 11.5d
 		}
@@ -4604,7 +4283,7 @@
 				"6AC1CED0D341150E"
 				"64F3352725385210"
 			]
-			description: ["{ftbquest.shipments.quests108.description0}"]
+			description: ["Sell &6Tools&f, &6Armour&f and more with the Smithing permit."]
 			icon: {
 				Count: 1
 				id: "minecraft:golden_chestplate"
@@ -4626,7 +4305,7 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "42A107696AAF1B93"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests108.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
@@ -4634,15 +4313,12 @@
 			tasks: [{
 				consume_items: true
 				count: 30L
-				icon: {
-					Count: 30
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 30, id: "thermal:silver_coin" }
 				id: "0843FCBE886D2E78"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests108.title}"
+			title: "Blacksmith"
 			x: -5.5d
 			y: 13.0d
 		}
@@ -4664,24 +4340,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "11371176E1D2263D"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests109.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests109.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "7A3E62B648EAAE3B"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests109.title}"
+			title: "2x Scorched Bricks"
 			x: 5.5d
 			y: 13.0d
 		}
@@ -4703,24 +4376,21 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "14A26B20C6C04495"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests110.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests110.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "1C77D607372E22C1"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests110.title}"
+			title: "4x Bone"
 			x: 4.5d
 			y: 17.0d
 		}
@@ -4742,27 +4412,24 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "64234DA2430A47C2"
 					tags: ["reset"]
-					title: "{ftbquest.shipments.quests111.rewards1.title}"
+					title: "Repeatable"
 					type: "custom"
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquest.shipments.quests111.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 10L
-				icon: {
-					Count: 10
-					id: "thermal:silver_coin"
-				}
+				icon: { Count: 10, id: "thermal:silver_coin" }
 				id: "312C039183366ECD"
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.shipments.quests111.title}"
+			title: "8x Apatite"
 			x: 6.5d
 			y: 13.0d
 		}
 	]
-	title: "{ftbquest.shipments.title}"
+	title: "&a Shipments"
 }

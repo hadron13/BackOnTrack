@@ -18,7 +18,7 @@
 	quests: [
 		{
 			dependencies: ["66107B39B6257697"]
-			description: ["{ftbquest.stage_2b.quests0.description0}"]
+			description: ["With this machine, you have access to all the recipes available through it, so don’t use it carelessly — it’s quite difficult to make."]
 			icon: "kubejs:logistic_machine"
 			id: "2F4948D507C18B70"
 			size: 2.0d
@@ -30,7 +30,7 @@
 				}
 				{
 					id: "5A449EF0B76721D7"
-					title: "{ftbquest.stage_2b.quests0.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -44,7 +44,7 @@
 				"0C50D46146553240"
 				"578E71008DB5251C"
 			]
-			description: ["{ftbquest.stage_2b.quests1.description0}"]
+			description: ["You now have the Logistic Mechanism. With it, you gain access to all of Create’s logistics — use it in moderation."]
 			icon: "kubejs:logistic_mechanism"
 			id: "66107B39B6257697"
 			tasks: [
@@ -55,7 +55,7 @@
 				}
 				{
 					id: "31C116FDDC36CBE8"
-					title: "{ftbquest.stage_2b.quests1.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -64,7 +64,7 @@
 		}
 		{
 			dependencies: ["4B4CBB7C0D380568"]
-			description: ["{ftbquest.stage_2b.quests2.description0}"]
+			description: ["Still have your sticks? Perfect! Now take all of them and turn them into dust — you’re going to need plenty of organic material from here on out!"]
 			icon: "thermal:sawdust"
 			id: "7CEECCE931AFBD11"
 			tasks: [
@@ -75,7 +75,7 @@
 				}
 				{
 					id: "6822266D058EA63E"
-					title: "{ftbquest.stage_2b.quests2.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -84,7 +84,7 @@
 		}
 		{
 			dependencies: ["072F6BA76ABDAC10"]
-			description: ["{ftbquest.stage_2b.quests3.description0}"]
+			description: ["Everything starts with basic materials. Look for &6Sticks&r as you explore the world and keep every single one — you’ll need them later."]
 			hide_dependency_lines: true
 			icon: "minecraft:stick"
 			id: "4B4CBB7C0D380568"
@@ -96,7 +96,7 @@
 				}
 				{
 					id: "18FD21CD52B7F1C1"
-					title: "{ftbquest.stage_2b.quests3.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -105,7 +105,7 @@
 		}
 		{
 			dependencies: ["76598864ACE6867B"]
-			description: ["{ftbquest.stage_2b.quests4.description0}"]
+			description: ["Now comes the final step: cut everything into thin layers and you’ll end up with our precious cardboard."]
 			icon: "create:cardboard"
 			id: "3894987A1FB4E1DA"
 			tasks: [
@@ -116,7 +116,7 @@
 				}
 				{
 					id: "7E6A15A16914EABD"
-					title: "{ftbquest.stage_2b.quests4.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -125,7 +125,7 @@
 		}
 		{
 			dependencies: ["32B06467D05542D4"]
-			description: ["{ftbquest.stage_2b.quests5.description0}"]
+			description: ["We’re almost there — compress everything until it forms a solid block."]
 			icon: "create:bound_cardboard_block"
 			id: "76598864ACE6867B"
 			tasks: [
@@ -136,7 +136,7 @@
 				}
 				{
 					id: "0E52C83C9619A6BE"
-					title: "{ftbquest.stage_2b.quests5.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -145,7 +145,7 @@
 		}
 		{
 			dependencies: ["4F3A3501CC34253F"]
-			description: ["{ftbquest.stage_2b.quests6.description0}"]
+			description: ["Great, you already have almost everything. It’s still too damp to work with, though — toss it into a furnace to dry it out and make it uniform."]
 			icon: "kubejs:dry_pulp"
 			id: "32B06467D05542D4"
 			tasks: [
@@ -156,7 +156,7 @@
 				}
 				{
 					id: "17A322E2474637CD"
-					title: "{ftbquest.stage_2b.quests6.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -165,7 +165,7 @@
 		}
 		{
 			dependencies: ["02723E5F073AB1F0"]
-			description: ["{ftbquest.stage_2b.quests7.description0}"]
+			description: ["You already have the base mixture, but there’s still nothing holding it together. Remember the resin used to make rubber? Great — combine that paste with plenty of resin and you’ll get the raw material we’re looking for."]
 			icon: "kubejs:resin_pulp"
 			id: "4F3A3501CC34253F"
 			tasks: [
@@ -176,7 +176,7 @@
 				}
 				{
 					id: "1A24FAE20B578CC2"
-					title: "{ftbquest.stage_2b.quests7.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -185,7 +185,7 @@
 		}
 		{
 			dependencies: ["7CEECCE931AFBD11"]
-			description: ["{ftbquest.stage_2b.quests8.description0}"]
+			description: ["This is where things start to get messy. Take all the organic material you just processed and soak it until it turns into a wet paste."]
 			icon: "create:pulp"
 			id: "02723E5F073AB1F0"
 			tasks: [
@@ -196,7 +196,7 @@
 				}
 				{
 					id: "471606F04061749A"
-					title: "{ftbquest.stage_2b.quests8.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -205,7 +205,7 @@
 		}
 		{
 			dependencies: ["072F6BA76ABDAC10"]
-			description: ["{ftbquest.stage_2b.quests9.description0}"]
+			description: ["You already know how to produce this, so set aside a stockpile and redirect it here."]
 			hide_dependency_lines: true
 			icon: "create:electron_tube"
 			id: "4B8DEF81CE54A316"
@@ -217,7 +217,7 @@
 				}
 				{
 					id: "326577E6B3BE53B3"
-					title: "{ftbquest.stage_2b.quests9.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -249,7 +249,7 @@
 				}
 				{
 					id: "214DB99A627A6689"
-					title: "{ftbquest.stage_2b.quests10.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -262,7 +262,7 @@
 				"057CD05A226E1D88"
 				"03FAC9A5972F0F3B"
 			]
-			description: ["{ftbquest.stage_2b.quests11.description0}"]
+			description: ["Combine all the materials and ores you already know how to obtain, and craft a bronze ingot."]
 			icon: "alloyed:bronze_ingot"
 			id: "578E71008DB5251C"
 			tasks: [
@@ -278,7 +278,7 @@
 				}
 				{
 					id: "600F22C2959E9C3B"
-					title: "{ftbquest.stage_2b.quests11.tasks2.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -298,7 +298,7 @@
 				}
 				{
 					id: "16D3186DA29557E2"
-					title: "{ftbquest.stage_2b.quests12.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -318,7 +318,7 @@
 				}
 				{
 					id: "6E60CAEB9B29DF9F"
-					title: "{ftbquest.stage_2b.quests13.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -327,7 +327,7 @@
 		}
 		{
 			dependencies: ["072F6BA76ABDAC10"]
-			description: ["{ftbquest.stage_2b.quests14.description0}"]
+			description: ["To get this, you’ll need to crush some netherrack — you should already know where to find it."]
 			hide_dependency_lines: true
 			icon: "create:cinder_flour"
 			id: "03FAC9A5972F0F3B"
@@ -339,7 +339,7 @@
 				}
 				{
 					id: "2E17712605227B6C"
-					title: "{ftbquest.stage_2b.quests14.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -347,5 +347,5 @@
 			y: 4.5d
 		}
 	]
-	title: "{ftbquest.stage_2b.title}"
+	title: "&f2b&r Logistics Boost"
 }

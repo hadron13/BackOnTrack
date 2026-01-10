@@ -18,7 +18,7 @@
 	quests: [
 		{
 			dependencies: ["19B36C589AFFBA16"]
-			description: ["{ftbquest.stage_2a.quests0.description0}"]
+			description: ["Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line."]
 			icon: "kubejs:zinc_machine"
 			id: "7FD22E964BC59A3A"
 			rewards: [
@@ -52,11 +52,11 @@
 				}
 				{
 					id: "78714BA1137C5DF1"
-					title: "{ftbquest.stage_2a.quests0.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests0.title}"
+			title: "Chapter 2A Complete!"
 			x: 0.0d
 			y: 9.0d
 		}
@@ -66,11 +66,11 @@
 				"2F99F54B57DDBC49"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquest.stage_2a.quests1.description0}"]
+			description: ["Finally, deploy the infernal bricks onto precision mechanisms, and then spout lava over it."]
 			icon: "kubejs:scorch_mechanism"
 			id: "19B36C589AFFBA16"
 			shape: "diamond"
-			subtitle: "{ftbquest.stage_2a.quests1.subtitle}"
+			subtitle: "Contraption 24"
 			tasks: [
 				{
 					consume_items: false
@@ -80,22 +80,22 @@
 				}
 				{
 					id: "6370578A24EF9D3E"
-					title: "{ftbquest.stage_2a.quests1.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests1.title}"
+			title: "Heated Treatment"
 			x: 0.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7888F9129E9FE517"]
 			description: [
-				"{ftbquest.stage_2a.quests2.description0}"
+				"The deal of this line, lava is a remarkably hard resource to gather in the early chapters, but now there are various methods:"
 				""
-				"{ftbquest.stage_2a.quests2.description1}"
+				"Method 1: train from the nether, pump and load huge quantities from the deep nether seas."
 				""
-				"{ftbquest.stage_2a.quests2.description2}"
+				"Method 2: sap hellbark, use a sapper to gather a small amount of lava, enough for this chapter."
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -110,11 +110,11 @@
 				}
 				{
 					id: "4A7D9B25D8D1A314"
-					title: "{ftbquest.stage_2a.quests2.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests2.title}"
+			title: "A lot. of. lava"
 			x: 1.5d
 			y: 5.5d
 		}
@@ -123,10 +123,10 @@
 				"0F1B8FCEE040517A"
 				"7B56EFFB4E69C63D"
 			]
-			description: ["{ftbquest.stage_2a.quests3.description0}"]
+			description: ["Pour hot magma over the pour soul to get magma cream."]
 			icon: "minecraft:magma_cream"
 			id: "43BED22E6E6B3DE7"
-			subtitle: "{ftbquest.stage_2a.quests3.subtitle}"
+			subtitle: "Contraption 23-4"
 			tasks: [
 				{
 					id: "1AB6D2A877E0043A"
@@ -135,7 +135,7 @@
 				}
 				{
 					id: "4D03A526B844FF77"
-					title: "{ftbquest.stage_2a.quests3.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -148,10 +148,10 @@
 				"17DDE3C9D26B4F35"
 				"286EFE73EFDF3FC2"
 			]
-			description: ["{ftbquest.stage_2a.quests4.description0}"]
+			description: ["Lastly compact the unholy ingredients into fiery bricks."]
 			icon: "tconstruct:scorched_brick"
 			id: "2F99F54B57DDBC49"
-			subtitle: "{ftbquest.stage_2a.quests4.subtitle}"
+			subtitle: "Contraption 22-3"
 			tasks: [
 				{
 					id: "17EBC8080F61F41B"
@@ -160,17 +160,17 @@
 				}
 				{
 					id: "59AA99EBBE644D5F"
-					title: "{ftbquest.stage_2a.quests4.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests4.title}"
+			title: "Brownies"
 			x: -1.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["7888F9129E9FE517"]
-			description: ["{ftbquest.stage_2a.quests5.description0}"]
+			description: ["Redirect a gravel line for this production line."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:gravel"
@@ -183,7 +183,7 @@
 				}
 				{
 					id: "71A1C2D82009C191"
-					title: "{ftbquest.stage_2a.quests5.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -195,12 +195,12 @@
 				"7888F9129E9FE517"
 				"0F1B8FCEE040517A"
 			]
-			description: ["{ftbquest.stage_2a.quests6.description0}"]
+			description: ["The earliest step into this production line is soul sand, which can be produced by bulk haunting with a fan."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:soul_sand"
 			id: "4A2CE1B515197917"
-			subtitle: "{ftbquest.stage_2a.quests6.subtitle}"
+			subtitle: "Contraption 22-1"
 			tasks: [
 				{
 					id: "4109AFD751657612"
@@ -209,7 +209,7 @@
 				}
 				{
 					id: "48E652D2F95661E0"
-					title: "{ftbquest.stage_2a.quests6.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -218,10 +218,10 @@
 		}
 		{
 			dependencies: ["4A2CE1B515197917"]
-			description: ["{ftbquest.stage_2a.quests7.description0}"]
+			description: ["The soul separated from the sand can now be further tortured for increased shareholder value."]
 			icon: "kubejs:soul"
 			id: "7B56EFFB4E69C63D"
-			subtitle: "{ftbquest.stage_2a.quests7.subtitle}"
+			subtitle: "Contraption 23-1"
 			tasks: [
 				{
 					id: "708756B9574CBDE3"
@@ -230,7 +230,7 @@
 				}
 				{
 					id: "6753429E98E580F4"
-					title: "{ftbquest.stage_2a.quests7.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -239,10 +239,10 @@
 		}
 		{
 			dependencies: ["4A2CE1B515197917"]
-			description: ["{ftbquest.stage_2a.quests8.description0}"]
+			description: ["Use the leftover sand to brick production."]
 			icon: "kubejs:soulless_sand"
 			id: "286EFE73EFDF3FC2"
-			subtitle: "{ftbquest.stage_2a.quests8.subtitle}"
+			subtitle: "Contraption 22-2"
 			tasks: [
 				{
 					id: "7F8F32F374BD0461"
@@ -251,11 +251,11 @@
 				}
 				{
 					id: "160A4B609960F9CB"
-					title: "{ftbquest.stage_2a.quests8.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests8.title}"
+			title: "Unsoulessed sand"
 			x: -3.0d
 			y: 4.0d
 		}
@@ -265,7 +265,7 @@
 				"47AF956BCE09C5E5"
 				"78F2683FDF9C62D9"
 			]
-			description: ["{ftbquest.stage_2a.quests9.description0}"]
+			description: ["Combine the materials in a mixer, but now there is a requirement of a &6Blaze Burner&r, there are multiple ways to tackle this problem, use either solid fuel and a deployer or a mechanical arm you now have, or use liquid fuel such as lava from this very same chapter."]
 			icon: "tconstruct:magma_bucket"
 			id: "0F1B8FCEE040517A"
 			tasks: [
@@ -276,7 +276,7 @@
 				}
 				{
 					id: "7FFE3EC72FCBBF9A"
-					title: "{ftbquest.stage_2a.quests9.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -286,9 +286,9 @@
 		{
 			dependencies: ["7888F9129E9FE517"]
 			description: [
-				"{ftbquest.stage_2a.quests10.description0}"
+				"Transport the byproduct waste water from your previous factory into this one, it's better than dumping on a river..."
 				""
-				"{ftbquest.stage_2a.quests10.description1}"
+				"You can also generate with a palm tree."
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -302,17 +302,17 @@
 				}
 				{
 					id: "340F6CB97B66CD1B"
-					title: "{ftbquest.stage_2a.quests10.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests10.title}"
+			title: "Not garbage anymore"
 			x: 3.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["7888F9129E9FE517"]
-			description: ["{ftbquest.stage_2a.quests11.description0}"]
+			description: ["Just like previous igneous generators, calcite can also be created in a mechanical extruder."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:calcite"
@@ -325,7 +325,7 @@
 				}
 				{
 					id: "53454C88FF102D09"
-					title: "{ftbquest.stage_2a.quests11.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -334,7 +334,7 @@
 		}
 		{
 			dependencies: ["7888F9129E9FE517"]
-			description: ["{ftbquest.stage_2a.quests12.description0}"]
+			description: ["Redirect some iron from your previous factory."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:iron_nugget"
@@ -347,22 +347,22 @@
 				}
 				{
 					id: "38E73589848A2E3B"
-					title: "{ftbquest.stage_2a.quests12.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests12.title}"
+			title: "Iron for hours"
 			x: 1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["587CDA54F432AA4E"]
 			description: [
-				"{ftbquest.stage_2a.quests13.description0}"
+				"One must overcharge the chromatic compound with light to obtain what is essentially solid light."
 				""
-				"{ftbquest.stage_2a.quests13.description1}"
+				"Accomplishing this will either consume a plethora of lights, or something stronger than solid light itself..."
 				""
-				"{ftbquest.stage_2a.quests13.description2}"
+				"Perhaps a &lstar&r would suffice."
 			]
 			icon: {
 				Count: 1
@@ -370,7 +370,7 @@
 				tag: { }
 			}
 			id: "65C29BD4394DC2BB"
-			subtitle: "{ftbquest.stage_2a.quests13.subtitle}"
+			subtitle: " "
 			tasks: [
 				{
 					id: "2F32EED4D10A7532"
@@ -386,20 +386,20 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests13.title}"
+			title: "Essence of light"
 			x: -1.0d
 			y: 13.5d
 		}
 		{
 			dependencies: ["587CDA54F432AA4E"]
-			description: ["{ftbquest.stage_2a.quests14.description0}"]
+			description: ["The very opposite of overcharging with light, is absenting it of all the lights, only the &lvoid&r would create such environment..."]
 			icon: {
 				Count: 1
 				id: "create:shadow_steel"
 				tag: { }
 			}
 			id: "39F3A334BBA5EDAB"
-			subtitle: "{ftbquest.stage_2a.quests14.subtitle}"
+			subtitle: " "
 			tasks: [
 				{
 					id: "592D4E1D68812DB7"
@@ -415,16 +415,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests14.title}"
+			title: "Darkest alloy"
 			x: 1.0d
 			y: 13.5d
 		}
 		{
 			dependencies: ["7FD22E964BC59A3A"]
 			description: [
-				"{ftbquest.stage_2a.quests15.description0}"
+				"To accomplish this subtask, you must travel to the farthest dimension: The End."
 				""
-				"{ftbquest.stage_2a.quests15.description1}"
+				"The chorus plants are the key component of the mysterious chromatic compound."
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -449,7 +449,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests15.title}"
+			title: "Chromatic endeavours"
 			x: 0.0d
 			y: 12.0d
 		}
@@ -458,7 +458,7 @@
 				"65C29BD4394DC2BB"
 				"39F3A334BBA5EDAB"
 			]
-			description: ["{ftbquest.stage_2a.quests16.description0}"]
+			description: ["Join the power of light and dark into one single compound, capable of transport in an extra dimension."]
 			icon: {
 				Count: 1
 				id: "createqol:shadow_radiance"
@@ -480,7 +480,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests16.title}"
+			title: "Transcendence"
 			x: 0.0d
 			y: 15.5d
 		}
@@ -508,13 +508,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2a.quests17.title}"
+			title: "Ender Packager Obtained!"
 			x: 0.0d
 			y: 19.5d
 		}
 		{
 			dependencies: ["4F21ED9C5DEBFAF5"]
-			description: ["{ftbquest.stage_2a.quests18.description0}"]
+			description: ["Cast the newly created material for proper use in machinery."]
 			icon: {
 				Count: 1
 				id: "createqol:shadow_radiance_casing"
@@ -540,5 +540,5 @@
 			y: 17.5d
 		}
 	]
-	title: "{ftbquest.stage_2a.title}"
+	title: "&f2a&r Hell Processing"
 }

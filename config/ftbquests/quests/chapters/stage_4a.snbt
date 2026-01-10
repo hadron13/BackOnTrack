@@ -44,7 +44,7 @@
 				item: "kubejs:high_power_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_4a.quests0.title}"
+			title: "Complete Chapter 4b"
 			x: 0.5d
 			y: 2.5d
 		}
@@ -240,7 +240,7 @@
 				item: "kubejs:invar_machine"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_4a.quests16.title}"
+			title: "Inductive Machinery"
 			x: 0.5d
 			y: 4.5d
 		}
@@ -251,7 +251,7 @@
 			id: "08EFA7FE3DE9E227"
 			tasks: [{
 				id: "53B320B396503BA4"
-				title: "{ftbquest.stage_4a.quests17.tasks0.title}"
+				title: "unlock"
 				type: "checkmark"
 			}]
 			x: -1.5d
@@ -294,5 +294,5 @@
 			y: -4.5d
 		}
 	]
-	title: "{ftbquest.stage_4a.title}"
+	title: "&f4a&r Thermodynamic Expansion"
 }
