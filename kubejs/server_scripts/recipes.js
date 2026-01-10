@@ -1209,7 +1209,7 @@ function copperMachine(event) {
 	copper_machine('create:portable_fluid_interface', 2)
 	copper_machine('create:fluid_tank', 3, "#forge:glass")
 	copper_machine('thermal:upgrade_augment_1', 1, MC('redstone'))
-	copper_machine('create:item_drain', 1, MC("iron_bars"))
+	copper_machine('create:item_drain', 3, MC("iron_bars"))
 	copper_machine('thermal:device_water_gen', 1, MC('bucket'))
 	copper_machine('create:smart_fluid_pipe', 2)
 	copper_machine('create_enchantment_industry:disenchanter', 1, "#create:sandpaper")
@@ -1356,6 +1356,16 @@ function MetallurgyRecipes(event){
 	event.remove({output: "createcasing:"+type+"_mixer"})
 	event.remove({output: "createcasing:"+type+"_press"})
 	event.remove({output: "createcasing:"+type+"_depot"})
+	event.remove({output: "createcasing:"+type+"_gearshift"})
+	event.remove({output: "createcasing:"+type+"_clutch"})
+	event.remove({output: "createcasing:"+type+"_deployer"})
+	event.remove({output: "createcasing:"+type+"_portable_storage_interface"})
+	event.remove({output: "createcasing:"+type+"_encased_fan"})
+	event.remove({output: "createcasing:"+type+"_mechanical_harvester"})
+	event.remove({output: "createcasing:"+type+"_mechanical_saw"})
+	event.remove({output: "createcasing:"+type+"_mechanical_drill"})
+	event.remove({output: "createcasing:"+type+"_mechanical_plough"})
+	event.remove({output: "createcasing:"+type+"_mechanical_roller"})
 	}
 
 	wood_nomes.forEach(type => {

@@ -66,6 +66,16 @@ JEIEvents.hideItems(event => {
 		event.hide(CC(`${type}_press`))
 		event.hide(CC(`${type}_depot`))
 		event.hide(CC(`${type}_chain_conveyor`))
+		event.hide(CC(`${type}_gearshift`))
+		event.hide(CC(`${type}_clutch`))
+		event.hide(CC(`${type}_deployer`))
+		event.hide(CC(`${type}_portable_storage_interface`))
+		event.hide(CC(`${type}_encased_fan`))
+		event.hide(CC(`${type}_mechanical_harvester`))
+		event.hide(CC(`${type}_mechanical_saw`))
+		event.hide(CC(`${type}_mechanical_drill`))
+		event.hide(CC(`${type}_mechanical_plough`))
+		event.hide(CC(`${type}_mechanical_roller`))
 	}
   creative("creative")
 
@@ -185,7 +195,7 @@ JEIEvents.hideItems(event => {
 	event.hide(`createqol:refined_radiance_hoe`)
 
 
-    event.hide("kubejs:growing_rose_seed")
+  event.hide("kubejs:growing_rose_seed")
 	event.hide("kubejs:growing_tiny_rose_crystal")
 	event.hide("kubejs:growing_small_rose_crystal")
 	event.hide("kubejs:incomplete_calculation_processor")
