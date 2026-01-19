@@ -91,7 +91,7 @@ ServerEvents.recipes((bot) => {
     bot.recipes.createMixing(Fluid.of("kubejs:gasoline", 1000), [Fluid.of("kubejs:alkylate", 200), Fluid.of("kubejs:untreated_gasoline", 800)])
 
     bot.recipes.createMixing([Fluid.of("kubejs:lubricant", 200), GB("asphalt", 2)], [Fluid.of("kubejs:fuel_oil", 300), Fluid.of("gearbox:propane", 100)])
-    bot.recipes.gearboxCompressing(GB("asphalt"), Fluid.of("kubejs:heavy_oil_residue", 200))
+    bot.recipes.rubberworksCompressing(GB("asphalt"), Fluid.of("kubejs:heavy_oil_residue", 200))
 
     bot.recipes.gearboxPyroprocessing(TE('coal_coke'), MC('coal'))
     bot.recipes.createMixing(Fluid.of(BC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), GB('petroleum_coke')]).heated()

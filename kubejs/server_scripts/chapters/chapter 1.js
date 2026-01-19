@@ -6,6 +6,7 @@ let GB = (id, x) => MOD("gearbox", id, x)
 let MC = (id, x) => MOD("minecraft", id, x)
 let KJ = (id, x) => MOD("kubejs", id, x)
 let F = (id, x) =>  MOD("forge", id, x)
+let RW = (id, x) =>  MOD("rubberworks", id, x)
 
 ServerEvents.recipes((bot) => {
 	bot.recipes.createMechanicalExtruderExtruding(MC('andesite'), [Fluid.of('minecraft:lava'),Fluid.of('minecraft:water')]).withCatalyst('minecraft:polished_andesite').requiredBonks(4)
@@ -51,8 +52,8 @@ ServerEvents.recipes((bot) => {
 		andesite_machine('toms_storage:ts.inventory_cable_connector', 1, CR('electron_tube'))
 		andesite_machine('gearbox:brass_press', 1, CR('brass_block'))
 		andesite_machine(CR('chain_conveyor'), 2, MC('chain'))
-		andesite_machine(CR('andesite_funnel'), 4, TE('cured_rubber'))
-		andesite_machine(CR('andesite_tunnel'), 4, MC('dried_kelp'))
+		andesite_machine(CR('andesite_funnel'), 4, RW('rubber_sheet'))
+		andesite_machine(CR('andesite_tunnel'), 4, RW('rubber'))
 		andesite_machine('toms_storage:ts.inventory_cable', 8, MC('redstone'))
 		andesite_machine('create:portable_storage_interface', 2)
 		andesite_machine('create:mechanical_harvester', 2)
@@ -74,14 +75,16 @@ ServerEvents.recipes((bot) => {
 	bot.smithing('toms_storage:ts.crafting_terminal', "kubejs:rotation_template",'toms_storage:ts.storage_terminal', MC('crafting_table'))
 	bot.shapeless(KJ('rotation_mechanism'), [KJ('rotation_mechanism_base'), CR('cogwheel'), CR('andesite_alloy'), CR('large_cogwheel')]).id("kubejs:rotation_mechanism_manual_only")
 	bot.shapeless(GB('kinetic_machine'), KJ('andesite_machine'))
+	bot.shapeless(RW('sapper'), GB('sapper'))
+	bot.shapeless(RW('compressor'), GB('compressor'))
 	bot.shapeless(KJ('rotation_mechanism_base'), ['#cb_microblock:tools/saw', MC("#logs")]).damageIngredient(Item.of('cb_microblock:stone_saw')).damageIngredient(Item.of('cb_microblock:iron_saw')).damageIngredient(Item.of('cb_microblock:diamond_saw'))
 
-  bot.shaped(GB('compressor'), [
+  bot.shaped(RW('compressor'), [
 		'   ',
 		'CBE',
 		'GGG'
 	], {C: CR('andesite_alloy'), E: CR('fluid_pipe'), B: GB('kinetic_machine'), G: CR('industrial_iron_block')})
-	bot.shaped(GB('sapper'), [
+	bot.shaped(RW('sapper'), [
 		' G ',
 		'CBE',
 		' S '

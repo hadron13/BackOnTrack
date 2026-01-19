@@ -6,7 +6,9 @@ let GB = (id, x) => MOD("gearbox", id, x)
 let MC = (id, x) => MOD("minecraft", id, x)
 let KJ = (id, x) => MOD("kubejs", id, x)
 let F = (id, x) =>  MOD("forge", id, x)
-
+let TE = (id, x) => MOD("thermal", id, x)
+let RW = (id, x) =>  MOD("rubberworks", id, x)
+// cap principal
 ServerEvents.recipes((bot) => {
 	bot.recipes.createCompacting(KJ('rose_quartz_seed'),Fluid.of(TE('redstone'), 500))
 
@@ -29,7 +31,6 @@ ServerEvents.recipes((bot) => {
 	bot.recipes.createMixing([KJ('pure_sky_chunks')], [KJ('cut_sky_chunks'), Fluid.of(MC('water'), 250), KJ('diorite_dust')])
 	bot.recipes.createMixing(Fluid.of(KJ('ash_water'), 500), [Item.of(SP('ash'), 1), Fluid.of(MC('water'), 500)])
 	bot.recipes.createMixing([KJ('clean_sky_chunks'), Fluid.of(KJ('dirt_water'), 50)], [KJ('impure_sky_chunks'), Fluid.of(KJ("ash_water"), 250)])
-	bot.recipes.createMixing([Fluid.of(TC('magma'), 50)], [MC('iron_nugget'), MC('calcite'), Fluid.of(KJ("dirt_water"), 50)]).heated()
 
 	bot.custom({
 		"type": "tconstruct:casting_table",
@@ -84,7 +85,7 @@ ServerEvents.recipes((bot) => {
 	brass_machine(AE2('crystal_resonance_generator'), 1, MC('redstone'))
 	brass_machine('torchmaster:feral_flare_lantern', 1, MC('glowstone_dust'))
 	brass_machine(PP('pressurizer'), 1, CR('propeller'))
-	brass_machine(CR('brass_funnel'), 4, TE('cured_rubber'))
+	brass_machine(CR('brass_funnel'), 4, RW('rubber_sheet'))
 	brass_machine(CR('brass_tunnel'), 4, MC('dried_kelp'))
 	brass_machine(SS('advanced_magnet_upgrade'), 1)
 	brass_machine(SB('advanced_magnet_upgrade'), 1)
@@ -121,7 +122,60 @@ ServerEvents.recipes((bot) => {
 		'HMR'
 	], {M: KJ('brass_machine'), H: CR('brass_sheet'), R: CR('cogwheel'), T: CR('brass_hand')})  
 })
+// cap 2a
+ServerEvents.recipes((bot) => {
 
+	bot.recipes.createMixing(Fluid.of(TC("blood"), 250), KJ('soul')).heated()
+	bot.recipes.createMixing([Fluid.of(TC('magma'), 50)], [MC('iron_nugget'), MC('calcite'), Fluid.of(KJ("dirt_water"), 50)]).heated()
+
+	bot.recipes.createFilling(MC('magma_cream'), [KJ('soul'), Fluid.of(TC('magma'), 25)])
+
+	bot.recipes.createCompacting([KJ('soul'), KJ('soulless_sand')], MC("soul_sand"))
+	bot.recipes.createCompacting(TC("scorched_brick"), [KJ('soulless_sand'), MC("magma_cream"), MC("gravel")] ).heated()
+
+	let t = KJ('incomplete_scorch_mechanism')
+	bot.recipes.createSequencedAssembly([
+		KJ('scorch_mechanism'),
+	], CR('precision_mechanism'), [
+        bot.recipes.createDeploying(t, [t, TC("scorched_brick")]),
+        bot.recipes.createDeploying(t, [t, TC("scorched_brick")]),
+		bot.recipes.createFilling(t, [t, Fluid.of(MC("lava"), 1000)]),
+		bot.recipes.createFilling(t, [t, Fluid.of(MC("lava"), 1000)]),
+	]).transitionalItem(t)
+		.loops(1)
+		.id('kubejs:scorch_mechanism')
+
+	let zinc_machine = (id, amount, other_ingredient) => {
+		bot.remove({ output: id })
+		if (other_ingredient) {
+			bot.smithing(Item.of(id, amount), KJ('brass_template'), 'kubejs:zinc_machine', other_ingredient)
+			bot.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:zinc_machine', B: other_ingredient })
+		}
+		else
+			bot.stonecutting(Item.of(id, amount), 'kubejs:zinc_machine')}
+
+	zinc_machine(TE('device_rock_gen'), 1, MC('piston'))
+	zinc_machine(TE('device_collector'), 1, MC('ender_pearl'))
+	zinc_machine('fluid:copper_sink', 1, MC('lava_bucket'))
+	zinc_machine(TE('device_potion_diffuser'), 1, MC('glass_bottle'))
+	zinc_machine('storagedrawers:controller', 1, MC('diamond'))
+	zinc_machine('storagedrawers:controller_slave', 1, MC('gold_ingot'))
+	zinc_machine('torchmaster:megatorch', 1, MC('torch'))
+	zinc_machine('thermal:upgrade_augment_2', 1, MC('redstone'))
+
+	bot.shaped(KJ('zinc_machine'), [
+		'SSS',
+		'SCS',
+		'SSS'
+	], {C: KJ('zinc_casing'), S: KJ('scorch_mechanism')})
+	bot.shaped(TC('foundry_controller'), [
+		'SSS',
+		'SCS',
+		'SSS'
+	], {C: TC('scorched_bricks'), S: KJ('scorch_mechanism')})
+
+})
+// cap 2b
 ServerEvents.recipes((bot) => {
 
 	bot.recipes.createCrushing(TE('sawdust', 2), MC('stick'))
@@ -164,7 +218,6 @@ ServerEvents.recipes((bot) => {
 	cardboard_machine(CR('redstone_requester'), 1, CR('redstone_contact'))
 	cardboard_machine(CR('packager'), 2, CR('cardboard'))
 	cardboard_machine(CR('stock_ticker'), 1, CR('factory_gauge'))
-	cardboard_machine('createstockbridge:ae_bridge', 1, AE2('interface'))
 	cardboard_machine('createqol:ender_packager', 2, 'createqol:shadow_radiance_casing')
 
 	bot.shaped(KJ('logistic_machine'), [

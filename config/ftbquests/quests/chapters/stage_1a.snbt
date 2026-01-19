@@ -18,7 +18,7 @@
 	quests: [
 		{
 			dependencies: ["0B2683CCC179B93F"]
-			description: ["Good job! Now that you have an easy way of acquiring track machines, you can expand your railway network as big as you want! Trains are cool by themselves and even cooler when automated!"]
+			description: ["{ftbquest.stage_1a.quests0.description0}"]
 			icon: "kubejs:train_machine"
 			id: "38DCA5905F400ADB"
 			rewards: [
@@ -52,11 +52,11 @@
 				}
 				{
 					id: "783257519872A5D0"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests0.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Chapter 1B Complete!"
+			title: "{ftbquest.stage_1a.quests0.title}"
 			x: 0.0d
 			y: 5.25d
 		}
@@ -66,13 +66,13 @@
 				"21870FF88F53BA52"
 			]
 			description: [
-				"Mix the copper and the zinc and welcome to the brass age!"
+				"{ftbquest.stage_1a.quests1.description0}"
 				""
-				"Brass will not only be useful for trains, but for the future precision machinery aswell, and drip casing."
+				"{ftbquest.stage_1a.quests1.description1}"
 			]
 			icon: "create:brass_ingot"
 			id: "20FD27DE45C29BB7"
-			subtitle: "Contraption 11"
+			subtitle: "{ftbquest.stage_1a.quests1.subtitle}"
 			tasks: [
 				{
 					id: "2A93469A860E448A"
@@ -81,17 +81,17 @@
 				}
 				{
 					id: "13ABA90197E2653F"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests1.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Real Gold"
+			title: "{ftbquest.stage_1a.quests1.title}"
 			x: 1.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["57EF36B592C45D2C"]
-			description: ["Route some of your zinc nuggets to a melter, and then pump it into a mixer basing for further yellowishfication."]
+			description: ["{ftbquest.stage_1a.quests2.description0}"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -112,25 +112,25 @@
 							fluid: "tconstruct:molten_zinc"
 						}
 					}
-					title: "Copper Can (Molten Zinc)"
+					title: "{ftbquest.stage_1a.quests2.tasks0.title}"
 					type: "item"
 				}
 				{
 					id: "3DEBA9536D7E5F40"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests2.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Gray Vitamin"
+			title: "{ftbquest.stage_1a.quests2.title}"
 			x: 2.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["57EF36B592C45D2C"]
 			description: [
-				"Melt some of your copper and pump it into a mixer for further yelloweishfication."
+				"{ftbquest.stage_1a.quests3.description0}"
 				""
-				"It's not required to be automated, it's a secondary chapter but it's probably a good idea to automate it early."
+				"{ftbquest.stage_1a.quests3.description1}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -152,25 +152,25 @@
 							fluid: "tconstruct:molten_copper"
 						}
 					}
-					title: "Copper Can (Molten Copper)"
+					title: "{ftbquest.stage_1a.quests3.tasks0.title}"
 					type: "item"
 				}
 				{
 					id: "02FA53051D623509"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests3.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Orange Juice"
+			title: "{ftbquest.stage_1a.quests3.title}"
 			x: 0.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["57EF36B592C45D2C"]
 			description: [
-				"It's not really required to be automated, but it all depends on how many signals, trains and stations your railway will need."
+				"{ftbquest.stage_1a.quests4.description0}"
 				""
-				"It may be a good idea to tap the mantle later... and use the trains to bring onto the overworld!"
+				"{ftbquest.stage_1a.quests4.description1}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:lava_bucket"
@@ -183,11 +183,11 @@
 				}
 				{
 					id: "683C088558516F65"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests4.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "A Bit of Lava"
+			title: "{ftbquest.stage_1a.quests4.title}"
 			x: -0.5d
 			y: 1.0d
 		}
@@ -196,10 +196,10 @@
 				"7CD3D075A2C03DD2"
 				"070EDAC9772994A6"
 			]
-			description: ["Pour the lava over the obsidian powder and press it 2 times to create a sturdy sheet."]
+			description: ["{ftbquest.stage_1a.quests5.description0}"]
 			icon: "create:sturdy_sheet"
 			id: "5BC9DD08C47121C0"
-			subtitle: "Contraption 10"
+			subtitle: "{ftbquest.stage_1a.quests5.subtitle}"
 			tasks: [
 				{
 					consume_items: false
@@ -209,11 +209,11 @@
 				}
 				{
 					id: "6B765C2DAD5E1096"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests5.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Sturdying"
+			title: "{ftbquest.stage_1a.quests5.title}"
 			x: -1.5d
 			y: 2.0d
 		}
@@ -222,7 +222,7 @@
 				"5BC9DD08C47121C0"
 				"20FD27DE45C29BB7"
 			]
-			description: ["Just like Chapter 1A, this can only be automated with the more advanced precision technology, but for now manually crafting it should be more than enough for your transportation needs."]
+			description: ["{ftbquest.stage_1a.quests6.description0}"]
 			icon: "kubejs:train_mechanism"
 			id: "0B2683CCC179B93F"
 			tasks: [
@@ -234,20 +234,20 @@
 				}
 				{
 					id: "2B261D8A44226679"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests6.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Sturdy Reinforcement"
+			title: "{ftbquest.stage_1a.quests6.title}"
 			x: 0.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["0FC49FBEB4B08CBD"]
-			description: ["Crushing obsidian into powder requires a loop to fully grind the obsidian."]
+			description: ["{ftbquest.stage_1a.quests7.description0}"]
 			icon: "create:powdered_obsidian"
 			id: "7CD3D075A2C03DD2"
-			subtitle: "Contraption 9-3"
+			subtitle: "{ftbquest.stage_1a.quests7.subtitle}"
 			tasks: [
 				{
 					consume_items: false
@@ -257,20 +257,20 @@
 				}
 				{
 					id: "1050D0630F8A5E22"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests7.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Crushing Looper"
+			title: "{ftbquest.stage_1a.quests7.title}"
 			x: -2.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["043E8CE4F784E8F0"]
-			description: ["Blowing hot air on obsidian makes it cry this purple juice, interesting..."]
+			description: ["{ftbquest.stage_1a.quests8.description0}"]
 			icon: "minecraft:crying_obsidian"
 			id: "0FC49FBEB4B08CBD"
-			subtitle: "Contraption 9-2"
+			subtitle: "{ftbquest.stage_1a.quests8.subtitle}"
 			tasks: [
 				{
 					id: "17C00DCC36F3E476"
@@ -279,25 +279,25 @@
 				}
 				{
 					id: "1157FDBE86B0FF93"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests8.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Crying Glass"
+			title: "{ftbquest.stage_1a.quests8.title}"
 			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["57EF36B592C45D2C"]
 			description: [
-				"Obtaining obsidian is an essential part of the factory, however you won't need a constant supply of it as the process is very forgiving."
+				"{ftbquest.stage_1a.quests9.description0}"
 				""
-				"However it may be a good idea to use some automated lava from the nether to create some."
+				"{ftbquest.stage_1a.quests9.description1}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:obsidian"
 			id: "043E8CE4F784E8F0"
-			subtitle: "Contraption 9-1"
+			subtitle: "{ftbquest.stage_1a.quests9.subtitle}"
 			tasks: [
 				{
 					consume_items: false
@@ -307,14 +307,14 @@
 				}
 				{
 					id: "53E8CE0CA1DF328E"
-					title: "Automated"
+					title: "{ftbquest.stage_1a.quests9.tasks1.title}"
 					type: "checkmark"
 				}
 			]
-			title: "Igneously Vitreous"
+			title: "{ftbquest.stage_1a.quests9.title}"
 			x: 0.0d
 			y: -1.0d
 		}
 	]
-	title: "&f1b&r Sturdy Production"
+	title: "{ftbquest.stage_1a.title}"
 }

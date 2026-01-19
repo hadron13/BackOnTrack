@@ -18,7 +18,7 @@
 	quests: [
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Here at &3Engineer's Magazine&r we provide the best employement oportunities for getting that bread, the works range from digging dirt to interstellar bounties."]
+			description: ["{ftbquest.professions.quests0.description0}"]
 			hide_until_deps_visible: true
 			icon: "minecraft:oak_sign"
 			id: "36E02479368EAF04"
@@ -28,18 +28,18 @@
 				id: "3FE411FC2A966816"
 				type: "checkmark"
 			}]
-			title: "Engineer's Magazine"
+			title: "{ftbquest.professions.quests0.title}"
 			x: -1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
 			description: [
-				"Write an application telling how will your organization change the world."
+				"{ftbquest.professions.quests1.description0}"
 				""
-				"&4Stream chat&f, tell your streamer to write an actual application instead of writing bogus and submitting."
+				"{ftbquest.professions.quests1.description1}"
 				""
-				"We raised the money, but also the standards."
+				"{ftbquest.professions.quests1.description2}"
 			]
 			hide_until_deps_visible: true
 			icon: "minecraft:book"
@@ -52,7 +52,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "30 Silver"
+			subtitle: "{ftbquest.professions.quests1.subtitle}"
 			tasks: [{
 				consume_items: true
 				id: "7D2F867FD8A5A68A"
@@ -63,13 +63,13 @@
 				}
 				type: "item"
 			}]
-			title: "Investors are Investing"
+			title: "{ftbquest.professions.quests1.title}"
 			x: 2.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["This is the rarest of them all, every globe colection needs one of these"]
+			description: ["{ftbquest.professions.quests2.description0}"]
 			hide_until_deps_visible: true
 			id: "30ED355F76F0A365"
 			rewards: [{
@@ -81,20 +81,20 @@
 			}]
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "20 Gold"
+			subtitle: "{ftbquest.professions.quests2.subtitle}"
 			tasks: [{
 				consume_items: true
 				id: "186F15C15373C885"
 				item: "ad_astra:glacio_globe"
 				type: "item"
 			}]
-			title: "Ultimate Bounty"
+			title: "{ftbquest.professions.quests2.title}"
 			x: 17.25d
 			y: 0.75d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["If you have no use for it, you might just sell it."]
+			description: ["{ftbquest.professions.quests3.description0}"]
 			hide_until_deps_visible: true
 			id: "2E51181E7EC6B6E0"
 			rewards: [{
@@ -106,7 +106,7 @@
 			}]
 			shape: "diamond"
 			size: 1.5d
-			subtitle: "5 Gold"
+			subtitle: "{ftbquest.professions.quests3.subtitle}"
 			tasks: [{
 				consume_items: true
 				id: "71BEBCCC03A4B80C"
@@ -118,13 +118,13 @@
 				match_nbt: false
 				type: "item"
 			}]
-			title: "Used Rockets"
+			title: "{ftbquest.professions.quests3.title}"
 			x: 12.0d
 			y: 0.75d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Not enough bread! Our factory needs more wheat to continue producing that bread, 7 gold coins are the deal."]
+			description: ["{ftbquest.professions.quests4.description0}"]
 			hide_until_deps_visible: true
 			id: "2421E3B7BABCD7B1"
 			rewards: [{
@@ -134,7 +134,7 @@
 				item: "thermal:gold_coin"
 				type: "item"
 			}]
-			subtitle: "7 Gold"
+			subtitle: "{ftbquest.professions.quests4.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 512L
@@ -142,13 +142,13 @@
 				item: "minecraft:hay_block"
 				type: "item"
 			}]
-			title: "Full Restock"
+			title: "{ftbquest.professions.quests4.title}"
 			x: 15.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["The metal processing plants urge for ores, give them a bit of your mining results."]
+			description: ["{ftbquest.professions.quests5.description0}"]
 			hide_until_deps_visible: true
 			id: "1E3E3E5533D245A6"
 			rewards: [{
@@ -158,7 +158,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "16 Silver"
+			subtitle: "{ftbquest.professions.quests5.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -189,13 +189,13 @@
 					type: "item"
 				}
 			]
-			title: "Metalically"
+			title: "{ftbquest.professions.quests5.title}"
 			x: 4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1E3E3E5533D245A6"]
-			description: ["Fancier metals require fancier rewards."]
+			description: ["{ftbquest.professions.quests6.description0}"]
 			hide_dependency_lines: false
 			hide_until_deps_visible: true
 			id: "2547BE1B098305A7"
@@ -206,7 +206,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "24 Silver"
+			subtitle: "{ftbquest.professions.quests6.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -230,13 +230,13 @@
 					type: "item"
 				}
 			]
-			title: "Metalomania"
+			title: "{ftbquest.professions.quests6.title}"
 			x: 4.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Rotten tomatoes are an essential part of movie rating, imagine if tomatoes never got rotten, what would we throw at them?"]
+			description: ["{ftbquest.professions.quests7.description0}"]
 			hide_until_deps_visible: true
 			id: "428584CEC8AC19B6"
 			rewards: [{
@@ -246,7 +246,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "5 Silver"
+			subtitle: "{ftbquest.professions.quests7.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 20L
@@ -254,16 +254,16 @@
 				item: "farmersdelight:rotten_tomato"
 				type: "item"
 			}]
-			title: "Movie Rating"
+			title: "{ftbquest.professions.quests7.title}"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
 			description: [
-				"3 stacks of dirt are surprisingly useful for flattening terrains."
+				"{ftbquest.professions.quests8.description0}"
 				""
-				"And why do we need flattening terrain if the earth is flat? checkmate flat earthers."
+				"{ftbquest.professions.quests8.description1}"
 			]
 			hide_until_deps_visible: true
 			id: "21AA0BE00D934884"
@@ -274,7 +274,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "7 Silver"
+			subtitle: "{ftbquest.professions.quests8.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -298,13 +298,13 @@
 					type: "item"
 				}
 			]
-			title: "The Flattening"
+			title: "{ftbquest.professions.quests8.title}"
 			x: 6.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["These fit perfectly on any garden, 5 coins is profit cause you would probably throw them off, ain't you?"]
+			description: ["{ftbquest.professions.quests9.description0}"]
 			hide_until_deps_visible: true
 			id: "0F79FC684268C640"
 			rewards: [{
@@ -314,7 +314,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "5 Silver"
+			subtitle: "{ftbquest.professions.quests9.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -338,13 +338,13 @@
 					type: "item"
 				}
 			]
-			title: "Cute Gardening"
+			title: "{ftbquest.professions.quests9.title}"
 			x: 11.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Kill those pesky spiders from this land and receive a bounty for that."]
+			description: ["{ftbquest.professions.quests10.description0}"]
 			hide_until_deps_visible: true
 			id: "576041A5B3ACFAEF"
 			rewards: [{
@@ -354,7 +354,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "30 Silver"
+			subtitle: "{ftbquest.professions.quests10.subtitle}"
 			tasks: [{
 				entity: "minecraft:spider"
 				icon: "biomesoplenty:spider_egg"
@@ -362,13 +362,13 @@
 				type: "kill"
 				value: 50L
 			}]
-			title: "Pesky Arthropods"
+			title: "{ftbquest.professions.quests10.title}"
 			x: 4.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["So you found some skystone? Thank's for your collaboration."]
+			description: ["{ftbquest.professions.quests11.description0}"]
 			hide_until_deps_visible: true
 			icon: "ae2:sky_stone_block"
 			id: "50C4475040D2064C"
@@ -379,23 +379,23 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "10 Silver"
+			subtitle: "{ftbquest.professions.quests11.subtitle}"
 			tasks: [{
 				icon: "ae2:sky_stone_block"
 				id: "22FF303235CCCE27"
 				observe_type: 0
 				timer: 0L
-				title: "Find Skystone"
+				title: "{ftbquest.professions.quests11.tasks0.title}"
 				to_observe: "ae2:sky_stone_block"
 				type: "observation"
 			}]
-			title: "Meteor Hunter"
+			title: "{ftbquest.professions.quests11.title}"
 			x: 4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Who wouldn't want these delicious treats? Submit some to get a nice reward for it."]
+			description: ["{ftbquest.professions.quests12.description0}"]
 			hide_until_deps_visible: true
 			id: "553CBFEE1FF3773A"
 			rewards: [
@@ -414,7 +414,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "76 Silver"
+			subtitle: "{ftbquest.professions.quests12.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -438,13 +438,13 @@
 					type: "item"
 				}
 			]
-			title: "Sweet Deals"
+			title: "{ftbquest.professions.quests12.title}"
 			x: 17.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["You really deserve a reward for using exactly 100% of your power, no more no less."]
+			description: ["{ftbquest.professions.quests13.description0}"]
 			hide_until_deps_visible: true
 			id: "550F1F8DA0F6F8C1"
 			rewards: [{
@@ -454,20 +454,20 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "10 Silver"
+			subtitle: "{ftbquest.professions.quests13.subtitle}"
 			tasks: [{
 				advancement: "create:stressometer_maxed"
 				criterion: ""
 				id: "404ABC0911220631"
 				type: "advancement"
 			}]
-			title: "Peak Efficiency"
+			title: "{ftbquest.professions.quests13.title}"
 			x: 2.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Soap is definitively one of the inventions of all time."]
+			description: ["{ftbquest.professions.quests14.description0}"]
 			hide_until_deps_visible: true
 			id: "21B3F8F84911EBCB"
 			rewards: [{
@@ -477,7 +477,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "15 Silver"
+			subtitle: "{ftbquest.professions.quests14.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 64L
@@ -485,13 +485,13 @@
 				item: "supplementaries:soap"
 				type: "item"
 			}]
-			title: "Fat Slippery"
+			title: "{ftbquest.professions.quests14.title}"
 			x: 2.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Fun Fact: Concrete is basically made of sea shells (limestone). This is a concrete fact."]
+			description: ["{ftbquest.professions.quests15.description0}"]
 			hide_until_deps_visible: true
 			id: "477560DE87C620BE"
 			rewards: [{
@@ -499,7 +499,7 @@
 				item: "thermal:gold_coin"
 				type: "item"
 			}]
-			subtitle: "1 Gold"
+			subtitle: "{ftbquest.professions.quests15.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -516,13 +516,13 @@
 					type: "item"
 				}
 			]
-			title: "Concrete Facts"
+			title: "{ftbquest.professions.quests15.title}"
 			x: 13.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Isaac something wants this for his newest album's cover."]
+			description: ["{ftbquest.professions.quests16.description0}"]
 			hide_until_deps_visible: true
 			id: "2951074314D10DF7"
 			rewards: [{
@@ -532,7 +532,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "11 Silver"
+			subtitle: "{ftbquest.professions.quests16.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 64L
@@ -540,13 +540,13 @@
 				item: "minecraft:amethyst_shard"
 				type: "item"
 			}]
-			title: "Light Bending"
+			title: "{ftbquest.professions.quests16.title}"
 			x: 6.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Run, swim, and climb because we ain't got a bike, yet."]
+			description: ["{ftbquest.professions.quests17.description0}"]
 			hide_until_deps_visible: true
 			id: "60A00E53A1607353"
 			rewards: [{
@@ -561,14 +561,14 @@
 				{
 					id: "0693E79D9F668E69"
 					stat: "minecraft:swim_one_cm"
-					title: "Swimming"
+					title: "{ftbquest.professions.quests17.tasks0.title}"
 					type: "stat"
 					value: 60000
 				}
 				{
 					id: "350FFBD33D29D05D"
 					stat: "minecraft:climb_one_cm"
-					title: "Climbing"
+					title: "{ftbquest.professions.quests17.tasks1.title}"
 					type: "stat"
 					value: 100000
 				}
@@ -579,13 +579,13 @@
 					value: 100000
 				}
 			]
-			title: "Triathlon"
+			title: "{ftbquest.professions.quests17.title}"
 			x: 11.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Sell some empty glassware for quick and easy money."]
+			description: ["{ftbquest.professions.quests18.description0}"]
 			hide_until_deps_visible: true
 			id: "702C4877D3DE961F"
 			rewards: [{
@@ -595,7 +595,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "15 Silver"
+			subtitle: "{ftbquest.professions.quests18.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -612,13 +612,13 @@
 					type: "item"
 				}
 			]
-			title: "Glassware Liquidation"
+			title: "{ftbquest.professions.quests18.title}"
 			x: 13.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Collect 5 samples of the nether flora for further research of this seeminly impossible environment blooming with fungi."]
+			description: ["{ftbquest.professions.quests19.description0}"]
 			hide_until_deps_visible: true
 			id: "63091234CD1DDC49"
 			rewards: [{
@@ -627,7 +627,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "25 Silver"
+			subtitle: "{ftbquest.professions.quests19.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -686,13 +686,13 @@
 					type: "item"
 				}
 			]
-			title: "Nether Botanic Collection"
+			title: "{ftbquest.professions.quests19.title}"
 			x: 15.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Build a pumpjack to start extracting the precious viscous black gold from the deposit underground, have some funding for the distillation."]
+			description: ["{ftbquest.professions.quests20.description0}"]
 			hide_until_deps_visible: true
 			id: "4E1BEFA4E88258CC"
 			rewards: [{
@@ -702,7 +702,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "25 Silver"
+			subtitle: "{ftbquest.professions.quests20.subtitle}"
 			tasks: [{
 				icon: "gearbox:pumpjack_arm"
 				id: "6EC54490DD734DF8"
@@ -711,13 +711,13 @@
 				to_observe: "gearbox:pumpjack_arm"
 				type: "observation"
 			}]
-			title: "Pumpjacker"
+			title: "{ftbquest.professions.quests20.title}"
 			x: 17.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["The factory must grow! And it can't stop, get some quick money while we maintain the factory going..."]
+			description: ["{ftbquest.professions.quests21.description0}"]
 			hide_until_deps_visible: true
 			id: "6E986DBE2535EE36"
 			rewards: [{
@@ -727,7 +727,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "12 Silver"
+			subtitle: "{ftbquest.professions.quests21.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 5L
@@ -735,13 +735,13 @@
 				item: "minecraft:coal_block"
 				type: "item"
 			}]
-			title: "Coalition"
+			title: "{ftbquest.professions.quests21.title}"
 			x: 6.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Sell some mechanisms for that early bread!"]
+			description: ["{ftbquest.professions.quests22.description0}"]
 			hide_until_deps_visible: true
 			id: "42264B8771D6E737"
 			rewards: [{
@@ -751,7 +751,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "15 Silver"
+			subtitle: "{ftbquest.professions.quests22.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 40L
@@ -759,13 +759,13 @@
 				item: "kubejs:rotation_mechanism"
 				type: "item"
 			}]
-			title: "Rotative Economy"
+			title: "{ftbquest.professions.quests22.title}"
 			x: 8.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["42264B8771D6E737"]
-			description: ["Sell some of these aswell for more quick money."]
+			description: ["{ftbquest.professions.quests23.description0}"]
 			hide_dependency_lines: false
 			hide_until_deps_visible: true
 			id: "53E0207A5CD7974C"
@@ -776,7 +776,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "20 Silver"
+			subtitle: "{ftbquest.professions.quests23.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 40L
@@ -784,13 +784,13 @@
 				item: "kubejs:pressure_mechanism"
 				type: "item"
 			}]
-			title: "Plumbing Funds"
+			title: "{ftbquest.professions.quests23.title}"
 			x: 8.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["Sell some basic crops for 10 silver coins"]
+			description: ["{ftbquest.professions.quests24.description0}"]
 			hide_until_deps_visible: true
 			id: "783BE4C5C95DD297"
 			rewards: [{
@@ -800,7 +800,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "10 Silver"
+			subtitle: "{ftbquest.professions.quests24.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -824,13 +824,13 @@
 					type: "item"
 				}
 			]
-			title: "Croprofit"
+			title: "{ftbquest.professions.quests24.title}"
 			x: 6.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["783BE4C5C95DD297"]
-			description: ["Sell uncommon crops for even more profit!"]
+			description: ["{ftbquest.professions.quests25.description0}"]
 			hide_dependency_lines: false
 			hide_until_deps_visible: true
 			id: "6988EE9FA809F774"
@@ -841,7 +841,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			subtitle: "15 Silver"
+			subtitle: "{ftbquest.professions.quests25.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -865,14 +865,14 @@
 					type: "item"
 				}
 			]
-			title: "Demanding Croprofit"
+			title: "{ftbquest.professions.quests25.title}"
 			x: 8.5d
 			y: 0.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["64F3352725385210"]
-			description: ["Extinguish all of the midnight beasts for a bounty"]
+			description: ["{ftbquest.professions.quests26.description0}"]
 			hide_until_deps_visible: true
 			icon: "minecraft:phantom_membrane"
 			id: "1F1C11A49B743696"
@@ -891,12 +891,12 @@
 					icon: "thermal:machine_cycle_augment"
 					id: "7B9EA3596D7447DA"
 					tags: ["reset"]
-					title: "Repeatable"
+					title: "{ftbquest.professions.quests26.rewards1.title}"
 					type: "custom"
 				}
 			]
 			shape: "diamond"
-			subtitle: "6 Silver"
+			subtitle: "{ftbquest.professions.quests26.subtitle}"
 			tasks: [{
 				entity: "minecraft:phantom"
 				icon: {
@@ -910,7 +910,7 @@
 				type: "kill"
 				value: 3L
 			}]
-			title: "Nightsky Cleanse"
+			title: "{ftbquest.professions.quests26.title}"
 			x: 8.5d
 			y: 1.5d
 		}
@@ -1090,7 +1090,7 @@
 				type: "stat"
 				value: 50
 			}]
-			title: "Eu Nao Morri vei e mentira"
+			title: "{ftbquest.professions.quests27.title}"
 			x: 11.5d
 			y: -2.0d
 		}
@@ -1263,7 +1263,7 @@
 				id: "7B46541AB8DB981F"
 				type: "advancement"
 			}]
-			title: "O Chocolatinho Do Chocolatinho"
+			title: "{ftbquest.professions.quests28.title}"
 			x: 13.5d
 			y: -2.0d
 		}
@@ -1429,7 +1429,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "me ajuda a te ajudar help me to help you"
+			subtitle: "{ftbquest.professions.quests29.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -1450,10 +1450,10 @@
 					type: "item"
 				}
 			]
-			title: "O Poder Do Roxo!"
+			title: "{ftbquest.professions.quests29.title}"
 			x: 15.5d
 			y: -2.0d
 		}
 	]
-	title: "&a Engineer's Magazine"
+	title: "{ftbquest.professions.title}"
 }

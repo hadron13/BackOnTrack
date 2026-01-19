@@ -29,9 +29,11 @@ let CFL = (id, x) => MOD("create_factory_logistics", id, x)
 let CP = (id, x) => MOD("chipped", id, x)
 let MOL = (id, x) => MOD("morelights", id, x)
 let CF = (id, x) => MOD("fluid", id, x)
+let RW = (id, x) =>  MOD("rubberworks", id, x)
 
 const removeByMod = [
   'davebuildingmod',
+  'create_new_age',
   'angelring',
   'pipez',
   'trashcans',
@@ -42,6 +44,8 @@ const removeByMod = [
 ];
 
 const recipeIdsToRemove = [
+  RW('compressing/obsidian'),
+  RW('compacting/rubber'),
   CR('crafting/materials/cardboard_from_bound_block'),
   CR('splashing/gravel'),
   CR('splashing/red_sand'),
@@ -217,6 +221,7 @@ const recipeTypesToRemove = [
   TE("tree_extractor"),
   CI("distillation"),
   GB("distilling"),
+  RW('sapping'),
   TE("sawmill"),
   TE("centrifuge"),
   AE2("inscriber"),
@@ -238,8 +243,14 @@ const removeByInput = [
 ];
 
 const removeByOutput = [
+  TE('cured_rubber_block'),
+  RW('compressor'),
+  RW('sapper'),
+  GB('compressor'),
+  GB('sapper'),
   CR('cardboard'),
   CR('pulp'),
+  TE('device_nullifier'),
   AP("charcoal_block"),
   CR('bound_cardboard_block'),
   TE("side_config_augment"),

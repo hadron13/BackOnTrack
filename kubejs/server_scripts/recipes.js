@@ -33,6 +33,7 @@ let CFL = (id, x) => MOD("create_factory_logistics", id, x)
 let CP = (id, x) => MOD("chipped", id, x)
 let MOL = (id, x) => MOD("morelights", id, x)
 let CF = (id, x) => MOD("fluid", id, x)
+let RW = (id, x) =>  MOD("rubberworks", id, x)
 //
 
 let colors = ['white', 'orange', 'magenta', 'light_blue', 'lime', 'pink', 'purple', 'light_gray', 'gray', 'cyan', 'brown', 'green', 'blue', 'red', 'black', 'yellow']
@@ -787,7 +788,7 @@ function rocketScience(event) {
 		'RSR',
 		'RRR'
 	], {
-		R: TE('cured_rubber'),
+		R: RW('rubber_sheet'),
 		S: 'alloyed:steel_sheet'
 	})
 
@@ -1041,6 +1042,7 @@ function unify(event) {
 	event.remove({id:  'createdeco:' + color + '_shipping_container'})
 	});
 	event.replaceOutput({},'ad_astra:steel_ingot', 'alloyed:steel_ingot')
+	event.replaceInput({},'thermal:cured_rubber', 'rubberworks:rubber_sheet')
 
     let remove_input_output = (item) =>{
         event.remove({input: item})
@@ -1096,7 +1098,7 @@ function rubberMatters(event) {
 		'SSS',
 		'SSS'
 	], {
-		S: TE('cured_rubber')
+		S: RW('rubber_sheet')
 	})
 
 	event.shaped(TE('fluid_cell_frame'), [
@@ -1119,39 +1121,36 @@ function rubberMatters(event) {
 		S: '#forge:glass'
 	})
 
-	event.shapeless(TE("cured_rubber", 3), [MC("slime_ball"), TE("sulfur")])
-
-	event.recipes.gearboxCompressing(TE("cured_rubber", 2), Fluid.of(GB("resin"), 500)).heated()
-	event.recipes.gearboxCompressing(TE("cured_rubber"), 	Fluid.of(GB("resin"), 500))
+	event.shapeless(RW('rubber', 3), [MC("slime_ball"), TE("sulfur")])
 
 	let sap_tree = (mod, fluid, type) =>{
-		event.recipes.gearboxSapping(fluid, [mod + ":" + type + "_log", mod + ":" +  type + "_leaves"])
+		event.recipes.rubberworksSapping(fluid, [mod + ":" + type + "_log", mod + ":" +  type + "_leaves"])
 	}
 
-	sap_tree('minecraft', Fluid.of(GB('resin'), 20), "oak")
-	sap_tree('minecraft', Fluid.of(GB('resin'), 70), "spruce")
-	sap_tree('minecraft', Fluid.of(GB('resin'), 30), "birch")
-	sap_tree('minecraft', Fluid.of(GB('resin'), 70), "jungle")
-	sap_tree('minecraft', Fluid.of(GB('resin'), 40), "acacia")
-	sap_tree('minecraft', Fluid.of(GB('resin'), 60), "dark_oak")
+	sap_tree('minecraft', Fluid.of(RW('resin'), 20), "oak")
+	sap_tree('minecraft', Fluid.of(RW('resin'), 70), "spruce")
+	sap_tree('minecraft', Fluid.of(RW('resin'), 30), "birch")
+	sap_tree('minecraft', Fluid.of(RW('resin'), 70), "jungle")
+	sap_tree('minecraft', Fluid.of(RW('resin'), 40), "acacia")
+	sap_tree('minecraft', Fluid.of(RW('resin'), 60), "dark_oak")
 
-	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 50), "redwood")
-	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 60), "fir")
-	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 50), "jacaranda")
-	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 70), "mahogany")
-	sap_tree('biomesoplenty', Fluid.of(GB('resin'), 10), "dead")
+	sap_tree('biomesoplenty', Fluid.of(RW('resin'), 50), "redwood")
+	sap_tree('biomesoplenty', Fluid.of(RW('resin'), 60), "fir")
+	sap_tree('biomesoplenty', Fluid.of(RW('resin'), 50), "jacaranda")
+	sap_tree('biomesoplenty', Fluid.of(RW('resin'), 70), "mahogany")
+	sap_tree('biomesoplenty', Fluid.of(RW('resin'), 10), "dead")
 	sap_tree('biomesoplenty', Fluid.of(MC('lava'), 15), "hellbark")
 	sap_tree('biomesoplenty', Fluid.of(MC('water'), 100), "willow")
 	sap_tree('biomesoplenty', Fluid.of(KJ('dirt_water'), 100), "palm")
 	sap_tree('biomesoplenty', Fluid.of(('create_enchantment_industry:ink'), 50), "umbran")
 	sap_tree('biomesoplenty', Fluid.of(('create_enchantment_industry:experience'), 1), "magic")
 
-	event.recipes.gearboxSapping(Fluid.of(GB("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:white_cherry_leaves"])
-	event.recipes.gearboxSapping(Fluid.of(GB("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:pink_cherry_leaves"])
+	event.recipes.rubberworksSapping(Fluid.of(RW("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:white_cherry_leaves"])
+	event.recipes.rubberworksSapping(Fluid.of(RW("resin"), 40), ["biomesoplenty:cherry_log", "biomesoplenty:pink_cherry_leaves"])
 
-	event.recipes.gearboxSapping(Fluid.of(TC("earth_slime"), 20), [TC("greenheart_log"), TC("earth_slime_leaves")])
-	event.recipes.gearboxSapping(Fluid.of(TC("sky_slime"), 20),   [TC("skyroot_log"), TC("sky_slime_leaves")])
-	event.recipes.gearboxSapping(Fluid.of(TC("ender_slime"), 20), [TC("greenheart_log"), TC("ender_slime_leaves")])
+	event.recipes.rubberworksSapping(Fluid.of(TC("earth_slime"), 20), [TC("greenheart_log"), TC("earth_slime_leaves")])
+	event.recipes.rubberworksSapping(Fluid.of(TC("sky_slime"), 20),   [TC("skyroot_log"), TC("sky_slime_leaves")])
+	event.recipes.rubberworksSapping(Fluid.of(TC("ender_slime"), 20), [TC("greenheart_log"), TC("ender_slime_leaves")])
 }
 
 function dioriticAndesite(event) {
@@ -1181,7 +1180,7 @@ function copperMachine(event) {
 		'SCS'
 	], {
 		C: KJ('rotation_mechanism'),
-		S: TE('cured_rubber')
+		S: RW('rubber_sheet')
 	})
 
 	event.shaped(KJ('copper_machine'), [
@@ -1242,13 +1241,13 @@ function copperMachine(event) {
 		' M ',
 		'RHR',
 		' R '
-	], {M: KJ('copper_machine'), H: MC('hopper'), R: TE('cured_rubber')})  
+	], {M: KJ('copper_machine'), H: MC('hopper'), R: RW('rubber_sheet')})  
 	
 	event.shaped(CR('hose_pulley'), [
 		'   ',
 		'PMS',
 		' R '
-	], {M: KJ('copper_machine'), S: CR('shaft'), R: TE('cured_rubber_block'), P: CR('fluid_pipe')})  
+	], {M: KJ('copper_machine'), S: CR('shaft'), R: RW('rubber_block'), P: CR('fluid_pipe')})  
 	
 	event.shaped(TE('dynamo_magmatic'), [
 		' R ',
@@ -1288,7 +1287,6 @@ function MetallurgyRecipes(event){
 	event.recipes.createMixing(Fluid.of(TC('molten_brass'), 20), [Fluid.of(TC("molten_zinc"), 10), Fluid.of(TC("molten_copper"), 10)])
 
 	event.recipes.createFilling(MC('grass_block'), [MC('coarse_dirt'), Fluid.of(MC('water'), 20)])
-	event.recipes.createFilling(MC('magma_cream'), [KJ('soul'), Fluid.of(TC('magma'), 25)])
 
 	event.shapeless(CR("white_sail"), CR("sail_frame"))
 
@@ -1330,7 +1328,7 @@ function MetallurgyRecipes(event){
 
 	event.shaped(AE2('fluix_glass_cable', 16), ['AB',], {A: KJ("power_mechanism"), B: AE2('logic_processor')})
 
-	event.recipes.gearboxCompressing(AE2("silicon"), 	Fluid.of(KJ("sif2"), 50)).heated()
+	event.recipes.rubberworksCompressing(AE2("silicon"), 	Fluid.of(KJ("sif2"), 50)).heated()
   let luz = (id, amount) => {
 	event.stonecutting(Item.of(id, amount), 'createaddition:small_light_connector')
 	event.shaped('createaddition:small_light_connector', ['C',], {C: id})
@@ -1682,8 +1680,46 @@ function gearboxrecipes(event){
 	event.recipes.gearboxPyroprocessing(FD("fried_egg"), F("#eggs"))
 	event.recipes.gearboxPyroprocessing(MC("brick"), MC("clay_ball"))
 	event.recipes.gearboxPyroprocessing(AE2("quartz_glass"), AE2("certus_quartz_dust"))
-	event.recipes.gearboxCompressing([TE("sulfur_dust", 3), TE("tar", 2)], Fluid.of(KJ("lpg"), 250)).heated()
+	event.recipes.rubberworksCompressing([TE("sulfur_dust", 3), TE("tar", 2)], Fluid.of(GB("lpg"), 250)).heated()
 
+  const TYPES = ["railway", "copper", "andesite", "brass", "weathered_iron", "refined_radiance", "shadow_steel", "industrial_iron"]
+  const TYPE_BLOCK = { weathered_iron: "create:weathered_iron_block",industrial_iron: "create:industrial_iron_block"}
+  const MACHINES = [
+    { base_name: "encased_chain_drive",         create_name: "encased_chain_drive" },
+    { base_name: "adjustable_chain_gearshift",  create_name: "adjustable_chain_gearshift" },
+    { base_name: "chain_conveyor",              create_name: "chain_conveyor" },
+    { base_name: "gearbox",                     create_name: "gearbox" },
+    { base_name: "vertical_gearbox",            create_name: "vertical_gearbox" },
+    { base_name: "cogwheel",                    create_name: "cogwheel" },
+    { base_name: "mixer",                       create_name: "mechanical_mixer" },
+    { base_name: "press",                       create_name: "mechanical_press" },
+    { base_name: "depot",                       create_name: "depot" },
+    { base_name: "gearshift",                   create_name: "gearshift" },
+    { base_name: "clutch",                      create_name: "clutch" },
+    { base_name: "deployer",                    create_name: "deployer" },
+    { base_name: "portable_storage_interface",  create_name: "portable_storage_interface" },
+    { base_name: "encased_fan",                 create_name: "encased_fan" },
+    { base_name: "mechanical_harvester",        create_name: "mechanical_harvester" },
+    { base_name: "mechanical_saw",              create_name: "mechanical_saw" },
+    { base_name: "mechanical_drill",            create_name: "mechanical_drill" },
+    { base_name: "mechanical_plough",           create_name: "mechanical_plough" },
+    { base_name: "mechanical_roller",           create_name: "mechanical_roller" }]
+
+  function getTypeIngredient(type) {
+    return TYPE_BLOCK[type] || `create:${type}_casing`}
+  for (let type of TYPES) {
+    event.remove({ output: `createcasing:vertical_${type}_gearbox` })
+    for (let machine of MACHINES) {
+      let out = `createcasing:${type}_${machine.base_name}`
+      console.log("Processando: " + out)
+      let outputItem = Item.of(out)
+      if (!outputItem.isEmpty()) {
+        event.remove({ output: out })
+        event.shaped(outputItem, ["BS"], {
+          B: `create:${machine.create_name}`,
+          S: getTypeIngredient(type)
+        }).id(`kubejs:createcasing_swap/${type}/${machine.base_name}`)
+      } else { console.log("Item não encontrado: " + out)}}}
 }
 
 function trainMachine(event){
@@ -1707,53 +1743,6 @@ function trainMachine(event){
 }
 
 function zincMachine(event) {
-	donutCraft(event, TC('foundry_controller'), TC('scorched_bricks'), KJ('scorch_mechanism'))
-
-    event.recipes.createCompacting([KJ('soul'), KJ('soulless_sand')], MC("soul_sand"))
-    event.recipes.createMixing(Fluid.of(TC("blood"), 250), KJ('soul')).heated()
-    event.recipes.createFilling(MC("magma_cream"),[Fluid.of(MC("lava"), 250), TC("blood_slime_ball")])
-
-    event.recipes.createCompacting(TC("scorched_brick"), [KJ('soulless_sand'), MC("magma_cream"), MC("gravel")] ).heated()
-
-	let t = KJ('incomplete_scorch_mechanism')
-	event.recipes.createSequencedAssembly([
-		KJ('scorch_mechanism'),
-	], CR('precision_mechanism'), [
-        event.recipes.createDeploying(t, [t, TC("scorched_brick")]),
-        event.recipes.createDeploying(t, [t, TC("scorched_brick")]),
-		event.recipes.createFilling(t, [t, Fluid.of(MC("lava"), 1000)]),
-		event.recipes.createFilling(t, [t, Fluid.of(MC("lava"), 1000)]),
-	]).transitionalItem(t)
-		.loops(1)
-		.id('kubejs:scorch_mechanism')
-
-	event.shaped(KJ('zinc_machine'), [
-		'SSS',
-		'SCS',
-		'SSS'
-	], {
-		C: KJ('zinc_casing'),
-		S: KJ('scorch_mechanism')
-	})
-
-	let zinc_machine = (id, amount, other_ingredient) => {
-		event.remove({ output: id })
-		if (other_ingredient) {
-			event.smithing(Item.of(id, amount), KJ('brass_template'), 'kubejs:zinc_machine', other_ingredient)
-			event.recipes.createMechanicalCrafting(Item.of(id, amount), "AB", { A: 'kubejs:zinc_machine', B: other_ingredient })
-		}
-		else
-			event.stonecutting(Item.of(id, amount), 'kubejs:zinc_machine')
-	}
-
-	zinc_machine(TE('device_rock_gen'), 1, MC('piston'))
-	zinc_machine(TE('device_collector'), 1, MC('ender_pearl'))
-	zinc_machine(TE('device_nullifier'), 1, MC('lava_bucket'))
-	zinc_machine(TE('device_potion_diffuser'), 1, MC('glass_bottle'))
-	zinc_machine('storagedrawers:controller', 1, MC('diamond'))
-	zinc_machine('storagedrawers:controller_slave', 1, MC('gold_ingot'))
-	zinc_machine('torchmaster:megatorch', 1, MC('torch'))
-	zinc_machine('thermal:upgrade_augment_2', 1, MC('redstone'))
 
 	let train_machine = (id, amount, other_ingredient) => {
 		event.remove({ output: id })

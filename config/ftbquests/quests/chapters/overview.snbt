@@ -23,25 +23,25 @@
 				"675C395B2074C24C"
 			]
 			description: [
-				"Now with the basics fully automated we can jump ahead into more advanced factories, as the machinery is not a hassle to be made anymore"
+				"{ftbquest.overview.quests0.description0}"
 				""
-				"You can also hop on both secondary chapters for extra equipment for the next main chapter"
+				"{ftbquest.overview.quests0.description1}"
 			]
 			disable_toast: true
 			hide_until_deps_visible: true
 			icon: "kubejs:rotation_mechanism"
 			id: "0E98B4D2BBF55308"
 			shape: "diamond"
-			subtitle: "Milestone"
+			subtitle: "{ftbquest.overview.quests0.subtitle}"
 			tasks: [{
 				icon: "kubejs:rotation_mechanism"
 				id: "591DCE5124A2C4C6"
 				stat: "minecraft:play_time"
-				title: "Complete Chapter 1"
+				title: "{ftbquest.overview.quests0.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Rotation Machinery"
+			title: "{ftbquest.overview.quests0.title}"
 			x: -1.0d
 			y: 2.5d
 		}
@@ -51,23 +51,24 @@
 				"19715EBCBBA1B4AD"
 			]
 			description: [
-				"With Precision Mechanisms automated, a large number of great tools become accessible. Both for automation and quality of life."
+				"{ftbquest.overview.quests1.description0}"
 				""
-				"This will also open up the way for the steel and oil age, industry 2.0!"
+				"{ftbquest.overview.quests1.description1}"
 			]
+			disable_toast: true
 			hide_until_deps_visible: true
 			id: "69275ECFC147E15B"
 			shape: "diamond"
-			subtitle: "Milestone"
+			subtitle: "{ftbquest.overview.quests1.subtitle}"
 			tasks: [{
 				icon: "create:precision_mechanism"
 				id: "0FF38BBE3B19D9C2"
 				stat: "minecraft:play_time"
-				title: "Complete Chapter 2"
+				title: "{ftbquest.overview.quests1.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Precise Machinery"
+			title: "{ftbquest.overview.quests1.title}"
 			x: -1.0d
 			y: 5.5d
 		}
@@ -77,56 +78,60 @@
 				"4DA3164A6CED529B"
 			]
 			description: [
-				"Pressure Machines unlock the capability of Fluid Manipulation. Fill, drain, filter and collect liquids for all of your automation needs."
+				"{ftbquest.overview.quests2.description0}"
 				""
-				"Note that Pressure Mechanisms are an ingredient to explosive and train mechanisms, but nothing else. The main assembly line will continue with Rotation Mechanisms."
+				"{ftbquest.overview.quests2.description1}"
 			]
+			disable_toast: true
 			hide_until_deps_visible: true
 			icon: "kubejs:pressure_mechanism"
 			id: "342BB6EF80EBFDCA"
 			shape: "diamond"
-			subtitle: "Secondary"
+			subtitle: "{ftbquest.overview.quests2.subtitle}"
 			tasks: [{
 				disable_toast: true
 				icon: "kubejs:pressure_mechanism"
 				id: "27B07858A6018539"
 				stat: "minecraft:total_world_time"
-				title: "Complete Secondary 1a"
+				title: "{ftbquest.overview.quests2.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Pressure Machinery"
+			title: "{ftbquest.overview.quests2.title}"
 			x: -3.0d
 			y: 5.0d
 		}
 		{
-			dependencies: ["7888F9129E9FE517"]
+			dependencies: [
+				"7888F9129E9FE517"
+				"19B36C589AFFBA16"
+			]
 			description: [
-				"Scorch Machines are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready."
+				"{ftbquest.overview.quests3.description0}"
 				""
-				"Note that Scorch Mechanisms are an ingredient to mechanisms and nothing else. The main assembly line will continue with Precision Mechanisms."
+				"{ftbquest.overview.quests3.description1}"
 			]
 			disable_toast: true
 			hide_until_deps_visible: true
 			icon: "kubejs:scorch_mechanism"
 			id: "2DC3AA8A89005C42"
 			shape: "diamond"
-			subtitle: "Secondary"
+			subtitle: "{ftbquest.overview.quests3.subtitle}"
 			tasks: [{
 				icon: "kubejs:scorch_mechanism"
 				id: "12CFC84D3F01F49F"
 				stat: "minecraft:play_time"
-				title: "Complete Bonus 2A"
+				title: "{ftbquest.overview.quests3.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Scorching Machinery"
+			title: "{ftbquest.overview.quests3.title}"
 			x: -3.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["From a humble onset, you'll achieve greatness by thy intelligence."]
+			description: ["{ftbquest.overview.quests4.description0}"]
 			icon: "minecraft:grass_block"
 			id: "75FB28B253B14876"
 			shape: "diamond"
@@ -136,124 +141,124 @@
 				id: "44831176CB3C26D6"
 				observe_type: 1
 				timer: 0L
-				title: "Observe Any Log"
+				title: "{ftbquest.overview.quests4.tasks0.title}"
 				to_observe: "minecraft:logs"
 				type: "observation"
 			}]
-			title: "From a tree puncher..."
+			title: "{ftbquest.overview.quests4.title}"
 			x: -1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["75FB28B253B14876"]
 			description: [
-				"On most times, players hop directly on advanced equipment, but it is different here, the first inventions show how much you can do with low-level equipment, filtering? expensive. auto-crafting? none. Befriend the belt spaggheti before it consumes you"
+				"{ftbquest.overview.quests5.description0}"
 				""
-				"After hitting the Checkmark above, the first Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"{ftbquest.overview.quests5.description1}"
 			]
 			hide_until_deps_visible: true
 			icon: "create:andesite_alloy"
 			id: "61147823CC87F711"
 			shape: "diamond"
-			subtitle: "Chapter 1"
+			subtitle: "{ftbquest.overview.quests5.subtitle}"
 			tasks: [{
 				id: "5A8DF2D8553904BF"
-				title: "Unlock Chapter 1"
+				title: "{ftbquest.overview.quests5.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Mechanic Assimilation"
+			title: "{ftbquest.overview.quests5.title}"
 			x: -1.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["0E98B4D2BBF55308"]
 			description: [
-				"So here's the chicken-egg problem: you need brass machinery to automate brass machinery, i guess you will need some manual labor at first."
+				"{ftbquest.overview.quests6.description0}"
 				""
-				"After hitting the Checkmark above, the second Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"{ftbquest.overview.quests6.description1}"
 			]
 			hide_until_deps_visible: true
 			icon: "create:electron_tube"
 			id: "1E263994D4883A08"
 			shape: "diamond"
-			subtitle: "Chapter 2"
+			subtitle: "{ftbquest.overview.quests6.subtitle}"
 			tasks: [{
 				id: "28C41C062843C2CA"
-				title: "Unlock Chapter 2"
+				title: "{ftbquest.overview.quests6.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Overengineered Cookie Cutter"
+			title: "{ftbquest.overview.quests6.title}"
 			x: -1.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["0BAA1B60B372E283"]
 			description: [
-				"Desh can be used as catalyst for the next great goal: &6electronics&r. Create diverse electronic components to produce electric and later digital machines."
+				"{ftbquest.overview.quests7.description0}"
 				""
-				"After hitting the Checkmark above, the fourth Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"{ftbquest.overview.quests7.description1}"
 			]
 			hide_until_deps_visible: true
 			icon: "kubejs:inductor"
 			id: "780E8AE86250C73D"
 			shape: "diamond"
-			subtitle: "Chapter 4"
+			subtitle: "{ftbquest.overview.quests7.subtitle}"
 			tasks: [{
 				id: "2F6FEDBB1BDCB36C"
-				title: "Unlock Chapter 4"
+				title: "{ftbquest.overview.quests7.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Power Processing"
+			title: "{ftbquest.overview.quests7.title}"
 			x: -1.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["0E98B4D2BBF55308"]
 			description: [
-				"Pressure Machinery is certainly needed for the progression, however, it's full automation is fully optional, but fully recommended."
+				"{ftbquest.overview.quests8.description0}"
 				""
-				"After hitting the Checkmark above, optional quests will appear in the side bar."
+				"{ftbquest.overview.quests8.description1}"
 			]
 			hide_until_deps_visible: true
 			icon: "thermal:cured_rubber"
 			id: "7D872F933F45809B"
 			shape: "diamond"
-			subtitle: "Secondary 1A"
+			subtitle: "{ftbquest.overview.quests8.subtitle}"
 			tasks: [{
 				id: "681DACF11F193771"
-				title: "Unlock Bonus 1A"
+				title: "{ftbquest.overview.quests8.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Sap Gaming"
+			title: "{ftbquest.overview.quests8.title}"
 			x: -2.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["69275ECFC147E15B"]
 			description: [
-				"We need to go Deeper!"
+				"{ftbquest.overview.quests9.description0}"
 				""
-				"A steady supply of lava will be a must for scorch brick making, and for scorch mechanisms themselves, you'll probably want a train in the nether or a factory right there..."
+				"{ftbquest.overview.quests9.description1}"
 				""
-				"After hitting the Checkmark above, optional quests will appear in the side bar."
+				"{ftbquest.overview.quests9.description2}"
 			]
 			hide_until_deps_visible: true
 			icon: "minecraft:lava_bucket"
 			id: "7888F9129E9FE517"
 			shape: "diamond"
-			subtitle: "Secondary 2A"
+			subtitle: "{ftbquest.overview.quests9.subtitle}"
 			tasks: [{
 				id: "21753CBB528EAADF"
-				title: "Unlock Bonus 3A"
+				title: "{ftbquest.overview.quests9.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Hell Processing"
+			title: "{ftbquest.overview.quests9.title}"
 			x: -2.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["75FB28B253B14876"]
-			description: ["This journey won't be easy without being prepared with the basics, here are some of the essential machines to progress into automation."]
+			description: ["{ftbquest.overview.quests10.description0}"]
 			hide_until_deps_visible: true
 			icon: "create:clipboard"
 			id: "7D6BC99CCCB29924"
@@ -309,48 +314,52 @@
 					type: "item"
 				}
 			]
-			title: "Preparations"
+			title: "{ftbquest.overview.quests10.title}"
 			x: 0.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["69275ECFC147E15B"]
 			description: [
-				"We need to go Higher!"
-				"This part of the progression will involve seriously dangerous materials that should not be made at home, do not tell the governm..."
+				"{ftbquest.overview.quests11.description0}"
+				"{ftbquest.overview.quests11.description1}"
 				""
-				"After hitting the Checkmark above, the third Chapter of the Factory Guide will become accessible from the Quest Sidebar."
+				"{ftbquest.overview.quests11.description2}"
 			]
 			hide_until_deps_visible: true
 			icon: "createbigcannons:packed_gunpowder"
 			id: "466B6AA648B23C3A"
 			shape: "diamond"
-			subtitle: "Chapter 3"
+			subtitle: "{ftbquest.overview.quests11.subtitle}"
 			tasks: [{
 				id: "4DC8401029AFAB82"
-				title: "unlock "
+				title: "{ftbquest.overview.quests11.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Astounding Explosions"
+			title: "{ftbquest.overview.quests11.title}"
 			x: -1.0d
 			y: 7.0d
 		}
 		{
-			dependencies: ["466B6AA648B23C3A"]
-			description: ["Explosive machinery not only opens up new warfare technology, but very powerful whole new industry sectors, buckle up, next stop: &lThe Moon&r"]
+			dependencies: [
+				"466B6AA648B23C3A"
+				"5FFB68365F2E821B"
+			]
+			description: ["{ftbquest.overview.quests12.description0}"]
+			disable_toast: true
 			hide_until_deps_visible: true
 			id: "0BAA1B60B372E283"
 			shape: "diamond"
-			subtitle: "Milestone"
+			subtitle: "{ftbquest.overview.quests12.subtitle}"
 			tasks: [{
 				icon: "kubejs:explosive_mechanism"
 				id: "25D9F75B44333CD1"
 				stat: "minecraft:play_time"
-				title: "Complete Chapter 3"
+				title: "{ftbquest.overview.quests12.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Explosive Machinery"
+			title: "{ftbquest.overview.quests12.title}"
 			x: -1.0d
 			y: 8.5d
 		}
@@ -360,67 +369,69 @@
 				"57EF36B592C45D2C"
 			]
 			description: [
-				"Trains!"
+				"{ftbquest.overview.quests13.description0}"
 				""
-				"Trains are the missing piece of transportation suitable for very very long distances, it opens a gigantic number of oportunities."
+				"{ftbquest.overview.quests13.description1}"
 				""
-				"Localized resources such as skystone can be transported in high volume across kilometers, and factories and bases may be connected with mere minutes of travel."
+				"{ftbquest.overview.quests13.description2}"
 			]
+			disable_toast: true
 			hide_until_deps_visible: true
 			id: "1DDA0F521F4C0290"
 			shape: "diamond"
-			subtitle: "Secondary"
+			subtitle: "{ftbquest.overview.quests13.subtitle}"
 			tasks: [{
 				icon: "kubejs:train_mechanism"
 				id: "3BDB6D2A6AC3776E"
 				stat: "minecraft:play_time"
-				title: "Complete Secondary 1b"
+				title: "{ftbquest.overview.quests13.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Train Machinery"
+			title: "{ftbquest.overview.quests13.title}"
 			x: 1.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["0E98B4D2BBF55308"]
 			description: [
-				"Trains are the cheapest and fastest way to get stuff moving for long distances, you will need quite some sheets to make it happen."
+				"{ftbquest.overview.quests14.description0}"
 				""
-				"After hitting the Checkmark above, optional quests will appear in the side bar."
+				"{ftbquest.overview.quests14.description1}"
 			]
 			hide_until_deps_visible: true
 			icon: "create:sturdy_sheet"
 			id: "57EF36B592C45D2C"
 			shape: "diamond"
-			subtitle: "Secondary 1B"
+			subtitle: "{ftbquest.overview.quests14.subtitle}"
 			tasks: [{
 				id: "721CBD4B8CECEBF9"
-				title: "Unlock Bonus 2B"
+				title: "{ftbquest.overview.quests14.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Sturdy Production"
+			title: "{ftbquest.overview.quests14.title}"
 			x: 0.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["0BAA1B60B372E283"]
 			description: [
-				"Sugary explosives is the future of food, crunch random materials into the best food of the game!"
+				"{ftbquest.overview.quests15.description0}"
 				""
-				"After hitting the Checkmark above, optional quests will appear in the side bar."
+				"{ftbquest.overview.quests15.description1}"
 			]
+			disable_toast: true
 			hide_until_deps_visible: true
 			icon: "create:bar_of_chocolate"
 			id: "141CF17F211E6268"
 			shape: "diamond"
-			subtitle: "Secondary 3A"
+			subtitle: "{ftbquest.overview.quests15.subtitle}"
 			tasks: [{
 				id: "38D16EE235A88EA7"
-				title: "Unlock Bonus 2B"
+				title: "{ftbquest.overview.quests15.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Sacchariferous Industry"
+			title: "{ftbquest.overview.quests15.title}"
 			x: -2.5d
 			y: 9.5d
 		}
@@ -429,103 +440,104 @@
 				"780E8AE86250C73D"
 				"4E549678E05D7FA8"
 			]
-			description: ["You have unlocked the power of the power machines, now with this power go optmize factories before hopping in the new planet."]
+			description: ["{ftbquest.overview.quests16.description0}"]
 			hide_until_deps_visible: true
 			icon: "kubejs:power_mechanism"
 			id: "73CF11A2C0D4A9E5"
 			shape: "diamond"
-			subtitle: "Milestone"
+			subtitle: "{ftbquest.overview.quests16.subtitle}"
 			tasks: [{
 				icon: "kubejs:power_mechanism"
 				id: "4B3947CAC6E1D82E"
 				stat: "minecraft:play_time"
-				title: "Complete Chapter 4"
+				title: "{ftbquest.overview.quests16.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Power Machinery"
+			title: "{ftbquest.overview.quests16.title}"
 			x: -1.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["73CF11A2C0D4A9E5"]
-			description: ["Research advanced laser technology to transform known and unknown materials"]
+			description: ["{ftbquest.overview.quests17.description0}"]
 			hide_until_deps_visible: true
 			icon: "kubejs:titamium_ingot"
 			id: "20329543D3DB8D7F"
 			shape: "diamond"
-			subtitle: "Chapter 5"
+			subtitle: "{ftbquest.overview.quests17.subtitle}"
 			tasks: [{
 				icon: "thermal:lock"
 				id: "71F725B338681043"
-				title: "soon available"
+				title: "{ftbquest.overview.quests17.tasks0.title}"
 				type: "custom"
 			}]
-			title: "Optic Synthesis"
+			title: "{ftbquest.overview.quests17.title}"
 			x: -1.0d
 			y: 13.0d
 		}
 		{
 			dependencies: [
 				"141CF17F211E6268"
-				"43C6E5ADE52CE877"
+				"7A80B449DD525F7D"
 			]
-			description: ["This time the mechanism itself is the end goal. It is the one and only edible mechanism, enjoy!"]
+			description: ["{ftbquest.overview.quests18.description0}"]
+			disable_toast: true
 			hide_until_deps_visible: true
 			id: "3B414CD7A815A774"
 			shape: "diamond"
-			subtitle: "Secondary"
+			subtitle: "{ftbquest.overview.quests18.subtitle}"
 			tasks: [{
 				icon: "kubejs:candy_mechanism"
 				id: "43C6E5ADE52CE877"
 				stat: "minecraft:play_time"
-				title: "Complete Chapter 2B"
+				title: "{ftbquest.overview.quests18.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Candy Machinery"
+			title: "{ftbquest.overview.quests18.title}"
 			x: -3.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["73CF11A2C0D4A9E5"]
 			description: [
-				"Unlock new high power machinery to ramp up your production."
+				"{ftbquest.overview.quests19.description0}"
 				""
-				"After hitting the Checkmark above, optional quests will appear in the side bar."
+				"{ftbquest.overview.quests19.description1}"
 			]
 			hide_until_deps_visible: true
 			icon: "kubejs:high_power_coil"
 			id: "6C5432493CB78405"
 			shape: "diamond"
-			subtitle: "Secondary 4A"
+			subtitle: "{ftbquest.overview.quests19.subtitle}"
 			tasks: [{
 				id: "44FCF5527F72FD5D"
-				title: "Unlock Bonus 4B"
+				title: "{ftbquest.overview.quests19.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Thermodynamic Expansion"
+			title: "{ftbquest.overview.quests19.title}"
 			x: -2.5d
 			y: 12.5d
 		}
 		{
 			dependencies: ["0BAA1B60B372E283"]
 			description: [
-				"Exploit ender tunneling abilities to extract materials from all dimensions, planets and beyond."
+				"{ftbquest.overview.quests20.description0}"
 				""
-				"After hitting the Checkmark above, optional quests will appear in the side bar."
+				"{ftbquest.overview.quests20.description1}"
 			]
 			hide_until_deps_visible: true
 			icon: "thermal:enderium_ingot"
 			id: "51F030004DBA106F"
 			shape: "diamond"
-			subtitle: "Secondary 3B"
+			subtitle: "{ftbquest.overview.quests20.subtitle}"
 			tasks: [{
 				id: "0C3128C8CA451A88"
-				title: "Unlock Chapter 3B"
+				title: "{ftbquest.overview.quests20.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Tunnel Quantification"
+			title: "{ftbquest.overview.quests20.title}"
 			x: 0.5d
 			y: 9.5d
 		}
@@ -534,16 +546,17 @@
 				"51F030004DBA106F"
 				"54C5900FA1D351E9"
 			]
-			description: ["Dive right into teleportation tech, as you can now transport items around anywhere in any dimension with the newly acquired technology."]
+			description: ["{ftbquest.overview.quests21.description0}"]
+			disable_toast: true
 			hide_until_deps_visible: true
 			id: "5A58143EF3AB6555"
 			shape: "diamond"
-			subtitle: "Secondary"
+			subtitle: "{ftbquest.overview.quests21.subtitle}"
 			tasks: [{
 				icon: "kubejs:ender_mechanism"
 				id: "6D9D56D78CF6651A"
 				stat: "minecraft:play_time"
-				title: "Complete Bonus 3B"
+				title: "{ftbquest.overview.quests21.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
@@ -555,61 +568,67 @@
 				"6C5432493CB78405"
 				"0199FF6088F9DE83"
 			]
-			description: ["Get into the next level of power with the newest high power machinery."]
+			description: ["{ftbquest.overview.quests22.description0}"]
+			hide_dependent_lines: true
 			hide_until_deps_visible: true
 			id: "26002D6E3B0F08BC"
 			shape: "diamond"
-			subtitle: "Milestone"
+			subtitle: "{ftbquest.overview.quests22.subtitle}"
 			tasks: [{
 				icon: "kubejs:high_power_mechanism"
 				id: "5A66577A02B6A237"
 				stat: "minecraft:play_time"
-				title: "Complete Chapter 4A"
+				title: "{ftbquest.overview.quests22.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "High Power Machinery"
+			title: "{ftbquest.overview.quests22.title}"
 			x: -2.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["73CF11A2C0D4A9E5"]
 			description: [
-				"Discover the opportunities to this intricate material, hammer your way through semiconductors."
+				"{ftbquest.overview.quests23.description0}"
 				""
-				"After hitting the Checkmark above, optional quests will appear in the side bar."
+				"{ftbquest.overview.quests23.description1}"
 			]
 			icon: "kubejs:silicon_compound"
 			id: "4595F825A8A21E53"
 			shape: "diamond"
-			subtitle: "Secondary 4B"
+			subtitle: "{ftbquest.overview.quests23.subtitle}"
 			tasks: [{
 				id: "39047E578C2B5C6F"
-				title: "Unlock Chapter 4B"
+				title: "{ftbquest.overview.quests23.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Semiconductor Hammering"
+			title: "{ftbquest.overview.quests23.title}"
 			x: 0.5d
 			y: 12.5d
 		}
 		{
-			dependencies: ["4595F825A8A21E53"]
-			description: [
-				"The new semiconductor technlogy brings new life to storage and automation."
-				"This technology is optional, although really useful."
+			dependencies: [
+				"4595F825A8A21E53"
+				"0EDCA4434591E1B0"
 			]
+			description: [
+				"{ftbquest.overview.quests24.description0}"
+				"{ftbquest.overview.quests24.description1}"
+			]
+			hide_dependent_lines: true
+			hide_until_deps_visible: true
 			id: "4A2CAFA05FF9F099"
 			shape: "diamond"
-			subtitle: "Secondary"
+			subtitle: "{ftbquest.overview.quests24.subtitle}"
 			tasks: [{
 				icon: "ae2:engineering_processor"
 				id: "65EEE10FDB6FDB97"
 				stat: "minecraft:play_time"
-				title: "Complete Chapter 4B"
+				title: "{ftbquest.overview.quests24.tasks0.title}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Energetic Machinery"
+			title: "{ftbquest.overview.quests24.title}"
 			x: 0.5d
 			y: 14.0d
 		}
@@ -619,56 +638,60 @@
 				"4A2CAFA05FF9F099"
 				"26002D6E3B0F08BC"
 			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "730771BF0E2F329D"
 			size: 2.0d
-			subtitle: "&5Ultimate Milestone&r"
+			subtitle: "{ftbquest.overview.quests25.subtitle}"
 			tasks: [{
 				id: "5481904ACE3975FC"
 				item: "gearbox:ultimate_mechanism"
 				type: "item"
 			}]
-			title: "&5The End?&f"
+			title: "{ftbquest.overview.quests25.title}"
 			x: -1.0d
 			y: 15.0d
 		}
 		{
 			dependencies: ["69275ECFC147E15B"]
 			description: [
-				"In this chapter, you’ll need to dive headfirst into nature."
+				"{ftbquest.overview.quests26.description0}"
 				""
-				"You’ll require many plants and specific liquids that are hard to obtain."
+				"{ftbquest.overview.quests26.description1}"
 				""
-				"You’ll also have to venture deep into the world in search of valuable ores."
+				"{ftbquest.overview.quests26.description2}"
 			]
+			hide_until_deps_visible: true
 			icon: "create:cardboard"
 			id: "072F6BA76ABDAC10"
 			tasks: [{
 				id: "67F4D326696126CD"
-				title: "Unlock Bonus 2B"
+				title: "{ftbquest.overview.quests26.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Early Logistics Boost"
+			title: "{ftbquest.overview.quests26.title}"
 			x: 0.5d
 			y: 6.5d
 		}
 		{
 			dependencies: [
 				"072F6BA76ABDAC10"
-				"2F4948D507C18B70"
+				"66107B39B6257697"
 			]
-			description: ["With this technology, moving resources becomes much easier. Using trains and belts, you can transport any material across any distance you need — so let your imagination run free, but be careful: too much item flow can easily lead to endless bottlenecks."]
+			description: ["{ftbquest.overview.quests27.description0}"]
 			disable_toast: true
+			hide_until_deps_visible: true
 			icon: "kubejs:logistic_mechanism"
 			id: "50E809C7A7254A4B"
 			tasks: [{
 				id: "1F5A647329CEB074"
 				item: "kubejs:logistic_mechanism"
-				title: "Complete Bonus 2B"
+				title: "{ftbquest.overview.quests27.tasks0.title}"
 				type: "item"
 			}]
 			x: 1.0d
 			y: 8.0d
 		}
 	]
-	title: " Progression"
+	title: "{ftbquest.overview.title}"
 }

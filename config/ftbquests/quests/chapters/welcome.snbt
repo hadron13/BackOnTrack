@@ -17,7 +17,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Seeking to go beyond what was possible, we have reached something above..."]
+			description: ["{ftbquest.welcome.quests0.description0}"]
 			disable_toast: true
 			icon: "minecraft:deepslate_diamond_ore"
 			id: "09356B3BEF298E06"
@@ -32,17 +32,17 @@
 				id: "7670232EEE67FE29"
 				type: "checkmark"
 			}]
-			title: "New Horizons"
+			title: "{ftbquest.welcome.quests0.title}"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["1F5C05BC686C75B7"]
 			description: [
-				"We would like to give thanks to our first content creators:"
+				"{ftbquest.welcome.quests1.description0}"
 				""
-				"&6Nofaxu&r - first showcase video"
-				"&6Danrique&r \\& &6MitinhoPlayer&r - first gameplay series"
+				"{ftbquest.welcome.quests1.description1}"
+				"{ftbquest.welcome.quests1.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -153,7 +153,7 @@
 					id: "19250715BAD5C34E"
 					table_id: 5221089518311498847L
 					team_reward: false
-					title: "Purple"
+					title: "{ftbquest.welcome.quests1.rewards3.title}"
 					type: "loot"
 				}
 			]
@@ -161,16 +161,16 @@
 			size: 1.5d
 			tasks: [{
 				id: "73DEF6FF2FA988EF"
-				title: "I Want Heads"
+				title: "{ftbquest.welcome.quests1.tasks0.title}"
 				type: "checkmark"
 			}]
-			title: "Special Thanks"
+			title: "{ftbquest.welcome.quests1.title}"
 			x: 3.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["09356B3BEF298E06"]
-			description: ["This started as a simple project for ourselves, but soon it became what it is, I hope you like it!"]
+			description: ["{ftbquest.welcome.quests2.description0}"]
 			hide_until_deps_complete: true
 			icon: "create:wrench"
 			id: "3737357C6BBF79F3"
@@ -186,16 +186,16 @@
 				id: "6B480CFF20E2B8F2"
 				type: "checkmark"
 			}]
-			title: "What is this?"
+			title: "{ftbquest.welcome.quests2.title}"
 			x: 0.0d
 			y: -2.25d
 		}
 		{
 			dependencies: ["3737357C6BBF79F3"]
 			description: [
-				"Built on the same principles, we have turned the sandbox upside down:    "
+				"{ftbquest.welcome.quests3.description0}"
 				""
-				"The &6Progression&r demands &5Automation&r, if you don't want eternal grinding it's better to start automating..."
+				"{ftbquest.welcome.quests3.description1}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:andesite"
@@ -214,15 +214,15 @@
 				id: "38099B0180742ADA"
 				type: "checkmark"
 			}]
-			title: "Firstly"
+			title: "{ftbquest.welcome.quests3.title}"
 			x: 1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1F5C05BC686C75B7"]
 			description: [
-				"The questing is fully optional, but it will help you in a number of tasks:"
-				"&cOrganizing Production&r and &2Trading&r"
+				"{ftbquest.welcome.quests4.description0}"
+				"{ftbquest.welcome.quests4.description1}"
 			]
 			hide_until_deps_complete: true
 			icon: "create:andesite_alloy"
@@ -241,13 +241,13 @@
 				id: "4F176EBDA33A01CB"
 				type: "checkmark"
 			}]
-			title: "Secondly"
+			title: "{ftbquest.welcome.quests4.title}"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5E6A1F7FDEEB3053"]
-			description: ["Don't demolish your old factories, they'll be put into test in the final delivery, every step of the process is linked to the last one, so you will want to restructure your foundations as as you get new &6*shiny technology*"]
+			description: ["{ftbquest.welcome.quests5.description0}"]
 			hide_until_deps_complete: true
 			icon: "create:cogwheel"
 			id: "7A7E7AF244BF2259"
@@ -264,22 +264,22 @@
 				id: "43B46986A987BCDB"
 				type: "checkmark"
 			}]
-			title: "Thirdly"
+			title: "{ftbquest.welcome.quests5.title}"
 			x: -1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7A7E7AF244BF2259"]
 			description: [
-				"&6Engineer's Magazine&r - Find many ways to earn that bread for your industrial needs! From hole digging to interstellar bounties."
+				"{ftbquest.welcome.quests6.description0}"
 				""
-				"&6Gadget Shop&r - You can buy anything from &9Cool Gadgets&r to &2Useful Kits&r, 100% sure you'll find something useful, the &5 Early Helpers&f will help you a lot in the early game."
+				"{ftbquest.welcome.quests6.description1}"
 				""
-				"&6Shipments&r - You will find ways to spend your money there too, but this time for automated money burning, the items range from &agrass&r to &bdiamonds"
+				"{ftbquest.welcome.quests6.description2}"
 				""
-				"&6Ores and You&r - Guides you through ore processing"
+				"{ftbquest.welcome.quests6.description3}"
 				""
-				"&6Factory Guide&r - This is the real questing, this will guide you on the journey from start to end."
+				"{ftbquest.welcome.quests6.description4}"
 			]
 			hide_until_deps_complete: true
 			icon: "computercraft:printed_book"
@@ -296,18 +296,18 @@
 				id: "1448FB5D16785C8A"
 				type: "checkmark"
 			}]
-			title: "Content Overview"
+			title: "{ftbquest.welcome.quests6.title}"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["1E8052CB531F278B"]
 			description: [
-				"Just one last note:"
+				"{ftbquest.welcome.quests7.description0}"
 				""
-				"The modpack is in constant improvement, always check the latest updates for &5new features&f and &6bug fixes&f, also don't forget our &bDiscord Server&f for some interaction! "
+				"{ftbquest.welcome.quests7.description1}"
 				""
-				"I hope you enjoy! Happy engineering!"
+				"{ftbquest.welcome.quests7.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "thermal:diamond_gear"
@@ -334,10 +334,10 @@
 				id: "22E9E0C00395673B"
 				type: "checkmark"
 			}]
-			title: "Time to go..."
+			title: "{ftbquest.welcome.quests7.title}"
 			x: 0.0d
 			y: 6.5d
 		}
 	]
-	title: "Welcome"
+	title: "{ftbquest.welcome.title}"
 }

@@ -194,7 +194,6 @@ JEIEvents.hideItems(event => {
 	event.hide(`createqol:refined_radiance_shovel`)
 	event.hide(`createqol:refined_radiance_hoe`)
 
-
   event.hide("kubejs:growing_rose_seed")
 	event.hide("kubejs:growing_tiny_rose_crystal")
 	event.hide("kubejs:growing_small_rose_crystal")
@@ -231,8 +230,8 @@ JEIEvents.hideItems(event => {
 	event.hide("gearbox:dipper")
 	event.hide("gearbox:tau_cannon")
 	event.hide("gearbox:geld_ingot")
-
-	event.hide('grapplemod:rocketupgradeitem')
+	event.hide('gearbox:compressor'),
+  event.hide('gearbox:sapper'),
 
 	event.hide('createaddition:diamond_grit')
 	event.hide('createaddition:capacitor')
