@@ -17,7 +17,7 @@ JEIEvents.hideItems(event => {
 	hide_metal('thermal', 'bronze')
   hide_metal('thermal', 'electrum')
 	hide_metal('createdeco', 'cast_iron')
-	hide_metal('createbigcannons', 'cast_iron')
+//	hide_metal('createbigcannons', 'cast_iron')
 	hide_metal('davebuildingmod', 'steel')
 	hide_metal('ad_astra', 'steel')
 	hide_metal('tconstruct', 'steel')
@@ -232,6 +232,8 @@ JEIEvents.hideItems(event => {
 	event.hide("gearbox:geld_ingot")
 	event.hide('gearbox:compressor'),
   event.hide('gearbox:sapper'),
+  event.hide('gearbox:resin'),
+  event.hide('gearbox:resin_bucket'),
 
 	event.hide('createaddition:diamond_grit')
 	event.hide('createaddition:capacitor')

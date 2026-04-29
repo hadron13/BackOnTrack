@@ -205,6 +205,8 @@ const recipeIdsToRemove = [
   FD("golden_knife"),
   FD("diamond_knife"),
   /tconstruct:smeltery\/melting\/obsidian\/.*/,
+  /tconstruct:smeltery\/melting\/metal\/netherite\/lodestone/,
+  /tconstruct:smeltery\/casting\/metal\/.*\/coin_gold_cast/,
   /ae2:tools\/paintballs.*/,
   /tconstruct:smeltery\/.*\/tin.*/,
   /tconstruct:smeltery\/casting\/ender\/.*/,
@@ -243,6 +245,9 @@ const removeByInput = [
 ];
 
 const removeByOutput = [
+  "rehooked:red_hook",
+  "rehooked:blaze_hook",
+  "rehooked:ender_hook",
   TE('cured_rubber_block'),
   RW('compressor'),
   RW('sapper'),
@@ -339,7 +344,7 @@ const removeByOutput = [
   SS("void_upgrade"),
   SS("void_upgrade"),
   BC("cast_iron_ingot"),
-  CI("cast_iron_ingot"),
+//  CI("cast_iron_ingot"),
   TE("redstone_mushroom_spores"),
   "magicfeather:primeval_feather",
   CR('mechanical_arm'),

@@ -18,7 +18,7 @@
 	quests: [
 		{
 			dependencies: ["54C5900FA1D351E9"]
-			description: ["{ftbquest.stage_3b.quests0.description0}"]
+			description: ["Quantum Machinery allows for new ways of long range transdimensional transport of items and fluids, however without the same coolness factor of trains..."]
 			id: "1800781724560123"
 			rewards: [
 				{
@@ -52,10 +52,10 @@
 		}
 		{
 			dependencies: ["3D02415BDBC492AA"]
-			description: ["{ftbquest.stage_3b.quests1.description0}"]
+			description: ["One of the finest materials in the whole world, use wisely."]
 			icon: "thermal:enderium_ingot"
 			id: "2924B038389DFE3D"
-			subtitle: "{ftbquest.stage_3b.quests1.subtitle}"
+			subtitle: "Contraption 47-4"
 			tasks: [
 				{
 					id: "13221A4CD05B24F7"
@@ -64,7 +64,7 @@
 				}
 				{
 					id: "469935D19D6A5BDD"
-					title: "{ftbquest.stage_3b.quests1.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -73,12 +73,12 @@
 		}
 		{
 			dependencies: ["51F030004DBA106F"]
-			description: ["{ftbquest.stage_3b.quests2.description0}"]
+			description: ["This time there is not much secret, either kill endermen on buy them out."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:ender_pearl"
 			id: "77D4BFD83C7B4F82"
-			subtitle: "{ftbquest.stage_3b.quests2.subtitle}"
+			subtitle: "Contraption 47-1"
 			tasks: [
 				{
 					id: "258C3ECE214532D4"
@@ -87,20 +87,20 @@
 				}
 				{
 					id: "256958FDA4350613"
-					title: "{ftbquest.stage_3b.quests2.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3b.quests2.title}"
+			title: "Endless Grind"
 			x: -2.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["316D4E8D569C1441"]
-			description: ["{ftbquest.stage_3b.quests3.description0}"]
+			description: ["Finally grind down the bits into a fine dust, ready to be turned into enderium."]
 			icon: "ae2:ender_dust"
 			id: "3D02415BDBC492AA"
-			subtitle: "{ftbquest.stage_3b.quests3.subtitle}"
+			subtitle: "Contraption 47-3"
 			tasks: [
 				{
 					id: "2BCA2EB19D6B52BF"
@@ -109,7 +109,7 @@
 				}
 				{
 					id: "1D781155F62AF296"
-					title: "{ftbquest.stage_3b.quests3.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -122,10 +122,10 @@
 				"171B8663C68FA3A5"
 				"197F7868DAF44740"
 			]
-			description: ["{ftbquest.stage_3b.quests4.description0}"]
+			description: ["At last combine the quantified materials to kickstart the tunneling revolution."]
 			icon: "kubejs:ender_mechanism"
 			id: "54C5900FA1D351E9"
-			subtitle: "{ftbquest.stage_3b.quests4.subtitle}"
+			subtitle: "Contraption &650&r"
 			tasks: [
 				{
 					id: "422ACFBE90E2A553"
@@ -134,7 +134,7 @@
 				}
 				{
 					id: "3AC59E20E3122EB2"
-					title: "{ftbquest.stage_3b.quests4.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -146,10 +146,10 @@
 				"6FC605221CB21F2E"
 				"17F72BBAC47B3731"
 			]
-			description: ["{ftbquest.stage_3b.quests5.description0}"]
+			description: ["The end, in a bucket."]
 			icon: "kubejs:endstone_fluid_bucket"
 			id: "197F7868DAF44740"
-			subtitle: "{ftbquest.stage_3b.quests5.subtitle}"
+			subtitle: "Contraption 48-3"
 			tasks: [
 				{
 					id: "6B75C1A71FA0D1EE"
@@ -158,20 +158,20 @@
 				}
 				{
 					id: "74228EEA60FEC01B"
-					title: "{ftbquest.stage_3b.quests5.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3b.quests5.title}"
+			title: "Liquid Ending"
 			x: -2.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["2924B038389DFE3D"]
-			description: ["{ftbquest.stage_3b.quests6.description0}"]
+			description: ["Cut the enderium into a gear, for further machination."]
 			icon: "thermal:enderium_gear"
 			id: "171B8663C68FA3A5"
-			subtitle: "{ftbquest.stage_3b.quests6.subtitle}"
+			subtitle: "Contraption 47-5"
 			tasks: [
 				{
 					id: "7875CFA87CCC1045"
@@ -180,7 +180,7 @@
 				}
 				{
 					id: "2746113B0E842F5A"
-					title: "{ftbquest.stage_3b.quests6.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -189,10 +189,10 @@
 		}
 		{
 			dependencies: ["77D4BFD83C7B4F82"]
-			description: ["{ftbquest.stage_3b.quests7.description0}"]
+			description: ["Crush the pearls into smaller bits."]
 			icon: "endersdelight:ender_shard"
 			id: "316D4E8D569C1441"
-			subtitle: "{ftbquest.stage_3b.quests7.subtitle}"
+			subtitle: "Contraption 47-2"
 			tasks: [
 				{
 					id: "059F052EDB3B85B5"
@@ -201,7 +201,7 @@
 				}
 				{
 					id: "125A9E4D59DA92FF"
-					title: "{ftbquest.stage_3b.quests7.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -210,10 +210,10 @@
 		}
 		{
 			dependencies: ["2A2AEE76BAB22ADD"]
-			description: ["{ftbquest.stage_3b.quests8.description0}"]
+			description: ["Cast the cast iron without a cast into a casted iron ring."]
 			icon: "kubejs:coal_ring"
 			id: "0EB3BFB1D2D6D8CC"
-			subtitle: "{ftbquest.stage_3b.quests8.subtitle}"
+			subtitle: "Contraption 49-2"
 			tasks: [
 				{
 					id: "67ED60C6B5479165"
@@ -222,29 +222,29 @@
 				}
 				{
 					id: "309E72A7068227DA"
-					title: "{ftbquest.stage_3b.quests8.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3b.quests8.title}"
+			title: "Dark Ringing"
 			x: -1.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["2775946163E178D8"]
-			description: ["{ftbquest.stage_3b.quests9.description0}"]
-			icon: "createbigcannons:cast_iron_ingot"
+			description: ["Press the iron into cast iron, the darker brother of steel."]
+			icon: "tfmg:cast_iron_ingot"
 			id: "2A2AEE76BAB22ADD"
-			subtitle: "{ftbquest.stage_3b.quests9.subtitle}"
+			subtitle: "Contraption 49-1"
 			tasks: [
 				{
 					id: "611743D54F700A2A"
-					item: "createbigcannons:cast_iron_ingot"
+					item: "tfmg:cast_iron_ingot"
 					type: "item"
 				}
 				{
 					id: "1652CB6C64D910FD"
-					title: "{ftbquest.stage_3b.quests9.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -253,7 +253,7 @@
 		}
 		{
 			dependencies: ["51F030004DBA106F"]
-			description: ["{ftbquest.stage_3b.quests10.description0}"]
+			description: ["Your usual iron generator goes here."]
 			hide_until_deps_complete: true
 			icon: "minecraft:iron_ingot"
 			id: "2775946163E178D8"
@@ -265,21 +265,21 @@
 				}
 				{
 					id: "754AAB44D7AC4D94"
-					title: "{ftbquest.stage_3b.quests10.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3b.quests10.title}"
+			title: "Iron Ingot"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["51F030004DBA106F"]
-			description: ["{ftbquest.stage_3b.quests11.description0}"]
+			description: ["The usual cobblestone generator should suffice."]
 			hide_until_deps_complete: true
 			icon: "minecraft:cobblestone"
 			id: "17F72BBAC47B3731"
-			subtitle: "{ftbquest.stage_3b.quests11.subtitle}"
+			subtitle: "Contraption 48-2"
 			tasks: [
 				{
 					id: "362F103A61A02C92"
@@ -288,7 +288,7 @@
 				}
 				{
 					id: "60FEB43AA1F0EC18"
-					title: "{ftbquest.stage_3b.quests11.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -297,9 +297,9 @@
 		}
 		{
 			dependencies: ["2924B038389DFE3D"]
-			description: ["{ftbquest.stage_3b.quests12.description0}"]
+			description: ["Melt down 3 ingots, these will serve as a catalyst, so, this time automation is not required."]
 			id: "6FC605221CB21F2E"
-			subtitle: "{ftbquest.stage_3b.quests12.subtitle}"
+			subtitle: "Contraption 48-1"
 			tasks: [{
 				consume_items: false
 				id: "7015FA496760E7DC"
@@ -310,12 +310,12 @@
 						fluid: "tconstruct:molten_enderium"
 					}
 				}
-				title: "{ftbquest.stage_3b.quests12.tasks0.title}"
+				title: "Copper Can (Molten Iron)"
 				type: "item"
 			}]
 			x: -3.5d
 			y: 0.5d
 		}
 	]
-	title: "{ftbquest.stage_3b.title}"
+	title: "&f3b&r Tunnel Quantification"
 }

@@ -18,6 +18,7 @@ ServerEvents.recipes((bot) => {
 
   bot.recipes.gearboxPyroprocessing(SP("ash"), MC("#logs"))
 	bot.recipes.gearboxPyroprocessing(TC('coin_cast'), MC('gold_ingot'))
+	bot.recipes.gearboxPyroprocessing(MC('glass'), MC('red_sand'))
 
 	bot.recipes.createFilling(KJ('golden_tube'), [KJ('empty_tube'), Fluid.of(TC('molten_gold'), 20)])
 	bot.recipes.createFilling(KJ('empty_tube'), [MC('glass'), Fluid.of(TC('molten_iron'), 20)])
@@ -181,7 +182,7 @@ ServerEvents.recipes((bot) => {
 	bot.recipes.createCrushing(TE('sawdust', 2), MC('stick'))
 
 	bot.recipes.createMixing(CR('pulp'), [Item.of(TE('sawdust'), 4), Fluid.of(MC('water'), 250)])
-	bot.recipes.createMixing(KJ('resin_pulp'), [Item.of(CR('pulp'), 1), Fluid.of(GB('resin'), 25)])
+	bot.recipes.createMixing(KJ('resin_pulp'), [Item.of(CR('pulp'), 1), Fluid.of(RW('resin'), 25)])
 
 	bot.recipes.gearboxPyroprocessing(KJ('dry_pulp'), KJ('resin_pulp'))
 
