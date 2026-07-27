@@ -1521,6 +1521,7 @@ function enderStuff(event){
 
 	event.recipes.gearboxMechanizing(TE("enderium_gear"), TE("enderium_ingot"))
 	event.recipes.gearboxMechanizing(AE2("printed_silicon"), AE2("silicon"))
+	event.recipes.gearboxMechanizing(KJ("coal_ring"), BC("cast_iron_ingot"))
 
 	event.recipes.gearboxPyroprocessing(TE('enderium_ingot'), AE2('ender_dust'))
 
@@ -1762,6 +1763,7 @@ function zincMachine(event) {
 }
 
 function oilComplex(event){
+	
 }
 
 function explosiveMachine(event){

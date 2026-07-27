@@ -19,9 +19,9 @@
 		{
 			dependencies: ["466B6AA648B23C3A"]
 			description: [
-				"{ftbquest.stage_3.quests0.description0}"
+				"This chapter comprehends a full petrochemical processing plant, unlike the last chapters, this one is raw, brutal automation, employing many complex processing methods and ingredients."
 				""
-				"{ftbquest.stage_3.quests0.description1}"
+				"Good Luck. May the Omnissiah have mercy upon your machinations."
 			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -40,7 +40,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "09AE46E3C89127E0"
-				title: "{ftbquest.stage_3.quests0.tasks0.title}"
+				title: "Chapter 3 Start!"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -54,10 +54,10 @@
 				"25A4B65AB272EB74"
 				"47FDABBF3680A2B4"
 			]
-			description: ["{ftbquest.stage_3.quests1.description0}"]
+			description: ["Assemble the final mechanism."]
 			icon: "kubejs:explosive_mechanism"
 			id: "5FFB68365F2E821B"
-			subtitle: "{ftbquest.stage_3.quests1.subtitle}"
+			subtitle: "Contraption 45"
 			tasks: [
 				{
 					consume_items: false
@@ -67,17 +67,17 @@
 				}
 				{
 					id: "5D38A6D45AC1EDDD"
-					title: "{ftbquest.stage_3.quests1.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests1.title}"
+			title: "Volatile Deploying"
 			x: 0.0d
 			y: 17.5d
 		}
 		{
 			dependencies: ["5FFB68365F2E821B"]
-			description: ["{ftbquest.stage_3.quests2.description0}"]
+			description: ["This new branch of technology will allow for compact power generation and pointless wars with your friends!"]
 			icon: "kubejs:explosive_machine"
 			id: "6E7750CE254894B4"
 			rewards: [
@@ -101,7 +101,7 @@
 			tasks: [
 				{
 					id: "7A194578829237BE"
-					title: "{ftbquest.stage_3.quests2.tasks0.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 				{
@@ -110,7 +110,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquest.stage_3.quests2.title}"
+			title: "Chapter 3 Complete!"
 			x: 0.0d
 			y: 20.0d
 		}
@@ -129,11 +129,11 @@
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
-			description: ["{ftbquest.stage_3.quests4.description0}"]
+			description: ["Niter, also known as saltpeter or potassium nitrate, can be unrealistically taken from dirt and make most of the gunpowder."]
 			hide_dependency_lines: true
 			icon: "thermal:niter_dust"
 			id: "7B86CDFAEE2EAD0D"
-			subtitle: "{ftbquest.stage_3.quests4.subtitle}"
+			subtitle: "Contraption 34-2"
 			tasks: [
 				{
 					id: "5659ACE410EC99BD"
@@ -142,7 +142,7 @@
 				}
 				{
 					id: "66F586C5A5CDAADB"
-					title: "{ftbquest.stage_3.quests4.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -152,67 +152,67 @@
 		{
 			dependencies: ["278B95FF7159DCFC"]
 			description: [
-				"{ftbquest.stage_3.quests5.description0}"
+				"The quest for oil starts in searching of biomes where oil is abundant, these are: &6Desert&r, &6Swamp&r and &6Ocean&r."
 				""
-				"{ftbquest.stage_3.quests5.description1}"
+				"To start pumping petroleum out of the ground you must first place your pumpjack, which is explained in it's ponder scene."
 			]
-			icon: "gearbox:pumpjack_arm"
+			icon: "petrochem:pumpjack_arm"
 			id: "0CFE8B23F35DEA3D"
 			tasks: [
 				{
 					id: "795CF4E3458495FD"
-					item: "gearbox:pumpjack_crank"
+					item: "petrochem:pumpjack_crank"
 					type: "item"
 				}
 				{
 					id: "6DE515661E1DFD83"
-					item: "gearbox:pumpjack_arm"
+					item: "petrochem:pumpjack_arm"
 					type: "item"
 				}
 				{
 					id: "15A8D9D5037C613A"
-					item: "gearbox:pumpjack_well"
+					item: "petrochem:pumpjack_well"
 					type: "item"
 				}
 			]
-			title: "{ftbquest.stage_3.quests5.title}"
+			title: "Pumpjacking"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["43E048AFA6F466E1"]
 			description: [
-				"{ftbquest.stage_3.quests6.description0}"
+				"Oil distillation will take place on the largest processing machinery available to us, the &6distillation columns&r, and there shall be &63&r of them."
 				""
-				"{ftbquest.stage_3.quests6.description1}"
+				"All of them share the same assembling rules: firstly a &6steel tank&r of size 2x2 or larger must be placed, then under it, one &6distillation controller&r, and lastly, one and only one &6output&r per &llayer&r."
 				""
-				"{ftbquest.stage_3.quests6.description2}"
+				"Each type has unique requirements:"
 				""
-				"{ftbquest.stage_3.quests6.description3}"
+				"&6Flash&r > 500mb of steam per recipe"
 				""
-				"{ftbquest.stage_3.quests6.description4}"
+				"&6Atmospheric&r > size 3x3 and constant heat"
 				""
-				"{ftbquest.stage_3.quests6.description5}"
+				"&6Vacuum&r > constant depletion of air and heat"
 				""
-				"{ftbquest.stage_3.quests6.description6}"
+				"Additionally, redstone activated outputs will enable a discard mode, it is recommended only for testing, as you will need &lall&r of them."
 			]
-			icon: "gearbox:distillation_controller"
+			icon: "petrochem:distillation_controller"
 			id: "38D3FEF4C99B1ABB"
 			tasks: [
 				{
 					consume_items: false
 					id: "62558AF18EB266A5"
-					item: "gearbox:steel_fluid_tank"
+					item: "petrochem:steel_fluid_tank"
 					type: "item"
 				}
 				{
 					id: "6984B75B06F74F79"
-					item: "gearbox:distillation_output"
+					item: "petrochem:distillation_output"
 					type: "item"
 				}
 				{
 					id: "458B80065DCFDF5A"
-					item: "gearbox:distillation_controller"
+					item: "petrochem:distillation_controller"
 					type: "item"
 				}
 				{
@@ -221,78 +221,78 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquest.stage_3.quests6.title}"
+			title: "Distilling 101"
 			x: -1.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["0CFE8B23F35DEA3D"]
-			description: ["{ftbquest.stage_3.quests7.description0}"]
-			icon: "gearbox:petroleum_bucket"
+			description: ["Petroleum is not a singular thing, it is composed by inumerous hydrocarbons and impurities. The sole purpose of a refinery is to separate, purify and combine these different hydrocarbons to create useful products."]
+			icon: "petrochem:petroleum_bucket"
 			id: "2818BBF1D378AE10"
 			tasks: [
 				{
 					id: "09898BDCF2E0A2AF"
-					item: "gearbox:petroleum_bucket"
+					item: "petrochem:petroleum_bucket"
 					type: "item"
 				}
 				{
 					id: "1834D6B65DB3BB48"
-					title: "{ftbquest.stage_3.quests7.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests7.title}"
+			title: "Black Gold"
 			x: 0.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["2818BBF1D378AE10"]
 			description: [
-				"{ftbquest.stage_3.quests8.description0}"
+				"The foremost of steps in petroleum processing is mixing with water to create a brine."
 				""
-				"{ftbquest.stage_3.quests8.description1}"
+				"This brine will remove the salt and other impurities contained within the extracted fluid."
 			]
-			icon: "kubejs:oil_brine_bucket"
+			icon: "petrochem:oil_brine_bucket"
 			id: "452D63BA2C394011"
 			tasks: [
 				{
 					id: "3EBE39D9B9209F84"
-					item: "kubejs:oil_brine_bucket"
+					item: "petrochem:oil_brine_bucket"
 					type: "item"
 				}
 				{
 					id: "0E36D3BF28EB2DDE"
-					title: "{ftbquest.stage_3.quests8.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests8.title}"
+			title: "Decantation"
 			x: 1.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["452D63BA2C394011"]
 			description: [
-				"{ftbquest.stage_3.quests9.description0}"
+				"Use an electrolyzer to remove the last of impurities, resulting in a clean oil ready for distillation."
 				""
-				"{ftbquest.stage_3.quests9.description1}"
+				"The removed salt shall be used for creating caustic soda later."
 			]
-			icon: "kubejs:desalted_oil_bucket"
+			icon: "petrochem:desalted_oil_bucket"
 			id: "43E048AFA6F466E1"
 			tasks: [
 				{
 					id: "45761AE4A1A0B83A"
-					item: "kubejs:desalted_oil_bucket"
+					item: "petrochem:desalted_oil_bucket"
 					type: "item"
 				}
 				{
 					id: "464682D9092A6B1D"
-					title: "{ftbquest.stage_3.quests9.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests9.title}"
+			title: "Desalting"
 			x: 0.0d
 			y: -0.5d
 		}
@@ -301,7 +301,7 @@
 			id: "2119DA65C6BD68A6"
 			tasks: [{
 				id: "6CBE90B138F783F5"
-				item: "gearbox:salt_dust"
+				item: "petrochem:salt_dust"
 				type: "item"
 			}]
 			x: 2.0d
@@ -309,7 +309,7 @@
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
-			description: ["{ftbquest.stage_3.quests11.description0}"]
+			description: ["Your usual 2x2 pool of water will suffice."]
 			icon: "minecraft:water_bucket"
 			id: "26D006529D8FFA58"
 			tasks: [
@@ -320,32 +320,32 @@
 				}
 				{
 					id: "7BD0C634EC365E05"
-					title: "{ftbquest.stage_3.quests11.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests11.title}"
+			title: "Water Source"
 			x: 4.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["26D006529D8FFA58"]
-			description: ["{ftbquest.stage_3.quests12.description0}"]
-			icon: "gearbox:steam_bucket"
+			description: ["How gases do not escape the basin remains a mystery, but it is better to not think too much about it."]
+			icon: "petrochem:steam_bucket"
 			id: "5A2809890BB83531"
 			tasks: [
 				{
 					id: "390754F00173786B"
-					item: "gearbox:steam_bucket"
+					item: "petrochem:steam_bucket"
 					type: "item"
 				}
 				{
 					id: "5CADBAF7CAD2B3B7"
-					title: "{ftbquest.stage_3.quests12.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests12.title}"
+			title: "Basin Boiler"
 			x: 1.5d
 			y: 1.0d
 		}
@@ -356,79 +356,79 @@
 				"5A2809890BB83531"
 			]
 			description: [
-				"{ftbquest.stage_3.quests13.description0}"
+				"The pre-flash drum uses flash distillation to remove the lightest fractions of petroleum before the main atmospheric distillation."
 				""
-				"{ftbquest.stage_3.quests13.description1}"
+				"Flash distillation separates fluids by pressure rather than heat, therefore, insert steam into the controller along with desalted petroleum."
 				""
-				"{ftbquest.stage_3.quests13.description2}"
+				"Bear in mind that pipes will not connect to the steel tanks in distillation mode, use this for your advantage."
 			]
 			icon: "createdeco:decal_electrical"
 			id: "73A8CFEC89D668E6"
 			tasks: [{
 				id: "0182ABFFCE9556DD"
-				title: "{ftbquest.stage_3.quests13.tasks0.title}"
+				title: "Done"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_3.quests13.title}"
+			title: "Pre-Flash Drum"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["73A8CFEC89D668E6"]
-			description: ["{ftbquest.stage_3.quests14.description0}"]
-			icon: "gearbox:volatile_gas_bucket"
+			description: ["Volatile gas is the top fraction of the flash distillation, it comprises various volatile gases that can be further separated."]
+			icon: "petrochem:volatile_gas_bucket"
 			id: "07E50BF01054A38D"
 			tasks: [
 				{
 					id: "56FD0C9C84E76BCE"
-					item: "gearbox:volatile_gas_bucket"
+					item: "petrochem:volatile_gas_bucket"
 					type: "item"
 				}
 				{
 					id: "26E9D6D0DE6132D4"
-					title: "{ftbquest.stage_3.quests14.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests14.title}"
+			title: "Volatile Gas"
 			x: 3.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["73A8CFEC89D668E6"]
-			description: ["{ftbquest.stage_3.quests15.description0}"]
-			icon: "kubejs:light_naphta_bucket"
+			description: ["Light naphta is the middle fraction of flash distillation, it can be processed into plastic via steam cracking."]
+			icon: "petrochem:light_naphta_bucket"
 			id: "1ED7A4DB4BB88EFA"
 			tasks: [
 				{
 					id: "3347590F1AFE56C1"
-					item: "kubejs:light_naphta_bucket"
+					item: "petrochem:light_naphta_bucket"
 					type: "item"
 				}
 				{
 					id: "5786D1CDCFC7CF8C"
-					title: "{ftbquest.stage_3.quests15.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests15.title}"
+			title: "Light Naphta"
 			x: 1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["73A8CFEC89D668E6"]
-			description: ["{ftbquest.stage_3.quests16.description0}"]
-			icon: "kubejs:oil_bucket"
+			description: ["Oil is the bottom fraction of flash distillation, without the volatile compounds after flash distillation it can proceed into the atmospheric distillation column."]
+			icon: "petrochem:oil_bucket"
 			id: "5CFDD5124A7BD459"
 			tasks: [
 				{
 					id: "1752412DF7D482FC"
-					item: "kubejs:oil_bucket"
+					item: "petrochem:oil_bucket"
 					type: "item"
 				}
 				{
 					id: "5F34323D1457ADF6"
-					title: "{ftbquest.stage_3.quests16.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -437,32 +437,32 @@
 		}
 		{
 			dependencies: ["5CFDD5124A7BD459"]
-			description: ["{ftbquest.stage_3.quests17.description0}"]
+			description: ["The atmospheric distillation column is the second and most complex of the columns, in here, distillation happens close to atmospheric pressure, hence the name."]
 			icon: "createdeco:decal_fire"
 			id: "0FE736B821F10C12"
 			tasks: [{
 				id: "009197105F43EE59"
-				title: "{ftbquest.stage_3.quests17.tasks0.title}"
+				title: "Done"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_3.quests17.title}"
+			title: "Atmospheric Distillation"
 			x: 0.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["0FE736B821F10C12"]
-			description: ["{ftbquest.stage_3.quests18.description0}"]
-			icon: "kubejs:heavy_naphta_bucket"
+			description: ["Heavy naphta is the top fraction out of the atmospheric distillation. It's direct line goes into gasoline mixing."]
+			icon: "petrochem:heavy_naphta_bucket"
 			id: "1C75B1AD37CE675B"
 			tasks: [
 				{
 					id: "0C4193301DF318F2"
-					item: "kubejs:heavy_naphta_bucket"
+					item: "petrochem:heavy_naphta_bucket"
 					type: "item"
 				}
 				{
 					id: "44B8CD98C0AB6C2C"
-					title: "{ftbquest.stage_3.quests18.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -471,18 +471,18 @@
 		}
 		{
 			dependencies: ["0FE736B821F10C12"]
-			description: ["{ftbquest.stage_3.quests19.description0}"]
-			icon: "kubejs:kerosene_bucket"
+			description: ["Kerosene is the fifth fraction out of the atmospheric distillation. It is the root of the line that will eventually become rocket fuel."]
+			icon: "petrochem:kerosene_bucket"
 			id: "355106FF4D98BE69"
 			tasks: [
 				{
 					id: "4042676503F7C5A8"
-					item: "kubejs:kerosene_bucket"
+					item: "petrochem:kerosene_bucket"
 					type: "item"
 				}
 				{
 					id: "46BF3E7A823B8BA3"
-					title: "{ftbquest.stage_3.quests19.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -491,18 +491,18 @@
 		}
 		{
 			dependencies: ["0FE736B821F10C12"]
-			description: ["{ftbquest.stage_3.quests20.description0}"]
-			icon: "kubejs:light_diesel_bucket"
+			description: ["The fourth fraction out of the atmospheric distillation, the lighter counterpart of diesel only requires desulfurization before it becomes a final product."]
+			icon: "petrochem:light_diesel_bucket"
 			id: "3DAAEDFDF2426170"
 			tasks: [
 				{
 					id: "28E38F5115135F2A"
-					item: "kubejs:light_diesel_bucket"
+					item: "petrochem:light_diesel_bucket"
 					type: "item"
 				}
 				{
 					id: "58AA56590DC1A62C"
-					title: "{ftbquest.stage_3.quests20.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -511,18 +511,18 @@
 		}
 		{
 			dependencies: ["0FE736B821F10C12"]
-			description: ["{ftbquest.stage_3.quests21.description0}"]
-			icon: "kubejs:heavy_diesel_bucket"
+			description: ["The third fraction out of the atmospheric distillation and heavier counterpart of diesel, requires more processing to become refined diesel, however it is more abundant."]
+			icon: "petrochem:heavy_diesel_bucket"
 			id: "244C9692EAE6F9B0"
 			tasks: [
 				{
 					id: "72B761CA45C683DB"
-					item: "kubejs:heavy_diesel_bucket"
+					item: "petrochem:heavy_diesel_bucket"
 					type: "item"
 				}
 				{
 					id: "525A455E88DF8747"
-					title: "{ftbquest.stage_3.quests21.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -531,18 +531,18 @@
 		}
 		{
 			dependencies: ["0FE736B821F10C12"]
-			description: ["{ftbquest.stage_3.quests22.description0}"]
-			icon: "kubejs:light_gas_oil_bucket"
+			description: ["Light Gas Oil is the second fraction out of atmospheric distillation, it can be processed into fuel oil, naphta or a compound for the gasoline mixture."]
+			icon: "petrochem:light_gas_oil_bucket"
 			id: "1468DA27F29539CF"
 			tasks: [
 				{
 					id: "04AFFD09C8358FEE"
-					item: "kubejs:light_gas_oil_bucket"
+					item: "petrochem:light_gas_oil_bucket"
 					type: "item"
 				}
 				{
 					id: "585BE608CC065057"
-					title: "{ftbquest.stage_3.quests22.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -551,18 +551,18 @@
 		}
 		{
 			dependencies: ["0FE736B821F10C12"]
-			description: ["{ftbquest.stage_3.quests23.description0}"]
-			icon: "kubejs:oil_residue_bucket"
+			description: ["Oil residue is the bottom fraction out of the atmospheric distillation. Residue does not mean it's waste! It still contains useful heavy hydrocarbons."]
+			icon: "petrochem:oil_residue_bucket"
 			id: "0D53DFB84F3D956C"
 			tasks: [
 				{
 					id: "31FB278527B3B430"
-					item: "kubejs:oil_residue_bucket"
+					item: "petrochem:oil_residue_bucket"
 					type: "item"
 				}
 				{
 					id: "59B9A83ADF0ACCB8"
-					title: "{ftbquest.stage_3.quests23.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -574,22 +574,22 @@
 				"1C75B1AD37CE675B"
 				"0D91C9ED4A2FF848"
 			]
-			description: ["{ftbquest.stage_3.quests24.description0}"]
-			icon: "kubejs:desulfurized_heavy_naphta_bucket"
+			description: ["Less sulfur also means better fuel performance."]
+			icon: "petrochem:desulfurized_heavy_naphta_bucket"
 			id: "74F2578D520DAC49"
 			tasks: [
 				{
 					id: "70919B0ECBDC6443"
-					item: "kubejs:desulfurized_heavy_naphta_bucket"
+					item: "petrochem:desulfurized_heavy_naphta_bucket"
 					type: "item"
 				}
 				{
 					id: "4162F391CBC5028A"
-					title: "{ftbquest.stage_3.quests24.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests24.title}"
+			title: "Desulfurizer #4"
 			x: 2.5d
 			y: 9.5d
 		}
@@ -598,22 +598,22 @@
 				"355106FF4D98BE69"
 				"0D91C9ED4A2FF848"
 			]
-			description: ["{ftbquest.stage_3.quests25.description0}"]
-			icon: "kubejs:desulfurized_kerosene_bucket"
+			description: ["Removing sulfur is crucial as it could poison catalysts and damage machinery further in the refinery."]
+			icon: "petrochem:desulfurized_kerosene_bucket"
 			id: "6EA090187D648228"
 			tasks: [
 				{
 					id: "782D32E79DF34B0E"
-					item: "kubejs:desulfurized_kerosene_bucket"
+					item: "petrochem:desulfurized_kerosene_bucket"
 					type: "item"
 				}
 				{
 					id: "11818E20FA9EE362"
-					title: "{ftbquest.stage_3.quests25.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests25.title}"
+			title: "Desulfurizer #3"
 			x: 1.5d
 			y: 9.5d
 		}
@@ -622,22 +622,22 @@
 				"244C9692EAE6F9B0"
 				"0D91C9ED4A2FF848"
 			]
-			description: ["{ftbquest.stage_3.quests26.description0}"]
-			icon: "kubejs:desulfurized_heavy_diesel_bucket"
+			description: ["&6Hydrodesulfurization&r uses hydrogen to remove sulfur from the oil derivates."]
+			icon: "petrochem:desulfurized_heavy_diesel_bucket"
 			id: "430842B51826CA04"
 			tasks: [
 				{
 					id: "02CFCE371C0FBA91"
-					item: "kubejs:desulfurized_heavy_diesel_bucket"
+					item: "petrochem:desulfurized_heavy_diesel_bucket"
 					type: "item"
 				}
 				{
 					id: "6C7CD4361F998FC6"
-					title: "{ftbquest.stage_3.quests26.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests26.title}"
+			title: "Desulfurizer #1"
 			x: -0.5d
 			y: 9.5d
 		}
@@ -646,22 +646,22 @@
 				"3DAAEDFDF2426170"
 				"0D91C9ED4A2FF848"
 			]
-			description: ["{ftbquest.stage_3.quests27.description0}"]
-			icon: "kubejs:desulfurized_light_diesel_bucket"
+			description: ["Hydrogen steals sulfur atoms from within the molecules and produces hydrogen sulfide, which can be filtered out."]
+			icon: "petrochem:light_gas_oil_bucket"
 			id: "353CE5CECBA969D5"
 			tasks: [
 				{
 					id: "550228621DEE2C02"
-					item: "kubejs:desulfurized_light_diesel_bucket"
+					item: "petrochem:light_gas_oil_bucket"
 					type: "item"
 				}
 				{
 					id: "7B0827D7F90DEE9D"
-					title: "{ftbquest.stage_3.quests27.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests27.title}"
+			title: "Desulfurizer #2"
 			x: 0.5d
 			y: 9.5d
 		}
@@ -673,77 +673,77 @@
 				"430842B51826CA04"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquest.stage_3.quests28.description0}"]
-			icon: "gearbox:hydrogen_sulfide_bucket"
+			description: ["The resulting creation of hydrogen sulfide can also be processed."]
+			icon: "petrochem:hydrogen_sulfide_bucket"
 			id: "4420D96ADEEBFBCA"
 			tasks: [
 				{
 					id: "67DB04C0077F4426"
-					item: "gearbox:hydrogen_sulfide_bucket"
+					item: "petrochem:hydrogen_sulfide_bucket"
 					type: "item"
 				}
 				{
 					id: "2D717898A9E99AC0"
-					title: "{ftbquest.stage_3.quests28.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests28.title}"
+			title: "Sulfurized"
 			x: 4.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["26D006529D8FFA58"]
-			description: ["{ftbquest.stage_3.quests29.description0}"]
-			icon: "gearbox:hydrogen_bucket"
+			description: ["Use electrolysis of water to bootstrap the hydrodesulfurization machinery and furthermore realize cracking of heavy compounds."]
+			icon: "petrochem:hydrogen_bucket"
 			id: "0D91C9ED4A2FF848"
 			tasks: [
 				{
 					id: "1E64361EF1BF6C34"
-					item: "gearbox:hydrogen_bucket"
+					item: "petrochem:hydrogen_bucket"
 					type: "item"
 				}
 				{
 					id: "64DA2B088AC5F579"
-					title: "{ftbquest.stage_3.quests29.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests29.title}"
+			title: "Hydrogenerator"
 			x: 4.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["26D006529D8FFA58"]
-			description: ["{ftbquest.stage_3.quests30.description0}"]
+			description: ["For the time being, oxygen is just a byproduct, it will be useful once you become spacefaring."]
 			id: "15D8D756C0B3042B"
 			tasks: [{
 				id: "79FE467A108942FB"
-				item: "gearbox:oxygen_bucket"
+				item: "petrochem:oxygen_bucket"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_3.quests30.title}"
+			title: "Oxygen"
 			x: 7.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["4420D96ADEEBFBCA"]
-			description: ["{ftbquest.stage_3.quests31.description0}"]
-			icon: "gearbox:sulfur_dust"
+			description: ["Electrolyze the hydrogen sulfide to get not only sulfur, but all of your hydrogen back, you may use it as a closed cycle."]
+			icon: "petrochem:sulfur_dust"
 			id: "29F5671E02A8EE7B"
 			tasks: [
 				{
 					id: "3AF014C128877D81"
-					item: "gearbox:sulfur_dust"
+					item: "petrochem:sulfur_dust"
 					type: "item"
 				}
 				{
 					id: "4748953AE79EB5B7"
-					title: "{ftbquest.stage_3.quests31.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests31.title}"
+			title: "Sulfur Recovery"
 			x: 5.0d
 			y: 10.5d
 		}
@@ -754,9 +754,9 @@
 				"15B352A338EF21AB"
 			]
 			description: [
-				"{ftbquest.stage_3.quests32.description0}"
+				"Heavy diesel requires one extra step into becoming refined diesel, that is &6Hydrocracking&r. "
 				""
-				"{ftbquest.stage_3.quests32.description1}"
+				"Cracking is essentially breaking heavy hydrocarbons into light hydrocarbons, in this case, with the aid of hydrogen and a catalyst."
 			]
 			icon: "kubejs:desulfurized_light_diesel_bucket"
 			id: "6F268CBBD5B358B9"
@@ -768,24 +768,24 @@
 				}
 				{
 					id: "784F7FB5192D5C78"
-					title: "{ftbquest.stage_3.quests32.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests32.title}"
+			title: "Diesel Hydrocracking"
 			x: -1.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
-			description: ["{ftbquest.stage_3.quests33.description0}"]
+			description: ["Mystery inbounds the rose quartz, the almost mythical origin of redstone grants it unusual use as a powerful catalyst for cracking hydrocarbons."]
 			id: "15B352A338EF21AB"
 			tasks: [{
 				id: "29A08B1AFD6D8082"
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_3.quests33.title}"
+			title: "Powerful Catalyst"
 			x: -2.0d
 			y: 9.5d
 		}
@@ -796,58 +796,58 @@
 				"411B0335C287CFC3"
 			]
 			description: [
-				"{ftbquest.stage_3.quests34.description0}"
+				"Hydrotreating unlike hydrodesulfurization does not allow recovery of the spent hydrogen."
 				""
-				"{ftbquest.stage_3.quests34.description1}"
+				"This gas oil can be processed into either alkylate for gasoline mixing or fuel oil + heavy naphta."
 				""
-				"{ftbquest.stage_3.quests34.description2}"
+				"&6Tip: process alkylate with priority, if gasoline mixing becomes full, process fuel oil + naphta.&r"
 			]
-			icon: "kubejs:hydrotreated_gas_oil_bucket"
+			icon: "petrochem:hydrotreated_gas_oil_bucket"
 			id: "186B8DF57B64DE26"
 			tasks: [
 				{
 					id: "62A691A92C6068B5"
-					item: "kubejs:hydrotreated_gas_oil_bucket"
+					item: "petrochem:hydrotreated_gas_oil_bucket"
 					type: "item"
 				}
 				{
 					id: "4BD6DBBD2DF166D3"
-					title: "{ftbquest.stage_3.quests34.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests34.title}"
+			title: "Hydrotreating"
 			x: -3.5d
 			y: 9.5d
 		}
 		{
 			dependencies: ["0D53DFB84F3D956C"]
-			description: ["{ftbquest.stage_3.quests35.description0}"]
+			description: ["The vacuum distillation column is the last of the three and yields the heaviest of fractions that still remain."]
 			icon: "createdeco:decal_fluid"
 			id: "3CA957A5A3CAF116"
 			tasks: [{
 				id: "05DDA1591DC9692C"
-				title: "{ftbquest.stage_3.quests35.tasks0.title}"
+				title: "Done"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_3.quests35.title}"
+			title: "Vacuum Distillation"
 			x: -4.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["3CA957A5A3CAF116"]
-			description: ["{ftbquest.stage_3.quests36.description0}"]
-			icon: "kubejs:light_gas_oil_bucket"
+			description: ["Top fraction out of the vacuum distillation, also yielded by atmospheric distillation, combine both outputs."]
+			icon: "petrochem:light_gas_oil_bucket"
 			id: "411B0335C287CFC3"
 			tasks: [
 				{
 					id: "3E656508DFF61DCA"
-					item: "kubejs:light_gas_oil_bucket"
+					item: "petrochem:light_gas_oil_bucket"
 					type: "item"
 				}
 				{
 					id: "6A7E0B666C691376"
-					title: "{ftbquest.stage_3.quests36.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -856,18 +856,18 @@
 		}
 		{
 			dependencies: ["3CA957A5A3CAF116"]
-			description: ["{ftbquest.stage_3.quests37.description0}"]
-			icon: "kubejs:heavy_gas_oil_bucket"
+			description: ["Middle fraction out of vacuum distillation, heavier counterpart of gas oil."]
+			icon: "petrochem:heavy_gas_oil_bucket"
 			id: "1863497D889F2DFF"
 			tasks: [
 				{
 					id: "5FB4992323644041"
-					item: "kubejs:heavy_gas_oil_bucket"
+					item: "petrochem:heavy_gas_oil_bucket"
 					type: "item"
 				}
 				{
 					id: "6CBF0FE31DFEC5A0"
-					title: "{ftbquest.stage_3.quests37.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -876,18 +876,18 @@
 		}
 		{
 			dependencies: ["3CA957A5A3CAF116"]
-			description: ["{ftbquest.stage_3.quests38.description0}"]
-			icon: "kubejs:heavy_oil_residue_bucket"
+			description: ["The absolute heaviest fraction of all. Use to obtain petcoke, lubricant and asphalt."]
+			icon: "petrochem:heavy_oil_residue_bucket"
 			id: "2A370869BB75F731"
 			tasks: [
 				{
 					id: "00F505BFDB644105"
-					item: "kubejs:heavy_oil_residue_bucket"
+					item: "petrochem:heavy_oil_residue_bucket"
 					type: "item"
 				}
 				{
 					id: "5715E5391FDF63BC"
-					title: "{ftbquest.stage_3.quests38.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -900,25 +900,25 @@
 				"2119DA65C6BD68A6"
 			]
 			description: [
-				"{ftbquest.stage_3.quests39.description0}"
+				"Electrolyzing water with salt creates a reaction results into caustic soda and chlorine, don't try at home!"
 				""
-				"{ftbquest.stage_3.quests39.description1}"
+				"Caustic soda will be used in what is called merox treatment afterwards."
 			]
-			icon: "gearbox:caustic_soda"
+			icon: "petrochem:caustic_soda"
 			id: "235AE2B176E8A098"
 			tasks: [
 				{
 					id: "6A70E043F386FF01"
-					item: "gearbox:caustic_soda"
+					item: "petrochem:caustic_soda"
 					type: "item"
 				}
 				{
 					id: "209ECBC32AC466E8"
-					title: "{ftbquest.stage_3.quests39.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests39.title}"
+			title: "Caustics"
 			x: 7.0d
 			y: 3.0d
 		}
@@ -927,11 +927,11 @@
 				"26D006529D8FFA58"
 				"2119DA65C6BD68A6"
 			]
-			description: ["{ftbquest.stage_3.quests40.description0}"]
+			description: ["Like oxygen, chlorine is just a byproduct for now."]
 			id: "24926AB3ABCEA658"
 			tasks: [{
 				id: "60B0C55708360038"
-				item: "gearbox:chlorine_bucket"
+				item: "petrochem:chlorine_bucket"
 				type: "item"
 			}]
 			x: 7.0d
@@ -943,9 +943,9 @@
 				"235AE2B176E8A098"
 			]
 			description: [
-				"{ftbquest.stage_3.quests41.description0}"
+				"Mercaptan oxidation (Merox) is a process used to remove mercaptans from kerosene and lighter fractions."
 				""
-				"{ftbquest.stage_3.quests41.description1}"
+				"Both hydrodesulfurization and merox are required to meet RP-1 fuel standards."
 			]
 			icon: "ad_astra:fuel_bucket"
 			id: "0048C37666C22096"
@@ -957,11 +957,11 @@
 				}
 				{
 					id: "3587DFBFD7C31290"
-					title: "{ftbquest.stage_3.quests41.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests41.title}"
+			title: "Merox Treatment"
 			x: 1.5d
 			y: 12.5d
 		}
@@ -971,50 +971,50 @@
 				"1ED7A4DB4BB88EFA"
 			]
 			description: [
-				"{ftbquest.stage_3.quests42.description0}"
+				"Use steam as an agent to perform &6thermocracking&r, cracking with heat."
 				""
-				"{ftbquest.stage_3.quests42.description1}"
+				"Cracking is essentially breaking heavy hydrocarbons into light hydrocarbons, in this case, with the aid of steam's heat."
 			]
-			icon: "gearbox:ethylene_bucket"
+			icon: "petrochem:ethylene_bucket"
 			id: "1E778CBA535D4BAD"
 			tasks: [
 				{
 					id: "529E12756170683F"
-					item: "gearbox:ethylene_bucket"
+					item: "petrochem:ethylene_bucket"
 					type: "item"
 				}
 				{
 					id: "7820064ECCCB74C6"
-					title: "{ftbquest.stage_3.quests42.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests42.title}"
+			title: "Thermocracking"
 			x: 3.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["1E778CBA535D4BAD"]
 			description: [
-				"{ftbquest.stage_3.quests43.description0}"
+				"Further process ethylene into polyethylene exposing it to air for polimerization."
 				""
-				"{ftbquest.stage_3.quests43.description1}"
+				"Plastic is not useful as of now, but it will be a key material in later chapters."
 			]
-			icon: "kubejs:plastic_bucket"
+			icon: "petrochem:plastic_bucket"
 			id: "1EBD6FDC37D14475"
 			tasks: [
 				{
 					id: "557CDA215797982D"
-					item: "kubejs:plastic_bucket"
+					item: "petrochem:plastic_bucket"
 					type: "item"
 				}
 				{
 					id: "0625E7C98C2281C0"
-					title: "{ftbquest.stage_3.quests43.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests43.title}"
+			title: "Polimerization"
 			x: 3.0d
 			y: 5.0d
 		}
@@ -1023,22 +1023,22 @@
 				"235AE2B176E8A098"
 				"07E50BF01054A38D"
 			]
-			description: ["{ftbquest.stage_3.quests44.description0}"]
-			icon: "gearbox:propane_bucket"
+			description: ["Propane is the more abundant fraction in volatile gas, not only a lpg ingredient but can be used as a solvent."]
+			icon: "petrochem:propane_bucket"
 			id: "39AC380C7D738E22"
 			tasks: [
 				{
 					id: "53DE80135F02FF6D"
-					item: "gearbox:propane_bucket"
+					item: "petrochem:propane_bucket"
 					type: "item"
 				}
 				{
 					id: "61A44338C020C2CD"
-					title: "{ftbquest.stage_3.quests44.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests44.title}"
+			title: "Propane"
 			x: 7.0d
 			y: 5.5d
 		}
@@ -1047,22 +1047,22 @@
 				"235AE2B176E8A098"
 				"07E50BF01054A38D"
 			]
-			description: ["{ftbquest.stage_3.quests45.description0}"]
-			icon: "gearbox:butane_bucket"
+			description: ["Butane is the lesser abundant fraction in volatile gas, it is an ingredient in LPG."]
+			icon: "petrochem:butane_bucket"
 			id: "6C86FC851C35282E"
 			tasks: [
 				{
 					id: "4FA67E13E14766FF"
-					item: "gearbox:butane_bucket"
+					item: "petrochem:butane_bucket"
 					type: "item"
 				}
 				{
 					id: "3F229170BA8C6DCE"
-					title: "{ftbquest.stage_3.quests45.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests45.title}"
+			title: "Butane"
 			x: 8.0d
 			y: 4.5d
 		}
@@ -1071,22 +1071,22 @@
 				"39AC380C7D738E22"
 				"6C86FC851C35282E"
 			]
-			description: ["{ftbquest.stage_3.quests46.description0}"]
-			icon: "gearbox:lpg_bucket"
+			description: ["Mix both gases into lpg."]
+			icon: "petrochem:lpg_bucket"
 			id: "0C02D0487FF69610"
 			tasks: [
 				{
 					id: "1D52636F4FEE411E"
-					item: "gearbox:lpg_bucket"
+					item: "petrochem:lpg_bucket"
 					type: "item"
 				}
 				{
 					id: "4D88228713B76EC4"
-					title: "{ftbquest.stage_3.quests46.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests46.title}"
+			title: "LPG mixer"
 			x: 8.5d
 			y: 6.0d
 		}
@@ -1095,53 +1095,53 @@
 				"15B352A338EF21AB"
 				"1863497D889F2DFF"
 			]
-			description: ["{ftbquest.stage_3.quests47.description0}"]
-			icon: "kubejs:hydrocracked_gasoline_bucket"
+			description: ["Gasoline is not a singular fraction of petroleum, it is a mixture of many compounds to achieve best fuel performance."]
+			icon: "petrochem:hydrocracked_gasoline_bucket"
 			id: "7920C5415DCC4A11"
 			tasks: [
 				{
 					id: "12EB8E7302B99C01"
-					item: "kubejs:hydrocracked_gasoline_bucket"
+					item: "petrochem:hydrocracked_gasoline_bucket"
 					type: "item"
 				}
 				{
 					id: "57859D03F79815B2"
-					title: "{ftbquest.stage_3.quests47.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests47.title}"
+			title: "Hydrocracked Gasoline"
 			x: -5.5d
 			y: 11.5d
 		}
 		{
 			dependencies: ["2A370869BB75F731"]
-			description: ["{ftbquest.stage_3.quests48.description0}"]
-			icon: "gearbox:petroleum_coke"
+			description: ["Pressing the heavy oil residue yields petroleum coke, replacing a previously unautomatable ingredient in steel."]
+			icon: "petrochem:petroleum_coke"
 			id: "7F5AB6D3CF3BC396"
 			tasks: [
 				{
 					id: "0B4D67833EFA0916"
-					item: "gearbox:petroleum_coke"
+					item: "petrochem:petroleum_coke"
 					type: "item"
 				}
 				{
 					id: "036BD6F297FC5973"
-					title: "{ftbquest.stage_3.quests48.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests48.title}"
+			title: "Delayed Coking"
 			x: -8.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["2A370869BB75F731"]
-			description: ["{ftbquest.stage_3.quests49.description0}"]
+			description: ["Fuel Oil is the heaviest of usable fuels."]
 			id: "3E2D9DA955AF65AE"
 			tasks: [{
 				id: "3E051B73B6D5601E"
-				item: "kubejs:fuel_oil_bucket"
+				item: "petrochem:fuel_oil_bucket"
 				type: "item"
 			}]
 			x: -7.5d
@@ -1152,22 +1152,22 @@
 				"1863497D889F2DFF"
 				"15B352A338EF21AB"
 			]
-			description: ["{ftbquest.stage_3.quests50.description0}"]
-			icon: "kubejs:heavy_diesel_bucket"
+			description: ["Hydrocracking of heavy gas oil yields heavy diesel which can be combined with the one produced by atmospheric distillation."]
+			icon: "petrochem:heavy_diesel_bucket"
 			id: "33E7EA737D314B9B"
 			tasks: [
 				{
 					id: "51707F23886526EF"
-					item: "kubejs:heavy_diesel_bucket"
+					item: "petrochem:heavy_diesel_bucket"
 					type: "item"
 				}
 				{
 					id: "5908497949517A8E"
-					title: "{ftbquest.stage_3.quests50.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests50.title}"
+			title: "Hydrocracked Heavy Diesel"
 			x: -6.5d
 			y: 11.5d
 		}
@@ -1177,25 +1177,25 @@
 				"186B8DF57B64DE26"
 			]
 			description: [
-				"{ftbquest.stage_3.quests51.description0}"
+				"Perform what is known as &6Fluid Catalytic Cracking&r or FCC for short. "
 				""
-				"{ftbquest.stage_3.quests51.description1}"
+				"This cracking type requires only a catalyst to be performed."
 			]
-			icon: "kubejs:fuel_oil_bucket"
+			icon: "petrochem:fuel_oil_bucket"
 			id: "23502789C3459F54"
 			tasks: [
 				{
 					id: "1DF13C79D9346D24"
-					item: "kubejs:fuel_oil_bucket"
+					item: "petrochem:fuel_oil_bucket"
 					type: "item"
 				}
 				{
 					id: "32B87628F2969EB8"
-					title: "{ftbquest.stage_3.quests51.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests51.title}"
+			title: "Fuel Oil (FCC)"
 			x: -3.5d
 			y: 11.5d
 		}
@@ -1204,22 +1204,22 @@
 				"15B352A338EF21AB"
 				"186B8DF57B64DE26"
 			]
-			description: ["{ftbquest.stage_3.quests52.description0}"]
-			icon: "kubejs:heavy_naphta_bucket"
+			description: ["FCC on hydrotreated gas oil also yields heavy naphta which can be combined with the one produced by atmospheric distillation."]
+			icon: "petrochem:heavy_naphta_bucket"
 			id: "3C0BBBF1231B6218"
 			tasks: [
 				{
 					id: "364C96F7680F181D"
-					item: "kubejs:heavy_naphta_bucket"
+					item: "petrochem:heavy_naphta_bucket"
 					type: "item"
 				}
 				{
 					id: "0348DD36052C8B1D"
-					title: "{ftbquest.stage_3.quests52.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests52.title}"
+			title: "Heavy Naphta (FCC)"
 			x: -2.5d
 			y: 11.5d
 		}
@@ -1228,14 +1228,14 @@
 				"3CBF462BA375A832"
 				"186B8DF57B64DE26"
 			]
-			description: ["{ftbquest.stage_3.quests53.description0}"]
+			description: ["Hydrotreated gas oil shall be primarily used in &6Alkylation&r, a process which transforms iso-butane and other hydrocarbons into a key component of high quality gasoline."]
 			id: "181C011F97355031"
 			tasks: [{
 				id: "07CE4ED526F054E1"
 				item: "kubejs:alkylate_bucket"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_3.quests53.title}"
+			title: "Alkylation"
 			x: -4.5d
 			y: 14.0d
 		}
@@ -1244,23 +1244,23 @@
 				"278B95FF7159DCFC"
 				"29F5671E02A8EE7B"
 			]
-			description: ["{ftbquest.stage_3.quests54.description0}"]
+			description: ["Use the recovered sulfur to create sulfuric acid by mixing it with water and a catalyst, in this case gold."]
 			hide_dependency_lines: true
-			icon: "kubejs:sulfuric_acid_bucket"
+			icon: "petrochem:sulfuric_acid_bucket"
 			id: "3CBF462BA375A832"
 			tasks: [
 				{
 					id: "680AA9DD4ECBEBAF"
-					item: "kubejs:sulfuric_acid_bucket"
+					item: "petrochem:sulfuric_acid_bucket"
 					type: "item"
 				}
 				{
 					id: "2638B6CA90CD2E08"
-					title: "{ftbquest.stage_3.quests54.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests54.title}"
+			title: "Sulfuric Productions"
 			x: -4.5d
 			y: 9.5d
 		}
@@ -1269,22 +1269,22 @@
 				"74F2578D520DAC49"
 				"7920C5415DCC4A11"
 			]
-			description: ["{ftbquest.stage_3.quests55.description0}"]
-			icon: "kubejs:untreated_gasoline_bucket"
+			description: ["Hydrocracked gasoline combined with desulfurized heavy naphta results in a raw form of gasoline."]
+			icon: "petrochem:untreated_gasoline_bucket"
 			id: "00E3C26B33FD7C6C"
 			tasks: [
 				{
 					id: "65651F593DBD8108"
-					item: "kubejs:untreated_gasoline_bucket"
+					item: "petrochem:untreated_gasoline_bucket"
 					type: "item"
 				}
 				{
 					id: "3AB336044FFD3A43"
-					title: "{ftbquest.stage_3.quests55.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests55.title}"
+			title: "Untreated Gasoline"
 			x: 0.0d
 			y: 13.0d
 		}
@@ -1293,22 +1293,22 @@
 				"181C011F97355031"
 				"00E3C26B33FD7C6C"
 			]
-			description: ["{ftbquest.stage_3.quests56.description0}"]
-			icon: "kubejs:gasoline_bucket"
+			description: ["The last key component is alkylate, which finally transforms the raw untreated gasoline into high quality refined gasoline."]
+			icon: "petrochem:gasoline_bucket"
 			id: "25A4B65AB272EB74"
 			tasks: [
 				{
 					id: "6D1D28254BD7FE25"
-					item: "kubejs:gasoline_bucket"
+					item: "petrochem:gasoline_bucket"
 					type: "item"
 				}
 				{
 					id: "74D50E2FA488DA46"
-					title: "{ftbquest.stage_3.quests56.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests56.title}"
+			title: "Refined Gasoline"
 			x: 0.0d
 			y: 15.5d
 		}
@@ -1317,16 +1317,16 @@
 				"278B95FF7159DCFC"
 				"39AC380C7D738E22"
 			]
-			description: ["{ftbquest.stage_3.quests57.description0}"]
+			description: ["Redirect a propane line to this section for de-asphalting."]
 			hide_dependency_lines: true
-			icon: "gearbox:propane_bucket"
+			icon: "petrochem:propane_bucket"
 			id: "788484AEA85F4978"
 			tasks: [{
 				id: "74E775A8523D106C"
-				title: "{ftbquest.stage_3.quests57.tasks0.title}"
+				title: "Done"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_3.quests57.title}"
+			title: "Propane Solvent"
 			x: -6.5d
 			y: 8.5d
 		}
@@ -1336,17 +1336,17 @@
 				"788484AEA85F4978"
 			]
 			description: [
-				"{ftbquest.stage_3.quests58.description0}"
+				"&6De-asphalting&r with propane can remove the asphalt content from the fuel oil."
 				""
-				"{ftbquest.stage_3.quests58.description1}"
+				"The asphalt block can be used to create high-speed roads."
 			]
 			id: "5B16B822B33975D7"
 			tasks: [{
 				id: "7940EEB6F7E650F3"
-				item: "gearbox:asphalt"
+				item: "petrochem:asphalt"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_3.quests58.title}"
+			title: "De-asphalting"
 			x: -7.5d
 			y: 10.5d
 		}
@@ -1355,14 +1355,14 @@
 				"3E2D9DA955AF65AE"
 				"788484AEA85F4978"
 			]
-			description: ["{ftbquest.stage_3.quests59.description0}"]
+			description: ["What is left from de-asphalting can be used as lubricant."]
 			id: "30A8F6C9F592308F"
 			tasks: [{
 				id: "24909EE282B546CD"
-				item: "kubejs:lubricant_bucket"
+				item: "petrochem:lubricant_bucket"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_3.quests59.title}"
+			title: "Lubrication"
 			x: -8.5d
 			y: 10.5d
 		}
@@ -1376,10 +1376,10 @@
 			id: "53708965E1F0A88E"
 			tasks: [{
 				id: "24DF94556C418CEB"
-				item: "kubejs:desulfurized_light_diesel_bucket"
+				item: "petrochem:diesel_bucket"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_3.quests60.title}"
+			title: "Refined Diesel"
 			x: -1.5d
 			y: 16.0d
 		}
@@ -1389,7 +1389,7 @@
 			id: "4507B3C7E43DC447"
 			tasks: [{
 				id: "3E54B8D416C1079A"
-				item: "kubejs:lubricant_bucket"
+				item: "petrochem:lubricant_bucket"
 				type: "item"
 			}]
 			x: 1.5d
@@ -1401,7 +1401,7 @@
 			id: "06BD2FC52B826516"
 			tasks: [{
 				id: "4ACFED56D132FADA"
-				item: "gearbox:lpg_bucket"
+				item: "petrochem:lpg_bucket"
 				type: "item"
 			}]
 			x: 2.5d
@@ -1409,7 +1409,7 @@
 		}
 		{
 			dependencies: ["278B95FF7159DCFC"]
-			description: ["{ftbquest.stage_3.quests63.description0}"]
+			description: ["Redirect some iron from chapter 2 for steel alloying."]
 			icon: {
 				Count: 1
 				id: "tconstruct:copper_can"
@@ -1418,7 +1418,7 @@
 				}
 			}
 			id: "177DFD1C358441BD"
-			subtitle: "{ftbquest.stage_3.quests63.subtitle}"
+			subtitle: "Contraption 18-4"
 			tasks: [
 				{
 					consume_items: false
@@ -1430,16 +1430,16 @@
 							fluid: "tconstruct:molten_iron"
 						}
 					}
-					title: "{ftbquest.stage_3.quests63.tasks0.title}"
+					title: "Copper Can (Molten Iron)"
 					type: "item"
 				}
 				{
 					id: "4814BD5027E5FD29"
-					title: "{ftbquest.stage_3.quests63.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests63.title}"
+			title: "Get Melted Again"
 			x: -9.5d
 			y: 6.0d
 		}
@@ -1448,7 +1448,7 @@
 				"7F5AB6D3CF3BC396"
 				"177DFD1C358441BD"
 			]
-			description: ["{ftbquest.stage_3.quests64.description0}"]
+			description: ["Lastly alloy iron and coke to obtain the steel alloy."]
 			icon: {
 				Count: 1
 				id: "tconstruct:copper_can"
@@ -1457,7 +1457,7 @@
 				}
 			}
 			id: "7429AB56C82CB25C"
-			subtitle: "{ftbquest.stage_3.quests64.subtitle}"
+			subtitle: "Contraption 18-4"
 			tasks: [
 				{
 					consume_items: false
@@ -1469,22 +1469,22 @@
 							fluid: "createbigcannons:molten_steel"
 						}
 					}
-					title: "{ftbquest.stage_3.quests64.tasks0.title}"
+					title: "Copper Can (Molten Iron)"
 					type: "item"
 				}
 				{
 					id: "37B148236DC436A2"
-					title: "{ftbquest.stage_3.quests64.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests64.title}"
+			title: "Get Alloyed"
 			x: -10.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["7429AB56C82CB25C"]
-			description: ["{ftbquest.stage_3.quests65.description0}"]
+			description: ["Pour the steel onto a cast to create the base for the next mechanism."]
 			icon: "kubejs:steel_ring"
 			id: "5A045E7A94C03FC0"
 			tasks: [
@@ -1495,14 +1495,14 @@
 				}
 				{
 					id: "4185F38DD73A6FE2"
-					title: "{ftbquest.stage_3.quests65.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_3.quests65.title}"
+			title: "Steel Ringing"
 			x: -10.0d
 			y: 10.0d
 		}
 	]
-	title: "{ftbquest.stage_3.title}"
+	title: "&f3&r Astounding Explosions"
 }

@@ -7,53 +7,57 @@ let MC = (id, x) => MOD("minecraft", id, x)
 let KJ = (id, x) => MOD("kubejs", id, x)
 let F = (id, x) =>  MOD("forge", id, x)
 let AL = (id, x) => MOD("alloyed", id, x)
+let PC = (id, x) => MOD("petrochem", id, x)
 
 ServerEvents.recipes((bot) => {
 
-    bot.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 250), [],"minecraft:desert")
-    bot.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 300), [],"minecraft:swamp")
-    bot.recipes.gearbox.pumpjack(Fluid.of("gearbox:petroleum", 100), [],"minecraft:ocean")
+    bot.custom({ "type": "petrochem:gasoline_engine_fuel", "ingredients": [{"fluid": "petrochem:gasoline", "amount": 1}], "results": [], "processingTime": 20 })
+    bot.custom({ "type": "petrochem:diesel_engine_fuel", "ingredients": [{"fluid": "petrochem:diesel", "amount": 1}], "results": [], "processingTime": 20 })
 
-    bot.recipes.createMixing(Fluid.of(KJ("oil_brine"), 270), [Fluid.of(GB("petroleum"), 250), Fluid.of(MC("water"), 20)] )
-    bot.recipes.gearboxElectrolyzing([Fluid.of(KJ("desalted_oil"), 250), GB("salt_dust"), Item.of(MC("sand")).withChance(0.2)], Fluid.of(KJ("oil_brine"), 270)).energy(100).superheated()
+    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 250), [],"minecraft:desert")
+    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 300), [],"minecraft:swamp")
+    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 100), [],"minecraft:ocean")
+
+    bot.recipes.createMixing(Fluid.of(KJ("oil_brine"), 270), [Fluid.of(PC("petroleum"), 250), Fluid.of(MC("water"), 20)] )
+    bot.recipes.petrochemElectrolyzing([Fluid.of(PC("desalted_oil"), 250), PC("salt_dust"), Item.of(MC("sand")).withChance(0.2)], Fluid.of(KJ("oil_brine"), 270)).energy(100).superheated()
 
 // auxiliary recipes
-    bot.recipes.gearboxElectrolyzing([Fluid.of(GB("hydrogen"), 60), Fluid.of(GB("oxygen"), 30)], Fluid.of(MC("water"), 90)).energy(150)
-    bot.recipes.gearboxElectrolyzing([Fluid.of(GB("hydrogen"), 300), GB("sulfur_dust")], Fluid.of(GB("hydrogen_sulfide"), 300)).energy(100)
-    bot.recipes.gearboxElectrolyzing([Fluid.of(GB("chlorine"), 500), GB("caustic_soda")], [Fluid.of(MC("water"), 1000), GB("salt_dust")]).energy(100)
-    bot.recipes.createMixing([Fluid.of("kubejs:sulfuric_acid", 1000), CR("golden_sheet")], [Fluid.of("minecraft:water", 1000), GB("sulfur_dust"), CR("golden_sheet")])
-    bot.recipes.createMixing([Fluid.of("gearbox:steam", 500)], Fluid.of("minecraft:water", 100)).heated()
-    bot.recipes.createMixing([Fluid.of("gearbox:air", 500), CR("propeller")], CR("propeller"))
+    bot.recipes.petrochemElectrolyzing([Fluid.of(PC("hydrogen"), 60), Fluid.of(PC("oxygen"), 30)], Fluid.of(MC("water"), 90)).energy(150)
+    bot.recipes.petrochemElectrolyzing([Fluid.of(PC("hydrogen"), 300), PC("sulfur_dust")], Fluid.of(PC("hydrogen_sulfide"), 300)).energy(100)
+    bot.recipes.petrochemElectrolyzing([Fluid.of(PC("chlorine"), 500), PC("caustic_soda")], [Fluid.of(MC("water"), 1000), PC("salt_dust")]).energy(100)
+    bot.recipes.createMixing([Fluid.of("petrochem:sulfuric_acid", 1000), CR("golden_sheet")], [Fluid.of("minecraft:water", 1000), PC("sulfur_dust"), CR("golden_sheet")])
+    bot.recipes.createMixing([Fluid.of("petrochem:steam", 500)], Fluid.of("minecraft:water", 100)).heated()
+    bot.recipes.createMixing([Fluid.of("petrochem:air", 500), CR("propeller")], CR("propeller"))
 
-    bot.recipes.gearboxDistilling([
-        Fluid.of("kubejs:oil", 1000),
-        Fluid.of("kubejs:light_naphta", 150),
-        Fluid.of("gearbox:volatile_gas", 150),
+    bot.recipes.petrochemDistilling([
+        Fluid.of("petrochem:oil", 1000),
+        Fluid.of("petrochem:light_naphta", 150),
+        Fluid.of("petrochem:volatile_gas", 150),
         ],
-        Fluid.of("kubejs:desalted_oil", 1300)
+        Fluid.of("petrochem:desalted_oil", 1300)
     ).mode("distil_flash")
 
     let merox = (ingredient, results) =>{
-        bot.recipes.createMixing([ Item.of("gearbox:caustic_soda").withChance(0.5)].concat(results) , [ingredient, GB("caustic_soda")])
+        bot.recipes.createMixing([ Item.of("petrochem:caustic_soda").withChance(0.5)].concat(results) , [ingredient, PC("caustic_soda")])
     }
     let desulfurize = (ingredient_name) =>{
-        bot.recipes.createMixing([ Fluid.of("gearbox:hydrogen_sulfide", 100), Fluid.of("kubejs:desulfurized_" + ingredient_name, 500)] , [Fluid.of("kubejs:" + ingredient_name, 600), Fluid.of("gearbox:hydrogen", 100) ]).heated()}
+        bot.recipes.createMixing([ Fluid.of("petrochem:hydrogen_sulfide", 100), Fluid.of("petrochem:desulfurized_" + ingredient_name, 500)] , [Fluid.of("petrochem:" + ingredient_name, 600), Fluid.of("petrochem:hydrogen", 100) ]).heated()}
 
-    merox(Fluid.of("gearbox:volatile_gas", 1000), [Fluid.of("gearbox:butane", 300), Fluid.of("gearbox:propane", 1000)])
-    bot.recipes.createMixing(Fluid.of("gearbox:lpg", 1000), [Fluid.of("gearbox:butane", 300), Fluid.of("gearbox:propane", 700)])
+    merox(Fluid.of("petrochem:volatile_gas", 1000), [Fluid.of("petrochem:butane", 300), Fluid.of("petrochem:propane", 1000)])
+    bot.recipes.createMixing(Fluid.of("petrochem:lpg", 1000), [Fluid.of("petrochem:butane", 300), Fluid.of("petrochem:propane", 1000)])
 
-    bot.recipes.createMixing(Fluid.of("gearbox:ethylene", 200), [Fluid.of("kubejs:light_naphta", 500), Fluid.of("gearbox:steam", 1000)]).heated()
-    bot.recipes.createMixing(Fluid.of("kubejs:plastic", 1000), [Fluid.of("gearbox:ethylene", 1000), Fluid.of("gearbox:air", 1000)])
+    bot.recipes.createMixing(Fluid.of("petrochem:ethylene", 200), [Fluid.of("petrochem:light_naphta", 500), Fluid.of("petrochem:steam", 1000)]).heated()
+    bot.recipes.createMixing(Fluid.of("petrochem:plastic", 1000), [Fluid.of("petrochem:ethylene", 1000), Fluid.of("petrochem:air", 1000)])
 
-    bot.recipes.gearboxDistilling([
-        Fluid.of("kubejs:oil_residue",  300),
-        Fluid.of("kubejs:light_gas_oil",150),
-        Fluid.of("kubejs:heavy_diesel", 200),
-        Fluid.of("kubejs:light_diesel", 100),
-        Fluid.of("kubejs:kerosene",     100),
-        Fluid.of("kubejs:heavy_naphta", 150)
+    bot.recipes.petrochemDistilling([
+        Fluid.of("petrochem:oil_residue",  300),
+        Fluid.of("petrochem:light_gas_oil",150),
+        Fluid.of("petrochem:heavy_diesel", 200),
+        Fluid.of("petrochem:light_diesel", 100),
+        Fluid.of("petrochem:kerosene",     100),
+        Fluid.of("petrochem:heavy_naphta", 150)
         ],
-        Fluid.of("kubejs:oil", 1000)
+        Fluid.of("petrochem:oil", 1000)
     ).mode("distil_atmospheric")
 
     desulfurize("heavy_naphta")
@@ -61,64 +65,52 @@ ServerEvents.recipes((bot) => {
     desulfurize("heavy_diesel")
     desulfurize("light_diesel")
 
-    merox(Fluid.of("kubejs:desulfurized_kerosene", 1000), [Fluid.of("ad_astra:fuel", 100)])
+    merox(Fluid.of("petrochem:desulfurized_kerosene", 1000), [Fluid.of("ad_astra:fuel", 100)])
 
-    bot.recipes.gearboxDistilling([
-        Fluid.of("kubejs:heavy_oil_residue", 200),
-        Fluid.of("kubejs:heavy_gas_oil", 200 ),
-        Fluid.of("kubejs:light_gas_oil", 100 )],
-        Fluid.of("kubejs:oil_residue", 500)
+    bot.recipes.petrochemDistilling([
+        Fluid.of("petrochem:heavy_oil_residue", 200),
+        Fluid.of("petrochem:heavy_gas_oil", 200 ),
+        Fluid.of("petrochem:light_gas_oil", 100 )],
+        Fluid.of("petrochem:oil_residue", 500)
     ).mode("distil_vacuum")
 
-    bot.recipes.createCompacting([GB("petroleum_coke", 3), Fluid.of("kubejs:fuel_oil", 300)], Fluid.of("kubejs:heavy_oil_residue", 600)).heated()
+    bot.recipes.createCompacting([PC("petroleum_coke", 3), Fluid.of("petrochem:fuel_oil", 300)], Fluid.of("petrochem:heavy_oil_residue", 600)).heated()
 
     let hydrocrack = (results, ingredient, catalyst) =>{
-        bot.recipes.createMixing(results.concat([catalyst]), [ingredient, Fluid.of("gearbox:hydrogen", 100), catalyst]).heated()
+        bot.recipes.createMixing(results.concat([catalyst]), [ingredient, Fluid.of("petrochem:hydrogen", 100), catalyst]).heated()
     }
     let catalyst_crack = (results, ingredient, catalyst) =>{
         bot.recipes.createMixing(results.concat([catalyst]), [ingredient, catalyst]).heated()
     }
 
-    bot.recipes.createMixing(Fluid.of("kubejs:hydrotreated_gas_oil", 500), [Fluid.of("kubejs:light_gas_oil", 500), Fluid.of("gearbox:hydrogen", 100)]).heated()
+    bot.recipes.createMixing([Fluid.of("petrochem:hydrogen_sulfide", 100), Fluid.of("petrochem:hydrotreated_gas_oil", 500)], [Fluid.of("petrochem:light_gas_oil", 500), Fluid.of("petrochem:hydrogen", 100)]).heated()
+    bot.recipes.createMixing(Item.of("createbigcannons:cast_iron_ingot", 1), [Fluid.of("tconstruct:molten_iron", 90), Item.of("minecraft:charcoal", 1)]).heated()
 
-    catalyst_crack([Fluid.of("kubejs:fuel_oil", 300), Fluid.of("kubejs:heavy_naphta", 200)], Fluid.of("kubejs:hydrotreated_gas_oil", 500), CR("polished_rose_quartz"))
-    bot.recipes.createMixing(Fluid.of("kubejs:alkylate", 200), [Fluid.of("kubejs:hydrotreated_gas_oil", 500), Fluid.of("kubejs:sulfuric_acid", 500)])
+    catalyst_crack([Fluid.of("petrochem:fuel_oil", 300), Fluid.of("petrochem:heavy_naphta", 200)], Fluid.of("petrochem:hydrotreated_gas_oil", 500), CR("polished_rose_quartz"))
+    bot.recipes.createMixing(Fluid.of("petrochem:alkylate", 200), [Fluid.of("petrochem:hydrotreated_gas_oil", 500), Fluid.of("petrochem:sulfuric_acid", 500)])
 
-    hydrocrack([Fluid.of("kubejs:heavy_diesel", 100), Fluid.of("kubejs:hydrocracked_gasoline", 400)], Fluid.of("kubejs:heavy_gas_oil", 500), CR("polished_rose_quartz"))
-    hydrocrack([Fluid.of("kubejs:desulfurized_light_diesel", 400)], Fluid.of("kubejs:desulfurized_heavy_diesel", 500), CR("polished_rose_quartz"))
+    hydrocrack([Fluid.of("petrochem:heavy_diesel", 100), Fluid.of("petrochem:hydrocracked_gasoline", 400)], Fluid.of("petrochem:heavy_gas_oil", 500), CR("polished_rose_quartz"))
+    hydrocrack([Fluid.of("kubejs:desulfurized_light_diesel", 400)], Fluid.of("petrochem:desulfurized_heavy_diesel", 500), CR("polished_rose_quartz"))
 
-    bot.recipes.createMixing(Fluid.of("kubejs:untreated_gasoline", 800), [Fluid.of("kubejs:desulfurized_heavy_naphta", 500), Fluid.of("kubejs:hydrocracked_gasoline", 300)])
-    bot.recipes.createMixing(Fluid.of("kubejs:gasoline", 1000), [Fluid.of("kubejs:alkylate", 200), Fluid.of("kubejs:untreated_gasoline", 800)])
+    bot.recipes.createMixing(Fluid.of("petrochem:untreated_gasoline", 800), [Fluid.of("petrochem:desulfurized_heavy_naphta", 500), Fluid.of("petrochem:hydrocracked_gasoline", 300)])
+    bot.recipes.createMixing(Fluid.of("petrochem:gasoline", 1000), [Fluid.of("petrochem:alkylate", 200), Fluid.of("petrochem:untreated_gasoline", 800)])
 
-    bot.recipes.createMixing([Fluid.of("kubejs:lubricant", 200), GB("asphalt", 2)], [Fluid.of("kubejs:fuel_oil", 300), Fluid.of("gearbox:propane", 100)])
-    bot.recipes.rubberworksCompressing(GB("asphalt"), Fluid.of("kubejs:heavy_oil_residue", 200))
+    bot.recipes.createMixing([Fluid.of("petrochem:lubricant", 200), PC("asphalt", 2)], [Fluid.of("petrochem:fuel_oil", 300), Fluid.of("petrochem:propane", 100)])
+    bot.recipes.rubberworksCompressing(PC("asphalt"), Fluid.of("petrochem:heavy_oil_residue", 200))
 
     bot.recipes.gearboxPyroprocessing(TE('coal_coke'), MC('coal'))
-    bot.recipes.createMixing(Fluid.of(BC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), GB('petroleum_coke')]).heated()
+    bot.recipes.createMixing(Fluid.of(BC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), PC('petroleum_coke')]).heated()
     bot.recipes.createMixing(Fluid.of(BC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), TE('coal_coke')]).heated()
 
-    bot.shaped(GB('distillation_output'), [
-        'SSS',
-        'VFP',
-        'SSS'
-    ], {S: AL('steel_sheet'), V: CR('fluid_valve'), F: CR('smart_fluid_pipe'), P: GB('steel_fluid_pipe')})
-    bot.shaped(GB('distillation_controller'), [
-        'SSS',
-        'FPV',
-        'SSS'
-    ], {S: AL('steel_sheet'), V: CR('stressometer'), F: AL('steel_casing'), P: KJ('brass_machine')})
-	bot.shaped(KJ('explosive_machine'), [
-			'SSS',
-			'SCS',
-			'SSS'
-		], {C: 'alloyed:steel_casing', S: KJ('explosive_mechanism')})
-    bot.shaped(GB('steel_fluid_pipe', 6), [
-        'SCS'
-    ], {C: AL('steel_ingot'), S: AL('steel_sheet')})
-    bot.shaped(GB('steel_fluid_pipe', 6), [
-        'S', 'C', 'S'
-    ], {C: AL('steel_ingot'), S: AL('steel_sheet')})
+    bot.shaped(PC('distillation_output'), ['SSS', 'VFP', 'SSS'], {S: AL('steel_sheet'), V: CR('fluid_valve'), F: CR('smart_fluid_pipe'), P: PC('steel_fluid_pipe')})
+    bot.shaped(PC('distillation_controller'), ['SSS', 'FPV', 'SSS'], {S: AL('steel_sheet'), V: CR('stressometer'), F: AL('steel_casing'), P: KJ('brass_machine')})
+	bot.shaped(KJ('explosive_machine'), ['SSS', 'SCS', 'SSS'], {C: 'alloyed:steel_casing', S: KJ('explosive_mechanism')})
+    bot.shaped(PC('steel_fluid_pipe', 6), ['SCS'], {C: AL('steel_ingot'), S: AL('steel_sheet')})
+    bot.shaped(PC('steel_fluid_pipe', 6), ['S', 'C', 'S'], {C: AL('steel_ingot'), S: AL('steel_sheet')})
 
+    bot.shaped(PC('medium_engine'), ['SLS', 'BMF', 'TCT'], {T: 'alloyed:steel_block', C: KJ('explosive_machine'), S: CR('steam_engine'), L: CR('stock_link'), B: AL('bronze_block'), M: PC('small_engine'), F: PC('flarestack')})
+    bot.shaped(PC('small_engine'), ['B B', 'SCS', 'DMD'], {B: AL('bronze_ingot'), S: CR('steam_engine'), D: AL('steel_block'), C: CR('stressometer'), M: KJ('explosive_machine')})
+    bot.shaped(PC('flarestack'), ['S S', 'SCS', 'IBI'], {B: AL('bronze_ingot'), I: CR('industrial_iron_block'), S: AL('steel_ingot'), C: CR('empty_blaze_burner')})
 
 	bot.custom({
 		"type": "tconstruct:casting_table",
@@ -134,10 +126,10 @@ ServerEvents.recipes((bot) => {
 		KJ('explosive_mechanism'),
 	], CR('precision_mechanism'), [
 		bot.recipes.createDeploying(t, [t, KJ("steel_ring")]),
-		bot.recipes.createFilling(t, [t, Fluid.of("kubejs:desulfurized_light_diesel",  90)]),
-		bot.recipes.createFilling(t, [t, Fluid.of("kubejs:gasoline", 120)]),
-		bot.recipes.createFilling(t, [t, Fluid.of("kubejs:lubricant", 120)]),
-		bot.recipes.createFilling(t, [t, Fluid.of("gearbox:lpg", 120)]),
+		bot.recipes.createFilling(t, [t, Fluid.of("petrochem:diesel", 90)]),
+		bot.recipes.createFilling(t, [t, Fluid.of("petrochem:gasoline", 120)]),
+		bot.recipes.createFilling(t, [t, Fluid.of("petrochem:lubricant", 120)]),
+		bot.recipes.createFilling(t, [t, Fluid.of("petrochem:lpg", 120)]),
 		bot.recipes.gearboxMechanizing(t, t)
 	]).transitionalItem(t)
 		.loops(1)

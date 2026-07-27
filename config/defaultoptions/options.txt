@@ -1,6 +1,6 @@
 version:3465
 autoJump:false
-operatorItemsTab:false
+operatorItemsTab:true
 autoSuggestions:true
 chatColors:true
 chatLinks:true
@@ -41,9 +41,9 @@ graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
-renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","delightful:overhauls","file/Stay_True_1.20.zip","resources/BVB-Edited.zip","file/staytrue1.20.1.zip","file/FA+All_Extensions-v1.6.zip","file/FreshAnimations_v1.10.1.zip","file/Create_Ultra_v1.0.zip","file/Tom\u0027s Create Style 1.0.zip","file/Create Back On Track 1.5","resources/simis_redzits"]
-incompatibleResourcePacks:["resources/BVB-Edited.zip","resources/simis_redzits"]
+renderClouds:"false"
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","delightful:overhauls","file/Stay_True_1.20.zip","file/FA+All_Extensions-v1.7.zip","file/FreshAnimations_v1.10.3.zip","file/Create_Ultra_v1.0.zip","file/Create Back On Track 1.7.zip","file/staytrue1.20.1.zip","resources/simis_redzits"]
+incompatibleResourcePacks:["resources/simis_redzits"]
 lastServer:
 lang:en_us
 soundDevice:""
@@ -53,7 +53,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:true
+advancedItemTooltips:false
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0

@@ -30,22 +30,21 @@
 		{
 			dependencies: ["5799D55BB26BA52C"]
 			description: [
-				"{ftbquest.stage_1.quests0.description0}"
+				"The first and best contraption to kickstart the automation revolution is an automatic tree farm!"
 				""
-				"{ftbquest.stage_1.quests0.description1}"
+				"A simple tree farm can be made with a &6Mechanical Bearing&r, some &6Mechanical Saws&r and &6Deployers&r."
 				""
-				"{ftbquest.stage_1.quests0.description2}"
+				"The farm will not only provide crafting material, but also food and fuel for your industrialization."
 				""
-				"{ftbquest.stage_1.quests0.description3}"
+				"&lTip: only press the checkmarck once the item has been &o&6automated&r"
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:spruce_log"
 			id: "2CB570195DA7E106"
 			shape: "diamond"
-			subtitle: "{ftbquest.stage_1.quests0.subtitle}"
+			subtitle: "Contraption 1"
 			tasks: [
 				{
-					icon: "chipped:nailed_dark_oak_log"
 					id: "2CE84BAB16018E31"
 					item: {
 						Count: 1
@@ -55,30 +54,30 @@
 						}
 					}
 					only_from_crafting: false
-					title: "{ftbquest.stage_1.quests0.tasks0.title}"
+					title: "Any #minecraft:logs"
 					type: "item"
 				}
 				{
 					id: "5F0E2C373A6A6983"
-					title: "{ftbquest.stage_1.quests0.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests0.title}"
+			title: "Automatic Forest"
 			x: 2.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5799D55BB26BA52C"]
 			description: [
-				"{ftbquest.stage_1.quests1.description0}"
+				"As the name implies, &6&oandesite alloy&r requires &7&oandesite&r."
 				""
-				"{ftbquest.stage_1.quests1.description1}"
+				"A factory cannot be manually fed forever, to automate andesite production, use a &6Mechanical Extruder&r."
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:andesite"
 			id: "106C6DFDCB97327C"
-			subtitle: "{ftbquest.stage_1.quests1.subtitle}"
+			subtitle: "Contraption 2-1"
 			tasks: [
 				{
 					consume_items: false
@@ -88,27 +87,26 @@
 				}
 				{
 					id: "29B78BB983BE39FC"
-					title: "{ftbquest.stage_1.quests1.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests1.title}"
+			title: "Stone Replicator"
 			x: 4.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["2CB570195DA7E106"]
 			description: [
-				"{ftbquest.stage_1.quests2.description0}"
+				"Automatic processing of wood is required for a fully automated factory."
 				""
-				"{ftbquest.stage_1.quests2.description1}"
+				"The first step is stripping the logs in an upward facing &6Mechanical Saw&r."
 			]
 			icon: "minecraft:stripped_spruce_log"
 			id: "532EFE32C3A515B5"
-			subtitle: "{ftbquest.stage_1.quests2.subtitle}"
+			subtitle: "Contraption 4-1"
 			tasks: [
 				{
-					icon: "minecraft:stripped_spruce_log"
 					id: "53006D3936A3820C"
 					item: {
 						Count: 1
@@ -117,32 +115,31 @@
 							value: "forge:stripped_logs"
 						}
 					}
-					title: "{ftbquest.stage_1.quests2.tasks0.title}"
+					title: "Any #forge:stripped_logs"
 					type: "item"
 				}
 				{
 					id: "356F4B9A9F29C0E1"
-					title: "{ftbquest.stage_1.quests2.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests2.title}"
+			title: "Log Stripper"
 			x: 2.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["532EFE32C3A515B5"]
 			description: [
-				"{ftbquest.stage_1.quests3.description0}"
+				"Cut even further for &6planks&r..."
 				""
-				"{ftbquest.stage_1.quests3.description1}"
+				"This time you will need to split for 3 different paths."
 			]
 			icon: "minecraft:spruce_planks"
 			id: "19921941321965A4"
-			subtitle: "{ftbquest.stage_1.quests3.subtitle}"
+			subtitle: "Contraption 4-2"
 			tasks: [
 				{
-					icon: "minecraft:spruce_planks"
 					id: "04D4FB03F3118AFC"
 					item: {
 						Count: 1
@@ -151,28 +148,27 @@
 							value: "minecraft:planks"
 						}
 					}
-					title: "{ftbquest.stage_1.quests3.tasks0.title}"
+					title: "Any #minecraft:planks"
 					type: "item"
 				}
 				{
 					id: "19EB662DCA394703"
-					title: "{ftbquest.stage_1.quests3.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests3.title}"
+			title: "Plank Cutter"
 			x: 2.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["19921941321965A4"]
-			description: ["{ftbquest.stage_1.quests4.description0}"]
+			description: ["Cutting even further yields slabs..."]
 			icon: "minecraft:spruce_slab"
 			id: "59E4A6163753BC12"
-			subtitle: "{ftbquest.stage_1.quests4.subtitle}"
+			subtitle: "Contraption 4-3"
 			tasks: [
 				{
-					icon: "minecraft:spruce_slab"
 					id: "6D5B894276285C20"
 					item: {
 						Count: 1
@@ -181,16 +177,16 @@
 							value: "minecraft:slabs"
 						}
 					}
-					title: "{ftbquest.stage_1.quests4.tasks0.title}"
+					title: "Any #minecraft:slabs"
 					type: "item"
 				}
 				{
 					id: "235B4E5F326BC176"
-					title: "{ftbquest.stage_1.quests4.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests4.title}"
+			title: "Cutter of Cut Planks"
 			x: 1.0d
 			y: 8.0d
 		}
@@ -199,10 +195,10 @@
 				"2E7021512C3B8841"
 				"7C08D832EEA6483E"
 			]
-			description: ["{ftbquest.stage_1.quests5.description0}"]
+			description: ["Combine the &o&7andesitic blend&r with &o&bzinc&r to create &6&oAndesite Alloy&r, the base material for all your kinetic endeavours."]
 			icon: "create:andesite_alloy"
 			id: "73FCA432DEFC1DED"
-			subtitle: "{ftbquest.stage_1.quests5.subtitle}"
+			subtitle: "Contraption 5"
 			tasks: [
 				{
 					consume_items: false
@@ -212,11 +208,11 @@
 				}
 				{
 					id: "6AA98FC4680D6521"
-					title: "{ftbquest.stage_1.quests5.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests5.title}"
+			title: "Andezinc Mixer"
 			x: 5.5d
 			y: 8.0d
 		}
@@ -228,13 +224,13 @@
 				"73FCA432DEFC1DED"
 			]
 			description: [
-				"{ftbquest.stage_1.quests6.description0}"
+				"Bring the &6Mechanism Base&r along with &6Cogwheels&r, &6Large Cogwheels&r and &6Andesite Alloy&r into the final contraption of this chapter."
 				""
-				"{ftbquest.stage_1.quests6.description1}"
+				"&6Deploy&r both cogwheels and alloy into the base, finally, use a &6Mechanical Press&r to assemble the &l&dRotation Mechanism&r"
 			]
 			icon: "kubejs:rotation_mechanism"
 			id: "675C395B2074C24C"
-			subtitle: "{ftbquest.stage_1.quests6.subtitle}"
+			subtitle: "Contraption 7"
 			tasks: [
 				{
 					consume_items: false
@@ -244,23 +240,23 @@
 				}
 				{
 					id: "34C54664AB22ECFD"
-					title: "{ftbquest.stage_1.quests6.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests6.title}"
+			title: "Deploy, Deploy, Deploy."
 			x: 4.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["5A8DF2D8553904BF"]
 			description: [
-				"{ftbquest.stage_1.quests7.description0}"
+				"Welcome to the Factory Guide!"
 				""
-				"{ftbquest.stage_1.quests7.description1}"
-				"{ftbquest.stage_1.quests7.description2}"
+				"This guide will explain all the processes required to achieve your current end goal: \\n"
+				"The &6&lRotation Mechanism&r"
 				""
-				"{ftbquest.stage_1.quests7.description3}"
+				"This guide is &lnot mandatory&r for progression, although very helpful navigating the recipe madness"
 				""
 				""
 			]
@@ -278,17 +274,17 @@
 				id: "1B5F1E9F5EE6EB2C"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_1.quests7.title}"
+			title: "And So It Begins!"
 			x: 4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["675C395B2074C24C"]
 			description: [
-				"{ftbquest.stage_1.quests8.description0}"
+				"Congratulations, you have finished &lChapter 1&r.\\n\\nThe passive income of &6Rotation Mechanisms&r is bound to accelerate the pace of automation."
 				""
-				"{ftbquest.stage_1.quests8.description1}"
-				"{ftbquest.stage_1.quests8.description2}"
+				"Before moving on, check back through your factory and search for any major bottlenecks."
+				"It'd be a shame if a really efficient andesitic blend generator is held back only by the zinc not coming in quickly enough."
 			]
 			icon: "gearbox:kinetic_machine"
 			id: "3F45DFEF31838A00"
@@ -323,20 +319,20 @@
 				}
 				{
 					id: "209277DFECF40580"
-					title: "{ftbquest.stage_1.quests8.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests8.title}"
+			title: "Chapter 1 Complete!"
 			x: 4.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["5799D55BB26BA52C"]
 			description: [
-				"{ftbquest.stage_1.quests9.description0}"
+				"The flowgraph of this guide may suggest that items aren't accessible without automation."
 				""
-				"{ftbquest.stage_1.quests9.description1}"
+				"But be free to use machines from later chapters with a some manual grind."
 			]
 			icon: "ae2:speed_card"
 			id: "6892AE55581393C6"
@@ -345,21 +341,21 @@
 				id: "4DC18CB3A19686E5"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_1.quests9.title}"
+			title: "Speedrun"
 			x: 6.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["5799D55BB26BA52C"]
 			description: [
-				"{ftbquest.stage_1.quests10.description0}"
+				"The igneous brother of andesite is also required for the production of &oAndesite Alloy&r"
 				""
-				"{ftbquest.stage_1.quests10.description1}"
+				"You can also produce &cGranite&r with &6Mechanical Extruders&r"
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:granite"
 			id: "501BEE898CF72C5B"
-			subtitle: "{ftbquest.stage_1.quests10.subtitle}"
+			subtitle: "Contraption 3-1"
 			tasks: [
 				{
 					consume_items: false
@@ -369,20 +365,20 @@
 				}
 				{
 					id: "49A1C92DD50F6DE5"
-					title: "{ftbquest.stage_1.quests10.tasks1.title}"
+					title: "automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests10.title}"
+			title: "Stone Replicator #2"
 			x: 5.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["501BEE898CF72C5B"]
-			description: ["{ftbquest.stage_1.quests11.description0}"]
+			description: ["The tiny portion of &bAsurine&r contained in &cgranite&r can be extracted by milling with a &6Millstone&r"]
 			icon: "kubejs:asurine_bits"
 			id: "2487B7A0428E624C"
-			subtitle: "{ftbquest.stage_1.quests11.subtitle}"
+			subtitle: "Contraption 3-2"
 			tasks: [
 				{
 					consume_items: false
@@ -392,20 +388,20 @@
 				}
 				{
 					id: "6341672246BC564B"
-					title: "{ftbquest.stage_1.quests11.tasks1.title}"
+					title: "automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests11.title}"
+			title: "Granitic milling"
 			x: 5.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["2487B7A0428E624C"]
-			description: ["{ftbquest.stage_1.quests12.description0}"]
+			description: ["To further down purify the zinc content of asurine, wash it using a &6Mechanical Fan&r with &bWater&r"]
 			icon: "create:zinc_nugget"
 			id: "2E7021512C3B8841"
-			subtitle: "{ftbquest.stage_1.quests12.subtitle}"
+			subtitle: "Contraption 3-3"
 			tasks: [
 				{
 					consume_items: false
@@ -415,11 +411,11 @@
 				}
 				{
 					id: "233A16D2C53578E0"
-					title: "{ftbquest.stage_1.quests12.tasks1.title}"
+					title: "automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests12.title}"
+			title: "Azure Washing"
 			x: 5.5d
 			y: 5.5d
 		}
@@ -428,10 +424,10 @@
 				"19921941321965A4"
 				"330C6063A4E78765"
 			]
-			description: ["{ftbquest.stage_1.quests13.description0}"]
+			description: ["Use a &6Deployer&r to insert teeth onto a &7&oshaft&r to create a &6Cogwheel&r"]
 			icon: "create:cogwheel"
 			id: "267DD6A6E01F3B26"
-			subtitle: "{ftbquest.stage_1.quests13.subtitle}"
+			subtitle: "Contraption 6-2"
 			tasks: [
 				{
 					id: "3D7540C2D2D55F5B"
@@ -440,11 +436,11 @@
 				}
 				{
 					id: "5BBF863C6FF8EFBB"
-					title: "{ftbquest.stage_1.quests13.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests13.title}"
+			title: "Teething"
 			x: 4.0d
 			y: 9.5d
 		}
@@ -453,10 +449,10 @@
 				"19921941321965A4"
 				"267DD6A6E01F3B26"
 			]
-			description: ["{ftbquest.stage_1.quests14.description0}"]
+			description: ["Once more use a &6Deployer&r to add even more teeth, creating a &6Large Cogwheel&r"]
 			icon: "create:large_cogwheel"
 			id: "5F120415541E741D"
-			subtitle: "{ftbquest.stage_1.quests14.subtitle}"
+			subtitle: "Contraption 6-3"
 			tasks: [
 				{
 					id: "1F92D4C8C97B6C50"
@@ -465,20 +461,20 @@
 				}
 				{
 					id: "7E4785727F478623"
-					title: "{ftbquest.stage_1.quests14.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests14.title}"
+			title: "Extra Teething"
 			x: 2.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["73FCA432DEFC1DED"]
-			description: ["{ftbquest.stage_1.quests15.description0}"]
+			description: ["The &6Rotation Mechanism&r production demands &6Cogwheels&r, which in turn require &6Shafts&r, saw &7&oandesite alloy&r in an upwards facing &6Mechanical Saw&r to produce shafts."]
 			icon: "create:shaft"
 			id: "330C6063A4E78765"
-			subtitle: "{ftbquest.stage_1.quests15.subtitle}"
+			subtitle: "Contraption 6-1"
 			tasks: [
 				{
 					id: "318E66111D02E9C6"
@@ -487,17 +483,17 @@
 				}
 				{
 					id: "3DA9015FF1E8CD30"
-					title: "{ftbquest.stage_1.quests15.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests15.title}"
+			title: "Shifting Alloy"
 			x: 4.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["5799D55BB26BA52C"]
-			description: ["{ftbquest.stage_1.quests16.description0}"]
+			description: ["If you want to keep the grind away for now, you can buy machines to accelerate your progression."]
 			hide_dependency_lines: true
 			icon: "kubejs:andesite_machine"
 			id: "718B4AEA38DD5EEB"
@@ -508,7 +504,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.stage_1.quests16.subtitle}"
+			subtitle: "8 Silver"
 			tasks: [{
 				consume_items: true
 				count: 8L
@@ -517,7 +513,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_1.quests16.title}"
+			title: "Cheap Machines"
 			x: -4.5d
 			y: -1.0d
 		}
@@ -533,7 +529,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.stage_1.quests17.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 16L
@@ -542,7 +538,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_1.quests17.title}"
+			title: "Extra Machinery"
 			x: -3.0d
 			y: -1.0d
 		}
@@ -558,7 +554,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.stage_1.quests18.subtitle}"
+			subtitle: "24 Silver"
 			tasks: [{
 				consume_items: true
 				count: 24L
@@ -567,16 +563,16 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.stage_1.quests18.title}"
+			title: "Expensive Machinery"
 			x: -1.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["106C6DFDCB97327C"]
-			description: ["{ftbquest.stage_1.quests19.description0}"]
+			description: ["Use a &6Kiln&r to melt down andesite into andesite blend for mixing."]
 			icon: "kubejs:andesite_blend"
 			id: "7C08D832EEA6483E"
-			subtitle: "{ftbquest.stage_1.quests19.subtitle}"
+			subtitle: "Contraption 2-2"
 			tasks: [
 				{
 					id: "1D9BA8FEA65D7C0A"
@@ -585,20 +581,20 @@
 				}
 				{
 					id: "59ABB61749AE043A"
-					title: "{ftbquest.stage_1.quests19.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1.quests19.title}"
+			title: "Kinetic Burning"
 			x: 4.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["59E4A6163753BC12"]
-			description: ["{ftbquest.stage_1.quests20.description0}"]
+			description: ["... and now you have a base for your future machinations."]
 			icon: "kubejs:rotation_mechanism_base"
 			id: "378374260932467B"
-			subtitle: "{ftbquest.stage_1.quests20.subtitle}"
+			subtitle: "Contraption 4-4"
 			tasks: [
 				{
 					id: "21AA91C94E91E492"
@@ -607,7 +603,7 @@
 				}
 				{
 					id: "0A9B1428BC6F7778"
-					title: "{ftbquest.stage_1.quests20.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -617,9 +613,9 @@
 		{
 			dependencies: ["5799D55BB26BA52C"]
 			description: [
-				"{ftbquest.stage_1.quests21.description0}"
+				"Most quests are organized in &ocontraptions&r, these are logical blocks to aid you in organizing your factory."
 				""
-				"{ftbquest.stage_1.quests21.description1}"
+				"As always, nothing in this guide is mandatory, you may reorganize them if you so desire."
 			]
 			icon: "create:cogwheel"
 			id: "62B8F282B95487F3"
@@ -628,10 +624,10 @@
 				id: "31EF7249526AF252"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_1.quests21.title}"
+			title: "Contraptions"
 			x: 6.0d
 			y: -1.5d
 		}
 	]
-	title: "{ftbquest.stage_1.title}"
+	title: "&f1&r Mechanic Assimilation"
 }

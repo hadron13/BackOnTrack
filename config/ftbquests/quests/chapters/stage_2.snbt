@@ -19,11 +19,11 @@
 		{
 			dependencies: ["28C41C062843C2CA"]
 			description: [
-				"{ftbquest.stage_2.quests0.description0}"
+				"The next target of your machinations will be the Electron Tube, deploying it among other ingredients over the rotation mechanism will propel you into the next tier of engineering."
 				""
-				"{ftbquest.stage_2.quests0.description1}"
+				"This is the first large scale production line in the progression, so be ware of even greater upcoming challenges."
 				""
-				"{ftbquest.stage_2.quests0.description2}"
+				"Happy Engineering!"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:rotation_mechanism"
@@ -38,13 +38,13 @@
 				id: "2B249158FB9D453B"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_2.quests0.title}"
+			title: "Chapter 2 Start!"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["53735DC4231AB566"]
-			description: ["{ftbquest.stage_2.quests1.description0}"]
+			description: ["Route the nuggets into your High-Temperature melting equipment. A &6Melter&r from Tinkers' Construct, for example."]
 			icon: {
 				Count: 1
 				id: "tconstruct:copper_can"
@@ -53,7 +53,7 @@
 				}
 			}
 			id: "2167272204B6627B"
-			subtitle: "{ftbquest.stage_2.quests1.subtitle}"
+			subtitle: "Contraption 18-4"
 			tasks: [
 				{
 					consume_items: false
@@ -65,16 +65,16 @@
 							fluid: "tconstruct:molten_iron"
 						}
 					}
-					title: "{ftbquest.stage_2.quests1.tasks0.title}"
+					title: "Copper Can (Molten Iron)"
 					type: "item"
 				}
 				{
 					id: "75C982848F2CEA85"
-					title: "{ftbquest.stage_2.quests1.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests1.title}"
+			title: "Get Melted"
 			x: 1.0d
 			y: 6.5d
 		}
@@ -83,10 +83,10 @@
 				"06B061C0EE94BC90"
 				"7A4CA5CF1CEFE8CA"
 			]
-			description: ["{ftbquest.stage_2.quests2.description0}"]
+			description: ["Insert the red gem carefully with a &6Deployer&r to create this funny tube that's incredibly useful."]
 			icon: "create:electron_tube"
 			id: "5351AF6CA73CB8E0"
-			subtitle: "{ftbquest.stage_2.quests2.subtitle}"
+			subtitle: "Contraption 19-3"
 			tasks: [
 				{
 					consume_items: false
@@ -96,25 +96,25 @@
 				}
 				{
 					id: "1D7C84803766FD04"
-					title: "{ftbquest.stage_2.quests2.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests2.title}"
+			title: "Precision Insert"
 			x: -1.0d
 			y: 10.5d
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
 			description: [
-				"{ftbquest.stage_2.quests3.description0}"
+				"Known in the business as the 'Iron Generator', you will now be creating metal from Cobblestone."
 				""
-				"{ftbquest.stage_2.quests3.description1}"
+				"Start with a few &6Mechanical Extruders&r that will provide the necessary cobblestone."
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:cobblestone"
 			id: "0E46C1FCE5AEB1DF"
-			subtitle: "{ftbquest.stage_2.quests3.subtitle}"
+			subtitle: "Contraption 18-1"
 			tasks: [
 				{
 					consume_items: false
@@ -124,11 +124,11 @@
 				}
 				{
 					id: "5E676D2CC5975AEA"
-					title: "{ftbquest.stage_2.quests3.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests3.title}"
+			title: "Iron for Days"
 			x: 4.5d
 			y: 3.5d
 		}
@@ -137,10 +137,10 @@
 				"5351AF6CA73CB8E0"
 				"6B5785E94F8F0EE1"
 			]
-			description: ["{ftbquest.stage_2.quests4.description0}"]
+			description: ["Bringing together the Tubes and Rotation Mechanisms using a row of &6Deployers&r and a &6Mechanizing Press&r concludes your second Assembly Line."]
 			icon: "create:precision_mechanism"
 			id: "19715EBCBBA1B4AD"
-			subtitle: "{ftbquest.stage_2.quests4.subtitle}"
+			subtitle: "Contraption 21"
 			tasks: [
 				{
 					consume_items: false
@@ -150,20 +150,20 @@
 				}
 				{
 					id: "002032AE65148DBD"
-					title: "{ftbquest.stage_2.quests4.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests4.title}"
+			title: "Keep on Deploying"
 			x: 0.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["19715EBCBBA1B4AD"]
 			description: [
-				"{ftbquest.stage_2.quests5.description0}"
+				"Congrats! Now you have a passive supply of Precision Mechanisms. Think of all the options you have access to!"
 				""
-				"{ftbquest.stage_2.quests5.description1}"
+				"After cleaning up and briefly scanning for bottlenecks, go ahead and check back with the Overview section."
 			]
 			icon: "kubejs:brass_machine"
 			id: "7FC4D1E69377271D"
@@ -198,20 +198,20 @@
 				}
 				{
 					id: "2650AD3F94ECF2A7"
-					title: "{ftbquest.stage_2.quests5.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests5.title}"
+			title: "Chapter 2 Complete!"
 			x: 0.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["0E46C1FCE5AEB1DF"]
-			description: ["{ftbquest.stage_2.quests6.description0}"]
+			description: ["The Cobblestone first needs to be milled down into Gravel with a &6Millstone&r."]
 			icon: "minecraft:gravel"
 			id: "1139F2E4E6FCFE29"
-			subtitle: "{ftbquest.stage_2.quests6.subtitle}"
+			subtitle: "Contraption 18-2"
 			tasks: [
 				{
 					consume_items: false
@@ -221,20 +221,20 @@
 				}
 				{
 					id: "63F3877902E01590"
-					title: "{ftbquest.stage_2.quests6.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests6.title}"
+			title: "De-Chunkify"
 			x: 3.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["1139F2E4E6FCFE29"]
-			description: ["{ftbquest.stage_2.quests7.description0}"]
+			description: ["Washing the Gravel with an &6Encased Fan&r leaves you with Iron Nuggets and Flint."]
 			icon: "minecraft:iron_nugget"
 			id: "53735DC4231AB566"
-			subtitle: "{ftbquest.stage_2.quests7.subtitle}"
+			subtitle: "Contraption 18-3"
 			tasks: [
 				{
 					consume_items: false
@@ -244,20 +244,20 @@
 				}
 				{
 					id: "64B405696E96FFCD"
-					title: "{ftbquest.stage_2.quests7.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests7.title}"
+			title: "Ferric Traces"
 			x: 2.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["4309AFCC879D1385"]
-			description: ["{ftbquest.stage_2.quests8.description0}"]
+			description: ["Done! The crystal is finally &oredy&r to go."]
 			icon: "create:polished_rose_quartz"
 			id: "06B061C0EE94BC90"
-			subtitle: "{ftbquest.stage_2.quests8.subtitle}"
+			subtitle: "Contraption 17-4"
 			tasks: [
 				{
 					consume_items: false
@@ -267,54 +267,54 @@
 				}
 				{
 					id: "0F6DB8FCC5C16A94"
-					title: "{ftbquest.stage_2.quests8.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests8.title}"
+			title: "Grown and Redy"
 			x: -1.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
 			description: [
-				"{ftbquest.stage_2.quests9.description0}"
+				"Not part of the Mechanism Chain, yet very important for creating relevant machines."
 				""
-				"{ftbquest.stage_2.quests9.description1}"
+				"Using Melters, Fluid Pipes and a Mechanical Mixer, you can create a couple of different metal alloys. Brass is one of them."
 				""
-				"{ftbquest.stage_2.quests9.description2}"
+				"Pumping the Molten Alloy into a Casting Table or Basin will Solidify it into usable Ingots."
 				""
-				"{ftbquest.stage_2.quests9.description3}"
+				"For less hassles with manual effort, it is recommended to set up Ingot-to-Ingot semi-automation for creating Alloys using the setup above."
 			]
 			hide_dependency_lines: false
 			icon: "create:brass_ingot"
 			id: "174E3A810535CAAC"
 			shape: "diamond"
-			subtitle: "{ftbquest.stage_2.quests9.subtitle}"
+			subtitle: "Contraption 10"
 			tasks: [{
 				id: "4418A795B9FB076D"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_2.quests9.title}"
+			title: "The Alloy Mixer"
 			x: 2.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
 			description: [
-				"{ftbquest.stage_2.quests10.description0}"
+				"The meteor compound known as skystone possesses many strange but useful properties, one of which allows it to create redstone in an industrial scale, which will be required for our next pursuit: the &l&celectron tubes&r"
 				""
-				"{ftbquest.stage_2.quests10.description1}"
+				"To acquire said compound by fully automated means, we must first find ancient deposits where the largest meteors have been long ago buried under hundreds of blocks of sediment, those will always have an indicator on the surface composed of certus quartz and flowers."
 				""
-				"{ftbquest.stage_2.quests10.description2}"
+				"As for the extraction operation, a core drill shall be used to drill out skystone from the deposit below as opposed to regular mining operations."
 				""
 				"{image:kubejs:textures/images/thing.png width:160 height:100 align:1}"
-				"{ftbquest.stage_2.quests10.description3}"
+				"    &aCircles indicating a deposit below"
 			]
 			hide_dependency_lines: true
 			icon: "ae2:sky_stone_block"
 			id: "0F59BB288184ECF5"
-			subtitle: "{ftbquest.stage_2.quests10.subtitle}"
+			subtitle: "Contraption 12"
 			tasks: [
 				{
 					consume_items: false
@@ -330,22 +330,22 @@
 				}
 				{
 					id: "38ABAE686606C105"
-					title: "{ftbquest.stage_2.quests10.tasks2.title}"
+					title: "automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests10.title}"
+			title: "Sky Stone Infinite"
 			x: -1.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
 			description: [
-				"{ftbquest.stage_2.quests11.description0}"
+				"Your factory may be thousands of blocks away from the nearest sky stone deposit."
 				""
-				"{ftbquest.stage_2.quests11.description1}"
+				"The only way to easily transfer items through huge distances is by train, which will need some amount of brass, sturdy sheets and iron."
 				""
-				"{ftbquest.stage_2.quests11.description2}"
+				"Complete &6Chapter 1B&r to produce the machinery needed for a transport network."
 			]
 			icon: "create:track"
 			id: "6DD4379FE9AE1B6F"
@@ -356,7 +356,7 @@
 					icon: "create:track_station"
 					id: "166BD7C2C0610CD3"
 					team_reward: false
-					title: "{ftbquest.stage_2.quests11.rewards0.title}"
+					title: "Ponder Stations"
 					type: "command"
 				}
 				{
@@ -365,25 +365,25 @@
 					icon: "create:track"
 					id: "2DCEE1519D04F95E"
 					team_reward: false
-					title: "{ftbquest.stage_2.quests11.rewards1.title}"
+					title: "Ponder Tracks"
 					type: "command"
 				}
 			]
 			tasks: [{
 				id: "3288FFB5F1D9311B"
-				title: "{ftbquest.stage_2.quests11.tasks0.title}"
+				title: "aknowleged"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_2.quests11.title}"
+			title: "Train Network"
 			x: -2.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["0F59BB288184ECF5"]
-			description: ["{ftbquest.stage_2.quests12.description0}"]
+			description: ["Skystone is hard, the first step is breaking it down into more manageable chunks with a &6Millstone"]
 			icon: "kubejs:impure_sky_chunks"
 			id: "10AB342600434E1F"
-			subtitle: "{ftbquest.stage_2.quests12.subtitle}"
+			subtitle: "Contrapition 14-1"
 			tasks: [
 				{
 					consume_items: false
@@ -393,11 +393,11 @@
 				}
 				{
 					id: "78BFCCE400870B9F"
-					title: "{ftbquest.stage_2.quests12.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests12.title}"
+			title: "Applied Grindings"
 			x: -1.5d
 			y: -2.0d
 		}
@@ -406,10 +406,10 @@
 				"10AB342600434E1F"
 				"014C3F1F43569945"
 			]
-			description: ["{ftbquest.stage_2.quests13.description0}"]
+			description: ["Sediment buildup over millions of years requires profound cleansing of the rocks, start the process by using an ash solution in a &6Mechanical Mixer&r"]
 			icon: "kubejs:clean_sky_chunks"
 			id: "71F74B9556AEC85F"
-			subtitle: "{ftbquest.stage_2.quests13.subtitle}"
+			subtitle: "Contraption 14-2"
 			tasks: [
 				{
 					consume_items: false
@@ -419,11 +419,11 @@
 				}
 				{
 					id: "022B5817DB551FAA"
-					title: "{ftbquest.stage_2.quests13.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests13.title}"
+			title: "Alien Rock Cleansing"
 			x: -1.0d
 			y: 0.5d
 		}
@@ -432,10 +432,10 @@
 				"71F74B9556AEC85F"
 				"367F49B4D4181432"
 			]
-			description: ["{ftbquest.stage_2.quests14.description0}"]
+			description: ["Cut into even smaller chunks and forward to more cleansing. You can use either a &6Deployer&r or &6Slicer&r"]
 			icon: "kubejs:cut_sky_chunks"
 			id: "54324AF50D307D62"
-			subtitle: "{ftbquest.stage_2.quests14.subtitle}"
+			subtitle: "Contraption 14-3"
 			tasks: [
 				{
 					consume_items: false
@@ -445,11 +445,11 @@
 				}
 				{
 					id: "3F2FE363A6730390"
-					title: "{ftbquest.stage_2.quests14.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests14.title}"
+			title: "Chef's Cut"
 			x: -3.0d
 			y: 1.5d
 		}
@@ -458,10 +458,10 @@
 				"54324AF50D307D62"
 				"1093C4FC660FDECA"
 			]
-			description: ["{ftbquest.stage_2.quests15.description0}"]
+			description: ["The abrasive approach of diorite dust finally turns the skystone into lab purity grade skystone by using a &6Mechanical Mixer&r."]
 			icon: "kubejs:pure_sky_chunks"
 			id: "05995BA72CAA9BE8"
-			subtitle: "{ftbquest.stage_2.quests15.subtitle}"
+			subtitle: "Contraption 14-4"
 			tasks: [
 				{
 					consume_items: false
@@ -471,20 +471,20 @@
 				}
 				{
 					id: "48DB6FC232C201D5"
-					title: "{ftbquest.stage_2.quests15.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests15.title}"
+			title: "Skystoningly Pure"
 			x: -2.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["61F47F24DE8AB1D4"]
-			description: ["{ftbquest.stage_2.quests16.description0}"]
+			description: ["Now spout some more..."]
 			icon: "kubejs:small_rose_crystal"
 			id: "4309AFCC879D1385"
-			subtitle: "{ftbquest.stage_2.quests16.subtitle}"
+			subtitle: "Contraption 17-3"
 			tasks: [
 				{
 					consume_items: false
@@ -494,20 +494,20 @@
 				}
 				{
 					id: "558A25C046E7228F"
-					title: "{ftbquest.stage_2.quests16.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests16.title}"
+			title: "Rose Expansion"
 			x: -0.5d
 			y: 8.0d
 		}
 		{
 			dependencies: ["5DEBDBB0F76A8E39"]
-			description: ["{ftbquest.stage_2.quests17.description0}"]
+			description: ["Firstly &6spout&r some water onto the crystal..."]
 			icon: "kubejs:tiny_rose_crystal"
 			id: "61F47F24DE8AB1D4"
-			subtitle: "{ftbquest.stage_2.quests17.subtitle}"
+			subtitle: "Contraption 17-2"
 			tasks: [
 				{
 					consume_items: false
@@ -517,20 +517,20 @@
 				}
 				{
 					id: "12168AF666D98918"
-					title: "{ftbquest.stage_2.quests17.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests17.title}"
+			title: "Rose Growth"
 			x: -1.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["7E0FF9A2B11B63B8"]
-			description: ["{ftbquest.stage_2.quests18.description0}"]
+			description: ["Compact the desestabilized redstone using a &6Mechanical Press&r to create this tiny seed, that'll become a large red crystal"]
 			icon: "kubejs:rose_quartz_seed"
 			id: "5DEBDBB0F76A8E39"
-			subtitle: "{ftbquest.stage_2.quests18.subtitle}"
+			subtitle: "Contraption 17-1"
 			tasks: [
 				{
 					consume_items: false
@@ -540,11 +540,11 @@
 				}
 				{
 					id: "31DDDED7C3A18520"
-					title: "{ftbquest.stage_2.quests18.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests18.title}"
+			title: "Rose Seeding"
 			x: -0.5d
 			y: 6.0d
 		}
@@ -553,10 +553,10 @@
 				"3B3FDC19F77942BC"
 				"19FA7B25A798AB46"
 			]
-			description: ["{ftbquest.stage_2.quests19.description0}"]
+			description: ["Shocking! Discharging the crystal into the skystone makes redstone! How original."]
 			icon: "thermal:redstone_bucket"
 			id: "7E0FF9A2B11B63B8"
-			subtitle: "{ftbquest.stage_2.quests19.subtitle}"
+			subtitle: "Contraption 16-3"
 			tasks: [
 				{
 					consume_items: false
@@ -566,7 +566,7 @@
 				}
 				{
 					id: "68870CF284A89954"
-					title: "{ftbquest.stage_2.quests19.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -575,10 +575,10 @@
 		}
 		{
 			dependencies: ["4381D03BD83785B4"]
-			description: ["{ftbquest.stage_2.quests20.description0}"]
+			description: ["Dissolve the dust in water with a &6Mechanical Mixer&r for futher processing."]
 			icon: "tconstruct:molten_obsidian_bucket"
 			id: "3B3FDC19F77942BC"
-			subtitle: "{ftbquest.stage_2.quests20.subtitle}"
+			subtitle: "Contraption 16-1"
 			tasks: [
 				{
 					consume_items: false
@@ -588,7 +588,7 @@
 				}
 				{
 					id: "4A04DF0B104C0CAB"
-					title: "{ftbquest.stage_2.quests20.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -597,11 +597,11 @@
 		}
 		{
 			dependencies: ["3B3FDC19F77942BC"]
-			description: ["{ftbquest.stage_2.quests21.description0}"]
+			description: ["With a &6Charger&r cycle and a dynamo a crystal can be used in the next transmutation for an undefined amount of time."]
 			hide_dependency_lines: true
 			icon: "ae2:charged_certus_quartz_crystal"
 			id: "19FA7B25A798AB46"
-			subtitle: "{ftbquest.stage_2.quests21.subtitle}"
+			subtitle: "Contraption 16-2"
 			tasks: [
 				{
 					consume_items: false
@@ -611,20 +611,20 @@
 				}
 				{
 					id: "3685DEAE7018900F"
-					title: "{ftbquest.stage_2.quests21.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests21.title}"
+			title: "Re-Charger"
 			x: -3.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["05995BA72CAA9BE8"]
-			description: ["{ftbquest.stage_2.quests22.description0}"]
+			description: ["At last grind it again in a &6Millstone&r to obtain the finest, the purest and most unstable sample yet, it yearns for reaction."]
 			icon: "ae2:sky_dust"
 			id: "4381D03BD83785B4"
-			subtitle: "{ftbquest.stage_2.quests22.subtitle}"
+			subtitle: "Contraption 14-5"
 			tasks: [
 				{
 					consume_items: false
@@ -634,17 +634,17 @@
 				}
 				{
 					id: "7E670A813CC2C6DD"
-					title: "{ftbquest.stage_2.quests22.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests22.title}"
+			title: "Applied Grindings 2"
 			x: -1.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["71F74B9556AEC85F"]
-			description: ["{ftbquest.stage_2.quests23.description0}"]
+			description: ["Dump the waste water by using the &6Hose Pulley&r on any convenient location, such as the sea, a dungeon, or even a friend's house!"]
 			icon: "kubejs:dirt_water_bucket"
 			id: "371B1357CC5112BB"
 			tasks: [
@@ -656,20 +656,20 @@
 				}
 				{
 					id: "6BA9DC8828FB6355"
-					title: "{ftbquest.stage_2.quests23.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests23.title}"
+			title: "Useless Piece of Garbage"
 			x: -3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["71F74B9556AEC85F"]
 			description: [
-				"{ftbquest.stage_2.quests24.description0}"
+				"This incredible new invention prevents you from using deployers in the kitchen, this mechanical marvel can cut anything a deployer can *."
 				""
-				"{ftbquest.stage_2.quests24.description1}"
+				"* &oWarranty expires if rotated above 30 RPM"
 			]
 			hide_dependency_lines: true
 			icon: "sliceanddice:slicer"
@@ -679,15 +679,15 @@
 				icon: "sliceanddice:slicer"
 				id: "7026010719CEE500"
 				team_reward: false
-				title: "{ftbquest.stage_2.quests24.rewards0.title}"
+				title: "Ponder Slicer"
 				type: "command"
 			}]
 			tasks: [{
 				id: "5F4A4B669C1A115D"
-				title: "{ftbquest.stage_2.quests24.tasks0.title}"
+				title: "Aknowleged"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_2.quests24.title}"
+			title: "Slicin' it"
 			x: -4.5d
 			y: 1.5d
 		}
@@ -696,10 +696,10 @@
 				"7C47F1567965A5DE"
 				"2AE2C1F34DA2FA35"
 			]
-			description: ["{ftbquest.stage_2.quests25.description0}"]
+			description: ["Do &lNOT&r mix cleaning products."]
 			icon: "kubejs:ash_water_bucket"
 			id: "014C3F1F43569945"
-			subtitle: "{ftbquest.stage_2.quests25.subtitle}"
+			subtitle: "Contraption 13-5"
 			tasks: [
 				{
 					consume_items: false
@@ -709,21 +709,21 @@
 				}
 				{
 					id: "1D9E1A9EB47E1D7A"
-					title: "{ftbquest.stage_2.quests25.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests25.title}"
+			title: "Ultimate Cleaning Potion"
 			x: 1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["57D690457B087CAB"]
-			description: ["{ftbquest.stage_2.quests26.description0}"]
+			description: ["Grind down the diorite into a fine powder using a &6Millstone&r."]
 			hide_dependency_lines: false
 			icon: "kubejs:diorite_dust"
 			id: "1093C4FC660FDECA"
-			subtitle: "{ftbquest.stage_2.quests26.subtitle}"
+			subtitle: "Contraption 15-2"
 			tasks: [
 				{
 					consume_items: false
@@ -733,20 +733,20 @@
 				}
 				{
 					id: "6B80756AABDD37BC"
-					title: "{ftbquest.stage_2.quests26.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests26.title}"
+			title: "Igneous Mineral Extraction"
 			x: -0.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["098F484B294E2A1C"]
-			description: ["{ftbquest.stage_2.quests27.description0}"]
+			description: ["Burn the charcoal in a &6Mechanical Oven&r, all that's left are ashes, so wake up Mr. Freeman, wake up and smell the ashes."]
 			icon: "supplementaries:ash"
 			id: "7C47F1567965A5DE"
-			subtitle: "{ftbquest.stage_2.quests27.subtitle}"
+			subtitle: "Contraption 13-3"
 			tasks: [
 				{
 					consume_items: false
@@ -756,21 +756,21 @@
 				}
 				{
 					id: "577CEE16D64E8F11"
-					title: "{ftbquest.stage_2.quests27.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests27.title}"
+			title: "Automatic Bonfiring"
 			x: 1.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
-			description: ["{ftbquest.stage_2.quests28.description0}"]
+			description: ["Tap some water with a &6Mechanical Pump&r, for cleaning of cou(a)rse"]
 			hide_dependency_lines: true
 			icon: "minecraft:water_bucket"
 			id: "2AE2C1F34DA2FA35"
-			subtitle: "{ftbquest.stage_2.quests28.subtitle}"
+			subtitle: "Contraption 13-4"
 			tasks: [
 				{
 					consume_items: false
@@ -781,28 +781,27 @@
 				}
 				{
 					id: "24A052954CC4304E"
-					title: "{ftbquest.stage_2.quests28.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests28.title}"
+			title: "Water Source"
 			x: 2.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
 			description: [
-				"{ftbquest.stage_2.quests29.description0}"
+				"Bring over some of the wood from the last chapter to this production line."
 				""
-				"{ftbquest.stage_2.quests29.description1}"
+				"Or alternatively build a new farm if that is more convenient."
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:spruce_log"
 			id: "098F484B294E2A1C"
-			subtitle: "{ftbquest.stage_2.quests29.subtitle}"
+			subtitle: "Contraption 13-1"
 			tasks: [
 				{
-					icon: "minecraft:spruce_log"
 					id: "79744DCCB52AA7F5"
 					item: {
 						Count: 1
@@ -811,26 +810,26 @@
 							value: "minecraft:logs"
 						}
 					}
-					title: "{ftbquest.stage_2.quests29.tasks0.title}"
+					title: "Any #minecraft:logs"
 					type: "item"
 				}
 				{
 					id: "3555FD6EA8F8DCC5"
-					title: "{ftbquest.stage_2.quests29.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests29.title}"
+			title: "Automatic Reforest"
 			x: 2.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
-			description: ["{ftbquest.stage_2.quests30.description0}"]
+			description: ["Diorite is composed of many sharp crystals useful for cleansing your rocks, automate it using another Mechanical Extruder."]
 			hide_dependency_lines: true
 			icon: "minecraft:diorite"
 			id: "57D690457B087CAB"
-			subtitle: "{ftbquest.stage_2.quests30.subtitle}"
+			subtitle: "Contraption 15-1"
 			tasks: [
 				{
 					id: "635C02FBC8043A75"
@@ -839,11 +838,11 @@
 				}
 				{
 					id: "4F2B2E6DF8CAE794"
-					title: "{ftbquest.stage_2.quests30.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests30.title}"
+			title: "Last Family Member"
 			x: 1.0d
 			y: 2.0d
 		}
@@ -852,10 +851,10 @@
 				"7A4CA5CF1CEFE8CA"
 				"73E7812C04BE5CFF"
 			]
-			description: ["{ftbquest.stage_2.quests31.description0}"]
+			description: ["Produce the yellow variant of the tube by &6Spouting&r some gold in it."]
 			icon: "kubejs:golden_tube"
 			id: "6B5785E94F8F0EE1"
-			subtitle: "{ftbquest.stage_2.quests31.subtitle}"
+			subtitle: "Contraption 19-4"
 			tasks: [
 				{
 					id: "75CD14717E48EE4D"
@@ -864,7 +863,7 @@
 				}
 				{
 					id: "4A1D7B266C967C51"
-					title: "{ftbquest.stage_2.quests31.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -876,10 +875,10 @@
 				"16E0349C1C9B14F1"
 				"2167272204B6627B"
 			]
-			description: ["{ftbquest.stage_2.quests32.description0}"]
+			description: ["&6Spout&r molten iron over a block of glass to produce a casing for the &otubes&r."]
 			icon: "kubejs:empty_tube"
 			id: "7A4CA5CF1CEFE8CA"
-			subtitle: "{ftbquest.stage_2.quests32.subtitle}"
+			subtitle: "Contraption 19-2"
 			tasks: [
 				{
 					id: "28AF30FA008401E5"
@@ -888,7 +887,7 @@
 				}
 				{
 					id: "5C2000D1678B4896"
-					title: "{ftbquest.stage_2.quests32.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
@@ -897,10 +896,10 @@
 		}
 		{
 			dependencies: ["3549968EE4EE3459"]
-			description: ["{ftbquest.stage_2.quests33.description0}"]
+			description: ["Smelt the sand into glass using an &6Encased Fan&r or &6Furnace&r."]
 			icon: "minecraft:glass"
 			id: "16E0349C1C9B14F1"
-			subtitle: "{ftbquest.stage_2.quests33.subtitle}"
+			subtitle: "Contraption 19-1"
 			tasks: [
 				{
 					id: "3CA754AF8DACE615"
@@ -909,17 +908,17 @@
 				}
 				{
 					id: "287ED3FA986796B9"
-					title: "{ftbquest.stage_2.quests33.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests33.title}"
+			title: "Vitrified"
 			x: 2.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["727B43FD95C4A512"]
-			description: ["{ftbquest.stage_2.quests34.description0}"]
+			description: ["You have already automated red sand in the last chapter, unite both lines and get rid of two problems in a single blow."]
 			hide_dependency_lines: true
 			icon: "minecraft:red_sand"
 			id: "3549968EE4EE3459"
@@ -932,20 +931,20 @@
 				}
 				{
 					id: "5E9C04BC5A8DB459"
-					title: "{ftbquest.stage_2.quests34.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests34.title}"
+			title: "Sand Distribution"
 			x: 3.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["3549968EE4EE3459"]
-			description: ["{ftbquest.stage_2.quests35.description0}"]
+			description: ["Also wash red sand with an &6Encased Fan&r to filter the gold pellets within, soon after melt them."]
 			icon: "minecraft:gold_nugget"
 			id: "73E7812C04BE5CFF"
-			subtitle: "{ftbquest.stage_2.quests35.subtitle}"
+			subtitle: "Contraption 20"
 			tasks: [
 				{
 					id: "5FDBE08E0DFEE803"
@@ -954,14 +953,14 @@
 				}
 				{
 					id: "607A284FA5833DA9"
-					title: "{ftbquest.stage_2.quests35.tasks1.title}"
+					title: "Automated"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_2.quests35.title}"
+			title: "Gold Rush"
 			x: 3.0d
 			y: 9.5d
 		}
 	]
-	title: "{ftbquest.stage_2.title}"
+	title: "&f2&r Overengineered Cookie Cutter"
 }

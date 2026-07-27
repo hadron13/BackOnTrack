@@ -71,7 +71,7 @@
 	quests: [
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests0.description0}"]
+			description: ["Buy this legendary relic to upgrade your tools with an extra slot."]
 			icon: {
 				Count: 1
 				id: "tconstruct:vein_hammer"
@@ -105,13 +105,11 @@
 						upgrades: 2
 					}
 					tic_stats: {
-						"tconstruct:armor_toughness": 4.0f
-						"tconstruct:attack_damage": 11.137499f
-						"tconstruct:attack_speed": 0.8925f
+						"tconstruct:attack_damage": 10.631249f
+						"tconstruct:attack_speed": 0.85f
 						"tconstruct:durability": 5696.2495f
 						"tconstruct:harvest_tier": "minecraft:diamond"
 						"tconstruct:mining_speed": 1.89f
-						"tconstruct:projectile_damage": 2.4f
 					}
 					tic_volatile_data: {
 						abilities: 1
@@ -132,7 +130,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests0.subtitle}"
+			subtitle: "10 Gold + Anvil"
 			tasks: [
 				{
 					consume_items: true
@@ -155,13 +153,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquest.market.quests0.title}"
+			title: "Unlimited Creativity"
 			x: 2.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests1.description0}"]
+			description: ["Adopt a cute little duck! May come with a second duck too."]
 			icon: "duckling:duck_egg"
 			id: "346A833FFAEC6050"
 			rewards: [{
@@ -171,7 +169,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests1.subtitle}"
+			subtitle: "10 Silver + 1 Egg"
 			tasks: [
 				{
 					consume_items: true
@@ -188,13 +186,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquest.market.quests1.title}"
+			title: "Adopt a Duckie"
 			x: 1.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests2.description0}"]
+			description: ["Only for pro railworkers, comes with one kilometer of track and enough for a simple rail network."]
 			icon: "create:track"
 			id: "7093258BE7F2C010"
 			rewards: [
@@ -218,7 +216,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests2.subtitle}"
+			subtitle: "4 Gold"
 			tasks: [{
 				consume_items: true
 				count: 4L
@@ -227,13 +225,13 @@
 				item: "thermal:gold_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests2.title}"
+			title: "Railway Pro Kit"
 			x: 1.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests3.description0}"]
+			description: ["Sweet treats for a small amount of uh, money..."]
 			icon: {
 				Count: 1
 				id: "create_confectionery:full_chocolate_bar"
@@ -269,7 +267,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests3.subtitle}"
+			subtitle: "5 Silver"
 			tasks: [{
 				consume_items: true
 				count: 5L
@@ -278,7 +276,7 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests3.title}"
+			title: "Unsanded Dessert"
 			x: 9.0d
 			y: -0.5d
 		}
@@ -319,7 +317,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests4.subtitle}"
+			subtitle: "10 Silver + Axe"
 			tasks: [
 				{
 					consume_items: true
@@ -327,7 +325,7 @@
 					icon: { Count: 10, id: "thermal:silver_coin" }
 					id: "6B898FCA45D600B4"
 					item: "thermal:silver_coin"
-					title: "{ftbquest.market.quests4.tasks0.title}"
+					title: "Forest Seed"
 					type: "item"
 				}
 				{
@@ -343,13 +341,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquest.market.quests4.title}"
+			title: "Start-A-Forest"
 			x: 1.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests5.description0}"]
+			description: ["It's... salmon, and also quick, for when the hunger rings the doorbell."]
 			icon: "farmersdelight:grilled_salmon"
 			id: "00512C8698D4A983"
 			rewards: [{
@@ -359,7 +357,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests5.subtitle}"
+			subtitle: "16 Silver"
 			tasks: [{
 				consume_items: true
 				count: 8L
@@ -368,13 +366,13 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests5.title}"
+			title: "Quick Salmon"
 			x: 2.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests6.description0}"]
+			description: ["This cute cannon may not be able to open a hole in a castle, however it can kill a dragon... And the munition is as cheap as it can get: the food you carry around with you."]
 			icon: {
 				Count: 1
 				id: "create:potato_cannon"
@@ -395,7 +393,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests6.subtitle}"
+			subtitle: "20 Silver"
 			tasks: [{
 				consume_items: true
 				count: 20L
@@ -404,17 +402,17 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests6.title}"
+			title: "Self Defense Mechanism"
 			x: 7.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
 			description: [
-				"{ftbquest.market.quests7.description0}"
-				"{ftbquest.market.quests7.description1}"
-				"{ftbquest.market.quests7.description2}"
-				"{ftbquest.market.quests7.description3}"
+				"Is cannon? Check"
+				"Uses gunpowder? Check"
+				"Destroys? Wrong! This cannon is different, it builds things instead of taking them down. "
+				"Use a blueprint, a bit of gunpowder and an inventory on the side to build whatever you want"
 			]
 			icon: "create:schematicannon"
 			id: "5B24ABF49C5FC109"
@@ -433,7 +431,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests7.subtitle}"
+			subtitle: "15 Silver"
 			tasks: [{
 				consume_items: true
 				count: 15L
@@ -442,13 +440,13 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests7.title}"
+			title: "Un-Cannon"
 			x: 7.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests8.description0}"]
+			description: ["Buy this legendary relic to buff your armor with an extra slot."]
 			icon: {
 				Count: 1
 				id: "tconstruct:plate_chestplate"
@@ -486,7 +484,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests8.subtitle}"
+			subtitle: "12 Gold + Anvil"
 			tasks: [
 				{
 					consume_items: true
@@ -509,13 +507,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquest.market.quests8.title}"
+			title: "Unlimited Defense"
 			x: 4.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests9.description0}"]
+			description: ["Buy this legendary relic to add an extra ability slot to your tools and armour"]
 			icon: {
 				Count: 1
 				id: "tconstruct:travelers_helmet"
@@ -556,7 +554,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests9.subtitle}"
+			subtitle: "7 Gold + Anvil"
 			tasks: [
 				{
 					consume_items: true
@@ -579,13 +577,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquest.market.quests9.title}"
+			title: "Endless Abilities"
 			x: 5.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests10.description0}"]
+			description: ["Tired of that boring early game grind? Buy out some basic tools to grind even more!"]
 			icon: {
 				Count: 1
 				id: "minecraft:iron_pickaxe"
@@ -630,7 +628,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests10.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 3L
@@ -639,13 +637,13 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests10.title}"
+			title: "Cheap Tools"
 			x: 1.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests11.description0}"]
+			description: ["Enduring enemies early on is difficult, this armor can protect you for some time until you get better gear, can be upgraded to steel aswell."]
 			icon: {
 				Count: 1
 				id: "minecraft:chainmail_chestplate"
@@ -690,7 +688,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests11.subtitle}"
+			subtitle: "3 Silver"
 			tasks: [{
 				consume_items: true
 				count: 3L
@@ -699,13 +697,13 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests11.title}"
+			title: "Cheap Armor"
 			x: 2.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests12.description0}"]
+			description: ["Ready basic machines to start working right now as the new engineer!"]
 			icon: "kubejs:andesite_machine"
 			id: "4CCC5B847D4CDBE4"
 			rewards: [
@@ -728,7 +726,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests12.subtitle}"
+			subtitle: "6 Silver"
 			tasks: [{
 				consume_items: true
 				count: 6L
@@ -737,13 +735,13 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests12.title}"
+			title: "Quick Engineer"
 			x: 7.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests13.description0}"]
+			description: ["I found them on a dumpster."]
 			icon: "create:andesite_alloy"
 			id: "2A0D72DEC444804D"
 			rewards: [{
@@ -754,7 +752,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests13.subtitle}"
+			subtitle: "15 Silver"
 			tasks: [{
 				consume_items: true
 				count: 15L
@@ -763,13 +761,13 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests13.title}"
+			title: "Andesite Liquidation"
 			x: 4.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests14.description0}"]
+			description: ["Stop thinking and buy now! Build your new workshop right away!"]
 			icon: "create:mechanical_press"
 			id: "1B56BD88577AF37C"
 			rewards: [
@@ -810,7 +808,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquest.market.quests14.subtitle}"
+			subtitle: "7 Silver"
 			tasks: [{
 				consume_items: true
 				count: 32L
@@ -819,13 +817,13 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests14.title}"
+			title: "Quick Workshop"
 			x: 9.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests15.description0}"]
+			description: ["Buy this pack and go diving right now! Comes with fully filled backtank."]
 			icon: {
 				Count: 1
 				id: "create:copper_diving_helmet"
@@ -870,7 +868,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests15.subtitle}"
+			subtitle: "15 Silver"
 			tasks: [{
 				consume_items: true
 				count: 15L
@@ -879,14 +877,14 @@
 				item: "thermal:silver_coin"
 				type: "item"
 			}]
-			title: "{ftbquest.market.quests15.title}"
+			title: "Pro Diving Pack"
 			x: 6.0d
 			y: 1.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests16.description0}"]
+			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Precision Mechanisms&r."]
 			icon: {
 				Count: 1
 				id: "farmersdelight:diamond_knife"
@@ -925,7 +923,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests16.subtitle}"
+			subtitle: "5 Gold"
 			tasks: [
 				{
 					consume_items: true
@@ -948,13 +946,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquest.market.quests16.title}"
+			title: "Cookie Cutter"
 			x: 1.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["64F3352725385210"]
-			description: ["{ftbquest.market.quests17.description0}"]
+			description: ["Buy this bleeding-edge tech innovation right out of the silicon plateu, just enough for a decent matter-energy logistic storage."]
 			icon: "ae2:drive"
 			id: "30A3DB35FEECD798"
 			rewards: [
@@ -981,7 +979,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquest.market.quests17.subtitle}"
+			subtitle: "16 Gold + Item Terminal"
 			tasks: [
 				{
 					consume_items: true
@@ -998,10 +996,10 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquest.market.quests17.title}"
+			title: "A Leap In Technology"
 			x: 7.0d
 			y: -4.5d
 		}
 	]
-	title: "{ftbquest.market.title}"
+	title: "&a Gadget Shop"
 }

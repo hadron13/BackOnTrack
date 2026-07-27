@@ -28,6 +28,10 @@
 	blastEffectDelaySpeed = 320.0
 	#.
 	highlightFuzeInputOnShellBlocks = true
+	#.
+	#The vision range though molten metal will be multiplied by this factor.
+	#Range: 0.125 ~ 256.0
+	moltenMetalTransparency = 1.0
 
 	#.
 	#Projectile Flyby Sounds

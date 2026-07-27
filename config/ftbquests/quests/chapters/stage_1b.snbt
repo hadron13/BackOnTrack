@@ -10,7 +10,7 @@
 		image: "kubejs:textures/images/chapter1.png"
 		rotation: 0.0d
 		width: 10.0d
-		x: -4.5d
+		x: -1.0d
 		y: -5.0d
 	}]
 	order_index: 2
@@ -19,16 +19,15 @@
 		{
 			dependencies: ["0F9010F488CF3B40"]
 			description: [
-				"{ftbquest.stage_1b.quests0.description0}"
+				"The raw material used in rubber production comes from &ltrees&r."
 				""
-				"{ftbquest.stage_1b.quests0.description1}"
+				"Find or plant trees in a suitable arrangement for extraction.\\nDifferent tree types have different output rates, or even produce different fluids!"
 			]
 			icon: "minecraft:spruce_log"
 			id: "21F77703B8346D68"
-			subtitle: "{ftbquest.stage_1b.quests0.subtitle}"
+			subtitle: "Contraption 8-1"
 			tasks: [
 				{
-					icon: "minecraft:spruce_log"
 					id: "5700C7D76B18F42B"
 					item: {
 						Count: 1
@@ -37,7 +36,7 @@
 							value: "minecraft:logs"
 						}
 					}
-					title: "{ftbquest.stage_1b.quests0.tasks0.title}"
+					title: "Any #minecraft:logs"
 					type: "item"
 				}
 				{
@@ -50,10 +49,10 @@
 		}
 		{
 			dependencies: ["21F77703B8346D68"]
-			description: ["{ftbquest.stage_1b.quests1.description0}"]
+			description: ["Craft a few &6Sappers&r and place them near the trees, then power them using cogwheels."]
 			icon: "gearbox:sapper"
 			id: "015B5B986DF08EAC"
-			subtitle: "{ftbquest.stage_1b.quests1.subtitle}"
+			subtitle: "Contraption 8-2"
 			tasks: [
 				{
 					id: "55CA8CF04FF04651"
@@ -65,16 +64,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquest.stage_1b.quests1.title}"
+			title: "Sap Gaming"
 			x: -3.5d
 			y: 1.75d
 		}
 		{
 			dependencies: ["015B5B986DF08EAC"]
-			description: ["{ftbquest.stage_1b.quests2.description0}"]
+			description: ["The newly extracted resin can now be processed."]
 			icon: "thermal:resin_bucket"
 			id: "7EEC92FEA597272F"
-			subtitle: "{ftbquest.stage_1b.quests2.subtitle}"
+			subtitle: "Contraption 8-3"
 			tasks: [
 				{
 					id: "5803A2282F29333F"
@@ -91,10 +90,10 @@
 		}
 		{
 			dependencies: ["7EEC92FEA597272F"]
-			description: ["{ftbquest.stage_1b.quests3.description0}"]
+			description: ["Craft and place a &6Compressor&r. Use pipes to insert resin and a campfire underneath, lastly power using the shaft on the side, use a depot, belt or chute to extract the output."]
 			icon: "gearbox:compressor"
 			id: "5322ABEEF5DC2312"
-			subtitle: "{ftbquest.stage_1b.quests3.subtitle}"
+			subtitle: "Contraption 8-4"
 			tasks: [
 				{
 					id: "00F73BF07E955FDA"
@@ -111,10 +110,10 @@
 		}
 		{
 			dependencies: ["5322ABEEF5DC2312"]
-			description: ["{ftbquest.stage_1b.quests4.description0}"]
+			description: ["The rubber is now ready to be used!"]
 			icon: "thermal:cured_rubber"
 			id: "44F131FCAEC5E551"
-			subtitle: "{ftbquest.stage_1b.quests4.subtitle}"
+			subtitle: "Contraption 8-5"
 			tasks: [
 				{
 					id: "5B4F5B75C32DC3C2"
@@ -131,7 +130,7 @@
 		}
 		{
 			dependencies: ["44F131FCAEC5E551"]
-			description: ["{ftbquest.stage_1b.quests5.description0}"]
+			description: ["The final step is to convert &6Rotation Mechanisms&r into &dPressure Mechanisms&r. This may be done manually for now, later with autocrafters, this can be fully automated."]
 			icon: "kubejs:pressure_mechanism"
 			id: "7299A14015C4B195"
 			tasks: [
@@ -150,7 +149,7 @@
 		}
 		{
 			dependencies: ["7299A14015C4B195"]
-			description: ["{ftbquest.stage_1b.quests6.description0}"]
+			description: ["Congratulations! You have just finished the Secondary Chapter 1A! You now have plenty of material for fluid machinery."]
 			icon: "kubejs:copper_machine"
 			id: "4DA3164A6CED529B"
 			rewards: [
@@ -194,9 +193,9 @@
 		{
 			dependencies: ["7D872F933F45809B"]
 			description: [
-				"{ftbquest.stage_1b.quests7.description0}"
+				"&lSecondary Chapters&r are &omostly optional&r regarding their automation, but items automated in these may be required for building main line factories."
 				""
-				"{ftbquest.stage_1b.quests7.description1}"
+				"In practice they are small chapters, breaks between major chapters. You can automate them a few moments."
 			]
 			hide_until_deps_complete: true
 			icon: "create:clipboard"
@@ -207,10 +206,10 @@
 				id: "43630C8FD565DB99"
 				type: "checkmark"
 			}]
-			title: "{ftbquest.stage_1b.quests7.title}"
+			title: "Secondary Chapters"
 			x: -4.75d
 			y: -2.0d
 		}
 	]
-	title: "{ftbquest.stage_1b.title}"
+	title: "&f1a&r Sap Gaming"
 }

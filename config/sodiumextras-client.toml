@@ -127,5 +127,5 @@
 		borderlessAttachModeOnF11 = "REPLACE"
 		#Toggles fast language reload
 		#Embeddedt points it maybe cause troubles to JEI, so ¿why not add it as a toggleable option?
-		fastLanguageReload = true
+		fastLanguageReload = false
 

@@ -18,6 +18,9 @@ let RQ = (id, x) => MOD("xreliquary", id, x)
 let SD = (id, x) => MOD("storagedrawers", id, x)
 let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) => MOD("forge", id, x)
+let RW = (id, x) =>  MOD("rubberworks", id, x)
+let BC = (id, x) => MOD("createbigcannons", id, x)
+let AL = (id, x) => MOD("alloyed", id, x)
 //
 
 
@@ -377,6 +380,8 @@ StartupEvents.registry('item', event => {
 		simple("Lead Ingot", TE('lead_ingot', 8), 32, S, 0x232456, 0x7C95A4)
 		simple("Gold Ingot", MC('gold_ingot', 8), 48, S, 0xD99413, 0xFAF25E)
 		
+		simple("Cast Iron", BC('cast_iron_ingot', 8), 32, S, 0x140E0F, 0x2D2831)
+		simple("Bronze Ingot", AL('bronze_ingot', 8), 16, S, 0xD99413, 0xFAF25E)
 		simple("Scorched Brick", TC('scorched_brick', 2), 16, S, 0xFDF5E6, 0x111111)
 		simple("Andesite Alloy", CR('andesite_alloy', 16), 8, S, 0x505050, 0x878787)
 		simple("Steel", "8x alloyed:steel_ingot", 16, S, 0x3E4644, 0xB8DAC8)
@@ -397,7 +402,7 @@ StartupEvents.registry('item', event => {
 		simple("Nether Quartz", MC('quartz', 8), 24, S, 0xB19E8F, 0xE7E2DB)
 		simple("Certus Quartz", AE2('certus_quartz_crystal', 8), 24, S, 0x91C5FC, 0xA7CBCF)
 		simple("Fluix Quartz", AE2('fluix_crystal', 8), 32, S, 0x8F5CCB, 0xFC7ED4)
-		simple("Cured Rubber", TE('cured_rubber', 6), 16, S, 0x3D363C, 0x594F55)
+		simple("Rubber", RW('rubber', 6), 16, S, 0x3D363C, 0x594F55)
 		
 		next_group()
 		entry_cost = 10
