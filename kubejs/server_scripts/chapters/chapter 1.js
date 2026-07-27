@@ -48,6 +48,7 @@ ServerEvents.recipes((bot) => {
 		andesite_machine(CR('mechanical_roller'), 1, CR('crushing_wheel'))
 		andesite_machine(CR('contraption_controls'), 1, MC('stone_button'))
 		andesite_machine('toms_storage:ts.storage_terminal', 1, MC('diamond'))
+		andesite_machine('toms_storage:ts.inventory_proxy', 1, F('#chests'))
 		andesite_machine('toms_storage:ts.inventory_connector', 1, CR('andesite_funnel'))
 		andesite_machine('toms_storage:ts.inventory_cable_connector', 1, CR('electron_tube'))
 		andesite_machine('gearbox:brass_press', 1, CR('brass_block'))

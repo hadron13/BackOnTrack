@@ -758,12 +758,12 @@
 				""
 				"Cracking is essentially breaking heavy hydrocarbons into light hydrocarbons, in this case, with the aid of hydrogen and a catalyst."
 			]
-			icon: "kubejs:desulfurized_light_diesel_bucket"
+			icon: "petrochem:diesel_bucket"
 			id: "6F268CBBD5B358B9"
 			tasks: [
 				{
 					id: "362124A7B9AFD91B"
-					item: "kubejs:desulfurized_light_diesel_bucket"
+					item: "petrochem:diesel_bucket"
 					type: "item"
 				}
 				{
@@ -1269,7 +1269,7 @@
 				"74F2578D520DAC49"
 				"7920C5415DCC4A11"
 			]
-			description: ["Hydrocracked gasoline combined with desulfurized heavy naphta results in a raw form of gasoline."]
+			description: ["Raw gasoline combined with desulfurized heavy naphta yields a slightly-less raw form of gasoline."]
 			icon: "petrochem:untreated_gasoline_bucket"
 			id: "00E3C26B33FD7C6C"
 			tasks: [
@@ -1293,7 +1293,7 @@
 				"181C011F97355031"
 				"00E3C26B33FD7C6C"
 			]
-			description: ["The last key component is alkylate, which finally transforms the raw untreated gasoline into high quality refined gasoline."]
+			description: ["The last key component is alkylate, which finally transforms the raw untreated gasoline into high quality, high octane refined gasoline."]
 			icon: "petrochem:gasoline_bucket"
 			id: "25A4B65AB272EB74"
 			tasks: [

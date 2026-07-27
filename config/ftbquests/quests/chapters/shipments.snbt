@@ -1923,13 +1923,13 @@
 			can_repeat: true
 			dependencies: ["64F3352725385210"]
 			disable_toast: true
-			icon: "thermal:cured_rubber"
+			icon: "rubberworks:rubber"
 			id: "2EB0B28210B30E60"
 			rewards: [
 				{
 					auto: "enabled"
 					id: "6AD2E70816D8F456"
-					item: "kubejs:trade_card_cured_rubber"
+					item: "kubejs:trade_card_rubber"
 					type: "item"
 				}
 				{

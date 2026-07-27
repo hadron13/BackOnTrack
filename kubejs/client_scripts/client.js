@@ -269,6 +269,7 @@ JEIEvents.addItems(event => {
 	event.add('pipez:fluid_pipe')
 	event.add('pipez:energy_pipe')
 	event.add('toms_storage:ts.crafting_terminal')
+	event.add('toms_storage:ts.inventory_proxy')
 	event.add('toms_storage:ts.storage_terminal')
 	event.add('toms_storage:ts.inventory_connector')
 	event.add('toms_storage:ts.inventory_cable')

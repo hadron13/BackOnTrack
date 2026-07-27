@@ -939,7 +939,7 @@ function drawersop(event) {
 			'SSS'
 		], {
 			P: CR('zinc_ingot'),
-			M: '#forge:chests/wooden',
+			M: F('#chests'),
 			S: plank
 		})
 
@@ -1227,7 +1227,7 @@ function copperMachine(event) {
 			event.stonecutting(Item.of(id, amount), 'kubejs:copper_machine')
 	}
 
-	abstruse_machine(ES('ender_chest'), 2, MC("chest"))
+	abstruse_machine(ES('ender_chest'), 2, F('#chests'))
 	abstruse_machine(ES('ender_tank'), 2, CR("fluid_tank"))
 	abstruse_machine(TE('upgrade_augment_3'), 1, KJ('power_mechanism'))
 
