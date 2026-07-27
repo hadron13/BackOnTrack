@@ -11,22 +11,15 @@ let PC = (id, x) => MOD("petrochem", id, x)
 
 ServerEvents.recipes((bot) => {
 
-    bot.remove({mod: "petrochem"})
-
     bot.custom({ "type": "petrochem:gasoline_engine_fuel", "ingredients": [{"fluid": "petrochem:gasoline", "amount": 1}], "results": [], "processingTime": 20 })
     bot.custom({ "type": "petrochem:diesel_engine_fuel", "ingredients": [{"fluid": "petrochem:diesel", "amount": 1}], "results": [], "processingTime": 20 })
 
-    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 100), [],"minecraft:desert")
-    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 90), [],"minecraft:swamp")
-    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 50), [],"minecraft:ocean")
-    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 70), [],"minecraft:deep_ocean")
-    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 150), [],"minecraft:jungle")
-    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 150), [],"minecraft:deep_cold_ocean")
+    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 250), [],"minecraft:desert")
+    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 300), [],"minecraft:swamp")
+    bot.recipes.petrochem.pumpjack(Fluid.of("petrochem:petroleum", 100), [],"minecraft:ocean")
 
-
-
-    bot.recipes.createMixing(Fluid.of(PC("oil_brine"), 270), [Fluid.of(PC("petroleum"), 250), Fluid.of(MC("water"), 20)] )
-    bot.recipes.petrochemElectrolyzing([Fluid.of(PC("desalted_oil"), 250), PC("salt_dust"), Item.of(MC("sand")).withChance(0.2)], Fluid.of(PC("oil_brine"), 270)).energy(100).superheated()
+    bot.recipes.createMixing(Fluid.of(KJ("oil_brine"), 270), [Fluid.of(PC("petroleum"), 250), Fluid.of(MC("water"), 20)] )
+    bot.recipes.petrochemElectrolyzing([Fluid.of(PC("desalted_oil"), 250), PC("salt_dust"), Item.of(MC("sand")).withChance(0.2)], Fluid.of(KJ("oil_brine"), 270)).energy(100).superheated()
 
 // auxiliary recipes
     bot.recipes.petrochemElectrolyzing([Fluid.of(PC("hydrogen"), 60), Fluid.of(PC("oxygen"), 30)], Fluid.of(MC("water"), 90)).energy(150)
@@ -97,7 +90,7 @@ ServerEvents.recipes((bot) => {
     bot.recipes.createMixing(Fluid.of("petrochem:alkylate", 200), [Fluid.of("petrochem:hydrotreated_gas_oil", 500), Fluid.of("petrochem:sulfuric_acid", 500)])
 
     hydrocrack([Fluid.of("petrochem:heavy_diesel", 100), Fluid.of("petrochem:hydrocracked_gasoline", 400)], Fluid.of("petrochem:heavy_gas_oil", 500), CR("polished_rose_quartz"))
-    hydrocrack([Fluid.of("petrochem:diesel", 400)], Fluid.of("petrochem:desulfurized_heavy_diesel", 500), CR("polished_rose_quartz"))
+    hydrocrack([Fluid.of("kubejs:desulfurized_light_diesel", 400)], Fluid.of("petrochem:desulfurized_heavy_diesel", 500), CR("polished_rose_quartz"))
 
     bot.recipes.createMixing(Fluid.of("petrochem:untreated_gasoline", 800), [Fluid.of("petrochem:desulfurized_heavy_naphta", 500), Fluid.of("petrochem:hydrocracked_gasoline", 300)])
     bot.recipes.createMixing(Fluid.of("petrochem:gasoline", 1000), [Fluid.of("petrochem:alkylate", 200), Fluid.of("petrochem:untreated_gasoline", 800)])
@@ -108,8 +101,6 @@ ServerEvents.recipes((bot) => {
     bot.recipes.gearboxPyroprocessing(TE('coal_coke'), MC('coal'))
     bot.recipes.createMixing(Fluid.of(BC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), PC('petroleum_coke')]).heated()
     bot.recipes.createMixing(Fluid.of(BC('molten_steel'), 90), [Fluid.of(TC('molten_iron'), 90), TE('coal_coke')]).heated()
-
-    bot.shapeless(PC('steel_pump'), [CR('cogwheel'), PC('steel_fluid_pipe')])
 
     bot.shaped(PC('distillation_output'), ['SSS', 'VFP', 'SSS'], {S: AL('steel_sheet'), V: CR('fluid_valve'), F: CR('smart_fluid_pipe'), P: PC('steel_fluid_pipe')})
     bot.shaped(PC('distillation_controller'), ['SSS', 'FPV', 'SSS'], {S: AL('steel_sheet'), V: CR('stressometer'), F: AL('steel_casing'), P: KJ('brass_machine')})

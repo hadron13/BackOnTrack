@@ -80,7 +80,7 @@ ServerEvents.recipes((bot) => {
 
   brass_machine('create:sequenced_gearshift', 2, CR('gearshift'))
 	brass_machine('create:rotation_speed_controller', 1, CR('large_cogwheel'))
-	brass_machine(CR('stockpile_switch'), 2, F('#chests'))
+	brass_machine(CR('stockpile_switch'), 2, MC('chest'))
 	brass_machine('create:content_observer', 2, MC('observer'))
 	brass_machine('thermal:machine_press', 1, MC('dropper'))
 	brass_machine(AE2('crystal_resonance_generator'), 1, MC('redstone'))
